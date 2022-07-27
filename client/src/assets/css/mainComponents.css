@@ -1,0 +1,180 @@
+body {
+    padding-top: 10rem;
+}
+
+.cloudsBackground {
+    background: url('../../assets/images/clouds.svg') no-repeat;
+    height: 350px;
+    width: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 80s;
+    animation-delay: -30s;
+    animation-name: moveCloudsRight;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+@keyframes moveCloudsRight {
+    0% {
+        background-position: 0 center;
+    }
+
+    100% {
+        background-position: 1920px center;
+    }
+}
+
+.wrapDiv {
+    margin: 0px 12rem;
+}
+
+.wrapDiv1 {
+    padding: 0px 12rem;
+}
+
+.blueBackgroundDiv {
+    background: url('../../assets/images/bluebackground.svg') no-repeat;
+    background-size: cover;
+}
+
+.firstBlueTitle {
+    color: #50B8E7;
+    font-weight: 700;
+}
+
+.firstSectionBlueBtn1 {
+    color: #fff;
+    background-color: #50B8E7;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem;
+}
+
+.firstSectionBlueBtn {
+    color: #50B8E7;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem;
+}
+
+.blueBgdiv {
+    background-color: #84CDEE;
+    border-radius: 25px;
+}
+
+.servicesWhiteText {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.marginGutter {
+    margin: 0px -1.5rem;
+}
+
+.whiteTestimonials {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
+}
+
+.customSelectStyle {
+    border: none !important;
+    box-shadow: 0px 4px 15px rgba(193, 175, 175, 0.25) !important;
+    border-radius: 8px !important;
+    font-weight: 400 !important;
+
+}
+
+.fourthSectionBlueDiv {
+    color: #fff;
+    background-color: #34ACE3;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem;
+}
+
+.customSelectStyle::placeholder {
+    font-weight: 400 !important;
+    color: #000 !important;
+    text-align: center;
+}
+
+.blueCloudsBg {
+    background-color: #50B8E7;
+    background-image: url('../../assets/images/blueCloudsBg.svg');
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
+}
+
+@media (max-width: 1399.98px) {
+    .wrapDiv {
+        margin: 0px 6rem;
+    }
+
+    .wrapDiv1 {
+        padding: 0px 6rem;
+    }
+
+    .cloudsBackground {
+        height: 300px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .wrapDiv {
+        margin: 0px 2.5rem;
+    }
+
+    .wrapDiv1 {
+        padding: 0px 2.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrapDiv {
+        margin: 0px 1.5rem;
+    }
+
+    .wrapDiv1 {
+        padding: 0px 1.5rem;
+    }
+
+    .cloudsBackground {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .cloudsBackground {
+        background-size: cover;
+        height: auto;
+    }
+
+    .wrapDiv {
+        margin: 0rem 1.5rem;
+    }
+
+    .wrapDiv1 {
+        padding: 0rem 1.5rem;
+    }
+
+    body {
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .marginGutter {
+        margin: 0px;
+    }
+}

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Raleway';
+}
+
+div {
+    font-family: 'Raleway';
+}
+
+span {
+    font-family: 'Raleway';
+}
+
+p {
+    font-family: 'Raleway';
+}
+
+a {
+    font-family: 'Raleway';
+}
+
+.krankenFirstStep {
+    background-color: #84CDEE;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+}
+
+.krankenTitle {
+    font-weight: bold;
+    color: #fff;
+}
+
+.krankenSubtitle {
+    font-weight: 500;
+    color: #fff;
+}
+
+.krankenInputStyle {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #fff;
+    border: none;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    outline: none !important;
+    padding: 0.75rem;
+}
+
+.krankenInputStyle::placeholder {
+    font-weight: 500;
+    color: #000;
+}
+
+.krankenSelectStyle {
+    width: 100%;
+    border-radius: 12px !important;
+    background-color: #fff !important;
+    border: none !important;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    outline: none !important;
+    padding: 0.75rem !important;
+    background-image: url('../../assets/images/krankenArrow.svg') !important;
+    font-weight: 500 !important;
+}
+
+.krankenBtnStyle {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #fff;
+    color: #fff;
+    background-color: #11A3E6;
+    font-weight: 500;
+
+}
+
+.blueBgKranken {
+    background: url('../../assets/images/krankenBlueBg.svg') no-repeat;
+    height: 1500px;
+    width: 100%;
+    overflow: hidden !important;
+    background-size: cover;
+    background-position-x: -200px;
+    margin-top: -200px;
+}
+
+.blueBgKranken1 {
+    background: url('../../assets/images/krankenBlueBg.svg') no-repeat;
+    height: 1500px;
+    width: 100%;
+    overflow: hidden !important;
+    background-size: cover;
+    background-position-x: -200px;
+    margin-top: -50px;
+}
+
+.blueBgKrankenOverflow {
+    overflow: hidden !important;
+}
+
+.blueBgCenterText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.whiteBgKranken {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    color: #84CDEE;
+    width: 380px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 0rem;
+    position: absolute;
+    left: calc(50% - 190px);
+    top: -50px;
+}
+
+.bigTitleKranken {
+    font-weight: bold;
+    color: #84CDEE;
+}
+
+.whiteCardKranken {
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
+}
+
+.changeJustifyTablet {
+    justify-content: space-between;
+}
+
+.zuzatImages img {
+    width: 230px;
+}
+
+.krankenSelectDropdown {
+    position: absolute;
+    top: 3.5rem;
+    background-color: #fff;
+    max-height: 300px;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    overflow-y: auto;
+}
+
+.selectOptionStyle {
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.selectOptionStyle:last-child {
+    padding: 0%;
+}
+
+.krankenStepsCircle {
+    border: 2px solid #11A3E6;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    color: #11A3E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.container1 input {
+    border: 1px solid #ddd;
+
+
+}
+
+.checkmark {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container1:hover input~.checkmark {
+    border: 1px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.container1 input:checked~.checkmark {
+    border: 1px solid #2196F3;
+    /* box-shadow: 0 2px 2px 1px rgb(32 143 223 / 20%), 0 2px 2px 0 rgb(32 143 223 / 14%), 0 1px 5px 0 rgb(32 143 223 / 12%) !important; */
+    transition: all 0.2s ease-in-out;
+}
+
+.checkmark {
+    display: block;
+}
+
+.container1 input:checked~.checkmark:after {
+    display: block;
+}
+
+.nextBtnKranken {
+    border: none;
+    background-color: #50B8E7;
+    border-radius: 12px;
+    padding: 0.75rem;
+    width: 200px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.krankenStepsBox {
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    border-radius: 12px;
+    padding: 3rem;
+}
+
+.krankenInputStepStyle {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    border-radius: 12px !important;
+    font-weight: 500 !important;
+}
+
+.plusPersonBtn {
+    font-size: 18px;
+    color: #11A3E6;
+    cursor: pointer;
+}
+
+.krankenOfferStyle {
+    background-color: #fff;
+    box-shadow: rgb(28 30 31 / 30%) 0px 1px 2px 0px, rgb(28 30 31 / 15%) 0px 2px 6px 2px;
+    border-radius: 25px;
+
+}
+
+.greyBorderDiv {
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 18px;
+    height: 500px;
+    font-size: 15px;
+}
+
+.blueBgDiv {
+    background: #84CDEE;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 15px;
+
+}
+.blueBgDiv svg path {
+    fill: #fff;
+}
+
+@media (min-width: 1700px) {
+    .blueBgKranken {
+        margin-top: -70px;
+        background-position-x: -190px;
+
+    }
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .blueBgKranken {
+        height: 1000px;
+        margin-top: -140px;
+
+    }
+
+    .blueBgKranken1 {
+        height: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .blueBgKranken {
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .blueBgKranken1 {
+        margin-top: 0px;
+    }
+
+    .changeJustifyTablet {
+        justify-content: center;
+    }
+
+    .zuzatImages img {
+        width: 150px;
+    }
+    .greyBorderDiv {
+        height: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .whiteBgKranken {
+        width: 280px;
+        left: calc(50% - 140px);
+    }
+
+    .zuzatImages img {
+        width: 100%;
+    }
+
+    .lastIlustrationKranken {
+        width: 100%;
+    }
+}
