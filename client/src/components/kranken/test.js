@@ -13,20 +13,19 @@ function Krankekasse() {
     const [kanton, setKanton] = useState(null);
     const [region, setRegion] = useState(null);
     const [commune, setCommune] = useState(null);
-    const [jahrgang, setJahrgang] = useState([2000, 2009, 2003]);
+    const [jahrgang, setJahrgang] = useState([2000,2009,2003]);
     const [actualmodels, setActualModels] = useState([]);
-    const [franchise, setFranchise] = useState(['1000', '300', '300']);
+    const [franchise, setFranchise] = useState(['1000','300','300']);
     const [model, setModel] = useState(null);
-    const [accident, setAccident] = useState(['MIT-UNF', 'OHN-UNF', 'OHN-UNF']);
+    const [accident, setAccident] = useState(['MIT-UNF','OHN-UNF','OHN-UNF']);
     const [tarifbezeichnung, setTarifbezeichnung] = useState(null);
 
     const [krankenkasse, setKrankenkasse] = useState([]);
 
     const handleSubmit = async () => {
-
         const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${jahrgang}/${accident}/${model}/${franchise}/${tarifbezeichnung}`);
         setKrankenkasse(result.data);
-        
+        console.log(result.data)
     }
     useEffect(() => {
         //Get all the regions
@@ -164,7 +163,7 @@ function Krankekasse() {
                     </select>
                 </div>
             </div>
-
+            
             <div className='my-3 w-100'>
                 <button onClick={handleSubmit} className='btn btn-primary'>Submit</button>
             </div>

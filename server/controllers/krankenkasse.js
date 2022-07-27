@@ -1,7 +1,6 @@
 import express from "express";
 import mysql from 'mysql';
 import util from 'util';
-
 const router = express.Router();
 var connection = mysql.createConnection({
     host: "localhost",
@@ -9,9 +8,7 @@ var connection = mysql.createConnection({
     password: "",
     database: "finanu"
 });
-
 const query = util.promisify(connection.query).bind(connection);
-
 export const getInsurance = async (req, res) => {
     try {
         let plz = req.params.plz;
@@ -36,13 +33,13 @@ export const getInsurance = async (req, res) => {
 }
 export const getRegions = async (req, res) => {
     try {
-        connection.query("SELECT * FROM regions LIMIT 50", (request, response) => {
+        connection.query("SELECT * FROM regions", (request, response) => {
             res.status(200).json(response)
         })
     } catch (error) {
         res.status(404).json({ message: error.message })
-    }
-}
+    }   
+} 
 export const getActualModel = async (req, res) => {
     let id = req.params.id;
     try {
@@ -100,17 +97,15 @@ export const compareInputs = async (req, res) => {
                 [kanton, 'PR-REG CH' + region, altersklasse, unfalleinschluss[i], tariftyp, 'FRA-' + Franchise_price[i], altersungrupe]);
             Array.prototype.push.apply(data, rows);
         }
-
         const Versicherer = [];
         const final_data = [];
-
         data.forEach(element => {
             if (!Versicherer.includes(element.Versicherer + element.name)) {
-                Versicherer.push(element.Versicherer + element.name);
+                Versicherer.push(element.Versicherer + element.name );
                 const sumofPramie = data
                     .filter(({
-                        Versicherer, name
-                    }) => Versicherer == element.Versicherer && name == element.name)
+                        Versicherer, name , Tarifbezeichnung
+                    }) => Versicherer == element.Versicherer && name == element.name && Tarifbezeichnung == element.Tarifbezeichnung)
                     .reduce((sum, record) => sum + parseFloat(record.Pramie), 0);
                 final_data.push({
                     id: element.id_,
