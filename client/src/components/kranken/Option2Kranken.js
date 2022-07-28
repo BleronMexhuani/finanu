@@ -55,7 +55,7 @@ function Option2Kranken() {
                         </div>
                     </div>
                     <div className='pt-5'>
-                        <img src={LastIlustration} className="lastIlustrationKranken" alt="" />
+                        <img src={LastIlustration} className="lastIlustrationKranken img-fluid" alt="" />
                     </div>
                 </div>
             </div>

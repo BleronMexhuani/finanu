@@ -111,7 +111,8 @@ export const compareInputs = async (req, res) => {
                     id: element.id_,
                     Versicherer: element.Versicherer,
                     name: element.name,
-                    price: sumofPramie
+                    price: sumofPramie,
+                    tarif: element.Tarifbezeichnung
                 });
             }
         });
