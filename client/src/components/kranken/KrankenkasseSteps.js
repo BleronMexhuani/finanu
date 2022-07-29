@@ -37,7 +37,7 @@ function KrankenkasseSteps() {
         //Get all the regions
         const getRegions = async () => {
             await axios.get(
-                'http://localhost:5000/krankenkasse/regions'
+                'http://finanu.kutiza.com/krankenkasse/regions'
             )
                 .then(function (result) {
                     setRegions(result.data);
@@ -82,7 +82,7 @@ function KrankenkasseSteps() {
         const getInsurances = async () => {
             if (plz !== null && ort !== null && commune !== null) {
                 await axios.get(
-                    `http://localhost:5000/krankenkasse/insurances/${plz}/${ort}/${commune}`
+                    `http://finanu.kutiza.com/krankenkasse/insurances/${plz}/${ort}/${commune}`
                 )
                     .then(function (result) {
                         setInsurances(result.data);
@@ -122,7 +122,7 @@ function KrankenkasseSteps() {
         setFranchise(targetFranchise);
         setJahrgang(targetJahrgang);
         setAccident(targetAccident);
-        const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${model}/${targetFranchise}/${tarifbezeichnung}`);
+        const result = await axios.get(`http://finanu.kutiza.com/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${model}/${targetFranchise}/${tarifbezeichnung}`);
 
 
         setKrankenkasse(result.data);
@@ -176,7 +176,7 @@ function KrankenkasseSteps() {
 
     useEffect(() => {
         const getActualModels = async () => {
-            const result = await axios.get(`http://localhost:5000/krankenkasse/actualmodel/${insuranceNum}`)
+            const result = await axios.get(`http://finanu.kutiza.com/krankenkasse/actualmodel/${insuranceNum}`)
             setActualModels(result.data);
         }
         if (insuranceNum != null) {
