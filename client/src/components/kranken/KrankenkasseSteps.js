@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewPerson from './NewPerson';
 import Tooth from "../../assets/images/tooth.svg"
-import {v4 as uuidv4 } from 'uuid'
-
+import { v4 as uuidv4 } from 'uuid'
+import XBtn from "../../assets/images/xButton.svg"
 function KrankenkasseSteps() {
     const [insurances, setInsurances] = useState([]);
     const [ort, setOrt] = useState(null);
@@ -13,11 +13,11 @@ function KrankenkasseSteps() {
     const [kanton, setKanton] = useState(null);
     const [region, setRegion] = useState(null);
     const [commune, setCommune] = useState(null);
-    const [jahrgang, setJahrgang] = useState([2000, 2009, 2003]);
+    const [jahrgang, setJahrgang] = useState([]);
     const [actualmodels, setActualModels] = useState([]);
-    const [franchise, setFranchise] = useState(['1000', '300', '300']);
+    const [franchise, setFranchise] = useState([]);
     const [model, setModel] = useState(null);
-    const [accident, setAccident] = useState(['MIT-UNF', 'OHN-UNF', 'OHN-UNF']);
+    const [accident, setAccident] = useState([]);
     const [tarifbezeichnung, setTarifbezeichnung] = useState(null);
     const [krankenkasse, setKrankenkasse] = useState([]);
     const [regions, setRegions] = useState([]);
@@ -60,22 +60,23 @@ function KrankenkasseSteps() {
         setIsFocused(false)
 
     }
-    const searchRegion = (e) => {
-        const region = regions.filter((element) => (element.plz + " " + element.ort).includes(inputValue))
-        if (inputValue === '' || inputValue === null) {
-            setFilter([]);
-            setIsEmpty(true)
-        }
-        else {
-            setFilter(region);
-            setIsEmpty(false)
-        }
-    }
+    
 
     useEffect(() => {
+        const searchRegion = (e) => {
+            const region = regions.filter((element) => (element.plz + " " + element.ort).includes(inputValue))
+            if (inputValue === '' || inputValue === null) {
+                setFilter([]);
+                setIsEmpty(true)
+            }
+            else {
+                setFilter(region);
+                setIsEmpty(false)
+            }
+        }
         searchRegion()
 
-    }, [inputValue])
+    }, [inputValue,regions])
 
     ///////////////////////////////
     useEffect(() => {
@@ -105,17 +106,17 @@ function KrankenkasseSteps() {
         const targetJahrgang = [];
         const targetAccident = [];
         const targetFranchise = [];
-        let i = 0;
+
         for (let i = 0; i < event.target.length - 1; i++) {
-            if (event.target[i].name == 'Jahrgang') {
+            if (event.target[i].name === 'Jahrgang') {
                 targetJahrgang.push(parseInt(event.target[i].value));
             }
-            else if (event.target[i].getAttribute('data-accident') == 'asd') {
+            else if (event.target[i].getAttribute('data-accident') === 'asd') {
                 if (event.target[i].checked) {
                     targetAccident.push(event.target[i].value);
                 }
             }
-            else if (event.target[i].name == 'franchise') {
+            else if (event.target[i].name === 'franchise') {
                 targetFranchise.push(parseInt(event.target[i].value));
             }
         }
@@ -193,21 +194,76 @@ function KrankenkasseSteps() {
     }
 
     const toSecondStep = () => {
-        
-        if (inputValue === '' || inputValue === null || insuranceNum === "" || insuranceNum === null) { 
-            console.log("empty")
+
+        if (inputValue === '' || inputValue === null || insuranceNum === "" || insuranceNum === null) {
+            setSecondStep(false)
+
         }
         else {
             setSecondStep(true)
         }
     }
-    const [secondStep, setSecondStep] = useState(false)
+
+    const [endKrankenMap, setEndKrankenMap] = useState(3)
     const [familySituation, setFamilySituation] = useState('')
+    const [familySituation2, setFamilySituation2] = useState('')
+    const [secondStepFirstRadio, setSecondStepFirstRadio] = useState(false)
+
+    const [secondStep, setSecondStep] = useState(false)
     const [thirdStep, setThirdStep] = useState(false)
     const [thirdStep2, setThirdStep2] = useState(false)
     const [fourthStep, setFourthStep] = useState(false)
     const [fourthStep2, setFourthStep2] = useState(false)
     const [fifthStep, setFifthStep] = useState(false)
+
+    const toThirdStep = () => {
+        if (secondStepFirstRadio) {
+            if (familySituation === "einzel") {
+                setThirdStep(true)
+            }
+            else if (familySituation === "paar" || familySituation === "familie") {
+                if (familySituation2 !== "") {
+                    setThirdStep(true)
+                }
+            }
+        }
+    }
+
+    const [gender, setGender] = useState("")
+    const [vornameValue, setVornameValue] = useState("")
+    const [price, setPrice] = useState()
+    const [mitOhn, setMitOhn] = useState(false)
+    let i = 0
+
+    const toThirdStep2 = () => {
+        if (gender !== "" && vornameValue !== "" && price !== "" && mitOhn !== "false" && jahrgang !== [] && (model !== null && model !== "modell")) {
+            setThirdStep2(true)
+        }
+        else {
+            setThirdStep2(false)
+        }
+    }
+
+    const [mehrLadenModal, setMehrLadenModal] = useState(false)
+    const [modalFormSubmited, setModalFormSubmited] = useState(false)
+
+    const openMehrLadenModal = () => {
+        if (modalFormSubmited === false) {
+            setMehrLadenModal(true)
+        }
+        else {
+            setEndKrankenMap(endKrankenMap + 3)
+        }
+
+    }
+
+
+    const handleModalSubmit = (e) => {
+        e.preventDefault()
+        setMehrLadenModal(false)
+        setModalFormSubmited(true)
+        setEndKrankenMap(endKrankenMap + 3)
+    }
 
     return (
         <>
@@ -231,7 +287,7 @@ function KrankenkasseSteps() {
                                             <div className='krankenSelectDropdown'>
 
                                                 {filter.map(element => {
-                                         
+
                                                     return (
                                                         <div className='selectOptionStyle' key={uuidv4()} onClick={handleInput} value={element.plz + " " + element.ort} data-region={element.region} data-kanton={element.kanton} data-ort={element.ort} data-plz={element.plz} data-commune={element.commune}>
                                                             {element.plz + " " + element.ort + (element.ort === element.commune ? '' : (" (" + element.commune + ")"))}
@@ -246,11 +302,14 @@ function KrankenkasseSteps() {
 
                                     <select className='krankenSelectStyle form-select' onChange={(e) => setInsuranceNum(e.target.value)} name="" id="insurances">
                                         <option value="" ></option>
-                                        {insurances.map(element => {
-                                            return (
-                                                <option key={element.id} value={element.number} >{element.name}</option>
-                                            )
-                                        })}
+                                        {
+
+                                            insurances.map(element => {
+                                                i++
+                                                return (
+                                                    <option key={i} value={element.number} >{element.name}</option>
+                                                )
+                                            })}
                                     </select>
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-4">
@@ -280,13 +339,13 @@ function KrankenkasseSteps() {
                                     <div className="row gy-4 gx-0 gx-md-4" >
                                         <div className="col-12 col-sm-6">
                                             <label htmlFor="yesFirstRadio" className='container1 w-100'>
-                                                <input type="radio" id='yesFirstRadio' name='radio' hidden />
+                                                <input type="radio" id='yesFirstRadio' onChange={(e) => { setSecondStepFirstRadio(true) }} name='radio' hidden />
                                                 <span className='checkmark'>Ja, ich bin bereits versichert</span>
                                             </label>
                                         </div>
                                         <div className="col-12 col-sm-6">
                                             <label htmlFor="noFirstRadio" className='container1 w-100'>
-                                                <input type="radio" id='noFirstRadio' name='radio' hidden />
+                                                <input type="radio" id='noFirstRadio' onChange={(e) => { setSecondStepFirstRadio(true) }} name='radio' hidden />
                                                 <span className='checkmark'>
                                                     Nein, neu in der Schweiz
                                                 </span>
@@ -329,13 +388,13 @@ function KrankenkasseSteps() {
                                                 <div>
                                                     <div className="row gy-4 gx-0 gx-md-4">
                                                         <div className="col-12 col-sm-6">
-                                                            <label htmlFor="familieModel" className='container1 w-100'>
+                                                            <label onChange={(e) => { setFamilySituation2('familie') }} htmlFor="familieModel" className='container1 w-100'>
                                                                 <input type="radio" id='familieModel' value="familieModel" name='radio2' hidden />
                                                                 <span className='checkmark'>Gesamte Familie gleiches Modell</span>
                                                             </label>
                                                         </div>
                                                         <div className="col-12 col-sm-6">
-                                                            <label htmlFor="individualModel" className='container1 w-100'>
+                                                            <label onChange={(e) => { setFamilySituation2('individual') }} htmlFor="individualModel" className='container1 w-100'>
                                                                 <input type="radio" id='individualModel' value="individualModel" name='radio2' hidden />
                                                                 <span className='checkmark'>Individuelle Modelle</span>
                                                             </label>
@@ -348,7 +407,7 @@ function KrankenkasseSteps() {
                                 </div>
                             </div>
                             <div className='pt-5'>
-                                <button className='nextBtnKranken' type='button' onClick={(e) => { setThirdStep(true) }}>Weiter</button>
+                                <button className='nextBtnKranken' type='button' onClick={toThirdStep}>Weiter</button>
                             </div>
                         </div>
 
@@ -369,19 +428,19 @@ function KrankenkasseSteps() {
                             <div className='krankenStepsBox'>
                                 <div className="row g-4">
                                     <div className="col-6 col-md-3">
-                                        <label htmlFor="maleRadio" className='container1 w-100'>
+                                        <label onChange={() => { setGender('male') }} htmlFor="maleRadio" className='container1 w-100'>
                                             <input type="radio" id='maleRadio' name='gender' hidden />
                                             <span className='checkmark'>Herr</span>
                                         </label>
                                     </div>
                                     <div className="col-6 col-md-3">
-                                        <label htmlFor="femaleRadio" className='container1 w-100'>
+                                        <label onChange={() => { setGender('female') }} htmlFor="femaleRadio" className='container1 w-100'>
                                             <input type="radio" id='femaleRadio' name='gender' hidden />
                                             <span className='checkmark'>Frau</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-md-6">
-                                        <input type="text" name="" id="" placeholder='Vorname & Nachname' className='krankenInputStyle krankenInputStepStyle p-3' />
+                                        <input type="text" name="" id="" onChange={(e) => setVornameValue(e.target.value)} placeholder='Vorname & Nachname' className='krankenInputStyle krankenInputStepStyle p-3' />
                                     </div>
                                     <div className="col-12 col-md-6">
                                         <input type="number" name='Jahrgang'
@@ -392,7 +451,7 @@ function KrankenkasseSteps() {
                                             className='krankenInputStyle krankenInputStepStyle p-3' />
                                     </div>
                                     <div className="col-12 col-md-6">
-                                        <select disabled={checkJahr ? false : "disabled"} name="franchise" id="" className='krankenInputStyle form-select krankenInputStepStyle p-3'>
+                                        <select onChange={(e) => { setPrice(e.target.value) }} disabled={checkJahr ? false : "disabled"} name="franchise" id="" className='krankenInputStyle form-select krankenInputStepStyle p-3'>
                                             <option value="" defaultValue=''>Franchise</option>
                                             {isChild && (
                                                 under18Price.map((numri) =>
@@ -408,13 +467,13 @@ function KrankenkasseSteps() {
                                     </div>
                                     <div className="col-12 col-md-6">
                                         <label htmlFor="mit" className='container1 w-100'>
-                                            <input type="radio" id='mit' value={"MIT-UNF"} data-accident='asd' name='accident' hidden />
+                                            <input onChange={() => { setMitOhn(true) }} type="radio" id='mit' value={"MIT-UNF"} data-accident='asd' name='accident' hidden />
                                             <span className='checkmark'>mit Unfall</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-md-6">
                                         <label htmlFor="ohne" className='container1 w-100'>
-                                            <input type="radio" value={"OHN-UNF"} data-accident='asd' id='ohne' name='accident' hidden />
+                                            <input onChange={() => { setMitOhn(true) }} type="radio" value={"OHN-UNF"} data-accident='asd' id='ohne' name='accident' hidden />
                                             <span className='checkmark'>ohne Unfall</span>
                                         </label>
                                     </div>
@@ -479,7 +538,7 @@ function KrankenkasseSteps() {
                             </div>
                         </div>
                         <div className='pt-5'>
-                            <button className='nextBtnKranken' type='button' onClick={(e) => { setThirdStep2(true) }}> ANGEBOTE LADEN </button>
+                            <button className='nextBtnKranken' type={`${thirdStep2 ? 'submit' : 'button'}`} onClick={toThirdStep2}> ANGEBOTE LADEN </button>
                         </div>
                     </div>
 
@@ -487,73 +546,36 @@ function KrankenkasseSteps() {
                 {thirdStep2 && (
                     <div className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
                         <div className="row g-3 justify-content-center pt-5">
-                            <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="krankenOfferStyle p-4">
-                                    <div className='pt-4'>
-                                        <span className='fw-bold'>EGK</span>
+                            {
+                                krankenkasse.slice(0, endKrankenMap).map((element) =>
+                                    <div key={element.id} className="col-12 col-sm-6 col-lg-4">
+                                        <div className="krankenOfferStyle p-4">
+                                            <div className='pt-4'>
+                                                <span className='fw-bold'>{element.name}</span>
+                                            </div>
+                                            <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
+                                            <div>
+                                                <span className='fw-500'>{element.tarif}</span>
+                                            </div>
+                                            <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
+                                            <div className='pb-3'>
+                                                <span className='fw-500'>CHF <span className='fw-bold'>{element.price}</span>/ Mt.</span>
+                                            </div>
+                                            <div>
+                                                <span className='fw-500'>sparen Sie CHF<span className='fw-bold' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
+                                            </div>
+                                            <div className='pt-4 pb-4'>
+                                                <button className='nextBtnKranken' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                    <div>
-                                        <span className='fw-500'>EGK</span>
-                                    </div>
-                                    <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                    <div className='pb-3'>
-                                        <span className='fw-500'>CHF <span className='fw-bold'>195.50</span>/ Mt.</span>
-                                    </div>
-                                    <div>
-                                        <span className='fw-500'>sparen Sie CHF<span className='fw-bold' style={{ color: "#208fdf" }}> 937.20</span> / Jahr</span>
-                                    </div>
-                                    <div className='pt-4 pb-4'>
-                                        <button className='nextBtnKranken' type='button' onClick={(e) => { setFourthStep(true) }}> ANGEBOTE ANZEIGEN </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="krankenOfferStyle p-4">
-                                    <div className='pt-4'>
-                                        <span className='fw-bold'>Atupri</span>
-                                    </div>
-                                    <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                    <div>
-                                        <span className='fw-500'>Grundversicherung</span>
-                                    </div>
-                                    <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                    <div className='pb-3'>
-                                        <span className='fw-500'>CHF <span className='fw-bold'>195.50</span>/ Mt.</span>
-                                    </div>
-                                    <div>
-                                        <span className='fw-500'>sparen Sie CHF<span className='fw-bold' style={{ color: "#208fdf" }}> 937.20</span> / Jahr</span>
-                                    </div>
-                                    <div className='pt-4 pb-4'>
-                                        <button className='nextBtnKranken' type='button'> ANGEBOTE ANZEIGEN </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="krankenOfferStyle p-4">
-                                    <div className='pt-4'>
-                                        <span className='fw-bold'>Assura</span>
-                                    </div>
-                                    <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                    <div>
-                                        <span className='fw-500'>Basis</span>
-                                    </div>
-                                    <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                    <div className='pb-3'>
-                                        <span className='fw-500'>CHF <span className='fw-bold'>195.50</span>/ Mt.</span>
-                                    </div>
-                                    <div>
-                                        <span className='fw-500'>sparen Sie CHF<span className='fw-bold' style={{ color: "#208fdf" }}> 937.20</span> / Jahr</span>
-                                    </div>
-                                    <div className='pt-4 pb-4'>
-                                        <button className='nextBtnKranken' type='button'> ANGEBOTE ANZEIGEN </button>
-                                    </div>
-                                </div>
-                            </div>
+                                )
+                            }
                         </div>
                         <div className='pt-5'>
-                            <button className='nextBtnKranken' type='submit' > Mehr laden </button>
+                            <button className='nextBtnKranken' type='button' onClick={openMehrLadenModal} > Mehr laden </button>
                         </div>
+
                     </div>
                 )}
                 {fourthStep && (
@@ -759,6 +781,94 @@ function KrankenkasseSteps() {
                     </div>
                 )}
             </form>
+            {mehrLadenModal && (
+                <div className="mehrLadenModal">
+                    <div className="mehrLadenModalContent p-4">
+                        <div className='text-end'>
+                            <span style={{ cursor: "pointer" }} onClick={() => { setMehrLadenModal(false) }}>
+                                <img src={XBtn} alt="" />
+                            </span>
+                            
+                        </div>
+                        <div className='text-start'>
+                            <div className='py-3'>
+                                <span className='fw-600'>WIE KÖNNEN WIR KONTAKT MIT IHNEN AUFNEHMEN?</span>
+                            </div>
+                            <form id='modalForm' onSubmit={handleModalSubmit} className='m-0'>
+                                <div className="row g-4">
+                                    <div className="col-12 col-sm-6">
+                                        <div className='pb-2'>
+                                            <span style={{ color: "#464646" }} className='fw-500'>Vorname</span>
+                                        </div>
+                                        <div>
+                                            <input required type="text" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6">
+                                        <div className='pb-2'>
+                                            <span style={{ color: "#464646" }} className='fw-500'>Nachname</span>
+                                        </div>
+                                        <div>
+                                            <input required type="text" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6">
+                                        <div className='pb-2'>
+                                            <span style={{ color: "#464646" }} className='fw-500'>Nationalität</span>
+                                        </div>
+                                        <div>
+                                            <select required name="" id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6">
+                                        <div className='pb-2'>
+                                            <span style={{ color: "#464646" }} className='fw-500'>Aufenthaltsbewilligung</span>
+                                        </div>
+                                        <div>
+                                            <select required name="" id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6">
+                                        <div className='pb-2'>
+                                            <span style={{ color: "#464646" }} className='fw-500'>Adresse</span>
+                                        </div>
+                                        <div>
+                                            <input required type="text" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6">
+                                        <div className='pb-2'>
+                                            <span style={{ color: "#464646" }} className='fw-500'>E-Mail-Adresse</span>
+                                        </div>
+                                        <div>
+                                            <input required type="email" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6">
+                                        <div className='pb-2'>
+                                            <span style={{ color: "#464646" }} className='fw-500'>Telefonnummer</span>
+                                        </div>
+                                        <div>
+                                            <input required type="number" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                        </div>
+                                    </div>
+                                    <div className='text-center'>
+                                        <button form='modalForm' className='nextBtnKranken' type='submit'>Einreichen</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     )
 }
