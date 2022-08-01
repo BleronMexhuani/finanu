@@ -11,6 +11,7 @@ var connection = mysql.createConnection({
 });
 
 const query = util.promisify(connection.query).bind(connection);
+
 var krankenkasse = {
 
     getInsurance: getInsurance = async (req, res) => {
