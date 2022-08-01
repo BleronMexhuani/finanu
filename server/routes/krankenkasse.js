@@ -1,16 +1,14 @@
-import express from "express";
+var express = require("express");
 
-import { getInsurance,getRegions ,getActualModel,compareInputs} from '../controllers/krankenkasse.js';
+var krankenkasse = require('../controllers/krankenkasse.js');
 
 const router = express.Router();
 
+router.get('/insurances/:plz/:ort/:commune', krankenkasse.getInsurance);
+router.get('/regions', krankenkasse.getRegions);
+router.get('/actualmodel/:id', krankenkasse.getActualModel);
+router.get('/compareInputs/:versicherer/:kanton/:region/:jahrgang/:accident/:tariftyp/:franchise/:model', krankenkasse.compareInputs);
 
-router.get('/insurances/:plz/:ort/:commune', getInsurance);
-router.get('/regions', getRegions);
-router.get('/actualmodel/:id', getActualModel);
-router.get('/compareInputs/:versicherer/:kanton/:region/:jahrgang/:accident/:tariftyp/:franchise/:model',compareInputs);
-
-
-export default router;
+module.exports = router
 
 
