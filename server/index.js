@@ -1,11 +1,11 @@
-import express from 'express';
-import cors from 'cors';
+var express = require('express');
+var cors = require('cors');
 
-import krankenkasse_calculator from './routes/krankenkasse.js';
+var krankenkasse_calculator = require('./routes/krankenkasse.js');
 
 const app = express()
 
-app.use(cors({origin: true, credentials: true}));
+app.use(cors({ origin: true, credentials: true }));
 
 const port = 5000
 
