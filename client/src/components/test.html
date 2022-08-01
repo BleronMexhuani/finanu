@@ -1,0 +1,1253 @@
+<div class="row">
+    <div class="col-md-5 my-auto" id="morgage_box">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="house_price" placeholder="House price:">
+                    <label for="floatingInput"
+                        style="background-color: transparent !important; border: none !important;">Gesamtkaufpreis:</label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="early_income" placeholder="early_income">
+                    <label for="floatingInput"
+                        style="background-color: transparent !important; border: none !important;">Jährliches
+                        Einkommen:</label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="capital" placeholder="capital">
+                    <label for="floatingInput"
+                        style="background-color: transparent !important; border: none !important;">Eigenkapital:</label>
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <!-- <div class="form-floating">
+                    <input type="number" class="form-control" id="interest_rate" placeholder="interest_rate" value="1">
+                    <label for="floatingInput">Angenommener Zinssatz:</label>
+                </div> -->
+                <!-- <div class="col-md-12 xs-12">
+                    <div style="overflow: hidden;">
+                        <label for="customRange4" id="risk0" class="form-label" style="float: left;">Angenommener Zinssatz:</label>
+                        <label for="customRange4" id="risk" class="form-label" style="float: right;"></label>
+                    </div>
+                    <input type="range" onchange="risk()" class="form-range" value="2" step="1" id="customRange6">
+                </div> -->
+                <div class="col-md-12 xs-12 mb-3">
+                    <div style="overflow: hidden;">
+                        <label for="customRange4" id="risk0" class="form-label" style="float: left;">Angenommener
+                            Zinssatz:</label>
+                        <label for="customRange4" id="risk" class="form-label" style="float: right;"></label>
+                    </div>
+                    <input type="range" onchange="risk()" class="form-range" value="1" step="0.05" id="interest_rate">
+                </div>
+                <!-- <div style="overflow: hidden;">
+                    <label for="customRange4" id="interest_rate" class="form-label" style="float: left;">Risikostufe</label>
+                    <label for="customRange4" id="interest_rate0" class="form-label" style="float: right;"></label>
+                </div>
+                
+                <input type="range" onchange="risk()" class="form-range" value="1" step="0.05" id="interest_rate"> -->
+                <span class="text-danger" id="error_interest"></span>
+
+                <script>
+                    $(document).ready(function () {
+                        $("#interest_rate").attr({
+                            "max": 2,        // substitute your own
+                            "min": 0.4          // values (or variables) here
+                        });
+                        document.getElementById('interest_rate').value = 1;
+                        document.getElementById('risk').innerHTML = '1 %';
+                    });
+                    function risk() {
+                        var risk_level = document.getElementById('interest_rate').value;
+                        document.getElementById('risk').innerHTML = risk_level + ' %';
+                    }
+                </script>
+            </div>
+            <div class="col-md-12 mb-3">
+                <button class="btn" id="button_morgage" onclick="calculate()">Berechnung</button>
+            </div>
+            <div class="col-md-12 mx-auto" style="text-align: center;">
+                <span class="text-danger" id="error"></span>
+                <span class="text-success" id="success"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7 my-auto" id="results_mortgage">
+        <img src="https://finanu.ch/wp-content/uploads/2021/09/image12.png" alt="">
+    </div>
+    <div class="col-md-12" style="padding-top:90px;" id="resultss"></div>
+    <div class="col-md-12" id="morgage_results2">
+        <div id="content_mortgage">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="border-bottom: 2px solid #2082df;">Kosten im Detail</h2>
+                </div>
+                <div class="col-md-12">
+                    <div style="float: left;">
+                        <h5>Zinsen</h5>
+                    </div>
+                    <div style="float: right; padding-right: 20px;">
+                        <h5 class="result_morgage" id="zinsen"></h5>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div style="float: left;">
+                        <h5>Amortisation</h5>
+                    </div>
+                    <div style="float: right; padding-right: 20px;">
+                        <h5 class="result_morgage" id="amortisation"></h5>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div style="float: left;">
+                        <h5><b>Monatliche Zahlung</b></h5>
+                    </div>
+                    <div style="float: right; padding-right: 20px;">
+                        <h5 class="result_morgage"><b id="monatliche-insgosamt"></b></h5>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8 col-8">
+                            <div style="float: left;">
+                                <h5>Nebenkosten (Kann von Liegenschaft zu Liegenschaft stark variieren, deshalb Rechnen
+                                    Banken mit ca. 1% des Liegenschaftpreises pro Jahr)</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4">
+                            <div style="float: right; padding-right: 20px;">
+                                <h5 class="result_morgage" id="nebenkosten"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="border-bottom: 2px solid #2082df;">Berechnung im Detail</h2>
+                </div>
+                <div class="col-md-12">
+                    <div style="float: left;">
+                        <h5>Hypothek</h5>
+                    </div>
+                    <div style="float: right; padding-right: 20px;">
+                        <h5 class="result_morgage" id="hypothek"></h5>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div style="float: left;">
+                        <h5>Eigenmittel</h5>
+                    </div>
+                    <div style="float: right; padding-right: 20px;">
+                        <h5 class="result_morgage" id="eigenmittel"></h5>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div style="float: left;">
+                        <h5>Tragbarkeit</h5>
+                    </div>
+                    <div style="float: right; padding-right: 20px;">
+                        <h5 class="result_morgage" id="tragbarkeit"></h5>
+                    </div>
+                </div>
+                <div class="col-md-12" style="text-align: right; padding-right: 20px;">
+                    <button class="btn" id="haushypothekbtn"><img
+                            src="https://finanu.ch/wp-content/uploads/2021/12/Group-9.png" alt=""> Jetzt
+                        anfragen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-auto" id="button_results" style="display: none;">
+
+    </div>
+
+    <style>
+        #button_results {
+            padding-top: 2%;
+        }
+
+        #haushypothekbtn {
+            background-color: #358ACA !important;
+            border: 1px solid #358ACA !important;
+            color: #fff !important;
+            border-radius: 10px !important;
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #haushypothekbtn {
+                background-color: #358ACA !important;
+                border: 1px solid #358ACA !important;
+                color: #fff !important;
+                border-radius: 10px !important;
+                width: 60%;
+            }
+        }
+
+        #haushypothekbtn:hover {
+            background-color: #7dceea !important;
+            border: 1px solid #7dceea !important;
+            color: #fff !important;
+            border-radius: 10px !important;
+        }
+    </style>
+</div>
+<script>
+    let house_price = '';
+    let early_income = '';
+    let capital = '';
+    let interest_rate = '';
+
+    var input = document.getElementById('house_price');
+    var currentValue;
+
+    input.addEventListener('input', function (event) {
+        var cursorPosition = getCaretPosition(input);
+        var valueBefore = input.value;
+        var lengthBefore = input.value.length;
+        var specialCharsBefore = getSpecialCharsOnSides(input.value);
+        var number = removeThousandSeparators(input.value);
+
+        if (input.value == '') {
+            return;
+        }
+
+        input.value = formatNumber(number.replace(getCommaSeparator(), '.'));
+
+        // if deleting the comma, delete it correctly
+        if (currentValue == input.value && currentValue == valueBefore.substr(0, cursorPosition) + getThousandSeparator() + valueBefore.substr(cursorPosition)) {
+            input.value = formatNumber(removeThousandSeparators(valueBefore.substr(0, cursorPosition - 1) + valueBefore.substr(cursorPosition)));
+            cursorPosition--;
+        }
+
+        // if entering comma for separation, leave it in there (as well support .000)
+        var commaSeparator = getCommaSeparator();
+        if (valueBefore.endsWith(commaSeparator) || valueBefore.endsWith(commaSeparator + '0') || valueBefore.endsWith(commaSeparator + '00') || valueBefore.endsWith(commaSeparator + '000')) {
+            input.value = input.value + valueBefore.substring(valueBefore.indexOf(commaSeparator));
+        }
+
+        // move cursor correctly if thousand separator got added or removed
+        var specialCharsAfter = getSpecialCharsOnSides(input.value);
+        if (specialCharsBefore[0] < specialCharsAfter[0]) {
+            cursorPosition += specialCharsAfter[0] - specialCharsBefore[0];
+        } else if (specialCharsBefore[0] > specialCharsAfter[0]) {
+            cursorPosition -= specialCharsBefore[0] - specialCharsAfter[0];
+        }
+        setCaretPosition(input, cursorPosition);
+
+        currentValue = input.value;
+    });
+
+    function getSpecialCharsOnSides(x, cursorPosition) {
+        var specialCharsLeft = x.substring(0, cursorPosition).replace(/[0-9]/g, '').length;
+        var specialCharsRight = x.substring(cursorPosition).replace(/[0-9]/g, '').length;
+        return [specialCharsLeft, specialCharsRight]
+    }
+
+    function formatNumber(x) {
+        return getNumberFormat().format(x);
+    }
+
+    function removeThousandSeparators(x) {
+        return x.toString().replace(new RegExp(escapeRegExp(getThousandSeparator()), 'g'), "");
+    }
+
+    function getThousandSeparator() {
+        return getNumberFormat().format('1000').replace(/[0-9]/g, '')[0];
+    }
+
+    function getCommaSeparator() {
+        return getNumberFormat().format('0.01').replace(/[0-9]/g, '')[0];
+    }
+
+    function getNumberFormat() {
+        return new Intl.NumberFormat('it-CH');
+    }
+
+    /* From: http://stackoverflow.com/a/6969486/496992 */
+    function escapeRegExp(str) {
+        return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+    }
+
+    /*
+    ** Returns the caret (cursor) position of the specified text field.
+    ** Return value range is 0-oField.value.length.
+    ** From: http://stackoverflow.com/a/2897229/496992
+    */
+    function getCaretPosition(oField) {
+        // Initialize
+        var iCaretPos = 0;
+
+        // IE Support
+        if (document.selection) {
+
+            // Set focus on the element
+            oField.focus();
+
+            // To get cursor position, get empty selection range
+            var oSel = document.selection.createRange();
+
+            // Move selection start to 0 position
+            oSel.moveStart('character', -oField.value.length);
+
+            // The caret position is selection length
+            iCaretPos = oSel.text.length;
+        }
+
+        // Firefox support
+        else if (oField.selectionStart || oField.selectionStart == '0')
+            iCaretPos = oField.selectionStart;
+
+        // Return results
+        return iCaretPos;
+    }
+
+    /* From: http://stackoverflow.com/a/512542/496992 */
+    function setCaretPosition(elem, caretPos) {
+        if (elem != null) {
+            if (elem.createTextRange) {
+                var range = elem.createTextRange();
+                range.move('character', caretPos);
+                range.select();
+            }
+            else {
+                if (elem.selectionStart) {
+                    elem.focus();
+                    elem.setSelectionRange(caretPos, caretPos);
+                }
+                else
+                    elem.focus();
+            }
+        }
+    }
+
+    var input2 = document.getElementById('early_income');
+    var currentValue;
+
+    input2.addEventListener('input', function (event) {
+        var cursorPosition = getCaretPosition(input2);
+        var valueBefore = input2.value;
+        var lengthBefore = input2.value.length;
+        var specialCharsBefore = getSpecialCharsOnSides(input2.value);
+        var number = removeThousandSeparators(input2.value);
+
+        if (input2.value == '') {
+            return;
+        }
+
+        input2.value = formatNumber(number.replace(getCommaSeparator(), '.'));
+
+        // if deleting the comma, delete it correctly
+        if (currentValue == input2.value && currentValue == valueBefore.substr(0, cursorPosition) + getThousandSeparator() + valueBefore.substr(cursorPosition)) {
+            input2.value = formatNumber(removeThousandSeparators(valueBefore.substr(0, cursorPosition - 1) + valueBefore.substr(cursorPosition)));
+            cursorPosition--;
+        }
+
+        // if entering comma for separation, leave it in there (as well support .000)
+        var commaSeparator = getCommaSeparator();
+        if (valueBefore.endsWith(commaSeparator) || valueBefore.endsWith(commaSeparator + '0') || valueBefore.endsWith(commaSeparator + '00') || valueBefore.endsWith(commaSeparator + '000')) {
+            input2.value = input2.value + valueBefore.substring(valueBefore.indexOf(commaSeparator));
+        }
+
+        // move cursor correctly if thousand separator got added or removed
+        var specialCharsAfter = getSpecialCharsOnSides(input2.value);
+        if (specialCharsBefore[0] < specialCharsAfter[0]) {
+            cursorPosition += specialCharsAfter[0] - specialCharsBefore[0];
+        } else if (specialCharsBefore[0] > specialCharsAfter[0]) {
+            cursorPosition -= specialCharsBefore[0] - specialCharsAfter[0];
+        }
+        setCaretPosition(input2, cursorPosition);
+
+        currentValue = input2.value;
+    });
+
+    function getSpecialCharsOnSides(x, cursorPosition) {
+        var specialCharsLeft = x.substring(0, cursorPosition).replace(/[0-9]/g, '').length;
+        var specialCharsRight = x.substring(cursorPosition).replace(/[0-9]/g, '').length;
+        return [specialCharsLeft, specialCharsRight]
+    }
+
+    function formatNumber(x) {
+        return getNumberFormat().format(x);
+    }
+
+    function removeThousandSeparators(x) {
+        return x.toString().replace(new RegExp(escapeRegExp(getThousandSeparator()), 'g'), "");
+    }
+
+    function getThousandSeparator() {
+        return getNumberFormat().format('1000').replace(/[0-9]/g, '')[0];
+    }
+
+    function getCommaSeparator() {
+        return getNumberFormat().format('0.01').replace(/[0-9]/g, '')[0];
+    }
+
+    function getNumberFormat() {
+        return new Intl.NumberFormat('it-CH');
+    }
+
+    /* From: http://stackoverflow.com/a/6969486/496992 */
+    function escapeRegExp(str) {
+        return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+    }
+
+    /*
+    ** Returns the caret (cursor) position of the specified text field.
+    ** Return value range is 0-oField.value.length.
+    ** From: http://stackoverflow.com/a/2897229/496992
+    */
+    function getCaretPosition(oField) {
+        // Initialize
+        var iCaretPos = 0;
+
+        // IE Support
+        if (document.selection) {
+
+            // Set focus on the element
+            oField.focus();
+
+            // To get cursor position, get empty selection range
+            var oSel = document.selection.createRange();
+
+            // Move selection start to 0 position
+            oSel.moveStart('character', -oField.value.length);
+
+            // The caret position is selection length
+            iCaretPos = oSel.text.length;
+        }
+
+        // Firefox support
+        else if (oField.selectionStart || oField.selectionStart == '0')
+            iCaretPos = oField.selectionStart;
+
+        // Return results
+        return iCaretPos;
+    }
+
+    /* From: http://stackoverflow.com/a/512542/496992 */
+    function setCaretPosition(elem, caretPos) {
+        if (elem != null) {
+            if (elem.createTextRange) {
+                var range = elem.createTextRange();
+                range.move('character', caretPos);
+                range.select();
+            }
+            else {
+                if (elem.selectionStart) {
+                    elem.focus();
+                    elem.setSelectionRange(caretPos, caretPos);
+                }
+                else
+                    elem.focus();
+            }
+        }
+    }
+
+    var input3 = document.getElementById('capital');
+    var currentValue;
+
+    input3.addEventListener('input', function (event) {
+        var cursorPosition = getCaretPosition(input3);
+        var valueBefore = input3.value;
+        var lengthBefore = input3.value.length;
+        var specialCharsBefore = getSpecialCharsOnSides(input3.value);
+        var number = removeThousandSeparators(input3.value);
+
+        if (input3.value == '') {
+            return;
+        }
+
+        input3.value = formatNumber(number.replace(getCommaSeparator(), '.'));
+
+        // if deleting the comma, delete it correctly
+        if (currentValue == input3.value && currentValue == valueBefore.substr(0, cursorPosition) + getThousandSeparator() + valueBefore.substr(cursorPosition)) {
+            input3.value = formatNumber(removeThousandSeparators(valueBefore.substr(0, cursorPosition - 1) + valueBefore.substr(cursorPosition)));
+            cursorPosition--;
+        }
+
+        // if entering comma for separation, leave it in there (as well support .000)
+        var commaSeparator = getCommaSeparator();
+        if (valueBefore.endsWith(commaSeparator) || valueBefore.endsWith(commaSeparator + '0') || valueBefore.endsWith(commaSeparator + '00') || valueBefore.endsWith(commaSeparator + '000')) {
+            input3.value = input3.value + valueBefore.substring(valueBefore.indexOf(commaSeparator));
+        }
+
+        // move cursor correctly if thousand separator got added or removed
+        var specialCharsAfter = getSpecialCharsOnSides(input3.value);
+        if (specialCharsBefore[0] < specialCharsAfter[0]) {
+            cursorPosition += specialCharsAfter[0] - specialCharsBefore[0];
+        } else if (specialCharsBefore[0] > specialCharsAfter[0]) {
+            cursorPosition -= specialCharsBefore[0] - specialCharsAfter[0];
+        }
+        setCaretPosition(input3, cursorPosition);
+
+        currentValue = input3.value;
+    });
+
+    function getSpecialCharsOnSides(x, cursorPosition) {
+        var specialCharsLeft = x.substring(0, cursorPosition).replace(/[0-9]/g, '').length;
+        var specialCharsRight = x.substring(cursorPosition).replace(/[0-9]/g, '').length;
+        return [specialCharsLeft, specialCharsRight]
+    }
+
+    function formatNumber(x) {
+        return getNumberFormat().format(x);
+    }
+
+    function removeThousandSeparators(x) {
+        return x.toString().replace(new RegExp(escapeRegExp(getThousandSeparator()), 'g'), "");
+    }
+
+    function getThousandSeparator() {
+        return getNumberFormat().format('1000').replace(/[0-9]/g, '')[0];
+    }
+
+    function getCommaSeparator() {
+        return getNumberFormat().format('0.01').replace(/[0-9]/g, '')[0];
+    }
+
+    function getNumberFormat() {
+        return new Intl.NumberFormat('it-CH');
+    }
+
+    /* From: http://stackoverflow.com/a/6969486/496992 */
+    function escapeRegExp(str) {
+        return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+    }
+
+    /*
+    ** Returns the caret (cursor) position of the specified text field.
+    ** Return value range is 0-oField.value.length.
+    ** From: http://stackoverflow.com/a/2897229/496992
+    */
+    function getCaretPosition(oField) {
+        // Initialize
+        var iCaretPos = 0;
+
+        // IE Support
+        if (document.selection) {
+
+            // Set focus on the element
+            oField.focus();
+
+            // To get cursor position, get empty selection range
+            var oSel = document.selection.createRange();
+
+            // Move selection start to 0 position
+            oSel.moveStart('character', -oField.value.length);
+
+            // The caret position is selection length
+            iCaretPos = oSel.text.length;
+        }
+
+        // Firefox support
+        else if (oField.selectionStart || oField.selectionStart == '0')
+            iCaretPos = oField.selectionStart;
+
+        // Return results
+        return iCaretPos;
+    }
+
+    /* From: http://stackoverflow.com/a/512542/496992 */
+    function setCaretPosition(elem, caretPos) {
+        if (elem != null) {
+            if (elem.createTextRange) {
+                var range = elem.createTextRange();
+                range.move('character', caretPos);
+                range.select();
+            }
+            else {
+                if (elem.selectionStart) {
+                    elem.focus();
+                    elem.setSelectionRange(caretPos, caretPos);
+                }
+                else
+                    elem.focus();
+            }
+        }
+    }
+
+
+
+    $('#house_price').on('input', function () {
+        house_price = $('#house_price').val().replace(/’/g, '');
+    });
+
+    $('#early_income').on('input', function () {
+        early_income = $('#early_income').val().replace(/’/g, '');
+    });
+
+    $('#capital').on('input', function () {
+        capital = $('#capital').val().replace(/’/g, '');
+    });
+
+    $('#interest_rate').on('input', function () {
+        interest_rate = $('#interest_rate').val() / 100;
+    });
+
+    function calculate() {
+        //             let pageHeight = window.innerHeight;
+        // // window.scrollBy(0, pageHeight);
+        // window.scrollBy({
+        //     top: pageHeight,
+        //     behavior : "smooth"
+        // })
+        //console.log(document.getElementById('interest_rate').value);
+        window.location.href = "#resultss";
+
+        if (house_price == '' || early_income == '' || capital == '' || $('#interest_rate').val() == '') {
+            document.getElementById('error').innerHTML = 'Alle Felder sind erforderlich';
+            document.getElementById('morgage_results2').style = 'display: none';
+        } else if ($('#interest_rate').val() < 0.4 || $('#interest_rate').val() > 2) {
+            document.getElementById('error_interest').innerHTML = 'Zinssatz: ab 0,45 % bis 2,0 %';
+            document.getElementById('morgage_results2').style = 'display: none';
+        } else if (house_price == capital) {
+            document.getElementById('success').innerHTML = 'Sie haben genügend eigene Mittel und benötigen keine Hypothek.';
+            document.getElementById('morgage_results2').style = 'display: none';
+        } else {
+            document.getElementById('gesamtkaufpreis_form').value = house_price;
+            document.getElementById('jahrliches_form').value = early_income;
+            document.getElementById('eigenkapital_form').value = capital;
+            document.getElementById('morgage_results2').style = 'display: block';
+            document.getElementById('button_results').style = 'display: block';
+
+            document.getElementById('error').innerHTML = '';
+            document.getElementById('error_interest').innerHTML = '';
+            document.getElementById('success').innerHTML = '';
+            let zinsen = (house_price - capital) * $('#interest_rate').val() / 100 / 12;
+            let amortisation = ((((0.333 - (capital / house_price)) * house_price) / 15) / 12);
+            if (amortisation < 0) {
+                amortisation = 0;
+            }
+            let nebenkosten = (0.01 * house_price) / 12;
+            //let monatliche_insgosamt = zinsen + amortisation + nebenkosten;
+            let monatliche_insgosamt = zinsen + amortisation;
+            let hypothek = house_price - capital;
+            let eigenmittel = (capital / house_price) * 100;
+
+
+            let mortgage = house_price - capital;
+            let mortgage_1 = 0.6666 * house_price * 0.05;
+            let mortgage_2 = 0.1334 * house_price * 0.06;
+
+            let total_interest = mortgage_1 + mortgage_2;
+
+            let other_costs = 0.01 * house_price;
+
+            let tragbarkeit = total_interest + (((0.34 - (capital / house_price)) * house_price) / 15) + other_costs;
+
+            document.getElementById('zinsen').innerHTML = 'CHF ' + numberWithCommas(zinsen.toFixed(2));
+            document.getElementById('amortisation').innerHTML = 'CHF ' + amortisation.toFixed(2);
+            document.getElementById('nebenkosten').innerHTML = 'CHF ' + nebenkosten.toFixed(2);
+            document.getElementById('monatliche-insgosamt').innerHTML = 'CHF ' + numberWithCommas(monatliche_insgosamt.toFixed(2));
+
+            document.getElementById('hypothek').innerHTML = 'CHF ' + numberWithCommas(hypothek);
+
+            if (eigenmittel >= 20) {
+                document.getElementById('eigenmittel').innerHTML = (eigenmittel).toFixed(2) + ' %';
+                document.getElementById('eigenmittel').style = 'color: green !important';
+            } else {
+                document.getElementById('eigenmittel').innerHTML = (eigenmittel).toFixed(2) + ' %';
+                document.getElementById('eigenmittel').style = 'color: red !important';
+            }
+
+            if ((tragbarkeit / early_income * 100).toFixed(2) > 33) {
+                document.getElementById('tragbarkeit').innerHTML = (tragbarkeit / early_income * 100).toFixed(2) + ' %';
+                document.getElementById('tragbarkeit').style = 'color: red !important';
+            } else {
+                document.getElementById('tragbarkeit').innerHTML = (tragbarkeit / early_income * 100).toFixed(2) + ' %';
+                document.getElementById('tragbarkeit').style = 'color: green !important';
+            }
+
+        }
+
+
+    }
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\'");
+    }
+
+</script>
+
+<style>
+    .alignleft {
+        float: left;
+    }
+
+    .alignright {
+        float: right;
+    }
+
+    .result_morgage {
+        border-bottom: 1px solid #2082df;
+    }
+
+    #button_morgage {
+        background-color: #2082df;
+        color: white;
+        width: 50%;
+        height: 50px;
+    }
+
+    #button_morgage:hover {
+        background-color: #7dceea;
+    }
+
+    #morgage_box {
+        border-radius: 25px;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        padding: 5%;
+        background-color: #fff;
+    }
+
+    #results_mortgage {
+        border-radius: 25px;
+        padding: 5%;
+        margin-left: -15px;
+    }
+
+    #results_mortgage img {
+        width: 100%;
+    }
+
+    #morgage_results2 {
+        display: none;
+        border: 1px solid #2082df;
+        margin-top: 5%;
+        padding: 5%;
+        border-radius: 25px;
+    }
+
+    .form-control:focus {
+        border-color: #46494915 !important;
+        box-shadow: 0 0 0 0.2rem rgb(46 49 49 / 15%);
+    }
+
+    .form-control {
+        /*border-color: #2082df !important;*/
+        box-shadow: 0 0 0 0.25rem rgb(46, 49, 49 / 95%) !important;
+        border-radius: 0 !important;
+        /*border: 2px solid #2082df;*/
+        height: 5.0rem !important;
+    }
+
+    @media (min-width: 768px) and (max-width:1100px) {
+        .col-md-5 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" style="padding-left: 2% !important;">
+        <span class="close"><svg height="24" id="Layer_1" fill="#208fdf" style="enable-background:new 0 0 512 512;"
+                version="1.1" viewBox="0 0 512 512" width="24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+            </svg></span>
+        [contact-form-7 id="868" title="Haus Calculator - Form"]
+    </div>
+
+</div>
+<style>
+    /* The Modal (background) */
+    .modal {
+
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 5%;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+
+    }
+
+    /* Modal Content */
+    .modal-content {
+        padding-left: 10%;
+        padding-top: 20px;
+        padding-bottom: 5%;
+        padding-right: 20px;
+        background-color: #fefefe;
+        margin: auto;
+        border: 1px solid #888;
+        width: 40%;
+        border-radius: 7px !important;
+        border: 2px solid #2090DF;
+    }
+
+    /* The Close Button */
+    .close {
+        top: 0 !important;
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .wpcf7 form.invalid .wpcf7-response-output,
+    .wpcf7 form.unaccepted .wpcf7-response-output {
+        border-color: red !important;
+        width: 50% !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        /* Modal Content */
+        .modal-content {
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            padding-right: 20px;
+            background-color: #fefefe;
+            margin: auto;
+            border: 1px solid #888;
+            width: 80% !important;
+        }
+
+        #select-termin {
+            border-color: #7DCEEA;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 15px;
+            width: 100%;
+        }
+    }
+
+    /* Landscape */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+        .modal-content {
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            padding-right: 20px;
+            background-color: #fefefe;
+            margin: auto;
+            border: 1px solid #888;
+            width: 80% !important;
+        }
+
+        #select-termin {
+            border-color: #7DCEEA;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 15px;
+            width: 200px;
+        }
+
+    }
+
+    #button-termin {
+        background-color: #7DCEEA;
+        color: #FFF;
+        border-radius: 15px;
+        border: none !important;
+        transition: 0.4s all ease;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #button-termin:hover {
+        background-color: #208FDF;
+        color: #FFF;
+        border-radius: 5px;
+        border: none !important;
+        transition: 0.4s all ease;
+    }
+
+    #select-termin {
+        border-color: #7DCEEA;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 15px;
+        width: 340px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        outline: 0;
+    }
+
+
+    #input-termin {
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: #7DCEEA;
+    }
+
+    #input-termin:focus {
+        border-color: #208FDF;
+    }
+</style>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("haushypothekbtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<style>
+    .button_zw:focus {
+        outline: 0 !important;
+    }
+
+    .rechsschutz_form_div1 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: small;
+    }
+
+    .rechsschutz_form_div1 img {
+        border: 2px solid #358ACA;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .rechsschutz_form_div1 img:hover {
+        border: 2px solid #358ACA;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    }
+
+
+
+    .rechsschutz_form_div2 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: small;
+    }
+
+    .rechsschutz_form_div2 img {
+        border: 2px solid #358ACA;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .rechsschutz_form_div2 img:hover {
+        border: 2px solid #358ACA;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    }
+
+    .wpcf7-list-item {
+        padding-top: 8%;
+        margin: 0 0 0 0em !important;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+
+        .rechsschutz_form_div1 {
+            border: 1px solid #358ACA;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: left !important;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        #results_mortgage {
+            margin-left: 0;
+            top: 10px;
+        }
+
+        .rechsschutz_form_div1 br {
+            display: none;
+        }
+
+        .rechsschutz_form_div2 br {
+            display: none;
+        }
+
+        .rechsschutz_form_div2 {
+            border: 1px solid #358ACA;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: left !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .rechsschutz_form_div1 img {
+            border: 0px solid #358ACA !important;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 20%;
+            margin-left: 2%;
+        }
+
+        .rechsschutz_form_div2 img {
+            border: 0px solid #358ACA !important;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 20%;
+            margin-left: 2%;
+        }
+
+        .wpcf7-list-item {
+            display: inline-block;
+            margin: 0 0 0 5% !important;
+            padding-top: 8px !important;
+        }
+
+        .rechsschutz_form_div2 img:hover {
+            border: 0px solid #358ACA !important;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+            width: 40%;
+        }
+
+        .highlight1 {
+            border: 4px solid rgb(67, 146, 206) !important;
+            box-shadow: rgba(32, 143, 223, 0.24) 0px 3px 8px !important;
+            cursor: pointer;
+        }
+
+        .highlight {
+            border: 0px solid rgb(255, 255, 255) !important;
+            box-shadow: rgba(255, 255, 255, 0.0) 0px 0px 0px !important;
+            cursor: pointer;
+        }
+
+        .rechsschutz_form_div1 img:hover {
+            border: 0px solid #358ACA;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: rgb(0 0 0 / 35%) 0px 0px 0px !important;
+        }
+
+        .title_rechsschutz {
+            font-size: 25px !important;
+            padding-bottom: 15px;
+        }
+
+        label {
+            font-size: initial;
+        }
+
+        #rechsschutz_form_div_1 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #rechsschutz_form_div_1 div {
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
+
+        .highlightmobile {
+            border: 3px solid rgb(67, 146, 206) !important;
+            box-shadow: rgba(32, 143, 223, 0.24) 0px 3px 8px;
+            cursor: pointer;
+        }
+
+    }
+
+    #rechsschutz_form_div_1 input[type=radio] {
+        display: none;
+    }
+
+    #rechsschutz_form_div_2 input[type=radio] {
+        display: none;
+    }
+
+
+    .highlight {
+        border: 6px solid rgb(67, 146, 206) !important;
+        box-shadow: rgba(32, 143, 223, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+    .highlightdesktop {
+        border: 3px solid rgb(67, 146, 206) !important;
+        box-shadow: rgba(32, 143, 223, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+    #submit_button {
+        display: none;
+        background-color: #358ACA !important;
+        color: #fff;
+        border: none;
+        margin-top: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 30px;
+        border-radius: 10px;
+        outline: none;
+        transition: 0.4s all ease;
+        margin: auto;
+        display: block;
+        background: url(https://finanu.ch/wp-content/uploads/2021/12/Group-9.png) no-repeat left 10px bottom 5px;
+        height: 6vh;
+    }
+
+    html.drdt-dark-mode #myModal #submit_button {
+        background-color: #358ACA !important;
+        color: #fff !important;
+        background: url(https://finanu.ch/wp-content/uploads/2021/12/Group-9.png) no-repeat left 10px bottom 5px !important;
+        height: 6vh !important;
+    }
+
+    #rechsschutz-form {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+    }
+
+    #submit_button:hover {
+        background-color: #7dceea;
+    }
+
+    #frau-icon {
+        background-image: url('https://finanu.ch/wp-content/uploads/2021/08/girl-1.png');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+        border-radius: 5px;
+        background-size: 40px 40px;
+        width: 100%;
+        background-position: center;
+    }
+
+    #frau-icon label {
+        padding-top: 0px;
+        display: none;
+        text-align: center;
+    }
+
+    #herr-icon label {
+        padding-top: 0px;
+        text-align: center;
+        display: none;
+    }
+
+    #firma-icon label {
+        padding-top: 0px;
+        text-align: center;
+        display: none;
+    }
+
+
+    /*#frau-icon input[type="radio"]{*/
+    /*    display: none;*/
+    /*}*/
+
+    #herr-icon {
+        background-image: url('https://finanu.ch/wp-content/uploads/2021/08/man-3.png');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+        border-radius: 5px;
+        background-size: 40px 40px;
+        width: 100%;
+        background-position: center;
+    }
+
+    #firma-icon {
+        background-image: url('https://finanu.ch/wp-content/uploads/2021/09/firma.png');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+        border-radius: 5px;
+        background-size: 40px 40px;
+        width: 100%;
+        background-position: center;
+    }
+
+    /*.wpcf7-list-item-label{*/
+    /*    display: none;*/
+    /*}*/
+    input[type=radio],
+    input[type=checkbox] {
+        box-sizing: border-box;
+        margin-left: 40px !important;
+    }
+
+    @media only screen and (max-width: 1124px) {
+        .modal-content {
+            width: 60%;
+        }
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        //change colour when radio is selected
+        $('.anredeicon input:radio').change(function () {
+            // Only remove the class in the specific `box` that contains the radio
+            $('.anredeicon').removeClass('highlightdesktop');
+            $(this).closest(".anredeicon").addClass('highlightdesktop');
+        });
+
+        $('.anredeicon input:radio').change(function () {
+            // Only remove the class in the specific `box` that contains the radio
+            $('.anredeicon').removeClass('highlightmobile');
+            $(this).closest(".anredeicon").addClass('highlightmobile');
+        });
+    });
+</script>
