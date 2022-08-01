@@ -11,8 +11,9 @@ function App() {
       <div>
         <BrowserRouter>
           <Header />
-          
+
           <Routes>
+            
             <Route exact path="/" element={<MainComponents />} />
             <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
           </Routes>
