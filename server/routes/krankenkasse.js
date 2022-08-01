@@ -2,9 +2,7 @@ var express = require("express");
 
 var krankenkasse = require('../controllers/krankenkasse.js');
 
-
 const router = express.Router();
-
 
 router.get('/insurances/:plz/:ort/:commune', krankenkasse.getInsurance);
 router.get('/regions', krankenkasse.getRegions);

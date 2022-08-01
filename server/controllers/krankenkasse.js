@@ -11,6 +11,7 @@ var connection = mysql.createConnection({
 });
 
 const query = util.promisify(connection.query).bind(connection);
+
 var krankenkasse = {
 
     getInsurance: getInsurance = async (req, res) => {
@@ -132,28 +133,6 @@ var krankenkasse = {
         } catch (error) {
             res.status(404).json({ message: error.message })
         }
-
-
-        data.forEach(element => {
-            if (!Versicherer.includes(element.Versicherer + element.name)) {
-                Versicherer.push(element.Versicherer + element.name);
-                const sumofPramie = data
-                    .filter(({
-                        Versicherer, name, Tarifbezeichnung
-                    }) => Versicherer == element.Versicherer && name == element.name && Tarifbezeichnung == element.Tarifbezeichnung)
-                    .reduce((sum, record) => sum + parseFloat(record.Pramie), 0);
-                final_data.push({
-                    id: element.id_,
-                    Versicherer: element.Versicherer,
-                    name: element.name,
-                    price: sumofPramie,
-                    tarif: element.Tarifbezeichnung
-                });
-            }
-        });
-        res.status(200).json(final_data);
-    } catch (error) {
-        res.status(404).json({ message: error.message })
 
     }
 }
