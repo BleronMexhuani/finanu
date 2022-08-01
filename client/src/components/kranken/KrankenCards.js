@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BeatingHeart from '../../assets/images/beatingHeart.svg'
 import Doctor from '../../assets/images/doctor.svg'
 import Hands from '../../assets/images/handsCross.svg'
@@ -18,6 +18,10 @@ import Lock from "../../assets/images/lock.svg"
 import DocumentLock from "../../assets/images/documentLock.svg"
 
 function KrankenCards() {
+
+    const [isHover, setIsHover] = useState(false)
+    const [isHover1, setIsHover1] = useState(false)
+    const [isHover2, setIsHover2] = useState(false)
     return (
         <div className='blueBgKrankenOverflow pt-5 pt-md-0'>
             <div className='blueBgKranken1 mb-5 pb-5 mb-lg-0 pb-lg-0'>
@@ -151,9 +155,9 @@ function KrankenCards() {
             </div>
             <div>
                 <div className="wrapDiv container-xl px-4 px-xl-0 pt-0 pt-lg-5 mt-0 mt-lg-5 pt-xl-0 mt-xl-0">
-                    <div className="row gy-0 gx-0 gx-sm-4 gx-xl-5 justify-content-center">
-                        <div className="col-12 col-sm-6 col-lg-4 my-4 my-sm-0 my-lg-auto">
-                            <div className="greyBorderDiv p-5 my-0 my-sm-0 my-lg-4">
+                    <div className="row gy-4 gy-lg-0 gx-0 gx-sm-4 gx-xl-5 justify-content-center">
+                        <div className="col-12 col-sm-6 col-lg-4">
+                            <div onMouseEnter={() => {setIsHover(true)}} onMouseLeave = {() => {setIsHover(false)}} className={` ${ isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
                                 <div className='mb-5' style={{ borderBottom: "2px solid #2089D4" }}>
                                     <div className="pb-5">
                                         <img src={DocumentCheck} width={55} alt="" />
@@ -204,11 +208,11 @@ function KrankenCards() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6 col-lg-4">
-                            <div className="blueBgDiv h-100 p-5">
+                        <div onMouseEnter={() => {setIsHover1(true)}} onMouseLeave={() => {setIsHover1(false)}} className="col-12 col-sm-6 col-lg-4">
+                            <div className={` ${ isHover1 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
                                 <div className='mb-5' style={{ borderBottom: "2px solid #fff" }}>
                                     <div className="pb-5">
-                                        <img src={DocumentLock} width={75} alt="" />
+                                        <img src={DocumentLock} width={55} alt="" />
                                     </div>
                                 </div>
                                 <div>
@@ -273,8 +277,8 @@ function KrankenCards() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-7 col-lg-4 my-auto">
-                            <div className="greyBorderDiv p-5 my-4">
+                        <div onMouseEnter={() => {setIsHover2(true)}} onMouseLeave={() => {setIsHover2(false)}} className="col-12 col-sm-7 col-lg-4">
+                            <div className={` ${ isHover2 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
                                 <div className='mb-5' style={{ borderBottom: "2px solid #2089D4" }}>
                                     <div className="pb-5">
                                         <img src={Lock} width={55} alt="" />
