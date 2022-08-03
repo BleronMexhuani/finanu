@@ -2,8 +2,8 @@ import React from 'react'
 import './assets/css/footer.css'
 function Footer() {
     return (
-        <div>
-            <div className="px-4">
+        <>
+            <div className="px-4 px-xl-0">
                 <div className='mt-5 wrapDiv container-xl footerWhiteBgDiv px-4 px-lg-5 py-4'>
                     <div className="row g-0 justify-content-center">
                         <div className="col-12 col-md text-start">
@@ -164,7 +164,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </div >
+        </ >
     )
 }
 

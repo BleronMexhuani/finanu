@@ -50,7 +50,7 @@ function Header() {
         }
     }, [])
     return (
-        <div>
+        <>
             <div className='nav fixed-top justify-content-center'>
 
                 <div className={`nav-container px-0 ${show && 'navBg'}`}>
@@ -58,7 +58,9 @@ function Header() {
                         <div className='navLogo col-6 col-md text-start'>
                             <div className="row g-0">
                                 <div className="col-auto my-auto">
-                                    <img src={logo} alt='companyLogo' className='' />
+                                    <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <img src={logo} alt='companyLogo' className='' />
+                                    </Link>
                                 </div>
 
                                 <div className='text-end my-auto col'>
@@ -66,7 +68,7 @@ function Header() {
                                         <Link to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Home
                                         </Link>
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                                        <span to='/' id="linksss" className='text-decoration-none navLinks' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                                             Versicherungen
                                             {isShown && (
                                                 <div className='navbarDropdownsWrap' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
@@ -89,15 +91,15 @@ function Header() {
                                                     </div>
                                                 </div>
                                             )}
-                                        </Link>
+                                        </span>
 
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks' onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
+                                        <span to='/' id="linksss" className='text-decoration-none navLinks' onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
                                             Finanzen
                                             {isShown1 && (
                                                 <div className='navbarDropdownsWrap' onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
                                                     <div className='navbarDropdowns' >
                                                         <div className='pb-3'>
-                                                            <Link to='/' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <Link to='/pensionsplanung-und-ruhestand' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Pensionsplanung und Ruhestand
                                                             </Link>
                                                         </div>
@@ -115,7 +117,7 @@ function Header() {
                                                 </div>
 
                                             )}
-                                        </Link>
+                                        </span>
                                         <Link to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
                                         </Link>
@@ -177,7 +179,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

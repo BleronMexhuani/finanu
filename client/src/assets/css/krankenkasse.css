@@ -253,6 +253,8 @@ a {
     border-radius: 18px;
     height: 100%;
     font-size: 15px;
+    transition: all 0.2s ease-in-out;
+
 }
 
 .blueBgDiv {
@@ -260,10 +262,17 @@ a {
     border-radius: 18px;
     color: #fff;
     font-size: 15px;
-
+    border: 1px solid #84CDEE;
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
 }
-
-.blueBgDiv svg path {
+.blueBgDiv path  {
+    stroke: #fff;
+}
+.blueBgDiv svg  {
+    fill: #84CDEE;
+}
+.blueBgDiv .row svg path {
     fill: #fff;
 }
 
@@ -287,8 +296,18 @@ a {
     border-radius: 23px;
     width: 800px;
 }
+
 .lastIlustrationKranken {
-    max-width: 800px !important;
+    max-width: 500px !important;
+}
+
+.blueBorderBottom {
+    border-bottom: 2px solid #84CDEE;
+}
+
+.whiteBorderBottom {
+    border-bottom: 2px solid #fff;
+
 }
 
 @media (min-width: 1700px) {
@@ -337,6 +356,7 @@ a {
     .greyBorderDiv {
         height: 100%;
     }
+
     .krankenStepsBox {
         padding: 1.5rem;
     }
@@ -347,12 +367,14 @@ a {
         width: 280px;
         left: calc(50% - 140px);
     }
+
     .mehrLadenModalContent {
         width: auto;
         border-radius: 0px;
         height: 100vh;
         overflow-y: auto;
     }
+
     .zuzatImages img {
         width: 100%;
     }
