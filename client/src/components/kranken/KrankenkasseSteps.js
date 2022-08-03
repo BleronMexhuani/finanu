@@ -25,6 +25,7 @@ function KrankenkasseSteps() {
     const [inputValue, setInputValue] = useState("")
     const [filter, setFilter] = useState([]);
     const [isEmpty, setIsEmpty] = useState(false)
+
     const showSelectDropdown = () => {
         setIsFocused(true)
     }
@@ -60,7 +61,7 @@ function KrankenkasseSteps() {
         setIsFocused(false)
 
     }
-    
+
 
     useEffect(() => {
         const searchRegion = (e) => {
@@ -76,7 +77,7 @@ function KrankenkasseSteps() {
         }
         searchRegion()
 
-    }, [inputValue,regions])
+    }, [inputValue, regions])
 
     ///////////////////////////////
     useEffect(() => {
@@ -546,30 +547,37 @@ function KrankenkasseSteps() {
                     <div className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
                         <div className="row g-3 justify-content-center pt-5">
                             {
-                                krankenkasse.slice(0, endKrankenMap).map((element) =>
-                                    <div key={element.id} className="col-12 col-sm-6 col-lg-4">
-                                        <div className="krankenOfferStyle p-4">
-                                            <div className='pt-4'>
-                                                <span className='fw-bold'>{element.name}</span>
-                                            </div>
-                                            <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                            <div>
-                                                <span className='fw-500'>{element.tarif}</span>
-                                            </div>
-                                            <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                            <div className='pb-3'>
-                                                <span className='fw-500'>CHF <span className='fw-bold'>{element.price}</span>/ Mt.</span>
-                                            </div>
-                                            <div>
-                                                <span className='fw-500'>sparen Sie CHF<span className='fw-bold' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
-                                            </div>
-                                            <div className='pt-4 pb-4'>
-                                                <button className='nextBtnKranken' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
+
+                                krankenkasse.slice(0, endKrankenMap).map((element) => {
+                                    i++;
+                                    return (
+
+                                        <div key={i} className="col-12 col-sm-6 col-lg-4">
+                                            <div className="krankenOfferStyle p-4">
+                                                <div className='pt-4'>
+                                                    <span className='fw-bold'>{element.name}</span>
+                                                </div>
+                                                <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
+                                                <div>
+                                                    <span className='fw-500'>{element.tarif}</span>
+                                                </div>
+                                                <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
+                                                <div className='pb-3'>
+                                                    <span className='fw-500'>CHF <span className='fw-bold'>{element.price}</span>/ Mt.</span>
+                                                </div>
+                                                <div>
+                                                    <span className='fw-500'>sparen Sie CHF<span className='fw-bold' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
+                                                </div>
+                                                <div className='pt-4 pb-4'>
+                                                    <button className='nextBtnKranken' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    )
+                                }
                                 )
                             }
+
                         </div>
                         <div className='pt-5'>
                             <button className='nextBtnKranken' type='button' onClick={openMehrLadenModal} > Mehr laden </button>
@@ -787,7 +795,7 @@ function KrankenkasseSteps() {
                             <span style={{ cursor: "pointer" }} onClick={() => { setMehrLadenModal(false) }}>
                                 <img src={XBtn} alt="" />
                             </span>
-                            
+
                         </div>
                         <div className='text-start'>
                             <div className='py-3'>

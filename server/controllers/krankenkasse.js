@@ -78,6 +78,7 @@ var krankenkasse = {
             let unfalleinschluss = accident.split(",");
             let altersklasse;
             let count_alterklasse = 0;
+
             const currentYear = todayDate.getFullYear();
             const data = [];
 
@@ -104,7 +105,8 @@ var krankenkasse = {
                     altersklasse = 'AKL-ERW';
                     altersungrupe = '';
                 }
-                let rows = await query("SELECT Pramie,Tarifbezeichnung,name,Versicherer,id_ FROM pramien LEFT JOIN insurance ON Versicherer = number WHERE  Kanton = ? AND region = ? AND Altersklasse = ? AND Unfalleinschluss = ? AND Tariftyp = ? AND Franchise = ? AND Altersuntergruppe = ? ORDER BY Pramie",
+                
+                let rows = await query("SELECT Pramie,Tarifbezeichnung,name,Versicherer,id_ FROM pramien LEFT JOIN insurance ON Versicherer = number WHERE  Kanton = ? AND region = ? AND Altersklasse = ? AND Unfalleinschluss = ? AND Tariftyp IN (?) AND Franchise = ? AND Altersuntergruppe = ? ORDER BY Pramie",
                     [kanton, 'PR-REG CH' + region, altersklasse, unfalleinschluss[i], tariftyp, 'FRA-' + Franchise_price[i], altersungrupe]);
 
                 Array.prototype.push.apply(data, rows);
@@ -114,26 +116,29 @@ var krankenkasse = {
             const final_data = [];
 
             data.forEach(element => {
-                if (!Versicherer.includes(element.Versicherer + element.name)) {
-                    Versicherer.push(element.Versicherer + element.name);
+                if (!Versicherer.includes(element.Versicherer + element.name + element.Tarifbezeichnung)) {
+                    Versicherer.push(element.Versicherer + element.name + element.Tarifbezeichnung);
+
                     const sumofPramie = data
                         .filter(({
                             Versicherer, name, Tarifbezeichnung
                         }) => Versicherer == element.Versicherer && name == element.name && Tarifbezeichnung == element.Tarifbezeichnung)
                         .reduce((sum, record) => sum + parseFloat(record.Pramie), 0);
+
                     final_data.push({
                         id: element.id_,
+                        tarif:element.Tarifbezeichnung,
                         Versicherer: element.Versicherer,
                         name: element.name,
                         price: sumofPramie
                     });
+
                 }
             });
             res.status(200).json(final_data);
         } catch (error) {
             res.status(404).json({ message: error.message })
         }
-
     }
 }
 
