@@ -12,10 +12,9 @@ import Fitness from '../../assets/images/fitness.svg'
 import Abroad from '../../assets/images/abroad.svg'
 import Glasses from '../../assets/images/glasses.svg'
 import PhoneDoc from '../../assets/images/phoneDoc.svg'
-import BlueBlob from "../../assets/images/blueBlob.svg"
-import DocumentCheck from "../../assets/images/documentCheck.svg"
-import Lock from "../../assets/images/lock.svg"
-import DocumentLock from "../../assets/images/documentLock.svg"
+// import DocumentCheck from "../../assets/images/documentCheck.svg"
+// import Lock from "../../assets/images/lock.svg"
+// import DocumentLock from "../../assets/images/documentLock.svg"
 
 function KrankenCards() {
 
@@ -154,13 +153,19 @@ function KrankenCards() {
                 </div>
             </div>
             <div>
-                <div className="wrapDiv container-xl px-4 px-xl-0 pt-0 pt-lg-5 mt-0 mt-lg-5 pt-xl-0 mt-xl-0">
+                <div className="wrapDiv container-xl px-4 px-xl-0 pt-0 pt-lg-5 mt-0 mt-lg-5 pt-xl-0 mt-xl-0 pb-5">
                     <div className="row gy-4 gy-lg-0 gx-0 gx-sm-4 gx-xl-5 justify-content-center">
                         <div className="col-12 col-sm-6 col-lg-4">
-                            <div onMouseEnter={() => {setIsHover(true)}} onMouseLeave = {() => {setIsHover(false)}} className={` ${ isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
-                                <div className='mb-5' style={{ borderBottom: "2px solid #2089D4" }}>
+                            <div onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => { setIsHover(false) }} className={` ${isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
+                                <div className={`mb-5 ${isHover ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-5">
-                                        <img src={DocumentCheck} width={55} alt="" />
+                                        {/* <img src={DocumentCheck} width={55} height={70} alt="" /> */}
+                                        <svg width={55} height={70} viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M58.5298 53.5154C58.5298 56.4345 56.6185 59.6151 53.5691 62.1441C50.541 64.6555 46.6856 66.2686 43.2984 66.2686C40.0158 66.2686 37.5351 64.752 35.8276 62.414C34.0917 60.0372 33.1592 56.799 33.1592 53.5154C33.1592 47.4557 39.1919 42.1875 46.2082 42.1875C53.1206 42.1875 58.5298 47.3626 58.5298 53.5154Z" stroke="#84CDEE" stroke-width="3" />
+                                            <path d="M40.6855 54.2279L43.9095 58.0966C45.6289 55.0876 49.5836 48.9406 51.6469 48.4248" stroke="#84CDEE" stroke-width="3" />
+                                            <path d="M34.3532 68.5871C23.3913 66.6527 0.178983 73.1006 2.11388 62.1392V20.228C2.40943 19.4891 2.77929 18.612 3.21798 17.6487M18.233 2.174C27.9048 2.17404 50.4724 0.239429 50.4724 9.26666V36.3475M18.233 2.174C19.0927 7.33223 19.7805 17.6487 15.6539 17.6487C11.5272 17.6487 5.64384 17.6487 3.21798 17.6487M18.233 2.174C11.4275 2.17398 5.96929 11.6069 3.21798 17.6487" stroke="#84CDEE" stroke-width="3" />
+                                        </svg>
+
                                     </div>
                                 </div>
                                 <div>
@@ -208,11 +213,15 @@ function KrankenCards() {
                                 </div>
                             </div>
                         </div>
-                        <div onMouseEnter={() => {setIsHover1(true)}} onMouseLeave={() => {setIsHover1(false)}} className="col-12 col-sm-6 col-lg-4">
-                            <div className={` ${ isHover1 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
-                                <div className='mb-5' style={{ borderBottom: "2px solid #fff" }}>
+                        <div onMouseEnter={() => { setIsHover1(true) }} onMouseLeave={() => { setIsHover1(false) }} className="col-12 col-sm-6 col-lg-4">
+                            <div className={` ${isHover1 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
+                                <div className={`mb-5 ${isHover1 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-5">
-                                        <img src={DocumentLock} width={55} alt="" />
+                                        {/* <img src={DocumentLock} width={55} height={70}  alt="" /> */}
+                                        <svg width={55} height={70} viewBox="0 0 73 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M53.0409 38.6191C50.2554 38.7666 47.603 38.9395 45.4803 39.0968C43.5899 69.3435 66.4054 59.1727 68.165 58C71.0012 56.1098 71.0006 40.9871 71.0006 39.0968C71.0006 38.4874 68.2383 38.2668 64.3832 38.2618M53.0409 38.6191C52.0957 33.7371 51.7176 24.1621 57.7669 24.9183C63.8161 25.6744 64.6983 34.129 64.3832 38.2618M53.0409 38.6191C56.9205 38.4136 61.0583 38.2575 64.3832 38.2618" stroke="#84CDEE" stroke-width="3" />
+                                            <path d="M2 3.18264V80.6885C13.0273 90.7706 35.0818 103.37 35.0818 95.8116C35.0818 92.8273 35.0818 88.1714 35.0818 82.5759M2 3.18264C27.7093 13.0127 34.7667 22.4016 35.0818 25.8673C35.0818 39.6335 35.0818 65.4868 35.0818 82.5759M2 3.18264C2 3.18264 55.876 -1.54639 56.8212 7.90861C56.8212 16.9825 56.8212 18.3033 56.8212 19.2473M35.0818 82.5759C43.2735 83.2081 56.8212 83.7156 56.8212 80.6885C56.8212 77.6615 56.8212 69.3432 56.8212 65.5624" stroke="#84CDEE" stroke-width="3" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div>
@@ -277,11 +286,15 @@ function KrankenCards() {
                                 </div>
                             </div>
                         </div>
-                        <div onMouseEnter={() => {setIsHover2(true)}} onMouseLeave={() => {setIsHover2(false)}} className="col-12 col-sm-7 col-lg-4">
-                            <div className={` ${ isHover2 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
-                                <div className='mb-5' style={{ borderBottom: "2px solid #2089D4" }}>
+                        <div onMouseEnter={() => { setIsHover2(true) }} onMouseLeave={() => { setIsHover2(false) }} className="col-12 col-sm-7 col-lg-4">
+                            <div className={` ${isHover2 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
+                                <div className={`mb-5 ${isHover2 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-5">
-                                        <img src={Lock} width={55} alt="" />
+                                        {/* <img src={Lock} width={55} height={70} alt="" /> */
+                                            <svg width={55} height={70} viewBox="0 0 55 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.1706 28.9374C9.21414 28.9843 8.23742 29.0377 7.23999 29.0979C0.206636 30.8794 -1.5517 63.5414 8.99833 64.1352C19.5484 64.7291 52.3707 67.6984 52.3707 57.6028C52.3707 49.5264 52.3707 41.9647 52.3707 39.1934C53.1223 36.8001 51.313 33.2708 42.9929 30.9712M10.1706 28.9374C8.41222 18.6974 8.99833 -0.951218 25.4095 2.37437C41.8207 5.69995 43.9697 22.8246 42.9929 30.9712M10.1706 28.9374C26.2257 28.1496 36.5571 29.1925 42.9929 30.9712M27.7539 39.1934C30.6845 38.9812 34.2012 42.7567 28.9262 48.1014C28.9262 52.3772 28.9262 53.0502 28.9262 53.4461H25.4095V48.1014C23.2604 45.5281 19.5484 39.7875 27.7539 39.1934Z" stroke="#84CDEE" stroke-width="3" />
+                                            </svg>
+                                        }
                                     </div>
                                 </div>
                                 <div>

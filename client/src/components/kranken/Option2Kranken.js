@@ -7,7 +7,7 @@ import LastIlustration from '../../assets/images/krankenIlustration.svg'
 function Option2Kranken() {
     return (
         <div>
-            <div className='wrapDiv container-xl px-4 pt-5 mt-5'>
+            <div className='wrapDiv container-xl px-4 pt-5'>
                 <div className='pb-5 mb-3'>
                     <div className='pb-3'>
                         <span className='fs-2 fw-bold' style={{ color: "#84cdee" }}>OPTION 2 : PERSONAL ADVICE</span>
@@ -54,7 +54,7 @@ function Option2Kranken() {
                             </div>
                         </div>
                     </div>
-                    <div className='pt-5'>
+                    <div className='pt-5' style={{marginBottom: '-3rem'}}>
                         <img src={LastIlustration} className="lastIlustrationKranken img-fluid" alt="" />
                     </div>
                 </div>

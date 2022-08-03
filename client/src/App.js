@@ -4,6 +4,7 @@ import Footer from './Footer.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MainComponents from './components/MainComponents'
 import Krankenkasse from './components/Krankenkasse';
+import PensionPlan from './components/PensionPlan';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
             
             <Route exact path="/" element={<MainComponents />} />
             <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
+            <Route exact path="/pensionsplanung-und-ruhestand" element={<PensionPlan />} />
+
           </Routes>
           <Footer />
         </BrowserRouter>
