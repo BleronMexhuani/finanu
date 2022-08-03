@@ -127,7 +127,6 @@ function KrankenkasseSteps() {
 
 
         setKrankenkasse(result.data);
-        console.log(result.data)
     }
 
     const [persons, setPersons] = useState([])

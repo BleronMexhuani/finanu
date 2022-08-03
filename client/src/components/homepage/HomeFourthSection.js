@@ -14,8 +14,8 @@ function HomeFourthSection() {
                     <span className='fs-1 fw-bold'>Möchten Sie mehr erfahren?</span>
                 </div>
                 <div className='pb-4'>
-                    <span className='fs-4' style={{ fontWeight: 500 }}>Unser Team von Versicherungsexperten hat die Ressourcen zusammengestellt,
-                        die Sie benötigen, um eine fundierte Entscheidung zu treffen und die richtige
+                    <span className='fs-4' style={{ fontWeight: 500 }}>Unser Team von Versicherungsexperten hat die Ressourcen zusammengestellt,<br></br>
+                        die Sie benötigen, um eine fundierte Entscheidung zu treffen und die richtige<br></br>
                         Police zu finden.</span>
                 </div>
             </div>

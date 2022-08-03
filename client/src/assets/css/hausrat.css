@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Raleway';
+}
+
+div {
+    font-family: 'Raleway';
+}
+
+span {
+    font-family: 'Raleway';
+}
+
+p {
+    font-family: 'Raleway';
+}
+
+a {
+    font-family: 'Raleway';
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.hausratBlueDiv {
+    background-color: #84CDEE;
+    border-radius: 16px;
+    position: relative;
+    margin-bottom: 13rem;
+}
+
+.hausratBlueDiv span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.hausratFormInputs {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 11px;
+    border: none;
+    outline: none !important;
+    padding: 0.6rem;
+}
+
+.hausratHouseDiv img {
+    margin-bottom: -47px;
+}
+
+.hausratRangeInput::-webkit-slider-runnable-track {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    background: #fff !important;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 26px !important;
+    height: 16px !important;
+
+}
+
+.hausratRangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    background: #11A3E6;
+    cursor: pointer;
+    margin-top: -3.5px !important;
+}
+
+.hausratRangeInput::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #11A3E6;
+    cursor: pointer;
+}
+
+.hausratBtn {
+    background: #34ACE3;
+    border-radius: 8px;
+    border: none;
+    width: 300px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.blackTextBig {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.blueTextBig {
+    font-size: 140px;
+    font-weight: 800;
+    color: #348ccc;
+}
+
+.crookedText {
+    line-height: 1;
+    transform: rotateZ(-15deg);
+}
+
+.hausratWhiteBg {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 17px rgba(166, 165, 165, 0.25);
+    border-radius: 10px;
+}
+.blueBlobBg {
+    background-image: url('../../assets/images/blueBlob.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+
+}
+.hausratSwiper .swiper-pagination-bullet-active {
+    background-color: #000 ;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+    .hausratHouseDiv img {
+        margin-bottom: -26px;
+    }
+
+    .blackTextBig {
+        font-size: 50px;
+    }
+
+    .blueTextBig {
+        font-size: 100px;
+
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hausratHouseDiv img {
+        margin-bottom: -22px;
+    }
+
+    .hausratBtn {
+        width: 100%;
+    }
+
+    .blackTextBig {
+        font-size: 30px;
+    }
+
+    .blueTextBig {
+        font-size: 80px;
+
+    }
+    .hausratBlueDiv {
+        margin-bottom: 6rem;
+    }
+}

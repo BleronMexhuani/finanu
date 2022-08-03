@@ -104,7 +104,7 @@ function Header() {
                                                             </Link>
                                                         </div>
                                                         <div className='pb-3'>
-                                                            <Link to='/' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <Link to='/haus-hypothek' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Haus & Hypothek
                                                             </Link>
                                                         </div>
