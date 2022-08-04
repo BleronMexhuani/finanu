@@ -1,0 +1,70 @@
+.stepsBlueDiv {
+    background: #84CDEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.stepsBlueDiv span {
+    color: #fff;
+}
+
+.stepsFormInputs {
+    background-color: #fff;
+    border-radius: 11px !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.75rem !important;
+}
+
+.stepsNextBtn {
+    background: #11A3E6;
+    border-radius: 11px;
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.75rem;
+}
+
+.activeBackground {
+    background: #11A3E6;
+    border-radius: 50%;
+    width: 50px !important;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passiveBackground {
+    background: #F2F2F2;
+    border-radius: 50%;
+    width: 50px !important;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.activeSvg path {
+    stroke: white !important;
+    margin: auto;
+}
+.activeSvg rect {
+    fill: #11A3E6;
+}
+.passiveSvg path {
+    stroke: #D0D0D0;
+    margin: auto;
+}
+.borderRightInput {
+    border: none;
+    border-right: 1px solid #DBDBDB;
+    padding: 0.75rem !important;
+    border-radius: 11px 0px 0px 11px;
+    outline: none !important;
+}
+.rightBorderDiv {
+    padding: 0% !important;
+}

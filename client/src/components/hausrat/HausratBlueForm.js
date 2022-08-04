@@ -3,7 +3,7 @@ import { useState } from 'react'
 import HausratHouse from '../../assets/images/hausratHouse.svg'
 
 function HausratBlueForm() {
-    const [interes, setInteres] = useState()
+    const [interes, setInteres] = useState(1)
     return (
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
@@ -46,7 +46,7 @@ function HausratBlueForm() {
                                 </div>
                             </div>
                             <div>
-                                <input type="range" min={0.4} step={0.05} max={2} onChange={(e) => setInteres(e.target.value)} defaultValue="1" className='hausratRangeInput form-range' />
+                                <input type="range" min={0.4} step={0.05} max={2} onChange={(e) => setInteres(e.target.value)} defaultValue={1} className='hausratRangeInput form-range' />
                             </div>
                         </div>
                     </div>

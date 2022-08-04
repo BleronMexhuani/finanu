@@ -122,6 +122,7 @@ a {
     box-shadow: 0px 4px 17px rgba(166, 165, 165, 0.25);
     border-radius: 10px;
 }
+
 .blueBlobBg {
     background-image: url('../../assets/images/blueBlob.svg') !important;
     background-repeat: no-repeat;
@@ -135,8 +136,18 @@ a {
     font-weight: 800;
 
 }
+
+.hausratSwiper {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .hausratSwiper .swiper-pagination-bullet-active {
-    background-color: #000 ;
+    background-color: #000;
 }
 
 @media (max-width: 1399.98px) {}
@@ -177,6 +188,7 @@ a {
         font-size: 80px;
 
     }
+
     .hausratBlueDiv {
         margin-bottom: 6rem;
     }

@@ -6,6 +6,7 @@ import MainComponents from './components/MainComponents'
 import Krankenkasse from './components/Krankenkasse';
 import PensionPlan from './components/PensionPlan';
 import Hausrat from './components/Hausrat';
+import Analys360 from './components/Analys360';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,8 @@ function App() {
             <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
             <Route exact path="/pensionsplanung-und-ruhestand" element={<PensionPlan />} />
             <Route exact path="/haus-hypothek" element={<Hausrat />} />
+            <Route exact path="/360" element={<Analys360 />} />
+            
           </Routes>
           <Footer />
         </BrowserRouter>
