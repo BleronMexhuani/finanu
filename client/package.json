@@ -21,6 +21,7 @@
     "react-select-search": "^3.0.10",
     "react-uuid": "^1.0.2",
     "redux": "^4.2.0",
+    "rsuite": "^5.16.3",
     "swiper": "^8.2.4",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"

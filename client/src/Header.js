@@ -109,7 +109,7 @@ function Header() {
                                                             </Link>
                                                         </div>
                                                         <div>
-                                                            <Link to='/' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <Link to='/360' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Finanzen & Budget
                                                             </Link>
                                                         </div>
@@ -130,9 +130,9 @@ function Header() {
                         </div>
                         <div className="col-auto my-auto">
                             <div className={`navTabs ${toggleMenu && 'navTabsOpen'}`}>
-                                <span className='buttonofmenutabs'>
+                                <Link to='/360' className='buttonofmenutabs'>
                                     <Button id="buttonofnavbar" variant="outline-danger">360° Budgetanalyse</Button>
-                                </span>
+                                </Link>
 
 
                                 <div className='row gx-0 gy-4 navTabsRow'>

@@ -1,0 +1,56 @@
+import React from 'react'
+import { useState } from 'react'
+function FirstStep(props) {
+    const [child, setChild] = useState(false)
+
+    const checkChild = (e) => {
+        if (e.target.value === '3' || e.target.value === '4') {
+            setChild(true)
+        }
+        else {
+            setChild(false)
+        }
+    }
+    return (
+        <div>
+            <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-5 pb-5 pt-4 mx-auto">
+                <div className='pb-4'>
+                    <span className='fs-4 fw-800'>Haushalt</span>
+                </div>
+                <div className='text-start'>
+                    <div className='pb-2'>
+                        <span className='fw-600'> Wie sieht ihr Haushalt aus?</span>
+                    </div>
+                    <div className='pb-4'>
+                        <select onChange={checkChild} name="household" id="" className='form-select stepsFormInputs'>
+                            <option value="1">Einzelperson</option>
+                            <option value="2">Paar ohne Kind/er</option>
+                            <option value="3">Alleinerziehend mit Kind/ern</option>
+                            <option value="4">Familie mit Kind/ern</option>
+                        </select>
+                    </div>
+                    {child &&
+                        <div className='pb-5'>
+                            <div className='pb-2'>
+                                <span className='fw-600'>Wie viele Kinder?</span>
+                            </div>
+                            <select name='childrenNumber' id="" className='form-select stepsFormInputs'>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                                <option value="3">6</option>
+                            </select>
+                        </div>
+                    }
+                    <div>
+                            <button className='stepsNextBtn' onClick={props.toNext}{...props.setReach}>Weiter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default FirstStep
