@@ -6,6 +6,7 @@ import Tooth from "../../assets/images/tooth.svg"
 import { v4 as uuidv4 } from 'uuid'
 import XBtn from "../../assets/images/xButton.svg"
 function KrankenkasseSteps() {
+
     const [insurances, setInsurances] = useState([]);
     const [ort, setOrt] = useState(null);
     const [plz, setPlz] = useState(null);
@@ -16,7 +17,7 @@ function KrankenkasseSteps() {
     const [jahrgang, setJahrgang] = useState([]);
     const [actualmodels, setActualModels] = useState([]);
     const [franchise, setFranchise] = useState([]);
-    const [model, setModel] = useState(null);
+    const [model, setModel] = useState([]);
     const [accident, setAccident] = useState([]);
     const [tarifbezeichnung, setTarifbezeichnung] = useState(null);
     const [krankenkasse, setKrankenkasse] = useState([]);
@@ -50,6 +51,7 @@ function KrankenkasseSteps() {
         }
         getRegions();
     }, [])
+
     const handleInput = (e) => {
         setOrt(e.target.getAttribute('data-ort'));
         setPlz(e.target.getAttribute('data-plz'));
@@ -61,7 +63,6 @@ function KrankenkasseSteps() {
         setIsFocused(false)
 
     }
-
 
     useEffect(() => {
         const searchRegion = (e) => {
@@ -107,6 +108,7 @@ function KrankenkasseSteps() {
         const targetJahrgang = [];
         const targetAccident = [];
         const targetFranchise = [];
+        const targetModells = [];
 
         for (let i = 0; i < event.target.length - 1; i++) {
             if (event.target[i].name === 'Jahrgang') {
@@ -120,14 +122,23 @@ function KrankenkasseSteps() {
             else if (event.target[i].name === 'franchise') {
                 targetFranchise.push(parseInt(event.target[i].value));
             }
+            else if (event.target[i].name === 'modelle') {
+                if (event.target[i].checked) {
+                    targetModells.push(event.target[i].value);
+                }
+            }
         }
+
         setFranchise(targetFranchise);
         setJahrgang(targetJahrgang);
         setAccident(targetAccident);
-        const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${model}/${targetFranchise}/${tarifbezeichnung}`);
+        setModel(targetModells);
+
+        const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
 
 
         setKrankenkasse(result.data);
+
     }
 
     const [persons, setPersons] = useState([])
@@ -171,8 +182,6 @@ function KrankenkasseSteps() {
         else {
             setCheckJahr(false)
         }
-
-
     }
 
     useEffect(() => {
@@ -281,7 +290,7 @@ function KrankenkasseSteps() {
                                 <div className="col-12 col-sm-6 col-md-4">
                                     <div style={{ position: 'relative' }}>
                                         <div>
-                                            <input type="text" id="inputChange" onChange={(e) => setInputValue(e.target.value)} onFocus={showSelectDropdown} onBlur={hideSelectDropdown} placeholder='Postleitzahl' className='krankenInputStyle' />
+                                            <input type="text" id="inputChange" autoComplete='off' onChange={(e) => setInputValue(e.target.value)} onFocus={showSelectDropdown} onBlur={hideSelectDropdown} placeholder='Postleitzahl' className='krankenInputStyle' />
                                         </div>
                                         {(isFocused && !isEmpty) && (
                                             <div className='krankenSelectDropdown'>
@@ -512,25 +521,25 @@ function KrankenkasseSteps() {
                                 <div className="row g-4">
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="Standard" className='container1 w-100'>
-                                            <input type="checkbox" id='Standard' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-BASE'} id='Standard' name='modelle' hidden />
                                             <span className='checkmark'>Standard</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="Hausarzt" className='container1 w-100'>
-                                            <input type="checkbox" id='Hausarzt' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-HAM'} id='Hausarzt' name='modelle' hidden />
                                             <span className='checkmark'>Hausarzt</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="HMO" className='container1 w-100'>
-                                            <input type="checkbox" id='HMO' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-HMO'} id='HMO' name='modelle' hidden />
                                             <span className='checkmark'>HMO</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="Weitere" className='container1 w-100'>
-                                            <input type="checkbox" id='Weitere' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-DIV'} id='Weitere' name='modelle' hidden />
                                             <span className='checkmark'>Weitere Modelle</span>
                                         </label>
                                     </div>

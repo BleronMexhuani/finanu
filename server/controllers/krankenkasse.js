@@ -105,9 +105,9 @@ var krankenkasse = {
                     altersklasse = 'AKL-ERW';
                     altersungrupe = '';
                 }
-                
+
                 let rows = await query("SELECT Pramie,Tarifbezeichnung,name,Versicherer,id_ FROM pramien LEFT JOIN insurance ON Versicherer = number WHERE  Kanton = ? AND region = ? AND Altersklasse = ? AND Unfalleinschluss = ? AND Tariftyp IN (?) AND Franchise = ? AND Altersuntergruppe = ? ORDER BY Pramie",
-                    [kanton, 'PR-REG CH' + region, altersklasse, unfalleinschluss[i], tariftyp, 'FRA-' + Franchise_price[i], altersungrupe]);
+                    [kanton, 'PR-REG CH' + region, altersklasse, unfalleinschluss[i], tariftyp.split(","), 'FRA-' + Franchise_price[i], altersungrupe]);
 
                 Array.prototype.push.apply(data, rows);
 
@@ -127,7 +127,7 @@ var krankenkasse = {
 
                     final_data.push({
                         id: element.id_,
-                        tarif:element.Tarifbezeichnung,
+                        tarif: element.Tarifbezeichnung,
                         Versicherer: element.Versicherer,
                         name: element.name,
                         price: sumofPramie
