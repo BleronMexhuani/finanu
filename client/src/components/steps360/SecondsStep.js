@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 function SecondsStep(props) {
     const [regions, setRegions] = useState([]);
-    const [inputValue, setInputValue] = useState("")
+    // const [inputValue, setInputValue] = useState("")
     const [isFocused, setIsFocused] = useState(false)
     const [filter, setFilter] = useState([]);
     const [isEmpty, setIsEmpty] = useState(false)
@@ -43,8 +43,8 @@ function SecondsStep(props) {
 
     useEffect(() => {
         const searchRegion = (e) => {
-            const region = regions.filter((element) => (element.plz + " " + element.ort).includes(inputValue))
-            if (inputValue === '' || inputValue === null) {
+            const region = regions.filter((element) => (element.plz + " " + element.ort).includes(props.inputValue))
+            if (props.inputValue === '' || props.inputValue === null) {
                 setFilter([]);
                 setIsEmpty(true)
             }
@@ -55,8 +55,9 @@ function SecondsStep(props) {
         }
         searchRegion()
 
-    }, [inputValue, regions])
+    }, [props.inputValue, regions])
 
+    
     const handleInput = (e) => {
         setOrt(e.target.getAttribute('data-ort'));
         setPlz(e.target.getAttribute('data-plz'));
@@ -64,7 +65,7 @@ function SecondsStep(props) {
         setKanton(e.target.getAttribute('data-kanton'));
         setRegion(e.target.getAttribute('data-region'));
         document.getElementById('inputChange').value = e.target.getAttribute('value');
-        setInputValue(e.target.getAttribute('value'))
+        props.setInputValue(e.target.getAttribute('value'))
         setIsFocused(false)
 
     }
@@ -79,7 +80,7 @@ function SecondsStep(props) {
                         </div>
                         <div style={{ position: 'relative' }}>
                             <div>
-                                <input type="text" id="inputChange" onChange={(e) => setInputValue(e.target.value)} onFocus={showSelectDropdown} onBlur={hideSelectDropdown} placeholder='Postleitzahl' className='krankenInputStyle' />
+                                <input type="text" id="inputChange" onChange={(e) => {props.setInputValue(e.target.value)}} value={props.inputValue} onFocus={showSelectDropdown} onBlur={hideSelectDropdown} placeholder='Postleitzahl' className='krankenInputStyle' />
                             </div>
                             {(isFocused && !isEmpty) && (
                                 <div className='krankenSelectDropdown'>
