@@ -1,0 +1,62 @@
+.containerRes input {
+    border: 4px solid #fff;
+}
+
+.checkmarkRes {
+    border: 4px solid #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.containerRes:hover input~.checkmarkRes {
+    border: 4px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.containerRes input:checked~.checkmarkRes {
+    border: 4px solid #2196F3;
+    transition: all 0.2s ease-in-out;
+}
+
+.checkmarkRes {
+    display: block;
+}
+
+.containerRes input:checked~.checkmarkRes:after {
+    display: block;
+}
+
+.underCheckmarkSpan {
+    font-weight: 400 !important;
+}
+
+.blueBgRechtss {
+    background: url('../images/rechtsschutzImgs/blueBg.svg') no-repeat;
+    background-size: cover;
+}
+
+.whiteBgRecht {
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+}
+
+.blueBgRecht {
+    background: #34ACE3;
+    border-radius: 15px;
+    color: #fff;
+    position: absolute;
+    width: calc(100% - 50px);
+    left: 25px;
+    top: -28px;
+}
+.rechtssBtn {
+    border-radius: 15px;
+    background: #34ACE3;
+    border: none;
+    color: #fff;
+    width: 100%;
+}

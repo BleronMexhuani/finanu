@@ -455,6 +455,7 @@ function KrankenkasseSteps() {
                                         <input type="number" name='Jahrgang'
                                             step={1}
                                             defaultValue={''}
+                                            min={1900}
                                             onChange={validateJahrgang}
                                             placeholder='Jahrgang'
                                             className='krankenInputStyle krankenInputStepStyle p-3' />
