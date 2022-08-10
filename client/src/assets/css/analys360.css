@@ -57,6 +57,7 @@
     stroke: white !important;
     margin: auto;
 }
+
 .activeSvg rect {
     fill: #11A3E6;
 }

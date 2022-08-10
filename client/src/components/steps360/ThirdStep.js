@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
 
 function ThirdStep(props) {
     const changeMY = (e) => {
@@ -25,23 +24,25 @@ function ThirdStep(props) {
             }
         }
     }
-    const [thirdStepInputs, setThirdStepInputs] = useState([])
-    const handleThirdStep = (e) => {
+
+    
+    const handleThirdStep = async (e) => {
         e.preventDefault()
         const value = []
-        for (let i = 0; i < e.target.length - 1; i++) { 
-            value.push(parseInt(e.target[i].value))
+        for (let i = 0; i < e.target.length - 1; i++) {
+            if (e.target[i].name === 'thirdStepInput') {
+                value.push(parseInt(e.target[i].value))
+            }
         }
-        setThirdStepInputs(value)
-        console.log(thirdStepInputs)
-        setTimeout(() => {
-            props.toNext()
-        }, 2000);
+        props.setThirdStepInputs(value)
+        props.toNext()
     }
+
+
     return (
         <div>
             <form onSubmit={handleThirdStep}>
-                <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-5 pb-5 pt-4 mx-auto">
+                <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-4 px-sm-5 pb-5 pt-4 mx-auto">
                     <div className='pb-4'>
                         <span className='fs-4 fw-800'>Einnahmen</span>
                     </div>
@@ -54,7 +55,7 @@ function ThirdStep(props) {
                                 <div className="col">
                                     <div className="row g-0 stepsFormInputs rightBorderDiv">
                                         <div className="col">
-                                            <input name='stepThreeInputs' type="number" my={"month"} defaultValue={thirdStepInputs[0]} className='w-100 borderRightInput' />
+                                            <input name="thirdStepInput" type="number" my={"month"} onChange={(e) => { props.setThirdStepInputs(e.target.value) }} defaultValue={props.thirdStepInputs[0]} className='w-100 borderRightInput' />
                                         </div>
                                         <div className="col-auto my-auto">
                                             <div className='px-2'>
@@ -64,7 +65,6 @@ function ThirdStep(props) {
                                     </div>
                                 </div>
                                 <div className="col-auto">
-
                                     <button type='button' className='stepsNextBtn' onClick={(e) => changeMY(e)}>M/Y</button>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ function ThirdStep(props) {
                                 <div className="col">
                                     <div className="row g-0 stepsFormInputs rightBorderDiv">
                                         <div className="col">
-                                            <input name='stepThreeInputs' type="number" my={"month"} defaultValue={thirdStepInputs[1]} className='w-100 borderRightInput' />
+                                            <input name="thirdStepInput" type="number" my={"month"} onChange={(e) => { props.setThirdStepInputs(e.target.value) }} defaultValue={props.thirdStepInputs[1]} className='w-100 borderRightInput' />
                                         </div>
                                         <div className="col-auto my-auto">
                                             <div className='px-2'>

@@ -79,7 +79,7 @@ function Header() {
                                                             </Link>
                                                         </div>
                                                         <div className='pb-3'>
-                                                            <Link to='/' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <Link to='/Rechtsschutz' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Rechtsschutz
                                                             </Link>
                                                         </div>

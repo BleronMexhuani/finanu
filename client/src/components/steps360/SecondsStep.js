@@ -72,7 +72,7 @@ function SecondsStep(props) {
 
     return (
         <div>
-            <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv p-5 mx-auto">
+            <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv p-4 p-sm-5 mx-auto">
                 <div className='h-100 d-flex justify-content-center align-items-center text-start'>
                     <div className='w-100'>
                         <div className='pb-2'>
@@ -94,7 +94,7 @@ function SecondsStep(props) {
                                 </div>
                             )}
                         </div>
-                        <div className='pt-4 row g-3'>
+                        <div className='pt-4 row gx-3 gy-0'>
                             <div className="col-6">
                                 <button className='stepsNextBtn' onClick={props.toPrev}>Zurück</button>
                             </div>
