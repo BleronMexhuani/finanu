@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 function FirstStep(props) {
     
 
@@ -13,9 +12,10 @@ function FirstStep(props) {
         props.changeHousehold(e.target.value)
 
     }
+    
     return (
         <div>
-            <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-5 pb-5 pt-4 mx-auto">
+            <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-4 px-sm-5 pb-5 pt-4 mx-auto">
                 <div className='pb-4'>
                     <span className='fs-4 fw-800'>Haushalt</span>
                 </div>
@@ -47,7 +47,7 @@ function FirstStep(props) {
                         </div>
                     }
                     <div>
-                            <button className='stepsNextBtn' onClick={props.toNext}{...props.setReach}>Weiter</button>
+                            <button className='stepsNextBtn' onClick={props.toNext}>Weiter</button>
                     </div>
                 </div>
             </div>
