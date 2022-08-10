@@ -51,6 +51,7 @@ function NewPerson(props) {
                         <div className="col-12 col-md-6">
                             <input type="text" name={"Jahrgang"}
                                 placeholder='Jahrgang'
+                                min={1900}
                                 onChange={validateJahrgang}
                                 className='krankenInputStyle krankenInputStepStyle p-3' />
                         </div>
