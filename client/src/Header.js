@@ -121,7 +121,7 @@ function Header() {
                                         <Link to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
                                         </Link>
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <Link to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
                                             Über uns
                                         </Link>
                                     </span>
@@ -157,7 +157,7 @@ function Header() {
                                         </Link>
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <Link to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
                                             Über uns
                                         </Link>
                                     </div>

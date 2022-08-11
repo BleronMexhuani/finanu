@@ -8,6 +8,7 @@ import PensionPlan from './components/PensionPlan';
 import Hausrat from './components/Hausrat';
 import Analys360 from './components/Analys360';
 import Rechtsschutz from './components/Rechtsschutz';
+import UberUns from './components/UberUns';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/haus-hypothek" element={<Hausrat />} />
             <Route exact path="/360" element={<Analys360 />} />
             <Route exact path="/rechtsschutz" element={<Rechtsschutz />} />
+            <Route exact path="/uber-uns" element={<UberUns />} />
           </Routes>
           
           <Footer />
