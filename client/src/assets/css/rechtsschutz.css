@@ -1,3 +1,7 @@
+.fw-400 {
+    font-weight: 400 !important;
+}
+
 .containerRes input {
     border: 4px solid #fff;
 }
@@ -53,10 +57,145 @@
     left: 25px;
     top: -28px;
 }
+
 .rechtssBtn {
     border-radius: 15px;
     background: #34ACE3;
     border: none;
     color: #fff;
     width: 100%;
+}
+
+.absoluteDivRecht {
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    width: 150px;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: -3rem;
+}
+
+.whiteBorderBottomRecht {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-align: start;
+    cursor: pointer;
+}
+
+.whiteBorderBottomRecht span {
+    font-weight: 400;
+}
+
+.faqClosed {
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.faqOpen {
+    height: 80px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+.faqOpen3 {
+    height: 110px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+.faqOpen2  {
+    height: 130px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+.faqOpen1  {
+    height: 200px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+ol, ul { 
+    padding-left: 1rem !important;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .faqOpen {
+        height: 110px;
+    }
+    .faqOpen3 {
+        height: 140px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .faqOpen3 {
+        height: 180px;
+    }
+    .faqOpen2 {
+        height: 160px;
+    }
+    .faqOpen1  {
+        height: 250px;
+    }
+    .faqOpen {
+        height: 130px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .absoluteDivRecht {
+        top: -2.5rem;
+    }
+    .faqOpen1  {
+        height: 370px;
+    }
+    .faqOpen2 {
+        height: 250px;
+    }
+    .faqOpen3 {
+        height: 300px;
+    }
+    .faqOpen {
+        height: 200px;
+    }
+}
+@media (max-width: 391.98px) {
+    .faqOpen2 {
+        height: 270px;
+    }
+    .faqOpen {
+        height: 250px;
+    }
+    .faqOpen1  {
+        height: 450px;
+    }
+}
+@media (max-width: 360.98px) {
+    .whiteBorderBottomRecht span {
+        font-size: 16px !important;
+    }
+    .faqOpen3 {
+        height: 360px;
+    }
+    .faqOpen1  {
+        height: 500px;
+    }
+}
+@media (max-width: 320.98px) { 
+    .faqOpen3, .faqOpen1, .faqOpen2 {
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+    .faqOpen {
+        height: 300px;
+    }
+    .faqOpen1  {
+        height: 530px;
+    }
 }

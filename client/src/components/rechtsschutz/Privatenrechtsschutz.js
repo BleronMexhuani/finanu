@@ -29,10 +29,10 @@ function Privatenrechtsschutz() {
                         </div>
                         <div className='pb-5'>
                             <span>
-                                Eine Privatrechtschutzversicherung hilft Ihnen bei einem Rechtsstreit bei privatrechtlichen<br></br>
-                                Streitigkeiten, unterstützt Sie bei rechtlichen Fragen und übernimmt die anfallenden Kosten für einen<br></br>
-                                Rechtsanwalt. Neben der Verkehrsrechtschutzversicherung bietet die Privatrechtschutzversicherung<br></br>
-                                eine Basis der rechtlichen Versicherungen für Privatpersonen. Häufig wird die<br></br> Privatrechtschutzversicherung bei Streitigkeiten mit dem Arbeitgeber, dem Vermieter oder auch dem Nachbarn eingesetzt.
+                                Eine Privatrechtschutzversicherung hilft Ihnen bei einem Rechtsstreit bei privatrechtlichen
+                                Streitigkeiten, unterstützt Sie bei rechtlichen Fragen und übernimmt die anfallenden Kosten für einen
+                                Rechtsanwalt. Neben der Verkehrsrechtschutzversicherung bietet die Privatrechtschutzversicherung
+                                eine Basis der rechtlichen Versicherungen für Privatpersonen. Häufig wird die Privatrechtschutzversicherung bei Streitigkeiten mit dem Arbeitgeber, dem Vermieter oder auch dem Nachbarn eingesetzt.
                             </span>
                         </div>
                     </div>

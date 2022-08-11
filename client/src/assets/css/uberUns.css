@@ -1,0 +1,74 @@
+.whiteBgUber {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 17px rgba(166, 165, 165, 0.25);
+    border-radius: 8px;
+}
+
+.whiteBgUber img {
+    max-width: 150px;
+    max-height: 110px;
+}
+
+.uberBlueBg {
+    background: #84CDEE;
+    border-radius: 8px 0px 0px 0px;
+    color: #fff;
+}
+
+.uberBlueBg2 {
+    background: #84CDEE;
+    border-radius: 0px 8px 0px 0px;
+    color: #fff;
+}
+
+.lightBlueBgUber {
+    background: rgba(175, 212, 247, 0.22);
+    border: 1px solid rgba(175, 212, 247, 0.22);
+    border-radius: 4px;
+}
+.greyBorderBottomUber {
+    border-bottom: 1px solid #DEDEDE;
+    
+}
+.greyBorderRightUber {
+    border-right: 1px solid #DEDEDE;
+}
+.lightBlueBgUber .row .col-7.text-start {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;  
+}
+.lightBlueBgUber .row .col {
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+.lightBlueBgUber .row svg {
+    max-width: 26px;
+    max-height: 20px;
+}
+.lightBlueBgUber .row .col.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    
+}
+
+@media (max-width: 767.98px) {
+    
+}
+
+@media (max-width: 575.98px) {
+    .uberBlueBg {
+        font-size: 14px;
+    }
+    .uberBlueBg2 {
+        font-size: 14px;
+    }
+}

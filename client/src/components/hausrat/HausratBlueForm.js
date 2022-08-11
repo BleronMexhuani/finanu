@@ -26,8 +26,8 @@ function HausratBlueForm() {
             let total_interest = mortgage_1 + mortgage_2;
             let other_costs = 0.01 * aparatament_price;
             let tragbarkeit = total_interest + (((0.34 - (capital / aparatament_price)) * aparatament_price) / 15) + other_costs;
-             // let mortgage = aparatament_price - capital;
-           
+            // let mortgage = aparatament_price - capital;
+
             setZinsen((((aparatament_price - capital) * interes / 100) / 12).toFixed(2));
             setAmortisation(calc_amor < 0 ? 0 : calc_amor.toFixed(2));
             setNebenconsten(((0.01 * aparatament_price) / 12).toFixed(2))
@@ -69,7 +69,7 @@ function HausratBlueForm() {
                                 <input type="number" onChange={(e) => setCapital(e.target.value)} className='hausratFormInputs' />
                             </div>
                         </div>
-                        <div className='pb-2'>
+                        <div className='pb-4'>
                             <div className='pb-2'>
                                 <div className="row g-0">
                                     <div className="col">
@@ -84,8 +84,11 @@ function HausratBlueForm() {
                                 <input type="range" min={0.4} step={0.05} max={2} onChange={(e) => setInteres(e.target.value)} defaultValue={1} className='hausratRangeInput form-range' />
                             </div>
                         </div>
+                        <div>
+                            <button type="button" className='hausratBtn py-2 mb-4 w-100' onClick={submitForm} >Submit</button>
+                        </div>
                     </div>
-                    <button type="button" className='btn btn-light w-50' onClick={submitForm} >Submit</button>
+
                     <div className='hausratHouseDiv'>
                         <img src={HausratHouse} alt="" />
                     </div>
