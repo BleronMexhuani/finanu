@@ -36,7 +36,6 @@ function HausratBlueForm() {
             setTargbarkeit((tragbarkeit / yearly_income * 100).toFixed(2));
 
         }
-
     }
 
 
