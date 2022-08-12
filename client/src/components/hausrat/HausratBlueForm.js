@@ -44,7 +44,6 @@ function HausratBlueForm() {
 
 
         }
-
     }
         useEffect(() => {
             setMontaliche(numberWithCommas(parseFloat(zinsen)  + parseFloat(amortisation)))
