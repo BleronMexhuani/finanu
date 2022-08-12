@@ -75,6 +75,10 @@
 .rightBorderDiv {
     padding: 0% !important;
 }
+.steps360 .krankenInputStyle::placeholder {
+    font-weight: 400 !important;
+    color: #434343 !important;
+}
 @media (max-width: 1399.98px) {
 
 }

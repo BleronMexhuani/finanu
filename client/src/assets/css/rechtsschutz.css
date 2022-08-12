@@ -25,16 +25,77 @@
     transition: all 0.2s ease-in-out;
 }
 
-.checkmarkRes {
+.checkmarkRes2 {
     display: block;
 }
 
-.containerRes input:checked~.checkmarkRes:after {
+.containerRes2 input:checked~.checkmarkRes2:after {
     display: block;
+}
+
+.containerRes2 input {
+    border: 3px solid #fff;
+}
+
+.checkmarkRes2 {
+    border: 3px solid #fff;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+}
+
+.containerRes2:hover input~.checkmarkRes2 {
+    border: 3px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.containerRes2 input:checked~.checkmarkRes2 {
+    border: 3px solid #2196F3;
+    transition: all 0.2s ease-in-out;
+}
+
+.checkmarkRes2 {
+    display: block;
+}
+
+.containerRes2 input:checked~.checkmarkRes2:after {
+    display: block;
+}
+
+.checkmarkRes2 img {
+    width: 29px;
 }
 
 .underCheckmarkSpan {
     font-weight: 400 !important;
+}
+
+.step3InputRechtss {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    outline: none !important;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+}
+
+.step3InputRechtss::placeholder {
+    color: #AAABAB;
+    font-weight: 500;
+}
+.step3RechtssBtn {
+    background: #358ACA;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.75rem;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
 }
 
 .blueBgRechtss {
@@ -98,25 +159,29 @@
     visibility: visible;
     transition: all 0.3s ease-in-out;
 }
+
 .faqOpen3 {
     height: 110px;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease-in-out;
 }
-.faqOpen2  {
+
+.faqOpen2 {
     height: 130px;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease-in-out;
 }
-.faqOpen1  {
+
+.faqOpen1 {
     height: 200px;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease-in-out;
 }
-ol, ul { 
+
+ol, ul {
     padding-left: 1rem !important;
 }
 
@@ -128,6 +193,7 @@ ol, ul {
     .faqOpen {
         height: 110px;
     }
+
     .faqOpen3 {
         height: 140px;
     }
@@ -137,12 +203,15 @@ ol, ul {
     .faqOpen3 {
         height: 180px;
     }
+
     .faqOpen2 {
         height: 160px;
     }
-    .faqOpen1  {
+
+    .faqOpen1 {
         height: 250px;
     }
+
     .faqOpen {
         height: 130px;
     }
@@ -152,50 +221,63 @@ ol, ul {
     .absoluteDivRecht {
         top: -2.5rem;
     }
-    .faqOpen1  {
+
+    .faqOpen1 {
         height: 370px;
     }
+
     .faqOpen2 {
         height: 250px;
     }
+
     .faqOpen3 {
         height: 300px;
     }
+
     .faqOpen {
         height: 200px;
     }
 }
+
 @media (max-width: 391.98px) {
     .faqOpen2 {
         height: 270px;
     }
+
     .faqOpen {
         height: 250px;
     }
-    .faqOpen1  {
+
+    .faqOpen1 {
         height: 450px;
     }
 }
+
 @media (max-width: 360.98px) {
     .whiteBorderBottomRecht span {
         font-size: 16px !important;
     }
+
     .faqOpen3 {
         height: 360px;
     }
-    .faqOpen1  {
+
+    .faqOpen1 {
         height: 500px;
     }
 }
-@media (max-width: 320.98px) { 
+
+@media (max-width: 320.98px) {
     .faqOpen3, .faqOpen1, .faqOpen2 {
         height: 100%;
         margin-bottom: 1rem;
     }
+
     .faqOpen {
         height: 300px;
     }
-    .faqOpen1  {
+
+    .faqOpen1 {
         height: 530px;
     }
 }
