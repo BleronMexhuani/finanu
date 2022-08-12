@@ -83,7 +83,7 @@ function Analys360() {
                                 Ausgaben und Sparziele ein und erhalten sehen Sie sich Ihren aktuellen Budgetplan an!</span>
                         </div>
                     </div>
-                    <div>
+                    <div className='steps360'>
                         {
                             {
                                 0: <FirstStep child={child} setChild={setChild} toNext={onNext} children={children} setChildren={setChildren} setHouseholdValue={household} changeHousehold={setHousehold} />,
