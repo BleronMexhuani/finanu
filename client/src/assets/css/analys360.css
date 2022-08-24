@@ -46,13 +46,16 @@
     align-items: center;
     cursor: pointer;
 }
+
 .activeSvg {
     width: 25px;
 }
+
 .passiveSvg {
     width: 25px;
 
 }
+
 .activeSvg path {
     stroke: white !important;
     margin: auto;
@@ -61,10 +64,12 @@
 .activeSvg rect {
     fill: #11A3E6;
 }
+
 .passiveSvg path {
     stroke: #D0D0D0;
     margin: auto;
 }
+
 .borderRightInput {
     border: none;
     border-right: 1px solid #DBDBDB;
@@ -72,34 +77,38 @@
     border-radius: 11px 0px 0px 11px;
     outline: none !important;
 }
+
 .rightBorderDiv {
     padding: 0% !important;
 }
+
 .steps360 .krankenInputStyle::placeholder {
     font-weight: 400 !important;
     color: #434343 !important;
 }
-@media (max-width: 1399.98px) {
 
-}
+@media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {
     .passiveBackground {
         width: 40px !important;
         height: 40px !important;
     }
+
     .activeBackground {
         width: 40px !important;
         height: 40px !important;
     }
-    
+
     .activeSvg {
         width: 20px !important;
     }
+
     .passiveSvg {
         width: 20px !important;
     }
-    .stepsSvgRow .col-auto.my-auto svg  {
+
+    .stepsSvgRow .col-auto.my-auto svg {
         width: 20px !important;
     }
 }
@@ -109,18 +118,21 @@
         width: 35px !important;
         height: 35px !important;
     }
+
     .activeBackground {
         width: 35px !important;
         height: 35px !important;
     }
-    
+
     .activeSvg {
         width: 20px !important;
     }
+
     .passiveSvg {
-        width: 20px !important; 
+        width: 20px !important;
     }
-    .stepsSvgRow .col-auto.my-auto svg  {
+
+    .stepsSvgRow .col-auto.my-auto svg {
         width: 15px !important;
     }
 }
@@ -130,18 +142,21 @@
         width: 30px !important;
         height: 30px !important;
     }
+
     .activeBackground {
         width: 30px !important;
         height: 30px !important;
     }
-    
+
     .activeSvg {
         width: 15px !important;
     }
+
     .passiveSvg {
-        width: 15px !important; 
+        width: 15px !important;
     }
-    .stepsSvgRow .col-auto.my-auto svg  {
+
+    .stepsSvgRow .col-auto.my-auto svg {
         width: 6px !important;
     }
 }
@@ -151,18 +166,72 @@
         width: 21px !important;
         height: 21px !important;
     }
+
     .activeBackground {
         width: 21px !important;
         height: 21px !important;
     }
-    
+
     .activeSvg {
         width: 14px !important;
     }
+
     .passiveSvg {
-        width: 14px !important; 
+        width: 14px !important;
     }
-    .stepsSvgRow .col-auto.my-auto svg  {
+
+    .stepsSvgRow .col-auto.my-auto svg {
         width: 1px !important;
     }
+}
+
+.darkTheme .stepsBlueDiv {
+    background-color: #333436;
+}
+
+.darkTheme .stepsBlueDiv input {
+    background-color: #282424 !important;
+    border: 1px solid transparent !important;
+    color: #fff;
+
+}
+
+.darkTheme .stepsBlueDiv input::placeholder {
+    color: #fff;
+}
+
+.darkTheme .krankenInputStyle::placeholder {
+    color: #fff !important;
+}
+.darkTheme .stepsBlueDiv select {
+    background-color: #282424 !important;
+    border: 1px solid transparent !important;
+    color: #fff;
+}
+
+.darkTheme .stepsBlueDiv select:disabled {
+    background-color: #282424 !important;
+}
+
+.darkTheme .stepsBlueDiv option {
+    background-color: #282424 !important;
+    color: #fff;
+}
+
+.darkTheme .rightBorderDiv {
+    background-color: #282424 !important;
+    border-right: 1px solid transparent !important;
+}
+.darkTheme .rightBorderDiv span {
+    color: #fff !important;
+}
+.darkTheme .rightBorderDiv .col {
+    border-right: 1px solid #ffffff50;
+}
+
+.darkTheme .passiveBackground {
+    background-color: #333436;
+}
+.darkTheme .passiveSvg rect { 
+    fill: transparent;
 }

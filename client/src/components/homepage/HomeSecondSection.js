@@ -3,7 +3,7 @@ import React from 'react'
 function HomeSecondSection() {
     return (
         <>
-            <div className='wrapDiv py-5 container-xl px-4 px-xl-0'>
+            <div className='wrapDiv py-5 container-xl px-4 px-xl-0 normalTextToWhite'>
                 <div className='text-start pb-5'>
                     <div className='pb-3'>
                         <span className='fs-2 fw-bold'>Krankenkassen vergleichen und Prämien sparen</span>
@@ -13,7 +13,6 @@ function HomeSecondSection() {
                             <span>
                                 Dieses Jahr steigen die Prämien der Krankenkassen Versicherungen. Bei uns können Sie schnell und unkompliziert Ihre aktuelle Prämie vergleichen und
                                 sich von uns kostenlos beraten lassen.
-
                             </span>
                         </div>
                         <div>  

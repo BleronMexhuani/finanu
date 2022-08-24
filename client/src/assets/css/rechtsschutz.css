@@ -88,6 +88,7 @@
     color: #AAABAB;
     font-weight: 500;
 }
+
 .step3RechtssBtn {
     background: #358ACA;
     border: none;
@@ -185,6 +186,10 @@ ol, ul {
     padding-left: 1rem !important;
 }
 
+.blueBgRechtssPriv {
+    background-color: #84CDEE;
+}
+
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
@@ -280,4 +285,23 @@ ol, ul {
     .faqOpen1 {
         height: 530px;
     }
+}
+
+.darkTheme .hausratBlueDiv {
+    background-color: #333436;
+}
+
+.darkTheme .blueBgRechtssPriv {
+    background-color: #333436;
+}
+
+.darkTheme .blueBgRecht {
+    background-color: #282424;
+    box-shadow: rgb(0 0 0 / 30%) 0 0 10px !important;
+
+}
+
+.darkTheme .whiteBgRecht {
+    background-color: #282424;
+    color: #fff;
 }

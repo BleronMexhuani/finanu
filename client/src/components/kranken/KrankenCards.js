@@ -114,7 +114,7 @@ function KrankenCards() {
                                 </span>
                             </div>
                             <div className='pb-5 mb-4'>
-                                <span className='fw-500 fs-5'>Welche Abteilung ist Ihnen bei einem Spitaleintritt am wichtigsten?</span>
+                                <span className='fw-500 fs-5 normalTextToWhite'>Welche Abteilung ist Ihnen bei einem Spitaleintritt am wichtigsten?</span>
                             </div>
                             <div className='w-100 px-0 px-md-5'>
                                 <div className="row gx-0 gy-4 gy-md-5 justify-content-center zuzatImages">
