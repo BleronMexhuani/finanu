@@ -1,19 +1,20 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import HausratHouse from '../../assets/images/hausratHouse.svg'
+import Modal from './Modal';
 
 function HausratBlueForm() {
-    
+
     const [interes, setInteres] = useState(1)
     const [aparatament_price, setApartamentPrice] = useState(0);
     const [yearly_income, setYearlyIncome] = useState(null);
     const [capital, setCapital] = useState(null);
-    
+
     const [zinsen, setZinsen] = useState(null);
     const [amortisation, setAmortisation] = useState(null);
     const [nebenconsten, setNebenconsten] = useState(null);
     const [montaliche, setMontaliche] = useState(null);
-    
+
     const [hypothek, setHypothek] = useState(null);
     const [eigenmittei, setEigenmittei] = useState(null);
     const [targbarkeit, setTargbarkeit] = useState(null);
@@ -21,7 +22,7 @@ function HausratBlueForm() {
     const [submitTable, setsubmitTable] = useState(false)
 
     const numberWithCommas = (x) => {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\'");
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
     }
 
     const submitForm = () => {
@@ -32,7 +33,6 @@ function HausratBlueForm() {
             let total_interest = mortgage_1 + mortgage_2;
             let other_costs = 0.01 * aparatament_price;
             let tragbarkeit = total_interest + (((0.34 - (capital / aparatament_price)) * aparatament_price) / 15) + other_costs;
-            let mortgage = aparatament_price - capital;
 
             setZinsen(numberWithCommas((((aparatament_price - capital) * interes / 100) / 12).toFixed(2)));
             setAmortisation(calc_amor < 0 ? 0 : calc_amor.toFixed(2));
@@ -45,11 +45,22 @@ function HausratBlueForm() {
 
         }
     }
-        useEffect(() => {
-            setMontaliche(numberWithCommas(parseFloat(zinsen)  + parseFloat(amortisation)))
+    useEffect(() => {
+        setMontaliche(numberWithCommas(parseFloat(zinsen) + parseFloat(amortisation)))
 
-        }, [zinsen,amortisation])
-        
+    }, [zinsen, amortisation])
+
+    const [openModal, setopenModal] = useState(false)
+    useEffect(() => {
+        if (openModal === true) {
+            document.body.style.overflowY = "hidden"
+        }
+        else {
+            document.body.style.overflowY = "auto"
+            console.log(openModal)
+        }
+
+    }, [openModal])
     return (
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
@@ -60,7 +71,7 @@ function HausratBlueForm() {
                                 <span >Gesamtkaufpreis</span>
                             </div>
                             <div>
-                                <input type="number" defaultValue={aparatament_price} onChange={(e) => setApartamentPrice(e.target.value)} className='hausratFormInputs' />
+                                <input type="number" onChange={(e) => setApartamentPrice(e.target.value)} className='hausratFormInputs' />
                             </div>
                         </div>
                         <div className='pb-4'>
@@ -193,7 +204,7 @@ function HausratBlueForm() {
                                     </div>
                                     <div className="col-auto">
                                         <div>
-                                            <span className={`fw-500 ${(eigenmittei >= 20) ? 'greenText' : 'redText' }`}>{eigenmittei} %</span>
+                                            <span className={`fw-500 ${(eigenmittei >= 20) ? 'greenText' : 'redText'}`}>{eigenmittei} %</span>
                                         </div>
                                     </div>
                                 </div>
@@ -207,16 +218,19 @@ function HausratBlueForm() {
                                     </div>
                                     <div className="col-auto">
                                         <div>
-                                            <span className={`fw-500 ${(targbarkeit > 33) ? 'redText' : 'greenText' }`}>{targbarkeit} %</span>
+                                            <span className={`fw-500 ${(targbarkeit > 33) ? 'redText' : 'greenText'}`}>{targbarkeit} %</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className='text-end'>
-                                    <button className='hausratBtn py-2'> Jetzt anfragen</button>
-                            </div>  
+                                <button type='button' onClick={() => {setopenModal(true)}} className='hausratBtn py-2'> Jetzt anfragen</button>
+                            </div>
                         </div>
                     </div>
+                )}
+                {openModal && (
+                    <Modal openModal={openModal} setopenModal={setopenModal}  aparatament_price={aparatament_price} yearly_income={yearly_income} capital={capital} />
                 )}
             </div>
         </>

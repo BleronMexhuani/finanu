@@ -132,7 +132,7 @@ var krankenkasse = {
                         name: element.name,
                         price: sumofPramie
                     });
-
+                        
                 }
             });
             res.status(200).json(final_data);

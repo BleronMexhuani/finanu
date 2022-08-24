@@ -4,6 +4,11 @@
 body {
     font-family: 'Raleway';
     padding-top: 7rem;
+    transition: background-color 0.1s ease-in;
+}
+
+body * {
+    transition: background-color 0.1s ease-in;
 }
 
 span {
@@ -17,12 +22,15 @@ p {
 a {
     font-family: 'Raleway';
 }
+
 .fw-500 {
     font-weight: 500;
 }
+
 .fw-600 {
     font-weight: 600;
 }
+
 .noNavBg {
     background-color: transparent;
 }
@@ -35,7 +43,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
     padding-left: 12rem;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -46,9 +54,11 @@ a {
     color: black;
     position: relative;
 }
+
 .navLinks:hover {
     color: #50B8E7 !important;
 }
+
 .challengeUsBtn {
     border: 1px solid #9024b4;
     border-radius: 6px;
@@ -144,31 +154,46 @@ a {
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
+
 .navlinksondesktop #linksss {
     padding: 0px 20px;
     color: #000;
     font-weight: 500;
 }
-@media (max-width: 1399.98px) { 
-    .nav-container { 
+
+.darkModeToggleDiv {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+@media (max-width: 1399.98px) {
+    .nav-container {
         padding-left: 6rem;
         padding-right: 6rem;
     }
 }
-@media (max-width: 1199.98px) { 
-    .nav-container { 
+
+@media (max-width: 1199.98px) {
+    .nav-container {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
 }
-@media (max-width: 1100.98px) { 
+
+@media (max-width: 1100.98px) {
     .navlinksondesktop {
         padding-right: 0px !important;
     }
+
     .navLinks:last-child {
         padding-right: 0px !important;
     }
 }
+
 @media (min-width: 1024px) {
     .navTabs .navTabsRow {
         display: none;
@@ -182,7 +207,7 @@ a {
     .navlinksondesktop {
         vertical-align: -webkit-baseline-middle;
     }
-    
+
     .navbar-nav {
         display: flex;
     }
@@ -272,8 +297,9 @@ a {
     background-color: #fff;
     box-shadow: rgb(0 0 0 / 10%) 0px 1px 1px 1px;
     border-radius: 8px;
-    word-break: keep-all !important; 
+    word-break: keep-all !important;
 }
+
 .navbarDropdownsWrap {
     padding-top: 25px;
     text-align: left;
@@ -283,6 +309,7 @@ a {
     width: max-content;
 
 }
+
 @media (max-width: 1900px) {
     .mobilelogohidden {
         display: none
@@ -325,11 +352,11 @@ a {
         width: 100vw;
         padding-top: 5rem;
         height: 150vh;
-        transition: all 1s ease-in-out;
+        transition: width 1s ease-in-out;
         text-align: center;
     }
 
-    
+
 
     .challengeUsBtn {
         font-size: 1.5rem;
@@ -396,7 +423,7 @@ a {
         width: 100vw;
         padding-top: 5rem;
         height: 150vh;
-        transition: all 1s ease-in-out;
+        transition: width 1s ease-in-out;
         text-align: center;
     }
 
@@ -424,7 +451,16 @@ a {
         flex-wrap: nowrap;
         justify-content: space-between;
         padding: 20px 90px 20px 20px;
-
+        text-decoration: none !important;
+    }
+    .darkModeToggleDiv {
+        top: 23px;
+        right: 80px;
+        left: unset;
+        bottom: unset;
+        margin-bottom: 0;
+        cursor: pointer;
+        z-index: 99999;
     }
 }
 
@@ -455,7 +491,7 @@ a {
         width: 100vw;
         padding-top: 5rem;
         height: 150vh;
-        transition: all 1s ease-in-out;
+        transition: width 1s ease-in-out;
         text-align: center;
     }
 
@@ -634,7 +670,7 @@ a {
         width: 100vw;
         padding-top: 5rem;
         height: 150vh;
-        transition: all 1s ease-in-out;
+        transition: width 1s ease-in-out;
         text-align: center;
         overflow-y: hidden;
     }
@@ -651,4 +687,29 @@ a {
     .navLinks .d-flex {
         justify-content: center;
     }
+}
+
+.darkTheme {
+    background-color: #282424;
+    transition: all 0.2s ease-in-out;
+}
+
+.darkTheme .navlinksondesktop #linksss {
+    color: #50B8E7;
+}
+
+.darkTheme .navTabs .navTabsRow {
+    background-color: #282424;
+}
+
+.darkTheme .navBg {
+    background-color: #282424;
+}
+
+.darkTheme .navLinks {
+    color: #50B8E7;
+}
+
+.darkTheme .navbarDropdowns {
+    background-color: #282424;
 }

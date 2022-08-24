@@ -7,7 +7,7 @@ function KrankenBlueBg() {
                 <div className='blueBgKranken'>
                     {/* Background Photo per telefon edhe tablet mvyn  */}
                     <div className=' blueBgCenterText'>
-                        <div className="wrapDiv container-xl px-4 pt-5 mt-5">
+                        <div className="wrapDiv container-xl px-4 pt-5 mt-5 normalTextToWhite">
                             <div className='ngtMrg'>
                                 <div className='pb-5'>
                                     <span className='fs-1 fw-bold'>Prämien der besten Krankenkassen</span>

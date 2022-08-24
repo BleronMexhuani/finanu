@@ -13,10 +13,10 @@ function Option2Kranken() {
                         <span className='fs-2 fw-bold' style={{ color: "#84cdee" }}>OPTION 2 : PERSONAL ADVICE</span>
                     </div>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-600'>PERSONAL ADVICE WITH AN ADVISER</span>
+                        <span className='fs-2 fw-600 normalTextToWhite'>PERSONAL ADVICE WITH AN ADVISER</span>
                     </div>
                     <div>
-                        <span className='fw-500'>Don't have the time or desire to read up on the topic or do you already know what is important to you?<br></br>
+                        <span className='fw-500 normalTextToWhite'>Don't have the time or desire to read up on the topic or do you already know what is important to you?<br></br>
                             Discuss your wishes with one of our customer advisors.<br></br>
                             He will help you to find a solution tailored to your needs and will be at your side from the request for a quote to<br></br> completion. Inquire now with the following options:</span>
                     </div>

@@ -8,7 +8,7 @@ function LastSectionRechtss() {
                     <span className='fw-700 fs-5' style={{ color: '#34ACE3' }}>Verkehrsrechtsschutz im<br></br>
                         Überblick</span>
                 </div>
-                <div className='pt-4'>
+                <div className='pt-4 normalTextToWhite'>
                     <span>Die Verkehrsrechtsschutzversicherung unterstützt Sie bei Rechtsfällen und Streitigkeiten im Strassenverkehr. Weiter bietet der Verkehrsrechtsschutz<br></br>
                         rechtliche Hilfe durch Juristen und Anwälte bei Rechtsstreitigkeiten, die<br></br>
                         mit dem Kauf, Leasing oder Reparatur eines Fahrzeugs zusammenhängen.</span>
@@ -23,7 +23,7 @@ function LastSectionRechtss() {
                                     Leistungen und Deckung
                                 </span>
                             </div>
-                            <div className='pb-4'>
+                            <div className='pb-4 normalTextToWhite'>
                                 <span>
                                     Die Leistungen der Verkehrsrechtsschutz können von
                                     Versicherung zu Versicherung unter Umständen leicht
@@ -31,10 +31,10 @@ function LastSectionRechtss() {
                                 </span>
                             </div>
                             <div className='pb-3'>
-                                <span className='fw-700' style={{ fontSize: '18px' }}>Folgende Leistungen werden abgedeckt:</span>
+                                <span className='fw-700 normalTextToWhite' style={{ fontSize: '18px' }}>Folgende Leistungen werden abgedeckt:</span>
                             </div>
                             <div>
-                                <ul>
+                                <ul className='normalTextToWhite'>
                                     <li>Beratung durch Juristen und Anwälte</li>
                                     <li>Übernahme von Anwaltskosten</li>
                                     <li>Bezahlung der Gerichtskosten</li>

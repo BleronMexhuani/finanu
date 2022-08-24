@@ -3,7 +3,7 @@ import React from 'react'
 function BlueBackgroundSection() {
     return (
         <div>
-            <div style={{ backgroundColor: '#84CDEE' }}>
+            <div className='blueBgRechtssPriv'>
                 <div className='pt-4 pb-5 mb-4'>
                     <span style={{ color: '#fff' }} className='fs-1 fw-700'>Die besten Angebote im Vergleich</span>
                 </div>

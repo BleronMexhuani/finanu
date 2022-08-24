@@ -75,10 +75,10 @@ function Analys360() {
                 <div>
                     <div className="pb-5">
                         <div className='pb-3'>
-                            <span className='fw-800 fs-1'>360° Budgetanalyse</span>
+                            <span className='fw-800 fs-1 normalTextToBlue'>360° Budgetanalyse</span>
                         </div>
                         <div>
-                            <span>Berechnen Sie ihr monatliches und jährliches Budget mit unsererem einfachen Budgetrechner.
+                            <span className='normalTextToWhite'>Berechnen Sie ihr monatliches und jährliches Budget mit unsererem einfachen Budgetrechner.
                                 Tragen Sie hierfür einfach <br></br> Ihre Einnahmen,
                                 Ausgaben und Sparziele ein und erhalten sehen Sie sich Ihren aktuellen Budgetplan an!</span>
                         </div>

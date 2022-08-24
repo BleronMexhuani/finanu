@@ -24,7 +24,7 @@
       <path id="Path_333" data-name="Path 333" d="M-1869.763-2006.2q.208-9.226-.408-18.447c-.219-3.272-.481-6.73.985-9.664.577-1.156,1.7-2.3,2.967-2.028,1.071.23,1.671,1.359,2.033,2.393a18.959,18.959,0,0,1,1,7.79" transform="translate(-7.387 -4.588)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
       <path id="Path_334" data-name="Path 334" d="M-1873.639-1977.557c.435-7.13-1.942-14.086-3.226-21.113a69.7,69.7,0,0,1,.189-25.973c.387-1.959,1.45-4.371,3.442-4.232" transform="translate(-6.298 -5.655)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
     </g>
-    <g id="Rectangle_198" data-name="Rectangle 198" fill="none" stroke="#fff" stroke-width="1">
+    <g id="Rectangle_198" data-name="Rectangle 198" fill="none" stroke="transparent" stroke-width="1">
       <rect width="145" height="105" stroke="none"/>
       <rect x="0.5" y="0.5" width="144" height="104" fill="none"/>
     </g>

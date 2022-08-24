@@ -334,10 +334,10 @@ function KrankenkasseSteps() {
                             <span>2/5</span>
                         </div>
                         <div className='pb-1'>
-                            <span className='fw-bold fs-4'>ALLE SCHWEIZER KRANKENKASSEN</span>
+                            <span className='fw-bold fs-4 normalTextToWhite'>ALLE SCHWEIZER KRANKENKASSEN</span>
                         </div>
                         <div className='pb-5'>
-                            <span className='fw-500'>Bei uns finden Sie Ihr passendes Angebot</span>
+                            <span className='fw-500 normalTextToWhite'>Bei uns finden Sie Ihr passendes Angebot</span>
                         </div>
                         <div className="krankenStepsBox">
                             <div className='pb-5'>

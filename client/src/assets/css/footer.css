@@ -18,3 +18,11 @@
     border: none;
     font-weight: bold;
 }
+.darkTheme .footerWhiteBgDiv {
+    color: #fff;
+    background-color: #333436;
+}
+.darkTheme .footerDiv {
+    color: #fff;
+    background-color: #333436;
+}

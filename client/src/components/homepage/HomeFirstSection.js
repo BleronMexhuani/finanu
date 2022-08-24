@@ -111,10 +111,10 @@ function HomeFirstSection() {
                                 <span className='fs-4 firstBlueTitle' style={{ fontWeight: 700 }}>TRANSPARENT, SCHNELL, DIGITAL​</span>
                             </div>
                             <div className='pt-3'>
-                                <span className='fs-5' style={{ fontWeight: 500 }}>Was ist finanu?</span>
+                                <span className='fs-5 normalTextToBlue' style={{ fontWeight: 500 }}>Was ist finanu?</span>
                             </div>
                             <div className='pt-3'>
-                                <span style={{ fontWeight: 500 }}>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der
+                                <span className='normalTextToBlue' style={{ fontWeight: 500 }}>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der
                                     unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister
                                     zurechtzufinden und zu verstehen wofür Sie überhaupt zahlen.</span>
                             </div>

@@ -264,12 +264,15 @@ a {
     transform: scale(1.03);
     transition: transform 0.2s ease-in-out;
 }
-.blueBgDiv path  {
+
+.blueBgDiv path {
     stroke: #fff;
 }
-.blueBgDiv svg  {
+
+.blueBgDiv svg {
     fill: #84CDEE;
 }
+
 .blueBgDiv .row svg path {
     fill: #fff;
 }
@@ -380,4 +383,119 @@ a {
     .lastIlustrationKranken {
         width: 100%;
     }
+}
+
+.darkTheme .krankenFirstStep {
+    background-color: #333436;
+    color: #fff;
+}
+
+.darkTheme .krankenFirstStep input {
+    background-color: transparent !important;
+    border: 1px solid #11A3E6 !important;
+    color: #fff;
+
+}
+
+.darkTheme .krankenFirstStep input::placeholder {
+    color: #fff;
+}
+
+.darkTheme .krankenSelectDropdown {
+    background-color: #282424;
+    color: #fff;
+}
+
+.darkTheme .krankenFirstStep select {
+    background-color: transparent !important;
+    border: 1px solid #11A3E6 !important;
+    color: #fff;
+}
+
+.darkTheme .krankenFirstStep option {
+    background-color: #282424 !important;
+    border: 1px solid #11A3E6 !important;
+    color: #fff;
+}
+
+.darkTheme .krankenStepsBox {
+    color: #fff;
+    background-color: #333436;
+}
+
+.darkTheme .krankenStepsBox input {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+    color: #fff;
+
+}
+
+.darkTheme .krankenStepsBox input::placeholder {
+    color: #fff;
+}
+
+.darkTheme .krankenStepsBox select {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+    color: #fff;
+}
+
+.darkTheme .krankenStepsBox select:disabled {
+    background-color: #282424 !important;
+}
+
+.darkTheme .krankenStepsBox option {
+    background-color: #282424 !important;
+    color: #fff;
+}
+
+.darkTheme .krankenInputStepStyle {
+    background-color: #282424 !important;
+    border: 1px solid #fff !important;
+    color: #fff;
+}
+
+.darkTheme .krankenInputStepStyle option {
+    background-color: #282424 !important;
+    border: 1px solid #11A3E6 !important;
+    color: #fff;
+}
+
+.darkTheme .checkmark {
+    color: #fff;
+}
+
+.darkTheme .krankenOfferStyle {
+    background-color: #333436;
+    color: #fff;
+}
+
+.darkTheme .krankenOfferStyle hr {
+    background-color: #50B8E7 !important;
+}
+
+.darkTheme .mehrLadenModalContent {
+    background-color: #333436;
+    color: #fff;
+}
+
+.darkTheme .mehrLadenModalContent span {
+    color: #fff !important;
+
+}
+.darkTheme .mehrLadenModalContent input {
+    border: 1px solid #434343 !important;
+}
+.darkTheme .mehrLadenModalContent select {
+    border: 1px solid #434343 !important;
+}
+.darkTheme .whiteBgKranken {
+    background-color: #333436;
+}
+.darkTheme .whiteCardKranken {
+    background-color: #333436;
+    color: #fff;
+}
+.darkTheme .greyBorderDiv {
+    color: #fff;
 }

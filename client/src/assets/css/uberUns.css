@@ -72,3 +72,16 @@
         font-size: 14px;
     }
 }
+.darkTheme .whiteBgUber {
+    background-color: #333436;
+    color: #fff;
+    box-shadow: none;
+}
+.darkTheme .lightBlueBgUber {
+    background-color: #333436;
+    border: 1px solid #333436;
+    color: #ffffff99;
+}
+.darkTheme .lightBlueBgUber .row svg path {
+    stroke: #ffffff99 !important;
+}

@@ -12,7 +12,7 @@ function AktuelleHypothek() {
                                     <span className='fw-800 fs-3' style={{ color: "#34ACE3" }}>Aktuelle Hypothekarzinsen​</span>
                                 </div>
                                 <div>
-                                    <span>Mit Finanu erhalten Sie attraktive Zinsen für die Finanzierung Ihren Immobilie und entscheiden unabhängig, welche Hypothekenform zu Ihren Bedurfnissen passt.</span>
+                                    <span className='normalTextToWhite'>Mit Finanu erhalten Sie attraktive Zinsen für die Finanzierung Ihren Immobilie und entscheiden unabhängig, welche Hypothekenform zu Ihren Bedurfnissen passt.</span>
                                 </div>
                             </div>
                         </div>

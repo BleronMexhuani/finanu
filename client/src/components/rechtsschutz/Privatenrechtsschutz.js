@@ -28,7 +28,7 @@ function Privatenrechtsschutz() {
                             <span className='fw-700 fs-1' style={{ color: '#50B8E7' }}>Privatrechtsschutz kurz erklärt</span>
                         </div>
                         <div className='pb-5'>
-                            <span>
+                            <span className='normalTextToWhite'>
                                 Eine Privatrechtschutzversicherung hilft Ihnen bei einem Rechtsstreit bei privatrechtlichen
                                 Streitigkeiten, unterstützt Sie bei rechtlichen Fragen und übernimmt die anfallenden Kosten für einen
                                 Rechtsanwalt. Neben der Verkehrsrechtschutzversicherung bietet die Privatrechtschutzversicherung

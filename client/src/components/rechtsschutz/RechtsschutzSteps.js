@@ -25,7 +25,7 @@ function RechtsschutzSteps() {
                         <img src={Book} alt="" />
                     </div>
                     <div className='pt-2 pb-5'>
-                        <span className='fw-700 fs-4'>Jetzt passende<br></br>
+                        <span className='fw-700 fs-4 normalTextToBlue'>Jetzt passende<br></br>
                             Rechtsschutzversicherung finden!</span>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ function RechtsschutzSteps() {
 
                                 </div>
                                 <div className='pt-5'>
-                                    <button className='bg-transparent border-0' onClick={onNext}>
+                                    <button type='button' className='bg-transparent border-0' onClick={onNext}>
                                         <div className="row gx-2 gy-0 justify-content-center">
                                             <div className="col-auto my-auto">
                                                 <div>
@@ -116,7 +116,7 @@ function RechtsschutzSteps() {
                                 <div className='pt-5'>
                                     <div className="row g-0 justify-content-around">
                                         <div className="col-auto">
-                                            <button className='bg-transparent border-0' onClick={onPrevious}>
+                                            <button type='button' className='bg-transparent border-0' onClick={onPrevious}>
                                                 <div className="row gx-2 gy-0 justify-content-center">
                                                     <div className="col-auto my-auto">
                                                         <svg width="16" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +132,7 @@ function RechtsschutzSteps() {
                                             </button>
                                         </div>
                                         <div className="col-auto">
-                                            <button className='bg-transparent border-0' onClick={onNext}>
+                                            <button type='button' className='bg-transparent border-0' onClick={onNext}>
                                                 <div className="row gx-2 gy-0 justify-content-center">
                                                     <div className="col-auto my-auto">
                                                         <div>
@@ -246,7 +246,7 @@ function RechtsschutzSteps() {
                                         <button className='step3RechtssBtn'>Vergleich anfordern</button>
                                     </div>
                                 </div>
-                                <button className='bg-transparent border-0 px-0' onClick={onPrevious}>
+                                <button type='button' className='bg-transparent border-0 px-0' onClick={onPrevious}>
                                     <div className="row gx-2 gy-0 justify-content-center">
                                         <div className="col-auto my-auto">
                                             <svg width="16" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,14 +272,14 @@ function RechtsschutzSteps() {
                         </div>
                         <div>
                             <div className='pb-3'>
-                                <span className='fw-700 fs-1'>
+                                <span className='fw-700 fs-1 normalTextToBlue'>
                                     Wozu Rechtsschutz?
                                 </span>
                             </div>
-                            <div className='pb-4'>
+                            <div className='pb-4 normalTextToWhite' >
                                 <span>Nicht immer läuft alles so wie es soll. Auch Rechtsschutzversicherungen sind<br></br> deshalb zu bedenken, um bei einem Rechtsstreit abgesichert zu sein.</span>
                             </div>
-                            <div className='pb-4'>
+                            <div className='pb-4 normalTextToWhite'>
                                 <span>
                                     Der Privatrechtsschutz unterstützt Sie bei privatrechtlichen Streitigkeiten oder<br></br>
                                     Meinungsverschiedenheiten – zum Beispiel mit den Nachbarn, dem Arbeitgeber,<br></br>
@@ -287,7 +287,7 @@ function RechtsschutzSteps() {
                                 </span>
                             </div>
                             <div>
-                                <span>
+                                <span className='normalTextToWhite'>
                                     Erfahren Sie mehr zum Thema auf finanu oder in einem persönlichen<br></br> Beratungsgespräch.
                                 </span>
                             </div>
