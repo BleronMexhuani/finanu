@@ -63,7 +63,9 @@
     background-color: #84CDEE;
     border-radius: 25px;
 }
-
+.blueBgdiv img {
+    width: 130px;
+}
 .servicesWhiteText {
     font-size: 17px;
     color: #fff;
@@ -193,13 +195,25 @@
 
 .darkTheme .blueCloudsBg {
     background-color: #333436;
-
+    background-image: url('../../assets/images/blueCloudsBgDark.svg');
+    
 }
 
 .darkTheme .fourthSectionBlueDiv {
     background-color: #333436;
 }
+
 .darkTheme .whiteTestimonials {
     background-color: #333436;
     color: #fff;
+}
+
+.darkTheme .blueBackgroundDiv {
+    background: url('../../assets/images/bluebackgroundDark.svg') no-repeat;
+    background-size: cover;
+}
+.darkTheme .cloudsBackground {
+    background: url('../../assets/images/cloudsDark.svg') no-repeat;
+    animation-delay: 0s;
+
 }

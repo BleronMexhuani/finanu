@@ -11,6 +11,7 @@ import Analys360 from './components/Analys360';
 import Rechtsschutz from './components/Rechtsschutz';
 import UberUns from './components/UberUns';
 import ToggleDarkMode from './components/ToggleDarkMode';
+
 function App() {
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('darkModeKey')) !== true && JSON.parse(localStorage.getItem('darkModeKey')) !== false) {
@@ -19,6 +20,7 @@ function App() {
     setDarkMode(localStorage.getItem('darkModeKey'))
 
   }, [])
+
   const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem('darkModeKey')))
   useEffect(() => {
     if (darkMode === true) {
@@ -36,11 +38,12 @@ function App() {
     <div className="App">
       <div>
         <BrowserRouter>
+
           <Header />
           <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
+          
           <Routes>
-
-            <Route exact path="/" element={<MainComponents />} />
+            <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
             <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
             <Route exact path="/pensionsplanung-und-ruhestand" element={<PensionPlan />} />
             <Route exact path="/haus-hypothek" element={<Hausrat />} />
@@ -50,6 +53,7 @@ function App() {
           </Routes>
 
           <Footer />
+
         </BrowserRouter>
       </div>
     </div>

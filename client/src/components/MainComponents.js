@@ -4,11 +4,11 @@ import HomeSecondSection from './homepage/HomeSecondSection'
 import HomeThirdSection from './homepage/HomeThirdSection'
 import HomeFourthSection from './homepage/HomeFourthSection'
 import '../assets/css/mainComponents.css'
-function MainComponents() {
+function MainComponents(props) {
   return (
     <>
       <div className='pb-5'>
-        <HomeFirstSection />
+        <HomeFirstSection darkMode={props.darkMode} />
       </div>
       <div>
         <HomeSecondSection />

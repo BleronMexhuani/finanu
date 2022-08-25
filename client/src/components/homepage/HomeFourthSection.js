@@ -11,10 +11,10 @@ function HomeFourthSection() {
         <>
             <div className='px-4 px-md-5 mx-0 mx-md-4'>
                 <div className='pb-3'>
-                    <span className='fs-1 fw-bold'>Möchten Sie mehr erfahren?</span>
+                    <span className='fs-1 fw-bold normalTextToWhite'>Möchten Sie mehr erfahren?</span>
                 </div>
                 <div className='pb-4'>
-                    <span className='fs-4' style={{ fontWeight: 500 }}>Unser Team von Versicherungsexperten hat die Ressourcen zusammengestellt,<br></br>
+                    <span className='fs-4 normalTextToWhite' style={{ fontWeight: 500 }}>Unser Team von Versicherungsexperten hat die Ressourcen zusammengestellt,<br></br>
                         die Sie benötigen, um eine fundierte Entscheidung zu treffen und die richtige<br></br>
                         Police zu finden.</span>
                 </div>
