@@ -1,13 +1,24 @@
 import React from 'react'
+import VorsorgeHome from '../../assets/images/vorsorgeHome.svg'
+import VorsorgeHomeDark from '../../assets/images/vorsorgeHomeDark.svg'
 import houseSvg from '../../assets/images/houseSvg.svg'
+import houseDark from '../../assets/images/houseSvgDark.svg'
+import AutoHome from '../../assets/images/autoHome.svg'
+import AutoHomeDark from '../../assets/images/autoHomeDark.svg'
+import KrankHome from '../../assets/images/krankHome.svg'
+import KrankHomeDark from '../../assets/images/krankHomeDark.svg'
+import Rechtsschutz from '../../assets/images/rechtsschutz.svg'
+import RechtsschutzDark from '../../assets/images/rechtsschutzDark.svg'
+import Finanzen from '../../assets/images/finanzenHome.svg'
+import FinanzenDark from '../../assets/images/finanzenDark.svg'
 import logo from "../../assets/images/logo.svg"
 import stars from "../../assets/images/stars.svg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FreeMode, Autoplay } from "swiper";
-function HomeFirstSection() {
-    
+function HomeFirstSection(props) {
+
     return (
         <>
             <div className='cloudsBackground wrapDiv1'>
@@ -18,7 +29,7 @@ function HomeFirstSection() {
                                 <span className='firstBlueTitle fs-2'>Informieren, Vergleichen & Abschliessen</span>
                             </div>
                             <div className='pb-5'>
-                                <span style={{fontWeight: 500}} >
+                                <span style={{ fontWeight: 500 }} >
                                     Oder wünschen Sie lieber eine kostenlose Gesamtberatung von<br></br>
                                     einem unserer Kundenberatern?
                                 </span>
@@ -37,7 +48,25 @@ function HomeFirstSection() {
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
                                     <div className='pb-4'>
-                                        <img src={houseSvg} alt="" />
+                                        {props.darkMode
+
+                                            ? <img src={VorsorgeHomeDark} alt="" />
+                                            : <img src={VorsorgeHome} alt="" />
+                                        }
+                                    </div>
+                                    <div>
+                                        <span className='servicesWhiteText'>Vorsorge & Pensionierung</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-sm-6 col-lg-4">
+                                <div className="blueBgdiv p-5">
+                                    <div className='pb-4'>
+                                        {props.darkMode
+
+                                            ? <img src={houseDark} alt="" />
+                                            : <img src={houseSvg} alt="" />
+                                        }
                                     </div>
                                     <div>
                                         <span className='servicesWhiteText'>Wohnen, Eigenheim &
@@ -48,55 +77,58 @@ function HomeFirstSection() {
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
                                     <div className='pb-4'>
-                                        <img src={houseSvg} alt="" />
+                                        {props.darkMode
+
+                                            ? <img src={AutoHomeDark} alt="" />
+                                            : <img src={AutoHome} alt="" />
+                                        }
                                     </div>
                                     <div>
-                                        <span className='servicesWhiteText'>Wohnen, Eigenheim &
-                                            Hypotheken</span>
+                                        <span className='servicesWhiteText'>Auto & Motorrad</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
                                     <div className='pb-4'>
-                                        <img src={houseSvg} alt="" />
+                                        {props.darkMode
+
+                                            ? <img src={KrankHomeDark} alt="" />
+                                            : <img src={KrankHome} alt="" />
+                                        }
                                     </div>
                                     <div>
-                                        <span className='servicesWhiteText'>Wohnen, Eigenheim &
-                                            Hypotheken</span>
+                                        <span className='servicesWhiteText'>Krankheit &
+                                            Unfall</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
                                     <div className='pb-4'>
-                                        <img src={houseSvg} alt="" />
+                                        {props.darkMode
+
+                                            ? <img src={RechtsschutzDark} alt="" />
+                                            : <img src={Rechtsschutz} alt="" />
+                                        }
                                     </div>
                                     <div>
-                                        <span className='servicesWhiteText'>Wohnen, Eigenheim &
-                                            Hypotheken</span>
+                                        <span className='servicesWhiteText'>Rechtsschutz</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
                                     <div className='pb-4'>
-                                        <img src={houseSvg} alt="" />
+                                        {props.darkMode
+
+                                            ? <img src={FinanzenDark} alt="" />
+                                            : <img src={Finanzen} alt="" />
+                                        }
                                     </div>
                                     <div>
-                                        <span className='servicesWhiteText'>Wohnen, Eigenheim &
-                                            Hypotheken</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
-                                    <div className='pb-4'>
-                                        <img src={houseSvg} alt="" />
-                                    </div>
-                                    <div>
-                                        <span className='servicesWhiteText'>Wohnen, Eigenheim &
-                                            Hypotheken</span>
+                                        <span className='servicesWhiteText'>Finanzen &
+                                            Budget</span>
                                     </div>
                                 </div>
                             </div>
@@ -111,10 +143,10 @@ function HomeFirstSection() {
                                 <span className='fs-4 firstBlueTitle' style={{ fontWeight: 700 }}>TRANSPARENT, SCHNELL, DIGITAL​</span>
                             </div>
                             <div className='pt-3'>
-                                <span className='fs-5 normalTextToBlue' style={{ fontWeight: 500 }}>Was ist finanu?</span>
+                                <span className='fs-5 normalTextToWhite' style={{ fontWeight: 500 }}>Was ist finanu?</span>
                             </div>
                             <div className='pt-3'>
-                                <span className='normalTextToBlue' style={{ fontWeight: 500 }}>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der
+                                <span className='normalTextToWhite' style={{ fontWeight: 500 }}>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der
                                     unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister
                                     zurechtzufinden und zu verstehen wofür Sie überhaupt zahlen.</span>
                             </div>
@@ -128,30 +160,30 @@ function HomeFirstSection() {
             <div className="px-4">
                 <Swiper
                     // slidesPerView={3}
-                    spaceBetween= {40}
+                    spaceBetween={40}
                     freeMode={false}
                     centeredSlides={true}
                     autoplay={{
                         delay: 2000,
                         disableOnInteraction: false,
-                      }}
+                    }}
                     loop={true}
                     className="mySwiper py-2 px-2"
-                    modules={[Autoplay,FreeMode]}
+                    modules={[Autoplay, FreeMode]}
                     breakpoints={{
                         640: {
-                          slidesPerView: 1,
-                          spaceBetween: 20,
+                            slidesPerView: 1,
+                            spaceBetween: 20,
                         },
                         768: {
-                          slidesPerView: 2,
-                          spaceBetween: 40,
+                            slidesPerView: 2,
+                            spaceBetween: 40,
                         },
                         1024: {
-                          slidesPerView: 3,
-                          spaceBetween: 40,
+                            slidesPerView: 3,
+                            spaceBetween: 40,
                         },
-                      }}
+                    }}
                 >
                     <SwiperSlide>
                         <div className='whiteTestimonials p-4 text-start'>

@@ -499,3 +499,11 @@ a {
 .darkTheme .greyBorderDiv {
     color: #fff;
 }
+.darkTheme .blueBgKranken { 
+    background: url('../../assets/images/krankenBlueBgDark.svg') no-repeat;
+    width: 100%;
+    overflow: hidden !important;
+    background-size: cover;
+    background-position-x: -200px;
+    margin-top: -200px;
+}
