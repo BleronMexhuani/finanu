@@ -11,6 +11,7 @@ import Analys360 from './components/Analys360';
 import Rechtsschutz from './components/Rechtsschutz';
 import UberUns from './components/UberUns';
 import ToggleDarkMode from './components/ToggleDarkMode';
+import ScrollTop from "./ScrollTop.js"
 
 function App() {
   useEffect(() => {
@@ -38,22 +39,21 @@ function App() {
     <div className="App">
       <div>
         <BrowserRouter>
+          <ScrollTop>
+            <Header />
+            <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
 
-          <Header />
-          <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
-          
-          <Routes>
-            <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
-            <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
-            <Route exact path="/pensionsplanung-und-ruhestand" element={<PensionPlan />} />
-            <Route exact path="/haus-hypothek" element={<Hausrat />} />
-            <Route exact path="/360" element={<Analys360 />} />
-            <Route exact path="/rechtsschutz" element={<Rechtsschutz />} />
-            <Route exact path="/uber-uns" element={<UberUns />} />
-          </Routes>
-
-          <Footer />
-
+            <Routes>
+              <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
+              <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
+              <Route exact path="/pensionsplanung-und-ruhestand" element={<PensionPlan />} />
+              <Route exact path="/haus-hypothek" element={<Hausrat />} />
+              <Route exact path="/360" element={<Analys360 />} />
+              <Route exact path="/rechtsschutz" element={<Rechtsschutz />} />
+              <Route exact path="/uber-uns" element={<UberUns />} />
+            </Routes>
+            <Footer />
+          </ScrollTop>
         </BrowserRouter>
       </div>
     </div>
