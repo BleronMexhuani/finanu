@@ -134,22 +134,47 @@ function Header() {
                                     <Button id="buttonofnavbar" variant="outline-danger">360° Budgetanalyse</Button>
                                 </Link>
 
-
-                                <div className='row gx-0 gy-4 navTabsRow'>
+                                <div className='row gx-0 gy-4 navTabsRow' onClick={toggleNav}>
                                     <div className="col-12">
                                         <Link to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Home
                                         </Link>
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} onFocus={() => setIsShown1(true)} onBlur={() => setIsShown1(false)} className='text-decoration-none navLinks'>
                                             Versicherungen
                                         </Link>
+                                        {isShown1 && (
+                                            <div className='pt-2'>
+                                                <div className='pb-2'>
+                                                    <Link to='/Krankenkasse' className='text-decoration-none navLinks fs-5'>Krankenkasse </Link>
+                                                </div>
+                                                <div className='pb-2'>
+                                                    <Link to='/Rechtsschutz' className='text-decoration-none navLinks fs-5'>Rechtsschutz </Link>
+                                                </div>
+                                                <div>
+                                                    <Link to='/' className='text-decoration-none navLinks fs-5'>Auto & Motorrad </Link>
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} onFocus={() => setIsShown(true)} onBlur={() => setIsShown(false)} className='text-decoration-none navLinks'>
                                             Finanzen
                                         </Link>
+                                        {isShown && (
+                                            <div className='pt-2'>
+                                                <div className='pb-2'>
+                                                    <Link to='/pensionsplanung-und-ruhestand' className='text-decoration-none navLinks fs-5'>Pensionsplanung und Ruhestand </Link>
+                                                </div>
+                                                <div className='pb-2'>
+                                                    <Link to='/haus-hypothek' className='text-decoration-none navLinks fs-5'>Haus & Hypothek </Link>
+                                                </div>
+                                                <div>
+                                                    <Link to='/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </Link>
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                     <div className="col-12">
                                         <Link to='/' id="linksss" className='text-decoration-none navLinks'>

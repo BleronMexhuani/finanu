@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import HausratHouse from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
+import NumberFormat from 'react-number-format';
 
 function HausratBlueForm() {
 
@@ -18,12 +19,8 @@ function HausratBlueForm() {
     const [hypothek, setHypothek] = useState(null);
     const [eigenmittei, setEigenmittei] = useState(null);
     const [targbarkeit, setTargbarkeit] = useState(null);
-
     const [submitTable, setsubmitTable] = useState(false)
 
-    const numberWithCommas = (x) => {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
-    }
 
     const submitForm = () => {
         if (aparatament_price !== null && capital !== null && yearly_income !== null) {
@@ -34,10 +31,10 @@ function HausratBlueForm() {
             let other_costs = 0.01 * aparatament_price;
             let tragbarkeit = total_interest + (((0.34 - (capital / aparatament_price)) * aparatament_price) / 15) + other_costs;
 
-            setZinsen(numberWithCommas((((aparatament_price - capital) * interes / 100) / 12).toFixed(2)));
+            setZinsen((((aparatament_price - capital) * interes / 100) / 12).toFixed(2));
             setAmortisation(calc_amor < 0 ? 0 : calc_amor.toFixed(2));
             setNebenconsten(((0.01 * aparatament_price) / 12).toFixed(2))
-            setHypothek(numberWithCommas(aparatament_price - capital))
+            setHypothek(aparatament_price - capital)
             setEigenmittei((capital / aparatament_price) * 100)
             setTargbarkeit((tragbarkeit / yearly_income * 100).toFixed(2));
             setsubmitTable(true)
@@ -46,7 +43,7 @@ function HausratBlueForm() {
         }
     }
     useEffect(() => {
-        setMontaliche(numberWithCommas(parseFloat(zinsen) + parseFloat(amortisation)))
+        setMontaliche(parseFloat(zinsen) + parseFloat(amortisation))
 
     }, [zinsen, amortisation])
 
@@ -57,10 +54,10 @@ function HausratBlueForm() {
         }
         else {
             document.body.style.overflowY = "auto"
-            console.log(openModal)
         }
 
     }, [openModal])
+
     return (
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
@@ -71,7 +68,17 @@ function HausratBlueForm() {
                                 <span >Gesamtkaufpreis</span>
                             </div>
                             <div>
-                                <input type="number" onChange={(e) => setApartamentPrice(e.target.value)} className='hausratFormInputs' />
+                                <NumberFormat
+
+                                    onValueChange={(values) => {
+                                        const { value } = values;
+                                        setApartamentPrice(value)
+                                    }}
+                                    className='hausratFormInputs'
+                                    displayType={'input'}
+                                    thousandSeparator={true}
+
+                                />
                             </div>
                         </div>
                         <div className='pb-4'>
@@ -79,7 +86,18 @@ function HausratBlueForm() {
                                 <span >Jährliches Einkommen</span>
                             </div>
                             <div>
-                                <input type="number" onChange={(e) => setYearlyIncome(e.target.value)} className='hausratFormInputs' />
+                                <NumberFormat
+
+                                    onValueChange={(values) => {
+                                        const { value } = values;
+                                        setYearlyIncome(value)
+                                    }}
+                                    className='hausratFormInputs'
+                                    displayType={'input'}
+                                    thousandSeparator={true}
+
+                                />
+
                             </div>
                         </div>
                         <div className='pb-4'>
@@ -87,7 +105,18 @@ function HausratBlueForm() {
                                 <span >Eigenkapital</span>
                             </div>
                             <div>
-                                <input type="number" onChange={(e) => setCapital(e.target.value)} className='hausratFormInputs' />
+                                <NumberFormat
+
+                                    onValueChange={(values) => {
+                                        const { value } = values;
+                                        setCapital(value)
+                                    }}
+                                    className='hausratFormInputs'
+                                    displayType={'input'}
+                                    thousandSeparator={true}
+
+                                />
+
                             </div>
                         </div>
                         <div className='pb-4'>
@@ -190,7 +219,7 @@ function HausratBlueForm() {
                                     </div>
                                     <div className="col-auto">
                                         <div>
-                                            <span className='fw-500'>CHF {hypothek}</span>
+                                            <span className='fw-500'>CHF <NumberFormat value={hypothek} displayType={'text'} thousandSeparator={true} /></span>
                                         </div>
                                     </div>
                                 </div>
@@ -224,13 +253,13 @@ function HausratBlueForm() {
                                 </div>
                             </div>
                             <div className='text-end'>
-                                <button type='button' onClick={() => {setopenModal(true)}} className='hausratBtn py-2'> Jetzt anfragen</button>
+                                <button type='button' onClick={() => { setopenModal(true) }} className='hausratBtn py-2'> Jetzt anfragen</button>
                             </div>
                         </div>
                     </div>
                 )}
                 {openModal && (
-                    <Modal openModal={openModal} setopenModal={setopenModal}  aparatament_price={aparatament_price} yearly_income={yearly_income} capital={capital} />
+                    <Modal openModal={openModal} setopenModal={setopenModal} aparatament_price={aparatament_price} yearly_income={yearly_income} capital={capital} />
                 )}
             </div>
         </>

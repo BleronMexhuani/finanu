@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import NewPerson from './NewPerson';
 import Tooth from "../../assets/images/tooth.svg"
@@ -201,17 +201,9 @@ function KrankenkasseSteps() {
         setModel(e.target.options[e.target.selectedIndex].getAttribute('data-tariftyp'));
         setTarifbezeichnung(e.target.value);
     }
+    
 
-    const toSecondStep = () => {
 
-        if (inputValue === '' || inputValue === null || insuranceNum === "" || insuranceNum === null) {
-            setSecondStep(false)
-
-        }
-        else {
-            setSecondStep(true)
-        }
-    }
 
     const [endKrankenMap, setEndKrankenMap] = useState(3)
     const [familySituation, setFamilySituation] = useState('')
@@ -225,6 +217,27 @@ function KrankenkasseSteps() {
     const [fourthStep2, setFourthStep2] = useState(false)
     const [fifthStep, setFifthStep] = useState(false)
 
+
+
+
+    const toSecondStep = () => {
+
+        if (inputValue === '' || inputValue === null || insuranceNum === "" || insuranceNum === null) {
+            setSecondStep(false)
+        }
+        else {
+            setSecondStep(true)
+        }
+    }
+    const secondStepKranken = useRef();
+    useEffect(() => {
+        if (secondStep) {
+            var elem = secondStepKranken
+            window.scrollTo(0, elem.current.offsetTop);
+        }
+
+    }, [secondStep])
+
     const toThirdStep = () => {
         if (secondStepFirstRadio) {
             if (familySituation === "einzel") {
@@ -237,6 +250,14 @@ function KrankenkasseSteps() {
             }
         }
     }
+    const thirdStepKranken = useRef();
+    useEffect(() => {
+        if (thirdStep) {
+            var elem = thirdStepKranken
+            window.scrollTo(0, elem.current.offsetTop);
+        }
+
+    }, [thirdStep])
 
     const [gender, setGender] = useState("")
     const [vornameValue, setVornameValue] = useState("")
@@ -252,7 +273,14 @@ function KrankenkasseSteps() {
             setThirdStep2(false)
         }
     }
+    const third2StepKranken = useRef();
+    useEffect(() => {
+        if (thirdStep2) {
+            var elem = third2StepKranken
+            window.scrollTo(0, elem.current.offsetTop);
+        }
 
+    }, [thirdStep2])
     const [mehrLadenModal, setMehrLadenModal] = useState(false)
     const [modalFormSubmited, setModalFormSubmited] = useState(false)
 
@@ -262,10 +290,29 @@ function KrankenkasseSteps() {
         }
         else {
             setEndKrankenMap(endKrankenMap + 3)
+
         }
 
     }
 
+    const fourthStepKranken = useRef();
+    useEffect(() => {
+        if (fourthStep) {
+            var elem = fourthStepKranken
+            window.scrollTo(0, elem.current.offsetTop);
+        }
+
+    }, [fourthStep])
+
+    
+    const fifthStepKranken = useRef();
+    useEffect(() => {
+        if (fifthStep) {
+            var elem = fifthStepKranken
+            window.scrollTo(0, elem.current.offsetTop);
+        }
+
+    }, [fifthStep])
 
     const handleModalSubmit = (e) => {
         e.preventDefault()
@@ -329,7 +376,7 @@ function KrankenkasseSteps() {
                     </div>
                 </div>
                 {secondStep && (
-                    <div className='krankenSecondStep wrapDiv container-xl px-4 px-xl-0 pt-5'>
+                    <div ref={secondStepKranken} className='krankenSecondStep wrapDiv container-xl px-4 px-xl-0 pt-5'>
                         <div className='my-5 krankenStepsCircle mx-auto fs-5'>
                             <span>2/5</span>
                         </div>
@@ -423,7 +470,7 @@ function KrankenkasseSteps() {
                     </div>
                 )}
                 {thirdStep && (
-                    <div className='wrapDiv container-xl px-4 px-xl-0 pt-5'>
+                    <div ref={thirdStepKranken} className='wrapDiv container-xl px-4 px-xl-0 pt-5'>
                         <div className='krankenSecondStep'>
                             <div className='my-5 krankenStepsCircle mx-auto fs-5'>
                                 <span>3/5</span>
@@ -554,7 +601,7 @@ function KrankenkasseSteps() {
 
                 )}
                 {thirdStep2 && (
-                    <div className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
+                    <div ref={third2StepKranken} className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
                         <div className="row g-3 justify-content-center pt-5">
                             {
 
@@ -596,7 +643,7 @@ function KrankenkasseSteps() {
                     </div>
                 )}
                 {fourthStep && (
-                    <div>
+                    <div ref={fourthStepKranken}>
                         <div className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
                             <div className='krankenSecondStep'>
                                 <div className='my-5 krankenStepsCircle mx-auto fs-5'>
@@ -734,7 +781,7 @@ function KrankenkasseSteps() {
                                 </div>
                             )}
                             {fifthStep && (
-                                <div className="">
+                                <div ref={fifthStepKranken} className="">
                                     <div className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
                                         <div className='krankenSecondStep'>
                                             <div className='my-5 krankenStepsCircle mx-auto fs-5'>
