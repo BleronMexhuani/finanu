@@ -66,7 +66,20 @@ function KrankenkasseSteps() {
 
     useEffect(() => {
         const searchRegion = (e) => {
-            const region = regions.filter((element) => (element.plz + " " + element.ort).includes(inputValue))
+            let region;
+
+            if (inputValue.length < 4) {
+                if (!isNaN(inputValue)) {
+                    region = regions.filter((element) => (element.plz.substr(0, inputValue.length)) === (inputValue))
+                }
+                else {
+                    region = regions.filter((element) => (element.plz + " " + element.ort).includes(inputValue))
+                }
+            }
+            else {
+                region = regions.filter((element) => (element.plz + " " + element.ort).includes(inputValue))
+            }
+            // const region = regions.filter((element) => (element.plz + " " + element.ort).includes(inputValue))
             if (inputValue === '' || inputValue === null) {
                 setFilter([]);
                 setIsEmpty(true)
@@ -201,7 +214,7 @@ function KrankenkasseSteps() {
         setModel(e.target.options[e.target.selectedIndex].getAttribute('data-tariftyp'));
         setTarifbezeichnung(e.target.value);
     }
-    
+
 
 
 
@@ -304,7 +317,7 @@ function KrankenkasseSteps() {
 
     }, [fourthStep])
 
-    
+
     const fifthStepKranken = useRef();
     useEffect(() => {
         if (fifthStep) {
