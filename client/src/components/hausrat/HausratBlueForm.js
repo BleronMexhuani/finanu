@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect,useRef } from 'react'
 import HausratHouse from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
@@ -57,6 +57,16 @@ function HausratBlueForm() {
         }
 
     }, [openModal])
+
+    const HausratBlue = useRef()
+    useEffect(() => {
+      if(submitTable){
+        var elem = HausratBlue
+            window.scrollTo(0, elem.current.offsetTop);
+      }
+    
+    }, [submitTable])
+    
 
     return (
         <>
@@ -146,8 +156,8 @@ function HausratBlueForm() {
 
                 </div>
                 {submitTable && (
-                    <div className="px-0 px-md-4 px-lg-5">
-                        <div className="blueBorderDiv p-4 p-md-5 text-start">
+                    <div ref={HausratBlue} className="px-0 px-md-4 px-lg-5 mt-5 pt-5">
+                        <div  className="blueBorderDiv p-4 p-md-5 text-start">
                             <div className='pb-4'>
                                 <span className="fw-700 fs-3">Kosten im Detail</span>
                             </div>

@@ -141,10 +141,10 @@ function Header() {
                                         </Link>
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} onFocus={() => setIsShown1(true)} onBlur={() => setIsShown1(false)} className='text-decoration-none navLinks'>
+                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} className='text-decoration-none navLinks'>
                                             Versicherungen
                                         </Link>
-                                        {isShown1 && (
+                                        {/* {isShown1 && ( */}
                                             <div className='pt-2'>
                                                 <div className='pb-2'>
                                                     <Link to='/Krankenkasse' className='text-decoration-none navLinks fs-5'>Krankenkasse </Link>
@@ -156,13 +156,13 @@ function Header() {
                                                     <Link to='/' className='text-decoration-none navLinks fs-5'>Auto & Motorrad </Link>
                                                 </div>
                                             </div>
-                                        )}
+                                        {/* )} */}
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} onFocus={() => setIsShown(true)} onBlur={() => setIsShown(false)} className='text-decoration-none navLinks'>
+                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} className='text-decoration-none navLinks'>
                                             Finanzen
                                         </Link>
-                                        {isShown && (
+                                        {/* {isShown && ( */}
                                             <div className='pt-2'>
                                                 <div className='pb-2'>
                                                     <Link to='/pensionsplanung-und-ruhestand' className='text-decoration-none navLinks fs-5'>Pensionsplanung und Ruhestand </Link>
@@ -174,7 +174,7 @@ function Header() {
                                                     <Link to='/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </Link>
                                                 </div>
                                             </div>
-                                        )}
+                                        {/* )} */}
                                     </div>
                                     <div className="col-12">
                                         <Link to='/' id="linksss" className='text-decoration-none navLinks'>

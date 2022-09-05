@@ -17,6 +17,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FreeMode, Autoplay } from "swiper";
+import { Link } from "react-router-dom";
+
 function HomeFirstSection(props) {
 
     return (
@@ -47,89 +49,113 @@ function HomeFirstSection(props) {
                         <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 pb-5">
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <div className='pb-4'>
-                                        {props.darkMode
+                                    <Link to='/pensionsplanung-und-ruhestand'>
 
-                                            ? <img src={VorsorgeHomeDark} alt="" />
-                                            : <img src={VorsorgeHome} alt="" />
-                                        }
-                                    </div>
-                                    <div>
-                                        <span className='servicesWhiteText'>Vorsorge & Pensionierung</span>
-                                    </div>
+                                        <div className='pb-4'>
+                                            {props.darkMode
+
+                                                ? <img src={VorsorgeHomeDark} alt="" />
+                                                : <img src={VorsorgeHome} alt="" />
+                                            }
+                                        </div>
+                                        <div>
+                                            <span className='servicesWhiteText'>Vorsorge & Pensionierung</span>
+                                        </div>
+                                    </Link>
+
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <div className='pb-4'>
-                                        {props.darkMode
+                                    <Link to='/haus-hypothek'>
 
-                                            ? <img src={houseDark} alt="" />
-                                            : <img src={houseSvg} alt="" />
-                                        }
-                                    </div>
-                                    <div>
-                                        <span className='servicesWhiteText'>Wohnen, Eigenheim &
-                                            Hypotheken</span>
-                                    </div>
+                                        <div className='pb-4'>
+                                            {props.darkMode
+
+                                                ? <img src={houseDark} alt="" />
+                                                : <img src={houseSvg} alt="" />
+                                            }
+                                        </div>
+                                        <div>
+                                            <span className='servicesWhiteText'>Wohnen, Eigenheim &
+                                                Hypotheken</span>
+                                        </div>
+                                    </Link>
+
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <div className='pb-4'>
-                                        {props.darkMode
+                                    <Link to="/">
 
-                                            ? <img src={AutoHomeDark} alt="" />
-                                            : <img src={AutoHome} alt="" />
-                                        }
-                                    </div>
-                                    <div>
-                                        <span className='servicesWhiteText'>Auto & Motorrad</span>
-                                    </div>
+                                        <div className='pb-4'>
+                                            {props.darkMode
+
+                                                ? <img src={AutoHomeDark} alt="" />
+                                                : <img src={AutoHome} alt="" />
+                                            }
+                                        </div>
+                                        <div>
+                                            <span className='servicesWhiteText'>Auto & Motorrad</span>
+                                        </div>
+                                    </Link>
+
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <div className='pb-4'>
-                                        {props.darkMode
+                                    <Link to='/Krankenkasse'>
 
-                                            ? <img src={KrankHomeDark} alt="" />
-                                            : <img src={KrankHome} alt="" />
-                                        }
-                                    </div>
-                                    <div>
-                                        <span className='servicesWhiteText'>Krankheit &
-                                            Unfall</span>
-                                    </div>
+                                        <div className='pb-4'>
+                                            {props.darkMode
+
+                                                ? <img src={KrankHomeDark} alt="" />
+                                                : <img src={KrankHome} alt="" />
+                                            }
+                                        </div>
+                                        <div>
+                                            <span className='servicesWhiteText'>Krankheit &
+                                                Unfall</span>
+                                        </div>
+                                    </Link>
+
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <div className='pb-4'>
-                                        {props.darkMode
+                                    <Link to='/Rechtsschutz'>
 
-                                            ? <img src={RechtsschutzDark} alt="" />
-                                            : <img src={Rechtsschutz} alt="" />
-                                        }
-                                    </div>
-                                    <div>
-                                        <span className='servicesWhiteText'>Rechtsschutz</span>
-                                    </div>
+                                        <div className='pb-4'>
+                                            {props.darkMode
+
+                                                ? <img src={RechtsschutzDark} alt="" />
+                                                : <img src={Rechtsschutz} alt="" />
+                                            }
+                                        </div>
+                                        <div>
+                                            <span className='servicesWhiteText'>Rechtsschutz</span>
+                                        </div>
+                                    </Link>
+
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
-                                    <div className='pb-4'>
-                                        {props.darkMode
 
-                                            ? <img src={FinanzenDark} alt="" />
-                                            : <img src={Finanzen} alt="" />
-                                        }
-                                    </div>
-                                    <div>
-                                        <span className='servicesWhiteText'>Finanzen &
-                                            Budget</span>
-                                    </div>
+                                <div className="blueBgdiv p-5">
+                                    <Link to='/360'>
+                                        <div className='pb-4'>
+                                            {props.darkMode
+
+                                                ? <img src={FinanzenDark} alt="" />
+                                                : <img src={Finanzen} alt="" />
+                                            }
+                                        </div>
+                                        <div>
+                                            <span className='servicesWhiteText'>Finanzen &
+                                                Budget</span>
+                                        </div>
+                                    </Link>
+
                                 </div>
                             </div>
                         </div>
