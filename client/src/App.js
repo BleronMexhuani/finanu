@@ -42,7 +42,6 @@ function App() {
           <ScrollTop>
             <Header />
             <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
-
             <Routes>
               <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
               <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
