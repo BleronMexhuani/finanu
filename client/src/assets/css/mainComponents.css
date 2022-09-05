@@ -63,6 +63,9 @@
     background-color: #84CDEE;
     border-radius: 25px;
 }
+.blueBgdiv a {
+    text-decoration: none !important;
+} 
 .blueBgdiv img {
     width: 130px;
 }
@@ -70,6 +73,7 @@
     font-size: 17px;
     color: #fff;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .marginGutter {
@@ -174,6 +178,19 @@
 @media (max-width: 575.98px) {
     .marginGutter {
         margin: 0px;
+    }
+    .fourthSectionBlueDiv {
+        margin-left: 0px !important;
+        border-radius: 12px !important;
+        margin-top: -20px;
+        z-index: 10;
+        padding: 2rem 2rem !important;
+    }
+    .fourthSectionImgDiv {
+        z-index: -1 !important;
+    }
+    .fourthSectionImg {
+        width: 100%;
     }
 }
 

@@ -20,14 +20,14 @@ function HomeFourthSection() {
                 </div>
             </div>
             <div className='wrapDiv container-xl px-4 px-lg-0'>
-                <div className="row g-4">
+                <div className="row g-2 g-sm-4">
                     <div className="col-12 col-md-6">
                         <div className="row g-0">
-                            <div className="col-6 col-lg-5" style={{zIndex: 5}}>
-                                <img className='img-fluid h-100' src={image1} alt="" />
+                            <div className="col-12 col-lg-5 fourthSectionImgDiv" style={{zIndex: 5}}>
+                                <img className='img-fluid h-100 fourthSectionImg' src={image1} alt="" />
                             </div>
-                            <div className="col-6 col-lg-7">
-                                <div className='fourthSectionBlueDiv ps-4 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
+                            <div className="col-12 col-lg-7">
+                                <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
                                         <span className='fs-4'>Gegen Diebstahl
                                             versichern</span>
@@ -44,11 +44,11 @@ function HomeFourthSection() {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="row g-0">
-                            <div className="col-6 col-lg-5" style={{zIndex: 5}}>
-                                <img className='img-fluid h-100' src={image2} alt="" />
+                            <div className="col-12 col-lg-5 fourthSectionImgDiv" style={{zIndex: 5}}>
+                                <img className='img-fluid h-100 fourthSectionImg' src={image2} alt="" />
                             </div>
-                            <div className="col-6 col-lg-7">
-                                <div className='fourthSectionBlueDiv ps-4 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
+                            <div className="col-12 col-lg-7">
+                                <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
                                         <span className='fs-4'>Gegen Diebstahl
                                             versichern</span>
@@ -65,11 +65,11 @@ function HomeFourthSection() {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="row g-0">
-                            <div className="col-6 col-lg-5" style={{zIndex: 5}}>
-                                <img className='img-fluid h-100' src={image3} alt="" />
+                            <div className="col-12 col-lg-5 fourthSectionImgDiv" style={{zIndex: 5}}>
+                                <img className='img-fluid h-100 fourthSectionImg' src={image3} alt="" />
                             </div>
-                            <div className="col-6 col-lg-7">
-                                <div className='fourthSectionBlueDiv ps-4 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
+                            <div className="col-12 col-lg-7">
+                                <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
                                         <span className='fs-4'>Gegen Diebstahl
                                             versichern</span>
@@ -86,11 +86,11 @@ function HomeFourthSection() {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="row g-0">
-                            <div className="col-6 col-lg-5" style={{zIndex: 5}}>
-                                <img className='img-fluid h-100' src={image4} alt="" />
+                            <div className="col-12 col-lg-5 fourthSectionImgDiv" style={{zIndex: 5}}>
+                                <img className='img-fluid h-100 fourthSectionImg' src={image4} alt="" />
                             </div>
-                            <div className="col-6 col-lg-7">
-                                <div className='fourthSectionBlueDiv ps-4 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
+                            <div className="col-12 col-lg-7">
+                                <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
                                         <span className='fs-4'>Gegen Diebstahl
                                             versichern</span>
@@ -107,11 +107,11 @@ function HomeFourthSection() {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="row g-0">
-                            <div className="col-6 col-lg-5" style={{zIndex: 5}}>
-                                <img className='img-fluid h-100' src={image5} alt="" />
+                            <div className="col-12 col-lg-5 fourthSectionImgDiv" style={{zIndex: 5}}>
+                                <img className='img-fluid h-100 fourthSectionImg' src={image5} alt="" />
                             </div>
-                            <div className="col-6 col-lg-7">
-                                <div className='fourthSectionBlueDiv ps-4 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
+                            <div className="col-12 col-lg-7">
+                                <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
                                         <span className='fs-4'>Gegen Diebstahl
                                             versichern</span>
@@ -128,11 +128,11 @@ function HomeFourthSection() {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="row g-0">
-                            <div className="col-6 col-lg-5" style={{zIndex: 5}}>
-                                <img className='img-fluid h-100' src={image6} alt="" />
+                            <div className="col-12 col-lg-5 fourthSectionImgDiv" style={{zIndex: 5}}>
+                                <img className='img-fluid h-100 fourthSectionImg' src={image6} alt="" />
                             </div>
-                            <div className="col-6 col-lg-7">
-                                <div className='fourthSectionBlueDiv ps-4 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
+                            <div className="col-12 col-lg-7">
+                                <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
                                         <span className='fs-4'>Gegen Diebstahl
                                             versichern</span>

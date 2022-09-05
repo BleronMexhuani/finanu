@@ -1,5 +1,6 @@
 import React from 'react'
 import './assets/css/footer.css'
+import { Link } from "react-router-dom";
 function Footer() {
     return (
         <>
@@ -55,22 +56,34 @@ function Footer() {
                                 <span style={{ fontWeight: 700 }} className="fs-5">Produkte</span>
                             </div>
                             <div className='pb-2'>
-                                <span>Vorsorge</span>
+                                <Link to='/pensionsplanung-und-ruhestand'>
+                                    <span>Vorsorge</span>
+                                </Link>
                             </div>
                             <div className='pb-2'>
-                                <span>Wohnen & Hypothek</span>
+                                <Link to='/haus-hypothek'>
+                                    <span>Wohnen & Hypothek</span>
+                                </Link>
                             </div>
                             <div className='pb-2'>
-                                <span>Auto & Mobilität</span>
+                                <Link to='/'>
+                                    <span>Auto & Mobilität</span>
+                                </Link>
                             </div>
                             <div className='pb-2'>
-                                <span>Krankenkasse</span>
+                                <Link to='/Krankenkasse'>
+                                    <span>Krankenkasse</span>
+                                </Link>
                             </div>
                             <div className='pb-2'>
-                                <span>Rechtsschutz</span>
+                                <Link to='/Rechtsschutz'>
+                                    <span>Rechtsschutz</span>
+                                </Link>
                             </div>
                             <div className='pb-2'>
-                                <span>Budgetplanung</span>
+                                <Link to='/360'>
+                                    <span>Budgetplanung</span>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-6 col-md-3">
