@@ -7,7 +7,7 @@ import GutZuWissen from './kranken/GutZuWissen'
 import KrankenCards from './kranken/KrankenCards'
 import Option2Kranken from './kranken/Option2Kranken'
 
-function Krankenkasse() {
+function Krankenkasse(props) {
   return (
     <>
       <div>
@@ -23,7 +23,7 @@ function Krankenkasse() {
         <KrankenCards />
       </div>
       <div>
-        <Option2Kranken />
+        <Option2Kranken darkMode={props.darkMode} />
       </div>
     </>
   )
