@@ -156,6 +156,7 @@ a {
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
     overflow-y: auto;
     z-index: 100;
+    text-align: left;
 }
 
 .selectOptionStyle {
@@ -498,6 +499,7 @@ a {
 }
 .darkTheme .greyBorderDiv {
     color: #fff;
+    border: 1px solid #84cdee;
 }
 .darkTheme .blueBgKranken { 
     background: url('../../assets/images/krankenBlueBgDark.svg') no-repeat;
@@ -506,4 +508,5 @@ a {
     background-size: cover;
     background-position-x: -200px;
     margin-top: -200px;
+    
 }

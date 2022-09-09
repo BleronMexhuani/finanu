@@ -44,8 +44,8 @@ function App() {
             <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
             <Routes>
               <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
-              <Route exact path="/Krankenkasse" element={<Krankenkasse />} />
-              <Route exact path="/pensionsplanung-und-ruhestand" element={<PensionPlan />} />
+              <Route exact path="/Krankenkasse" element={<Krankenkasse darkMode={darkMode} />} />
+              <Route exact path="/pensionsplanung-und-ruhestand" element={<PensionPlan darkMode={darkMode} />} />
               <Route exact path="/haus-hypothek" element={<Hausrat />} />
               <Route exact path="/360" element={<Analys360 />} />
               <Route exact path="/rechtsschutz" element={<Rechtsschutz />} />

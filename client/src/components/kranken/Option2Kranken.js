@@ -3,8 +3,9 @@ import TerminImg from '../../assets/images/terminImg.svg'
 import Phone from '../../assets/images/telephoneImg.svg'
 import Formular from '../../assets/images/formular.svg'
 import LastIlustration from '../../assets/images/krankenIlustration.svg'
+import LastIlustrationDark from '../../assets/images/krankenIlustrationDark.svg'
 
-function Option2Kranken() {
+function Option2Kranken(props) {
     return (
         <div>
             <div className='wrapDiv container-xl px-4 pt-5'>
@@ -29,7 +30,7 @@ function Option2Kranken() {
                                     <img src={TerminImg} alt="" />
                                 </div>
                                 <div className='pt-3'>
-                                    <span className='fw-500' style={{color: 'white'}}>Termin buchen</span>
+                                    <span className='fw-500' style={{ color: 'white' }}>Termin buchen</span>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +40,7 @@ function Option2Kranken() {
                                     <img src={Phone} alt="" />
                                 </div>
                                 <div className='pt-3'>
-                                    <span className='fw-500' style={{color: 'white'}}>Ruckrüf anfordern</span>
+                                    <span className='fw-500' style={{ color: 'white' }}>Ruckrüf anfordern</span>
                                 </div>
                             </div>
                         </div>
@@ -49,13 +50,17 @@ function Option2Kranken() {
                                     <img src={Formular} alt="" />
                                 </div>
                                 <div className='pt-3'>
-                                    <span className='fw-500' style={{color: 'white'}}>Kontaktformular</span>
+                                    <span className='fw-500' style={{ color: 'white' }}>Kontaktformular</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='pt-5' style={{marginBottom: '-3rem'}}>
-                        <img src={LastIlustration} className="lastIlustrationKranken img-fluid" alt="" />
+                    <div className='pt-5' style={{ marginBottom: '-3rem' }}>
+
+                        {props.darkMode
+                            ? <img src={LastIlustrationDark} className="lastIlustrationKranken img-fluid" alt="" />
+                            : <img src={LastIlustration} className="lastIlustrationKranken img-fluid" alt="" />
+                        }
                     </div>
                 </div>
             </div>

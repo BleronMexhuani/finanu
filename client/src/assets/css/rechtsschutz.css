@@ -290,7 +290,10 @@ ol, ul {
 .darkTheme .hausratBlueDiv {
     background-color: #333436;
 }
+.darkTheme .blueBgRechtss {
+    background: url('../images/rechtsschutzImgs/blueBgDark.svg') no-repeat;
 
+}
 .darkTheme .blueBgRechtssPriv {
     background-color: #333436;
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 import House from '../../assets/images/pensionHouse.svg'
+import HouseDark from '../../assets/images/pensionHouseDark.svg'
 import ShakingHands from '../../assets/images/shakingHands.svg'
+import ShakingHandsDark from '../../assets/images/shakingHandsDark.svg'
 import Emigration from '../../assets/images/emigration.svg'
+import EmigrationDark from '../../assets/images/emigrationDark.svg'
 import Vaccine from '../../assets/images/vaccine.svg'
+import VaccineDark from '../../assets/images/vaccineDark.svg'
 import OldLady from '../../assets/images/oldLady.svg'
+import OldLadyDark from '../../assets/images/oldLadyDark.svg'
 
-
-function PensionCards() {
+function PensionCards(props) {
     return (
         <>
             <div className='container-xl px-4 px-xl-0'>
@@ -18,7 +22,10 @@ function PensionCards() {
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
                                 <div className='pb-4'>
-                                    <img src={House} alt="" />
+                                    {props.darkMode
+                                        ? <img src={HouseDark} alt="" />
+                                        : <img src={House} alt="" />
+                                    }
                                 </div>
                                 <div>
                                     <span className='fw-500'>Self-occupied home</span>
@@ -28,7 +35,10 @@ function PensionCards() {
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
                                 <div className='pb-4'>
-                                    <img src={ShakingHands} alt="" />
+                                    {props.darkMode
+                                        ? <img src={ShakingHandsDark} alt="" />
+                                        : <img src={ShakingHands} alt="" />
+                                    }
                                 </div>
                                 <div>
                                     <span className='fw-500'>Self-employment</span>
@@ -38,7 +48,10 @@ function PensionCards() {
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
                                 <div className='pb-4'>
-                                    <img src={Emigration} alt="" />
+                                    {props.darkMode
+                                        ? <img src={EmigrationDark} alt="" />
+                                        : <img src={Emigration} alt="" />
+                                    }
                                 </div>
                                 <div>
                                     <span className='fw-500'>Emigration</span>
@@ -48,7 +61,10 @@ function PensionCards() {
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
                                 <div className='pb-4'>
-                                    <img src={Vaccine} alt="" />
+                                    {props.darkMode
+                                        ? <img src={VaccineDark} alt="" />
+                                        : <img src={Vaccine} alt="" />
+                                    }
                                 </div>
                                 <div>
                                     <span className='fw-500'>IV at least 50%</span>
@@ -58,7 +74,10 @@ function PensionCards() {
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
                                 <div className='pb-4'>
-                                    <img src={OldLady} alt="" />
+                                    {props.darkMode
+                                        ? <img src={OldLadyDark} alt="" />
+                                        : <img src={OldLady} alt="" />
+                                    }
                                 </div>
                                 <div>
                                     <span className='fw-500'>5 years before the pension</span>
@@ -76,7 +95,7 @@ function PensionCards() {
                         </div>
                         <div className="col-12 col-md-6 col-lg-5">
                             <div className='text-start'>
-                                <span style={{ lineHeight: '29.28px' }}>Im Laufe des Lebens erarbeiten sich viele Menschen einen bestimmten Lebensstandard.
+                                <span className='normalTextToWhite' style={{ lineHeight: '29.28px' }}>Im Laufe des Lebens erarbeiten sich viele Menschen einen bestimmten Lebensstandard.
                                     Treten sie dann in den verdienten Ruhestand ein,
                                     können sie diesen Standard jedoch nicht mehr halten,
                                     weil die gesetzliche Rente sehr niedrig ausfällt.

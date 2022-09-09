@@ -4,7 +4,7 @@ import '../assets/css/pension.css'
 import '../assets/css/mainComponents.css'
 import PensionCards from './pensionPlan/PensionCards'
 import PensionLastBlue from './pensionPlan/PensionLastBlue'
-function PensionPlan() {
+function PensionPlan(props) {
     return (
         <div>
             <div className='container-xl px-4 px-xl-0'>
@@ -17,7 +17,7 @@ function PensionPlan() {
                     <PensionChart />
                 </div>
                 <div className='pt-5 mt-5'>
-                    <PensionCards />
+                    <PensionCards darkMode={props.darkMode} />
                 </div>
                 <div>
                     <PensionLastBlue />
