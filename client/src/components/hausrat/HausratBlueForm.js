@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect,useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import HausratHouse from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
@@ -60,104 +60,107 @@ function HausratBlueForm() {
 
     const HausratBlue = useRef()
     useEffect(() => {
-      if(submitTable){
-        var elem = HausratBlue
+        if (submitTable) {
+            var elem = HausratBlue
             window.scrollTo(0, elem.current.offsetTop);
-      }
-    
+        }
+
     }, [submitTable])
-    
+
 
     return (
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
-                <div className="col-12 col-sm-11 col-md-9 col-lg-8 col-xl-6 hausratBlueDiv mx-auto">
-                    <div className='px-4 px-md-5 pt-4 pt-md-5 text-start mx-0 mx-sm-4'>
-                        <div className='pb-4'>
-                            <div className='pb-2'>
-                                <span >Gesamtkaufpreis</span>
-                            </div>
-                            <div>
-                                <NumberFormat
-
-                                    onValueChange={(values) => {
-                                        const { value } = values;
-                                        setApartamentPrice(value)
-                                    }}
-                                    className='hausratFormInputs'
-                                    displayType={'input'}
-                                    thousandSeparator={true}
-
-                                />
-                            </div>
-                        </div>
-                        <div className='pb-4'>
-                            <div className='pb-2'>
-                                <span >Jährliches Einkommen</span>
-                            </div>
-                            <div>
-                                <NumberFormat
-
-                                    onValueChange={(values) => {
-                                        const { value } = values;
-                                        setYearlyIncome(value)
-                                    }}
-                                    className='hausratFormInputs'
-                                    displayType={'input'}
-                                    thousandSeparator={true}
-
-                                />
-
-                            </div>
-                        </div>
-                        <div className='pb-4'>
-                            <div className='pb-2'>
-                                <span >Eigenkapital</span>
-                            </div>
-                            <div>
-                                <NumberFormat
-
-                                    onValueChange={(values) => {
-                                        const { value } = values;
-                                        setCapital(value)
-                                    }}
-                                    className='hausratFormInputs'
-                                    displayType={'input'}
-                                    thousandSeparator={true}
-
-                                />
-
-                            </div>
-                        </div>
-                        <div className='pb-4'>
-                            <div className='pb-2'>
-                                <div className="row g-0">
-                                    <div className="col">
-                                        <span >Angenommener Zinssatz</span>
+                <div className="row g-0">
+                    <div className="col-12 col-md-6 col-xl-6">
+                        <div className="hausratBlueDiv mx-auto mb-4 mb-md-0 text-start">
+                            <div className='p-4 p-sm-5'>
+                                <div className='pb-4'>
+                                    <div className='pb-2'>
+                                        <span >Gesamtkaufpreis</span>
                                     </div>
-                                    <div className="col-auto">
-                                        <span>{interes}%</span>
+                                    <div>
+                                        <NumberFormat
+
+                                            onValueChange={(values) => {
+                                                const { value } = values;
+                                                setApartamentPrice(value)
+                                            }}
+                                            className='hausratFormInputs'
+                                            displayType={'input'}
+                                            thousandSeparator={true}
+
+                                        />
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <input type="range" min={0.4} step={0.05} max={2} onChange={(e) => setInteres(e.target.value)} defaultValue={1} className='hausratRangeInput form-range' />
+                                <div className='pb-4'>
+                                    <div className='pb-2'>
+                                        <span >Jährliches Einkommen</span>
+                                    </div>
+                                    <div>
+                                        <NumberFormat
+                                            onValueChange={(values) => {
+                                                const { value } = values;
+                                                setYearlyIncome(value)
+                                            }}
+                                            className='hausratFormInputs'
+                                            displayType={'input'}
+                                            thousandSeparator={true}
+
+                                        />
+
+                                    </div>
+                                </div>
+                                <div className='pb-4'>
+                                    <div className='pb-2'>
+                                        <span >Eigenkapital</span>
+                                    </div>
+                                    <div>
+                                        <NumberFormat
+
+                                            onValueChange={(values) => {
+                                                const { value } = values;
+                                                setCapital(value)
+                                            }}
+                                            className='hausratFormInputs'
+                                            displayType={'input'}
+                                            thousandSeparator={true}
+
+                                        />
+
+                                    </div>
+                                </div>
+                                <div className='pb-4'>
+                                    <div className='pb-2'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <span >Angenommener Zinssatz</span>
+                                            </div>
+                                            <div className="col-auto">
+                                                <span>{interes}%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="range" min={0.4} step={0.05} max={2} onChange={(e) => setInteres(e.target.value)} defaultValue={1} className='hausratRangeInput form-range' />
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" className='hausratBtn py-2 w-100' onClick={submitForm} >Submit</button>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <button type="button" className='hausratBtn py-2 mb-4 w-100' onClick={submitForm} >Submit</button>
+                    </div>
+                    <div className="col-12 col-md-6 col-xl-6 my-auto">
+                        <div className='hausratHouseDiv ps-0 ps-md-4' >
+                            <img src={HausratHouse} alt="" />
                         </div>
                     </div>
-
-                    <div className='hausratHouseDiv' >
-                        <img src={HausratHouse} alt="" />
-                    </div>
-
-
                 </div>
+
                 {submitTable && (
                     <div ref={HausratBlue} className="px-0 px-md-4 px-lg-5 mt-5 pt-5">
-                        <div  className="blueBorderDiv p-4 p-md-5 text-start">
+                        <div className="blueBorderDiv p-4 p-md-5 text-start">
                             <div className='pb-4'>
                                 <span className="fw-700 fs-3">Kosten im Detail</span>
                             </div>
