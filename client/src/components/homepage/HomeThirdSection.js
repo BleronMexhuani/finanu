@@ -1,10 +1,10 @@
 import React from 'react'
-
+import KrankenSteps from '../kranken/KrankenkasseSteps'
 function HomeThirdSection() {
 
     return (
         <>
-            <div className='blueCloudsBg pt-2 mb-5'>
+            {/* <div className='blueCloudsBg pt-2 mb-5'>
                 <div className='px-4 px-md-5'>
                     <div className='row g-0 justify-content-center'>
                         <div className='col-12 col-md-8 col-lg-7 col-xl-7'>
@@ -52,7 +52,8 @@ function HomeThirdSection() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <KrankenSteps />
         </>
     )
 }
