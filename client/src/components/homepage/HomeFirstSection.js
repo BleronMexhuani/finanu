@@ -37,7 +37,9 @@ function HomeFirstSection(props) {
                                 </span>
                             </div>
                             <div>
-                                <button className='firstSectionBlueBtn1'>Jetzt Vergleichen</button>
+                                <Link to='/Krankenkasse'>
+                                    <button className='firstSectionBlueBtn1'>Jetzt Vergleichen</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

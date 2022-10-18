@@ -127,7 +127,6 @@ function HausratBlueForm() {
                                             thousandSeparator={true}
 
                                         />
-
                                     </div>
                                 </div>
                                 <div className='pb-4'>

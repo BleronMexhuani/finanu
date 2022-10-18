@@ -29,9 +29,9 @@ function NewPerson(props) {
     const over18Price = [300, 500, 1000, 1500, 2000, 2500]
 
     return (
-        <div>
-            <div className='krankenSecondStep mt-5'>
-                <div className='krankenStepsBox'>
+        <div >
+            <div className='krankenSecondStep mt-5' >
+                <div className='krankenStepsBox' id={'Person' + props.id}>
                     <div className="row g-4">
                         <div className="col-6 col-md-3">
                             <label htmlFor={"maleradio" + props.id} className='container1 w-100'>
