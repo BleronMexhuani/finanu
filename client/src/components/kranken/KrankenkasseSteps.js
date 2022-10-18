@@ -5,6 +5,7 @@ import NewPerson from './NewPerson';
 import Tooth from "../../assets/images/tooth.svg"
 import { v4 as uuidv4 } from 'uuid'
 import XBtn from "../../assets/images/xButton.svg"
+import Stars from '../../assets/images/krankenkasseStars.svg'
 function KrankenkasseSteps() {
 
     const [insurances, setInsurances] = useState([]);
@@ -158,12 +159,20 @@ function KrankenkasseSteps() {
     const [personId, setPersonId] = useState(0)
     useEffect(() => { })
 
-    const addPerson = (event) => {
+    const addPerson = async (event) => {
 
         setPersonId(personId + 1)
         setPersons(persons => [...persons, personId])
 
+        var id = 'Person' + personId
+        setTimeout(() => {
+
+            var elem = document.getElementById(id)
+            window.scrollTo(0, elem.offsetTop - 100);
+        }, 100);
+
     }
+
 
     function deleteChild(id) {
         let clone = [...persons]
@@ -327,6 +336,15 @@ function KrankenkasseSteps() {
 
     }, [fifthStep])
 
+    const familiePaar = useRef();
+    useEffect(() => {
+        if (familySituation === 'familie' || familySituation === 'paar') {
+            var elem = familiePaar
+            window.scrollTo(0, elem.current.offsetTop - 200);
+        }
+
+    }, [familySituation])
+
     const handleModalSubmit = (e) => {
         e.preventDefault()
         setMehrLadenModal(false)
@@ -449,7 +467,7 @@ function KrankenkasseSteps() {
                                         </div>
                                     </div>
                                     {(familySituation === 'familie' || familySituation === 'paar') && (
-                                        <div>
+                                        <div ref={familiePaar}>
                                             <div className='pt-5'>
                                                 <div className='pb-3 text-start'>
                                                     <span className='fw-bold'>Gleiches Versicherungsmodell? (Hausarzt, Telmed, etc)</span>
@@ -615,31 +633,77 @@ function KrankenkasseSteps() {
                 )}
                 {thirdStep2 && (
                     <div ref={third2StepKranken} className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
-                        <div className="row g-3 justify-content-center pt-5">
+                        <div className="row g-4 justify-content-center pt-5">
                             {
 
                                 krankenkasse.slice(0, endKrankenMap).map((element) => {
                                     i++;
                                     return (
 
-                                        <div key={i} className="col-12 col-sm-6 col-lg-4">
-                                            <div className="krankenOfferStyle p-4">
-                                                <div className='pt-4'>
-                                                    <span className='fw-bold'>{element.name}</span>
+                                        <div key={i} className="col-12 col-sm-6 col-lg-auto">
+                                            <div className="krankenOfferStyle p-4 position-relative mx-auto">
+                                                <div className="cornerOffer">
+                                                    <svg width="122" height="109" viewBox="0 0 122 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0H43.9595L83.8143 35.6718L122 68V109L60.2591 55.5L0 0Z" fill="#50B8E7" />
+                                                        <path d="M45.059 27.6713L44.108 28.7685L39.6377 24.8935L45.2184 18.4556L49.6071 22.2599L48.656 23.3571L45.5187 20.6374L44.1746 22.188L46.8857 24.5382L46.0054 25.5537L43.2942 23.2035L41.8401 24.881L45.059 27.6713ZM50.3335 34.1652L53.9964 29.9398L49.6186 31.6556L48.9204 31.0504L49.9976 26.4734L46.3348 30.6988L45.0835 29.6141L50.6642 23.1763L52.0062 24.3396L50.7348 29.6534L55.8326 27.6566L57.1655 28.812L51.5848 35.2499L50.3335 34.1652ZM52.9289 36.415L58.5096 29.9771L61.2389 32.3431C61.5351 32.5998 61.7548 32.8961 61.8978 33.2318C62.0408 33.5676 62.1139 33.9168 62.1171 34.2795C62.1264 34.6475 62.0723 35.003 61.955 35.3459C61.8377 35.6889 61.6637 35.9934 61.4332 36.2594C61.1188 36.6221 60.7355 36.8933 60.2832 37.073C59.831 37.2527 59.3677 37.3169 58.8933 37.2657C58.419 37.2144 57.9793 37.0133 57.5743 36.6622L56.051 35.3417L54.1802 37.4997L52.9289 36.415ZM57.002 34.2445L58.4528 35.5021C58.6039 35.6331 58.7766 35.7087 58.9709 35.7289C59.1652 35.7491 59.3667 35.712 59.5755 35.6177C59.7895 35.5174 59.9856 35.3645 60.1637 35.1589C60.3576 34.9353 60.4804 34.7082 60.532 34.4776C60.5896 34.2524 60.586 34.0428 60.5212 33.8489C60.4623 33.6603 60.3574 33.5005 60.2062 33.3695L58.8099 32.159L57.002 34.2445ZM58.5784 41.3123L64.1591 34.8744L68.4842 38.6237L67.5331 39.7208L64.4593 37.0562L63.0209 38.7156L65.5779 40.9321L64.6976 41.9477L62.1405 39.7311L59.8297 42.397L58.5784 41.3123ZM66.3958 48.1682C65.9243 47.7595 65.5737 47.2968 65.344 46.7801C65.1204 46.2686 65.0031 45.7382 64.9923 45.1888C64.9928 44.6387 65.0851 44.1047 65.2694 43.5868C65.4589 43.0629 65.7318 42.5954 66.0881 42.1843C66.4601 41.7552 66.8924 41.4152 67.385 41.1646C67.8888 40.9132 68.4107 40.7569 68.9508 40.6956C69.5022 40.6336 70.0442 40.68 70.577 40.8349C71.1211 40.9889 71.6229 41.265 72.0823 41.6633C72.5477 42.0668 72.8897 42.5273 73.108 43.0448C73.3325 43.5675 73.4445 44.104 73.444 44.6541C73.4435 45.2043 73.3512 45.7383 73.1669 46.2562C72.9827 46.774 72.7124 47.2385 72.3561 47.6496C71.9893 48.0727 71.557 48.4126 71.0592 48.6693C70.5667 48.9199 70.0447 49.0763 69.4934 49.1383C68.9533 49.1995 68.4138 49.15 67.875 48.99C67.3422 48.8352 66.8491 48.5612 66.3958 48.1682ZM67.3575 43.2848C67.1165 43.5628 66.9256 43.8685 66.7849 44.2018C66.6442 44.5351 66.5634 44.8726 66.5424 45.2144C66.5327 45.5554 66.5903 45.8859 66.7152 46.2059C66.8514 46.5251 67.0676 46.8131 67.3638 47.0699C67.666 47.3319 67.9874 47.5046 68.328 47.5881C68.6738 47.6655 69.0143 47.6696 69.3497 47.6003C69.6902 47.5249 70.0099 47.3944 70.3085 47.2086C70.6185 47.0221 70.8861 46.7988 71.1114 46.5389C71.3525 46.2608 71.5377 45.9555 71.6671 45.623C71.8078 45.2897 71.883 44.9526 71.8927 44.6116C71.9137 44.2699 71.8561 43.9394 71.7199 43.6202C71.595 43.3001 71.3875 43.0144 71.0973 42.7628C70.789 42.4956 70.462 42.3233 70.1162 42.2458C69.7817 42.1676 69.4468 42.1631 69.1114 42.2324C68.7761 42.3017 68.4561 42.4266 68.1514 42.6072C67.8527 42.7929 67.5881 43.0188 67.3575 43.2848ZM81.5353 49.9371L75.9546 56.3749L74.7123 55.2981L77.094 52.5507L74.1743 50.0197L71.7926 52.7671L70.5413 51.6824L76.122 45.2446L77.3733 46.3293L75.1175 48.9316L78.0372 51.4626L80.293 48.8602L81.5353 49.9371ZM77.2976 57.5392L82.8783 51.1013L84.1296 52.186L79.5 57.5267L82.7824 60.3721L81.8313 61.4692L77.2976 57.5392ZM88.0142 64.9073L87.0631 66.0044L82.5928 62.1294L88.1736 55.6915L92.5622 59.4958L91.6111 60.593L88.4738 57.8734L87.1297 59.4239L89.8408 61.7741L88.9605 62.7896L86.2494 60.4394L84.7952 62.1169L88.0142 64.9073ZM92.8741 63.8L89.2899 67.9348L88.0386 66.8501L93.6193 60.4122L94.6167 61.2768L94.2659 68.405L97.9366 64.1706L99.1879 65.2553L93.6151 71.6841L92.5723 70.7801L92.8741 63.8Z" fill="white" />
+                                                    </svg>
+
                                                 </div>
-                                                <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
-                                                <div>
-                                                    <span className='fw-500'>{element.tarif}</span>
+                                                <div className='pb-3 text-start'>
+                                                    <span className='fw-bold fs-5'>{element.name}</span>
                                                 </div>
-                                                <hr className='my-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} />
+                                                <div className="text-start pb-5">
+                                                    <div className="row gx-3">
+                                                        <div className="col-auto">
+                                                            <img className='starsImg' src={Stars} alt="" />
+                                                        </div>
+                                                        <div className="col-auto">
+                                                            <div>
+                                                                <span className='fw-600'>5.3 / 6</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className='pb-3 text-start'>
+                                                    <div className="row gx-3">
+                                                        <div className="col-auto my-auto">
+                                                            <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M26.6047 21.1459L15.1458 1.02184C14.7822 0.383237 14.1679 0 13.5026 0C12.8373 0 12.2229 0.381331 11.8594 1.01994L0.400407 21.1422C0.0393134 21.7764 0.0225247 22.5046 0.355668 23.0775C0.68872 23.6504 1.32333 24 2.05315 24H24.952C25.6818 24 26.3164 23.6504 26.6495 23.0775C26.9826 22.5046 26.9659 21.7802 26.6047 21.1459ZM13.427 6.43989C14.3041 6.43989 15.0151 7.15091 15.0151 8.02801V13.7453C15.0151 14.6224 14.3041 15.3334 13.427 15.3334C12.5499 15.3334 11.8389 14.6224 11.8389 13.7453V8.02801C11.8389 7.15091 12.5499 6.43989 13.427 6.43989ZM13.5026 17.128C14.3797 17.128 15.0907 17.8391 15.0907 18.7162C15.0907 19.5933 14.3797 20.3043 13.5026 20.3043C12.6255 20.3043 11.9145 19.5933 11.9145 18.7162C11.9145 17.8391 12.6255 17.128 13.5026 17.128Z" fill="black" />
+                                                            </svg>
+
+                                                        </div>
+                                                        <div className="col mt-auto lh-1">
+                                                            <span className='fw-600 lh-1'>Hohe Prämien</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="pb-5 mb-5 text-start">
+                                                    <div className="row gx-3">
+                                                        <div className="col-auto my-auto">
+                                                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M13.4998 0C6.05684 0 0 6.05566 0 13.4995C0 20.9433 6.05645 27 13.4998 27C20.9443 27 26.9995 20.9438 26.9995 13.4995C26.9995 6.05566 20.9447 0 13.4998 0ZM19.3424 10.7336L12.2721 17.8039C12.0598 18.016 11.7801 18.123 11.5029 18.123C11.2236 18.123 10.9465 18.016 10.7335 17.8039L7.65852 14.729C7.23339 14.3034 7.23339 13.6152 7.65852 13.1901C8.08357 12.7651 8.77184 12.7651 9.19697 13.1901L11.5029 15.4969L17.8049 9.19453C18.2291 8.76995 18.9173 8.76995 19.3424 9.19453C19.7676 9.62029 19.7676 10.3086 19.3424 10.7336Z" fill="#50B8E7" />
+                                                            </svg>
+
+                                                        </div>
+                                                        <div className="col my-auto">
+                                                            <div>
+                                                                <span className='fw-600' style={{ color: "#50B8E7" }}>Sehr gute Leistungen</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div className='pb-3'>
-                                                    <span className='fw-500'>CHF <span className='fw-bold'>{element.price}</span>/ Mt.</span>
+                                                    <span className='fw-600'>{element.tarif}</span>
+                                                </div>
+
+                                                <div className='pb-3'>
+                                                    <span className='fw-600 fs-5'>CHF <span className='fw-bold fs-3'>{element.price}</span>/ Mt.</span>
                                                 </div>
                                                 <div>
-                                                    <span className='fw-500'>sparen Sie CHF<span className='fw-bold' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
+                                                    <span className='fw-600'>sparen Sie CHF<span className='fw-bold fs-5' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
                                                 </div>
-                                                <div className='pt-4 pb-4'>
-                                                    <button className='nextBtnKranken' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
+                                                <div className='pt-4'>
+                                                    <button className='nextBtnKranken nextBtnKranken2' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
                                                 </div>
                                             </div>
                                         </div>
