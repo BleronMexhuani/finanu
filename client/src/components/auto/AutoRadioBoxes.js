@@ -15,13 +15,13 @@ function AutoRadioBoxes() {
                 </div>
                 <div className="pb-5 mb-5">
                     <div className="row g-4 justify-content-center">
-                        <div className="col-12 col-sm-auto">
+                        <div className="col-12 col-sm-6 col-lg-auto">
                             <label htmlFor="autoFirstRadio" className="container1 autoCheckbox">
                                 <input onChange={() => { setAutoCheck(1) }} id='autoFirstRadio' type="radio" name='autoRadio' hidden />
                                 <span className="checkmark">Neueinlösung eines Fahrzeuges</span>
                             </label>
                         </div>
-                        <div className="col-12 col-sm-auto">
+                        <div className="col-12 col-sm-6 col-lg-auto">
                             <label htmlFor="autoSecondRadio" className="container1 autoCheckbox">
                                 <input onChange={() => { setAutoCheck(2) }} id='autoSecondRadio' type="radio" name='autoRadio' hidden />
                                 <span className="checkmark">Vergleichsofferte für bestehende Autoversicherung</span>

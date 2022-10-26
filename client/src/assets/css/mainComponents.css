@@ -120,11 +120,18 @@
 .autoCheckbox {
     width: 420px !important;
 }
+.checkboxWidth {
+    max-width: 420px !important;
+    width: 100%;
+}
 .paddingTopDiv {
     padding-top: 13rem;
 }
 .autoImage {
     width: 50%;
+}
+.textStartToEnd {
+    text-align: end;
 }
 @media (max-width: 1399.98px) {
     .wrapDiv {
@@ -168,7 +175,9 @@
     .autoImage {
         width: 60%;
     }
-    
+    .autoCheckbox {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -214,10 +223,17 @@
         width: 100%;
     }
     .autoCheckbox {
-        width: 100%;
+        width: 100% !important;
     }
     .autoImage {
         width: 100%;
+    }
+    .checkboxWidth {
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .textStartToEnd {
+        text-align: start;
     }
 }
 

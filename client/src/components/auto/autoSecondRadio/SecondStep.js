@@ -11,13 +11,13 @@ function SecondStep(props) {
                 </div>
                 <div className="pb-5">
                     <div className="row g-4 justify-content-center">
-                        <div className="col-12 col-sm-auto">
+                        <div className="col-12 col-sm-6 col-lg-auto">
                             <label htmlFor="email" className="container1 autoCheckbox">
                                 <input id='email' type="radio" name='secondStepRadio' hidden />
                                 <span className="checkmark">Unverbindliche Offerte per E-Mail zusenden</span>
                             </label>
                         </div>
-                        <div className="col-12 col-sm-auto">
+                        <div className="col-12 col-sm-6 col-lg-auto">
                             <label htmlFor="unsure" className="container1 autoCheckbox">
                                 <input id='unsure' type="radio" name='secondStepRadio' hidden />
                                 <span className="checkmark">Unsicher, bitte eine kostenlose Beratung</span>
