@@ -2,12 +2,13 @@ var express = require("express");
 var mysql = require('mysql');
 var util = require('util');
 const router = express.Router();
+require("dotenv").config();
 
 var connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "finanu"
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
 });
 
 const query = util.promisify(connection.query).bind(connection);
@@ -39,6 +40,7 @@ var krankenkasse = {
 
     getRegions: getRegions = async (req, res) => {
         try {
+            
             connection.query("SELECT * FROM regions", (request, response) => {
                 res.status(200).json(response)
             })
