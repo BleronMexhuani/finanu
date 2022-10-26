@@ -10,6 +10,7 @@ import Option2Kranken from './kranken/Option2Kranken'
 function Krankenkasse(props) {
   return (
     <>
+ 
       <div>
         <KrankenSteps />
       </div>

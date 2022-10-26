@@ -13,6 +13,7 @@ import UberUns from './components/UberUns';
 import ToggleDarkMode from './components/ToggleDarkMode';
 import ScrollTop from "./ScrollTop.js"
 import Auto from './components/Auto';
+import Login from './components/login/Login';
 
 function App() {
   useEffect(() => {
@@ -52,7 +53,7 @@ function App() {
               <Route exact path="/rechtsschutz" element={<Rechtsschutz />} />
               <Route exact path="/uber-uns" element={<UberUns />} />
               <Route exact path="/auto-motorrad" element={<Auto /> } />
-
+              <Route exact path="/login" element={<Login /> } />
             </Routes>
             <Footer />
           </ScrollTop>
