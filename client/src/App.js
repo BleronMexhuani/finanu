@@ -12,6 +12,7 @@ import Rechtsschutz from './components/Rechtsschutz';
 import UberUns from './components/UberUns';
 import ToggleDarkMode from './components/ToggleDarkMode';
 import ScrollTop from "./ScrollTop.js"
+import Auto from './components/Auto';
 
 function App() {
   useEffect(() => {
@@ -50,6 +51,8 @@ function App() {
               <Route exact path="/360" element={<Analys360 />} />
               <Route exact path="/rechtsschutz" element={<Rechtsschutz />} />
               <Route exact path="/uber-uns" element={<UberUns />} />
+              <Route exact path="/auto-motorrad" element={<Auto /> } />
+
             </Routes>
             <Footer />
           </ScrollTop>

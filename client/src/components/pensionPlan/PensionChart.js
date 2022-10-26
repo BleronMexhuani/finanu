@@ -79,6 +79,7 @@ function PensionChart() {
     const labels = ageArray;
     const state = {
         options: {
+            
             chart: {
                 height: 500,
                 type: 'area',
@@ -191,36 +192,49 @@ function PensionChart() {
         },
         series: [
             {
-                name: "High",
+                name: "Optimale Entwicklung",
                 data: highRisk,
                 ticks: {
                     color: 'red'
                 }
             },
             {
-                name: "Mediunm",
+                name: "Erwartete Entwicklung",
                 data: mediumRisk
             },
             {
-                name: "High",
+                name: "Ungünstige Entwicklung",
                 data: lowRisk
             },
-        ]
+        ],
+        
+        tooltip: {
+            custom: function({series, seriesIndex, dataPointIndex, w}) {
+                var i = (series[seriesIndex][dataPointIndex].length-1).toLocaleString('it-CH', {
+                        style: 'currency',
+                        currency: 'CHF',
+                    });
+                return '<div class="arrow_box" id="tooltiparrowbox">' +
+            		'<b>in '+dataPointIndex+' Jahren </b><br>' +
+                    '<span>Mit der gewählten <br> monatlichen  Investition können <br>  Sie bis zu <b>'+ i  + ' </b>  <br>in '+w.config.series[seriesIndex].name+' <br>  in Rente gehen!</span>' +
+                '</div>'
+            },
+        },
     };
     return (
         <div>
             <div className='container-xl px-4 px-xl-0'>
 
-                <div className='pensionChartDiv py-4 px-5'>
+                <div className='pensionChartDiv p-4'>
                     <div>
-                        <div className="row g-0">
-                            <div className="col-12 col-md-7">
-                                <div className='p-4 text-start'>
+                        <div className="row g-4">
+                            <div className="col-12 col-md-5 col-lg-4">
+                                <div className=' text-start'>
                                     <div className='pb-5'>
                                         <span className='fs-5 pensionChartTitle'>Berechne jetzt deine 3. Säule</span>
                                     </div>
-                                    <div className="row g-4 gy-5">
-                                        <div className="col-12 col-md-6">
+                                    <div className="row g-4">
+                                        <div className="col-12">
                                             <div className='pb-3'>
                                                 <span className='fw-600'>
                                                     What is your gender?
@@ -243,7 +257,7 @@ function PensionChart() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-12 col-md-6">
+                                        <div className="col-12 col-sm-6 col-md-12">
                                             <div className='pb-3'>
                                                 <div className="row g-0">
                                                     <div className="col">
@@ -262,7 +276,7 @@ function PensionChart() {
                                                 <input type="range" step={50} min={100} max={1000} defaultValue={monthly} onChange={(e) => setMonthly(e.target.value)} className="form-range" placeholder='Monthly' />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-md-6 mt-auto">
+                                        <div className="col-12 col-sm-6 col-md-12">
                                             <div className='pb-3'>
                                                 <div>
                                                     <span className='fw-600'>Ich bin {age} Jahre alt</span>
@@ -273,7 +287,7 @@ function PensionChart() {
                                                 <input type="range" step={1} min={18} max={63} defaultValue={age} onChange={(e) => setAge(e.target.value)} className="form-range" placeholder='Monthly' />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-md-6">
+                                        <div className="col-12">
                                             <div className='pb-3'>
                                                 <div className="row g-0">
                                                     <div className="col">
@@ -292,7 +306,7 @@ function PensionChart() {
                                                 <input type="range" step={5000} min={0} max={100000} defaultValue={amount} onChange={(e) => setAmount(e.target.value)} className="form-range" />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-md-6">
+                                        <div className="col-12 col-sm-6 col-md-12">
                                             <div className='pb-3'>
                                                 <span className='fw-600'>
                                                     Ihr Arbeitsverhältnis
@@ -315,7 +329,7 @@ function PensionChart() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-12 col-md-6">
+                                        <div className="col-12 col-sm-6 col-md-12">
                                             <div className='pb-3'>
                                                 <div className="row g-0">
                                                     <div className="col">
@@ -337,7 +351,7 @@ function PensionChart() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-5">
+                            <div className="col-12 col-md-7 col-lg-8 my-auto">
                                 <Chart
                                     options={state.options}
                                     series={state.series}

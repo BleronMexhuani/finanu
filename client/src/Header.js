@@ -84,7 +84,7 @@ function Header() {
                                                             </Link>
                                                         </div>
                                                         <div>
-                                                            <Link to='/' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <Link to='/auto-motorrad' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Auto & Motorrad
                                                             </Link>
                                                         </div>
@@ -153,7 +153,7 @@ function Header() {
                                                     <Link to='/Rechtsschutz' className='text-decoration-none navLinks fs-5'>Rechtsschutz </Link>
                                                 </div>
                                                 <div>
-                                                    <Link to='/' className='text-decoration-none navLinks fs-5'>Auto & Motorrad </Link>
+                                                    <Link to='/auto-motorrad' className='text-decoration-none navLinks fs-5'>Auto & Motorrad </Link>
                                                 </div>
                                             </div>
                                         {/* )} */}

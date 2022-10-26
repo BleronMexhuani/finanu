@@ -35,6 +35,7 @@ a {
 .krankenSubtitle {
     font-weight: 500;
     color: #fff;
+    font-size: 18px;
 }
 
 .krankenInputStyle {
@@ -335,12 +336,17 @@ a {
     }
 }
 
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+    .krankenSubtitle {
+        font-size: 17px;
+    }
+}
 
 @media (max-width: 1199.98px) {
     .krankenOfferStyle {
         width: 290px;
     }
+    
 }
 
 
@@ -386,6 +392,9 @@ a {
     .krankenStepsBox {
         padding: 1.5rem;
     }
+    .krankenSubtitle {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -415,6 +424,9 @@ a {
 
     .starsImg {
         width: 120px;
+    }
+    .krankenSubtitle {
+        font-size: 14px;
     }
 }
 
