@@ -1,11 +1,12 @@
 import React from 'react'
 import WhiteBgArrow from '../../assets/images/whiteBgArrow.svg'
-function GutZuWissen() {
+
+function Tipps() {
     return (
-        <div className='pt-5 pt-md-0 px-4'>
-            <div className='krankenFirstStep wrapDiv container-xl p-3 p-sm-5 mt-5 mt-md-0' style={{ position: 'relative' }}>
+        <div className='paddingTopDiv px-4'>
+            <div className='krankenFirstStep wrapDiv container-xl p-3 p-sm-5 ' style={{ position: 'relative' }}>
                 <div className="whiteBgKranken">
-                    <span className='fs-1 fw-bold'>Gut zu wissen</span>
+                    <span className='fs-1 fw-bold'>Fazit und Tipps</span>
                 </div>
                 <div className="pt-5">
                     <div className='pb-4 pb-sm-5'>
@@ -16,8 +17,7 @@ function GutZuWissen() {
                             <div className="col text-start">
                                 <div>
                                     <span className='krankenSubtitle'>
-                                        Die Krankenkassenprämien sinken 2022 voraussichtlich fast 1% und die
-                                        Gesundheitskosten steigen jährlich ca. 1%.
+                                        Die Nutzung einer unabhängigen Vergleichsplattform, bietet Kunden den Mehrwert, dass Sie verschiedene Offerten von Gesellschaften ohne grossen Aufwand vergleichen können.
                                     </span>
                                 </div>
                             </div>
@@ -31,8 +31,7 @@ function GutZuWissen() {
                             <div className="col text-start">
                                 <div>
                                     <span className='krankenSubtitle'>
-                                        Ein Vergleich der Grund- und Zusatzversicherung ermöglicht eine Einsparung von
-                                        bis zu 2237.- CHF pro Jahr!
+                                    Bei einem Vergleich ist es wichtig nicht nur auf den Preis zu achten. Oftmals hat man mit der günstigsten Offerte auch gewisse Leistungseinbussen.
                                     </span>
                                 </div>
                             </div>
@@ -46,8 +45,7 @@ function GutZuWissen() {
                             <div className="col text-start">
                                 <div>
                                     <span className='krankenSubtitle'>
-                                        Finanu verwendet die offizielle Datenbank des BAG. Der Vergleich ist unparteiisch
-                                        und neutral.
+                                    Lassen Sie sich bei offenen Fragen persönlich beraten, um das passende Angebot zu finden.
                                     </span>
                                 </div>
                             </div>
@@ -58,10 +56,10 @@ function GutZuWissen() {
                             <div className="col-auto">
                                 <img src={WhiteBgArrow} alt="" />
                             </div>
-                            <div className="col text-start my-auto">
+                            <div className="col text-start">
                                 <div>
                                     <span className='krankenSubtitle'>
-                                    Ein Krankenkassenvergleich auf Finanu dauert durchschnittlich 3 Minuten.
+                                        Ein Krankenkassenvergleich auf Finanu dauert durchschnittlich 3 Minuten.
                                     </span>
                                 </div>
                             </div>
@@ -73,4 +71,4 @@ function GutZuWissen() {
     )
 }
 
-export default GutZuWissen
+export default Tipps
