@@ -4,14 +4,14 @@ function Funktionert() {
     return (
         <div className='pt-5 mt-5'>
             <div className="wrapDiv container-xl px-4 px-xl-0">
-                <div className="pb-5 text-start">
+                <div className="pb-4 text-start">
                     <span className='fw-700 fs-2'>
                         So einfach funktioniert’s
                     </span>
                 </div>
                 <div>
-                    <div className="row g-4 g-lg-5">
-                        <div className="col-12 col-sm-6">
+                    <div className="row g-4">
+                        <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100">
                                 <div className="pb-4">
                                     <img src="https://www.finanu.ch/wp-content/uploads/2021/11/12344444-150x150.png" alt="" />
@@ -24,7 +24,7 @@ function Funktionert() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100">
                                 <div className="pb-4">
                                     <img src="https://www.finanu.ch/wp-content/uploads/2021/11/12344444-150x150.png" alt="" />
@@ -38,7 +38,7 @@ function Funktionert() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100">
                                 <div className="pb-4">
                                     <img src="https://www.finanu.ch/wp-content/uploads/2021/11/12344444-150x150.png" alt="" />
@@ -52,7 +52,7 @@ function Funktionert() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100">
                                 <div className="pb-4">
                                     <img src="https://www.finanu.ch/wp-content/uploads/2021/11/12344444-150x150.png" alt="" />

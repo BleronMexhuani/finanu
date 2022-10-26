@@ -51,6 +51,7 @@ a {
 .krankenInputStyle::placeholder {
     font-weight: 500;
     color: #000;
+    opacity: 0.8;
 }
 
 .krankenSelectStyle {
@@ -427,6 +428,9 @@ a {
     }
     .krankenSubtitle {
         font-size: 14px;
+    }
+    .nextBtnKranken { 
+        width: 100%;
     }
 }
 

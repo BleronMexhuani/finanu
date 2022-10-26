@@ -20,7 +20,6 @@ function ThirdStep(props) {
                         <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Nachname *' />
                     </div>
                 </div>
-
             </div>
             <div className="pb-4">
                 <div className="row g-4 justify-content-center">
