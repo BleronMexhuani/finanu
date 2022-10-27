@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import "./assets/css/header.css"
 import logo from './assets/images/logo.svg';
@@ -58,35 +58,46 @@ function Header() {
                         <div className='navLogo col-6 col-md text-start'>
                             <div className="row g-0">
                                 <div className="col-auto my-auto">
-                                    <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                    <NavLink style={({ isActive }) => ({
+                                        color: isActive ? '#50B8E7' : '#000',
+                                    })} to='/' id="linksss" className='text-decoration-none navLinks'>
                                         <img src={logo} alt='companyLogo' className='' />
-                                    </Link>
+                                    </NavLink>
                                 </div>
 
                                 <div className='text-end my-auto col'>
                                     <span className="navlinksondesktop">
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Home
-                                        </Link>
+                                        </NavLink>
                                         <span to='/' id="linksss" className='text-decoration-none navLinks' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                                             Versicherungen
                                             {isShown && (
                                                 <div className='navbarDropdownsWrap' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                                                     <div className='navbarDropdowns' >
                                                         <div className='pb-3'>
-                                                            <Link to='/Krankenkasse' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <NavLink style={({ isActive }) => ({
+                                                                color: isActive ? '#50B8E7' : '#000',
+                                                            })}
+                                                                to='/versicherungen/krankenkasse' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Krankenkasse
-                                                            </Link>
+                                                            </NavLink>
                                                         </div>
                                                         <div className='pb-3'>
-                                                            <Link to='/Rechtsschutz' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <NavLink style={({ isActive }) => ({
+                                                                color: isActive ? '#50B8E7' : '#000',
+                                                            })} to='/versicherungen/rechtsschutz' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Rechtsschutz
-                                                            </Link>
+                                                            </NavLink>
                                                         </div>
                                                         <div>
-                                                            <Link to='/auto-motorrad' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <NavLink style={({ isActive }) => ({
+                                                                color: isActive ? '#50B8E7' : '#000',
+                                                            })} to='/versicherungen/auto-motorrad' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Auto & Motorrad
-                                                            </Link>
+                                                            </NavLink>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -99,92 +110,126 @@ function Header() {
                                                 <div className='navbarDropdownsWrap' onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
                                                     <div className='navbarDropdowns' >
                                                         <div className='pb-3'>
-                                                            <Link to='/pensionsplanung-und-ruhestand' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <NavLink style={({ isActive }) => ({
+                                                                color: isActive ? '#50B8E7' : '#000',
+                                                            })} to='/finanzen/pensionsplanung-und-ruhestand' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Pensionsplanung und Ruhestand
-                                                            </Link>
+                                                            </NavLink>
                                                         </div>
                                                         <div className='pb-3'>
-                                                            <Link to='/haus-hypothek' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <NavLink style={({ isActive }) => ({
+                                                                color: isActive ? '#50B8E7' : '#000',
+                                                            })} to='/finanzen/haus-hypothek' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Haus & Hypothek
-                                                            </Link>
+                                                            </NavLink>
                                                         </div>
                                                         <div>
-                                                            <Link to='/360' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                            <NavLink style={({ isActive }) => ({
+                                                                color: isActive ? '#50B8E7' : '#000',
+                                                            })} to='/finanzen/360' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Finanzen & Budget
-                                                            </Link>
+                                                            </NavLink>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                             )}
                                         </span>
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/w' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
-                                        </Link>
-                                        <Link to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
+                                        </NavLink>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
                                             Über uns
-                                        </Link>
+                                        </NavLink>
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <div className="col-auto my-auto">
                             <div className={`navTabs ${toggleMenu && 'navTabsOpen'}`}>
-                                <Link to='/360' className='buttonofmenutabs'>
+                                <NavLink style={({ isActive }) => ({
+                                    color: isActive ? '#50B8E7' : '#000',
+                                })} to='/finanzen/360' className='buttonofmenutabs'>
                                     <Button id="buttonofnavbar" variant="outline-danger">360° Budgetanalyse</Button>
-                                </Link>
+                                </NavLink>
 
                                 <div className='row gx-0 gy-4 navTabsRow' onClick={toggleNav}>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Home
-                                        </Link>
+                                        </NavLink>
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} className='text-decoration-none navLinks'>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/' id="linksss" onClick={(e) => { e.stopPropagation() }} className='text-decoration-none navLinks'>
                                             Versicherungen
-                                        </Link>
+                                        </NavLink>
                                         {/* {isShown1 && ( */}
-                                            <div className='pt-2'>
-                                                <div className='pb-2'>
-                                                    <Link to='/Krankenkasse' className='text-decoration-none navLinks fs-5'>Krankenkasse </Link>
-                                                </div>
-                                                <div className='pb-2'>
-                                                    <Link to='/Rechtsschutz' className='text-decoration-none navLinks fs-5'>Rechtsschutz </Link>
-                                                </div>
-                                                <div>
-                                                    <Link to='/auto-motorrad' className='text-decoration-none navLinks fs-5'>Auto & Motorrad </Link>
-                                                </div>
+                                        <div className='pt-2'>
+                                            <div className='pb-2'>
+                                                <NavLink style={({ isActive }) => ({
+                                                    color: isActive ? '#50B8E7' : '#000',
+                                                })} to='/versicherungen/krrankenkasse' className='text-decoration-none navLinks fs-5'>Krankenkasse </NavLink>
                                             </div>
+                                            <div className='pb-2'>
+                                                <NavLink style={({ isActive }) => ({
+                                                    color: isActive ? '#50B8E7' : '#000',
+                                                })} to='/versicherungen/rechtsschutz' className='text-decoration-none navLinks fs-5'>Rechtsschutz </NavLink>
+                                            </div>
+                                            <div>
+                                                <NavLink style={({ isActive }) => ({
+                                                    color: isActive ? '#50B8E7' : '#000',
+                                                })} to='/versicherungen/auto-motorrad' className='text-decoration-none navLinks fs-5'>Auto & Motorrad </NavLink>
+                                            </div>
+                                        </div>
                                         {/* )} */}
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" onClick={(e) =>{e.stopPropagation()}} className='text-decoration-none navLinks'>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/' id="linksss" onClick={(e) => { e.stopPropagation() }} className='text-decoration-none navLinks'>
                                             Finanzen
-                                        </Link>
+                                        </NavLink>
                                         {/* {isShown && ( */}
-                                            <div className='pt-2'>
-                                                <div className='pb-2'>
-                                                    <Link to='/pensionsplanung-und-ruhestand' className='text-decoration-none navLinks fs-5'>Pensionsplanung und Ruhestand </Link>
-                                                </div>
-                                                <div className='pb-2'>
-                                                    <Link to='/haus-hypothek' className='text-decoration-none navLinks fs-5'>Haus & Hypothek </Link>
-                                                </div>
-                                                <div>
-                                                    <Link to='/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </Link>
-                                                </div>
+                                        <div className='pt-2'>
+                                            <div className='pb-2'>
+                                                <NavLink style={({ isActive }) => ({
+                                                    color: isActive ? '#50B8E7' : '#000',
+                                                })} to='/finanzen/pensionsplanung-und-ruhestand' className='text-decoration-none navLinks fs-5'>Pensionsplanung und Ruhestand </NavLink>
                                             </div>
+                                            <div className='pb-2'>
+                                                <NavLink style={({ isActive }) => ({
+                                                    color: isActive ? '#50B8E7' : '#000',
+                                                })} to='/finanzen/haus-hypothek' className='text-decoration-none navLinks fs-5'>Haus & Hypothek </NavLink>
+                                            </div>
+                                            <div>
+                                                <NavLink style={({ isActive }) => ({
+                                                    color: isActive ? '#50B8E7' : '#000',
+                                                })} to='/finanzen/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </NavLink>
+                                            </div>
+                                        </div>
                                         {/* )} */}
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/' id="linksss" className='text-decoration-none navLinks'>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/w' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
-                                        </Link>
+                                        </NavLink>
                                     </div>
                                     <div className="col-12">
-                                        <Link to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
+                                        <NavLink style={({ isActive }) => ({
+                                            color: isActive ? '#50B8E7' : '#000',
+                                        })} to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
                                             Über uns
-                                        </Link>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>

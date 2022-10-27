@@ -17,27 +17,26 @@ function Login() {
     }
     return (
         <div className='d-flex justify-content-center'>
-            <form id='form'>
-                <h1>Log In</h1>
-                <div className="form-outline mb-4 mt-5">
-                    <label className="form-label" htmlFor="form2Example1">Email address</label>
-                    <input type="email" onChange={(e) => setEmail(e.target.value)} id="form2Example1" className="form-control" />
+            <form id='form' className='px-5'>
+                <div>
+                    <span className='firstBlueTitle fs-2'>Log In</span>
+                </div>
+                <div className="form-outline mb-4 mt-4">
+                    <input placeholder='Email' type="email" onChange={(e) => setEmail(e.target.value)} id="form2Example1" className="krankenInputStyle krankenInputStepStyle p-2" />
                 </div>
                 <div className="form-outline mb-4">
-                    <label className="form-label" htmlFor="form2Example2">Password</label>
-                    <input type="password" onChange={(e) => setPassword(e.target.value)} id="form2Example2" className="form-control" />
+                    
+                    <input placeholder='Password' type="password" onChange={(e) => setPassword(e.target.value)} id="form2Example2" className="krankenInputStyle krankenInputStepStyle p-2" />
                 </div>
-
-                <button type="button" className="btn btn-primary btn-block mb-4 w-100" style={{ backgroundColor: "#34ACE3" }} onClick={handleSubmit}>Sign in</button>
-                <div className="text-center">
+                <button type="button" className="krankenBtnStyle mb-3" style={{ backgroundColor: "#34ACE3" }} onClick={handleSubmit}>Sign in</button>
+                {/* <div className="text-center">
                     <div className="row mb-4">
                         <div className="col">
-
                             <a href="#!">Forgot password?</a>
                         </div>
                     </div>
-                    <p>Not a member? <a href="#!">Register</a></p>
-                </div>
+                    <span>Not a member? <a href="#!">Register</a></span>
+                </div> */}
             </form>
         </div>
     )

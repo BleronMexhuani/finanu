@@ -77,6 +77,40 @@ a {
     border-bottom: 1px solid #fff;
 }
 
+.apexcharts-xaxistooltip {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+}
+
+.apexcharts-legend-marker {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-style: solid;
+    height: 35px !important;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.apexcharts-legend-text {
+    margin-top: -10px;
+}
+
+.apexcharts-legend {
+    justify-content: center !important;
+}
+
+.apexcharts-tooltip {
+    display: none !important;
+}
+
+.positionAbsoluteToolTip {
+    position: absolute;
+    top: -2rem;
+}
+
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
@@ -87,11 +121,21 @@ a {
     .whiteBgInBluePension {
         margin-top: -3.5rem;
     }
+    .positionAbsoluteToolTip {
+        top: 2rem;
+    }
 }
 
 @media (max-width: 575.98px) {
     .whiteBgInBluePension {
         width: 100%;
+    }
+
+    .apexcharts-legend {
+        justify-content: start !important;
+    }
+    .positionAbsoluteToolTip {
+        display: none;
     }
 }
 
@@ -110,11 +154,13 @@ a {
 .darkTheme .whiteBgInBluePension {
     background-color: #333436;
     box-shadow: 0px 4px 17px rgba(000, 000, 000, 0.25);
-    
+
 }
-.darkTheme .blueBgDivPension  {
+
+.darkTheme .blueBgDivPension {
     background-color: #333436;
 }
-.darkTheme .pensionPlanBlueBg { 
+
+.darkTheme .pensionPlanBlueBg {
     background-image: url('../../assets/images/pensionPlanBlueBgDark.svg') !important;
 }
