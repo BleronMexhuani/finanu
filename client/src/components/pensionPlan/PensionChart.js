@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Chart from "react-apexcharts";
+import NumberFormat from 'react-number-format';
 
 function PensionChart() {
     const [monthly, setMonthly] = useState(500);
@@ -37,7 +38,7 @@ function PensionChart() {
             lowP = 1.25;
         }
         setmonthyWage(parseFloat(monthly) * 12)
-        let pensionAge = (65 - age);
+        let pensionAge = (64 - age);
 
         let totalMin = parseFloat(amount) + parseFloat(monthlyWage);
         let totalMedium = parseFloat(amount) + parseFloat(monthlyWage);
@@ -77,13 +78,14 @@ function PensionChart() {
     }, [age, amount, monthly, risk, monthlyWage])
 
     const labels = ageArray;
+    var getValueandSetThatToTooltipStart;
     const state = {
         options: {
-            
+
             chart: {
                 height: 500,
                 type: 'area',
-                fontFamily: 'Poppins',
+                fontFamily: 'Montserrat',
                 toolbar: {
                     show: false,
                     tools: {
@@ -95,7 +97,8 @@ function PensionChart() {
                         pan: false,
                         reset: false
                     }
-                },
+                }
+
             },
             dataLabels: {
                 enabled: false
@@ -141,22 +144,48 @@ function PensionChart() {
                 horizontalAlign: 'center',
                 floating: false,
                 fontSize: '14px',
-                fontWeight: 400,
+                fontFamily: 'Montserrat',
+                fontWeight: 500,
+                formatter: function (seriesName, opts) {
+                    getValueandSetThatToTooltipStart = (opts.w.globals.series[0][opts.w.globals.series[0].length - 1]).toLocaleString('it-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0, });
+                    return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + seriesName + ' <br><span class="alterNameeeee"><b> ' + (opts.w.globals.series[opts.seriesIndex][opts.w.globals.series[opts.seriesIndex].length - 1]).toLocaleString('it-CH', {
+                        style: 'currency',
+                        currency: 'CHF',
+                        minimumFractionDigits: 0,
+                        maximumFractionDigits: 0,
+                    }) + '</b></span></div>';
+                },
+                tooltipHoverFormatter: function (seriesName, opts) {
+                    var x = document.getElementsByClassName("alterNameeeee");
+                    for (let i = 0; i < x.length; i++) {
+                        x[i].innerHTML = '';
+                    }
+                    var seriesIndex = opts.seriesIndex;
+                    var dataPointIndex = opts.dataPointIndex;
+                    //var seriesIndexx = 1;
+                    document.getElementsByClassName('apexcharts-tooltip').innerHTML = '<div class="arrow_box" id="tooltiparrowbox"><span class="alterNameeeee" style="text-align:center;">Mit der gewählten 3. Säule <br> können Sie mit bis zu <br><b> ' + (opts.w.globals.series[0][opts.w.globals.series[0].length - 1]).toLocaleString('it-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0, }) + '</b> <br> in Rente gehen!</span></div>';
+
+                    return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + opts.w.config.series[seriesIndex].name + ' <br>' + '<b>' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex].toLocaleString('it-CH', {
+                        style: 'currency',
+                        currency: 'CHF',
+                        minimumFractionDigits: 0,
+                        maximumFractionDigits: 0,
+                    }) + '</b></div>';
+                },
                 inverseOrder: false,
-                width: undefined,
+                width: "100%",
                 height: undefined,
                 customLegendItems: [],
                 offsetX: 0,
-                offsetY: 0,
+                offsetY: 5,
                 labels: {
                     colors: undefined,
                     useSeriesColors: false
                 },
 
-
                 markers: {
                     width: 12,
-                    height: 48,
+                    height: 22,
                     strokeWidth: 0,
                     strokeColor: '#fff',
                     fillColors: undefined,
@@ -183,10 +212,20 @@ function PensionChart() {
             xaxis: {
                 type: 'category',
                 categories: labels,
-                show: false,
+                overwriteCategories: [],
+                show: true,
+                tooltip: {
+                    formatter: function (labels, opts) {
+                        return 'in ' + (labels - 1) + ' Jahren'
+                    }
+                }
             },
             yaxis: {
                 show: false,
+                tooltip: {
+                    show: false,
+                    enabled: false
+                }
             },
             colors: ['#272A46', '#208fe0', '#C1272D']
         },
@@ -207,19 +246,6 @@ function PensionChart() {
                 data: lowRisk
             },
         ],
-        
-        tooltip: {
-            custom: function({series, seriesIndex, dataPointIndex, w}) {
-                var i = (series[seriesIndex][dataPointIndex].length-1).toLocaleString('it-CH', {
-                        style: 'currency',
-                        currency: 'CHF',
-                    });
-                return '<div class="arrow_box" id="tooltiparrowbox">' +
-            		'<b>in '+dataPointIndex+' Jahren </b><br>' +
-                    '<span>Mit der gewählten <br> monatlichen  Investition können <br>  Sie bis zu <b>'+ i  + ' </b>  <br>in '+w.config.series[seriesIndex].name+' <br>  in Rente gehen!</span>' +
-                '</div>'
-            },
-        },
     };
     return (
         <div>
@@ -351,7 +377,15 @@ function PensionChart() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-7 col-lg-8 my-auto">
+                            <div className="col-12 col-md-7 col-lg-8 my-auto position-relative">
+                                <div className="positionAbsoluteToolTip">
+                                    <div className='pensionChartDiv p-4'>
+                                        <span className='fw-500'>
+                                            Mit der gewählten 3. Säule <br></br> können Sie mit bis zu <br></br><b><NumberFormat value={highRisk[highRisk.length-1]} displayType={'text'} thousandSeparator={true} /> CHF&nbsp;</b> <br></br> in Rente gehen!
+                                        </span>
+                                    </div>
+                                </div>
+
                                 <Chart
                                     options={state.options}
                                     series={state.series}
