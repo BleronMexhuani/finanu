@@ -1,11 +1,9 @@
 import React from 'react'
-import { useEffect } from 'react'
 import XBtn from "../../assets/images/xButton.svg"
 import Step3First from '../../assets/images/rechtsschutzImgs/step3First.png'
 
 function Modal(props) {
     
-
     return (
         <div>
             <div className="hausratModal">

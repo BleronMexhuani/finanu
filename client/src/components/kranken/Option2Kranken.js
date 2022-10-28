@@ -1,11 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
 import TerminImg from '../../assets/images/terminImg.svg'
 import Phone from '../../assets/images/telephoneImg.svg'
 import Formular from '../../assets/images/formular.svg'
 import LastIlustration from '../../assets/images/krankenIlustration.svg'
 import LastIlustrationDark from '../../assets/images/krankenIlustrationDark.svg'
+import Modal from './Modal'
 
 function Option2Kranken(props) {
+
+    const [openModal, setopenModal] = useState(false)
     return (
         <div>
             <div className='wrapDiv container-xl px-4 pt-5'>
@@ -25,7 +29,7 @@ function Option2Kranken(props) {
                 <div>
                     <div className="row g-5 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div className="krankenFirstStep px-4 py-5">
+                            <div style={{cursor: 'pointer'}} className="krankenFirstStep px-4 py-5">
                                 <div>
                                     <img src={TerminImg} alt="" />
                                 </div>
@@ -35,7 +39,7 @@ function Option2Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div className="krankenFirstStep px-4 py-5">
+                            <div style={{cursor: 'pointer'}} className="krankenFirstStep px-4 py-5" onClick={() => setopenModal(true)}>
                                 <div>
                                     <img src={Phone} alt="" />
                                 </div>
@@ -45,7 +49,7 @@ function Option2Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div className="krankenFirstStep px-4 py-5">
+                            <div style={{cursor: 'pointer'}} className="krankenFirstStep px-4 py-5" onClick={() => setopenModal(true)}>
                                 <div>
                                     <img src={Formular} alt="" />
                                 </div>
@@ -63,6 +67,9 @@ function Option2Kranken(props) {
                         }
                     </div>
                 </div>
+                {openModal && (
+                    <Modal setopenModal={setopenModal} />
+                )}
             </div>
         </div>
     )
