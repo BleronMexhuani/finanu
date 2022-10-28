@@ -14,8 +14,6 @@ function PensionChart() {
     const [ageArray, setAgeArray] = useState([]);
     const [monthlyWage, setmonthyWage] = useState(0)
 
-
-
     useEffect(() => {
 
         const lowi = [];

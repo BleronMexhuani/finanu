@@ -293,7 +293,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 99999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,12 +313,16 @@ a {
 .blueBorderBottom {
     border-bottom: 2px solid #84CDEE;
 }
-
+.blueBorderBottom .cardTitle {
+    color: #50B8E7;
+}
 .whiteBorderBottom {
     border-bottom: 2px solid #fff;
 
 }
-
+.whiteBorderBottom .cardTitle {
+    color: #fff;
+}
 .cornerOffer {
     position: absolute;
     right: 0px;

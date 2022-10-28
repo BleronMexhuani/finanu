@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import "./assets/css/header.css"
 import logo from './assets/images/logo.svg';
 import { useEffect, useState } from 'react';
 
-function Header() {
+function Header(props) {
     const [toggleMenu, setToggleMenu] = useState(false)
 
     const toggleNav = () => {
@@ -48,6 +48,7 @@ function Header() {
         return () => {
             window.removeEventListener('scroll', controlNavbar)
         }
+        
     }, [])
     return (
         <>
@@ -59,7 +60,7 @@ function Header() {
                             <div className="row g-0">
                                 <div className="col-auto my-auto">
                                     <NavLink style={({ isActive }) => ({
-                                        color: isActive ? '#50B8E7' : '#000',
+                                        color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                     })} to='/' id="linksss" className='text-decoration-none navLinks'>
                                         <img src={logo} alt='companyLogo' className='' />
                                     </NavLink>
@@ -68,7 +69,7 @@ function Header() {
                                 <div className='text-end my-auto col'>
                                     <span className="navlinksondesktop">
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Home
                                         </NavLink>
@@ -79,22 +80,21 @@ function Header() {
                                                     <div className='navbarDropdowns' >
                                                         <div className='pb-3'>
                                                             <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : '#000',
-                                                            })}
-                                                                to='/versicherungen/krankenkasse' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                                color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
+                                                            })} to='/versicherungen/krankenkasse' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Krankenkasse
                                                             </NavLink>
                                                         </div>
                                                         <div className='pb-3'>
                                                             <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : '#000',
+                                                                color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/versicherungen/rechtsschutz' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Rechtsschutz
                                                             </NavLink>
                                                         </div>
                                                         <div>
                                                             <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : '#000',
+                                                                color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/versicherungen/auto-motorrad' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Auto & Motorrad
                                                             </NavLink>
@@ -111,21 +111,21 @@ function Header() {
                                                     <div className='navbarDropdowns' >
                                                         <div className='pb-3'>
                                                             <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : '#000',
+                                                                color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/finanzen/pensionsplanung-und-ruhestand' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Pensionsplanung und Ruhestand
                                                             </NavLink>
                                                         </div>
                                                         <div className='pb-3'>
                                                             <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : '#000',
+                                                                color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/finanzen/haus-hypothek' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Haus & Hypothek
                                                             </NavLink>
                                                         </div>
                                                         <div>
                                                             <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : '#000',
+                                                                color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/finanzen/360' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Finanzen & Budget
                                                             </NavLink>
@@ -136,12 +136,12 @@ function Header() {
                                             )}
                                         </span>
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/w' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
                                         </NavLink>
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
                                             Über uns
                                         </NavLink>
@@ -152,7 +152,7 @@ function Header() {
                         <div className="col-auto my-auto">
                             <div className={`navTabs ${toggleMenu && 'navTabsOpen'}`}>
                                 <NavLink style={({ isActive }) => ({
-                                    color: isActive ? '#50B8E7' : '#000',
+                                    color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                 })} to='/finanzen/360' className='buttonofmenutabs'>
                                     <Button id="buttonofnavbar" variant="outline-danger">360° Budgetanalyse</Button>
                                 </NavLink>
@@ -160,14 +160,14 @@ function Header() {
                                 <div className='row gx-0 gy-4 navTabsRow' onClick={toggleNav}>
                                     <div className="col-12">
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Home
                                         </NavLink>
                                     </div>
                                     <div className="col-12">
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/' id="linksss" onClick={(e) => { e.stopPropagation() }} className='text-decoration-none navLinks'>
                                             Versicherungen
                                         </NavLink>
@@ -175,17 +175,17 @@ function Header() {
                                         <div className='pt-2'>
                                             <div className='pb-2'>
                                                 <NavLink style={({ isActive }) => ({
-                                                    color: isActive ? '#50B8E7' : '#000',
-                                                })} to='/versicherungen/krrankenkasse' className='text-decoration-none navLinks fs-5'>Krankenkasse </NavLink>
+                                                    color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
+                                                })} to='/versicherungen/krankenkasse' className='text-decoration-none navLinks fs-5'>Krankenkasse </NavLink>
                                             </div>
                                             <div className='pb-2'>
                                                 <NavLink style={({ isActive }) => ({
-                                                    color: isActive ? '#50B8E7' : '#000',
+                                                    color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/versicherungen/rechtsschutz' className='text-decoration-none navLinks fs-5'>Rechtsschutz </NavLink>
                                             </div>
                                             <div>
                                                 <NavLink style={({ isActive }) => ({
-                                                    color: isActive ? '#50B8E7' : '#000',
+                                                    color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/versicherungen/auto-motorrad' className='text-decoration-none navLinks fs-5'>Auto & Motorrad </NavLink>
                                             </div>
                                         </div>
@@ -193,7 +193,7 @@ function Header() {
                                     </div>
                                     <div className="col-12">
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/' id="linksss" onClick={(e) => { e.stopPropagation() }} className='text-decoration-none navLinks'>
                                             Finanzen
                                         </NavLink>
@@ -201,17 +201,17 @@ function Header() {
                                         <div className='pt-2'>
                                             <div className='pb-2'>
                                                 <NavLink style={({ isActive }) => ({
-                                                    color: isActive ? '#50B8E7' : '#000',
+                                                    color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/finanzen/pensionsplanung-und-ruhestand' className='text-decoration-none navLinks fs-5'>Pensionsplanung und Ruhestand </NavLink>
                                             </div>
                                             <div className='pb-2'>
                                                 <NavLink style={({ isActive }) => ({
-                                                    color: isActive ? '#50B8E7' : '#000',
+                                                    color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/finanzen/haus-hypothek' className='text-decoration-none navLinks fs-5'>Haus & Hypothek </NavLink>
                                             </div>
                                             <div>
                                                 <NavLink style={({ isActive }) => ({
-                                                    color: isActive ? '#50B8E7' : '#000',
+                                                    color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/finanzen/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </NavLink>
                                             </div>
                                         </div>
@@ -219,14 +219,14 @@ function Header() {
                                     </div>
                                     <div className="col-12">
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/w' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
                                         </NavLink>
                                     </div>
                                     <div className="col-12">
                                         <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : '#000',
+                                            color: isActive ? '#50B8E7'  : (props.darkMode ? '#fff' : '#000'),
                                         })} to='/uber-uns' id="linksss" className='text-decoration-none navLinks'>
                                             Über uns
                                         </NavLink>

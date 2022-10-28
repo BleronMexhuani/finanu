@@ -174,7 +174,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 99999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +263,14 @@ a {
     background-color: transparent;
     color: #fff;
 }
-
+.darkTheme .hausratModalContent select {
+    border: 1px solid #434343 !important;
+    background-color: transparent;
+    color: #fff;
+}
+.darkTheme .hausratModalContent select option {
+    color: #000;
+}
 .darkTheme .hausratModalContent input:disabled {
     background-color: #282424 !important;
     color: #ccc;

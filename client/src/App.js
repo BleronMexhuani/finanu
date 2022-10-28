@@ -42,7 +42,7 @@ function App() {
       <div>
         <BrowserRouter>
           <ScrollTop>
-            <Header />
+            <Header darkMode={darkMode} />
             <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
             <Routes>
               <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
