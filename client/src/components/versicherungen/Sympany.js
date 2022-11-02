@@ -56,8 +56,8 @@ function Sympany() {
                                 <div className='servicesBorderDiv p-4 p-lg-5'>
                                     <div className="pb-4">
                                         <svg width="35" height="48" viewBox="0 0 33 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M16 37V52" stroke="#8F85BA" strokeWidth="6" strokeLinecap="round" stroke-linejoin="round" />
-                                            <path d="M16.5 31C25.0604 31 32 24.2843 32 16C32 7.71573 25.0604 1 16.5 1C7.93959 1 1 7.71573 1 16C1 24.2843 7.93959 31 16.5 31Z" fill="#8F85BA" stroke="#8F85BA" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
+                                            <path d="M16 37V52" stroke="#8F85BA" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M16.5 31C25.0604 31 32 24.2843 32 16C32 7.71573 25.0604 1 16.5 1C7.93959 1 1 7.71573 1 16C1 24.2843 7.93959 31 16.5 31Z" fill="#8F85BA" stroke="#8F85BA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
 
 
