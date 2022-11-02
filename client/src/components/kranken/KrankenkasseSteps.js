@@ -6,6 +6,7 @@ import Tooth from "../../assets/images/tooth.svg"
 import { v4 as uuidv4 } from 'uuid'
 import XBtn from "../../assets/images/xButton.svg"
 import Stars from '../../assets/images/krankenkasseStars.svg'
+import LoadingGif from '../../assets/images/Loading_2.gif';
 function KrankenkasseSteps() {
 
     const [insurances, setInsurances] = useState([]);
@@ -27,6 +28,7 @@ function KrankenkasseSteps() {
     const [inputValue, setInputValue] = useState("")
     const [filter, setFilter] = useState([]);
     const [isEmpty, setIsEmpty] = useState(false)
+    const [isLoadActive,setIsLoadActive] = useState('none');
 
     const showSelectDropdown = () => {
         setIsFocused(true)
@@ -119,6 +121,7 @@ function KrankenkasseSteps() {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
+        setKrankenkasse([]);
         const targetJahrgang = [];
         const targetAccident = [];
         const targetFranchise = [];
@@ -147,11 +150,12 @@ function KrankenkasseSteps() {
         setJahrgang(targetJahrgang);
         setAccident(targetAccident);
         setModel(targetModells);
-
+        setIsLoadActive('flex');
         const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
 
-
+    
         setKrankenkasse(result.data);
+        setIsLoadActive('none');
 
     }
 
@@ -631,6 +635,9 @@ function KrankenkasseSteps() {
                     </div>
 
                 )}
+                <div className='mt-5 justify-content-center' style={{display:isLoadActive}}>
+                    <img src={LoadingGif}  width="50" alt="" />
+                </div>
                 {thirdStep2 && (
                     <div ref={third2StepKranken} className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
                         <div className="row g-4 justify-content-center pt-5">
@@ -713,7 +720,7 @@ function KrankenkasseSteps() {
                             }
 
                         </div>
-                        <div className='pt-5'>
+                        <div className='pt-5' style={{display: krankenkasse.length ? 'block' : 'none' }}>
                             <button className='nextBtnKranken' type='button' onClick={openMehrLadenModal} > Mehr laden </button>
                         </div>
 

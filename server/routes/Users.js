@@ -1,11 +1,11 @@
 const express = require('express');
-const { Register, Login } = require('../controllers/Users.js');
+const user = require('../controllers/users.js');
 const auth = require('../middleware/Auth');
 
 const router = express.Router();
 
-router.post("/register", Register);
-router.post("/login", Login);
+router.post("/register", user.Register);
+router.post("/login", user.Login);
 router.get("/welcome", auth, (req, res) => {
     res.status(200).send("Welcome 🙌 ");
 });
