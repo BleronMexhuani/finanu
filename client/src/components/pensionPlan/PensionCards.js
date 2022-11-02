@@ -88,9 +88,9 @@ function PensionCards(props) {
                 </div>
                 <div className='my-5 py-5'>
                     <div className="row g-0 justify-content-center">
-                        <div className="col-12 col-md-6 col-lg-5">
-                            <div className=''>
-                                <span className='finanuSubTitle fw-bold' style={{ color: '#84CDEE' }}>WIESO VORSORGEN?</span>
+                        <div className="col-12 col-md-6 col-lg-5 my-auto">
+                            <div className='pb-3 pb-md-0'>
+                                <span className='finanuSubTitle fw-bold' style={{ color: '#84CDEE' }}>WIESO<br></br> VORSORGEN?</span>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-5">
