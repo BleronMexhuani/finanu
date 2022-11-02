@@ -24,7 +24,7 @@ function UberUns() {
             <div className="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 mx-auto">
                 <div className="row g-4">
                     <div className="col-12 col-sm-6 col-md-4">
-                        <div className="whiteBgUber px-5 py-5">
+                        <div className="whiteBgUber px-5 py-5 h-100">
                             <div>
                                 <img src={Muscle} alt="" />
                             </div>
@@ -34,9 +34,18 @@ function UberUns() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4">
-                        <div className="whiteBgUber px-5 py-5">
+                        <div className="whiteBgUber px-5 py-5 h-100">
                             <div>
-                                <img src={Muscle} alt="" />
+                                <svg width="86" height="109" viewBox="0 0 128 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 44C20.6667 11.6667 72.7 -33.1998 127.5 42.0002" stroke="black" />
+                                    <path d="M127.5 41.9996C107.756 70.0882 56.0149 108.827 1 43.4995" stroke="black" />
+                                    <path d="M92.5 41C92.5 48.5637 88.8096 55.4358 83.2576 60.4272C77.7039 65.4201 70.3203 68.5 63 68.5C55.6978 68.5 49.8388 65.4362 45.7955 60.4828C41.7448 55.5204 39.5 48.6382 39.5 41C39.5 25.8184 52.8582 13 67.5 13C82.0719 13 92.5 25.7439 92.5 41Z" stroke="black" />
+                                    <path d="M79.5 32.0531C79.5 33.5183 78.7515 34.8753 77.5835 35.879C76.4145 36.8834 74.8614 37.5 73.3333 37.5C71.8217 37.5 70.6276 36.8976 69.8042 35.9335C68.9743 34.9617 68.5 33.5959 68.5 32.0531C68.5 29.072 71.2678 26.5 74.3333 26.5C77.3271 26.5 79.5 28.9989 79.5 32.0531Z" stroke="black" />
+                                    <path d="M15 40.5C16.1667 41.8333 18.7 44.6 19.5 45" stroke="black" />
+                                    <path d="M119.68 42C119.623 45.1618 116.096 49.8075 115.094 50.7735" stroke="black" />
+                                    <path d="M11.5 46C16.5 54 23 56.5 26.4344 58.1391" stroke="black" />
+                                </svg>
+
                             </div>
                             <div className='pt-4'>
                                 <span className='fw-500 fs-5'>Transparent</span>
@@ -44,9 +53,18 @@ function UberUns() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4">
-                        <div className="whiteBgUber px-5 py-5">
+                        <div className="whiteBgUber px-5 py-5 h-100">
                             <div>
-                                <img src={Muscle} alt="" />
+                                <svg width="86" height="109" viewBox="0 0 156 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.1203 53.4151C41.3956 33.764 52.7529 17.8698 93.0126 34.3977C104.295 39.0297 113.396 47.6478 120.193 57.7745V57.7745M120.193 57.7745C117.255 56.0489 110.54 52.9391 107.185 54.3039M120.193 57.7745C119.292 54.3116 118.963 46.3976 121.908 44.4211" stroke="#70B5E9" strokeWidth="3" />
+                                    <path d="M138.878 114.498C130.711 123.782 100.607 164.154 59.9173 132.288C50.3728 124.813 44.2174 114.011 39.3162 102.923V102.923M39.3162 102.923C41.7574 105.148 47.4448 109.44 50.6647 108.81M39.3162 102.923C39.6845 106.395 38.9578 113.985 36.031 115.278" stroke="#70B5E9" strokeWidth="3" />
+                                    <path d="M139.332 114.307C110.777 144.207 46.2649 182.549 13.2254 101.269C12.1415 98.6025 11.6148 95.6696 11.6148 92.7911C11.6148 85.602 11.6148 78.666 11.6148 75.6908M11.6148 75.6908C13.5499 79.2664 18.5812 86.6323 23.2254 87.4904M11.6148 75.6908C10.0667 79.624 4.64837 87.4904 0.00410461 87.4904" stroke="black" />
+                                    <path d="M92.8892 105.879C36.5862 107.964 47.3909 78.5309 63.9131 59.612C67.4257 55.5898 72.7279 53.5212 78.0515 53.9426C132.45 58.2486 97.3205 105.715 92.8892 105.879Z" stroke="black" />
+                                    <path d="M52.0059 93.999C57.1175 101.007 89.5059 105.499 104.506 90.999" stroke="black" />
+                                    <path d="M99.505 59.9993C91.5048 54.9996 68.5059 57.4997 56.0059 70.4995" stroke="black" />
+                                    <path d="M16.2598 53.6306C44.8305 21.2504 110.404 -13.8795 142.495 67.9892C143.512 70.5831 144.006 73.4236 144.004 76.2097C143.998 84.2176 143.977 92.1374 143.977 95.4285M143.977 95.4285C142.042 91.5583 137.011 83.5856 132.366 82.6567M143.977 95.4285C145.525 91.1712 150.943 82.6567 155.588 82.6567" stroke="black" />
+                                </svg>
+
                             </div>
                             <div className='pt-4'>
                                 <span className='fw-500 fs-5'>Sustainable</span>
@@ -56,7 +74,7 @@ function UberUns() {
                 </div>
             </div>
             <div className='pt-5 mt-5'>
-                <div className='pb-3' style={{wordBreak: 'break-all'}}>
+                <div className='pb-3' style={{ wordBreak: 'break-all' }}>
                     <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
                 </div>
                 <div className='pb-5 mb-4'>
@@ -110,7 +128,7 @@ function UberUns() {
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
@@ -120,12 +138,12 @@ function UberUns() {
                             </div>
                         </div>
                         <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
@@ -135,12 +153,12 @@ function UberUns() {
                             </div>
                         </div>
                         <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
@@ -150,12 +168,12 @@ function UberUns() {
                             </div>
                         </div>
                         <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
@@ -183,12 +201,12 @@ function UberUns() {
                             </div>
                         </div>
                         <div className="col col-md-4 greyBorderRightUber">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col col-md-4">
-                            <svg  viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>

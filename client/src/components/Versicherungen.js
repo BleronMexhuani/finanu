@@ -15,7 +15,7 @@ function Versicherungen() {
             unserer Versicherer.</span>
         </div>
       </div>
-      <div className='wrapDiv1'>
+      <div className='wrapDiv1 container-xl px-4 px-xl-0'>
         <div className='pb-4 text-start'>
 
           <NavLink to='/versicherungen/sympany' className='text-decoration-none'>
