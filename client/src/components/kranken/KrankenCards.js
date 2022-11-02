@@ -10,7 +10,7 @@ import Sport from '../../assets/images/sport.svg'
 import Braces from '../../assets/images/braces.svg'
 import Fitness from '../../assets/images/fitness.svg'
 import Abroad from '../../assets/images/abroad.svg'
-import Glasses from '../../assets/images/gla sses.svg'
+import Glasses from '../../assets/images/glasses.svg'
 import PhoneDoc from '../../assets/images/phoneDoc.svg'
 // import DocumentCheck from "../../assets/images/documentCheck.svg"
 // import Lock from "../../assets/images/lock.svg"
