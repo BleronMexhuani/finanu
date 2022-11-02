@@ -17,6 +17,7 @@ function RechtsschutzSteps() {
     const [step, setStep] = useState(0);
     const onNext = () => setStep(step + 1);
     const onPrevious = () => setStep(step - 1);
+    const [type, settype] = useState('text')
     return (
         <div>
             <div className="blueBgRechtss">
@@ -205,17 +206,17 @@ function RechtsschutzSteps() {
                                             <div className='pb-4'>
                                                 <div className="row g-4">
                                                     <div className="col-12 col-sm-6">
-                                                        <div className='pb-2'>
+                                                        {/* <div className='pb-2'>
                                                             <span className='fw-700'>Vorname und Nachname / Firmenname</span>
-                                                        </div>
+                                                        </div> */}
                                                         <div>
                                                             <input className='step3InputRechtss' type="text" name="" placeholder='Vorname und Nachname / Firmenname' id="" />
                                                         </div>
                                                     </div>
                                                     <div className="col-12 col-sm-6">
-                                                        <div className='pb-2'>
+                                                        {/* <div className='pb-2'>
                                                             <span className='fw-700'>E-mail</span>
-                                                        </div>
+                                                        </div> */}
                                                         <div>
                                                             <input className='step3InputRechtss' type="text" name="" placeholder='E-mail' id="" />
                                                         </div>
@@ -223,21 +224,20 @@ function RechtsschutzSteps() {
                                                 </div>
 
                                             </div>
-
                                             <div className='pb-4'>
                                                 <div className="row g-4">
-                                                    <div className="col-12 col-sm-6">
-                                                        <div className='pb-2'>
+                                                    <div className="col-12 col-sm-6 ">
+                                                        {/* <div className='pb-2'>
                                                             <span className='fw-700'>Geburtsdatum</span>
-                                                        </div>
+                                                        </div> */}
                                                         <div className="">
-                                                            <input className='step3InputRechtss' type="date" name="" placeholder='PLZ' id="" />
+                                                            <input className='step3InputRechtss' type={type} onFocus={ () => {settype('date')}} onBlur={ () => {settype('text')}} name="" placeholder='Geburtsdatum' id="" />
                                                         </div>
                                                     </div>
                                                     <div className='col-12 col-sm-6'>
-                                                        <div className='pb-2'>
+                                                        {/* <div className='pb-2'>
                                                             <span className='fw-700'>Telefonnummer</span>
-                                                        </div>
+                                                        </div> */}
                                                         <div className="">
                                                             <input className='step3InputRechtss' type="text" name="" placeholder='Telefonnummer' id="" />
                                                         </div>
@@ -247,34 +247,33 @@ function RechtsschutzSteps() {
                                             <div className='pb-4'>
                                                 <div className="row g-4">
                                                     <div className="col-12 col-sm-4">
-                                                        <div className='pb-2'>
+                                                        {/* <div className='pb-2'>
                                                             <span className='fw-700'>Postleitzahl</span>
-                                                        </div>
+                                                        </div> */}
                                                         <div className="">
                                                             <input className='step3InputRechtss' type="text" name="" placeholder='PLZ' id="" />
                                                         </div>
                                                     </div>
                                                     <div className='col-12 col-sm-4'>
-                                                        <div className='pb-2'>
+                                                        {/* <div className='pb-2'>
                                                             <span className='fw-700'>Ort</span>
-                                                        </div>
+                                                        </div> */}
                                                         <div className="">
                                                             <input className='step3InputRechtss' type="text" name="" placeholder='Ort' id="" />
                                                         </div>
                                                     </div>
                                                     <div className="col-12 col-sm-4">
-                                                        <div className='pb-2'>
+                                                        {/* <div className='pb-2'>
                                                             <span className='fw-700'>Strasse</span>
-                                                        </div>
+                                                        </div> */}
                                                         <div>
                                                             <input className='step3InputRechtss' type="text" name="" placeholder='Strasse' id="" />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='text-center'>
-
-                                            </div>
+                                            
+                                            
                                         </div>
                                         <div className="row g-0 justify-content-around">
                                             <div className="col-auto my-auto">
