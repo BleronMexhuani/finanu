@@ -5,7 +5,7 @@ function Fahrer(props) {
         <div>
             <div>
                 <div className="pb-4">
-                    <span className='firstBlueTitle fs-4'>
+                    <span className='finanuSubTitle'>
                         Fahrer/-in
                     </span>
                 </div>

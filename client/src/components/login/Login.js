@@ -19,7 +19,7 @@ function Login() {
         <div className='d-flex justify-content-center'>
             <form id='form' className='px-5'>
                 <div>
-                    <span className='firstBlueTitle fs-2'>Log In</span>
+                    <span className='firstBlueTitle'>Log In</span>
                 </div>
                 <div className="form-outline mb-4 mt-4">
                     <input placeholder='Email' type="email" onChange={(e) => setEmail(e.target.value)} id="form2Example1" className="krankenInputStyle krankenInputStepStyle p-2" />

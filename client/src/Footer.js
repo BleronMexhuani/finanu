@@ -9,7 +9,7 @@ function Footer() {
                     <div className="row g-0 justify-content-center">
                         <div className="col-12 col-md text-start">
                             <div className='pb-2 pb-md-1'>
-                                <span className='fw-bold fs-3'>Holen Sie einen Kostenvoranschlag</span>
+                                <span className='fw-bold finanuSubTitle'>Holen Sie einen Kostenvoranschlag</span>
                             </div>
                             <div>
                                 <span style={{ fontWeight: 500 }}>Ein Angebot zu erhalten ist schnell und einfach. Entdecken Sie noch heute Ihre Funktionen.</span>

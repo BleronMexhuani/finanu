@@ -22,34 +22,34 @@ function KrankenCards() {
     const [isHover1, setIsHover1] = useState(false)
     const [isHover2, setIsHover2] = useState(false)
     return (
-        <div className='blueBgKrankenOverflow pt-5 pt-md-0'>
+        <div className='blueBgKrankenOverflow pt-0 pt-lg-5 pt-xl-0'>
             <div className='blueBgKranken1 mb-5 pb-5 mb-lg-0 pb-lg-0'>
-                <div className="blueBgCenterText">
-                    <div className='pb-5'>
+                <div className="blueBgCenterText pt-0 pt-lg-5 pt-xl-0">
+                    <div className='pb-5 pt-5 pt-xl-0 mt-5 mt-md-0 pt-lg-5 mt-xl-0'>
                         <span className='fs-1 bigTitleKranken'>GRUNDVERSICHERUNG</span>
                     </div>
                     <div className='w-100 px-4 px-lg-5 '>
                         <div className="row g-3">
-                            <div className="col-12 col-sm-6 col-md">
-                                <div className='p-4 whiteCardKranken h-100 text-start'>
+                            <div className="col-12 col-sm-6 col-md-4 col-xl">
+                                <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
                                         <img src={BeatingHeart} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600'>Grundmodell (0%)</span>
+                                        <span className='fw-600 finanuSubTitle'>Grundmodell (0%)</span>
                                     </div>
                                     <div>
                                         <span className='fw-500'>Freie Arztwahl.</span>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-md">
-                                <div className='p-4 whiteCardKranken h-100 text-start'>
+                            <div className="col-12 col-sm-6 col-md-4 col-xl">
+                                <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
                                         <img src={Doctor} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600'>Hausarzt (Max. 12%)</span>
+                                        <span className='fw-600 finanuSubTitle '>Hausarzt (Max. 12%)</span>
                                     </div>
                                     <div>
                                         <span className='fw-500'>Der Hausarzt überweist den
@@ -58,13 +58,13 @@ function KrankenCards() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-md">
-                                <div className='p-4 whiteCardKranken h-100 text-start'>
+                            <div className="col-12 col-sm-6 col-md-4 col-xl">
+                                <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
                                         <img src={Hands} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600'>Versorgungznetz (HMO)</span>
+                                        <span className='fw-600 finanuSubTitle '>Versorgungznetz (HMO)</span>
                                     </div>
                                     <div>
                                         <span className='fw-500'>(Allgemeinärzte oder
@@ -72,13 +72,13 @@ function KrankenCards() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-md">
-                                <div className='p-4 whiteCardKranken h-100 text-start'>
+                            <div className="col-12 col-sm-6 col-xl">
+                                <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
                                         <img src={Medicine} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600'>Apothekenmodell (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle '>Apothekenmodell (TELMED)</span>
                                     </div>
                                     <div>
                                         <span className='fw-500'>Erste Anlaufstelle bei allen Fragen
@@ -88,13 +88,13 @@ function KrankenCards() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-md">
-                                <div className='p-4 whiteCardKranken h-100 text-start'>
+                            <div className="col-12 col-sm-6 col-xl">
+                                <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
                                         <img src={PhoneDoc} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600'>Telemedizin (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle '>Telemedizin (TELMED)</span>
                                     </div>
                                     <div>
                                         <span className='fw-500'>Der Versicherte muss eine

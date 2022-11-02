@@ -6,7 +6,7 @@ function IhrAuto(props) {
     return (
         <div>
             <div className="pb-4">
-                <span className='firstBlueTitle fs-4'>
+                <span className='finanuSubTitle'>
                     Neueinlösung eines Fahrzeuges
                 </span>
             </div>
@@ -48,7 +48,7 @@ function IhrAuto(props) {
                 </div>
                 <div className="py-5">
                     <div className="pb-4">
-                        <span className='firstBlueTitle fs-4'>
+                        <span className='finanuSubTitle'>
                             Wählen Sie Ihre Leistungen
                         </span>
                     </div>

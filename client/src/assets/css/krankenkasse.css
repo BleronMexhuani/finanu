@@ -35,7 +35,7 @@ a {
 .krankenSubtitle {
     font-weight: 500;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .krankenInputStyle {
@@ -116,7 +116,7 @@ a {
     border-radius: 12px;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
     color: #84CDEE;
-    width: 380px;
+    width: 400px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -137,6 +137,7 @@ a {
     border-radius: 12px;
     background-color: #fff;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
+    text-align: start;
 }
 
 .changeJustifyTablet {
@@ -313,16 +314,20 @@ a {
 .blueBorderBottom {
     border-bottom: 2px solid #84CDEE;
 }
+
 .blueBorderBottom .cardTitle {
     color: #50B8E7;
 }
+
 .whiteBorderBottom {
     border-bottom: 2px solid #fff;
 
 }
+
 .whiteBorderBottom .cardTitle {
     color: #fff;
 }
+
 .cornerOffer {
     position: absolute;
     right: 0px;
@@ -333,6 +338,12 @@ a {
     width: 150px;
 }
 
+.negavtiveMt {
+    margin-top: -220px;
+}
+.p-4.whiteCardKranken.h-100.text-center img {
+    width: 100px;
+}
 @media (min-width: 1700px) {
     .blueBgKranken {
         margin-top: -70px;
@@ -343,7 +354,7 @@ a {
 
 @media (max-width: 1399.98px) {
     .krankenSubtitle {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -351,8 +362,7 @@ a {
     .krankenOfferStyle {
         width: 290px;
     }
-    
-}
+}   
 
 
 @media (max-width: 991.98px) {
@@ -369,6 +379,9 @@ a {
 
     .krankenOfferStyle {
         width: 100%;
+    }
+    .negavtiveMt {
+        margin-top: 3rem;
     }
 }
 
@@ -397,6 +410,7 @@ a {
     .krankenStepsBox {
         padding: 1.5rem;
     }
+
     .krankenSubtitle {
         font-size: 16px;
     }
@@ -404,8 +418,8 @@ a {
 
 @media (max-width: 575.98px) {
     .whiteBgKranken {
-        width: 280px;
-        left: calc(50% - 140px);
+        width: 240px;
+        left: calc(50% - 120px);
     }
 
     .mehrLadenModalContent {
@@ -430,10 +444,12 @@ a {
     .starsImg {
         width: 120px;
     }
+
     .krankenSubtitle {
         font-size: 14px;
     }
-    .nextBtnKranken { 
+
+    .nextBtnKranken {
         width: 100%;
     }
 }
@@ -554,7 +570,9 @@ a {
     background-color: #333436;
     color: #fff;
 }
-
+.darkTheme .finanuSubTitle {
+    color: #fff !important;
+}
 .darkTheme .greyBorderDiv {
     color: #fff;
     border: 1px solid #84cdee;
@@ -575,6 +593,7 @@ a {
         background-position-x: -190px;
     }
 }
+
 @media (max-width: 991.98px) {
     .darkTheme .blueBgKranken {
         height: 1000px;

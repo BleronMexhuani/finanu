@@ -28,10 +28,10 @@ function HomeFirstSection(props) {
                     <div className="row g-0 justify-content-center">
                         <div className="col-12 col-md-9 text-center">
                             <div className='pb-3'>
-                                <span className='firstBlueTitle fs-2'>Informieren, Vergleichen & Abschliessen</span>
+                                <span className='firstBlueTitle'>Informieren, Vergleichen & Abschliessen</span>
                             </div>
                             <div className='pb-5'>
-                                <span style={{ fontWeight: 500 }} >
+                                <span className='finanuSubTitle' style={{ fontWeight: 500 }} >
                                     Oder wünschen Sie lieber eine kostenlose Gesamtberatung von<br></br>
                                     einem unserer Kundenberatern?
                                 </span>
@@ -163,7 +163,7 @@ function HomeFirstSection(props) {
                         </div>
                     </div>
                     <div className="row g-0 justify-content-center">
-                        <div className="pt-5 mt-5 col-12 col-md-7">
+                        <div className="col-12 col-md-7 pb-5">
                             <div className='pt-5'>
                                 <img src={logo} width={250} alt="" />
                             </div>
@@ -171,7 +171,7 @@ function HomeFirstSection(props) {
                                 <span className='fs-4 firstBlueTitle' style={{ fontWeight: 700 }}>TRANSPARENT, SCHNELL, DIGITAL​</span>
                             </div>
                             <div className='pt-3'>
-                                <span className='fs-5 normalTextToWhite' style={{ fontWeight: 500 }}>Was ist finanu?</span>
+                                <span className='normalTextToWhite finanuSubTitle' style={{ fontWeight: 500 }}>Was ist finanu?</span>
                             </div>
                             <div className='pt-3'>
                                 <span className='normalTextToWhite' style={{ fontWeight: 500 }}>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der

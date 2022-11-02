@@ -42,7 +42,7 @@ function NinthStep(props) {
       <form className='m-0' onSubmit={handleNinthStep}>
         <div className="col-12 col-sm-9 col-md-12 col-lg-9 col-xl-6 stepsBlueDiv px-4 px-sm-5 pb-5 pt-4 mx-auto">
           <div className='pb-4'>
-            <span className='fs-4 fw-800'>Mobilität</span>
+            <span className='finanuSubTitle fw-800 text-light'>Mobilität</span>
           </div>
           <div className='text-start'>
             <div className="row gx-4 gy-0">

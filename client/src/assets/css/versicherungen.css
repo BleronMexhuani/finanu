@@ -1,0 +1,45 @@
+.versicherungenLinks {
+    background: #50B8E7;
+    border-radius: 41px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px 31px;
+}
+
+.heroDiv img {
+    width: 350px;
+    max-width: 470px;
+}
+.servicesBorderDiv {
+    border: 3px solid #F6EFE7;
+    text-align: center;
+    height: 100%;
+}
+.photoBorderDiv {
+    border: 9px solid #891250;
+}
+.sympanyPurpleSpan {
+    color: #8F85BA;
+
+}
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+    
+}
+
+@media (max-width: 575.98px) {
+
+    .bodyCounterPadding .finanuSubTitle {
+        font-size: 20px !important;
+    }
+    .heroDiv img {
+        width: 250px;
+        max-width: 470px;
+    }
+}

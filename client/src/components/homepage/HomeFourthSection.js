@@ -9,12 +9,12 @@ import image6 from '../../assets/images/image6.png'
 function HomeFourthSection() {
     return (
         <>
-            <div className='px-4 px-md-5 mx-0 mx-md-4'>
+            <div className='px-4 px-md-5 mx-0 mx-md-4 pt-5'>
                 <div className='pb-3'>
-                    <span className='fs-1 fw-bold normalTextToWhite'>Möchten Sie mehr erfahren?</span>
+                    <span className='fw-bold firstBlueTitle'>Möchten Sie mehr erfahren?</span>
                 </div>
                 <div className='pb-4'>
-                    <span className='fs-4 normalTextToWhite' style={{ fontWeight: 500 }}>Unser Team von Versicherungsexperten hat die Ressourcen zusammengestellt,<br></br>
+                    <span className='finanuSubTitle' style={{ fontWeight: 500 }}>Unser Team von Versicherungsexperten hat die Ressourcen zusammengestellt,<br></br>
                         die Sie benötigen, um eine fundierte Entscheidung zu treffen und die richtige<br></br>
                         Police zu finden.</span>
                 </div>
@@ -29,7 +29,7 @@ function HomeFourthSection() {
                             <div className="col-12 col-lg-7">
                                 <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
-                                        <span className='fs-4'>Gegen Diebstahl
+                                        <span className='finanuSubTitle whiteTextOverwrite'>Gegen Diebstahl
                                             versichern</span>
                                     </div>
                                     <div>
@@ -50,7 +50,7 @@ function HomeFourthSection() {
                             <div className="col-12 col-lg-7">
                                 <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
-                                        <span className='fs-4'>Gegen Diebstahl
+                                        <span className='finanuSubTitle whiteTextOverwrite'>Gegen Diebstahl
                                             versichern</span>
                                     </div>
                                     <div>
@@ -71,7 +71,7 @@ function HomeFourthSection() {
                             <div className="col-12 col-lg-7">
                                 <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
-                                        <span className='fs-4'>Gegen Diebstahl
+                                        <span className='finanuSubTitle whiteTextOverwrite'>Gegen Diebstahl
                                             versichern</span>
                                     </div>
                                     <div>
@@ -92,7 +92,7 @@ function HomeFourthSection() {
                             <div className="col-12 col-lg-7">
                                 <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
-                                        <span className='fs-4'>Gegen Diebstahl
+                                        <span className='finanuSubTitle whiteTextOverwrite'>Gegen Diebstahl
                                             versichern</span>
                                     </div>
                                     <div>
@@ -113,7 +113,7 @@ function HomeFourthSection() {
                             <div className="col-12 col-lg-7">
                                 <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
-                                        <span className='fs-4'>Gegen Diebstahl
+                                        <span className='finanuSubTitle whiteTextOverwrite'>Gegen Diebstahl
                                             versichern</span>
                                     </div>
                                     <div>
@@ -134,7 +134,7 @@ function HomeFourthSection() {
                             <div className="col-12 col-lg-7">
                                 <div className='fourthSectionBlueDiv ps-3 ps-lg-5 pe-3 h-100 text-start d-flex flex-column justify-content-center' style={{borderRadius: "0px 12px 12px 0px",marginLeft: '-11px'}}>
                                     <div className='pb-3'>
-                                        <span className='fs-4'>Gegen Diebstahl
+                                        <span className='finanuSubTitle whiteTextOverwrite'>Gegen Diebstahl
                                             versichern</span>
                                     </div>
                                     <div>

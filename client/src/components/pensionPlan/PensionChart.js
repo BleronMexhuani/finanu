@@ -255,7 +255,7 @@ function PensionChart() {
                             <div className="col-12 col-md-5 col-lg-4">
                                 <div className=' text-start'>
                                     <div className='pb-5'>
-                                        <span className='fs-5 pensionChartTitle'>Berechne jetzt deine 3. Säule</span>
+                                        <span className='finanuSubTitle'>Berechne jetzt deine 3. Säule</span>
                                     </div>
                                     <div className="row g-4">
                                         <div className="col-12">

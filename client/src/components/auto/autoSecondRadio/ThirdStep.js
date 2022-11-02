@@ -4,7 +4,7 @@ function ThirdStep(props) {
     return (
         <div>
             <div className="pb-3">
-                <span className='firstBlueTitle fs-4'>
+                <span className='finanuSubTitle'>
                     Personalien
                 </span>
             </div>

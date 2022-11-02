@@ -14,6 +14,8 @@ import ToggleDarkMode from './components/ToggleDarkMode';
 import ScrollTop from "./ScrollTop.js"
 import Auto from './components/Auto';
 import Login from './components/login/Login';
+import Versicherungen from './components/Versicherungen';
+import Sympany from './components/versicherungen/Sympany';
 
 function App() {
   useEffect(() => {
@@ -46,7 +48,10 @@ function App() {
             <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
             <Routes>
               <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
-              <Route exact path="/versicherungen/Krankenkasse" element={<Krankenkasse darkMode={darkMode} />} />
+              <Route exact path="/versicherungen" element={<Versicherungen />} />
+              <Route exact path="/versicherungen/sympany" element={<Sympany />} />
+
+              <Route exact path="/versicherungen/krankenkasse" element={<Krankenkasse darkMode={darkMode} />} />
               <Route exact path="/versicherungen/rechtsschutz" element={<Rechtsschutz />} />
               <Route exact path="/versicherungen/auto-motorrad" element={<Auto /> } />
               <Route exact path="/finanzen/pensionsplanung-und-ruhestand" element={<PensionPlan darkMode={darkMode} />} />

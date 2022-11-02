@@ -650,7 +650,7 @@ function KrankenkasseSteps() {
 
                                                 </div>
                                                 <div className='pb-3 text-start'>
-                                                    <span className='fw-bold fs-5'>{element.name}</span>
+                                                    <span className='finanuSubTitle fw-bold'>{element.name}</span>
                                                 </div>
                                                 <div className="text-start pb-5">
                                                     <div className="row gx-3">
@@ -700,7 +700,7 @@ function KrankenkasseSteps() {
                                                     <span className='fw-600 fs-5'>CHF <span className='fw-bold fs-3'>{element.price}</span>/ Mt.</span>
                                                 </div>
                                                 <div>
-                                                    <span className='fw-600'>sparen Sie CHF<span className='fw-bold fs-5' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
+                                                    <span className='fw-600'>sparen Sie CHF<span className='finanuSubTitle fw-bold' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
                                                 </div>
                                                 <div className='pt-4'>
                                                     <button className='nextBtnKranken nextBtnKranken2' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
