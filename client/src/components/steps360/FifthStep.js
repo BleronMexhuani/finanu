@@ -45,7 +45,7 @@ function FifthStep(props) {
             <form className='m-0' onSubmit={handleFifthStep}>
                 <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-4 px-sm-5 pb-5 pt-4 mx-auto">
                     <div className='pb-4'>
-                        <span className='fs-4 fw-800'>Familie</span>
+                        <span className='finanuSubTitle fw-800 text-light'>Familie</span>
                     </div>
                     <div className='text-start'>
                         <div className='pb-5'>

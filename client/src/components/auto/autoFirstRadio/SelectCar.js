@@ -5,7 +5,7 @@ function SelectCar(props) {
         <div>
             <div>
                 <div className="pb-4">
-                    <span className='firstBlueTitle fs-4'>
+                    <span className='finanuSubTitle'>
                         Neueinlösung eines Fahrzeuges
                     </span>
                 </div>

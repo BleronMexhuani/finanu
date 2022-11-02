@@ -1,6 +1,6 @@
 .cloudsBackground {
     background: url('../../assets/images/clouds.svg') no-repeat;
-    height: 350px;
+    /* height: 350px; */
     width: 100%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -9,6 +9,7 @@
     animation-name: moveCloudsRight;
     background-repeat: repeat-x;
     background-size: contain;
+    padding-bottom: 5rem !important;
 }
 
 @keyframes moveCloudsRight {
@@ -37,6 +38,17 @@
 .firstBlueTitle {
     color: #50B8E7;
     font-weight: 700;
+    font-size: 48px;
+}
+
+.finanuSubTitle {
+    font-size: 22px !important;
+    color: #212529 !important;
+    font-weight: 600;
+}
+
+.whiteTextOverwrite {
+    color: #fff !important;
 }
 
 .firstSectionBlueBtn1 {
@@ -63,12 +75,15 @@
     background-color: #84CDEE;
     border-radius: 25px;
 }
+
 .blueBgdiv a {
     text-decoration: none !important;
-} 
+}
+
 .blueBgdiv img {
     width: 130px;
 }
+
 .servicesWhiteText {
     font-size: 17px;
     color: #fff;
@@ -117,22 +132,28 @@
     border-radius: 12px;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
 }
+
 .autoCheckbox {
     width: 420px !important;
 }
+
 .checkboxWidth {
     max-width: 420px !important;
     width: 100%;
 }
+
 .paddingTopDiv {
     padding-top: 13rem;
 }
+
 .autoImage {
     width: 50%;
 }
+
 .textStartToEnd {
     text-align: end;
 }
+
 @media (max-width: 1399.98px) {
     .wrapDiv {
         margin: 0px 6rem;
@@ -142,9 +163,9 @@
         padding: 0px 6rem;
     }
 
-    .cloudsBackground {
+    /* .cloudsBackground {
         height: 300px;
-    }
+    } */
 }
 
 @media (max-width: 1199.98px) {
@@ -155,6 +176,7 @@
     .wrapDiv1 {
         padding: 0px 2.5rem;
     }
+
     .paddingTopDiv {
         padding-top: 10rem;
     }
@@ -169,12 +191,14 @@
         padding: 0px 1.5rem;
     }
 
-    .cloudsBackground {
+    /* .cloudsBackground {
         height: 250px;
-    }
+    } */
+
     .autoImage {
         width: 60%;
     }
+
     .autoCheckbox {
         width: 100% !important;
     }
@@ -184,6 +208,7 @@
     .cloudsBackground {
         background-size: cover;
         height: auto;
+        padding-bottom: 3rem !important;
     }
 
     .wrapDiv {
@@ -197,9 +222,16 @@
     body {
         padding-top: 6rem;
     }
+
+    .bodyCounterPadding {
+        padding-bottom: 6rem;
+
+    }
+
     .paddingTopDiv {
         padding-top: 8rem;
     }
+
     .autoImage {
         width: 60%;
     }
@@ -209,6 +241,7 @@
     .marginGutter {
         margin: 0px;
     }
+
     .fourthSectionBlueDiv {
         margin-left: 0px !important;
         border-radius: 12px !important;
@@ -216,24 +249,37 @@
         z-index: 10;
         padding: 2rem 2rem !important;
     }
+
     .fourthSectionImgDiv {
         z-index: -1 !important;
     }
+
     .fourthSectionImg {
         width: 100%;
     }
+
     .autoCheckbox {
         width: 100% !important;
     }
+
     .autoImage {
         width: 100%;
     }
+
     .checkboxWidth {
         max-width: 100% !important;
         width: 100%;
     }
+
     .textStartToEnd {
         text-align: start;
+    }
+
+    .firstBlueTitle {
+        font-size: 30px;
+    }
+    .finanuSubTitle { 
+        font-size: 20px !important;
     }
 }
 
@@ -250,13 +296,13 @@
 }
 
 .darkTheme .normalTextToWhite {
-    color: #fff;
+    color: #fff !important;
 }
 
 .darkTheme .blueCloudsBg {
     background-color: #333436;
     background-image: url('../../assets/images/blueCloudsBgDark.svg');
-    
+
 }
 
 .darkTheme .fourthSectionBlueDiv {
@@ -272,6 +318,7 @@
     background: url('../../assets/images/bluebackgroundDark.svg') no-repeat;
     background-size: cover;
 }
+
 .darkTheme .cloudsBackground {
     background: url('../../assets/images/cloudsDark.svg') no-repeat;
     animation-delay: 0s;

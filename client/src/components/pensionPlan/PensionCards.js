@@ -15,7 +15,7 @@ function PensionCards(props) {
         <>
             <div className='container-xl px-4 px-xl-0'>
                 <div className='pb-5'>
-                    <span className='fs-3 fw-bold' style={{ color: '#11A3E6' }}>BEZUGSMÖGLICHKEITEN</span>
+                    <span className='finanuSubTitle fw-bold' style={{ color: '#11A3E6' }}>BEZUGSMÖGLICHKEITEN</span>
                 </div>
                 <div className='pb-5 mb-5'>
                     <div className="row g-4">
@@ -90,7 +90,7 @@ function PensionCards(props) {
                     <div className="row g-0 justify-content-center">
                         <div className="col-12 col-md-6 col-lg-5">
                             <div className=''>
-                                <span className='fs-3 fw-bold' style={{ color: '#84CDEE' }}>WIESO VORSORGEN?</span>
+                                <span className='finanuSubTitle fw-bold' style={{ color: '#84CDEE' }}>WIESO VORSORGEN?</span>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-5">

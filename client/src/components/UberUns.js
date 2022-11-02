@@ -9,13 +9,13 @@ function UberUns() {
         <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
             <div className="col-12 col-sm-11 col-md-9 col-lg-8 col-xl-6 mx-auto">
                 <div className='pb-5'>
-                    <span className='fw-800 fs-1 normalTextToWhite'>About us</span>
+                    <span className='fw-800 firstBlueTitle'>About us</span>
                 </div>
                 <div className='pb-5'>
                     <img src={Idea} alt="" />
                 </div>
                 <div className='pb-3'>
-                    <span className='fw-700 fs-5' style={{ color: '#84CDEE' }}>UNSERE AUFGABE</span>
+                    <span className='fw-700 finanuSubTitle'>UNSERE AUFGABE</span>
                 </div>
             </div>
             <div className='pb-5 mb-5'>
@@ -57,7 +57,7 @@ function UberUns() {
             </div>
             <div className='pt-5 mt-5'>
                 <div className='pb-3' style={{wordBreak: 'break-all'}}>
-                    <span style={{ color: '#34ACE3' }} className='fw-700 fs-5'>UNTERNEHMENSPHILOSOPHIE</span>
+                    <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
                 </div>
                 <div className='pb-5 mb-4'>
                     <span className='normalTextToWhite'>Berechnen Sie ihr monatliches und jährliches Budget mit unsererem einfachen Budgetrechner. Tragen Sie hierfür einfach Ihre Einnahmen, Ausgaben und Sparziele ein und erhalten sehen Sie sich Ihren aktuellen Budgetplan an!</span>

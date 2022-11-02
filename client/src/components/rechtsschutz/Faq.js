@@ -18,7 +18,7 @@ function Faq() {
         <div className='container-xl px-4 px-xl-0 mt-4'>
           <div className="hausratBlueDiv px-4 px-md-5 pt-4 pt-md-5 pb-4 mb-0">
             <div className="whiteBgRecht p-3 absoluteDivRecht">
-              <span style={{ color: "#84CDEE" }} className='fw-700 fs-1'>FAQ</span>
+              <span style={{ color: "#84CDEE" }} className='fw-700 firstBlueTitle'>FAQ</span>
             </div>
             <div className="pt-5 text-start whiteBorderParent">
               <div className='whiteBorderBottomRecht pb-2 mb-4' onClick={() => { toggleFaqState(1) }}>
@@ -30,7 +30,7 @@ function Faq() {
                   </div>
                   <div className="col my-auto">
                     <div>
-                      <span style={{ fontSize: '18px' }}>Was ist eine Rechtschutzversicherung?</span>
+                      <span >Was ist eine Rechtschutzversicherung?</span>
                     </div>
                   </div>
                 </div>
@@ -47,7 +47,7 @@ function Faq() {
                   </div>
                   <div className="col my-auto">
                     <div>
-                      <span style={{ fontSize: '18px' }}>Welchen Rechtschutz braucht man?</span>
+                      <span >Welchen Rechtschutz braucht man?</span>
                     </div>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ function Faq() {
                   </div>
                   <div className="col my-auto">
                     <div>
-                      <span style={{ fontSize: '18px' }}>Welche Leistungen erhalten Sie?</span>
+                      <span >Welche Leistungen erhalten Sie?</span>
                     </div>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ function Faq() {
                   </div>
                   <div className="col my-auto">
                     <div>
-                      <span style={{ fontSize: '18px' }}>Ab Wann und wo gilt der Versicherungsschutz?</span>
+                      <span >Ab Wann und wo gilt der Versicherungsschutz?</span>
                     </div>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ function Faq() {
                   </div>
                   <div className="col my-auto">
                     <div>
-                      <span style={{ fontSize: '18px' }}>Benötige ich Rechtschutz, wenn ichbereits eine Haftpflichtversicherung habe?</span>
+                      <span >Benötige ich Rechtschutz, wenn ichbereits eine Haftpflichtversicherung habe?</span>
                     </div>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ function Faq() {
                   </div>
                   <div className="col my-auto">
                     <div>
-                      <span style={{ fontSize: '18px' }}>Was ist eine Rechtschutzversicherung?</span>
+                      <span >Was ist eine Rechtschutzversicherung?</span>
                     </div>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ function Faq() {
                   </div>
                   <div className="col my-auto">
                     <div>
-                      <span style={{ fontSize: '18px' }}>Ist die Rechtsschutzversicherung in der Schweiz obligatorisch?</span>
+                      <span >Ist die Rechtsschutzversicherung in der Schweiz obligatorisch?</span>
                     </div>
                   </div>
                 </div>

@@ -6,7 +6,7 @@ function HomeSecondSection() {
             <div className='wrapDiv py-5 container-xl px-4 px-xl-0 normalTextToWhite'>
                 <div className='text-start pb-5'>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-bold'>Krankenkassen vergleichen und Prämien sparen</span>
+                        <span className='finanuSubTitle fw-bold'>Krankenkassen vergleichen und Prämien sparen</span>
                     </div>
                     <div style={{ fontWeight: 500 }}>
                         <div className='pb-4'>
@@ -26,7 +26,7 @@ function HomeSecondSection() {
                 </div>
                 <div className='text-start pb-5'>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-bold'>Zusatzversicherung</span>
+                        <span className='finanuSubTitle fw-bold'>Zusatzversicherung</span>
                     </div>
                     <div style={{ fontWeight: 500 }}>
                         <div className='pb-4'>
@@ -48,7 +48,7 @@ function HomeSecondSection() {
                 </div>
                 <div className='text-start pb-5'>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-bold'>Tierversicherung</span>
+                        <span className='finanuSubTitle fw-bold'>Tierversicherung</span>
                     </div>
                     <div style={{ fontWeight: 500 }}>
                         <div className='pb-4'>
@@ -69,7 +69,7 @@ function HomeSecondSection() {
                 </div>
                 <div className='text-start pb-5'>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-bold'>Hausratversicherung</span>
+                        <span className='finanuSubTitle fw-bold'>Hausratversicherung</span>
                     </div>
                     <div style={{ fontWeight: 500 }}>
                         <div className='pb-4'>
@@ -90,7 +90,7 @@ function HomeSecondSection() {
                 </div>
                 <div className='text-start pb-5'>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-bold'>Autoversicherung</span>
+                        <span className='finanuSubTitle fw-bold'>Autoversicherung</span>
                     </div>
                     <div style={{ fontWeight: 500 }}>
                         <div className=''>
@@ -108,7 +108,7 @@ function HomeSecondSection() {
                 </div>
                 <div className='text-start pb-5'>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-bold'>Rechtsschutz</span>
+                        <span className='finanuSubTitle fw-bold'>Rechtsschutz</span>
                     </div>
                     <div style={{ fontWeight: 500 }}>
                         <div className='pb-4'>

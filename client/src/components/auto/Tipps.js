@@ -6,7 +6,7 @@ function Tipps() {
         <div className='paddingTopDiv px-4'>
             <div className='krankenFirstStep wrapDiv container-xl p-3 p-sm-5 ' style={{ position: 'relative' }}>
                 <div className="whiteBgKranken">
-                    <span className='fs-1 fw-bold'>Fazit und Tipps</span>
+                    <span className='firstBlueTitle fw-bold'>Fazit und Tipps</span>
                 </div>
                 <div className="pt-5">
                     <div className='pb-4 pb-sm-5'>

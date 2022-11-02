@@ -5,7 +5,7 @@ function SecondStep(props) {
         <div>
             <div>
                 <div className="pb-4">
-                    <span className='firstBlueTitle fs-4'>
+                    <span className='finanuSubTitle'>
                         Wie möchten Sie fortfahren?
                     </span>
                 </div>

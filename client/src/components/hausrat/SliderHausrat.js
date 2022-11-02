@@ -20,7 +20,7 @@ function SliderHausrat() {
                 <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
                     <div className="col-12 col-sm-11 col-md-9 col-lg-8 col-xl-6 mx-auto">
                         <div className=''>
-                            <span className='fs-3 fw-500 normalTextToBlue'>Vergleich der grössten Gesellschaften</span>
+                            <span className='fw-500 finanuSubTitle'>Vergleich der grössten Gesellschaften</span>
                         </div>
                         <div className='pt-5 mt-4'>
                             <Swiper

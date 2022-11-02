@@ -3,10 +3,13 @@
 
 body {
     font-family: 'Raleway';
-    padding-top: 7rem;
+    padding-top: 8rem;
     transition: background-color 0.1s ease-in;
 }
+.bodyCounterPadding {
+    padding-bottom: 8rem;
 
+}
 body * {
     transition: background-color 0.1s ease-in;
 }

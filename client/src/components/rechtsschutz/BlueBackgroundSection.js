@@ -3,9 +3,9 @@ import React from 'react'
 function BlueBackgroundSection() {
     return (
         <div>
-            <div className='blueBgRechtssPriv'>
-                <div className='pt-4 pb-5 mb-4'>
-                    <span style={{ color: '#fff' }} className='fs-1 fw-700'>Die besten Angebote im Vergleich</span>
+            <div className='blueBgRechtssPriv py-5'>
+                <div className='pt-5 pb-5 mb-4'>
+                    <span style={{ color: '#fff' }} className='firstBlueTitle fw-700'>Die besten Angebote im Vergleich</span>
                 </div>
                 <div className='container-xl px-4 px-xl-0'>
                     <div className="row g-5 justify-content-center">
@@ -132,7 +132,7 @@ function BlueBackgroundSection() {
                                         </div>
                                     </div>
                                     <div className='pb-5'>
-                                        <span className='fw-700 fs-5'>Deckung</span>
+                                        <span className='fw-700 finanuSubTitle'>Deckung</span>
                                     </div>
                                     <div className='pb-3'>
                                         <div className="row g-0">
@@ -289,7 +289,7 @@ function BlueBackgroundSection() {
                                         </div>
                                     </div>
                                     <div className='pb-5'>
-                                        <span className='fw-700 fs-5'>Deckung</span>
+                                        <span className='fw-700 finanuSubTitle'>Deckung</span>
                                     </div>
                                     <div className='pb-3'>
                                         <div className="row g-0">
@@ -446,7 +446,7 @@ function BlueBackgroundSection() {
                                         </div>
                                     </div>
                                     <div className='pb-5'>
-                                        <span className='fw-700 fs-5'>Deckung</span>
+                                        <span className='fw-700 finanuSubTitle'>Deckung</span>
                                     </div>
                                     <div className='pb-3'>
                                         <div className="row g-0">
