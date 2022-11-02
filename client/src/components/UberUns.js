@@ -19,7 +19,7 @@ function UberUns() {
                 </div>
             </div>
             <div className='pb-5 mb-5'>
-                <span className='normalTextToWhite'>Berechnen Sie ihr monatliches und jährliches Budget mit unsererem einfachen Budgetrechner. Tragen Sie hierfür einfach Ihre Einnahmen, Ausgaben und Sparziele ein und erhalten sehen Sie sich Ihren aktuellen Budgetplan an!</span>
+                <span className='normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern. Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.</span>
             </div>
             <div className="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 mx-auto">
                 <div className="row g-4">
@@ -44,8 +44,8 @@ function UberUns() {
                                     <path d="M15 40.5C16.1667 41.8333 18.7 44.6 19.5 45" stroke="black" />
                                     <path d="M119.68 42C119.623 45.1618 116.096 49.8075 115.094 50.7735" stroke="black" />
                                     <path d="M11.5 46C16.5 54 23 56.5 26.4344 58.1391" stroke="black" />
+                                    <path d="M51.0455 57.1576C52.8437 59.4819 54.9505 61.52 57.2902 63.0982C48.0683 58.698 41.6868 48.8949 41.8076 37.9929C41.9402 26.029 49.8786 17.3412 60.7366 14.6624C57.5719 15.986 54.6579 17.9696 52.1942 20.4082C47.5026 25.0519 44.4094 31.3792 44.3358 38.0209C44.2625 44.6356 46.8334 51.7131 51.0455 57.1576ZM82.7113 17.6503C89.8449 21.8698 94.4888 29.2879 94.3859 38.5755C94.2651 49.4775 87.668 59.1368 78.3507 63.3316C80.7249 61.8056 82.8764 59.8147 84.7256 57.5309C89.0573 52.181 91.7844 45.1621 91.8577 38.5475C91.9484 30.3633 88.5023 22.4805 82.7113 17.6503Z" fill="#70B5E9" stroke="#70B5E9" />
                                 </svg>
-
                             </div>
                             <div className='pt-4'>
                                 <span className='fw-500 fs-5'>Transparent</span>
@@ -78,7 +78,7 @@ function UberUns() {
                     <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
                 </div>
                 <div className='pb-5 mb-4'>
-                    <span className='normalTextToWhite'>Berechnen Sie ihr monatliches und jährliches Budget mit unsererem einfachen Budgetrechner. Tragen Sie hierfür einfach Ihre Einnahmen, Ausgaben und Sparziele ein und erhalten sehen Sie sich Ihren aktuellen Budgetplan an!</span>
+                    <span className='normalTextToWhite'>Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit. Unsere Bewertungen erfolgen unabhängig von Dritten, unsere Beratung berücksichtigt Chancen und Risiken. Wir engagieren uns für unsere Kunden voll Leidenschaft und beraten kompetent und zuverlässig. </span>
                 </div>
                 <div className='pb-5 mb-4'>
                     <img src={Block} style={{ maxWidth: '370px' }} alt="" />
