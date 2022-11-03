@@ -268,7 +268,7 @@ function PensionChart() {
                                                 <div className="row g-0">
                                                     <div className="col-6">
                                                         <label htmlFor="male">
-                                                            <input type="radio" id='male' name='gender' />
+                                                            <input type="radio" checked id='male' name='gender' />
                                                             <span className='ps-2 fw-500'>Frau</span>
                                                         </label>
                                                     </div>
@@ -339,14 +339,14 @@ function PensionChart() {
                                             <div>
                                                 <div className="row g-0">
                                                     <div className="col-6">
-                                                        <label htmlFor="male">
-                                                            <input type="radio" id='male' name='empolyment' />
+                                                        <label htmlFor="Beschäftigt">
+                                                            <input type="radio" id='Beschäftigt' checked name='empolyment' />
                                                             <span className='ps-2 fw-500'>Beschäftigt</span>
                                                         </label>
                                                     </div>
                                                     <div className="col-6">
-                                                        <label htmlFor="female">
-                                                            <input type="radio" id='female' name='empolyment' />
+                                                        <label htmlFor="Selbstständiger">
+                                                            <input  type="radio" id='Selbstständiger' name='empolyment' />
                                                             <span className='ps-2 fw-500'>Selbstständiger</span>
                                                         </label>
                                                     </div>
