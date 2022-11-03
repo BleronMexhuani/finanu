@@ -11,17 +11,69 @@
     width: 350px;
     max-width: 470px;
 }
+
 .servicesBorderDiv {
+
     border: 3px solid #F6EFE7;
     text-align: center;
     height: 100%;
+    color: #000;
 }
+
+.servicesBorderDivSwica {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(119, 119, 119, 0.25);
+    border-radius: 4px;
+    height: 100%;
+}
+
 .photoBorderDiv {
     border: 9px solid #891250;
 }
+
 .sympanyPurpleSpan {
     color: #8F85BA;
 
+}
+
+.swicaBackground {
+    background: url('../images/versicherungen/swicaBg.png') no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.swicaLogoDiv {
+    position: absolute;
+    top: 7rem;
+    left: calc(50% - 143.5px);
+}
+
+.swicaBtn {
+    background: #179F96;
+    border: none;
+    padding: 15px 0px;
+    border-radius: 4px;
+    width: 174px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.normalTextToWhite {
+    color: #000;
+}
+.benefitsDiv {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    color: #179f96;
+}
+.benefitsRow {
+    border-bottom: 1px solid #eee;
+}
+.benefitsDiv:hover {
+    background-color: #179f96;
+    color: #fff ;
 }
 @media (max-width: 1399.98px) {}
 
@@ -30,7 +82,15 @@
 @media (max-width: 991.98px) {}
 
 @media (max-width: 767.98px) {
-    
+    .swicaBackground {
+        height: calc(100vh - 9rem);
+    }
+
+    .swicaLogoDiv {
+        position: absolute;
+        top: 5rem;
+        left: calc(50% - 143.5px);
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -38,8 +98,15 @@
     .bodyCounterPadding .finanuSubTitle {
         font-size: 20px !important;
     }
+
     .heroDiv img {
         width: 250px;
         max-width: 470px;
+    }
+
+    .swicaLogoDiv {
+        position: absolute;
+        top: 5rem;
+        left: calc(50% - 143.5px);
     }
 }
