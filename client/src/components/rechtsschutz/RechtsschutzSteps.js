@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import BlueBlob from '../../assets/images/blueBlob.svg'
 import Book from '../../assets/images/rechtsschutzImgs/rechtsschutzBook.png'
 import Einzel from '../../assets/images/rechtsschutzImgs/einzel.svg'
 import Familie from '../../assets/images/rechtsschutzImgs/familie.svg'
@@ -71,7 +70,6 @@ function RechtsschutzSteps() {
                                                     <span className='underCheckmarkSpan'>Privat + Unternehmer</span>
                                                 </label>
                                             </div>
-
                                         </div>
                                         <div className='pt-5'>
                                             <div className="row g-0 justify-content-around">

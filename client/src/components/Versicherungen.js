@@ -25,6 +25,15 @@ function Versicherungen() {
           </NavLink>
 
         </div>
+        <div className='pb-4 text-start'>
+
+          <NavLink to='/versicherungen/swica' className='text-decoration-none'>
+            <div className='versicherungenLinks'>
+              <span className='finanuSubTitle whiteTextOverwrite'>Swica</span>
+            </div>
+          </NavLink>
+
+        </div>
       </div>
 
     </div>
