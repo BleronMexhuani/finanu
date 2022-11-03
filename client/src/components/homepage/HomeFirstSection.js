@@ -51,7 +51,7 @@ function HomeFirstSection(props) {
                         <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 pb-5">
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <Link to='/pensionsplanung-und-ruhestand'>
+                                    <Link to='/finanzen/pensionsplanung-und-ruhestand'>
 
                                         <div className='pb-4'>
                                             {props.darkMode
@@ -69,7 +69,7 @@ function HomeFirstSection(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <Link to='/haus-hypothek'>
+                                    <Link to='/finanzen/haus-hypothek'>
 
                                         <div className='pb-4'>
                                             {props.darkMode
@@ -88,7 +88,7 @@ function HomeFirstSection(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <Link to="/">
+                                    <Link to="/versicherungen/auto-motorrad">
 
                                         <div className='pb-4'>
                                             {props.darkMode
@@ -106,7 +106,7 @@ function HomeFirstSection(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <Link to='/Krankenkasse'>
+                                    <Link to='/versicherungen/Krankenkasse'>
 
                                         <div className='pb-4'>
                                             {props.darkMode
@@ -125,7 +125,7 @@ function HomeFirstSection(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5">
-                                    <Link to='/Rechtsschutz'>
+                                    <Link to='/versicherungen/Rechtsschutz'>
 
                                         <div className='pb-4'>
                                             {props.darkMode
@@ -142,12 +142,10 @@ function HomeFirstSection(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
-
                                 <div className="blueBgdiv p-5">
-                                    <Link to='/360'>
+                                    <Link to='/finanzen/360'>
                                         <div className='pb-4'>
                                             {props.darkMode
-
                                                 ? <img src={FinanzenDark} alt="" />
                                                 : <img src={Finanzen} alt="" />
                                             }
@@ -157,7 +155,6 @@ function HomeFirstSection(props) {
                                                 Budget</span>
                                         </div>
                                     </Link>
-
                                 </div>
                             </div>
                         </div>

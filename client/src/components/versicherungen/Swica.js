@@ -1,6 +1,12 @@
 import React from 'react'
 import Logo from '../../assets/images/versicherungen/swicalogo.svg'
 import { NavLink } from 'react-router-dom'
+import Accordion from 'react-bootstrap/Accordion';
+import Photo1 from '../../assets/images/versicherungen/swicaPic1.png'
+import Photo2 from '../../assets/images/versicherungen/swicaPic2.png'
+import Photo3 from '../../assets/images/versicherungen/swicaPic3.png'
+import Photo4 from '../../assets/images/versicherungen/swicaLaptop.png'
+
 function Swica() {
     return (
         <>
@@ -225,29 +231,341 @@ function Swica() {
                 </div>
             </div>
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
-                <div className="benefitsDiv">
-                    <div className='benefitsRow px-0 px-md-3 py-3'>
-                        <div className="row g-3">
-                            <div className="col-auto">
-                                <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div className="col">
-                                <div>
-                                    <span className="fw-600">Persönlicher Kundenservice rund um die Uhr</span>
+                <Accordion defaultActiveKey="0" className='borderTopAcc'>
+                    <Accordion.Item eventKey="0" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>Persönlicher Kundenservice rund um die Uhr</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-auto">
-                                <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75 1.625L11.5 11.375L21.25 1.625" stroke="#4E9D95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <span>
+                                    Die Mitarbeitenden unseres Kundendienstes stehen Ihnen in über 56 Standorten in der Schweiz zur Verfügung. Unser telefonischer Kundenservice 7x24 ist auch nach Büroschluss und am Wochenende für Sie da.
+                                    Gratisnummer <span className='benefitsSpan'>0800 80 90 83</span>
+                                </span>
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>Kostenlose telemedizinische Beratung 7x24</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <span>
+                                    365 Tage im Jahr, rund um die Uhr: Die Ärztinnen und Ärzte sowie das medizinische Fachpersonal vom telemedizinischen Dienst santé24 stehen Ihnen bei allen Fragen zu Prävention, Krankheit, Unfall und Mutterschaft zur Verfügung. Denn Unwohlsein, Schmerzen oder Krankheit halten sich nicht an Öffnungszeiten. Die Beratung ist für SWICA-Versicherte kostenlos. Telefon:
+                                    <span className='benefitsSpan'>+41 44 404 86 86</span>
+                                </span>
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>
+                                            Erstklassige medizinische Versorgung</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <span>
+                                    SWICA sichert dank ihrem Premium-Angebot den schnellen und bevorzugten Zugang zu qualitativ hochstehenden Behandlungen und engagiert sich mit einem breiten Spezialistennetz für den optimalen Genesungsverlauf ihrer Versicherten. Mit santé24 profitieren SWICA-Versicherte ausserdem von kostenlosen telemedizinischen Dienstleistungen.
+                                </span>
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="3" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>
+                                            Gleichstellung von Schul- und Komplementärmedizin
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <div className="pb-4">
+
+                                    <span>
+                                        SWICA steht für die Verbindung von Schul- und Komplementärmedizin ein. Gut ist, was der Gesundheit nützt. Deshalb unterstützt SWICA komplementärmedizinische Therapiemethoden und stellt diese der Schulmedizin gleich.
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <span>
+                                        Zu den komplementärmedizinischen Therapiemethoden gehören beispielsweise Akupunktur, Aroma- oder Feldenkrais-Therapien, Fango, Schröpfen, Rolfing, Bachblüten- oder ayurvedische Therapien, Biodynamik, Spagyrik, Kneipp, Shiatsu, Qi Gong und viele mehr.
+                                    </span>
+                                </div>
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="4" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>
+                                            Beiträge an über 100 Angebote für Gesundheitsförderung und Prävention
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <div>
+                                    <span>
+                                        SWICA unterstützt über 100 Angebote und Kursen für Gesundheitsförderung und Prävention. In den Vorsorgearten Bewegung, Ernährung, Entspannung und Wohlbefinden (z.B. Fitness, Sportverbände, Tanzkurse, Ernährungsberatung, Achtsamkeitstraining, Bäder und Saunen) belohnt SWICA Ihr gesundes und präventives Verhalten mit attraktiven Beiträgen von bis zu 800 Franken pro Jahr.
+                                    </span>
+                                </div>
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="5" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>
+                                            Persönliche Unterstützung bei Krankheit oder Unfall
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <div className='pb-4'>
+                                    <span>
+                                        Als Gesundheitspartner ist es SWICA wichtig, Sie in schwierigen Zeiten schnell, kompetent und vor allem persönlich zu unterstützen. Das Angebot reicht von der Begleitung durch erfahrene Care Manager bis hin zu einer zuverlässigen Kinderbetreuung oder Haushaltshilfe im Fall von Krankheit oder Unfall.
+                                    </span>
+                                </div>
+                                <div className='pb-4'>
+                                    <span>
+                                        Professionelles Care Management: Bei Krankheit und Unfall erhalten Sie persönliche Unterstützung durch erfahrene Care Manager. Diese beraten und unterstützen Sie bei der Wahl der geeigneten Behandlung und entlasten Sie administrativ. Schweizweit sind über 85 SWICA Care Manager für die Kunden im Einsatz.
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>Persönlicher Betreuungsservice Home Nanny und Home Attendant: Während eines Spital- oder Kuraufenthalts ist für die persönliche Betreuung Ihres Kindes und des Haushalts gesorgt. SWICA-Versicherte erhalten durch die professionellen Services Home Nanny und Home Attendant Unterstützung.</span>
+                                </div>
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="6" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>
+                                            Tiefere Kostenbeteiligung
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <div>
+                                    <span>
+                                        SWICA und PROVITA rechnen als einzige Krankenversicherer die Kostenbeteiligung der Grundversicherung an diejenige der SWICA-Zusatzversicherungen an, wodurch die maximale jährliche Kostenbeteiligung im Vergleich zu anderen Krankenversicherern deutlich tiefer liegt.
+                                    </span>
+                                </div>
 
                             </div>
-                        </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="7" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>
+                                            Abschlussaltertarif bleibt lebenslang unverändert
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <div>
+                                    <span>
+                                        Der SWICA-Abschlussaltertarif berücksichtigt die bisherige Versicherungszeit bei der Berechnung der Prämie und belohnt somit die Kundentreue. So schonen Sie auch im Alter Ihr Portemonnaie und profitieren dennoch von einem optimalen Versicherungsschutz.
+                                    </span>
+                                </div>
+
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="8" className='swicaAccItem'>
+                        <Accordion.Header>
+                            <div className="row g-3">
+                                <div className="col-auto">
+                                    <svg className='swicaAccSvg' width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8346 1.25L8.8763 18.2083L1.16797 10.5" stroke="#5E5E5E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div className="col">
+                                    <div>
+                                        <span className='benefitsSpan fw-600'>
+                                            BENEVITA: Digitaler Gesundheitscoach mit Bonusprogramm
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <div className='fw-500'>
+                                <div>
+                                    <span>
+                                        Wir unterstützen Sie dabei, Ihren Alltag gesund zu gestalten und belohnen Sie dafür. Sammeln Sie Punkte mit der BENEVITA-App, informieren Sie sich über Gesundheitsthemen und profitieren Sie von attraktiven Angeboten sowie bis zu 15% Rabatt auf die Zusatzversicherungen COMPLETA TOP und HOSPITA.
+                                    </span>
+                                </div>
+
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            </div>
+            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
+                <div className='col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto'>
+                    <div className="">
+                        <span style={{ lineHeight: '41px' }} className='normalTextToWhite fw-800 firstBlueTitle'>
+                            SWICA – awarded several times for the best customer service
+                        </span>
                     </div>
                 </div>
             </div>
+            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
+                <div className="row g-0 justify-content-center">
+                    <div className="col-auto">
+                        <img className='img-fluid' src={Photo1} alt="" />
+                    </div>
+                    <div className="col-auto">
+                        <img className='img-fluid' src={Photo2} alt="" />
+
+                    </div>
+                    <div className="col-auto">
+                        <img className='img-fluid' src={Photo3} alt="" />
+
+                    </div>
+                </div>
+            </div>
+            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
+                <div className="row g-0">
+                    <div className="col order-2 order-md-1">
+                        <div className='swicaGreenBg p-4 p-md-5'>
+                            <div className='pb-3'>
+                                <span className='fw-800 fs-3'>Swica Kontakt & Adresse</span>
+                            </div>
+                            <div>
+                                <span>
+                                    SWICA Krankenversicherung AG
+
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    Römerstrasse 38
+                                </span>
+                            </div>
+                            <div className='pb-3'>
+                                <span>
+                                    8400 Winterthur
+                                </span>
+                            </div>
+                            <div className='pb-3'>
+                                <span>
+                                    Telefon: 052 244 22 33
+                                </span>
+                            </div>
+                            <div className='pb-3'>
+                                <span>
+                                    BAG-Nr.: 1384
+
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    Bei dieser Seite handelt es sich nicht um die offizielle Webseite der Swica Krankenkasse.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-5 col-lg-auto order-1 order-md-2">
+                        <img src={Photo4} alt="" className='h-100 w-100' />
+                    </div>
+                </div>
+            </div>
+
         </>
     )
 }
