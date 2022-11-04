@@ -7,10 +7,10 @@
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
 }
-.cardcity:hover {
+.boxcard:hover {
     transform: scale(1.1);
 }
-.cardcity {
+.boxcard {
     transition: transform .4s;
         cursor: pointer;
 }
@@ -22,3 +22,28 @@
     border: none !important;
     box-shadow: none !important;
 }
+
+.titlebox{
+    font-size: 15px;
+}
+
+.subtitlebox{
+    font-size: 13px !important;
+    color: #b9b9b9 !important;
+}
+
+@media (min-width: 769px) { 
+   .img{
+    height: 600px;
+   }
+    
+  }
+
+@media (max-width: 769px) { 
+   .boxcard{
+    width: 85% !important;
+   }
+   .img{
+    height: auto;
+   }
+ }

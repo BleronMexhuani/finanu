@@ -20,7 +20,8 @@ import Swica from './components/versicherungen/Swica';
 import GroupeMutuel from './components/versicherungen/GroupeMutuel';
 import Allianz from './components/versicherungen/Allianz';
 import Wettbewerbe from './components/Wettbewerbe';
-
+import WLinks from './components/wettbewerbe/WLinks';
+import WettPhoto1 from './assets/images/berncity.jpg'
 
 function App() {
   useEffect(() => {
@@ -52,8 +53,16 @@ function App() {
             <Header darkMode={darkMode} />
             <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
             <Routes>
-            <Route exact path="/wettbewerbe" element={<Wettbewerbe/>} />
+              {/* Home */}
               <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
+
+              {/* Wettbewerbe */}
+            <Route exact path="/wettbewerbe" element={<Wettbewerbe/>} />
+            <Route exact path="/wettbewerbe/1" element={<WLinks Photo={WettPhoto1} data="31.07.2022" />} />
+            {/* <Route exact path="/wettbewerbe/2" element={<WLinks Photo={} />} /> */}
+            {/* <Route exact path="/wettbewerbe/3" element={<WLinks Photo={} />} /> */}
+
+              {/* versicherungen */}
               <Route exact path="/versicherungen" element={<Versicherungen />} />
               <Route exact path="/versicherungen/sympany" element={<Sympany />} />
               <Route exact path="/versicherungen/swica" element={<Swica />} />
@@ -62,9 +71,13 @@ function App() {
               <Route exact path="/versicherungen/krankenkasse" element={<Krankenkasse darkMode={darkMode} />} />
               <Route exact path="/versicherungen/rechtsschutz" element={<Rechtsschutz />} />
               <Route exact path="/versicherungen/auto-motorrad" element={<Auto /> } />
+
+                {/* Finanzen */}
               <Route exact path="/finanzen/pensionsplanung-und-ruhestand" element={<PensionPlan darkMode={darkMode} />} />
               <Route exact path="/finanzen/haus-hypothek" element={<Hausrat />} />
               <Route exact path="/finanzen/360" element={<Analys360 />} />
+
+
               <Route exact path="/uber-uns" element={<UberUns />} />
               <Route exact path="/login" element={<Login /> } />
             </Routes>
