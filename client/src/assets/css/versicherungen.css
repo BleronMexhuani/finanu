@@ -12,6 +12,22 @@
     max-width: 470px;
 }
 
+/* <This is the begining of Groupe Mutuel CSS */
+.backgroundimageofgroupemuetel {
+    background: url(../images/versicherungen/groupemutuel.png);
+    height: 311px;  
+    background-repeat: no-repeat;
+    width: 832px;
+}
+.mainrowofgrupemutuel {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.09);
+    border-radius: 19px; 
+
+}
+
+
+/* This is the end />  */
 .servicesBorderDiv {
 
     border: 3px solid #F6EFE7;

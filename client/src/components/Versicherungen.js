@@ -36,9 +36,9 @@ function Versicherungen() {
         </div>
         <div className='pb-4 text-start'>
 
-          <NavLink to='/versicherungen/allianz' className='text-decoration-none'>
+          <NavLink to='/versicherungen/groupe-mutuel' className='text-decoration-none'>
             <div className='versicherungenLinks'>
-              <span className='finanuSubTitle whiteTextOverwrite'>Allianz</span>
+              <span className='finanuSubTitle whiteTextOverwrite'>Groupe Mutuel</span>
             </div>
           </NavLink>
 

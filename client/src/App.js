@@ -17,8 +17,10 @@ import Login from './components/login/Login';
 import Versicherungen from './components/Versicherungen';
 import Sympany from './components/versicherungen/Sympany';
 import Swica from './components/versicherungen/Swica';
+import GroupeMutuel from './components/versicherungen/GroupeMutuel';
 import Allianz from './components/versicherungen/Allianz';
 import Wettbewerbe from './components/Wettbewerbe';
+
 
 function App() {
   useEffect(() => {
@@ -55,6 +57,7 @@ function App() {
               <Route exact path="/versicherungen" element={<Versicherungen />} />
               <Route exact path="/versicherungen/sympany" element={<Sympany />} />
               <Route exact path="/versicherungen/swica" element={<Swica />} />
+              <Route exact path="/versicherungen/groupe-mutuel" element={<GroupeMutuel />} />
               <Route exact path="/versicherungen/allianz" element={<Allianz />} />
               <Route exact path="/versicherungen/krankenkasse" element={<Krankenkasse darkMode={darkMode} />} />
               <Route exact path="/versicherungen/rechtsschutz" element={<Rechtsschutz />} />
