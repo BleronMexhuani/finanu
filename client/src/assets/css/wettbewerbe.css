@@ -1,0 +1,24 @@
+.card{
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px !important;
+    border-radius: 1.25rem !important;
+}
+
+.img{
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+.cardcity:hover {
+    transform: scale(1.1);
+}
+.cardcity {
+    transition: transform .4s;
+        cursor: pointer;
+}
+.darkTheme .card-body {
+    background-color: #333436 !important;
+    border-radius: 0 0 15px 15px;
+}
+.darkTheme .card {
+    border: none !important;
+    box-shadow: none !important;
+}
