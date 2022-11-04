@@ -140,7 +140,7 @@ function Header(props) {
                                         </span>
                                         <NavLink style={({ isActive }) => ({
                                             color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                        })} to='/w' id="linksss" className='text-decoration-none navLinks'>
+                                        })} to='/wettbewerbe' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
                                         </NavLink>
                                         <NavLink style={({ isActive }) => ({
@@ -223,7 +223,7 @@ function Header(props) {
                                     <div className="col-12">
                                         <NavLink style={({ isActive }) => ({
                                             color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                        })} to='/w' id="linksss" className='text-decoration-none navLinks'>
+                                        })} to='/wettbewerbe' id="linksss" className='text-decoration-none navLinks'>
                                             Wettbewerbe
                                         </NavLink>
                                     </div>

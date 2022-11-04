@@ -76,21 +76,54 @@
     line-height: 19px;
     color: #FFFFFF;
 }
+
 .normalTextToWhite {
     color: #000;
 }
-.benefitsDiv {
-    background-color: #fff;
+
+.borderTopAcc {
+
+    border: none;
     border-top: 1px solid #eee;
+
+}
+
+.benefitsSpan {
     color: #179f96;
 }
-.benefitsRow {
-    border-bottom: 1px solid #eee;
+
+.swicaAccItem {
+    border: none !important;
+    border-bottom: 1px solid #eee !important;
 }
+
+.swicaAccItem .accordion-button:not(.collapsed) {
+    background-color: #179f96;
+    color: #fff;
+}
+
+.swicaAccItem .accordion-button:not(.collapsed) .benefitsSpan {
+    color: #fff;
+
+}
+
+.swicaAccItem .accordion-button:not(.collapsed) .swicaAccSvg path {
+    stroke: #fff;
+
+}
+
 .benefitsDiv:hover {
     background-color: #179f96;
-    color: #fff ;
+    color: #fff;
 }
+
+.swicaGreenBg {
+    background: #179F96;
+    border-radius: 4px 0px 0px 4px;
+    color: #fff;
+    height: 100%;
+}
+
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
