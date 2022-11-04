@@ -12,7 +12,7 @@
 .formcontact{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px !important;
     padding: 25px;
-    z-index: 999 !important;
+    z-index: 100 !important;
     background-color: #fff;
     border-radius: 20px;
     margin: -25px 0px -40px 0px;

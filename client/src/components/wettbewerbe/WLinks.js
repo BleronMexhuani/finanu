@@ -25,7 +25,7 @@ function WLinks(props) {
       <div className="mt-5 formbg">
         <div className="wrapDiv  container-xl px-4 px-xl-0">
           <div className="row gx-0">
-            <div className="col-12 col-lg-6 " style={{zIndex: '2000'}}>
+            <div className="col-12 col-lg-6 " style={{zIndex: '999'}}>
               <div className="mx-auto formcontact">
                 <div className="mt-3">
                   <h2 className="titleform ms-3">
