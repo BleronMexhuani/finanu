@@ -367,9 +367,9 @@ a {
 
 @media (max-width: 991.98px) {
     .blueBgKranken {
-        height: 1000px;
+        height: auto;
         margin-top: -140px;
-
+        padding-bottom: 3rem;
     }
 
     .blueBgKranken1 {

@@ -1,6 +1,7 @@
 import React from 'react'
 import KrankenPramien1 from "../../assets/images/krankenPramien1.svg"
 import KrankenPramien2 from "../../assets/images/krankenPramien2.svg"
+import KrankenPramien3 from "../../assets/images/krankenPramien3.svg"
 
 function KrankenBlueBg() {
     return (
@@ -36,14 +37,14 @@ function KrankenBlueBg() {
                             </div>
                             <div className='pt-5'>
                                 <div className="row g-5 justify-content-center">
-                                    <div className="col-12 col-sm-6 col-md-4">
+                                    <div className="col-12 col-sm-6 col-md-auto">
                                         <img src={KrankenPramien1} alt="" />
                                     </div>
-                                    <div className="col-12 col-sm-6 col-md-4">
+                                    <div className="col-12 col-sm-6 col-md-auto">
                                         <img src={KrankenPramien2} alt="" />
                                     </div>
-                                    <div className="col-12 col-sm-6 col-md-4">
-                                        <img src={KrankenPramien1} alt="" />
+                                    <div className="col-12 col-sm-6 col-md-auto">
+                                        <img src={KrankenPramien3} alt="" />
                                     </div>
                                 </div>
                             </div>

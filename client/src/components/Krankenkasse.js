@@ -21,9 +21,11 @@ function Krankenkasse(props) {
         <GutZuWissen />
       </div>
       <div>
+      </div>
+      <div className='bodyCounterPadding'>
         <KrankenCards />
       </div>
-      <div>
+      <div className='bodyCounterPadding'>
         <Option2Kranken darkMode={props.darkMode} />
       </div>
     </>

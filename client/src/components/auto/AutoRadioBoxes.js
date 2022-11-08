@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import FirstRadioChecked from './FirstRadioChecked'
 import SecondRadioChecked from './SecondRadioChecked'
+import MainImg from '../../assets/images/auto/mainImg.svg'
 function AutoRadioBoxes() {
     const [autoCheck, setAutoCheck] = useState(0)
 
@@ -31,7 +32,7 @@ function AutoRadioBoxes() {
                 </div>
                 {
                     {
-                        0: <img className='img-fluid autoImage' src="https://www.finanu.ch/wp-content/uploads/2021/10/automotorrad-illustration-car-marks.png" alt="" />,
+                        0: <img className='img-fluid autoImage' src={MainImg} alt="" />,
                         1: <FirstRadioChecked />,
                         2: <SecondRadioChecked />
                     }[autoCheck]
