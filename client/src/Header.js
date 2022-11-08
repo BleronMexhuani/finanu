@@ -119,7 +119,7 @@ function Header(props) {
                                                                 Pensionsplanung und Ruhestand
                                                             </NavLink>
                                                         </div>
-                                                        <div className='pb-3'>
+                                                        <div>
                                                             <NavLink style={({ isActive }) => ({
                                                                 color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/finanzen/haus-hypothek' id="linksss" className='text-decoration-none navLinks px-3'>
@@ -127,11 +127,11 @@ function Header(props) {
                                                             </NavLink>
                                                         </div>
                                                         <div>
-                                                            <NavLink style={({ isActive }) => ({
+                                                            {/* <NavLink style={({ isActive }) => ({
                                                                 color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/finanzen/360' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Finanzen & Budget
-                                                            </NavLink>
+                                                            </NavLink> */}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -207,15 +207,15 @@ function Header(props) {
                                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/finanzen/pensionsplanung-und-ruhestand' className='text-decoration-none navLinks fs-5'>Pensionsplanung und Ruhestand </NavLink>
                                             </div>
-                                            <div className='pb-2'>
+                                            <div>
                                                 <NavLink style={({ isActive }) => ({
                                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/finanzen/haus-hypothek' className='text-decoration-none navLinks fs-5'>Haus & Hypothek </NavLink>
                                             </div>
                                             <div>
-                                                <NavLink style={({ isActive }) => ({
+                                                {/* <NavLink style={({ isActive }) => ({
                                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                                })} to='/finanzen/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </NavLink>
+                                                })} to='/finanzen/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </NavLink> */}
                                             </div>
                                         </div>
                                         {/* )} */}

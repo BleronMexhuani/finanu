@@ -22,7 +22,7 @@ a {
 }
 
 .krankenFirstStep {
-    background-color: #84CDEE;
+    background-color: #50B8E7;
     border-radius: 12px;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
 }
@@ -115,7 +115,7 @@ a {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
-    color: #84CDEE;
+    color: #50B8E7;
     width: 400px;
     height: 100px;
     display: flex;
@@ -130,7 +130,7 @@ a {
 
 .bigTitleKranken {
     font-weight: bold;
-    color: #84CDEE;
+    color: #50B8E7;
 }
 
 .whiteCardKranken {
@@ -265,11 +265,11 @@ a {
 }
 
 .blueBgDiv {
-    background: #84CDEE;
+    background: #50B8E7;
     border-radius: 18px;
     color: #fff;
     font-size: 15px;
-    border: 1px solid #84CDEE;
+    border: 1px solid #50B8E7;
     transform: scale(1.03);
     transition: transform 0.2s ease-in-out;
 }
@@ -279,7 +279,7 @@ a {
 }
 
 .blueBgDiv svg {
-    fill: #84CDEE;
+    fill: #50B8E7;
 }
 
 .blueBgDiv .row svg path {
@@ -312,7 +312,7 @@ a {
 }
 
 .blueBorderBottom {
-    border-bottom: 2px solid #84CDEE;
+    border-bottom: 2px solid #50B8E7;
 }
 
 .blueBorderBottom .cardTitle {
@@ -575,7 +575,7 @@ a {
 }
 .darkTheme .greyBorderDiv {
     color: #fff;
-    border: 1px solid #84cdee;
+    border: 1px solid #50B8E7;
 }
 
 .darkTheme .blueBgKranken {

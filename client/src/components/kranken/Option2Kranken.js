@@ -15,7 +15,7 @@ function Option2Kranken(props) {
             <div className='wrapDiv container-xl px-4 pt-5'>
                 <div className='pb-5 mb-3'>
                     <div className='pb-3'>
-                        <span className='fs-2 fw-bold' style={{ color: "#84cdee" }}>OPTION 2 : PERSONAL ADVICE</span>
+                        <span className='fs-2 fw-bold' style={{ color: "#50B8E7" }}>OPTION 2 : PERSONAL ADVICE</span>
                     </div>
                     <div className='pb-3'>
                         <span className='fs-2 fw-600 normalTextToWhite'>PERSONAL ADVICE WITH AN ADVISER</span>

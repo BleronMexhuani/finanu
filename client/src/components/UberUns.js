@@ -7,21 +7,27 @@ import SliderHausrat from './hausrat/SliderHausrat'
 function UberUns() {
     return (
         <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
-            <div className="col-12 col-sm-11 col-md-9 col-lg-8 col-xl-6 mx-auto">
-                <div className='pb-5'>
-                    <span className='fw-800 firstBlueTitle'>About us</span>
+            <div className="row gx-4 gy-0 mb-5 pb-5">
+                <div className="col-12 col-md-6 text-start">
+                    <div className='pb-4'>
+                        <span className='fw-800 firstBlueTitle'>About us</span>
+                    </div>
+                    <div className='pb-3'>
+                        <span className='fw-700 finanuSubTitle'>UNSERE AUFGABE</span>
+                    </div>
+                    <div className=''>
+                        <span className='normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern. Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.</span>
+                    </div>
                 </div>
-                <div className='pb-5'>
-                    <img src={Idea} alt="" />
-                </div>
-                <div className='pb-3'>
-                    <span className='fw-700 finanuSubTitle'>UNSERE AUFGABE</span>
+                <div className="col-12 col-md-6">
+                    <div className=''>
+                        <img src={Idea} alt="" />
+                    </div>
                 </div>
             </div>
-            <div className='pb-5 mb-5'>
-                <span className='normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern. Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.</span>
-            </div>
-            <div className="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 mx-auto">
+
+
+            <div className="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 mx-auto bodyCounterPadding">
                 <div className="row g-4">
                     <div className="col-12 col-sm-6 col-md-4">
                         <div className="whiteBgUber px-5 py-5 h-100">
@@ -73,15 +79,19 @@ function UberUns() {
                     </div>
                 </div>
             </div>
-            <div className='pt-5 mt-5'>
-                <div className='pb-3' style={{ wordBreak: 'break-all' }}>
-                    <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
+            <div className='row gx-4 gy-0'>
+                <div className="col-12 col-md-6">
+                    <div className=''>
+                        <img src={Block} style={{ maxWidth: '370px' }} alt="" />
+                    </div>
                 </div>
-                <div className='pb-5 mb-4'>
-                    <span className='normalTextToWhite'>Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit. Unsere Bewertungen erfolgen unabhängig von Dritten, unsere Beratung berücksichtigt Chancen und Risiken. Wir engagieren uns für unsere Kunden voll Leidenschaft und beraten kompetent und zuverlässig. </span>
-                </div>
-                <div className='pb-5 mb-4'>
-                    <img src={Block} style={{ maxWidth: '370px' }} alt="" />
+                <div className="col-12 col-md-6 text-start">
+                    <div className='pb-3' style={{ wordBreak: 'break-all' }}>
+                        <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
+                    </div>
+                    <div className=''>
+                        <span className='normalTextToWhite'>Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit. Unsere Bewertungen erfolgen unabhängig von Dritten, unsere Beratung berücksichtigt Chancen und Risiken. Wir engagieren uns für unsere Kunden voll Leidenschaft und beraten kompetent und zuverlässig. </span>
+                    </div>
                 </div>
             </div>
             <div className='px-0 px-md-4 px-lg-5'>
