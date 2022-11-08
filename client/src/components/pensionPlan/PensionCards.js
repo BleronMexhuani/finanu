@@ -90,7 +90,7 @@ function PensionCards(props) {
                     <div className="row g-0 justify-content-center">
                         <div className="col-12 col-md-6 col-lg-5 my-auto">
                             <div className='pb-3 pb-md-0'>
-                                <span className='finanuSubTitle fw-bold' style={{ color: '#50B8E7' }}>WIESO<br></br> VORSORGEN?</span>
+                                <span className='firstBlueTitle fw-bold' style={{ color: '#50B8E7' }}>WIESO<br></br> VORSORGEN?</span>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-5">

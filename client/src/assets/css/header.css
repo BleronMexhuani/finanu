@@ -6,18 +6,19 @@ body {
     padding-top: 8rem;
     transition: background-color 0.1s ease-in;
 }
-button {
-    font-size: 20px !important;
-}
+
+
+
 .bodyCounterPadding {
     padding-bottom: 8rem;
 
 }
+
 body * {
     transition: background-color 0.1s ease-in;
 }
 
-span {
+span, ul, li, div, tr, td, th {
     font-family: 'Raleway';
 }
 
@@ -328,9 +329,8 @@ a {
 }
 
 @media (max-width: 1099.98px) {
-    button {
-        font-size: 18px !important;
-    }
+    
+
     .nav-container {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -463,6 +463,7 @@ a {
         padding: 20px 90px 20px 20px;
         text-decoration: none !important;
     }
+
     .darkModeToggleDiv {
         top: 23px;
         right: 80px;
@@ -556,9 +557,8 @@ a {
 }
 
 @media (max-width: 575.98px) {
-    button {
-        font-size: 16px !important;
-    }
+   
+
     .buttonofmenutabs {
         position: absolute;
         display: flex;

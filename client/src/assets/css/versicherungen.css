@@ -150,7 +150,9 @@
     top: 7rem;
     left: calc(50% - 143.5px);
 }
-
+.swicaLogoDiv img {
+    width: 290px;
+}
 .swicaBtn {
     background: #179F96;
     border: none;
@@ -248,7 +250,10 @@
 
     .swicaLogoDiv {
         position: absolute;
-        top: 5rem;
-        left: calc(50% - 143.5px);
+        top: 6.5rem;
+        left: calc(50% - 100px);
+    }
+    .swicaLogoDiv img {
+        width: 200px;
     }
 }

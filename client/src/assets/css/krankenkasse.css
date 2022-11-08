@@ -344,6 +344,9 @@ a {
 .p-4.whiteCardKranken.h-100.text-center img {
     width: 100px;
 }
+.gutZuWissenDiv {
+    max-width: 1100px !important;
+}
 @media (min-width: 1700px) {
     .blueBgKranken {
         margin-top: -70px;
