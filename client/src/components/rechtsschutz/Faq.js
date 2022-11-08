@@ -14,8 +14,8 @@ function Faq() {
   }
   return (
     <div>
-      <div className="py-5 mt-5">
-        <div className='container-xl px-4 px-xl-0 mt-4'>
+      <div className="pt-5 mt-5 bodyCounterPadding">
+        <div className='container-xl px-4 px-xl-5 mt-4'>
           <div className="hausratBlueDiv px-4 px-md-5 pt-4 pt-md-5 pb-4 mb-0">
             <div className="whiteBgRecht p-3 absoluteDivRecht">
               <span style={{ color: "#50B8E7" }} className='fw-700 firstBlueTitle'>FAQ</span>
