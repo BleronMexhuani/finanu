@@ -3,19 +3,8 @@ import WhiteBgArrow from '../../assets/images/whiteBgArrow.svg'
 
 function Tipps() {
     return (
-        <div className='paddingTopDiv px-4'>
-            <div className='pb-5 mb-5'>
-                <div className='pb-3'>
-                    <span className='finanuSubTitle fw-700'>More Information</span>
-                </div>
-                <div className='pb-5'>
-
-                    <span>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br></br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,<br></br> but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br></br> and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </span>
-                </div>
-
-            </div>
+        <div className='paddingTopDiv px-4 mt-5 bodyCounterPadding'>
+            
             <div className='krankenFirstStep wrapDiv container-xl p-3 p-sm-5 ' style={{ position: 'relative' }}>
                 <div className="whiteBgKranken">
                     <span className='firstBlueTitle fw-bold'>Fazit und Tipps</span>

@@ -3,7 +3,7 @@ import WhiteBgArrow from '../../assets/images/whiteBgArrow.svg'
 function GutZuWissen() {
     return (
         <div className='pt-5 pt-md-0 px-4'>
-            <div className='krankenFirstStep wrapDiv container-xl p-3 p-sm-5 negavtiveMt' style={{ position: 'relative' }}>
+            <div className='krankenFirstStep wrapDiv container-xl p-3 p-sm-5 negavtiveMt gutZuWissenDiv' style={{ position: 'relative' }}>
                 <div className="whiteBgKranken">
                     <span className='fs-1 fw-bold'>Gut zu wissen</span>
                 </div>

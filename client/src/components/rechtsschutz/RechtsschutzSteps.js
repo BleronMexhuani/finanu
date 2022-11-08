@@ -9,7 +9,7 @@ import Step2Second from '../../assets/images/rechtsschutzImgs/step2Second.svg'
 import Step2Third from '../../assets/images/rechtsschutzImgs/step2Third.svg'
 import Step3First from '../../assets/images/rechtsschutzImgs/step3First.png'
 import axios from 'axios'
-
+import Arrow from '../../assets/images/rechtsschutzImgs/arrow.png'
 
 import '../../assets/css/rechtsschutz.css'
 function RechtsschutzSteps() {
@@ -38,10 +38,10 @@ function RechtsschutzSteps() {
     return (
         <div>
             <div className="blueBgRechtss">
-                <div className="row g-0 wrapDiv container-xl px-4 px-xl-0 mx-auto">
-                    <div className="col-12 col-md-5 my-auto">
-                        <div className='pb-4'>
-                            <span className='fw-700 fs-4 normalTextToBlue'>Jetzt passende<br></br>
+                <div className="row justify-content-around g-0 wrapDiv container-xl px-4 px-xl-0 mx-auto">
+                    <div className="col-12 col-md-auto my-auto">
+                        <div className='pb-4 text-start'>
+                            <span className='fw-700 fs-3 normalTextToBlue'>Jetzt passende<br></br>
                                 Rechtsschutzversicherung finden!</span>
                         </div>
                         <div className="pe-0 pe-md-4">
@@ -62,6 +62,9 @@ function RechtsschutzSteps() {
 
                             </div>
 
+                        </div>
+                        <div className='pt-4 text-end'>
+                            <img style={{maxWidth: 150}} src={Arrow} alt="" />
                         </div>
                     </div>
                     <div className="col-12 col-md-7">

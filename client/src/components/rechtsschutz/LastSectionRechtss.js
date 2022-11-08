@@ -3,21 +3,33 @@ import LastImg from "../../assets/images/rechtsschutzImgs/lastIlu.svg"
 function LastSectionRechtss() {
     return (
         <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto pb-0 pb-md-5">
-            <div className="col-12 col-lg-9 col-xl-7 mx-auto ">
-                <div>
-                    <span className='fw-700 fs-5 finanuSubTitle'>Verkehrsrechtsschutz im<br></br>
-                        Überblick</span>
-                </div>
-                <div className='pt-4 normalTextToWhite'>
-                    <span>Die Verkehrsrechtsschutzversicherung unterstützt Sie bei Rechtsfällen und Streitigkeiten im Strassenverkehr. Weiter bietet der Verkehrsrechtsschutz<br></br>
-                        rechtliche Hilfe durch Juristen und Anwälte bei Rechtsstreitigkeiten, die<br></br>
-                        mit dem Kauf, Leasing oder Reparatur eines Fahrzeugs zusammenhängen.</span>
+            <div className="col-12 col-lg-11 mx-auto text-start">
+                <div className="row g-4 justify-content-between">
+                    <div className="col-5">
+                        <div>
+                            <span className='fw-700 fs-1 finanuSubTitle lh-1'>Verkehrsrechtsschutz im<br></br>
+                                Überblick</span>
+                        </div>
+                    </div>
+
+                    <div className="col-6">
+                        <div className='normalTextToWhite'>
+                            <span>Die Verkehrsrechtsschutzversicherung unterstützt Sie bei Rechtsfällen und Streitigkeiten im Strassenverkehr. Weiter bietet der Verkehrsrechtsschutz<br></br>
+                                rechtliche Hilfe durch Juristen und Anwälte bei Rechtsstreitigkeiten, die<br></br>
+                                mit dem Kauf, Leasing oder Reparatur eines Fahrzeugs zusammenhängen.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="col-12 col-lg-10 mx-auto ">
+            <div className="col-12 col-lg-11 mx-auto ">
                 <div className='pt-5 mt-0 mt-md-5'>
-                    <div className="row g-5 justify-content-center">
-                        <div className="col-12 col-sm text-start">
+                    <div className="row g-4 justify-content-between">
+                        <div className="col-6 my-auto ">
+                            <div className="pt-5 pt-md-0">
+                                <img src={LastImg} alt="" />
+                            </div>
+                        </div>
+                        <div className="col-12 col-sm-6 text-start">
                             <div className='pb-3'>
                                 <span className='fw-700 finanuSubTitle' >
                                     Leistungen und Deckung
@@ -31,7 +43,7 @@ function LastSectionRechtss() {
                                 </span>
                             </div>
                             <div className='pb-3'>
-                                <span className='fw-700 finanuSubTitle'>Folgende Leistungen werden abgedeckt:</span>
+                                <span className=''>Folgende Leistungen werden abgedeckt:</span>
                             </div>
                             <div>
                                 <ul className='normalTextToWhite'>
@@ -46,11 +58,7 @@ function LastSectionRechtss() {
                             </div>
 
                         </div>
-                        <div className="col-auto my-auto">
-                            <div className="pt-5 pt-md-0">
-                                <img src={LastImg} alt="" />
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>

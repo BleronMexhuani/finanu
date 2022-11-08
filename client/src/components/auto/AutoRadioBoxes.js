@@ -8,7 +8,7 @@ function AutoRadioBoxes() {
 
     return (
         <div>
-            <div className="wrapDiv container-xl px-4 py-5 px-xl-5" style={{border: '1px solid #ddd',borderRadius: '16px'}}>
+            <div className="wrapDiv container-xl px-4 py-5 px-xl-5">
                 <div className="pb-5">
                     <span className='firstBlueTitle'>
                         Ihre Autoversicherung

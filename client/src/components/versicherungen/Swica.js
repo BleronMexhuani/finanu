@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/images/versicherungen/swicalogo.svg'
+import Logo from '../../assets/images/versicherungen/swicaLogo.png'
 import { NavLink } from 'react-router-dom'
 import Accordion from 'react-bootstrap/Accordion';
 import Photo1 from '../../assets/images/versicherungen/swicaPic1.png'
@@ -13,7 +13,7 @@ function Swica() {
             <div className='pt-5 bodyCounterPadding'>
                 <div className='swicaBackground py-5'>
                     <div className="swicaLogoDiv">
-                        <img src={Logo} alt="" />
+                        <img src={Logo}  alt="" />
                     </div>
                     <div className='container-xl px-4 px-xl-0 py-5 h-100'>
                         <div className="d-flex h-100 flex-column justify-content-between text-start">
