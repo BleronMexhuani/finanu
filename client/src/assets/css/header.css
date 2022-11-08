@@ -6,6 +6,9 @@ body {
     padding-top: 8rem;
     transition: background-color 0.1s ease-in;
 }
+button {
+    font-size: 20px !important;
+}
 .bodyCounterPadding {
     padding-bottom: 8rem;
 
@@ -325,6 +328,9 @@ a {
 }
 
 @media (max-width: 1099.98px) {
+    button {
+        font-size: 18px !important;
+    }
     .nav-container {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -550,6 +556,9 @@ a {
 }
 
 @media (max-width: 575.98px) {
+    button {
+        font-size: 16px !important;
+    }
     .buttonofmenutabs {
         position: absolute;
         display: flex;

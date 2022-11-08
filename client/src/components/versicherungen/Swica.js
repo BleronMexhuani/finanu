@@ -18,7 +18,12 @@ function Swica() {
                     <div className='container-xl px-4 px-xl-0 py-5 h-100'>
                         <div className="d-flex h-100 flex-column justify-content-between text-start">
                             <div className='col-auto'>
-                                <span className='fw-800 fs-3 text-light'>Gesundheit fördern und begleiten</span>
+                                <div className='pb-3'>
+                                    <span className='fw-800 fs-3 text-light'>Gesundheit fördern und begleiten</span>
+                                </div>
+                                <div>
+                                    <span className='text-light'>Die Swica Krankenkasse zeichnet sich regelmässig durch eine besonders<br></br> hohe Kundenzufriedenheit aus. <br></br>Das liegt unter anderem an den grosszügigen Services, die Versicherte geniessen.</span>
+                                </div>
                             </div>
                             <div className='col-auto'>
                                 <div className='pb-3'>
@@ -106,21 +111,6 @@ function Swica() {
                                 </div>
                                 {/* </a> */}
                             </div>
-                            <div className="col-12 col-sm-6 col-md-3">
-                                {/* <a rel="noreferrer" className='text-decoration-none text-dark' target='_blank' href='https://www.sympany.ch/de/privatkunden/wissenswertes/einmaleins/bezahlen-einsenden.html'> */}
-
-                                <div className='servicesBorderDivSwica p-4 p-lg-5'>
-                                    <div className="pb-4">
-                                        <svg height="48" viewBox="0 0 69 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.3742 31.5313L23.5626 53.8809L30.6763 53.3164C41.0987 38.4113 40.0814 40.16 46.0806 31.5719L64.1362 31.5719C66.7614 31.5719 68.0558 29.2442 68.0268 26.9412C68.0573 24.6382 66.7614 22.3119 64.1362 22.3119L46.0835 22.3119C40.0843 13.7238 41.1001 15.4711 30.6792 0.565961L23.564 0L32.3756 22.3497C32.3756 22.3497 10.1101 22.2887 9.76476 22.3409L4.29235 14.3435H0.00120544L3.52322 24.5656V29.3124L0.00120544 39.5375H4.2909L9.76331 31.5371C10.1116 31.5922 32.3742 31.5313 32.3742 31.5313Z" fill="#8F85BA" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <span className='fw-800 '>Reiseversicherung</span>
-                                    </div>
-                                </div>
-                                {/* </a> */}
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,38 +122,44 @@ function Swica() {
                 </div>
                 <div className='pb-3'>
                     <span className='fw-600 normalTextToWhite'>
-                        In der Grundversicherung bietet SWICA die klassischen Modelle Telemedizin, Hausarzt, HMO, Apothekermodell und freie Arztwahl an.
+                        In der obligatorischen Grundversicherung bietet Swica die klassischen Modelle bezüglich der Arztwahl an. Folgende Tarife stehen zur Auswahl:
+
                     </span>
                 </div>
                 <div className='fw-600 normalTextToWhite'>
                     <div>
                         <span>
-                            {'>'} STANDARD (Freie Arztwahl)
+                            {'>'} 	Standard/Sana: Freie Arztwahl
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} FAVORIT CASA (Hausarztmodell)
+                            {'>'} 	Casa/Medicasa: Ersteinschätzung durch Hausarzt; bis 16,5 % Rabatt
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} FAVORIT SANTE (HMO-Modell)
+                            {'>'} 	Medica: Freie Arztwahl aus Ärzteliste; bis zu 13 % Rabatt
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} FAVORIT MEDICA (Spital-/Ärztelistenmodell)
+                            {'>'} 	Medpharm: Ersteinschätzung durch Swica Partnerapotheke oder Videosprechstunde; bis zu 23,5 % Rabatt
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} FAVORIT TELMED (Telemedizin)
+                            {'>'} 	Multichoice: Ersteinschätzung durch Swica Partnerapotheke, Videosprechstunde oder App; bis zu 20 % Rabatt
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} FAVORIT MEDPHARM (Apothekenmodell)
+                            {'>'} 	Sante/HMO: Ersteinschätzung durch Swica-Partnerpraxis; bis 22,5 % Rabatt
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {'>'} 	Telmed: Ersteinschätzung durch Videosprechstunde; bis 11 % Rabatt
                         </span>
                     </div>
                 </div>
@@ -175,45 +171,61 @@ function Swica() {
                 </div>
                 <div className='pb-3'>
                     <span className='fw-600 normalTextToWhite'>
-                        Als Ergänzung zur obligatorischen Krankenpflegeversicherung verfügt die SWICA Krankenkasse über eine grosse Auswahl an attraktiven Zusatzversicherungen. Zudem können bei SWICA zusätzlich diverse Spezialversicherungen wie Reiseversicherung oder private Unfallversicherungen erworben werden.
+                        Für den individuellen Versicherungsschutz können weitere Zusatzversicherungen abgeschlossen werden. Die folgenden Produkte werden angeboten:
                     </span>
                 </div>
                 <div className='fw-600 normalTextToWhite'>
                     <div>
                         <span>
-                            {'>'} SWICA COMPLETA TOP
+                            {'>'} 	Hospita: Spitalversicherung in verschiedenen Abstufungen
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} SWICA COMPLETA PRAEVENTA
+                            {'>'} 	Completa Top: Ambulante Ergänzungen, beispielsweise Komplementärmedizin
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} SWICA OPTIMA
+                            {'>'} 	Completa Praeventa: Ambulante Präventionsmassnahmen wie Sportkurse oder Impfungen
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} SUPPLEMENTA
+                            {'>'} 	Supplementa: Zusatzversicherung für Brillen und Kontaktlinsen
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} SWICA Zahnversicherung DENTA
+                            {'>'} 	Optima: All-Inclusive-Paket mit Höchstsätzen
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} Unfallversicherung
+                            {'>'} 	Denta: Zahnzusatzversicherung mit verschiedenen Deckungen
                         </span>
                     </div>
-                    <div>
-                        <span>
-                            {'>'} SWICA Reiseversicherung VACANZA
+
+                </div>
+            </div>
+            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
+                <div className="pb-4">
+                    <span className='finanuSubTitle fw-800'>Besondere Leistungen
+                    </span>
+                </div>
+                <div>
+
+                    <div className="pb-3">
+                        <span className='fw-600 normalTextToWhite'>
+                            Swica zeichnet sich durch besonders kundenfreundliche Arbeitszeiten aus. So ist eine Beratung unter der Woche bis 21.30 Uhr möglich, für Versicherte stehen Experten rund um die Uhr zur Verfügung. Neben der erstklassigen medizinischen Versorgung locken Challenges in der App der Versicherungsgesellschaft. Dabei wird ein gesunder Lebensstil mit Auszeichnungen belohnt, die in Prämienrabatte oder Angebote umgewandelt werden können.
                         </span>
                     </div>
+                    <div className="pb-3">
+                        <span className='fw-600 normalTextToWhite'>
+                            Sie interessieren sich für eine Versicherung bei der Swica? Dann lassen Sie uns jetzt Ihr unverbindliches Angebot berechnen!
+                        </span>
+                    </div>
+
                 </div>
             </div>
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
