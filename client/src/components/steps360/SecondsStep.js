@@ -28,7 +28,7 @@ function SecondsStep(props) {
         //Get all the regions
         const getRegions = async () => {
             await axios.get(
-                'http://localhost:5000/krankenkasse/regions'
+                'https://node.kutiza.com/krankenkasse/regions'
             )
                 .then(function (result) {
                     setRegions(result.data);

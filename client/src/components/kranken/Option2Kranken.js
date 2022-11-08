@@ -17,15 +17,13 @@ function Option2Kranken(props) {
                     <div className="col-12 col-lg-7 text-start">
                         <div className='pb-5 mb-3'>
                             <div className='pb-3'>
-                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}>OPTION 2 : PERSONAL ADVICE</span>
+                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}>VARIANTE 2: PERSÖNLICHE BERATUNG</span>
                             </div>
                             <div className='pb-3'>
-                                <span className='firstBlueTitle fw-600 normalTextToWhite'>PERSONAL ADVICE WITH AN ADVISER</span>
+                                <span className='firstBlueTitle fw-600 normalTextToWhite'>PERSÖNLICHE BERATUNG MIT EINEM KUNDENBERATER</span>
                             </div>
                             <div>
-                                <span className='fw-500 normalTextToWhite'>Don't have the time or desire to read up on the topic or do you already know what is important to you?<br></br><br></br>
-                                    Discuss your wishes with one of our customer advisors.<br></br><br></br>
-                                    He will help you to find a solution tailored to your needs and will be at your side from the request for a quote to<br></br> completion. Inquire now with the following options:</span>
+                                <span className='fw-500 normalTextToWhite'>Haben Sie keine Zeit oder Lust sich ins Thema einzulesen oder wissen bereits was Ihnen alles wichtig ist? Besprechen Sie ihre Wünsche doch mit einem unserer Kundenberater. Dieser hilft Ihnen, eine auf ihre Bedürfnisse zugeschnittene Lösung zu finden und steht Ihenne von der Offerten Anfrage bis zum Abschluss zur Seite. Jetzt mit den folgenden Möglichkeiten Anfragen:</span>
                             </div>
                         </div>
                         <div className="row g-4 justify-content-center">
