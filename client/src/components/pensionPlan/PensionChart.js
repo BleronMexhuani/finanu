@@ -25,7 +25,7 @@ function PensionChart() {
             mediumP = 7.5;
             lowP = 4.5;
         }
-        else if (risk == 2) {
+        else if (risk == 2) { 
             highP = 8.5;
             mediumP = 4.8;
             lowP = 1.2;
@@ -76,7 +76,6 @@ function PensionChart() {
     }, [age, amount, monthly, risk, monthlyWage])
 
     const labels = ageArray;
-    var getValueandSetThatToTooltipStart;
     const state = {
         options: {
 
@@ -145,7 +144,6 @@ function PensionChart() {
                 fontFamily: 'Montserrat',
                 fontWeight: 500,
                 formatter: function (seriesName, opts) {
-                    getValueandSetThatToTooltipStart = (opts.w.globals.series[0][opts.w.globals.series[0].length - 1]).toLocaleString('it-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0, });
                     return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + seriesName + ' <br><span class="alterNameeeee"><b> ' + (opts.w.globals.series[opts.seriesIndex][opts.w.globals.series[opts.seriesIndex].length - 1]).toLocaleString('it-CH', {
                         style: 'currency',
                         currency: 'CHF',
@@ -158,12 +156,9 @@ function PensionChart() {
                     for (let i = 0; i < x.length; i++) {
                         x[i].innerHTML = '';
                     }
-                    var seriesIndex = opts.seriesIndex;
-                    var dataPointIndex = opts.dataPointIndex;
-                    //var seriesIndexx = 1;
+                    var seriesIndex = opts.seriesIndex;  
                     document.getElementsByClassName('apexcharts-tooltip').innerHTML = '<div class="arrow_box" id="tooltiparrowbox"><span class="alterNameeeee" style="text-align:center;">Mit der gewählten 3. Säule <br> können Sie mit bis zu <br><b> ' + (opts.w.globals.series[0][opts.w.globals.series[0].length - 1]).toLocaleString('it-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0, }) + '</b> <br> in Rente gehen!</span></div>';
-
-                    return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + opts.w.config.series[seriesIndex].name + ' <br>' + '<b>' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex].toLocaleString('it-CH', {
+                    return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + opts.w.config.series[seriesIndex].name + ' <br> <b>' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex].toLocaleString('it-CH', {
                         style: 'currency',
                         currency: 'CHF',
                         minimumFractionDigits: 0,

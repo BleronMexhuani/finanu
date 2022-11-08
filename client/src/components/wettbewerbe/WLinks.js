@@ -169,7 +169,7 @@ function WLinks(props) {
                       </span>
                     </label>
                   </form>
-                  <button class="firstSectionBlueBtn1 mt-2">
+                  <button className="firstSectionBlueBtn1 mt-2">
                     Jetzt konstenlos teilnehmen
                   </button>
                 </div>

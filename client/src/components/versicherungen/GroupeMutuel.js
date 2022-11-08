@@ -9,7 +9,6 @@ import cardphoto3 from '../../assets/images/versicherungen/cardphoto3.png'
 import cardphoto4 from '../../assets/images/versicherungen/cardphoto4.png'
 
 // Costumer photo
-
 import Photo1 from '../../assets/images/versicherungen/swicaPic1.png'
 import Photo2 from '../../assets/images/versicherungen/swicaPic2.png'
 import Photo3 from '../../assets/images/versicherungen/swicaPic3.png'
@@ -24,10 +23,10 @@ function GroupeMutuel() {
                     <div className='col-12 col-md-auto pe-0 mb-auto mt-5'>
                         <div className='d-flex flex-column align-items-start p-4 p-md-5'>
                             <div className='mt-s'>
-                                <img src={logoofgroupe} />
+                                <img alt='' src={logoofgroupe} />
                             </div>
-                            <div className='mt-4'>
-                                <p>Gesundheit fördern und begleiten</p>
+                            <div className='mt-4 mb-3'>
+                                <p className='mb-0'>Gesundheit fördern und begleiten</p>
                             </div>
                             <div className='mt-2'>
                                 <button className='buttonofgroupemutuel py-2 px-4'>Prämienrechner</button>
@@ -48,10 +47,10 @@ function GroupeMutuel() {
                 <div className=''>
                     <div className='text-center pb-5'>
                         <div className='pb-2'>
-                            <span style={{ color: "#183C4A;" }} className='fs-3 fw-800'>SERVICES</span>
+                            <span style={{ color: "#183C4A;" }} className='fs-3 fw-800 finanuSubTitle'>SERVICES</span>
                         </div>
                         <div>
-                            <span className='subtitleofservicees'>
+                            <span className='subtitleofservicees normalTextToWhite'>
                                 Prämien berechnen, Rechnungen einreichen oder persönliche Daten anpassen.
                             </span>
                         </div>
@@ -110,8 +109,7 @@ function GroupeMutuel() {
                                 </div>
                                 {/* </a> */}
                             </div>
-                            <div className="col-12 col-sm-6 col-md-3">
-                                {/* <a rel="noreferrer" className='text-decoration-none text-dark' target='_blank' href='https://www.sympany.ch/de/privatkunden/wissenswertes/einmaleins/bezahlen-einsenden.html'> */}
+                            {/* <div className="col-12 col-sm-6 col-md-3">
 
                                 <div className=' p-4 p-lg-5'>
                                     <div className="pb-4">
@@ -124,90 +122,90 @@ function GroupeMutuel() {
                                         <span className='fw-800 servicesofgroupe'>Reiseversicherung</span>
                                     </div>
                                 </div>
-                                {/* </a> */}
-                            </div>
+                                
+                            </div> */}
                         </div>
                     </div>
 
                 </div>
             </div>
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding'>
-                <div className='row '>
-                    <div className='col-12 col-md-6 g-2 g-xl-5'>
+                <div className='row g-4 g-lg-5'>
+                    <div className='col-12 col-md-6'>
                         <div className='maindivofcard d-flex flex-column'>
-                            <div><img class="imagesofcard" src={cardphoto1} /></div>
-                            <div className='p-2 p-xl-5'>
+                            <div><img alt='' className="imagesofcard" src={cardphoto1} /></div>
+                            <div className='p-4 p-lg-5'>
                                 <div> <span className='titleofcards text-start'>Groupe Mutuel Grundversicherung</span></div>
                                 <div>
                                     <span>
-                                        <p className='testofcards text-start py-4'>In addition to the traditional model, Groupe Mutuel also offers various alternative insurance models in the basic insurance . The alternative models are cheaper than the classic model with free choice of doctor. With the Groupe Mutuel premium calculator, you can calculate exactly how much you would save if you switched to Groupe Mutuel or if you changed your health insurance model.
+                                        <p className='testofcards text-start pt-4 mb-0'>Für die obligatorische Grundversicherung stehen bei der Groupe Mutuel verschiedene Modelle zur Auswahl. Dabei sinkt die Prämie, je mehr sich der Kunde auf die Experten der Krankenkasse verlässt. Konkret gehören folgende Tarife zum Angebot:
                                         </p>
-                                        <ul className='listofcards text-start'>
-                                            <li style={{ color: "#E5AB3B" }}>Telmed model</li>
-                                            <li style={{ color: "#E5AB3B" }}>General practitioner model</li>
-                                            <li>Standard model</li>
-                                            <li>HMO / group practice</li>
-                                            <li>Pharmacy model</li>
+                                        <ul className='listofcards text-start mb-0'>
+                                            <li>Standard: Der Kunde hat freie Hand bezüglich der Arztwahl. </li>
+                                            <li>Hausarzt: Bei jedem Arztbesuch muss zuvor der Hausarzt konsultiert werden.</li>
+                                            <li>Telemedizin: Vor jedem Arztbesuch muss der Expertenrat der Groupe Mutuel eingeholt werden. </li>
+                                            <li>Flexibel: Vor Arztbesuchen muss entweder der Hausarzt, eine Partnerapotheke oder ein Experte der Telefon-Hotline konsultiert werden. </li>
                                         </ul>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-12 col-md-6 g-2 g-xl-5'>
+                    <div className='col-12 col-md-6'>
                         <div className='maindivofcard d-flex flex-column'>
-                            <div><img class="imagesofcard" src={cardphoto2} /></div>
-                            <div className='p-2 p-xl-5'>
-                                <div> <span className='titleofcards text-start'>Groupe Mutuel Grundversicherung</span></div>
+                            <div><img alt='' className="imagesofcard" src={cardphoto2} /></div>
+                            <div className='p-4 p-lg-5'>
+                                <div> <span className='titleofcards text-start'>Groupe Mutuel Zusatzversicherung</span></div>
                                 <div>
                                     <span>
-                                        <p className='testofcards text-start py-4'>
-                                            Als Ergänzung der Grundversicherung bietet die Groupe Mutuel eine grosse Anzahl von freiwilligen Zusatzversicherungen an. Im Angebot befinden sich; Versicherungen für ambulante Leistungen, Spitalversicherungen, Zahnversicherungen, Reiseversicherungen und sogar neuerdings auch Rechtsschutzversicherungen. Für gewisse Zusatzversicherungen im Gesundheitsbereich muss für die Aufnahme ein Gesundheitsfragebogen ausgefüllt werden. Die Aufnahme ist im Gegensatz zur obligatorischen Krankenpflegeversicherung nicht garantiert.
-
-
+                                        <p className='testofcards text-start pt-4 mb-0'>
+                                        Neben den Grundversicherungen bietet die Groupe Mutuel ein umfangreiches Angebot an Zusatzversicherungen, um individuelle Bedürfnisse bestmöglich abzudecken. Konkret können Ergänzungen in den Bereichen:
 
                                         </p>
-                                        <ul className='listofcards text-start'>
-                                            <li className='' style={{ color: "#E5AB3B" }}>Groupe Mutuel Heilungskosten Zusatzversicherung</li>
-                                            <li className='' style={{ color: "#E5AB3B" }}>Groupe Mutuel Rechtsschutz Legis</li>
-                                            <li className='' style={{ color: "#E5AB3B" }}>Groupe Mutuel Reiseversicherung Mundo</li>
-                                            <li className='' style={{ color: "#E5AB3B" }}>Groupe Mutuel Zahnversicherung Dentaire plus</li>
-                                            <li className='' style={{ color: "#E5AB3B" }}>Groupe Mutuel Zusatzversicherung mit Fitness</li>
+                                        <ul className='listofcards text-start mb-0'>
+                                            <li className=''>ambulante Behandlungen</li>
+                                            <li className=''>Spitalaufenthalte </li>
+                                            <li className=''>Auslandsaufenthalte/Reisen</li>
+                                            <li className=''>Zahnpflegeleistungen</li>
+                                            <li className=''>-	Zusatz bei Unfall</li>
+                                            <li className=''>Komplementärmedizin</li>
+                                            <li className=''>Taggelder/Renten/Kapitalien</li>
+
                                         </ul>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-12 col-md-6 g-2 g-xl-5'>
+                    <div className='col-12 col-md-6'>
                         <div className='maindivofcard d-flex flex-column'>
-                            <div><img class="imagesofcard" src={cardphoto3} /></div>
-                            <div className='p-2 p-xl-5'>
-                                <div> <span className='titleofcards text-start'>Groupe Mutuel in Kürze</span></div>
+                            <div><img alt='' className="imagesofcard" src={cardphoto3} /></div>
+                            <div className='p-4 p-lg-5'>
+                                <div> <span className='titleofcards text-start'>Besondere Leistungen</span></div>
                                 <div>
                                     <span>
-                                        <p className='testofcards text-start py-4'>
-                                            Groupe Mutuel was founded in 1993 and has its headquarters in Martigny. With 1.2 million insured persons in basic insurance and over 200,000 insured persons in supplementary insurance, Groupe Mutuel is one of the largest health insurance companies in Switzerland. In addition, 17,000 companies already rely on Groupe Mutuel for their daily allowance and accident insurance as well as occupational pensions.
+                                        <p className='testofcards text-start pt-4 mb-0'>
+                                        Die Groupe Mutuel bietet all ihren Versicherten mit dem Vorteilsprogramm "LeClub" zahlreiche Vergünstigungen und Rabatte in den Bereichen Gesundheit und Wellness, Sport, Familie und Freizeit, Tourismus sowie Diverses an. Auch exklusive Gewinnspiele gehören zu den Aktionen des Programms. 
                                             <br></br>
                                             <br></br>
-                                            Groupe Mutuel Holding manages various subsidiaries. Compulsory health care insurance is offered by the following companies: Mutuel Krankenversicherung AG, Philos Krankenversicherung AG , Avenir Krankenversicherung AG and Easy Sana Krankenversicherung AG . The supplementary insurance offers are sold by Groupe Mutuel Versicherungen GMA AG and Mutuel Versicherungen AG, as well as Groupe Mutuel Leben GMV AG.
+                                            Ausserdem können vor allem Familien von interessanten Angeboten profitieren. So sinkt ab dem dritten Kind der Betrag der Versicherungsprämie, während der Schwangerschaft kann ein umfangreiches Zusatzpaket abgeschlossen werden und die Verwaltung der Versicherungen aller Familienmitglieder soll durch das digitale Kundenportal so einfach wie möglich gehalten werden. 
                                             <br></br>
                                             <br></br>
-                                            In addition to insurance in the health sector, Groupe Mutuel also successfully offers products such as household goods, personal liability, legal protection and various insurances in the life sector.
+                                            Sie interessieren sich für eine Versicherung bei der Groupe Mutuel? Dann lassen Sie uns jetzt Ihr unverbindliches Angebot berechnen!
                                         </p>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-12 col-md-6 g-2 g-xl-5'>
+                    <div className='col-12 col-md-6'>
                         <div className='maindivofcard d-flex flex-column '>
-                            <div><img class="imagesofcard" src={cardphoto4} /></div>
-                            <div className='p-2 p-xl-5'>
+                            <div><img alt='' className="imagesofcard" src={cardphoto4} /></div>
+                            <div className='p-4 p-lg-5'>
                                 <div><span className='titleofcards text-start'>Groupe Mutuel Kontakt & Adresse</span></div>
                                 <div>
                                     <span>
-                                        <p className='testofcards text-start py-4'>
+                                        <p className='testofcards text-start pt-4 mb-0'>
                                             Groupe Mutuel <br></br>
                                             Rue de Cèdres 5 <br></br>
                                             1919 Martigny <br></br>
@@ -229,7 +227,8 @@ function GroupeMutuel() {
                 <div className='col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto'>
                     <div className="">
                         <span style={{ lineHeight: '41px' }} className='normalTextToWhite fw-800 firstBlueTitle'>
-                            SWICA – awarded several times for the best customer service
+                            Customer satisfaction after making a claim
+
                         </span>
                     </div>
                 </div>
@@ -237,14 +236,14 @@ function GroupeMutuel() {
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
                 <div className="row g-0 justify-content-center">
                     <div className="col-auto">
-                        <img className='img-fluid' src={Photo1} alt="" />
+                        <img alt='' className='img-fluid' src={Photo1} />
                     </div>
                     <div className="col-auto">
-                        <img className='img-fluid' src={Photo2} alt="" />
+                        <img alt='' className='img-fluid' src={Photo2} />
 
                     </div>
                     <div className="col-auto">
-                        <img className='img-fluid' src={Photo3} alt="" />
+                        <img alt='' className='img-fluid' src={Photo3} />
 
                     </div>
                 </div>
