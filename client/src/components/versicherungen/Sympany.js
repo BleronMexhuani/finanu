@@ -11,7 +11,7 @@ function Sympany() {
                         <img src={Logo} alt="" />
                     </div>
                     <div className=''>
-                        <span className='fw-600 normalTextToWhite'>So that there is time for beautiful things.</span>
+                        <span className='fw-600 normalTextToWhite'>Sympany ist eine Versicherungsgesellschaft, die auf über 100 Jahre Geschichte zurückblickt. <br></br>Besonders bekannt ist das Unternehmen, weil es 2016 als erste Krankenkasse <br></br> der Schweiz seine Kunden an Überschussbeträgen beteiligt hat. </span>
                     </div>
                 </div>
             </div>
@@ -109,38 +109,43 @@ function Sympany() {
                 </div>
                 <div className='pb-3'>
                     <span className='fw-600 normalTextToWhite'>
-                        Die Sympany Krankenkasse bietet sechs verschiedene Modelle in der obligatorischen Grundversicherung an. Neben dem Standard-Modell stehen diverse alternative Modelle zur Auswahl. Beim Telmed / Praxismodell flexhelp24 sparen Sie gegenüber dem Standard-Modell „classic“ 13 bis 17%, beim HMO-Modell 10 bis 17% und beim Telmed-Modell 8 bis 14%.
+                        Die obligatorische Grundversicherung wird bei der Sympany Krankenkasse durch verschiedene Modelle abgedeckt. Je nachdem, wie viel Selbstbestimmung die Kunden bei der Ärztewahl wünschen, fallen die Prämien dabei teurer oder günstiger aus. Folgende Tarife werden angeboten:
                     </span>
                 </div>
                 <div className='fw-600 normalTextToWhite'>
                     <div>
                         <span>
-                            {'>'} casamed pharm (Apothekenmodell)
+                            {'>'} Classic: Der Kunde kann seine Ärzte innerhalb der Schweiz frei wählen. Es werden keine Vergünstigungen der Prämie gewährt.
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} callmed 24 (Telmed-Modell)
+                            {'>'} Euroline: Grenzgänger, die sowohl eine Versicherung im Wohnland wie auch in der Schweiz benötigen, können bei diesem Tarif ihre Ärzte frei wählen. Es werden keine Vergünstigungen der Prämie gewährt.
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} casamed hmo (HMO-Modell)
+                            {'>'} Casamed Hausarzt: Der Hausarzt koordiniert alle Arztbesuche und stellt bei Bedarf Überweisungen zu Fachärzten aus. Dafür wird auf die Prämie 6 bis 12 % Rabatt gewährt.
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} casamed hausarzt (Hausarztmodell)
+                            {'>'} Casllmed 24: Bei Bedarf beansprucht der Versicherte eine Videosprechstunde. Die Mitarbeiter koordinieren Überweisungen zum Hausarzt oder Spezialisten. Dafür wird auf die Prämie 8 bis 14 % Rabatt gewährt.
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} classic (Freie Arztwahl)
+                            {'>'} Casamed Pharm: Partnerapotheken oder die Mitarbeiter der Videosprechstunde koordinieren die Arztbesuche. Dafür wird auf die Prämie 9 bis 14 % Rabatt gewährt.
                         </span>
                     </div>
                     <div>
                         <span>
-                            {'>'} flexhelp24 (Telmed-/HMO-Modell)
+                            {'>'} Casamed HMO: Die HMO-Praxis koordiniert alle Arztbesuche und stellt bei Bedarf Überweisungen zu Fachärzten aus. Dafür wird auf die Prämie 10 bis 17 % Rabatt gewährt.
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {'>'} Flexhelp 24: Eine Sympany Partnerpraxis oder die Mitarbeiter der Videosprechstunde koordinieren Arztbesuche. Dafür wird auf die Prämie 14 bis 17 % Rabatt gewährt.
                         </span>
                     </div>
                 </div>
@@ -201,23 +206,45 @@ function Sympany() {
                 </div>
                 <div>
                     <div className="pb-3">
-                        <span className='fw-600 normalTextToWhite'> Die Sympany bietet eine Reihe von interessanten Zusatzversicherungen an. Die Reiseversicherung und die Zahnversicherung gehören zu den beliebtesten Zusatzversicherungen.
+                        <span className='fw-600 normalTextToWhite'> Neben der Grundversicherung können mit den Zusatzversicherungen der Sympany Versicherungsgesellschaft individuelle Wünsche abgedeckt werden.
                         </span>
                     </div>
                     <div className="pb-3">
                         <span className='fw-600 normalTextToWhite'>
-                            Erfahren Sie mehr über das Angebot der Sympany Zusatzversicherungen:
-
+                            In folgenden Bereichen kann der Versicherungsschutz erhöht werden:
                         </span>
                     </div>
-                    <div className='sympanyPurpleSpan fw-600'>
+                    <div className='fw-600'>
                         <div>
-                            <span>{'>'} Sympany Reiseversicherung</span>
+                            <span>{'>'} Spitalzusatzversicherung: Je nach gewähltem Paket ergeben sich Vorteile bei der Spitalwahl, der Anzahl an Zimmer-Mitbewohnern und der Arztwahl. </span>
                         </div>
                         <div>
-                            <span>{'>'} Sympany Zahnversicherung</span>
+                            <span>{'>'} Ambulante Zusatzversicherung: Darunter fallen unter anderem psychotherapeutische Behandlungen, Zahnbehandlungen, Alternativmedizin oder Nichtpflichtmedikamente. </span>
+                        </div>
+                        <div>
+                            <span>{'>'} Zahnzusatzversicherung: Drei verschiedene Pakete mit unterschiedlichen Deckungen reduzieren die Selbstkosten bei Zahnarztbehandlungen. </span>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
+                <div className="pb-4">
+                    <span className='finanuSubTitle fw-800'>Besondere Leistungen
+                    </span>
+                </div>
+                <div>
+
+                    <div className="pb-3">
+                        <span className='fw-600 normalTextToWhite'>
+                            Die Sympany Versicherungsgesellschaft gewährt ihren Kunden zahlreiche Vorteile. So werden beispielsweise Überschüsse jedes Jahr direkt an die Kunden zurückgegeben. Ausserdem dürfen Versicherte bis zum 25 Lebensjahr im Sommer über 90 Bäder der Schweiz kostenlos besuchen. Hinzu kommt ein fester jährlicher Betrag für die Mitgliedschaft in einem Sportverein oder die Teilnahme an einem entsprechenden Kurs.
+                        </span>
+                    </div>
+                    <div className="pb-3">
+                        <span className='fw-600 normalTextToWhite'>
+                            Sie interessieren sich für eine Versicherung bei der Sympany? Dann lassen Sie uns jetzt Ihr unverbindliches Angebot berechnen!
+                        </span>
+                    </div>
+
                 </div>
             </div>
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>

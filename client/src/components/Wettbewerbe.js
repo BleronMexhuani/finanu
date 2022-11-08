@@ -23,9 +23,9 @@ function Wettbewerbe() {
             <div className="row">
               <div className="col-12 col-md-6 mx-auto boxcard  ">
                 <Link to='/wettbewerbe/1' className="text-decoration-none">
-                  <div class="card " >
+                  <div className="card " >
                     <img src={bern} alt="" className="img-fluid img" />
-                    <div class="card-body text-md-start">
+                    <div className="card-body text-md-start">
                       <span className="titlebox normalTextToWhite" style={{ fontWeight: "bold" }}>
                         Städtetrip in die UNESCO-Weltkulturerbestätte Bern für 2
                         Personen{" "}
@@ -40,9 +40,9 @@ function Wettbewerbe() {
                   </Link>
               </div>
               <div className="col-12 col-md-6 mx-auto mt-4 mt-md-0 py-3 py-md-0 boxcard  ">
-                <div class="card h-100" >
+                <div className="card h-100" >
                   <img src={europa} alt="" className="img-fluid img" />
-                  <div class="card-body text-md-start">
+                  <div className="card-body text-md-start">
                     <span className="titlebox normalTextToWhite" style={{ fontWeight: "bold" }}>
                       2-tägigen Europaparkausflug mit der Familie!{" "}
                     </span>
@@ -55,9 +55,9 @@ function Wettbewerbe() {
                 </div>
               </div>
               <div className="col-12 col-md-6 mx-auto boxcard mt-3 py-4 ">
-                <div class="card" >
+                <div className="card" >
                   <img src={old} alt="" className="img-fluid img" />
-                  <div class="card-body text-md-start">
+                  <div className="card-body text-md-start">
                     <span className="titlebox normalTextToWhite" style={{ fontWeight: "bold" }}>
                       Auszeit bei einem Wellness Wochenende in den Bergen!
                     </span>
