@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 import "../../components/wettbewerbe/WLinks.css";
 
-function WLinks(props) {
+function WLinksThree(props) {
   const checkChild = (e) => {
     if (e.target.value === "3" || e.target.value === "4") {
       props.setChild(true);
@@ -10,7 +10,6 @@ function WLinks(props) {
     }
     props.changeHousehold(e.target.value);
   };
-
   return (
     <div className="">
       <div className="wrapDiv  container-xl px-4 px-xl-0">
@@ -30,8 +29,7 @@ function WLinks(props) {
               <div className="mx-auto formcontact">
                 <div className="mt-3">
                   <h2 className="titleform ms-3">
-                    Städtetrip in die UNESCO- <br /> Weltkulturerbestätte Bern
-                    für 2 Personen
+                  Auszeit bei einem Wellness <br /> Wochenende in den Bergen!
                   </h2>
                   <p className="subtitleform ms-3">
                     Tage Deine Angaben ein und nimm Wettbewerb teil. Viel Gluck!
@@ -179,18 +177,13 @@ function WLinks(props) {
             <div className="col-12 col-lg-5 d-flex align-items-center ms-4">
               <div className="text-start ">
                 <span className="formtitle">Was ist alles im Angebot inbegriffen?</span>
-                <div className="mt-1">
+                <div className="mt-2">
                   <span className="formsubtitle" >
-                    2 Nächte im Hotel Schweizerhof Bern{" "}
+                  2 Nächte im Alpenhotel Fleurs de Zermatt inklusive ausgiebigem Frühstück
                   </span>
                 </div>
                 <div className="mt-3">
-                  <span className="formsubtitle"> UNESCO Altstadtführung </span>
-                </div>
-                <div className="mt-3">
-                  <span className="formsubtitle">
-                    Kulinarische Verwöhnung hoch über der Stadt{" "}
-                  </span>
+                  <span className="formsubtitle"> Taschengeld für Verpflegung und Wellnessbehandlungen von 300.- CHF </span>
                 </div>
               </div>
             </div>
@@ -238,7 +231,7 @@ function WLinks(props) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default WLinks;
+export default WLinksThree;

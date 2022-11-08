@@ -1,23 +1,24 @@
-import React from "react";
+import React from 'react'
 import "../../components/wettbewerbe/WLinks.css";
+import Photo from '../../assets/images/europapark.jpg'
 
-function WLinks(props) {
-  const checkChild = (e) => {
-    if (e.target.value === "3" || e.target.value === "4") {
-      props.setChild(true);
-    } else {
-      props.setChild(false);
-    }
-    props.changeHousehold(e.target.value);
-  };
-
+function WLinksTwo(props) {
+    const checkChild = (e) => {
+        if (e.target.value === "3" || e.target.value === "4") {
+          props.setChild(true);
+        } else {
+          props.setChild(false);
+        }
+        props.changeHousehold(e.target.value);
+      };
   return (
-    <div className="">
+    <div>
+         <div className="">
       <div className="wrapDiv  container-xl px-4 px-xl-0">
         <div className="">
           <img
             className="img"
-            src={props.Photo}
+            src={Photo}
             alt=""
             style={{ width: "100%", borderRadius: "20px 20px" }}
           />
@@ -30,8 +31,7 @@ function WLinks(props) {
               <div className="mx-auto formcontact">
                 <div className="mt-3">
                   <h2 className="titleform ms-3">
-                    Städtetrip in die UNESCO- <br /> Weltkulturerbestätte Bern
-                    für 2 Personen
+                  2-tägigen Europaparkausflug mit der Familie!
                   </h2>
                   <p className="subtitleform ms-3">
                     Tage Deine Angaben ein und nimm Wettbewerb teil. Viel Gluck!
@@ -110,43 +110,7 @@ function WLinks(props) {
                       <option value="7">---</option>
                       <option value="8">---</option>
                     </select>
-                    <select
-                      onChange={checkChild}
-                      defaultValue={props.setHouseholdValue}
-                      id=""
-                      className="form-select stepsFormInputs formwett mt-2"
-                    >
-                      <option value="1">CSS</option>
-                      <option value="2">---</option>
-                      <option value="3">---</option>
-                      <option value="4">---</option>
-                      <option value="5">---</option>
-                      <option value="6">---</option>
-                      <option value="7">---</option>
-                      <option value="8">---</option>
-                    </select>
-                    <input
-                      type="number"
-                      id="tentacles"
-                      name="tentacles"
-                      placeholder="Franchise"
-                      min="0"
-                      max="10000"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
-                    />
-                    <select
-                      onChange={checkChild}
-                      defaultValue={props.setHouseholdValue}
-                      id=""
-                      className="form-select stepsFormInputs formwett mt-2"
-                    >
-                      <option value="1">---</option>
-                      <option value="2">1</option>
-                      <option value="3">2</option>
-                      <option value="4">3</option>
-                      <option value="5">4</option>
-                      <option value="6">5</option>
-                    </select>
+                  
                     <select
                       onChange={checkChild}
                       defaultValue={props.setHouseholdValue}
@@ -160,7 +124,16 @@ function WLinks(props) {
                         Starker Kundendienst
                       </option>
                     </select>
-                    <label className="mt-4">
+                    <input
+                      type="number"
+                      id="tentacles"
+                      name="tentacles"
+                      placeholder="Franchise"
+                      min="0"
+                      max="10000"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                    />
+                    {/* <label className="mt-4">
                       <input type="checkbox" name="checkbox" value="value" />
                       <span className="ms-1 titlecheck">
                         {" "}
@@ -168,7 +141,7 @@ function WLinks(props) {
                         Datenschutzbedingungen gelesen und bin damit <br />{" "}
                         einverstanden.*{" "}
                       </span>
-                    </label>
+                    </label> */}
                   </form>
                   <button className="firstSectionBlueBtn1 mt-2">
                     Jetzt konstenlos teilnehmen
@@ -181,15 +154,15 @@ function WLinks(props) {
                 <span className="formtitle">Was ist alles im Angebot inbegriffen?</span>
                 <div className="mt-1">
                   <span className="formsubtitle" >
-                    2 Nächte im Hotel Schweizerhof Bern{" "}
+                  1 Nacht im Hotel Castillo Alcazar für 4 Personen
                   </span>
                 </div>
                 <div className="mt-3">
-                  <span className="formsubtitle"> UNESCO Altstadtführung </span>
+                  <span className="formsubtitle"> Vier 2-Tageskarten in den Europapark </span>
                 </div>
                 <div className="mt-3">
                   <span className="formsubtitle">
-                    Kulinarische Verwöhnung hoch über der Stadt{" "}
+                  200.- Euro Taschengeld für den Konsum vor Ort
                   </span>
                 </div>
               </div>
@@ -204,7 +177,7 @@ function WLinks(props) {
             </span>
             <div className="mt-3">
         <span className="subtitledesc" >
-         Suche deinen Preis aus, fülle das Formular aus und du hast erfolgreich an der Verlosung teilgenommen.						
+        Suche deinen Preis aus, fülle das Formular aus und du hast erfolgreich an der Verlosung teilgenommen.
         </span>
         </div>
         <div className="mt-4">
@@ -214,7 +187,8 @@ function WLinks(props) {
             </div>
             <div className="mt-3">
         <span className="subtitledesc">
-        Teilnahmeberechtigt sind alle Personen, welche Ihren Wohnsitz in der Schweiz und das 18. Lebensjahr vollendet haben. Der Teilnehmende <br /> bestätigt mit der Teilnahme, die Richtigkeit aller Angaben.						
+        Teilnahmeberechtigt sind alle Personen, welche Ihren Wohnsitz in der Schweiz und das 18. Lebensjahr vollendet haben. Der Teilnehmende <br /> bestätigt mit der Teilnahme, die Richtigkeit aller Angaben.
+						
         </span>
         </div>
         <div className="mt-4">
@@ -224,7 +198,7 @@ function WLinks(props) {
             </div>
             <div className="mt-3">
         <span className="subtitledesc">
-        Das Gewinnspiel steht in keiner Verbindung zum Hotel Schweizerhof Bern und wird in keiner Weise von anderen als der DL Finance.ch <br /> gesponsert, unterstützt oder organisiert.
+        Das Gewinnspiel steht in keiner Verbindung zum Europapark und wird in keiner Weise von anderen als der DL Finance.ch gesponsert, unterstützt oder organisiert.
         </span>
         
         </div>
@@ -238,7 +212,8 @@ function WLinks(props) {
         </div>
       </div>
     </div>
-  );
+    </div>
+  )
 }
 
-export default WLinks;
+export default WLinksTwo
