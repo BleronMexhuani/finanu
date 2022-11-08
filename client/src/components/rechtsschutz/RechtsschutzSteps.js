@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Einzel from '../../assets/images/rechtsschutzImgs/einzel.svg'
 import Familie from '../../assets/images/rechtsschutzImgs/familie.svg'
@@ -8,6 +8,7 @@ import Step2First from '../../assets/images/rechtsschutzImgs/step2First.svg'
 import Step2Second from '../../assets/images/rechtsschutzImgs/step2Second.svg'
 import Step2Third from '../../assets/images/rechtsschutzImgs/step2Third.svg'
 import Step3First from '../../assets/images/rechtsschutzImgs/step3First.png'
+import axios from 'axios'
 
 
 import '../../assets/css/rechtsschutz.css'
@@ -15,7 +16,25 @@ function RechtsschutzSteps() {
     const [step, setStep] = useState(0);
     const onNext = () => setStep(step + 1);
     const onPrevious = () => setStep(step - 1);
+    const [gender, setGender] = useState('');
+    const [vorname, setVorname] = useState('');
+    const [email, setEmail] = useState('');
+    const [geburstdatum, setGeburstadum] = useState('');
+    const [telefonnumer, setTelefonnumer] = useState('');
+    const [plz, setPlz] = useState('');
+    const [ort, setOrt] = useState('');
+    const [strasse, setStrasse] = useState('');
+    const [reschtutz, setReschutz] = useState('einzelpersonen');
+    const [res2, setRes2] = useState('tiefe kosten');
     const [type, settype] = useState('text')
+
+    const handleSubmit = async () => {
+        const data = {
+            gender,vorname,email,geburstdatum,telefonnumer,plz,ort,strasse, reschtutz,res2
+        }
+        const res = await axios.post("http://localhost:5000/rechtschutz/sendEmail", data);
+        console.log(res);
+    }
     return (
         <div>
             <div className="blueBgRechtss">
@@ -57,28 +76,28 @@ function RechtsschutzSteps() {
                                         <div className="row g-4 g-md-5">
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Einzelpersonen" className='containerRes w-100 h-100'>
-                                                    <input type="radio" id='Einzelpersonen' name='who' hidden />
+                                                    <input type="radio" id='Einzelpersonen' onChange={e => setReschutz('einzelpersonen')} name='who' hidden />
                                                     <div className='checkmarkRes px-1 mb-2'><img src={Einzel} className="img-fluid" alt="" /></div>
                                                     <span className='underCheckmarkSpan'>Einzelpersonen</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Familien" className='containerRes w-100'>
-                                                    <input type="radio" id='Familien' name='who' hidden />
+                                                    <input type="radio" id='Familien' onChange={e => setReschutz('Familien')} name='who' hidden />
                                                     <div className='checkmarkRes px-1 mb-2'><img src={Familie} className="img-fluid" alt="" /></div>
                                                     <span className='underCheckmarkSpan'>Familien</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Unternehmer" className='containerRes w-100 h-100'>
-                                                    <input type="radio" id='Unternehmer' name='who' hidden />
+                                                    <input type="radio" id='Unternehmer' onChange={e => setReschutz('Unternehmer')} name='who' hidden />
                                                     <div className='checkmarkRes px-1 mb-2'><img src={Building} className="img-fluid" alt="" /></div>
                                                     <span className='underCheckmarkSpan'>Unternehmer</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Privat" className='containerRes w-100 h-100'>
-                                                    <input type="radio" id='Privat' name='who' hidden />
+                                                    <input type="radio" id='Privat' onChange={e => setReschutz('Privat')} name='who' hidden />
                                                     <div className='checkmarkRes px-1 mb-2'><img src={Privat} className="img-fluid" alt="" /></div>
                                                     <span className='underCheckmarkSpan'>Privat + Unternehmer</span>
                                                 </label>
@@ -129,21 +148,21 @@ function RechtsschutzSteps() {
                                         <div className="row g-4 g-md-5 justify-content-evenly">
                                             <div className="col-6 col-md-4 col-lg-3">
                                                 <label htmlFor="Kosten" className='containerRes w-100 h-100'>
-                                                    <input type="radio" id='Kosten' name='who1' hidden />
+                                                    <input type="radio" onChange={e => setRes2('Kosten')} id='Kosten' name='who1' hidden />
                                                     <div className='checkmarkRes px-1 mb-2'><img src={Step2First} className="img-fluid" alt="" /></div>
                                                     <span className='underCheckmarkSpan'>Tiefe Kosten</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-md-4 col-lg-3">
                                                 <label htmlFor="Weltweite" className='containerRes w-100'>
-                                                    <input type="radio" id='Weltweite' name='who1' hidden />
+                                                    <input type="radio" onChange={e => setRes2('Weltweite')} id='Weltweite' name='who1' hidden />
                                                     <div className='checkmarkRes px-1 mb-2'><img src={Step2Second} className="img-fluid" alt="" /></div>
                                                     <span className='underCheckmarkSpan'>Weltweite Deckung</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-md-4 col-lg-3">
                                                 <label htmlFor="Guter" className='containerRes w-100 h-100'>
-                                                    <input type="radio" id='Guter' name='who1' hidden />
+                                                    <input type="radio" onChange={e => setRes2('Guter')} id='Guter' name='who1' hidden />
                                                     <div className='checkmarkRes px-1 mb-2'><img src={Step2Third} className="img-fluid" alt="" /></div>
                                                     <span className='underCheckmarkSpan'>Guter Kundendienst</span>
                                                 </label>
@@ -196,19 +215,19 @@ function RechtsschutzSteps() {
                                                 <div className="row g-4">
                                                     <div className="col-4 text-center">
                                                         <label htmlFor="female" className='containerRes2 w-100 h-100'>
-                                                            <input type="radio" id='female' name='who3' hidden />
+                                                            <input type="radio" id='female' onChange={e => setGender('female')} name='who3' hidden />
                                                             <div className='checkmarkRes2'><img src={Step3First} className="img-fluid" alt="" /></div>
                                                         </label>
                                                     </div>
                                                     <div className="col-4 text-center">
                                                         <label htmlFor="male" className='containerRes2 w-100 h-100'>
-                                                            <input type="radio" id='male' name='who3' hidden />
+                                                            <input type="radio" id='male' onChange={e => setGender('male')} name='who3' hidden />
                                                             <div className='checkmarkRes2'><img src={Step3First} className="img-fluid" alt="" /></div>
                                                         </label>
                                                     </div>
                                                     <div className="col-4 text-center">
                                                         <label htmlFor="notSpecified" className='containerRes2 w-100 h-100'>
-                                                            <input type="radio" id='notSpecified' name='who3' hidden />
+                                                            <input type="radio" id='notSpecified' onChange={e => setGender('notSpecified')} name='who3' hidden />
                                                             <div className='checkmarkRes2'><img src={Step3First} className="img-fluid" alt="" /></div>
                                                         </label>
                                                     </div>
@@ -221,7 +240,7 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>Vorname und Nachname / Firmenname</span>
                                                         </div> */}
                                                         <div>
-                                                            <input className='step3InputRechtss' type="text" name="" placeholder='Vorname und Nachname / Firmenname' id="" />
+                                                            <input className='step3InputRechtss' onChange={e => setVorname(e.target.value)} type="text" name="" placeholder='Vorname und Nachname / Firmenname' id="" />
                                                         </div>
                                                     </div>
                                                     <div className="col-12 col-sm-6">
@@ -229,12 +248,14 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>E-mail</span>
                                                         </div> */}
                                                         <div>
-                                                            <input className='step3InputRechtss' type="text" name="" placeholder='E-mail' id="" />
+                                                            <input className='step3InputRechtss' onChange={e => setEmail(e.target.value)} type="text" name="" placeholder='E-mail' id="" />
                                                         </div>
                                                     </div>
                                                 </div>
 
                                             </div>
+
+                                       
                                             <div className='pb-4'>
                                                 <div className="row g-4">
                                                     <div className="col-12 col-sm-6 ">
@@ -242,7 +263,9 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>Geburtsdatum</span>
                                                         </div> */}
                                                         <div className="">
-                                                            <input className='step3InputRechtss' type={type} onFocus={() => { settype('date') }} onBlur={() => { settype('text') }} name="" placeholder='Geburtsdatum' id="" />
+
+                                                            <input className='step3InputRechtss' onChange={e => setGeburstadum(e.target.value)} type={type} onFocus={() => { settype('date') }} onBlur={() => { settype('text') }} name="" placeholder='Geburtsdatum' id="" />
+
                                                         </div>
                                                     </div>
                                                     <div className='col-12 col-sm-6'>
@@ -250,7 +273,7 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>Telefonnummer</span>
                                                         </div> */}
                                                         <div className="">
-                                                            <input className='step3InputRechtss' type="text" name="" placeholder='Telefonnummer' id="" />
+                                                            <input className='step3InputRechtss' onChange={e => setTelefonnumer(e.target.value)} type="text" name="" placeholder='Telefonnummer' id="" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -262,7 +285,7 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>Postleitzahl</span>
                                                         </div> */}
                                                         <div className="">
-                                                            <input className='step3InputRechtss' type="text" name="" placeholder='PLZ' id="" />
+                                                            <input className='step3InputRechtss' onChange={e => setPlz(e.target.value)} type="text" name="" placeholder='PLZ' id="" />
                                                         </div>
                                                     </div>
                                                     <div className='col-12 col-sm-4'>
@@ -270,7 +293,7 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>Ort</span>
                                                         </div> */}
                                                         <div className="">
-                                                            <input className='step3InputRechtss' type="text" name="" placeholder='Ort' id="" />
+                                                            <input className='step3InputRechtss' onChange={e => setOrt(e.target.value)} type="text" name="" placeholder='Ort' id="" />
                                                         </div>
                                                     </div>
                                                     <div className="col-12 col-sm-4">
@@ -278,7 +301,7 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>Strasse</span>
                                                         </div> */}
                                                         <div>
-                                                            <input className='step3InputRechtss' type="text" name="" placeholder='Strasse' id="" />
+                                                            <input className='step3InputRechtss' type="text" onChange={e => setStrasse(e.target.value)} name="" placeholder='Strasse' id="" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -304,7 +327,7 @@ function RechtsschutzSteps() {
                                                 </button>
                                             </div>
                                             <div className="col-auto">
-                                                <button className='step3RechtssBtn'>Vergleich anfordern</button>
+                                                <button type='button' onClick={handleSubmit} className='step3RechtssBtn'>Vergleich anfordern</button>
                                             </div>
                                         </div>
                                     </div>
@@ -313,7 +336,9 @@ function RechtsschutzSteps() {
 
                         </div>
                     </div>
+
                     <div className="col-12 col-lg-9 col-xl-7 mx-auto mb-5 pb-5">
+
 
                         <div className='mb-4 pt-5 mt-5'>
                             <span style={{ color: '#50B8E7' }} className='fw-700 finanuSubTitle'>KURZ ERKLÄRT</span>
