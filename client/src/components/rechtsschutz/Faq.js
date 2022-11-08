@@ -18,7 +18,7 @@ function Faq() {
         <div className='container-xl px-4 px-xl-0 mt-4'>
           <div className="hausratBlueDiv px-4 px-md-5 pt-4 pt-md-5 pb-4 mb-0">
             <div className="whiteBgRecht p-3 absoluteDivRecht">
-              <span style={{ color: "#84CDEE" }} className='fw-700 firstBlueTitle'>FAQ</span>
+              <span style={{ color: "#50B8E7" }} className='fw-700 firstBlueTitle'>FAQ</span>
             </div>
             <div className="pt-5 text-start whiteBorderParent">
               <div className='whiteBorderBottomRecht pb-2 mb-4' onClick={() => { toggleFaqState(1) }}>

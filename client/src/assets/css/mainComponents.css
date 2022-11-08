@@ -1,5 +1,5 @@
 .cloudsBackground {
-    background: url('../../assets/images/clouds.svg') no-repeat;
+
     /* height: 350px; */
     width: 100%;
     animation-iteration-count: infinite;
@@ -42,7 +42,7 @@
 }
 
 .finanuSubTitle {
-    font-size: 22px !important;
+    font-size: 18px !important;
     color: #5a5a5a !important;
     font-weight: 600;
 }
@@ -72,7 +72,7 @@
 }
 
 .blueBgdiv {
-    background-color: #84CDEE;
+    background-color: #50B8E7;
     border-radius: 25px;
 }
 
@@ -290,7 +290,7 @@
         font-size: 30px;
     }
     .finanuSubTitle { 
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -330,8 +330,3 @@
     background-size: cover;
 }
 
-.darkTheme .cloudsBackground {
-    background: url('../../assets/images/cloudsDark.svg') no-repeat;
-    animation-delay: 0s;
-
-}

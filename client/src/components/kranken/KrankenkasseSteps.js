@@ -362,7 +362,7 @@ function KrankenkasseSteps() {
                 <div className='mx-4 mx-xl-0'>
                     <div className='krankenFirstStep wrapDiv container-xl px-4 mx-auto py-5'>
                         <div>
-                            <span className='krankenTitle fs-2'>KRANKENKASSEN VERGLEICHEN 2022</span>
+                            <span className='krankenTitle fs-2'>KRANKENKASSEN VERGLEICHEN 2023</span>
                         </div>
                         <div>
                             <span className='krankenSubtitle'>Vergleichen Sie die Leistungen und Prämien der zugelassenen Krankenkassen in der Schweiz.</span>

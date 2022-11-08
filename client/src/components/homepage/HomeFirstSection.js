@@ -18,34 +18,32 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FreeMode, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
-
+import HeroImg from '../../assets/images/heroIlu.svg'
 function HomeFirstSection(props) {
 
     return (
         <>
+        <div className="blueBackgroundDiv">
             <div className='cloudsBackground wrapDiv1'>
                 <div>
-                    <div className="row g-0 justify-content-center">
-                        <div className="col-12 col-md-9 text-center">
+                    <div className="row gx-4 gy-0 justify-content-center">
+                        <div className="col-12 col-md-6 text-start my-auto">
                             <div className='pb-3'>
                                 <span className='firstBlueTitle'>Informieren, Vergleichen & Abschliessen</span>
                             </div>
-                            <div className='pb-5'>
+                            <div>
                                 <span className='finanuSubTitle' style={{ fontWeight: 500 }} >
                                     Oder wünschen Sie lieber eine kostenlose Gesamtberatung von<br></br>
                                     einem unserer Kundenberatern?
                                 </span>
                             </div>
-                            <div>
-                                <Link to='/Krankenkasse'>
-                                    <button className='firstSectionBlueBtn1'>Jetzt Vergleichen</button>
-                                </Link>
-                            </div>
+                        </div>
+                        <div className="col-12 col-md-6 mt-5 mt-md-0">
+                            <img className='img-fluid' src={HeroImg} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="blueBackgroundDiv">
                 <div className="wrapDiv container-xl px-4 px-xl-0">
                     <div className="marginGutter pt-5">
                         <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 pb-5">
