@@ -23,7 +23,7 @@ function Krankekasse() {
     const [krankenkasse, setKrankenkasse] = useState([]);
 
     const handleSubmit = async () => {
-        const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${jahrgang}/${accident}/${model}/${franchise}/${tarifbezeichnung}`);
+        const result = await axios.get(`https://node.kutiza.com/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${jahrgang}/${accident}/${model}/${franchise}/${tarifbezeichnung}`);
         setKrankenkasse(result.data);
         console.log(result.data)
     }
@@ -31,7 +31,7 @@ function Krankekasse() {
         //Get all the regions
         const getRegions = async () => {
             await axios.get(
-                'http://localhost:5000/krankenkasse/regions'
+                'https://node.kutiza.com/krankenkasse/regions'
             )
                 .then(function (result) {
                     setRegions(result.data);
@@ -50,7 +50,7 @@ function Krankekasse() {
         const getInsurances = async () => {
             if (plz !== null && ort !== null && commune !== null) {
                 await axios.get(
-                    `http://localhost:5000/krankenkasse/insurances/${plz}/${ort}/${commune}`
+                    `https://node.kutiza.com/krankenkasse/insurances/${plz}/${ort}/${commune}`
                 )
                     .then(function (result) {
                         setInsurances(result.data);
@@ -81,7 +81,7 @@ function Krankekasse() {
 
     useEffect(() => {
         const getActualModels = async () => {
-            const result = await axios.get(`http://localhost:5000/krankenkasse/actualmodel/${insuranceNum}`)
+            const result = await axios.get(`https://node.kutiza.com/krankenkasse/actualmodel/${insuranceNum}`)
             setActualModels(result.data);
         }
         if (insuranceNum != null) {
