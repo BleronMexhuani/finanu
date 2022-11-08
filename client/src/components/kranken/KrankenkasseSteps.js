@@ -8,7 +8,30 @@ import XBtn from "../../assets/images/xButton.svg"
 import Stars from '../../assets/images/krankenkasseStars.svg'
 import LoadingGif from '../../assets/images/Loading_2.gif';
 function KrankenkasseSteps() {
+    //Modal Inputs Form
+    const [vorname, setVorname] = useState('');
+    const [nachname, setNachname] = useState('');
+    const [nationalitat, setNationalitat] = useState('');
+    const [aufenthaltsbewilligung, setAufenthaltsbewilligung] = useState('');
+    const [adresse, setAdresse] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefonnummer, setTelefonnummer] = useState('');
 
+    const handleSubmitFormModal = async () => {
+        const data = {
+            vorname,
+            nachname,
+            nationalitat,
+            aufenthaltsbewilligung,
+            adresse,
+            email,
+            telefonnummer
+        }
+        const res = await axios.post("http://localhost:5000/krankenkasse/sendMail");
+        console.log(res);
+    }
+
+    //Krankenkasse Calculator
     const [insurances, setInsurances] = useState([]);
     const [ort, setOrt] = useState(null);
     const [plz, setPlz] = useState(null);
@@ -28,7 +51,7 @@ function KrankenkasseSteps() {
     const [inputValue, setInputValue] = useState("")
     const [filter, setFilter] = useState([]);
     const [isEmpty, setIsEmpty] = useState(false)
-    const [isLoadActive,setIsLoadActive] = useState('none');
+    const [isLoadActive, setIsLoadActive] = useState('none');
 
     const showSelectDropdown = () => {
         setIsFocused(true)
@@ -153,7 +176,7 @@ function KrankenkasseSteps() {
         setIsLoadActive('flex');
         const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
 
-    
+
         setKrankenkasse(result.data);
         setIsLoadActive('none');
 
@@ -354,6 +377,7 @@ function KrankenkasseSteps() {
         setMehrLadenModal(false)
         setModalFormSubmited(true)
         setEndKrankenMap(endKrankenMap + 3)
+        handleSubmitFormModal();
     }
 
     return (
@@ -635,8 +659,8 @@ function KrankenkasseSteps() {
                     </div>
 
                 )}
-                <div className='mt-5 justify-content-center' style={{display:isLoadActive}}>
-                    <img src={LoadingGif}  width="50" alt="" />
+                <div className='mt-5 justify-content-center' style={{ display: isLoadActive }}>
+                    <img src={LoadingGif} width="50" alt="" />
                 </div>
                 {thirdStep2 && (
                     <div ref={third2StepKranken} className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
@@ -720,7 +744,7 @@ function KrankenkasseSteps() {
                             }
 
                         </div>
-                        <div className='pt-5' style={{display: krankenkasse.length ? 'block' : 'none' }}>
+                        <div className='pt-5' style={{ display: krankenkasse.length ? 'block' : 'none' }}>
                             <button className='nextBtnKranken' type='button' onClick={openMehrLadenModal} > Mehr laden </button>
                         </div>
 
@@ -880,7 +904,7 @@ function KrankenkasseSteps() {
                                                         <input type="text" className='krankenInputStyle krankenInputStepStyle p-3' placeholder='Vorname' name="" id="" />
                                                     </div>
                                                     <div className="col-12 col-sm-6">
-                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3' placeholder='Nachname' name="" id="" />
+                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3'   placeholder='Nachname' name="" id="" />
                                                     </div>
                                                     <div className="col-12 col-sm-6">
                                                         <select name="" className='krankenInputStyle form-select krankenInputStepStyle p-3' id="">
@@ -949,7 +973,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Vorname</span>
                                         </div>
                                         <div>
-                                            <input required type="text" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="text" onChange={e=>setVorname(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -957,7 +981,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Nachname</span>
                                         </div>
                                         <div>
-                                            <input required type="text" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="text"  onChange={e=>setNachname(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -965,7 +989,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Nationalität</span>
                                         </div>
                                         <div>
-                                            <select required name="" id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
+                                            <select required name=""  onChange={e=>setNationalitat(e.target.value)} id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
 
@@ -977,7 +1001,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Aufenthaltsbewilligung</span>
                                         </div>
                                         <div>
-                                            <select required name="" id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
+                                            <select required name=""  onChange={e=>setAufenthaltsbewilligung(e.target.value)} id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
 
@@ -989,7 +1013,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Adresse</span>
                                         </div>
                                         <div>
-                                            <input required type="text" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="text"  onChange={e=>setAdresse(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -997,7 +1021,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>E-Mail-Adresse</span>
                                         </div>
                                         <div>
-                                            <input required type="email" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="email"  onChange={e=>setEmail(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -1005,7 +1029,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Telefonnummer</span>
                                         </div>
                                         <div>
-                                            <input required type="number" className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="number"   onChange={e=>setTelefonnummer(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
                                         </div>
                                     </div>
                                     <div className='text-center'>
