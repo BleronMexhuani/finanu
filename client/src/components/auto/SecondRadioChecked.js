@@ -6,15 +6,11 @@ import ThirdStep from './autoSecondRadio/ThirdStep'
 
 function SecondRadioChecked() {
     const [step, setstep] = useState(0)
-    const scrollTo = useRef();
-    useEffect(() => {
-        var elem = scrollTo
-        window.scrollTo(0, elem.current.offsetTop -100);
-    }, [step]);
+
     return (
         <div>
             <form action="" className='mb-0'>
-                <div className="wrapDiv container-xl px-0" ref={scrollTo}>
+                <div className="wrapDiv container-xl px-0">
                     <div className="">
                         {
                             {

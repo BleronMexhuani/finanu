@@ -7,17 +7,16 @@ import LastIlustration from '../../assets/images/krankenIlustration.svg'
 import LastIlustrationDark from '../../assets/images/krankenIlustrationDark.svg'
 import Modal from './Modal'
 
-function Option2Kranken(props) {
-
+function Option1Kranken(props) {
     const [openModal, setopenModal] = useState(false)
     return (
-        <div className=''>
+        <div>
             <div className='wrapDiv container-xl px-4'>
                 <div className="row g-4">
                     <div className="col-12 col-lg-7 text-start">
                         <div className='pb-5 mb-3'>
                             <div className='pb-3'>
-                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}>OPTION 2 : PERSONAL ADVICE</span>
+                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}>OPTION 1 : DIGITAL ADVICE</span>
                             </div>
                             <div className='pb-3'>
                                 <span className='firstBlueTitle fw-600 normalTextToWhite'>PERSONAL ADVICE WITH AN ADVISER</span>
@@ -84,4 +83,4 @@ function Option2Kranken(props) {
     )
 }
 
-export default Option2Kranken
+export default Option1Kranken

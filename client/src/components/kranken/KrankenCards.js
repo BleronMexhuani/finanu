@@ -15,8 +15,9 @@ import PhoneDoc from '../../assets/images/phoneDoc.svg'
 // import DocumentCheck from "../../assets/images/documentCheck.svg"
 // import Lock from "../../assets/images/lock.svg"
 // import DocumentLock from "../../assets/images/documentLock.svg"
+import Option1Kranken from './Option1Kranken'
 
-function KrankenCards() {
+function KrankenCards(props) {
 
     const [isHover, setIsHover] = useState(false)
     const [isHover1, setIsHover1] = useState(false)
@@ -151,6 +152,10 @@ function KrankenCards() {
                     </div>
 
                 </div>
+            </div>
+            <div className='bodyCounterPadding'>
+            <Option1Kranken darkMode={props.darkMode} />
+
             </div>
             <div>
                 <div className="wrapDiv container-xl px-4 px-xl-0 pt-0 pt-lg-5 mt-0 mt-lg-5 pt-xl-0 mt-xl-0 pb-5">

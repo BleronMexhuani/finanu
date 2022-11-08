@@ -8,7 +8,7 @@ function UberUns() {
     return (
         <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
             <div className="row gx-4 gy-0 mb-5 pb-5">
-                <div className="col-12 col-md-6 text-start">
+                <div className="col-12 col-md-6 col-xl-7 text-start">
                     <div className='pb-4'>
                         <span className='fw-800 firstBlueTitle'>About us</span>
                     </div>
@@ -19,7 +19,7 @@ function UberUns() {
                         <span className='normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern. Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.</span>
                     </div>
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6 col-xl-5">
                     <div className=''>
                         <img src={Idea} alt="" />
                     </div>
@@ -79,13 +79,13 @@ function UberUns() {
                     </div>
                 </div>
             </div>
-            <div className='row gx-4 gy-0'>
-                <div className="col-12 col-md-6">
+            <div className='row gx-4 gy-0 bodyCounterPadding'>
+                <div className="col-12 col-md-6 col-xl-5">
                     <div className=''>
-                        <img src={Block} style={{ maxWidth: '370px' }} alt="" />
+                        <img src={Block} style={{ maxHeight: '300px' }} alt="" />
                     </div>
                 </div>
-                <div className="col-12 col-md-6 text-start">
+                <div className="col-12 col-md-6 col-xl-7 text-start">
                     <div className='pb-3' style={{ wordBreak: 'break-all' }}>
                         <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
                     </div>
@@ -106,7 +106,7 @@ function UberUns() {
                     </div>
                     <div className="col col-md-4">
                         <div className="uberBlueBg2 pe-1 py-3 pe-md-0">
-                            <span className='fw-600'>Finanu</span>
+                            <span className='fw-600'>Klassische</span>
                         </div>
                     </div>
                 </div>
@@ -123,8 +123,9 @@ function UberUns() {
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
@@ -138,8 +139,9 @@ function UberUns() {
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
@@ -153,8 +155,9 @@ function UberUns() {
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
@@ -168,8 +171,9 @@ function UberUns() {
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
@@ -183,8 +187,9 @@ function UberUns() {
                             </svg>
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
@@ -200,9 +205,8 @@ function UberUns() {
 
                         </div>
                         <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className="col-7 col-md-4 text-start greyBorderRightUber">
@@ -216,8 +220,9 @@ function UberUns() {
                             </svg>
                         </div>
                         <div className="col col-md-4">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                     </div>

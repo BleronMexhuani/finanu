@@ -70,23 +70,22 @@ function HausratBlueForm() {
 
     return (
         <>
-            <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
-                <div className="row g-0">
-                    <div className="col-12 col-md-6 col-xl-6">
-                        <div className="hausratBlueDiv mx-auto mb-4 mb-md-0 text-start">
+            <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto bodyCounterPadding'>
+                <div className="row g-0 justify-content-center px-0 px-md-4 px-lg-5 ">
+                    <div className="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div className="hausratWhiteDiv hausratBlueDiv mx-auto mb-4 mb-md-0 text-start">
                             <div className='p-4 p-sm-5'>
                                 <div className='pb-4'>
                                     <div className='pb-2'>
                                         <span >Gesamtkaufpreis</span>
                                     </div>
                                     <div>
-                                        <NumberFormat
-
+                                        <NumberFormat placeholder={'12,000'}
                                             onValueChange={(values) => {
                                                 const { value } = values;
                                                 setApartamentPrice(value)
                                             }}
-                                            className='hausratFormInputs'
+                                            className='hausratFormInputs_2'
                                             displayType={'input'}
                                             thousandSeparator={true}
 
@@ -98,15 +97,15 @@ function HausratBlueForm() {
                                         <span >Jährliches Einkommen</span>
                                     </div>
                                     <div>
-                                        <NumberFormat
+                                        <NumberFormat placeholder={'12,000'}
                                             onValueChange={(values) => {
                                                 const { value } = values;
                                                 setYearlyIncome(value)
                                             }}
-                                            className='hausratFormInputs'
+                                            className='hausratFormInputs_2'
                                             displayType={'input'}
                                             thousandSeparator={true}
-
+                                            
                                         />
 
                                     </div>
@@ -116,16 +115,16 @@ function HausratBlueForm() {
                                         <span >Eigenkapital</span>
                                     </div>
                                     <div>
-                                        <NumberFormat
-
+                                        <NumberFormat placeholder={'12,000'}
+                                        
                                             onValueChange={(values) => {
                                                 const { value } = values;
                                                 setCapital(value)
                                             }}
-                                            className='hausratFormInputs'
+
+                                            className='hausratFormInputs_2'
                                             displayType={'input'}
                                             thousandSeparator={true}
-
                                         />
                                     </div>
                                 </div>
@@ -150,9 +149,9 @@ function HausratBlueForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-6 my-auto">
-                        <div className='hausratHouseDiv ps-0 ps-md-4' >
-                            <img src={HausratHouse} alt="" />
+                    <div className="col-12 col-md-6 col-lg-6 col-xl-6 my-auto">
+                        <div className='hausratHouseDiv mt-5 mt-md-0 ps-0 ps-md-4' >
+                            <img src={HausratHouse} className="img-fluid" alt="" />
                         </div>
                     </div>
                 </div>
