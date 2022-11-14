@@ -7,7 +7,9 @@ import Privat from '../../assets/images/rechtsschutzImgs/privat.svg'
 import Step2First from '../../assets/images/rechtsschutzImgs/step2First.svg'
 import Step2Second from '../../assets/images/rechtsschutzImgs/step2Second.svg'
 import Step2Third from '../../assets/images/rechtsschutzImgs/step2Third.svg'
-import Step3First from '../../assets/images/rechtsschutzImgs/step3First.png'
+import Step3Male from '../../assets/images/rechtsschutzImgs/Male-01.svg'
+import Step3Female from '../../assets/images/rechtsschutzImgs/Female-01.svg'
+import Step3Comp from '../../assets/images/rechtsschutzImgs/Building-01.svg'
 
 import axios from 'axios'
 import Arrow from '../../assets/images/rechtsschutzImgs/arrow.png'
@@ -221,19 +223,19 @@ function RechtsschutzSteps() {
                                                         <div className="col-4 text-center">
                                                             <label htmlFor="female" className='containerRes2 w-100 h-100'>
                                                                 <input type="radio" id='female' onChange={e => setGender('female')} name='who3' hidden />
-                                                                <div className='checkmarkRes2'><img src={Step3First} className="img-fluid" alt="" /></div>
+                                                                <div className='checkmarkRes2'><img src={Step3Female} className="img-fluid" alt="" /></div>
                                                             </label>
                                                         </div>
                                                         <div className="col-4 text-center">
                                                             <label htmlFor="male" className='containerRes2 w-100 h-100'>
                                                                 <input type="radio" id='male' onChange={e => setGender('male')} name='who3' hidden />
-                                                                <div className='checkmarkRes2'><img src={Step3First} className="img-fluid" alt="" /></div>
+                                                                <div className='checkmarkRes2'><img src={Step3Male} className="img-fluid" alt="" /></div>
                                                             </label>
                                                         </div>
                                                         <div className="col-4 text-center">
                                                             <label htmlFor="notSpecified" className='containerRes2 w-100 h-100'>
                                                                 <input type="radio" id='notSpecified' onChange={e => setGender('notSpecified')} name='who3' hidden />
-                                                                <div className='checkmarkRes2'><img src={Step3First} className="img-fluid" alt="" /></div>
+                                                                <div className='checkmarkRes2'><img src={Step3Comp} className="img-fluid" alt="" /></div>
                                                             </label>
                                                         </div>
                                                     </div>

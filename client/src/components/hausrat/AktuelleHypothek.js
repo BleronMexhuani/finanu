@@ -235,84 +235,225 @@ function AktuelleHypothek() {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className='pb-5'>
                         <div className='pb-4 text-start'>
-                            <span className='finanuSubTitle fw-700 fs-3'>Useful Links</span>
+                            <span className='finanuSubTitle fw-700 fs-3'>Immobilien finden</span>
                         </div>
                         <div>
-                            <div className="row g-3 text-start justify-content-center">
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div className='p-3 useFullLinks text-start'>
-                                        <div className="row g-2">
-                                            <div className='col-auto'>
-                                                <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                            </div>
-                                            <div className="col">
-                                                <div className='pb-1'>
-                                                    <span className='fw-600 descriptionFS'>Lorem Ipsum Dolor</span>
+                            <div className="row g-3 text-start justify-content-start">
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="newhome.ch" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
                                                 </div>
-                                                <div>
-                                                    <span>Lorem ipsum description</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div className='p-3 useFullLinks text-start'>
-                                        <div className="row g-2">
-                                            <div className='col-auto'>
-                                                <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                            </div>
-                                            <div className="col">
-                                                <div className='pb-1'>
-                                                    <span className='fw-600 descriptionFS'>Lorem Ipsum Dolor</span>
-                                                </div>
-                                                <div>
-                                                    <span>Lorem ipsum description</span>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>New Home</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                    </div>
+                                    </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div className='p-3 useFullLinks text-start'>
-                                        <div className="row g-2">
-                                            <div className='col-auto'>
-                                                <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                            </div>
-                                            <div className="col">
-                                                <div className='pb-1'>
-                                                    <span className='fw-600 descriptionFS'>Lorem Ipsum Dolor</span>
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="immoscout24.ch" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
                                                 </div>
-                                                <div>
-                                                    <span>Lorem ipsum description</span>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Immoscout24</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                    </div>
+                                    </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div className='p-3 useFullLinks text-start'>
-                                        <div className="row g-2">
-                                            <div className='col-auto'>
-                                                <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                            </div>
-                                            <div className="col">
-                                                <div className='pb-1'>
-                                                    <span className='fw-600 descriptionFS'>Lorem Ipsum Dolor</span>
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="Homegate.ch" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
                                                 </div>
-                                                <div>
-                                                    <span>Lorem ipsum description</span>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Homegate</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                    </div>
+                                    </a>
                                 </div>
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="https://www.maklerkammer.ch/" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
+                                                </div>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Schweizer Verzeichnis für Immobilienmakler</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='pb-5'>
+                        <div className='pb-4 text-start'>
+                            <span className='finanuSubTitle fw-700 fs-3'>Entwicklung der Kauf- und Mietpreise</span>
+                        </div>
+                        <div>
+                            <div className="row g-3 text-start justify-content-start">
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/baupreise/baupreisindex.html" rel='noreferrer' className='text-decoration-none'>
+
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
+                                                </div>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Entwicklung vom Baukostenindex </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/mieten/index.html" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
+                                                </div>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Entwicklung vom Mietpreisindex</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
+                                                </div>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Entwicklung der Immobilienpreise</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="https://www.ubs.com/ch/de/private/mortgages/real-estate.html" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
+                                                </div>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Real Estate Bubble Index</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div className='pb-4 text-start'>
+                            <span className='finanuSubTitle fw-700 fs-3'>Rechtliches</span>
+                        </div>
+                        <div>
+                            <div className="row g-3 text-start justify-content-start">
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="https://www.ch.ch/de/steuern-und-finanzen/steuerarten/immobiliensteuer/" rel='noreferrer' className='text-decoration-none'>
+
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
+                                                </div>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Steuern beim Kauf und Verkauf</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <a href="https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html" rel='noreferrer' className='text-decoration-none'>
+                                        <div className='p-3 useFullLinks text-start'>
+                                            <div className="row g-2">
+                                                <div className='col-auto'>
+                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
+                                                </div>
+                                                <div className="col">
+                                                    <div className='pb-1'>
+                                                        <span className='fw-600 descriptionFS'>Bezug der beruflichen Vorsorge</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Lorem ipsum description</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
 

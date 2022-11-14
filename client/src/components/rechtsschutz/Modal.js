@@ -1,7 +1,7 @@
 import React from 'react'
 import XBtn from "../../assets/images/xButton.svg"
-import Step3First from '../../assets/images/rechtsschutzImgs/step3First.png'
-import femaleSvg from '../../assets/images/rechtsschutzImgs/femaleSvg.svg'
+import Male from '../../assets/images/rechtsschutzImgs/Male-01.svg'
+import Female from '../../assets/images/rechtsschutzImgs/Female-01.svg'
 
 function Modal(props) {
     return (
@@ -21,15 +21,15 @@ function Modal(props) {
                             <div className='pb-4'>
                                 <div className="row g-4">
                                     <div className="col-6 text-center">
-                                        <label htmlFor="female" className='containerRes2 w-100 h-100'>
-                                            <input type="radio" id='female' name='who3' hidden />
-                                            <div className='checkmarkRes2 checkmarkModalImgDiv'><img src={Step3First} className="img-fluid" alt="" /></div>
+                                        <label htmlFor="femaleModalRes" className='containerRes2 w-100 h-100'>
+                                            <input type="radio" id='femaleModalRes' name='who3' hidden />
+                                            <div className='checkmarkRes2 checkmarkModalImgDiv'><img src={Female} className="img-fluid" alt="" /></div>
                                         </label>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <label htmlFor="male" className='containerRes2 w-100 h-100'>
-                                            <input type="radio" id='male' name='who3' hidden />
-                                            <div className='checkmarkRes2 checkmarkModalImgDiv'><img src={femaleSvg} className="img-fluid" alt="" /></div>
+                                        <label htmlFor="maleModalRes" className='containerRes2 w-100 h-100'>
+                                            <input type="radio" id='maleModalRes' name='who3' hidden />
+                                            <div className='checkmarkRes2 checkmarkModalImgDiv'><img src={Male} className="img-fluid" alt="" /></div>
                                         </label>
                                     </div>
                                 </div>
