@@ -1,5 +1,12 @@
 import React from 'react'
-import BeatingHeart from '../../assets/images/beatingHeart.svg'
+import IconNr1 from '../../assets/images/rechtsschutzImgs/IconNr1.svg'
+import IconNr2 from '../../assets/images/rechtsschutzImgs/IconNr2.svg'
+import IconNr3 from '../../assets/images/rechtsschutzImgs/IconNr3.svg'
+import IconNr4 from '../../assets/images/rechtsschutzImgs/IconNr4.svg'
+import IconNr5 from '../../assets/images/rechtsschutzImgs/IconNr5.svg'
+import IconNr6 from '../../assets/images/rechtsschutzImgs/IconNr6.svg'
+import IconNr7 from '../../assets/images/rechtsschutzImgs/IconNr7.svg'
+import IconNr8 from '../../assets/images/rechtsschutzImgs/IconNr8.svg'
 
 
 function Privatenrechtsschutz() {
@@ -116,7 +123,7 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr1} alt="" />
                             </div>
                             <div >
                                 <span className='fw-500'>Beratung durch Juristen und Anwälte</span>
@@ -126,7 +133,7 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr2} alt="" />
                             </div>
                             <div >
                                 <span className='fw-500'>Übernahme von Anwaltskosten</span>
@@ -136,7 +143,7 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr3} alt="" />
                             </div>
                             <div >
                                 <span className='fw-500'>Bezahlung der Gerichtskosten</span>
@@ -146,7 +153,7 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr4} alt="" />
                             </div>
                             <div >
                                 <span className='fw-500'>Mediationskosten</span>
@@ -156,7 +163,8 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr5} alt="" />
+
                             </div>
                             <div >
                                 <span className='fw-500'>Übersetzungskosten</span>
@@ -166,7 +174,8 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr6} alt="" />
+
                             </div>
                             <div >
                                 <span className='fw-500'>Kostenübernahme von Gutachten</span>
@@ -176,7 +185,8 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr7} alt="" />
+
                             </div>
                             <div >
                                 <span className='fw-500'>Bezahlung der Prozessentschädigung an die Gegenseite</span>
@@ -186,7 +196,8 @@ function Privatenrechtsschutz() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100'>
                             <div className='pb-4'>
-                                <img src={BeatingHeart} alt="" />
+                                <img src={IconNr8} alt="" />
+
                             </div>
                             <div >
                                 <span className='fw-500'>Freie Anwaltswahl</span>
@@ -196,7 +207,7 @@ function Privatenrechtsschutz() {
                 </div>
                 <div className="">
                     <div className='pb-5'>
-                        <span style={{wordBreak: 'break-all'}} className='fw-700 firstBlueTitle fs-1'>Was gibt es für Rechtsschutzversicherungen</span>
+                        <span style={{ wordBreak: 'break-all' }} className='fw-700 firstBlueTitle fs-1'>Was gibt es für Rechtsschutzversicherungen</span>
                     </div>
                 </div>
             </div>

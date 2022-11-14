@@ -12,8 +12,8 @@ import Fitness from '../../assets/images/fitness.svg'
 import Abroad from '../../assets/images/abroad.svg'
 import Glasses from '../../assets/images/glasses.svg'
 import PhoneDoc from '../../assets/images/phoneDoc.svg'
-import Handshake from '../../assets/images/handshake.svg'
 import Economy from '../../assets/images/economy.svg'
+import Handshake from '../../assets/images/handshake.svg'
 import Kravata from '../../assets/images/kravata.svg'
 
 function KrankenCards(props) {
@@ -260,7 +260,7 @@ function KrankenCards(props) {
                             <div onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => { setIsHover(false) }} className={` ${isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
                                 <div className={`mb-5 ${isHover ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
-                                        <img src={Economy} width={200} height={120} alt="" />
+                                        <img src={Economy} height={200} width={'100%'} alt="" />
                                         <div className='pt-4'>
                                             <span className='cardTitle fs-5 fw-600'>ALLGEMEIN</span>
                                         </div>
@@ -314,7 +314,7 @@ function KrankenCards(props) {
                             <div className={` ${isHover1 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
                                 <div className={`mb-5 ${isHover1 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
-                                        <img src={Handshake} width={200} height={120} alt="" />
+                                        <img src={Handshake} height={200} width={'100%'} alt="" />
                                         <div className='pt-4'>
                                             <span className='cardTitle fs-5 fw-600'>HALBPRIVATE</span>
                                         </div>
@@ -387,7 +387,7 @@ function KrankenCards(props) {
                             <div className={` ${isHover2 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
                                 <div className={`mb-5 ${isHover2 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
-                                        <img src={Kravata} width={200} height={120} alt="" />
+                                        <img src={Kravata} height={200} width={'100%'} alt="" />
                                         <div className='pt-4'>
                                             <span className='cardTitle fs-5 fw-600'>PRIVATE</span>
                                         </div>
