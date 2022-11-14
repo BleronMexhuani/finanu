@@ -1,11 +1,25 @@
 import React from 'react'
-
+import { useState } from 'react'
+import Modal from './Modal'
 function BlueBackgroundSection() {
+    const [openModal, setopenModal] = useState(false)
+
+    const toggleModal = () => {
+        setopenModal(!openModal)
+        if (!openModal) {
+            document.body.style.overflowY = "hidden"
+        }
+        else {
+            document.body.style.overflowY = "auto"
+        }
+
+
+    }
     return (
         <div>
-            <div className='blueBgRechtssPriv py-5'>
-                <div className='pt-5 pb-5 mb-4'>
-                    <span style={{ color: '#fff' }} className='firstBlueTitle fw-700'>Die besten Angebote im Vergleich</span>
+            <div className='blueBgRechtssPriv'>
+                <div className='pb-5 mb-4'>
+                    <span style={{ wordBreak: 'break-all' }} className='firstBlueTitle fw-700'>Die besten Angebote im Vergleich</span>
                 </div>
                 <div className='container-xl px-4 px-xl-0'>
                     <div className="row g-5 justify-content-center">
@@ -14,7 +28,7 @@ function BlueBackgroundSection() {
                                 <div className='blueBgRecht py-1'>
                                     <span className='fw-700 fs-2'>Basler</span>
                                 </div>
-                                <div className='pt-5 text-start lh-1'>
+                                <div className='pt-5 text-start lh-1 fw-500'>
                                     <div>
                                         <span>ab CHF</span>
                                     </div>
@@ -161,7 +175,7 @@ function BlueBackgroundSection() {
                                         </div>
                                     </div>
                                     <div>
-                                        <button className='rechtssBtn py-3'>Offerte bestellen</button>
+                                        <button onClick={toggleModal} className='rechtssBtn py-3'>Offerte bestellen</button>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +185,7 @@ function BlueBackgroundSection() {
                                 <div className='blueBgRecht py-1'>
                                     <span className='fw-700 fs-2'>Zürich</span>
                                 </div>
-                                <div className='pt-5 text-start lh-1'>
+                                <div className='pt-5 text-start lh-1 fw-500'>
                                     <div>
                                         <span>ab CHF</span>
                                     </div>
@@ -318,7 +332,7 @@ function BlueBackgroundSection() {
                                         </div>
                                     </div>
                                     <div>
-                                        <button className='rechtssBtn py-3'>Offerte bestellen</button>
+                                        <button onClick={toggleModal} className='rechtssBtn py-3'>Offerte bestellen</button>
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +342,7 @@ function BlueBackgroundSection() {
                                 <div className='blueBgRecht py-1'>
                                     <span className='fw-700 fs-2'>Dextra</span>
                                 </div>
-                                <div className='pt-5 text-start lh-1'>
+                                <div className='pt-5 text-start lh-1 fw-500'>
                                     <div>
                                         <span>ab CHF</span>
                                     </div>
@@ -527,7 +541,7 @@ function BlueBackgroundSection() {
                                         </div>
                                     </div>
                                     <div>
-                                        <button className='rechtssBtn py-3'>Offerte bestellen</button>
+                                        <button onClick={toggleModal} className='rechtssBtn py-3'>Offerte bestellen</button>
                                     </div>
                                 </div>
                             </div>
@@ -535,6 +549,9 @@ function BlueBackgroundSection() {
                     </div>
                 </div>
             </div>
+            {openModal && (
+                <Modal setopenModal={toggleModal} />
+            )}
         </div>
     )
 }

@@ -4,9 +4,8 @@ import Step3First from '../../assets/images/rechtsschutzImgs/step3First.png'
 import femaleSvg from '../../assets/images/rechtsschutzImgs/femaleSvg.svg'
 
 function Modal(props) {
-    
     return (
-        <div>
+        <>
             <div className="hausratModal">
                 <div className="hausratModalContent p-4 p-md-5">
                     <div className="hausratModalScroll p-2">
@@ -14,40 +13,6 @@ function Modal(props) {
                             <span style={{ cursor: "pointer" }} onClick={() => { props.setopenModal(false) }}>
                                 <img src={XBtn} alt="" />
                             </span>
-                        </div>
-                        <div className="pb-4 pt-3 pt-md-0">
-                            <div className="row g-4 text-start">
-                                <div className="col-12 col-sm-6">
-                                    <div >
-                                        <div className='pb-2'>
-                                            <span className='fw-500'>Gesamtkaufpreis</span>
-                                        </div>
-                                        <div>
-                                            <input type="number" value={props.aparatament_price} disabled className='hausratModalInputs form-control' />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6">
-                                    <div >
-                                        <div className='pb-2'>
-                                            <span className='fw-500'>Jährliches Einkommen</span>
-                                        </div>
-                                        <div>
-                                            <input type="number" value={props.yearly_income} disabled className='hausratModalInputs form-control' />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-12">
-                                    <div >
-                                        <div className='pb-2'>
-                                            <span className='fw-500'>Eigenkapital</span>
-                                        </div>
-                                        <div>
-                                            <input type="number" value={props.capital} disabled className='hausratModalInputs form-control' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div className='text-start'>
                             <div className='pb-2'>
@@ -134,13 +99,13 @@ function Modal(props) {
                                 </div>
                             </div>
                             <div className='text-center'>
-                                <button style={{ background: '#34ACE3' }} type='button' onClick={() => { props.setopenModal(false) }} className='step3RechtssBtn'>Vergleich anfordern</button>
+                                <button style={{ background: '#34ACE3' }} type='button' onClick={() => { props.setopenModal(false) }} className='step3RechtssBtn'>Einreichen</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

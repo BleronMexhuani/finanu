@@ -33,7 +33,7 @@
 .greyBorderRightUber {
     border-right: 1px solid #DEDEDE;
 }
-.lightBlueBgUber .row .col-7.text-start {
+.lightBlueBgUber .row .col-6.text-start {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;  
@@ -43,8 +43,8 @@
     padding-bottom: 1rem; 
 }
 .lightBlueBgUber .row svg {
-    max-width: 26px;
-    max-height: 20px;
+    width: 26px;
+    height: 20px;
 }
 .lightBlueBgUber .row .col.col-md-4 {
     display: flex;

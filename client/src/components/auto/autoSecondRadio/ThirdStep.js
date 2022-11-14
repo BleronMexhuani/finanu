@@ -62,7 +62,7 @@ function ThirdStep(props) {
                     <div className="col-6 col-sm-auto">
                         <div>
                             <button className='nextBtnKranken' onClick={() => { props.setstep(props.step + 1) }}>
-                                Submit
+                            Berechnung
                             </button>
                         </div>
                     </div>

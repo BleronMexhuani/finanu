@@ -90,12 +90,10 @@ a {
 
 .blueBgKranken1 {
     background: url('../../assets/images/krankenBlueBg.svg') no-repeat;
-    height: 1500px;
     width: 100%;
     overflow: hidden !important;
     background-size: cover;
     background-position-x: -200px;
-    margin-top: -50px;
 }
 
 .blueBgKrankenOverflow {
@@ -132,20 +130,25 @@ a {
     font-weight: bold;
     color: #50B8E7;
 }
-
+.descriptionFS {
+    font-size: 18px;
+}
 .whiteCardKranken {
     border-radius: 12px;
     background-color: #fff;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
-    text-align: start;
+    text-align: center;
 }
-
+.whiteCardKranken img {
+    height: 95px;
+}
 .changeJustifyTablet {
     justify-content: space-between;
 }
 
 .zuzatImages img {
-    width: 230px;
+    height: 95px;
+    width: 100%;
 }
 
 .krankenSelectDropdown {
@@ -213,7 +216,17 @@ a {
 .container1 input:checked~.checkmark:after {
     display: block;
 }
-
+.checkmarkColorAuto {
+    border: 4px solid #fff;
+}
+.container1:hover input~.checkmarkColorAuto {
+    border: 4px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+.container1 input:checked~.checkmarkColorAuto {
+    border: 4px solid #2196F3;
+    transition: all 0.2s ease-in-out;
+}
 .nextBtnKranken {
     border: none;
     background-color: #50B8E7;
@@ -256,10 +269,9 @@ a {
 }
 
 .greyBorderDiv {
-    border: 1px solid rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(0, 0, 0, 0.24);
     border-radius: 18px;
     height: 100%;
-    font-size: 15px;
     transition: all 0.2s ease-in-out;
 
 }
@@ -377,7 +389,6 @@ a {
 
     .blueBgKranken1 {
         height: auto;
-        margin-top: 50px;
     }
 
     .krankenOfferStyle {

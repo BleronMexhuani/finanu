@@ -383,7 +383,7 @@ function KrankenkasseSteps() {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <div className='mx-4 mx-xl-0'>
+                <div className=''>
                     <div className='krankenFirstStep wrapDiv container-xl px-4 mx-auto py-5'>
                         <div>
                             <span className='krankenTitle fs-2'>KRANKENKASSEN VERGLEICHEN 2023</span>
@@ -416,15 +416,16 @@ function KrankenkasseSteps() {
                                 <div className="col-12 col-sm-6 col-md-4">
 
                                     <select className='krankenSelectStyle form-select' onChange={(e) => setInsuranceNum(e.target.value)} name="" id="insurances">
-                                        <option value="" ></option>
-                                        {
-
+                                    {(isEmpty) && (
+                                        <option value="-1">Sie müssen zuerst die Postleitzahl einfügen.</option>
+                                    )}
+                                        {(!isEmpty) && (
                                             insurances.map(element => {
                                                 i++
                                                 return (
                                                     <option key={i} value={element.number} >{element.name}</option>
                                                 )
-                                            })}
+                                            }))}
                                     </select>
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-4">

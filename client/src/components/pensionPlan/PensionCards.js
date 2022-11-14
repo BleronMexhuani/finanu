@@ -14,10 +14,49 @@ function PensionCards(props) {
     return (
         <>
             <div className='container-xl px-4 px-xl-0'>
+                <div className='bodyCounterPadding'>
+                    <div className='row g-4 text-start justify-content-between'>
+                        <div className="col-12 col-md-5 pb-4 pb-md-0">
+                            <div className=''>
+                                <span className='firstBlueTitle fw-700 fs-1' style={{ color: '#50B8E7' }}>WIESO VORSORGEN?</span>
+                            </div>
+                        </div>
+                        <div className="col col-md-7 my-auto">
+
+                            <div className='fw-500 fs-5 normalTextToWhite' >
+                                <span>
+                                    Im Laufe des Lebens erarbeiten sich viele Menschen einen bestimmten Lebensstandard.
+                                    Treten sie dann in den verdienten Ruhestand ein,
+                                    können sie diesen Standard jedoch nicht mehr halten,
+                                    weil die gesetzliche Rente sehr niedrig ausfällt.
+                                    Daher ist es wichtig, sich möglichst früh mit der eigenen Altersvorsorge zu befassen.
+                                    Wer in jungen Jahren mit dem Sparen für das Rentenalter beginnt,
+                                    kann die Altersarmut vermeiden und das Leben im Ruhestand in vollen Zügen genießen.
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="row gx-4 justify-content-between pt-5">
+                        <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
+                            <div className='pb-4'>
+                                <span className='fw-700 fs-1 '>Lorem Ipsum</span>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+                            <div className="">
+                                <div className='fw-500 fs-5 normalTextToWhite'>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sin</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <div className='pb-5'>
                     <span className='finanuSubTitle fw-bold' style={{ color: '#11A3E6' }}>BEZUGSMÖGLICHKEITEN</span>
                 </div>
-                <div className='pb-5 mb-5'>
+                <div className='pb-5'>
                     <div className="row g-4">
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
@@ -28,7 +67,7 @@ function PensionCards(props) {
                                     }
                                 </div>
                                 <div>
-                                    <span className='fw-500'>Self-occupied home</span>
+                                    <span className='fw-500'>Selbstbewohntes Eigenheim</span>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +80,7 @@ function PensionCards(props) {
                                     }
                                 </div>
                                 <div>
-                                    <span className='fw-500'>Self-employment</span>
+                                    <span className='fw-500'>Selbstständigkeit</span>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +93,7 @@ function PensionCards(props) {
                                     }
                                 </div>
                                 <div>
-                                    <span className='fw-500'>Emigration</span>
+                                    <span className='fw-500'>Auswandern</span>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +106,7 @@ function PensionCards(props) {
                                     }
                                 </div>
                                 <div>
-                                    <span className='fw-500'>IV at least 50%</span>
+                                    <span className='fw-500'>IV mindestens 50%</span>
                                 </div>
                             </div>
                         </div>
@@ -80,33 +119,13 @@ function PensionCards(props) {
                                     }
                                 </div>
                                 <div>
-                                    <span className='fw-500'>5 years before the pension</span>
+                                    <span className='fw-500'>5 Jahre vor der Pension</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='my-5 py-5'>
-                    <div className="row g-0 justify-content-center">
-                        <div className="col-12 col-md-6 col-lg-5 my-auto">
-                            <div className='pb-3 pb-md-0'>
-                                <span className='firstBlueTitle fw-bold' style={{ color: '#50B8E7' }}>WIESO<br></br> VORSORGEN?</span>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-6 col-lg-5">
-                            <div className='text-start'>
-                                <span className='normalTextToWhite' style={{ lineHeight: '29.28px' }}>Im Laufe des Lebens erarbeiten sich viele Menschen einen bestimmten Lebensstandard.
-                                    Treten sie dann in den verdienten Ruhestand ein,
-                                    können sie diesen Standard jedoch nicht mehr halten,
-                                    weil die gesetzliche Rente sehr niedrig ausfällt.
-                                    Daher ist es wichtig, sich möglichst früh mit der eigenen Altersvorsorge zu befassen.
-                                    Wer in jungen Jahren mit dem Sparen für das Rentenalter beginnt,
-                                    kann die Altersarmut vermeiden und das Leben im Ruhestand in vollen Zügen genießen.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </>
     )

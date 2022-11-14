@@ -9,8 +9,9 @@ function Auto() {
   return (
     <div>
       <AutoRadioBoxes />
-      <Tipps />
       <Funktionert />
+      <Tipps />
+
       <SliderHausrat />
     </div>
   )

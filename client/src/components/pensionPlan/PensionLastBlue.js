@@ -6,9 +6,9 @@ import Versicherung from '../../assets/images/pensionVersicherung.svg'
 function PensionLastBlue() {
     return (
         <div>
-            <div className="container-xl px-4 px-xl-0 py-5 mt-5">
+            <div className="container-xl px-4 px-xl-0 pb-5">
                 <div className="px-0 px-lg-5">
-                    <div className="blueBgDivPension px-4 px-md-5 pt-4 pt-md-5 pb-4 mx-0 mx-lg-5">
+                    <div className="blueBgDivPension px-3 px-md-5 pt-4 pt-md-5 pb-4 mx-0 mx-lg-5">
                         <div className="whiteBgInBluePension py-3 px-2">
                             <div className='text-center'>
                                 <span className='finanuSubTitle fw-bold' style={{ color: '#50B8E7' }}>Unterschiede in der Vorsorge 3A
@@ -18,7 +18,7 @@ function PensionLastBlue() {
                         <div className='pt-5'>
                             <div className="row g-0 gy-5 gy-lg-0 justify-content-center">
                                 <div className="col-12 col-md-4">
-                                    <div className="pensionBankBorderBottom">
+                                    <div className="pensionBankBorderBottom h-auto">
                                         <div>
                                             <img width={90} height={90} style={{ visibility: 'hidden' }} src={PensionBank} alt="" />
                                         </div>
@@ -43,8 +43,8 @@ function PensionLastBlue() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-4">
-                                    <div className="pensionBankBorderBottom">
+                                <div className="col-6 col-md-4">
+                                    <div className="pensionBankBorderBottom h-auto">
                                         <div>
                                             <img width={90} height={90} src={PensionBank} alt="" />
                                         </div>
@@ -64,13 +64,13 @@ function PensionLastBlue() {
                                         <div className='py-3 ps-2 pensionBankBorderBottom'>
                                             <span className='fw-600' style={{ color: '#fff' }}>Investment</span>
                                         </div>
-                                        <div className='py-0 py-md-3 ps-2'>
-                                            <span className='fw-600' style={{ color: '#fff', visibility: 'hidden' }}>sss</span>
+                                        <div className='py-3 ps-2'>
+                                            <span className='fw-600' style={{ color: '#fff'}}>-</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-4">
-                                    <div className="pensionBankBorderBottom">
+                                <div className="col-6 col-md-4">
+                                    <div className="pensionBankBorderBottom h-auto">
                                         <div>
                                             <img width={90} height={90} src={Versicherung} alt="" />
                                         </div>
@@ -91,7 +91,7 @@ function PensionLastBlue() {
                                             <span className='fw-600' style={{ color: '#fff' }}>Garantie + Investment</span>
                                         </div>
                                         <div className='py-3 ps-2'>
-                                            <span className='fw-600' style={{ color: '#fff' }}>Erwerbsunfähigkeitsrente<br></br>
+                                            <span className='fw-600' style={{ color: '#fff', wordBreak: 'break-all' }}>Erwerbsunfähigkeitsrente<br></br>
                                                 Prämienbefreiung<br></br>
                                                 Todesfall</span>
                                         </div>

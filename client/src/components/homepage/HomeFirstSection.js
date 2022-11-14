@@ -24,8 +24,8 @@ function HomeFirstSection(props) {
     return (
         <>
         <div className="blueBackgroundDiv">
-            <div className='cloudsBackground wrapDiv1'>
-                <div>
+            <div className='cloudsBackground'>
+                <div className='container-xl px-4 px-xl-0'>
                     <div className="row gx-4 gy-0 justify-content-center">
                         <div className="col-12 col-md-6 text-start my-auto">
                             <div className='pb-3'>
@@ -33,8 +33,7 @@ function HomeFirstSection(props) {
                             </div>
                             <div>
                                 <span className='finanuSubTitle' style={{ fontWeight: 500 }} >
-                                    Oder wünschen Sie lieber eine kostenlose Gesamtberatung von<br></br>
-                                    einem unserer Kundenberatern?
+                                    Oder wünschen Sie lieber eine kostenlose Gesamtberatung von einem unserer Kundenberatern?
                                 </span>
                             </div>
                         </div>
@@ -48,7 +47,7 @@ function HomeFirstSection(props) {
                     <div className="marginGutter pt-5">
                         <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 pb-5">
                             <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
+                                <div className="blueBgdiv p-5 h-100">
                                     <Link to='/finanzen/pensionsplanung-und-ruhestand'>
 
                                         <div className='pb-4'>
@@ -66,7 +65,7 @@ function HomeFirstSection(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
+                                <div className="blueBgdiv p-5 h-100">
                                     <Link to='/finanzen/haus-hypothek'>
 
                                         <div className='pb-4'>
@@ -85,7 +84,7 @@ function HomeFirstSection(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
+                                <div className="blueBgdiv p-5 h-100">
                                     <Link to="/versicherungen/auto-motorrad">
 
                                         <div className='pb-4'>
@@ -103,7 +102,7 @@ function HomeFirstSection(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
+                                <div className="blueBgdiv p-5 h-100">
                                     <Link to='/versicherungen/Krankenkasse'>
 
                                         <div className='pb-4'>
@@ -122,7 +121,7 @@ function HomeFirstSection(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
+                                <div className="blueBgdiv p-5 h-100">
                                     <Link to='/versicherungen/Rechtsschutz'>
 
                                         <div className='pb-4'>
@@ -140,7 +139,7 @@ function HomeFirstSection(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-4">
-                                <div className="blueBgdiv p-5">
+                                <div className="blueBgdiv p-5 h-100">
                                     <Link to='/finanzen/360'>
                                         <div className='pb-4'>
                                             {props.darkMode
@@ -158,7 +157,7 @@ function HomeFirstSection(props) {
                         </div>
                     </div>
                     <div className="row g-0 justify-content-center">
-                        <div className="col-12 col-md-7 pb-5">
+                        <div className="col-12 col-md-8 pb-5">
                             <div className='pt-5'>
                                 <img src={logo} width={250} alt="" />
                             </div>
@@ -166,7 +165,7 @@ function HomeFirstSection(props) {
                                 <span className='fs-4 firstBlueTitle' style={{ fontWeight: 700 }}>TRANSPARENT, SCHNELL, DIGITAL​</span>
                             </div>
                             <div className='pt-3'>
-                                <span className='normalTextToWhite finanuSubTitle' style={{ fontWeight: 500 }}>Was ist finanu?</span>
+                                <span className='normalTextToWhite finanuSubTitle fs-5' style={{ fontWeight: 700 }}>Was ist finanu?</span>
                             </div>
                             <div className='pt-3'>
                                 <span className='normalTextToWhite' style={{ fontWeight: 500 }}>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der
@@ -174,20 +173,20 @@ function HomeFirstSection(props) {
                                     zurechtzufinden und zu verstehen wofür Sie überhaupt zahlen.</span>
                             </div>
                             <div className='py-5'>
-                                <img src={stars} alt="" />
+                                <img className='img-fluid' src={stars} alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="px-4">
+            <div className="wrapDiv container-xl px-4 px-xl-0">
                 <Swiper
                     // slidesPerView={3}
                     spaceBetween={40}
                     freeMode={false}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 2000,
+                        delay: 4000,
                         disableOnInteraction: false,
                     }}
                     loop={true}
@@ -195,11 +194,11 @@ function HomeFirstSection(props) {
                     modules={[Autoplay, FreeMode]}
                     breakpoints={{
                         640: {
-                            slidesPerView: 1,
+                            slidesPerView: 1.5,
                             spaceBetween: 20,
                         },
                         768: {
-                            slidesPerView: 2,
+                            slidesPerView: 2.2,
                             spaceBetween: 40,
                         },
                         1024: {
