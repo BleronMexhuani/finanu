@@ -157,7 +157,7 @@ function Header(props) {
                                 <NavLink style={({ isActive }) => ({
                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                 })} to='/finanzen/360' className='buttonofmenutabs'>
-                                    <Button id="buttonofnavbar" variant="outline-danger">360° Budgetanalyse</Button>
+                                    <Button onClick={() =>{setToggleMenu(false)}} id="buttonofnavbar" variant="outline-danger">360° Budgetanalyse</Button>
                                 </NavLink>
 
                                 <div className='row gx-0 gy-4 navTabsRow' onClick={toggleNav}>
@@ -171,7 +171,7 @@ function Header(props) {
                                     <div className="col-12">
                                         <NavLink style={({ isActive }) => ({
                                             color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                        })} to='/versicherungen' id="linksss" onClick={(e) => { e.stopPropagation() }} className='text-decoration-none navLinks'>
+                                        })} to='/versicherungen' id="linksss" className='text-decoration-none navLinks'>
                                             Versicherungen
                                         </NavLink>
                                         {/* {isShown1 && ( */}

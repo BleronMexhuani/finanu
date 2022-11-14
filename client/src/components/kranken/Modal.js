@@ -1,6 +1,6 @@
 import React from 'react'
 import XBtn from "../../assets/images/xButton.svg"
-import Step3First from '../../assets/images/rechtsschutzImgs/step3First.png'
+
 
 function Modal(props) {
     return (
@@ -9,7 +9,7 @@ function Modal(props) {
                 <div className="hausratModalContent p-4 p-md-5 mx-4">
                     <div className="hausratModalScroll p-2">
                         <div className='modalXBtn'>
-                            <span style={{ cursor: "pointer" }} onClick={() => { props.setopenModal(false) }}>
+                            <span style={{ cursor: "pointer" }} onClick={props.toggleModal}>
                                 <img src={XBtn} alt="" />
                             </span>
                         </div>

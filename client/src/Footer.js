@@ -9,14 +9,16 @@ function Footer() {
                     <div className="row g-0 justify-content-center">
                         <div className="col-12 col-md text-start">
                             <div className='pb-2 pb-md-1'>
-                                <span className='fw-bold finanuSubTitle'>Holen Sie einen Kostenvoranschlag</span>
+                                <span className='fw-bold finanuSubTitle'>Vergleichen Sie jetzt all Ihre Versicherungen</span>
                             </div>
                             <div>
-                                <span style={{ fontWeight: 500 }}>Ein Angebot zu erhalten ist schnell und einfach. Entdecken Sie noch heute Ihre Funktionen.</span>
+                                <span style={{ fontWeight: 500 }}>Ein Vergleich zu erhalten geht schnell und einfach. Entdecken Sie noch heute Einsparmöglichkeiten!</span>
                             </div>
                         </div>
                         <div className="col-auto my-auto pt-3 pt-md-0">
-                            <button className='footerBtn px-5 py-2'>Siehe Schätzung</button>
+                            <Link to='/versicherungen/krankenkasse'>
+                                <button className='footerBtn px-5 py-2'>Jetzt Anfragen</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -56,32 +58,32 @@ function Footer() {
                                 <span style={{ fontWeight: 700 }} className="fs-5">Produkte</span>
                             </div>
                             <div className='pb-2'>
-                                <Link to='/pensionsplanung-und-ruhestand'>
+                                <Link to='/finanzen/pensionsplanung-und-ruhestand'>
                                     <span>Vorsorge</span>
                                 </Link>
                             </div>
                             <div className='pb-2'>
-                                <Link to='/haus-hypothek'>
+                                <Link to='/finanzen//haus-hypothek'>
                                     <span>Wohnen & Hypothek</span>
                                 </Link>
                             </div>
                             <div className='pb-2'>
-                                <Link to='/'>
+                                <Link to='/versicherungen/auto-motorrad'>
                                     <span>Auto & Mobilität</span>
                                 </Link>
                             </div>
                             <div className='pb-2'>
-                                <Link to='/Krankenkasse'>
+                                <Link to='/versicherungen/krankenkasse'>
                                     <span>Krankenkasse</span>
                                 </Link>
                             </div>
                             <div className='pb-2'>
-                                <Link to='/Rechtsschutz'>
+                                <Link to='/versicherungen/rechtsschutz'>
                                     <span>Rechtsschutz</span>
                                 </Link>
                             </div>
                             <div className='pb-2'>
-                                <Link to='/360'>
+                                <Link to='/finanzen/360'>
                                     <span>Budgetplanung</span>
                                 </Link>
                             </div>
@@ -117,10 +119,17 @@ function Footer() {
                                 <span style={{ fontWeight: 700 }} className="fs-5">Über uns</span>
                             </div>
                             <div className='pb-2'>
-                                <span>Philosophie</span>
+                                <Link to='/uber-uns'>
+
+                                    <span>Philosophie</span>
+                                </Link>
                             </div>
                             <div className='pb-2'>
-                                <span>Unsere Aufgabe</span>
+                                <Link to='/uber-uns'>
+
+                                    <span>Unsere Aufgabe</span>
+                                </Link>
+
                             </div>
                         </div>
                         <div className="col-6 col-md-3">

@@ -13,7 +13,8 @@ function PensionChart() {
     const [highRisk, setHighRisk] = useState([]);
     const [ageArray, setAgeArray] = useState([]);
     const [monthlyWage, setmonthyWage] = useState(0)
-
+    const [gender, setGender] = useState('male')
+    const [employment, setemployment] = useState('employed')
     useEffect(() => {
 
         const lowi = [];
@@ -25,7 +26,7 @@ function PensionChart() {
             mediumP = 7.5;
             lowP = 4.5;
         }
-        else if (risk == 2) { 
+        else if (risk == 2) {
             highP = 8.5;
             mediumP = 4.8;
             lowP = 1.2;
@@ -156,7 +157,7 @@ function PensionChart() {
                     for (let i = 0; i < x.length; i++) {
                         x[i].innerHTML = '';
                     }
-                    var seriesIndex = opts.seriesIndex;  
+                    var seriesIndex = opts.seriesIndex;
                     document.getElementsByClassName('apexcharts-tooltip').innerHTML = '<div class="arrow_box" id="tooltiparrowbox"><span class="alterNameeeee" style="text-align:center;">Mit der gewählten 3. Säule <br> können Sie mit bis zu <br><b> ' + (opts.w.globals.series[0][opts.w.globals.series[0].length - 1]).toLocaleString('it-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0, }) + '</b> <br> in Rente gehen!</span></div>';
                     return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + opts.w.config.series[seriesIndex].name + ' <br> <b>' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex].toLocaleString('it-CH', {
                         style: 'currency',
@@ -243,33 +244,33 @@ function PensionChart() {
     return (
         <div>
             <div className='container-xl px-4 px-xl-0'>
-
+                <div className='pb-4'>
+                    <span className='fw-700 fs-3'>Berechne jetzt deine 3. Säule</span>
+                </div>
                 <div className='pensionChartDiv p-4'>
-                    <div>
+                    <div className=''>
                         <div className="row g-4">
                             <div className="col-12 col-md-5 col-lg-4">
                                 <div className=' text-start'>
-                                    <div className='pb-5'>
-                                        <span className='finanuSubTitle'>Berechne jetzt deine 3. Säule</span>
-                                    </div>
+
                                     <div className="row g-4">
                                         <div className="col-12">
                                             <div className='pb-3'>
                                                 <span className='fw-600'>
-                                                    What is your gender?
+                                                    Geschlecht wählen?
                                                 </span>
                                             </div>
                                             <div>
                                                 <div className="row g-0">
                                                     <div className="col-6">
                                                         <label htmlFor="male">
-                                                            <input type="radio" checked id='male' name='gender' />
+                                                            <input type="radio" checked={(gender==='male') ? true : false} onChange={() => {setGender('male')}} id='male' name='gender' />
                                                             <span className='ps-2 fw-500'>Frau</span>
                                                         </label>
                                                     </div>
                                                     <div className="col-6">
                                                         <label htmlFor="female">
-                                                            <input type="radio" id='female' name='gender' />
+                                                            <input type="radio" checked={(gender==='female') ? true : false} onChange={() => {setGender('female')}} id='female' name='gender' />
                                                             <span className='ps-2 fw-500'>Herr</span>
                                                         </label>
                                                     </div>
@@ -335,13 +336,13 @@ function PensionChart() {
                                                 <div className="row g-0">
                                                     <div className="col-6">
                                                         <label htmlFor="Beschäftigt">
-                                                            <input type="radio" id='Beschäftigt' checked name='empolyment' />
+                                                            <input type="radio" checked={(employment==='employed') ? true : false} onChange={() => {setemployment('employed')}} id='Beschäftigt' name='empolyment' />
                                                             <span className='ps-2 fw-500'>Beschäftigt</span>
                                                         </label>
                                                     </div>
                                                     <div className="col-6">
                                                         <label htmlFor="Selbstständiger">
-                                                            <input  type="radio" id='Selbstständiger' name='empolyment' />
+                                                            <input type="radio" checked={(employment==='self') ? true : false} onChange={() => {setemployment('self')}} id='Selbstständiger' name='empolyment' />
                                                             <span className='ps-2 fw-500'>Selbstständiger</span>
                                                         </label>
                                                     </div>
@@ -374,7 +375,7 @@ function PensionChart() {
                                 <div className="positionAbsoluteToolTip">
                                     <div className='pensionChartDiv p-4'>
                                         <span className='fw-500'>
-                                            Mit der gewählten 3. Säule <br></br> können Sie mit bis zu <br></br><b><NumberFormat value={highRisk[highRisk.length-1]} displayType={'text'} thousandSeparator={true} /> CHF&nbsp;</b> <br></br> in Rente gehen!
+                                            Mit der gewählten 3. Säule <br></br> können Sie mit bis zu <br></br><b><NumberFormat value={highRisk[highRisk.length - 1]} displayType={'text'} thousandSeparator={true} /> CHF&nbsp;</b> <br></br> in Rente gehen!
                                         </span>
                                     </div>
                                 </div>

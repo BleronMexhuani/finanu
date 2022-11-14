@@ -42,8 +42,8 @@
 }
 
 .finanuSubTitle {
-    font-size: 18px !important;
-    color: #5a5a5a !important;
+    font-size: 22px !important;
+    color: #212529 !important;
     font-weight: 500;
 }
 
@@ -113,10 +113,10 @@
     color: #fff;
     background-color: #34ACE3;
     border: none;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0.5rem 2.5rem;
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .customSelectStyle::placeholder {
@@ -153,15 +153,22 @@
 .textStartToEnd {
     text-align: end;
 }
+
 .sideBlueBg {
     position: absolute;
-    
+
     right: 0;
     background: url('../images/sideBlueBg.svg') no-repeat;
     background-size: cover;
     height: 1600px;
     width: 500px;
 }
+
+.fourthSectionImgDiv {
+    border: 1px solid #50B8E7;
+    border-radius: 12px 12px 0px 0px;
+}
+
 @media (max-width: 1399.98px) {
     .wrapDiv {
         margin: 0px 6rem;
@@ -188,6 +195,7 @@
     .paddingTopDiv {
         padding-top: 9rem;
     }
+
     .firstBlueTitle {
         font-size: 40px;
     }
@@ -213,6 +221,7 @@
     .autoCheckbox {
         width: 100% !important;
     }
+    
 }
 
 @media (max-width: 767.98px) {
@@ -246,23 +255,14 @@
     .autoImage {
         width: 60%;
     }
+    .fourthSectionBlueDiv {
+        height: 220px;
+    }
 }
 
 @media (max-width: 575.98px) {
     .marginGutter {
         margin: 0px;
-    }
-
-    .fourthSectionBlueDiv {
-        margin-left: 0px !important;
-        border-radius: 12px !important;
-        margin-top: -20px;
-        z-index: 10;
-        padding: 2rem 2rem !important;
-    }
-
-    .fourthSectionImgDiv {
-        z-index: -1 !important;
     }
 
     .fourthSectionImg {
@@ -289,9 +289,11 @@
     .firstBlueTitle {
         font-size: 30px;
     }
-    .finanuSubTitle { 
-        font-size: 16px !important;
+
+    .finanuSubTitle {
+        font-size: 18px !important;
     }
+    
 }
 
 .darkTheme .cloudsBackground span {
@@ -329,4 +331,3 @@
     background: url('../../assets/images/bluebackgroundDark.svg') no-repeat;
     background-size: cover;
 }
-

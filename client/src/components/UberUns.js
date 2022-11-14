@@ -10,7 +10,7 @@ function UberUns() {
             <div className="row gx-4 gy-0 mb-5 pb-5">
                 <div className="col-12 col-md-6 col-xl-7 text-start">
                     <div className='pb-4'>
-                        <span className='fw-800 firstBlueTitle'>About us</span>
+                        <span className='fw-800 firstBlueTitle'>Über uns</span>
                     </div>
                     <div className='pb-3'>
                         <span className='fw-700 finanuSubTitle'>UNSERE AUFGABE</span>
@@ -20,7 +20,7 @@ function UberUns() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6 col-xl-5">
-                    <div className=''>
+                    <div className='pt-5 pt-md-0'>
                         <img src={Idea} alt="" />
                     </div>
                 </div>
@@ -28,14 +28,14 @@ function UberUns() {
 
 
             <div className="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 mx-auto bodyCounterPadding">
-                <div className="row g-4">
+                <div className="row g-4 justify-content-center">
                     <div className="col-12 col-sm-6 col-md-4">
                         <div className="whiteBgUber px-5 py-5 h-100">
                             <div>
                                 <img src={Muscle} alt="" />
                             </div>
                             <div className='pt-4'>
-                                <span className='fw-500 fs-5'>Independent</span>
+                                <span className='fw-500 fs-5'>Unabhängig</span>
                             </div>
                         </div>
                     </div>
@@ -73,30 +73,33 @@ function UberUns() {
 
                             </div>
                             <div className='pt-4'>
-                                <span className='fw-500 fs-5'>Sustainable</span>
+                                <span className='fw-500 fs-5'>Nachhaltig</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='row gx-4 gy-0 bodyCounterPadding'>
-                <div className="col-12 col-md-6 col-xl-5">
-                    <div className=''>
-                        <img src={Block} style={{ maxHeight: '300px' }} alt="" />
+            <div className='bodyCounterPadding hideOnMob'>
+                <div className='row gx-4 gy-0 '>
+                    <div className="col-12 col-md-6 col-xl-5">
+                        <div className='pb-5 pb-md-0'>
+                            <img src={Block} style={{ maxHeight: '300px' }} alt="" />
+                        </div>
                     </div>
-                </div>
-                <div className="col-12 col-md-6 col-xl-7 text-start">
-                    <div className='pb-3' style={{ wordBreak: 'break-all' }}>
-                        <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
-                    </div>
-                    <div className=''>
-                        <span className='normalTextToWhite'>Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit. Unsere Bewertungen erfolgen unabhängig von Dritten, unsere Beratung berücksichtigt Chancen und Risiken. Wir engagieren uns für unsere Kunden voll Leidenschaft und beraten kompetent und zuverlässig. </span>
+                    <div className="col-12 col-md-6 col-xl-7 text-start">
+                        <div className='pb-3' style={{ wordBreak: 'break-all' }}>
+                            <span className='fw-700 finanuSubTitle '>UNTERNEHMENSPHILOSOPHIE</span>
+                        </div>
+                        <div className=''>
+                            <span className='normalTextToWhite'>Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit. Unsere Bewertungen erfolgen unabhängig von Dritten, unsere Beratung berücksichtigt Chancen und Risiken. Wir engagieren uns für unsere Kunden voll Leidenschaft und beraten kompetent und zuverlässig. </span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className='px-0 px-md-4 px-lg-5'>
+
+            <div className='px-0 px-md-4 px-lg-5 hideOnMob'>
                 <div className="row g-0">
-                    <div className="col-7 col-md-4 ">
+                    <div className="col-6 col-md-4 ">
 
                     </div>
                     <div className="col col-md-4">
@@ -112,8 +115,8 @@ function UberUns() {
                 </div>
                 <div className="lightBlueBgUber">
                     <div className="row g-0">
-                        <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber ">
-                            <div>
+                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber ">
+                            <div className=''>
                                 <span className='fw-600'>Gesamtberatung</span>
                             </div>
                         </div>
@@ -128,7 +131,7 @@ function UberUns() {
                                 <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
-                        <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
                             <div>
                                 <span className='fw-600'>Ordnungssystem</span>
                             </div>
@@ -144,7 +147,7 @@ function UberUns() {
                                 <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
-                        <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
                             <div>
                                 <span className='fw-600'>Budget App</span>
                             </div>
@@ -160,7 +163,7 @@ function UberUns() {
                                 <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
-                        <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
                             <div>
                                 <span className='fw-600'>Jährliche Optimierung</span>
                             </div>
@@ -176,7 +179,7 @@ function UberUns() {
                                 <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
-                        <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
                             <div>
                                 <span className='fw-600'>Unabhangig</span>
                             </div>
@@ -192,7 +195,7 @@ function UberUns() {
                                 <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
-                        <div className="col-7 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
                             <div>
                                 <span className='fw-600'>Exklusivvertreter</span>
                             </div>
@@ -209,7 +212,7 @@ function UberUns() {
                                 <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
-                        <div className="col-7 col-md-4 text-start greyBorderRightUber">
+                        <div className="col-6 col-md-4 text-start greyBorderRightUber">
                             <div>
                                 <span className='fw-600'>Flexibilitat</span>
                             </div>

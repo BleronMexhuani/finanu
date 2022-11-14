@@ -231,6 +231,11 @@ a {
 .festhypothekImgs svg {
     max-width: 270px;
 }
+.useFullLinks {
+    background-color: #50B8E7;
+    color: #fff;
+    border-radius: 12px;
+}
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
@@ -266,9 +271,7 @@ a {
 
     }
 
-    .hausratBlueDiv {
-        margin-bottom: 6rem;
-    }
+   
 }
 
 .darkTheme .hausratFormInputs {

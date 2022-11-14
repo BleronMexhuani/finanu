@@ -82,6 +82,8 @@
     padding: 0.5rem;
     outline: none !important;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    -moz-box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    -webkit-box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
 }
 
 .step3InputRechtss::placeholder {
@@ -102,12 +104,18 @@
 .blueBgRechtss {
     background: url('../images/rechtsschutzImgs/blueBg.svg') no-repeat;
     background-size: cover;
+    height: 552px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position-y: 0px;
 }
 
 .whiteBgRecht {
     background-color: #fff;
     border-radius: 15px;
     position: relative;
+    border: 4px solid #50B8E7;
 }
 
 .blueBgRecht {
@@ -188,7 +196,7 @@ ol, ul {
 }
 
 .blueBgRechtssPriv {
-    background-color: #50B8E7;
+    background-color: #fff;
 }
 
 @media (max-width: 1399.98px) {}
@@ -291,10 +299,18 @@ ol, ul {
 .darkTheme .hausratBlueDiv {
     background-color: #333436;
 }
+
 .darkTheme .blueBgRechtss {
     background: url('../images/rechtsschutzImgs/blueBgDark.svg') no-repeat;
+    background-size: cover;
+    height: 552px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position-y: 0px;
 
 }
+
 .darkTheme .blueBgRechtssPriv {
     background-color: #333436;
 }

@@ -1,19 +1,24 @@
 import React from 'react'
 import Logo from '../../assets/images/versicherungen/swicaLogo.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import Accordion from 'react-bootstrap/Accordion';
 import Photo1 from '../../assets/images/versicherungen/swicaPic1.png'
 import Photo2 from '../../assets/images/versicherungen/swicaPic2.png'
 import Photo3 from '../../assets/images/versicherungen/swicaPic3.png'
 import Photo4 from '../../assets/images/versicherungen/swicaLaptop.png'
-
+import Video from '../../assets/images/versicherungen/swicaVid.mp4'
 function Swica() {
     return (
         <>
             <div className='pt-5 bodyCounterPadding'>
-                <div className='swicaBackground py-5'>
+                <div className='swicaBackground'>
+                    <div className='positionAbsoluteVid'>
+                        <video autoPlay muted loop>
+                            <source src={Video} type="video/mp4" />
+                        </video>
+                    </div>
                     <div className="swicaLogoDiv">
-                        <img src={Logo}  alt="" />
+                        <img src={Logo} alt="" />
                     </div>
                     <div className='container-xl px-4 px-xl-0 py-5 h-100'>
                         <div className="d-flex h-100 flex-column justify-content-between text-start">
@@ -35,7 +40,7 @@ function Swica() {
                                             </svg>
                                         </div>
                                         <div className="col">
-                                            <span className='fw-600 text-light'>Die Nr. 1 im Krankenkassenvergleich</span>
+                                            <span className='fw-500 text-light'>Die Nr. 1 im Krankenkassenvergleich</span>
                                         </div>
                                     </div>
                                 </div>
@@ -53,7 +58,7 @@ function Swica() {
                 <div className=''>
                     <div className='text-center pb-5'>
                         <div className='pb-2'>
-                            <span style={{ color: "#179F96" }} className='fs-3 fw-800'>SERVICES</span>
+                            <span style={{ color: "#179F96" }} className='fs-3 fw-800'>Unser Angebot</span>
                         </div>
                         <div>
                             <span className='fw-800 normalTextToWhite'>
@@ -79,7 +84,7 @@ function Swica() {
 
                             </div>
                             <div className="col-12 col-sm-6 col-md-3">
-                                {/* <a rel="noreferrer" className='text-decoration-none text-dark' target='_blank' href='https://www.sympany.ch/de/privatkunden/wissenswertes/einmaleins/bezahlen-einsenden.html'> */}
+                                {/* <Link rel="noreferrer" className='text-decoration-none text-dark' target='_blank' href='https://www.sympany.ch/de/privatkunden/wissenswertes/einmaleins/bezahlen-einsenden.html'> */}
                                 <div className='servicesBorderDivSwica p-4 p-lg-5'>
                                     <div className="pb-4">
                                         <svg width="35" height="48" viewBox="0 0 35 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,10 +96,10 @@ function Swica() {
                                         <span className='fw-800 '>Rechnungen einreichen</span>
                                     </div>
                                 </div>
-                                {/* </a> */}
+                                {/* </Link> */}
                             </div>
                             <div className="col-12 col-sm-6 col-md-3">
-                                {/* <a rel="noreferrer" className='text-decoration-none text-dark' target='_blank' href='https://www.sympany.ch/de/privatkunden/wissenswertes/einmaleins/bezahlen-einsenden.html'> */}
+                                {/* <Link rel="noreferrer" className='text-decoration-none text-dark' target='_blank' href='https://www.sympany.ch/de/privatkunden/wissenswertes/einmaleins/bezahlen-einsenden.html'> */}
 
                                 <div className='servicesBorderDivSwica p-4 p-lg-5'>
                                     <div className="pb-4">
@@ -109,105 +114,243 @@ function Swica() {
                                         <span className='fw-800 '>Adresse ändern</span>
                                     </div>
                                 </div>
-                                {/* </a> */}
+                                {/* </Link> */}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
+            {/* <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
                 <div className="pb-4">
                     <span className='finanuSubTitle fw-800'>Swica Grundversicherung
                     </span>
                 </div>
                 <div className='pb-3'>
-                    <span className='fw-600 normalTextToWhite'>
+                    <span className='fw-500 normalTextToWhite'>
                         In der obligatorischen Grundversicherung bietet Swica die klassischen Modelle bezüglich der Arztwahl an. Folgende Tarife stehen zur Auswahl:
 
                     </span>
                 </div>
-                <div className='fw-600 normalTextToWhite'>
+                <div className='fw-500 normalTextToWhite'>
                     <div>
+                        <span className='fw-700'>
+                            Standard/Sana:
+                        </span>
                         <span>
-                            {'>'} 	Standard/Sana: Freie Arztwahl
+                            Freie Arztwahl
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Casa/Medicasa:
+                        </span>
                         <span>
-                            {'>'} 	Casa/Medicasa: Ersteinschätzung durch Hausarzt; bis 16,5 % Rabatt
+                            Ersteinschätzung durch Hausarzt; bis 16,5 % Rabatt
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Medica:
+                        </span>
                         <span>
-                            {'>'} 	Medica: Freie Arztwahl aus Ärzteliste; bis zu 13 % Rabatt
+                            Freie Arztwahl aus Ärzteliste; bis zu 13 % Rabatt
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Medpharm:
+                        </span>
                         <span>
-                            {'>'} 	Medpharm: Ersteinschätzung durch Swica Partnerapotheke oder Videosprechstunde; bis zu 23,5 % Rabatt
+                            Ersteinschätzung durch Swica Partnerapotheke oder Videosprechstunde; bis zu 23,5 % Rabatt
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Multichoice:
+                        </span>
                         <span>
-                            {'>'} 	Multichoice: Ersteinschätzung durch Swica Partnerapotheke, Videosprechstunde oder App; bis zu 20 % Rabatt
+                            Ersteinschätzung durch Swica Partnerapotheke, Videosprechstunde oder App; bis zu 20 % Rabatt
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Sante/HMO:
+                        </span>
                         <span>
-                            {'>'} 	Sante/HMO: Ersteinschätzung durch Swica-Partnerpraxis; bis 22,5 % Rabatt
+                            Ersteinschätzung durch Swica-Partnerpraxis; bis 22,5 % Rabatt
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Telmed:
+                        </span>
                         <span>
-                            {'>'} 	Telmed: Ersteinschätzung durch Videosprechstunde; bis 11 % Rabatt
+                            Ersteinschätzung durch Videosprechstunde; bis 11 % Rabatt
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
+                <div className='pb-4 text-center px-0 px-lg-5'>
+                    <div className='pb-3'>
+                        <span className='firstBlueTitle normalTextToWhite'>Attraktive Modelle der Grund­versicherung</span>
+                    </div>
+                    <div className=''>
+                        <span>Die obligatorische Krankenversicherung deckt die grundlegenden Bedürfnisse bei Krankheit, Unfall und Mutterschaft ab. Mit den sechs alternativen Versicherungsmodellen von SWICA und PROVITA profitieren Sie vom besten Preis-Leistungs-Verhältnis und sparen bis zu mehreren hundert Franken pro Jahr. Der einzige Unterschied zur klassischen Grundversicherung «STANDARD» liegt in der Wahl der Anlaufstelle. Der Leistungsumfang bleibt identisch.</span>
+                    </div>
+                </div>
+
+                <div className="swc-text has-text-left swc-text--has-background">
+                    <p className='finanuSubTitle fw-800'>Modelle der Grundversicherung von SWICA und PROVITA</p>
+                    <ul className="arrow swicaUl">
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>CASA / MEDICASA:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>Ihr Hausarzt als erste Anlaufstelle
+
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>MEDICA:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>Freie Wahl aus der Ärzteliste
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>MEDPHARM:</Link>&nbsp;SWICA-Partnerapotheken oder santé24 für eine Ersteinschätzung
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>MULTICHOICE:</Link> BENECURA-App, santé24 oder SWICA-Partnerapotheke für Erstkontakt
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>SANTE / HMO:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>SWICA-Partnerpraxen als erste Anlaufstelle
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>TELMED:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>Telemedizinische Beratung durch santé24 für eine Ersteinschätzung
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>STANDARD / SANA:</Link> Freie Arztwahl
+                        </li>
+                    </ul>
+                    <br></br>
+                    <p className='finanuSubTitle fw-800'>Kostenlose Vorteile für alle SWICA-Versicherten</p>
+                    <ul className="arrow swicaUl">
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>Alle SWICA-Versicherten profitieren kostenlos von folgenden Services</Link>
+                        </li>
+                    </ul>
+                    <br></br>
+                    <Link to='/versicherungen/krankenkasse' className="rte-button">Jetzt Prämie berechnen</Link>
+
+                </div>
+            </div>
+
+            {/* <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
                 <div className="pb-4">
                     <span className='finanuSubTitle fw-800'>Swica Zusatzversicherung
                     </span>
                 </div>
                 <div className='pb-3'>
-                    <span className='fw-600 normalTextToWhite'>
+                    <span className='fw-500 normalTextToWhite'>
                         Für den individuellen Versicherungsschutz können weitere Zusatzversicherungen abgeschlossen werden. Die folgenden Produkte werden angeboten:
                     </span>
                 </div>
-                <div className='fw-600 normalTextToWhite'>
+                <div className='fw-500 normalTextToWhite'>
                     <div>
+                        <span className='fw-700'>
+                            Hospita:
+                        </span>
                         <span>
-                            {'>'} 	Hospita: Spitalversicherung in verschiedenen Abstufungen
+
+                            Spitalversicherung in verschiedenen Abstufungen
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Completa Top:
+                        </span>
                         <span>
-                            {'>'} 	Completa Top: Ambulante Ergänzungen, beispielsweise Komplementärmedizin
+                            Ambulante Ergänzungen, beispielsweise Komplementärmedizin
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Completa Praeventa:
+                        </span>
                         <span>
-                            {'>'} 	Completa Praeventa: Ambulante Präventionsmassnahmen wie Sportkurse oder Impfungen
+                            Ambulante Präventionsmassnahmen wie Sportkurse oder Impfungen
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Supplementa:
+                        </span>
                         <span>
-                            {'>'} 	Supplementa: Zusatzversicherung für Brillen und Kontaktlinsen
+                            Zusatzversicherung für Brillen und Kontaktlinsen
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Optima:
+                        </span>
                         <span>
-                            {'>'} 	Optima: All-Inclusive-Paket mit Höchstsätzen
+                            All-Inclusive-Paket mit Höchstsätzen
                         </span>
                     </div>
                     <div>
+                        <span className='fw-700'>
+                            Denta:
+                        </span>
                         <span>
-                            {'>'} 	Denta: Zahnzusatzversicherung mit verschiedenen Deckungen
+                            Zahnzusatzversicherung mit verschiedenen Deckungen
                         </span>
                     </div>
 
                 </div>
+            </div> */}
+            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
+                <div className='pb-4 text-center px-0 px-lg-5'>
+                    <div className='pb-3'>
+                        <span className='firstBlueTitle normalTextToWhite'>Flexibel und leistungsstark – die Zusatzversiche­rungen von SWICA</span>
+                    </div>
+                    <div className=''>
+                        <span>Alternativmedizin, Fitness, Impfungen, Zähne, Brillen und vieles mehr: Mit den Zusatzversicherungen von SWICA ergänzen Sie Ihre Versicherung nach Ihren individuellen Bedürfnissen und erhalten attraktive Beiträge an Gesundheitsförderungs- und Präventions-Massnahmen.</span>
+                    </div>
+                </div>
+                <div className="swc-text has-text-left swc-text--has-background">
+                    <p className='finanuSubTitle fw-800'>Unsere bedürfnisorientierten Zusatzversicherungen</p>
+                    <ul className="arrow swicaUl">
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>HOSPITA:</Link>&nbsp;Die umfassende Spitalversicherung mit hoher Flexibiliät von halbprivat bis privat weltweit
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>COMPLETA TOP:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>Schliesst die Lücken zur obligatorischen Grundversicherung
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>COMPLETA PRAEVENTA:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>Bietet attraktive Beiträge an Ihre Gesundheitsförderung
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>SUPPLEMENTA:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>Sie profitieren von grosszügigen Beiträgen für Brillen und Kontaktlinsen
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>OPTIMA:</Link>&nbsp;Maximale Beiträge an Sehhilfen, Gesundheitsförderung und Auslandsbehandlungen
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>Zahnversicherung DENTA:</Link><strong>
+                                <Link to='/versicherungen/krankenkasse'></Link>&nbsp;</strong>Bietet attraktive Beiträge an Zahnbehandlungen und Dentalhygiene
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>Unfallversicherung INFORTUNA:</Link> Ihre weltweite Privatpatientenversicherung bei Unfall
+                        </li>
+                        <li>
+                            <Link to='/versicherungen/krankenkasse'>Exklusive SWICA-Services bei den Zusatzversicherungen</Link>
+                        </li>
+                    </ul> <br></br>
+                    <Link to='/versicherungen/krankenkasse' className="rte-button">Jetzt Prämie berechnen</Link>
+                </div>
             </div>
+
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
                 <div className="pb-4">
                     <span className='finanuSubTitle fw-800'>Besondere Leistungen
@@ -216,32 +359,32 @@ function Swica() {
                 <div>
 
                     <div className="pb-3">
-                        <span className='fw-600 normalTextToWhite'>
+                        <span className='fw-500 normalTextToWhite'>
                             Swica zeichnet sich durch besonders kundenfreundliche Arbeitszeiten aus. So ist eine Beratung unter der Woche bis 21.30 Uhr möglich, für Versicherte stehen Experten rund um die Uhr zur Verfügung. Neben der erstklassigen medizinischen Versorgung locken Challenges in der App der Versicherungsgesellschaft. Dabei wird ein gesunder Lebensstil mit Auszeichnungen belohnt, die in Prämienrabatte oder Angebote umgewandelt werden können.
                         </span>
                     </div>
                     <div className="pb-3">
-                        <span className='fw-600 normalTextToWhite'>
+                        <span className='fw-500 normalTextToWhite'>
                             Sie interessieren sich für eine Versicherung bei der Swica? Dann lassen Sie uns jetzt Ihr unverbindliches Angebot berechnen!
                         </span>
                     </div>
 
                 </div>
             </div>
-            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
+            {/* <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
                 <div className='col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto'>
                     <div className="pb-4">
                         <span className='normalTextToWhite fw-800 firstBlueTitle'>SWICA benefits for corporate customers
                         </span>
                     </div>
                     <div className='pb-3'>
-                        <span className='fw-600 normalTextToWhite'>
+                        <span className='fw-500 normalTextToWhite'>
                             Whether Comparis, K-Tipp, bonus.ch or AmPuls - SWICA receives the best marks among the major Swiss health insurance companies in terms of customer satisfaction.
                             Put your trust in SWICA and benefit from the exclusive advantages.
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
                 <Accordion defaultActiveKey="0" className='borderTopAcc'>
                     <Accordion.Item eventKey="0" className='swicaAccItem'>
@@ -255,7 +398,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>Persönlicher Kundenservice rund um die Uhr</span>
+                                        <span className='benefitsSpan fw-500'>Persönlicher Kundenservice rund um die Uhr</span>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +423,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>Kostenlose telemedizinische Beratung 7x24</span>
+                                        <span className='benefitsSpan fw-500'>Kostenlose telemedizinische Beratung 7x24</span>
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +448,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>
+                                        <span className='benefitsSpan fw-500'>
                                             Erstklassige medizinische Versorgung</span>
                                     </div>
                                 </div>
@@ -330,7 +473,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>
+                                        <span className='benefitsSpan fw-500'>
                                             Gleichstellung von Schul- und Komplementärmedizin
                                         </span>
                                     </div>
@@ -365,7 +508,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>
+                                        <span className='benefitsSpan fw-500'>
                                             Beiträge an über 100 Angebote für Gesundheitsförderung und Prävention
                                         </span>
                                     </div>
@@ -393,7 +536,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>
+                                        <span className='benefitsSpan fw-500'>
                                             Persönliche Unterstützung bei Krankheit oder Unfall
                                         </span>
                                     </div>
@@ -429,7 +572,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>
+                                        <span className='benefitsSpan fw-500'>
                                             Tiefere Kostenbeteiligung
                                         </span>
                                     </div>
@@ -458,7 +601,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>
+                                        <span className='benefitsSpan fw-500'>
                                             Abschlussaltertarif bleibt lebenslang unverändert
                                         </span>
                                     </div>
@@ -487,7 +630,7 @@ function Swica() {
                                 </div>
                                 <div className="col">
                                     <div>
-                                        <span className='benefitsSpan fw-600'>
+                                        <span className='benefitsSpan fw-500'>
                                             BENEVITA: Digitaler Gesundheitscoach mit Bonusprogramm
                                         </span>
                                     </div>
@@ -510,8 +653,8 @@ function Swica() {
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
                 <div className='col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto'>
                     <div className="">
-                        <span style={{ lineHeight: '41px' }} className='normalTextToWhite fw-800 firstBlueTitle'>
-                            SWICA – awarded several times for the best customer service
+                        <span style={{ lineHeight: '41px' }} className='normalTextToWhite fw-800 fs-3'>
+                            Swica wurde von diversen unabhängigen Testerorganisationen wie dem K-tipp, amPuls und Comparis für deren Kundenservice in höchsten Tönen gelobt.
                         </span>
                     </div>
                 </div>

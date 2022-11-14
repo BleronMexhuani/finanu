@@ -75,6 +75,10 @@ a {
 
 .pensionBankBorderBottom {
     border-bottom: 1px solid #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .apexcharts-xaxistooltip {
@@ -108,7 +112,7 @@ a {
 
 .positionAbsoluteToolTip {
     position: absolute;
-    top: -2rem;
+    top: 0.5rem;
 }
 
 @media (max-width: 1399.98px) {}
@@ -135,6 +139,9 @@ a {
         justify-content: start !important;
     }
     .positionAbsoluteToolTip {
+        display: none;
+    }
+    .hideOnMob {
         display: none;
     }
 }

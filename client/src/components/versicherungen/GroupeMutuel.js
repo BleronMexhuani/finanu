@@ -94,9 +94,9 @@ function GroupeMutuel() {
                                 <div className=' p-4 p-lg-5'>
                                     <div className="pb-4">
                                         <svg width="33" height="48" viewBox="0 0 33 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M16 37V52" stroke="#E5AB3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M16.5 31C25.0604 31 32 24.2843 32 16C32 7.71573 25.0604 1 16.5 1C7.93959 1 1 7.71573 1 16C1 24.2843 7.93959 31 16.5 31Z" fill="#E5AB3B" stroke="#E5AB3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M5 15C5 11.1715 7.2 3.84271 16 5.15534" stroke="#F4F4F4" stroke-linecap="round" />
+                                            <path d="M16 37V52" stroke="#E5AB3B" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M16.5 31C25.0604 31 32 24.2843 32 16C32 7.71573 25.0604 1 16.5 1C7.93959 1 1 7.71573 1 16C1 24.2843 7.93959 31 16.5 31Z" fill="#E5AB3B" stroke="#E5AB3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M5 15C5 11.1715 7.2 3.84271 16 5.15534" stroke="#F4F4F4" strokeLinecap="round" />
                                         </svg>
 
 
@@ -223,7 +223,7 @@ function GroupeMutuel() {
                     </div>
                 </div>
             </div>
-            <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
+            {/* <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
                 <div className='col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto'>
                     <div className="">
                         <span style={{ lineHeight: '41px' }} className='normalTextToWhite fw-800 firstBlueTitle'>
@@ -232,7 +232,7 @@ function GroupeMutuel() {
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
                 <div className="row g-0 justify-content-center">
                     <div className="col-auto">
