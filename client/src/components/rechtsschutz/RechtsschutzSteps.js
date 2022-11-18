@@ -29,7 +29,6 @@ function RechtsschutzSteps() {
     const [strasse, setStrasse] = useState('');
     const [reschtutz, setReschutz] = useState('einzelpersonen');
     const [res2, setRes2] = useState('tiefe kosten');
-    const [type, settype] = useState('text')
 
     const handleSubmit = async () => {
         const data = {
@@ -41,14 +40,14 @@ function RechtsschutzSteps() {
     return (
         <>
                 <div className='container-xl px-4 px-xl-0 bodyCounterPadding'>
-                    <div className="row justify-content-center gx-0 gx-md-4 bodyCounterPadding">
+                    <div className="row justify-content-center gx-0 gx-lg-4 bodyCounterPadding">
 
-                        <div className="col-12 col-md-auto col-lg-5 ps-0 my-auto">
+                        <div className="col-12 col-md-auto col-lg-5 my-auto">
                             <div className='pb-4 text-start'>
                                 <span className='fw-700 fs-3 normalTextToBlue'>Jetzt passende<br></br>
                                 <span style={{wordBreak: 'break-all'}}>Rechtsschutzversicherung</span> finden!</span>
                             </div>
-                            <div className="pe-0 pe-md-4">
+                            <div className="pe-0 pe-lg-4">
                                 <div>
                                     <svg className='img-fluid' width="285" height="183" viewBox="0 0 285 183" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M59.4931 101.498L61.9999 97.5002C71.4999 99.5002 95.9999 95.5002 112.5 91.5002C125.7 88.3002 143.333 104.167 150.5 112.5C156.667 103.167 177.4 86.8 211 96C224.2 99.2 232.167 99 234.5 98.5C234.808 99.2936 235.134 100.128 235.479 101C242.596 119.014 257.224 152.676 266 161C240 162 229 147 204.5 147.5C193.833 147 169.7 149.2 158.5 162C154.9 165.2 151.667 169.333 151 171C148 163.5 138.5 160 130 154C121.5 147.999 80.9999 136 53.4999 150C31.4999 161.2 25.3332 159 24.9999 156.5L59.4931 101.498Z" fill="white" />
@@ -63,12 +62,10 @@ function RechtsschutzSteps() {
                                         <path d="M241 102.5C242 102.166 244.3 102 245.5 104" stroke="#5A5A5A" />
                                         <path d="M46.6928 110.469C46.6928 107.284 44.0149 108.147 42.676 108.976C29.6215 129.543 3.76746 171.995 1.75907 174.782C0.959635 175.891 0.611004 176.879 0.523182 177.709C0.340383 179.436 2.23647 180.182 3.96848 180.055C36.3713 177.668 99.7028 173.369 126.482 172.844C129.609 172.783 132.615 173.893 135.208 175.64C151.587 186.677 159.234 180.096 160.166 179.633C161.037 179.202 163.876 177.683 166.966 175.777C169.948 173.937 173.365 172.838 176.868 172.923L268.075 175.149C271.615 175.236 275.139 175.781 278.68 175.822C282.216 175.862 284.948 175.073 284.439 172.791C282.753 165.233 250.296 105.617 249.794 104.622C249.292 103.627 245.777 103.627 246.28 106.115C246.782 112.583 271.5 163 278.916 172.791C264.857 169.308 177.74 169.184 171.467 169.184C165.854 169.184 160.668 174.657 156.15 177.145C152.535 179.136 145.86 176.938 142.848 175.279C136.055 171.24 128.452 168.855 120.549 168.847C95.7627 168.821 38.4158 172.787 6.78003 175.279C18.9977 156.039 43.4794 115.644 46.6928 110.469Z" fill="#50B8E7" stroke="#5A5A5A" />
                                     </svg>
-
                                 </div>
-
                             </div>
-                            <div className='pt-4 text-end'>
-                                <img style={{ maxWidth: 150 }} src={Arrow} alt="" />
+                            <div className='pt-4 text-end '>
+                                <img className='arrowDivRech' style={{ maxWidth: 150 }} src={Arrow} alt="" />
                             </div>
                         </div>
                         <div className="col-12 col-md-7">
@@ -271,7 +268,7 @@ function RechtsschutzSteps() {
                                                         </div> */}
                                                             <div className="">
 
-                                                                <input className='step3InputRechtss' onChange={e => setGeburstadum(e.target.value)} type={type} onFocus={() => { settype('date') }} onBlur={() => { settype('text') }} name="" placeholder='Geburtsdatum' id="" />
+                                                                <input className='step3InputRechtss form-control' type={'date'} name="" placeholder='Geburtsdatum' id="" />
 
                                                             </div>
                                                         </div>
@@ -280,7 +277,7 @@ function RechtsschutzSteps() {
                                                             <span className='fw-700'>Telefonnummer</span>
                                                         </div> */}
                                                             <div className="">
-                                                                <input className='step3InputRechtss' onChange={e => setTelefonnumer(e.target.value)} type="text" name="" placeholder='Telefonnummer' id="" />
+                                                                <input className='step3InputRechtss' onChange={e => setTelefonnumer(e.target.value)} type="tel" name="" placeholder='Telefonnummer' id="" />
                                                             </div>
                                                         </div>
                                                     </div>

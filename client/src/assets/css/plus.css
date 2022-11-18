@@ -1,0 +1,197 @@
+.blueBg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.plusTitle {
+    font-size: 70px;
+    line-height: 106px;
+}
+
+.secondaryColor {
+    color: #5a5a5a;
+}
+
+.plusBtn {
+    background: #50B8E7;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    padding: 15px 0px;
+}
+
+.plusForm {
+    background: #50B8E7;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 630px;
+    position: relative;
+    height: 750px;
+}
+
+.plusFormTitle {
+    line-height: 142.9%;
+    color: rgba(255, 255, 255, 0.54);
+}
+
+.plusInput {
+    border: 1px solid #D5D5D5 !important;
+    border-radius: 11px !important;
+    width: 100%;
+    background-color: transparent !important;
+    color: #fff !important;
+    font-size: 18px !important;
+}
+
+.plusInput::placeholder {
+    color: rgba(255, 255, 255, 0.54) !important;
+    font-weight: 500 !important;
+}
+
+.plusInput {
+    color: rgba(255, 255, 255, 0.54) !important;
+    font-weight: 500 !important;
+}
+
+.plusSelectArrow {
+    background-image: url('../images/plus/selectArrow.svg') !important;
+    background-position: right 1rem center !important;
+    background-size: 20px 15px !important;
+}
+
+.formIluDiv {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.plusFormBtnDiv {
+    position: absolute;
+    right: 0rem;
+    top: 5rem;
+}
+
+.finanuWhiteBtn {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #50B8E7;
+    border: none;
+}
+
+.darkTheme .secondaryColor {
+    color: #fff;
+}
+
+.plusSliderBackground {
+    background: rgba(190, 232, 255, 0.5);
+    border-radius: 25px;
+    padding: 200px 3rem;
+}
+
+.sliderTabs {
+    position: absolute;
+    top: 0;
+
+}
+
+.plusSliderButton {
+    box-shadow: inset 0 0 0 0 #50B8E7;
+    width: 150px;
+    border-radius: 8px 0px 0px 8px;
+    padding: 0.25rem 0rem;
+    cursor: pointer;
+}
+
+.sliderBtnEffect {
+    -webkit-transition: ease-out 5s;
+    -moz-transition: ease-out 5s;
+    transition: ease-out 5s;
+    box-shadow: inset 150px 0 0 0 #50B8E7;
+    border-radius: 8px;
+    cursor: unset;
+
+}
+
+.plusReviewsDiv {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(162, 162, 162, 0.27);
+    border-radius: 25px;
+}
+
+.plusLink {
+    color: #50B8E7;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.plusCoverDiv {
+    background: #E3F3FF;
+    border-radius: 8px;
+}
+
+.ltBlueSection {
+    background: #E7F5FC;
+    border-radius: 27px;
+}
+.topBottomBordersDiv {
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+
+}
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .plusForm {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .plusSliderBackground {
+        background: rgba(190, 232, 255, 0.5);
+        border-radius: 25px;
+        padding: 100px 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .formIluDiv {
+        max-width: 300px;
+    }
+
+    .plusForm {
+        height: 670px;
+        border-radius: 25px;
+    }
+
+    .blueBg {
+        position: relative;
+        background-color: #E5F6FF;
+    }
+
+    .plusSliderBackground {
+        background: rgba(190, 232, 255, 0.5);
+        border-radius: 25px;
+        padding: 3rem 1.5rem;
+    }
+
+    .plusTitle {
+        font-size: 35px;
+    }
+
+    .plusLink {
+        font-size: 14px;
+    }
+
+    .plusBtn {
+        font-size: 14px;
+
+    }
+}

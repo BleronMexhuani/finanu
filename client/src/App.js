@@ -26,6 +26,7 @@ import WLinksTwo from "./components/wettbewerbe/WLinksTwo";
 import WettPhoto2 from "./assets/images/europapark.jpg";
 import WLinksThree from "./components/wettbewerbe/WLinksThree";
 import WettPhoto3 from "./assets/images/oldcity.jpg";
+import Plus from "./components/Plus";
 
 
 function App() {
@@ -54,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <>
         <BrowserRouter>
           <ScrollTop>
             <Header darkMode={darkMode} />
@@ -87,11 +88,15 @@ function App() {
               <Route exact path="/finanzen/360" element={<Analys360 />} />
               <Route exact path="/uber-uns" element={<UberUns />} />
               <Route exact path="/login" element={<Login />} />
+
+              {/* Plus */}
+              <Route exact path="/plus" element={<Plus />} />
+
             </Routes>
             <Footer />
           </ScrollTop>
         </BrowserRouter>
-      </div>
+      </>
     </div>
   );
 }

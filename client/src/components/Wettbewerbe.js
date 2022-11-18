@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/wettbewerbe.css";
-import logo from "../assets/images/wettbewerbelogo.svg";
+import {ReactComponent as Logo} from "../assets/images/wettbewerbelogo.svg";
 import bern from "../assets/images/berncity.jpg";
 import europa from "../assets/images/europapark.jpg";
 import old from "../assets/images/oldcity.jpg";
@@ -22,7 +22,7 @@ function Wettbewerbe() {
                 <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
             </div>
             <div className="mt-5 mb-5">
-              <img src={logo} alt="" className="img-fluid" />
+              <Logo className="img-fluid" />
             </div>
 
           </div>

@@ -34,7 +34,7 @@ function ThirdStep(props) {
             <div className="pb-4">
                 <div className="row g-4 justify-content-center">
                     <div className="col-12 col-sm-auto">
-                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Telefonnummer *' />
+                        <input type="tel" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Telefonnummer *' />
                     </div>
                     <div className="col-12 col-sm-auto">
                         <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='E-Mail-Adresse *' />
@@ -44,7 +44,7 @@ function ThirdStep(props) {
             <div className="pb-5">
                 <div className="row g-4 justify-content-center">
                     <div className="col-12 col-sm-auto">
-                        <input type="date" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Geburtsdatum *' />
+                        <input type="date" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox form-control' placeholder='Geburtsdatum *' />
                     </div>
                     <div className="col-12 col-sm-auto">
                         <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Nationalität *' />

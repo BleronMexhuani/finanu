@@ -121,7 +121,7 @@ function Privatenrechtsschutz() {
                 </div>
                 <div className="row g-3 bodyCounterPadding">
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr1} alt="" />
                             </div>
@@ -131,7 +131,7 @@ function Privatenrechtsschutz() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr2} alt="" />
                             </div>
@@ -141,7 +141,7 @@ function Privatenrechtsschutz() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr3} alt="" />
                             </div>
@@ -151,7 +151,7 @@ function Privatenrechtsschutz() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr4} alt="" />
                             </div>
@@ -161,7 +161,7 @@ function Privatenrechtsschutz() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr5} alt="" />
 
@@ -172,7 +172,7 @@ function Privatenrechtsschutz() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr6} alt="" />
 
@@ -183,7 +183,7 @@ function Privatenrechtsschutz() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr7} alt="" />
 
@@ -194,7 +194,7 @@ function Privatenrechtsschutz() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100'>
+                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>
                                 <img src={IconNr8} alt="" />
 
@@ -206,8 +206,8 @@ function Privatenrechtsschutz() {
                     </div>
                 </div>
                 <div className="">
-                    <div className='pb-5'>
-                        <span style={{ wordBreak: 'break-all' }} className='fw-700 firstBlueTitle fs-1'>Was gibt es für Rechtsschutzversicherungen</span>
+                    <div className='pb-5 text-start text-md-center'>
+                        <span className='fw-700 firstBlueTitle fs-1'>Was gibt es für <br></br>Rechtsschutzversicherungen</span>
                     </div>
                 </div>
             </div>

@@ -15,10 +15,10 @@ function PensionCards(props) {
         <>
             <div className='container-xl px-4 px-xl-0'>
                 <div className='bodyCounterPadding'>
-                    <div className='row g-4 text-start justify-content-between'>
+                    <div className='row gx-4 gy-4 gy-md-0 text-start justify-content-between'>
                         <div className="col-12 col-md-5 pb-4 pb-md-0">
                             <div className=''>
-                                <span className='firstBlueTitle fw-700 fs-1' style={{ color: '#50B8E7' }}>WIESO VORSORGEN?</span>
+                                <span className='firstBlueTitle fw-700 fs-1' style={{ color: '#50B8E7' }}>Wieso Vorsorgen?</span>
                             </div>
                         </div>
                         <div className="col col-md-7 my-auto">
@@ -46,7 +46,14 @@ function PensionCards(props) {
                         <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                             <div className="">
                                 <div className='fw-500 fs-5 normalTextToWhite'>
-                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sin</span>
+                                    <span>Ihre Pensionsplanung hängt davon ab, was Sie nach Ihrer Pensionierung unternehmen möchten.
+
+                                        Planen Sie Reisen um die Welt oder legen Sie einfach nur Wert darauf, in finanziell gesicherten Verhältnissen von Ihrer Pension zu leben?
+
+                                        Je nach Lebenswunsch fällt die Pensionsplanung unterschiedlich aus.
+
+                                        Beginnen Sie Ihre Finanzplanung für die Pensionierung rechtzeitig, um entsprechend reagieren zu können.
+                                    </span>
                                 </div>
                             </div>
                         </div>

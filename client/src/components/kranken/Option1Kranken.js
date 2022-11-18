@@ -4,6 +4,8 @@ import TerminImg from '../../assets/images/terminImg.svg'
 import Phone from '../../assets/images/telephoneImg.svg'
 import Formular from '../../assets/images/formular.svg'
 import Modal from './Modal'
+import Offerte from '../../assets/images/offerteAnfordern.svg'
+import Abschlie from '../../assets/images/abschliessen.svg'
 
 function Option1Kranken(props) {
     const [openModal, setopenModal] = useState(false)
@@ -17,7 +19,7 @@ function Option1Kranken(props) {
             document.body.style.overflowY = "auto"
         }
 
-
+        console.log(openModal);
     }
     return (
         <div>
@@ -47,7 +49,7 @@ function Option1Kranken(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-md-4">
-                                <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={() => setopenModal(true)}>
+                                <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={ toggleModal}>
                                     <div>
                                         <img src={Phone} alt="" />
                                     </div>
@@ -57,7 +59,7 @@ function Option1Kranken(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-md-4">
-                                <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={() => setopenModal(true)}>
+                                <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={toggleModal}>
                                     <div>
                                         <img src={Formular} alt="" />
                                     </div>
@@ -269,11 +271,7 @@ function Option1Kranken(props) {
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg">
                             <div className='pb-4'>
-                                <svg width='70' height="83" viewBox="0 0 73 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.0452 1.71444C28.0452 -0.363909 7.47236 2.87022 1 1.71444V24.9476C1 34.6562 12.0955 31.5356 18.3367 31.5356C18.0593 40.9667 11.2864 45.4049 7.93467 46.4451V56.1516C34.9799 68.9807 28.0452 10.2787 28.0452 1.71444Z" stroke="black" strokeWidth="1.5" />
-                                    <path d="M70.6932 1.73763C70.6932 -0.340715 50.1203 2.89341 43.6479 1.73763V24.9708C43.6479 34.6794 54.7434 31.5588 60.9846 31.5588C60.7072 40.9899 53.9344 45.4281 50.5826 46.4683V56.1748C77.6278 69.0039 70.6932 10.3019 70.6932 1.73763Z" stroke="black" strokeWidth="1.5" />
-                                </svg>
-
+                                <img src={Offerte} height="83px" alt="" />
                             </div>
                             <div>
                                 <div className='pb-2'>
@@ -310,10 +308,7 @@ function Option1Kranken(props) {
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg">
                             <div className='pb-4'>
-                                <svg width="58" height="83" viewBox="0 0 58 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M57.25 29.1278C57.25 37.6888 53.9252 46.0794 48.6616 52.3251C43.3965 58.5726 36.2458 62.6156 28.6167 62.6156C13.2964 62.6156 0.75 48.8402 0.75 31.6828C0.75 14.5255 13.2964 0.75 28.6167 0.75C44.0448 0.75 57.25 12.0808 57.25 29.1278Z" stroke="black" strokeWidth="1.5" />
-                                    <path d="M14.3086 33.4714C17.8857 36.1116 25.1421 41.8009 25.5509 43.4361C26.0619 45.4802 30.9165 19.674 44.4584 18.3965" stroke="black" strokeWidth="1.5" strokeLinejoin="round" />
-                                </svg>
+                                <img src={Abschlie} height="83px" alt="" />
                             </div>
                             <div>
                                 <div className='pb-2'>

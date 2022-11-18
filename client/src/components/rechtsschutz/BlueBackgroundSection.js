@@ -18,8 +18,8 @@ function BlueBackgroundSection() {
     return (
         <div>
             <div className='blueBgRechtssPriv'>
-                <div className='pb-5 mb-4'>
-                    <span style={{ wordBreak: 'break-all' }} className='firstBlueTitle fw-700'>Die besten Angebote im Vergleich</span>
+                <div className='pb-5 mb-4 container-xl px-4 px-xl-0'>
+                    <span className='firstBlueTitle fw-700 fs-1'>Die besten Angebote im Vergleich</span>
                 </div>
                 <div className='container-xl px-4 px-xl-0'>
                     <div className="row g-5 justify-content-center">

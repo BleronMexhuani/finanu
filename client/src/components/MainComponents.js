@@ -1,17 +1,20 @@
 import React from 'react'
 import HomeFirstSection from './homepage/HomeFirstSection'
-import HomeThirdSection from './homepage/HomeThirdSection'
 import HomeFourthSection from './homepage/HomeFourthSection'
+import KrankenSteps from './kranken/KrankenkasseSteps'
+
 import '../assets/css/mainComponents.css'
+import HomeSlider from './homepage/HomeSlider'
 function MainComponents(props) {
   return (
     <>
       <div className='bodyCounterPadding'>
         <HomeFirstSection darkMode={props.darkMode} />
+        <HomeSlider />
       </div>
-      
+
       <div className='wrapDiv bodyCounterPadding container-xl px-4 px-xl-0'>
-        <HomeThirdSection />
+        <KrankenSteps />
       </div>
       <div className='pb-5'>
         <HomeFourthSection />

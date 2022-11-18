@@ -6,7 +6,7 @@ import Formular from '../../assets/images/formular.svg'
 import LastIlustration from '../../assets/images/krankenIlustration.svg'
 import LastIlustrationDark from '../../assets/images/krankenIlustrationDark.svg'
 import Modal from './Modal'
-
+import Abschlie from '../../assets/images/abschliessen.svg'
 function Option2Kranken(props) {
 
     const [openModal, setopenModal] = useState(false)
@@ -15,12 +15,14 @@ function Option2Kranken(props) {
         setopenModal(!openModal)
         if (!openModal) {
             document.body.style.overflowY = "hidden"
+            document.body.style.touchAction = "none"
+            
         }
         else {
             document.body.style.overflowY = "auto"
+            document.body.style.touchAction = "unset"
+
         }
-
-
     }
 
     return (
@@ -165,10 +167,8 @@ function Option2Kranken(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className='pb-4'>
-                                <svg width="69" height="83" viewBox="0 0 69 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M24.3086 34.4714C27.8857 37.1116 35.1421 42.8009 35.5509 44.4361C36.0619 46.4802 37.9581 23.7775 51.5 22.5" stroke="black" strokeWidth="1.5" strokeLinejoin="round" />
-                                    <path d="M8.50029 30.1278C1.30029 8.22995 25.5781 1.58517 38.617 1C54.4216 1 68.0003 12.6298 68.0003 30.1278C68.0003 47.6257 54.4216 64.3656 38.617 64.3656C31.2447 64.2438 25.5 63.5 13.5 51.5M8.50029 30.1278C10.5001 27.2256 12 25.1667 12.5 24.5M8.50029 30.1278L1 28.5" stroke="black" strokeWidth="1.5" />
-                                </svg>
+                            <img src={Abschlie} height="83px" alt="" />
+
 
 
                             </div>

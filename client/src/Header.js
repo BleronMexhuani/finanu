@@ -31,10 +31,10 @@ function Header(props) {
         }
     }, [])
 
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(true)
 
     const controlNavbar = () => {
-        if (window.scrollY > 20) {
+        if (window.scrollY >= 0) {
             setShow(true)
         } else {
             setShow(false)
@@ -119,7 +119,7 @@ function Header(props) {
                                                                 Pensionsplanung und Ruhestand
                                                             </NavLink>
                                                         </div>
-                                                        <div>
+                                                        <div className='pb-3'>
                                                             <NavLink style={({ isActive }) => ({
                                                                 color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/finanzen/haus-hypothek' id="linksss" className='text-decoration-none navLinks px-3'>
@@ -127,11 +127,11 @@ function Header(props) {
                                                             </NavLink>
                                                         </div>
                                                         <div>
-                                                            {/* <NavLink style={({ isActive }) => ({
+                                                            <NavLink style={({ isActive }) => ({
                                                                 color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                             })} to='/finanzen/360' id="linksss" className='text-decoration-none navLinks px-3'>
                                                                 Finanzen & Budget
-                                                            </NavLink> */}
+                                                            </NavLink>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -156,8 +156,8 @@ function Header(props) {
                             <div className={`navTabs ${toggleMenu && 'navTabsOpen'}`}>
                                 <NavLink style={({ isActive }) => ({
                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                })} to='/finanzen/360' className='buttonofmenutabs'>
-                                    <Button onClick={() =>{setToggleMenu(false)}} id="buttonofnavbar" variant="outline-danger">360° Budgetanalyse</Button>
+                                })} to='/plus' className='buttonofmenutabs'>
+                                    <Button onClick={() =>{setToggleMenu(false)}} id="buttonofnavbar" className="px-5" variant="outline-danger">Finanu Plus </Button>
                                 </NavLink>
 
                                 <div className='row gx-0 gy-4 navTabsRow' onClick={toggleNav}>
@@ -195,11 +195,9 @@ function Header(props) {
                                         {/* )} */}
                                     </div>
                                     <div className="col-12">
-                                        <NavLink style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                        })} to='/' id="linksss" onClick={(e) => { e.stopPropagation() }} className='text-decoration-none navLinks'>
+                                        <span id="linksss" onClick={(e) => { e.stopPropagation() }} className='text-decoration-none navLinks'>
                                             Finanzen
-                                        </NavLink>
+                                        </span>
                                         {/* {isShown && ( */}
                                         <div className='pt-2'>
                                             <div className='pb-2'>
@@ -207,15 +205,15 @@ function Header(props) {
                                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/finanzen/pensionsplanung-und-ruhestand' className='text-decoration-none navLinks fs-5'>Pensionsplanung und Ruhestand </NavLink>
                                             </div>
-                                            <div>
+                                            <div className='pb-2'>
                                                 <NavLink style={({ isActive }) => ({
                                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                                 })} to='/finanzen/haus-hypothek' className='text-decoration-none navLinks fs-5'>Haus & Hypothek </NavLink>
                                             </div>
                                             <div>
-                                                {/* <NavLink style={({ isActive }) => ({
+                                                <NavLink style={({ isActive }) => ({
                                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                                })} to='/finanzen/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </NavLink> */}
+                                                })} to='/finanzen/360' className='text-decoration-none navLinks fs-5'>Finanzen & Budget </NavLink>
                                             </div>
                                         </div>
                                         {/* )} */}
@@ -239,7 +237,7 @@ function Header(props) {
                         </div>
 
 
-                        {(screenWidth < 991.98) && (
+                        {(screenWidth < 1099.98) && (
 
                             <div className='col-6 my-auto text-end burgerCol'>
                                 <button onClick={toggleNav} className={`my-auto ${toggleMenu && 'open'}`} id="nav-icon1" type="button">
