@@ -148,6 +148,7 @@ function KrankenkasseSteps() {
 
     }, [plz, ort, commune])
 
+    const [modellChecked, setmodellChecked] = useState(false)
     const handleSubmit = async (event) => {
         event.preventDefault()
         setKrankenkasse([]);
@@ -171,10 +172,19 @@ function KrankenkasseSteps() {
             else if (event.target[i].name === 'modelle') {
                 if (event.target[i].checked) {
                     targetModells.push(event.target[i].value);
+
                 }
             }
-        }
+            console.log(targetModells.length)
 
+        }
+        if (targetModells.length > 0) {
+            setmodellChecked(true)
+        }
+        else {
+            setmodellChecked(false)
+
+        }
         setFranchise(targetFranchise);
         setJahrgang(targetJahrgang);
         setAccident(targetAccident);
@@ -185,23 +195,23 @@ function KrankenkasseSteps() {
 
         var results = [];
         var searchField = "name";
-        var searchVal = ["SWICA", "Vivao Sympany"];
+        var searchVal = ["SWICA", "Vivao Sympany", "Mutuel Assurance (Groupe Mutuel)"];
 
         for (var i = 0; i < response.length; i++) {
             for (let j = 0; j < searchVal.length; j++) {
                 if (response[i][searchField] == searchVal[j]) {
                     let res = response[i];
-                    response.splice(response.indexOf(response[i]),1)
+                    response.splice(response.indexOf(response[i]), 1)
                     response.unshift(res);
-                   
-              
-                    searchVal.pop(searchVal[j]);
-              
+
+
+                    searchVal.slice(searchVal[j], 1)
+
                 }
-                
+
             }
         }
-        
+
         console.log(response);
 
         setKrankenkasse(result.data);
@@ -211,7 +221,6 @@ function KrankenkasseSteps() {
 
     const [persons, setPersons] = useState([])
     const [personId, setPersonId] = useState(0)
-    useEffect(() => { })
 
     const addPerson = async (event) => {
 
@@ -234,7 +243,6 @@ function KrankenkasseSteps() {
         if (index !== -1) {
             clone.splice(index, 1)
         }
-        console.log(clone)
         setPersons(clone);
     }
     const [checkJahr, setCheckJahr] = useState(false)
@@ -305,6 +313,7 @@ function KrankenkasseSteps() {
             setSecondStep(true)
         }
     }
+
     const secondStepKranken = useRef();
     useEffect(() => {
         if (secondStep) {
@@ -314,16 +323,39 @@ function KrankenkasseSteps() {
 
     }, [secondStep])
 
+    const [error1, seterror1] = useState(false)
+    const [error2, seterror2] = useState(false)
+    const [error3, seterror3] = useState(false)
+
     const toThirdStep = () => {
         if (secondStepFirstRadio) {
+            seterror1(false)
+
             if (familySituation === "einzel") {
                 setThirdStep(true)
+                seterror2(false)
+
             }
+
             else if (familySituation === "paar" || familySituation === "familie") {
+                seterror2(false)
                 if (familySituation2 !== "") {
                     setThirdStep(true)
+                    seterror3(false)
+                }
+                else {
+                    seterror3(true)
+
                 }
             }
+            else {
+                seterror2(true)
+
+            }
+        }
+        else {
+            seterror1(true)
+            seterror2(true)
         }
     }
     const thirdStepKranken = useRef();
@@ -341,13 +373,20 @@ function KrankenkasseSteps() {
     const [mitOhn, setMitOhn] = useState(false)
     let i = 0
 
+    const [error4, seterror4] = useState(false)
+
     const toThirdStep2 = () => {
-        if (gender !== "" && vornameValue !== "" && price !== "" && mitOhn !== "false" && jahrgang !== [] && (model !== null && model !== "modell")) {
+        if (gender !== "" && vornameValue !== "" && price !== "" && mitOhn !== "false" && jahrgang !== [] && model.length && model !== null) {
             setThirdStep2(true)
+            seterror4(false)
+
         }
         else {
             setThirdStep2(false)
+            seterror4(true)
+
         }
+
     }
     const third2StepKranken = useRef();
     useEffect(() => {
@@ -390,6 +429,15 @@ function KrankenkasseSteps() {
 
     }, [fifthStep])
 
+    const fourthStep2Div = useRef()
+    useEffect(() => {
+        if (fourthStep2) {
+            var elem = fourthStep2Div
+            window.scrollTo(0, elem.current.offsetTop - 100);
+        }
+
+    }, [fourthStep2])
+
     const familiePaar = useRef();
     useEffect(() => {
         if (familySituation === 'familie' || familySituation === 'paar') {
@@ -399,6 +447,8 @@ function KrankenkasseSteps() {
 
     }, [familySituation])
 
+    const [emailUnsure, setEmailUnsure] = useState('email')
+
     const handleModalSubmit = (e) => {
         e.preventDefault()
         setMehrLadenModal(false)
@@ -406,6 +456,8 @@ function KrankenkasseSteps() {
         setEndKrankenMap(endKrankenMap + 3)
         handleSubmitFormModal();
     }
+
+
 
     return (
         <>
@@ -419,7 +471,7 @@ function KrankenkasseSteps() {
                             <span className='krankenSubtitle'>Vergleichen Sie die Leistungen und Prämien der zugelassenen Krankenkassen in der Schweiz.</span>
                         </div>
                         <div className='pt-5'>
-                            <div className="row g-4 g-md-5 justify-content-center">
+                            <div className="row g-4 justify-content-center">
                                 <div className="col-12 col-sm-6 col-md-4">
                                     <div style={{ position: 'relative' }}>
                                         <div>
@@ -442,24 +494,34 @@ function KrankenkasseSteps() {
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-4">
 
-                                    <select className='krankenSelectStyle form-select' style={{fontSize: (isEmpty) ? '12px' : ''}} onChange={(e) => setInsuranceNum(e.target.value)} name="" id="insurances">
+                                    <select className={`krankenSelectStyle form-select ${(isEmpty) ? 'emptyOption' : ''}`} onChange={(e) => setInsuranceNum(e.target.value)} name="" id="insurances">
                                         {(isEmpty) && (
-                                            
+
                                             <option value="-1" >Sie müssen zuerst die Postleitzahl einfügen.</option>
-                                            
+
                                         )}
+
                                         {(!isEmpty) && (
-                                            insurances.map(element => {
-                                                i++
-                                                return (
-                                                    <option key={i} value={element.number} >{element.name}</option>
-                                                )
-                                            }))}
+                                            <>
+                                                <option value="-1" ></option>
+                                                {
+                                                    insurances.map(element => {
+                                                        i++
+                                                        return (
+                                                            <option key={i} value={element.number} >{element.name}</option>
+                                                        )
+                                                    })
+                                                }
+                                            </>
+                                        )}
+
+
                                     </select>
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-4">
                                     <button type='button' className='krankenBtnStyle' onClick={toSecondStep}>Jetzt Vergleichen</button>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -484,7 +546,7 @@ function KrankenkasseSteps() {
                                     <div className="row gy-4 gx-0 gx-md-4" >
                                         <div className="col-12 col-sm-6">
                                             <label htmlFor="yesFirstRadio" className='container1 w-100'>
-                                                <input type="radio" id='yesFirstRadio' onChange={(e) => { setSecondStepFirstRadio(true) }} name='radio' hidden />
+                                                <input type="radio" id='yesFirstRadio' onChange={(e) => { setSecondStepFirstRadio(true); }} name='radio' hidden />
                                                 <span className='checkmark'>Ja, ich bin bereits versichert</span>
                                             </label>
                                         </div>
@@ -497,6 +559,11 @@ function KrankenkasseSteps() {
                                             </label>
                                         </div>
                                     </div>
+                                    {error1 && (
+                                        <div className='pt-3 fw-600 text-start' style={{ color: '#F6490E' }}>
+                                            Felder erforderlich
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                             <div className='py-4'>
@@ -524,6 +591,11 @@ function KrankenkasseSteps() {
                                             </label>
                                         </div>
                                     </div>
+                                    {error2 && (
+                                        <div className='pt-3 fw-600 text-start' style={{ color: '#F6490E' }}>
+                                            Felder erforderlich
+                                        </div>
+                                    )}
                                     {(familySituation === 'familie' || familySituation === 'paar') && (
                                         <div ref={familiePaar}>
                                             <div className='pt-5'>
@@ -545,6 +617,11 @@ function KrankenkasseSteps() {
                                                             </label>
                                                         </div>
                                                     </div>
+                                                    {error3 && (
+                                                        <div className='pt-3 fw-600 text-start' style={{ color: '#F6490E' }}>
+                                                            Felder erforderlich
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </div>
                                         </div>
@@ -642,7 +719,7 @@ function KrankenkasseSteps() {
                         </div>
                         <div className='col-12 col-sm-8 col-md-4 col-lg-3 mx-auto pt-4 pb-5'>
                             <select name="" id="" onChange={(e) => setmodels(e)} className='krankenInputStyle form-select krankenInputStepStyle p-3'>
-                                <option value="" defaultValue=''>Modell</option>
+                                <option value="-1">Modell</option>
                                 {actualmodels.map(element => {
                                     return (
                                         <option key={element.id} data-tariftyp={element.Tariftyp} value={element.Tarifbezeichnung} >{element.Tarifbezeichnung}</option>
@@ -686,6 +763,11 @@ function KrankenkasseSteps() {
                         <div className='pt-5'>
                             <button className='nextBtnKranken' type={`${thirdStep2 ? 'submit' : 'button'}`} onClick={toThirdStep2}> ANGEBOTE LADEN </button>
                         </div>
+                        {error4 && (
+                            <div className='pt-3 fw-600 text-center' style={{ color: '#F6490E' }}>
+                                Alle Felder sind erforderlich
+                            </div>
+                        )}
                     </div>
 
                 )}
@@ -701,8 +783,8 @@ function KrankenkasseSteps() {
                                     i++;
                                     return (
 
-                                        <div key={i} className="col-12 col-sm-6 col-lg-auto">
-                                            <div className="krankenOfferStyle p-4 position-relative mx-auto">
+                                        <div key={i} className="col-12 col-sm-6 col-lg-auto" id={'Kranken' + i}>
+                                            <div className="krankenOfferStyle p-4 position-relative mx-auto h-100">
                                                 <div className="cornerOffer">
                                                     <svg width="122" height="109" viewBox="0 0 122 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M0 0H43.9595L83.8143 35.6718L122 68V109L60.2591 55.5L0 0Z" fill="#50B8E7" />
@@ -926,7 +1008,7 @@ function KrankenkasseSteps() {
                                 </div>
                             </div>
                             {fourthStep2 && (
-                                <div className="">
+                                <div className="" ref={fourthStep2Div}>
                                     <div className='pb-3'>
                                         <span className='fw-bold' style={{ color: "#50B8E7" }}>Wie möchten Sie fortfahren?</span>
                                     </div>
@@ -934,13 +1016,13 @@ function KrankenkasseSteps() {
                                         <div className="row g-4">
                                             <div className="col-12 col-md-6">
                                                 <label htmlFor="step4Email" className='container1 w-100'>
-                                                    <input type="radio" id='step4Email' name='fortfahren' hidden />
+                                                    <input type="radio" id='step4Email' name='fortfahren' checked={(emailUnsure === 'email') ? true : false} onChange={() => { setEmailUnsure('email') }} hidden />
                                                     <span className='checkmark'>Unverbindliche Offerte per E-Mail zusenden</span>
                                                 </label>
                                             </div>
                                             <div className="col-12 col-md-6">
                                                 <label htmlFor="step4Unsure" className='container1 w-100'>
-                                                    <input type="radio" id='step4Unsure' name='fortfahren' hidden />
+                                                    <input type="radio" id='step4Unsure' name='fortfahren' checked={(emailUnsure === 'unsure') ? true : false} onChange={() => { setEmailUnsure('unsure') }} hidden />
                                                     <span className='checkmark'>Unsicher, bitte eine kostenlose Beratung</span>
                                                 </label>
                                             </div>
@@ -1064,7 +1146,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Aufenthaltsbewilligung</span>
                                         </div>
                                         <div>
-                                            <select onChange={e => setAufenthaltsbewilligung(e.target.value)} class="krankenInputStyle form-select krankenInputStepStyle p-2">
+                                            <select onChange={e => setAufenthaltsbewilligung(e.target.value)} className="krankenInputStyle form-select krankenInputStepStyle p-2">
                                                 <option value="Keine der folgenden Optionen">Keine der folgenden Optionen</option>
                                                 <option value="Ausweis B (Aufenthaltsbewilligung)">Ausweis B (Aufenthaltsbewilligung)</option>
                                                 <option value="Ausweis C (Niederlassungsbewilligung)">Ausweis C (Niederlassungsbewilligung)</option>

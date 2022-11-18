@@ -217,7 +217,8 @@ function Analys360() {
                                     </svg>
                                 </div>
                             </div>
-                            <div className="col-auto my-auto">
+                            <div className="col-12 py-2"></div>
+                            <div className="col-auto d-none d-sm-block my-auto">
                                 <svg width="30" height="3" viewBox="0 0 30 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line y1="1" x2="1556" y2="1" stroke="#D0D0D0" strokeWidth="2" />
                                 </svg>
