@@ -51,14 +51,14 @@ function FirstSection() {
                 <div className="row gy-5 justify-content-between">
                     {(screenWidth > 575.98) && (
                         <div className="col-12 col-lg-5">
-                            <div className='pb-3'>
-                                <span className='plusTitle fw-700 secondaryColor'>Lorem to the ipsum ipsum </span>
+                            <div className='pb-5'>
+                                <span className='plusTitle fw-700 triaryColor'>Lorem to the ipsum ipsum </span>
                             </div>
-                            <div className='pb-4'>
-                                <span className='fs-4 fw-600 secondaryColor'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie.</span>
+                            <div className='pb-5'>
+                                <span className='fs-5 fw-400 secondaryColor'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</span>
                             </div>
-                            <div className='pb-4'>
-                                <button className='plusBtn fw-700 w-100' style={{ maxWidth: '400px' }}>Get A Quote</button>
+                            <div className='pb-5'>
+                                <button className='plusBtn fw-700 w-30 py-2 px-4 fs-5' >Get A Quote</button>
                             </div>
                             <div>
                                 <div className="row gx-5 gy-4">
@@ -108,12 +108,12 @@ function FirstSection() {
                     )}
 
                     <div className="col-12 col-lg-6 col-xl-auto order-2 order-md-1">
-                        <div className="plusForm p-4">
-                            <div className='pb-3'>
-                                <span className='fs-1 fw-700 plusFormTitle'>Lohnt sich eine Mitgliedschaft fur dich?*</span>
+                        <div className="plusForm p-5">
+                            <div className='pb-4'>
+                                <span className='fs-3 fw-700 plusFormTitle' style={{color: 'white'}}>Lohnt sich eine Mitgliedschaft fur dich?</span>
                             </div>
-                            <div className="pb-3">
-                                <span className='fs-3 text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <div className="pb-4">
+                                <span className='fs-5 text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </div>
                             <div className='pb-3'>
                                 <input className='form-control plusInput p-3' type="text" placeholder='Vorname*' />
@@ -141,16 +141,15 @@ function FirstSection() {
                                     <span className='fs-3 fw-700 secondaryColor'>Why on earth did we start an insurance company?</span>
                                 </div>
                                 <div className='pb-3'>
-                                    <span className='fw-400 fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
+                                    <span className='secondaryColor fw-400 fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <a href="" className='plusLink'>Click link Finanu</a>
-
-                                </div>
+                                </div> */}
                             </div>
                             <div className="videobackground pe-2 pt-3">
-                                <div className='m'>
-                                    <Vid1 className="img-fluid pt-2" style={{ borderRadius: '20px', marginLeft: '-25px' }}  />
+                                <div className=''>
+                                    <Vid1 className="img-fluid pt-2" style={{ borderRadius: '20px', marginLeft: '-25px', marginBottom: '-25px' }}  />
                                 </div>
                             </div>
                         </div>
