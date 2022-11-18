@@ -459,7 +459,9 @@ a {
     .krankenSubtitle {
         font-size: 16px;
     }
-    
+    .emptyOption {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -499,6 +501,9 @@ a {
 
     .nextBtnKranken {
         width: 100%;
+    }
+    .emptyOption {
+        font-size: 12px !important;
     }
 }
 

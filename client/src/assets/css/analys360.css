@@ -163,25 +163,25 @@
 
 @media (max-width: 575.98px) {
     .passiveBackground {
-        width: 21px !important;
-        height: 21px !important;
+        width: 40px !important;
+        height: 40px !important;
     }
 
     .activeBackground {
-        width: 21px !important;
-        height: 21px !important;
+        width: 40px !important;
+        height: 40px !important;
     }
 
     .activeSvg {
-        width: 14px !important;
+        width: 20px !important;
     }
 
     .passiveSvg {
-        width: 14px !important;
+        width: 20px !important;
     }
 
     .stepsSvgRow .col-auto.my-auto svg {
-        width: 1px !important;
+        width: 10px !important;
     }
 }
 
@@ -191,7 +191,7 @@
 
 .darkTheme .stepsBlueDiv input {
     background-color: #282424 !important;
-    border: 1px solid transparent !important;
+    border: none !important;
     color: #fff;
 
 }
@@ -205,7 +205,7 @@
 }
 .darkTheme .stepsBlueDiv select {
     background-color: #282424 !important;
-    border: 1px solid transparent !important;
+    border: none !important;
     color: #fff;
 }
 
