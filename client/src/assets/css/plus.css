@@ -107,6 +107,13 @@
     cursor: pointer;
 }
 
+.videobackground {
+    background: #50B8E7;
+    border-radius: 14px;
+    max-width: 900px;
+    margin-left: 25px;
+}
+
 .sliderBtnEffect {
     -webkit-transition: ease-out 5s;
     -moz-transition: ease-out 5s;
