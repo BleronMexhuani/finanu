@@ -44,7 +44,6 @@ a {
 }
 
 .hausratBlueDiv span {
-    color: #fff;
     font-weight: 600;
 }
 
@@ -53,9 +52,6 @@ a {
     box-shadow: 0px 4px 18px rgba(170, 170, 170, 0.25);
 }
 
-.hausratWhiteDiv span {
-    color: #5a5a5a;
-}
 
 .hausratFormInputs_2 {
     background: #FFFFFF;
@@ -210,7 +206,7 @@ a {
     width: 600px;
     position: relative;
     max-height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .modalXBtn {
@@ -237,11 +233,25 @@ a {
     border-radius: 12px;
     height: 100%;
 }
+.linkSpan {
+    font-size: 14px;
+    color: #fff;
+}
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .hausratModalContent {
+
+        max-height: 90vh;
+
+    }
+    .hausratModalScroll {
+        max-height: 80vh;
+
+    }
+}
 
 @media (max-width: 767.98px) {
 
@@ -271,7 +281,15 @@ a {
         font-size: 80px;
 
     }
+    .hausratModalContent {
 
+        max-height: 80vh;
+
+    }
+    .hausratModalScroll {
+        max-height: 70vh;
+
+    }
    
 }
 

@@ -57,6 +57,7 @@ a {
 
 .pensionWhiteCards img {
     width: 150px;
+    height: 140px;
 }
 
 .blueBgDivPension {
@@ -128,6 +129,7 @@ a {
     .positionAbsoluteToolTip {
         top: 2rem;
     }
+    
 }
 
 @media (max-width: 575.98px) {
@@ -143,6 +145,10 @@ a {
     }
     .hideOnMob {
         display: none;
+    }
+    .pensionBankBorderBottom  {
+        height: 100px;
+        justify-content: start;
     }
 }
 

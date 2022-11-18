@@ -147,7 +147,14 @@ function AktuelleHypothek() {
                         <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                             <div className="">
                                 <div className='fw-500 fs-5 normalTextToWhite'>
-                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                                    <span>
+                                        Sie träumen von einem Eigenheim?
+                                        Laut der NZZ verschenken Schweizer bei der Hypothek viel Geld. Vielfach beschränken sie sich auf wenige Angebote oder wählen direkt die Hausbank.
+
+                                        Bei der Wahl sollten nicht nur niedrige Zinsen eine Rolle spielen, sondern auch die Konditionen für eine Amortisation, eventuelle Vorfälligkeitsentschädigungen und sogenannte Knebelverträge.
+
+                                        Wir verhandeln für Sie hart, aber fair mit den zwei bis drei besten Instituten, um bessere Konditionen zu erhalten.
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -241,76 +248,66 @@ function AktuelleHypothek() {
                         </div>
                         <div>
                             <div className="row g-3 text-start justify-content-start">
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="newhome.ch" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.newhome.ch"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>New Home</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span className="linkSpan">https://www.newhome.ch</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="immoscout24.ch" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.immoscout24.ch"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Immoscout24</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span className="linkSpan">https://www.immoscout24.chn</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="Homegate.ch" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.homegate.ch"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
+
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Homegate</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span className="linkSpan">https://www.homegate.ch</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="https://www.maklerkammer.ch/" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.maklerkammer.ch/"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
+
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Schweizer Verzeichnis für Immobilienmakler</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span className="linkSpan">https://www.maklerkammer.ch</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -327,77 +324,69 @@ function AktuelleHypothek() {
                         </div>
                         <div>
                             <div className="row g-3 text-start justify-content-start">
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/baupreise/baupreisindex.html" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/baupreise/baupreisindex.html"  className='text-decoration-none' target="_blank">
 
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
+
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Entwicklung vom Baukostenindex </span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span style={{ wordBreak: 'break-all' }} className="linkSpan">https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/baupreise/baupreisindex.html</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/mieten/index.html" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/mieten/index.html"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
+
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Entwicklung vom Mietpreisindex</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span style={{ wordBreak: 'break-all' }} className="linkSpan">https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/mieten/index.html</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
+
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Entwicklung der Immobilienpreise</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span style={{ wordBreak: 'break-all' }} className="linkSpan">https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="https://www.ubs.com/ch/de/private/mortgages/real-estate.html" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.ubs.com/ch/de/private/mortgages/real-estate.html"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
+
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Real Estate Bubble Index</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span style={{ wordBreak: 'break-all' }} className="linkSpan">https://www.ubs.com/ch/de/private/mortgages/real-estate.html</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -414,39 +403,34 @@ function AktuelleHypothek() {
                         </div>
                         <div>
                             <div className="row g-3 text-start justify-content-start">
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="https://www.ch.ch/de/steuern-und-finanzen/steuerarten/immobiliensteuer/" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.ch.ch/de/steuern-und-finanzen/steuerarten/immobiliensteuer/"  className='text-decoration-none' target="_blank">
 
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
+                                                
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Steuern beim Kauf und Verkauf</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span  style={{ wordBreak: 'break-all' }} className="linkSpan">https://www.ch.ch/de/steuern-und-finanzen/steuerarten/immobiliensteuer/</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                                    <a href="https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html" rel='noreferrer' className='text-decoration-none'>
+                                <div className="col-12 col-sm-6 col-lg-4">
+                                    <a href="https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html"  className='text-decoration-none' target="_blank">
                                         <div className='p-3 useFullLinks text-start'>
-                                            <div className="row g-2">
-                                                <div className='col-auto'>
-                                                    <img style={{ height: '60px' }} src={BeatingHeart} alt="" />
-                                                </div>
+                                            <div className="row g-0">
                                                 <div className="col">
                                                     <div className='pb-1'>
                                                         <span className='fw-600 descriptionFS'>Bezug der beruflichen Vorsorge</span>
                                                     </div>
                                                     <div>
-                                                        <span>Lorem ipsum description</span>
+                                                        <span  style={{ wordBreak: 'break-all' }} className="linkSpan">https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html</span>
                                                     </div>
                                                 </div>
                                             </div>

@@ -8,8 +8,8 @@ function PensionPlan(props) {
     return (
         <div>
             <div className='container-xl px-4 px-xl-0'>
-                <div className='bodyCounterPadding'>
-                    <span className="firstBlueTitle fw-bold" style={{ color: '#50B8E7' }}>LIEBER SORGLOS STEUERN SPAREN, STATT VORSORGELOS STEUERN ZAHLEN</span>
+                <div className='pb-4'>
+                    <span className="firstBlueTitle fw-bold fs-1" style={{ color: '#50B8E7'}}>Lieber sorglos steuern sparen, statt vorsorgelos steuern zahlen</span>
                 </div>
             </div>
             <div className='pensionPlanBlueBg'>

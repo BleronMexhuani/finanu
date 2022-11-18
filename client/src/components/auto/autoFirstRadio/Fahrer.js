@@ -49,7 +49,7 @@ function Fahrer(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-lg-auto">
                             <div>
-                                <input type="date" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' />
+                                <input type="date" className='krankenInputStyle krankenInputStepStyle form-control p-3 autoCheckbox' />
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ function Fahrer(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-lg-auto">
                             <div>
-                                <input type="date" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' />
+                                <input type="date" className='krankenInputStyle form-control krankenInputStepStyle p-3 autoCheckbox' />
                             </div>
                         </div>
                     </div>

@@ -221,7 +221,7 @@
     .autoCheckbox {
         width: 100% !important;
     }
-    
+
 }
 
 @media (max-width: 767.98px) {
@@ -255,9 +255,7 @@
     .autoImage {
         width: 60%;
     }
-    .fourthSectionBlueDiv {
-        height: 220px;
-    }
+
 }
 
 @media (max-width: 575.98px) {
@@ -293,7 +291,35 @@
     .finanuSubTitle {
         font-size: 18px !important;
     }
-    
+
+    span.fs-1 {
+        font-size: 25px !important;
+    }
+
+    div.fs-1 {
+        font-size: 25px !important;
+    }
+    span.fs-2 {
+        font-size: 23px !important;
+    }
+
+    div.fs-2 {
+        font-size: 23px !important;
+    }
+    span.fs-3 {
+        font-size: 22px !important;
+    }
+
+    div.fs-3 {
+        font-size: 22px !important;
+    }
+    span.fs-4 {
+        font-size: 21px !important;
+    }
+
+    div.fs-4 {
+        font-size: 21px !important;
+    }
 }
 
 .darkTheme .cloudsBackground span {

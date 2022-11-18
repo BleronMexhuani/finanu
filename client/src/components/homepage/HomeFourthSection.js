@@ -36,7 +36,7 @@ function HomeFourthSection() {
                                 </svg>
                             </div>
                             <div className="">
-                                <div className='fourthSectionBlueDiv p-4 text-start'>
+                                <div className='fourthSectionBlueDiv h-100 p-4 text-start'>
                                     <div className='pb-2'>
                                         <span className='finanuSubTitle whiteTextOverwrite fw-700'>Erklärung und unterschiede Alternativ- und Schulmedizin und wie sie sich ergänzen</span>
                                     </div>
@@ -61,7 +61,7 @@ function HomeFourthSection() {
                                 </svg>
                             </div>
                             <div style={{flex: '1 1 auto'}}>
-                                <div className='fourthSectionBlueDiv p-4 text-start h-100w'>
+                                <div className='fourthSectionBlueDiv p-4 text-start h-100'>
                                     <div className='pb-2'>
                                         <span className='finanuSubTitle whiteTextOverwrite fw-700'>Wie Finanu sich selbst finanziert</span>
                                     </div>

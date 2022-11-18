@@ -33,7 +33,7 @@ function KrankenCards(props) {
                             In einem ersten Schritt können Sie bei der Grundversicherung sparen, indem Sie eine höhere Franchise und ein anderes Versicherungsmodell als das Grundmodell wählen. Allein dadurch können Sie Prämienersparnisse von bis zu 50% erreichen.
                         </span>
                     </div>
-                    <div className='w-100 px-4 px-lg-5 bodyCounterPadding zuzatImages'>
+                    <div className='px-4 px-lg-5 bodyCounterPadding zuzatImages'>
                         <div className="row g-3">
                             <div className="col-12 col-sm-6 col-md-4 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
@@ -112,14 +112,14 @@ function KrankenCards(props) {
                         </div>
                     </div>
                     <div className='w-100'>
-                        <div className='wrapDiv container-xl px-4 px-xl-0 pb-5'>
+                        <div className='wrapDiv container-xl px-4 px-xl-0 pb-0 pb-lg-5'>
                             <div className='pb-2'>
                                 <span className='fs-1 bigTitleKranken'>
                                     ZUSATZVERSICHERUNG
                                 </span>
                             </div>
                             <div className='pb-5 mb-4'>
-                                <span className='fw-500 fs-5 normalTextToWhite'>Nachdem Sie das Modell der Grundversicherung gewählt haben, ist es an der Zeit sich gedanken zu machen, <br></br> welche Zusatzleistungen Sie in Anspruch nehmen möchten.</span>
+                                <span className='fw-500 fs-5 normalTextToWhite'>Nachdem Sie das Modell der Grundversicherung gewählt haben, ist es an der Zeit sich gedanken zu machen, welche Zusatzleistungen Sie in Anspruch nehmen möchten.</span>
                             </div>
                             <div className='w-100'>
                                 <div className="row g-3 justify-content-center zuzatImages">
@@ -227,8 +227,6 @@ function KrankenCards(props) {
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
                                                 <img src={Glasses} alt="" />
-
-
                                             </div>
                                             <div className='pb-2'>
                                                 <span className='fw-600 finanuSubTitle'>Brille</span>
@@ -246,7 +244,6 @@ function KrankenCards(props) {
 
                 </div>
             </div>
-
             <div>
                 <div className="wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding">
                     <div className="pb-2">
@@ -257,7 +254,7 @@ function KrankenCards(props) {
                     </div>
                     <div className="row gy-4 gy-lg-0 gx-0 gx-sm-4 gx-xl-5 justify-content-center">
                         <div className="col-12 col-sm-6 col-lg-4">
-                            <div onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => { setIsHover(false) }} className={` ${isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
+                            <div onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => { setIsHover(false) }} className={` ${isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5 pt-0`}>
                                 <div className={`mb-5 ${isHover ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
                                         <img src={Economy} height={200} width={'100%'} alt="" />
@@ -311,7 +308,7 @@ function KrankenCards(props) {
                             </div>
                         </div>
                         <div onMouseEnter={() => { setIsHover1(true) }} onMouseLeave={() => { setIsHover1(false) }} className="col-12 col-sm-6 col-lg-4">
-                            <div className={` ${isHover1 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
+                            <div className={` ${isHover1 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5  pt-0`}>
                                 <div className={`mb-5 ${isHover1 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
                                         <img src={Handshake} height={200} width={'100%'} alt="" />
@@ -384,7 +381,7 @@ function KrankenCards(props) {
                             </div>
                         </div>
                         <div onMouseEnter={() => { setIsHover2(true) }} onMouseLeave={() => { setIsHover2(false) }} className="col-12 col-sm-7 col-lg-4">
-                            <div className={` ${isHover2 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5`}>
+                            <div className={` ${isHover2 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5  pt-0`}>
                                 <div className={`mb-5 ${isHover2 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
                                         <img src={Kravata} height={200} width={'100%'} alt="" />

@@ -97,7 +97,7 @@ function IhrAuto(props) {
                 <div>
                     <div className="pb-4">
                         <div className="row gx-4 gy-0 justify-content-center">
-                            <div className="col-12 col-sm-6 col-md-auto my-auto">
+                            <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
                                         <span className='fw-500'>Ab wann wollen Sie Ihr Auto versichern?</span>
@@ -106,14 +106,14 @@ function IhrAuto(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-auto">
                                 <div>
-                                    <input type="date" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' />
+                                    <input type="date" className='krankenInputStyle form-control krankenInputStepStyle p-3 autoCheckbox' />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="pb-4">
                         <div className="row gx-4 gy-0 justify-content-center">
-                            <div className="col-12 col-sm-6 col-md-auto my-auto">
+                            <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
                                         <span className='fw-500'>In welchem Jahr haben Sie Ihr Auto gekauft?</span>
@@ -122,14 +122,14 @@ function IhrAuto(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-auto">
                                 <div>
-                                    <input type="number" placeholder='2022' className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' />
+                                    <input type="number" placeholder='2022' className='krankenInputStyle form-control krankenInputStepStyle p-3 autoCheckbox' />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="pb-4">
                         <div className="row gx-4 gy-0 justify-content-center">
-                            <div className="col-12 col-sm-6 col-md-auto my-auto">
+                            <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
                                         <span className='fw-500'>Wann war die erste Inverkehrsetzung?</span>
@@ -138,14 +138,14 @@ function IhrAuto(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-auto">
                                 <div>
-                                    <input type="date" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' />
+                                    <input type="date" className='krankenInputStyle form-control krankenInputStepStyle p-3 autoCheckbox' />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="">
                         <div className="row gx-4 gy-0 justify-content-center">
-                            <div className="col-12 col-sm-6 col-md-auto my-auto">
+                            <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
                                         <span className='fw-500'>In welchem Kanton ist Ihr Auto eingelöst?</span>
@@ -154,7 +154,7 @@ function IhrAuto(props) {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-auto">
                                 <div>
-                                    <select name="" id="" className='krankenInputStyle form-select krankenInputStepStyle p-3 autoCheckbox'>
+                                    <select name="" id="" className='krankenInputStyle  form-select krankenInputStepStyle p-3 autoCheckbox'>
                                         <option value="0">---</option>
                                     </select>
                                 </div>

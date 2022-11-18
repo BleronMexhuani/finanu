@@ -74,7 +74,7 @@ function Analys360() {
     //     var elem = stepsDiv
     //         window.scrollTo(0, elem.offsetTop - 100);
     // }, [step])
-    
+
     return (
         <div>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
@@ -84,9 +84,15 @@ function Analys360() {
                             <span className='fw-800 firstBlueTitle'>360° Budgetanalyse</span>
                         </div>
                         <div>
-                            <span className='normalTextToWhite finanuSubTitle fw-500 fs-5'>Berechnen Sie ihr monatliches und jährliches Budget mit unsererem einfachen Budgetrechner.
-                                Tragen Sie hierfür einfach <br></br> Ihre Einnahmen,
-                                Ausgaben und Sparziele ein und erhalten sehen Sie sich Ihren aktuellen Budgetplan an!</span>
+                            <span className='normalTextToWhite finanuSubTitle fw-500 fs-5'>
+                                Eine solide Finanzplanung basiert im Wesentlichen auf vier aufeinander aufbauenden Bausteinen.
+
+                                Ermitteln Sie zunächst Ihr eigenes Sparpotenzial, sprich die Differenz zwischen Einnahmen und Ausgaben.
+
+                                Liegen die Ausgaben über den Einnahmen, verbleibt nichts zum Sparen, – der Schuldenberg wächst.
+
+                                Hier hilft nur eine Budgetplanung, um die Ausgaben zu senken.
+                            </span>
                         </div>
                     </div>
                     <div ref={stepsDiv} className='steps360'>

@@ -54,7 +54,7 @@ function FourteenthStep() {
               <span className='fw-600'>Telefonnummer</span>
             </div>
             <div className="">
-              <input className='krankenInputStyle' type="text" name="" placeholder='Telefonnummer' id="" />
+              <input className='krankenInputStyle' type="tel" name="" placeholder='Telefonnummer' id="" />
             </div>
           </div>
         </div>

@@ -330,7 +330,10 @@ a {
 
 @media (max-width: 1099.98px) {
     
+    .navlinksondesktop {
 
+        display: none;
+    }
     .nav-container {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -376,7 +379,7 @@ a {
         justify-content: center;
     }
 
-    .buttonofmenutabs {
+    /* .buttonofmenutabs {
         position: absolute;
         display: none;
         width: -webkit-fill-available;
@@ -389,6 +392,26 @@ a {
         justify-content: space-between;
         padding: 20px 90px 20px 20px;
 
+    } */
+    .navTabs .navTabsRow {
+        background-color: white;
+    }
+    .buttonofmenutabs {
+        position: absolute;
+        display: flex;
+        width: -webkit-fill-available;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0px 1.5rem;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 20px 90px 20px 0px;
+        text-decoration: none !important;
+    }
+    .navLinks {
+        padding-right: 0px !important;
+        font-size: 1.5rem;
     }
 }
 
@@ -398,10 +421,7 @@ a {
         padding-right: 1.5rem;
     }
 
-    .navlinksondesktop {
-
-        display: none;
-    }
+    
 
     #navbarnav {
         display: none;
@@ -437,10 +457,7 @@ a {
         text-align: left;
     }
 
-    .navLinks {
-        padding-right: 0px !important;
-        font-size: 1.5rem;
-    }
+    
 
     .challengeUsBtn {
         font-size: 1.5rem;
@@ -457,10 +474,10 @@ a {
         align-content: center;
         align-items: center;
         flex-direction: row;
-        margin: 0px 30px;
+        margin: 0px 1.5rem;
         flex-wrap: nowrap;
         justify-content: space-between;
-        padding: 20px 90px 20px 20px;
+        padding: 20px 90px 20px 0px;
         text-decoration: none !important;
     }
 
@@ -528,7 +545,7 @@ a {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-        padding: 20px 90px 20px 20px;
+        padding: 20px 90px 20px 0px;
 
     }
 
@@ -558,7 +575,6 @@ a {
 
 @media (max-width: 575.98px) {
    
-
     .buttonofmenutabs {
         position: absolute;
         display: flex;

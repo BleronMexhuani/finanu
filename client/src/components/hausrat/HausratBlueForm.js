@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
-import HausratHouse from '../../assets/images/hausratHouse.svg'
+import { ReactComponent as HausratHouse } from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
-
+import { ReactComponent as Ilu } from '../../assets/images/hausratSliderPhotos/hausratIlu.svg'
 function HausratBlueForm() {
 
     const [interes, setInteres] = useState(1)
@@ -47,17 +47,18 @@ function HausratBlueForm() {
         }
     }
     useEffect(() => {
-        setMontaliche(parseFloat(zinsen) + parseFloat(amortisation))
+        setMontaliche((parseFloat(zinsen) + parseFloat(amortisation)).toFixed(2))
 
     }, [zinsen, amortisation])
 
     const [openModal, setopenModal] = useState(false)
     useEffect(() => {
         if (openModal === true) {
-            document.body.style.overflowY = "hidden"
+            document.body.style.overflow = "hidden"
         }
         else {
-            document.body.style.overflowY = "auto"
+            document.body.style.overflow = "auto"
+
         }
 
     }, [openModal])
@@ -70,22 +71,34 @@ function HausratBlueForm() {
         }
 
     }, [submitTable])
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
+    useEffect(() => {
+        const changeWidth = () => {
+            setScreenWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', changeWidth)
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+    }, [])
     return (
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto bodyCounterPadding'>
-                <div className="col-12 col-md-6 col-lg-6 col-xl-6 mx-auto bodyCounterPadding">
+                {/* <div className="col-12 col-md-6 col-lg-6 col-xl-6 mx-auto bodyCounterPadding">
                     <div className='hausratHouseDiv mt-5 mt-md-0 ps-0 ps-md-4' >
-                        <img src={HausratHouse} className="img-fluid" alt="" />
+                        <HausratHouse className="img-fluid" />
                     </div>
-                </div>
-                <div className="row g-5 justify-content-center">
-                    <div className="col-12 col-md-6 col-lg-5 col-xl-4">
+                </div> */}
+                <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
+                    <div className="col-12 col-md-5 col-lg-5 col-xl-4">
                         <div className="hausratWhiteDiv hausratBlueDiv mx-auto mb-4 mb-md-0 text-start">
-                            <div className='p-4 p-sm-5'>
+                            <div className='p-4 p-lg-5'>
                                 <div className='pb-4'>
                                     <div className='pb-2'>
-                                        <span >Gesamtkaufpreis</span>
+                                        <span className='normalTextToWhite'>Gesamtkaufpreis</span>
                                     </div>
                                     <div>
                                         <NumberFormat placeholder={'12,000'}
@@ -103,7 +116,7 @@ function HausratBlueForm() {
                                 </div>
                                 <div className='pb-4'>
                                     <div className='pb-2'>
-                                        <span >Jährliches Einkommen</span>
+                                        <span className='normalTextToWhite'>Jährliches Einkommen</span>
                                     </div>
                                     <div>
                                         <NumberFormat placeholder={'12,000'}
@@ -121,7 +134,7 @@ function HausratBlueForm() {
                                 </div>
                                 <div className='pb-4'>
                                     <div className='pb-2'>
-                                        <span >Eigenkapital</span>
+                                        <span className='normalTextToWhite'>Eigenkapital</span>
                                     </div>
                                     <div>
                                         <NumberFormat placeholder={'12,000'}
@@ -142,7 +155,7 @@ function HausratBlueForm() {
                                     <div className='pb-2'>
                                         <div className="row g-0">
                                             <div className="col">
-                                                <span >Angenommener Zinssatz</span>
+                                                <span className='normalTextToWhite'>Angenommener Zinssatz</span>
                                             </div>
                                             <div className="col-auto">
                                                 <span>{interes}%</span>
@@ -164,118 +177,127 @@ function HausratBlueForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-6 col-xl-8">
-                        <div ref={HausratBlue} className="">
-                            <div className="blueBorderDiv p-4 text-start">
-                                <div className='pb-4'>
-                                    <span className="fw-700 fs-3">Kosten im Detail</span>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Zinsen</span>
+                    <div className="col-12 col-md-7 col-lg-6 col-xl-8 my-md-auto">
+                        {(submitTable) && (
+
+                            <div ref={HausratBlue} className="">
+                                <div className="blueBorderDiv p-4 text-start">
+                                    <div className='pb-4'>
+                                        <span className="fw-700 fs-3">Kosten im Detail</span>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Zinsen</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={zinsen} displayType={'text'} thousandSeparator={true} /></span>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={zinsen} displayType={'text'} thousandSeparator={true} /></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Amortisation</span>
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Amortisation</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={amortisation} displayType={'text'} thousandSeparator={true} /> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-700'>Monatliche Zahlung</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-700'>CHF <NumberFormat value={montaliche} displayType={'text'} thousandSeparator={true} /> </span>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={amortisation} displayType={'text'} thousandSeparator={true} /> </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='pb-5'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div className='me-1 me-sm-3 me-md-5'>
-                                                <span className='fw-500'>Nebenkosten (Kann von Liegenschaft zu Liegenschaft stark variieren, deshalb Rechnen Banken mit ca. 1% des Liegenschaftpreises pro Jahr)</span>
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-700'>Monatliche Zahlung</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={nebenconsten} displayType={'text'} thousandSeparator={true} /> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <span className="fw-700 fs-3">Berechnung im Detail</span>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Hypothek</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={hypothek} displayType={'text'} thousandSeparator={true} /></span>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-700'>CHF <NumberFormat value={montaliche} displayType={'text'} thousandSeparator={true} /> </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Eigenmittel</span>
+                                    <div className='pb-5'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div className='me-1 me-sm-3 me-md-5'>
+                                                    <span className='fw-500'>Nebenkosten (Kann von Liegenschaft zu Liegenschaft stark variieren, deshalb Rechnen Banken mit ca. 1% des Liegenschaftpreises pro Jahr)</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className={`fw-500 ${(eigenmittei >= 20) ? 'greenText' : 'redText'}`}>{eigenmittei} %</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-5'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Tragbarkeit</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className={`fw-500 ${(targbarkeit > 33) ? 'redText' : 'greenText'}`}>{targbarkeit} %</span>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={nebenconsten} displayType={'text'} thousandSeparator={true} /> </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='text-end'>
-                                    <button type='button' onClick={() => { setopenModal(true) }} className='hausratBtn py-2'> Jetzt anfragen</button>
+                                    <div className='pb-4'>
+                                        <span className="fw-700 fs-3">Berechnung im Detail</span>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Hypothek</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={hypothek} displayType={'text'} thousandSeparator={true} /></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Eigenmittel</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className={`fw-500 ${(eigenmittei >= 20) ? 'greenText' : 'redText'}`}>{eigenmittei} %</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='pb-5'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Tragbarkeit</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className={`fw-500 ${(targbarkeit > 33) ? 'redText' : 'greenText'}`}>{targbarkeit} %</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='text-end'>
+                                        <button type='button' onClick={() => { setopenModal(true) }} className='hausratBtn py-2'> Jetzt anfragen</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+
+                        )}
+                        {(screenWidth > 767.98 && !submitTable) && (
+
+                            <Ilu className='img-fluid' />
+                        )}
+
                     </div>
                 </div>
 

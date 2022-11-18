@@ -48,8 +48,8 @@ function KrankenBlueBg() {
                             </div>
                             <div className='pt-5'>
                                 <div className="row g-5 justify-content-center">
-                                    <div className="col-12 col-sm-6 col-md-auto pt-2">
-                                        <img src={KrankenPramien1} alt="" className='pt-1' />
+                                    <div className="col-12 col-sm-6 col-md-auto">
+                                        <img src={KrankenPramien1} alt="" />
                                     </div>
                                     <div className="col-12 col-sm-6 col-md-auto">
                                         <img src={KrankenPramien2} alt="" />

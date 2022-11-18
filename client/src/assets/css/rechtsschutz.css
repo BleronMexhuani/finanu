@@ -76,10 +76,10 @@
 
 .step3InputRechtss {
     width: 100%;
-    background-color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem;
+    background-color: #fff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.5rem !important;
     outline: none !important;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
     -moz-box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
@@ -87,8 +87,8 @@
 }
 
 .step3InputRechtss::placeholder {
-    color: #AAABAB;
-    font-weight: 500;
+    color: #AAABAB !important;
+    font-weight: 500 !important;
 }
 
 .step3RechtssBtn {
@@ -210,6 +210,9 @@ ol, ul {
 
     .faqOpen3 {
         height: 140px;
+    }
+    .arrowDivRech {
+        display: none;
     }
 }
 
