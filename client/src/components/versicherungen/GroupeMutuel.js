@@ -223,16 +223,7 @@ function GroupeMutuel() {
                     </div>
                 </div>
             </div>
-            {/* <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
-                <div className='col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto'>
-                    <div className="">
-                        <span style={{ lineHeight: '41px' }} className='normalTextToWhite fw-800 firstBlueTitle'>
-                            Customer satisfaction after making a claim
-
-                        </span>
-                    </div>
-                </div>
-            </div> */}
+            
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
                 <div className="row g-0 justify-content-center">
                     <div className="col-auto">

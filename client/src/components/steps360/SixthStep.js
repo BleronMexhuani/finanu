@@ -56,7 +56,7 @@ function SixthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="sixthStepInput" onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                    <input name="sixthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>
@@ -80,7 +80,7 @@ function SixthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="sixthStepInput" onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                    <input name="sixthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>
@@ -104,7 +104,7 @@ function SixthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="sixthStepInput" onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[2]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                    <input name="sixthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[2]} type="number" my={"month"} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>
@@ -128,7 +128,7 @@ function SixthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="sixthStepInput" onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[3]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                    <input name="sixthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[3]} type="number" my={"month"} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>
@@ -152,7 +152,7 @@ function SixthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="sixthStepInput" onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                    <input name="sixthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>
@@ -176,7 +176,7 @@ function SixthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="sixthStepInput" onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[5]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                    <input name="sixthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[5]} type="number" my={"month"} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>
@@ -200,7 +200,7 @@ function SixthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="sixthStepInput" onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[6]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                    <input name="sixthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setSixthStepInputs(e.target.value) }} defaultValue={props.sixthStepInputs[6]} type="number" my={"month"} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>

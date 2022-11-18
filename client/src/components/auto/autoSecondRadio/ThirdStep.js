@@ -4,12 +4,12 @@ function ThirdStep(props) {
     return (
         <div>
             <div className="pb-3">
-                <span className='finanuSubTitle'>
+                <span className='finanuSubTitle  fs-5'>
                     Personalien
                 </span>
             </div>
             <div className='pb-4'>
-                <span className='firstBlueTitle fw-500'>Versicherungsnehmer</span>
+                <span className='firstBlueTitle fw-600 fs-1'>Versicherungsnehmer</span>
             </div>
             <div className='pb-4'>
                 <div className="row g-4 justify-content-center">

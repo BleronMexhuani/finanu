@@ -6,7 +6,7 @@ function IhrAuto(props) {
     return (
         <div>
             <div className="pb-4">
-                <span className='finanuSubTitle'>
+                <span className='finanuSubTitle fs-4'>
                     Neueinlösung eines Fahrzeuges
                 </span>
             </div>

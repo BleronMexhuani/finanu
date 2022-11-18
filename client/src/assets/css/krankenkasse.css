@@ -47,7 +47,15 @@ a {
     outline: none !important;
     padding: 0.75rem;
 }
-
+.dateStyleIOS {
+    width: 100% !important;
+    border-radius: 12px !important;
+    background-color: #fff !important; 
+    border: none !important;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+    outline: none !important;
+    padding: 0.75rem !important;
+}
 .krankenInputStyle::placeholder {
     font-weight: 500;
     color: #000;
@@ -373,6 +381,7 @@ a {
 }
 
 .krankenFirstIluDiv {
+    padding: 0px 150px;
     margin-bottom: -20px;
 }
 
@@ -403,7 +412,9 @@ a {
         margin-top: 50px;
         padding-bottom: 3rem;
     }
-
+    .krankenFirstIluDiv {
+        padding: 0px 100px;
+    }
     .blueBgKranken1 {
         height: auto;
     }
@@ -422,7 +433,9 @@ a {
         height: auto;
         margin-top: 0px;
     }
-
+    .krankenFirstIluDiv {
+        padding: 0px 50px;
+    }
     .blueBgKranken1 {
         margin-top: 0px;
     }
@@ -446,6 +459,7 @@ a {
     .krankenSubtitle {
         font-size: 16px;
     }
+    
 }
 
 @media (max-width: 575.98px) {
@@ -453,11 +467,13 @@ a {
         width: 240px;
         left: calc(50% - 120px);
     }
-
+    .krankenFirstIluDiv {
+        padding: 0px 0px;
+    }
     .mehrLadenModalContent {
         width: auto;
-        border-radius: 0px;
-        height: 100vh;
+        border-radius: 23px;
+        height: 80vh;
         overflow-y: auto;
     }
 

@@ -39,7 +39,7 @@ function Option1Kranken(props) {
                         </div>
                         <div className="row g-4 justify-content-center">
                             <div className="col-12 col-sm-6 col-md-4">
-                                <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center">
+                                <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={ toggleModal}>
                                     <div className=''>
                                         <img src={TerminImg} alt="" />
                                     </div>

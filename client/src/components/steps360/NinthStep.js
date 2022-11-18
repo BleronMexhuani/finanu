@@ -55,7 +55,7 @@ function NinthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="ninthStepInput" onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="ninthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>
@@ -79,7 +79,7 @@ function NinthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="ninthStepInput" onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="ninthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>
@@ -103,7 +103,7 @@ function NinthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="ninthStepInput" onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[2]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="ninthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[2]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>
@@ -127,7 +127,7 @@ function NinthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="ninthStepInput" onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[3]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="ninthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[3]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>
@@ -151,7 +151,7 @@ function NinthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="ninthStepInput" onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="ninthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>
@@ -175,7 +175,7 @@ function NinthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="ninthStepInput" onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="ninthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>
@@ -199,7 +199,7 @@ function NinthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="ninthStepInput" onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="ninthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setNinthStepInputs(e.target.value) }} defaultValue={props.ninthStepInputs[4]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>

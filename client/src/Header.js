@@ -73,40 +73,41 @@ function Header(props) {
                                         })} to='/' id="linksss" className='text-decoration-none navLinks'>
                                             Home
                                         </NavLink>
-                                        <NavLink onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)} style={({ isActive }) => ({
-                                            color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                        })} to='/versicherungen' id="" className='text-decoration-none fw-500 navLinks px-3'>
-                                            Versicherungen
+                                        <span className='position-relative'>
+                                            <NavLink onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)} style={({ isActive }) => ({
+                                                color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),zIndex: 100
+                                            })} to='/versicherungen' id="" className='text-decoration-none fw-500 navLinks px-3 position-relative'>
+                                                Versicherungen
+                                                </NavLink>
 
-                                            {isShown && (
-                                                <div className='navbarDropdownsWrap' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-                                                    <div className='navbarDropdowns' >
-                                                        <div className='pb-3'>
-                                                            <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                                            })} to='/versicherungen/krankenkasse' id="linksss" className='text-decoration-none navLinks px-3'>
-                                                                Krankenkasse
-                                                            </NavLink>
-                                                        </div>
-                                                        <div className='pb-3'>
-                                                            <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                                            })} to='/versicherungen/rechtsschutz' id="linksss" className='text-decoration-none navLinks px-3'>
-                                                                Rechtsschutz
-                                                            </NavLink>
-                                                        </div>
-                                                        <div>
-                                                            <NavLink style={({ isActive }) => ({
-                                                                color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                                            })} to='/versicherungen/auto-motorrad' id="linksss" className='text-decoration-none navLinks px-3'>
-                                                                Auto & Motorrad
-                                                            </NavLink>
+                                                {isShown && (
+                                                    <div className='navbarDropdownsWrap' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                                                        <div className='navbarDropdowns' >
+                                                            <div className='pb-3'>
+                                                                <NavLink style={({ isActive }) => ({
+                                                                    color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
+                                                                })} to='/versicherungen/krankenkasse' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                                    Krankenkasse
+                                                                </NavLink>
+                                                            </div>
+                                                            <div className='pb-3'>
+                                                                <NavLink style={({ isActive }) => ({
+                                                                    color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
+                                                                })} to='/versicherungen/rechtsschutz' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                                    Rechtsschutz
+                                                                </NavLink>
+                                                            </div>
+                                                            <div>
+                                                                <NavLink style={({ isActive }) => ({
+                                                                    color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
+                                                                })} to='/versicherungen/auto-motorrad' id="linksss" className='text-decoration-none navLinks px-3'>
+                                                                    Auto & Motorrad
+                                                                </NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            )}
-                                        </NavLink>
-
+                                                )}
+                                        </span>
                                         <span to='/' id="linksss" className='text-decoration-none navLinks' onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
                                             Finanzen
                                             {isShown1 && (
@@ -157,7 +158,7 @@ function Header(props) {
                                 <NavLink style={({ isActive }) => ({
                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
                                 })} to='/plus' className='buttonofmenutabs'>
-                                    <Button onClick={() =>{setToggleMenu(false)}} id="buttonofnavbar" className="px-5" variant="outline-danger">Finanu Plus </Button>
+                                    <Button onClick={() => { setToggleMenu(false) }} id="buttonofnavbar" className="px-5" variant="outline-danger">Finanu Plus </Button>
                                 </NavLink>
 
                                 <div className='row gx-0 gy-4 navTabsRow' onClick={toggleNav}>
