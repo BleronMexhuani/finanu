@@ -55,7 +55,7 @@ function ThirdStep(props) {
                                 <div className="col">
                                     <div className="row g-0 stepsFormInputs rightBorderDiv">
                                         <div className="col">
-                                            <input name="thirdStepInput" type="number" my={"month"} onChange={(e) => { props.setThirdStepInputs(e.target.value) }} defaultValue={props.thirdStepInputs[0]} className='w-100 borderRightInput' />
+                                            <input onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} name="thirdStepInput" type="number" my={"month"} onChange={(e) => { props.setThirdStepInputs(e.target.value) }} defaultValue={props.thirdStepInputs[0]} className='w-100 borderRightInput' />
                                         </div>
                                         <div className="col-auto my-auto">
                                             <div className='px-2'>
@@ -77,7 +77,7 @@ function ThirdStep(props) {
                                 <div className="col">
                                     <div className="row g-0 stepsFormInputs rightBorderDiv">
                                         <div className="col">
-                                            <input name="thirdStepInput" type="number" my={"month"} onChange={(e) => { props.setThirdStepInputs(e.target.value) }} defaultValue={props.thirdStepInputs[1]} className='w-100 borderRightInput' />
+                                            <input name="thirdStepInput" type="number" my={"month"} onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setThirdStepInputs(e.target.value) }} defaultValue={props.thirdStepInputs[1]} className='w-100 borderRightInput' />
                                         </div>
                                         <div className="col-auto my-auto">
                                             <div className='px-2'>

@@ -442,11 +442,11 @@ function KrankenkasseSteps() {
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-4">
 
-                                    <select className='krankenSelectStyle form-select' onChange={(e) => setInsuranceNum(e.target.value)} name="" id="insurances">
+                                    <select className='krankenSelectStyle form-select' style={{fontSize: (isEmpty) ? '12px' : ''}} onChange={(e) => setInsuranceNum(e.target.value)} name="" id="insurances">
                                         {(isEmpty) && (
-
-                                            <option value="-1">Sie müssen zuerst die Postleitzahl einfügen.</option>
-
+                                            
+                                            <option value="-1" >Sie müssen zuerst die Postleitzahl einfügen.</option>
+                                            
                                         )}
                                         {(!isEmpty) && (
                                             insurances.map(element => {
@@ -465,7 +465,7 @@ function KrankenkasseSteps() {
                     </div>
                 </div>
                 {secondStep && (
-                    <div ref={secondStepKranken} className='krankenSecondStep wrapDiv container-xl px-4 px-xl-0 pt-5'>
+                    <div ref={secondStepKranken} className='krankenSecondStep wrapDiv container-xl px-0 px-sm-4 px-xl-0 pt-5'>
                         <div className='my-5 krankenStepsCircle mx-auto fs-5'>
                             <span>2/5</span>
                         </div>
@@ -559,7 +559,7 @@ function KrankenkasseSteps() {
                     </div>
                 )}
                 {thirdStep && (
-                    <div ref={thirdStepKranken} className='wrapDiv container-xl px-4 px-xl-0 pt-5'>
+                    <div ref={thirdStepKranken} className='wrapDiv container-xl px-0 px-sm-4 px-xl-0 pt-5'>
                         <div className='krankenSecondStep'>
                             <div className='my-5 krankenStepsCircle mx-auto fs-5'>
                                 <span>3/5</span>
@@ -693,7 +693,7 @@ function KrankenkasseSteps() {
                     <img src={LoadingGif} width="50" alt="" />
                 </div>
                 {thirdStep2 && (
-                    <div ref={third2StepKranken} className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
+                    <div ref={third2StepKranken} className='wrapDiv container-xl px-0 px-sm-4 px-xl-5 pt-5'>
                         <div className="row g-4 justify-content-center pt-5">
                             {
 
@@ -786,7 +786,7 @@ function KrankenkasseSteps() {
                 )}
                 {fourthStep && (
                     <div ref={fourthStepKranken}>
-                        <div className='wrapDiv container-xl px-4 px-xl-5 pt-5'>
+                        <div className='wrapDiv container-xl px-0 px-sm-4 px-xl-5 pt-5'>
                             <div className='krankenSecondStep'>
                                 <div className='my-5 krankenStepsCircle mx-auto fs-5'>
                                     <span>4/5</span>
@@ -1018,7 +1018,7 @@ function KrankenkasseSteps() {
             </form>
             {mehrLadenModal && (
                 <div className="mehrLadenModal">
-                    <div className="mehrLadenModalContent p-4">
+                    <div className="mehrLadenModalContent p-4 mx-4">
                         <div className='text-end'>
                             <span style={{ cursor: "pointer" }} onClick={() => { setMehrLadenModal(false) }}>
                                 <img src={XBtn} alt="" />
@@ -1064,10 +1064,16 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Aufenthaltsbewilligung</span>
                                         </div>
                                         <div>
-                                            <select required name="" onChange={e => setAufenthaltsbewilligung(e.target.value)} id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-
+                                            <select onChange={e => setAufenthaltsbewilligung(e.target.value)} class="krankenInputStyle form-select krankenInputStepStyle p-2">
+                                                <option value="Keine der folgenden Optionen">Keine der folgenden Optionen</option>
+                                                <option value="Ausweis B (Aufenthaltsbewilligung)">Ausweis B (Aufenthaltsbewilligung)</option>
+                                                <option value="Ausweis C (Niederlassungsbewilligung)">Ausweis C (Niederlassungsbewilligung)</option>
+                                                <option value="Ausweis Ci (Aufenthaltsbewilligung mit Erwerbstätigkeit)">Ausweis Ci (Aufenthaltsbewilligung mit Erwerbstätigkeit)</option>
+                                                <option value="Ausweis G (Grenzgängerbewilligung)">Ausweis G (Grenzgängerbewilligung)</option>
+                                                <option value="Ausweis L (Kurzaufenthaltsbewilligung)">Ausweis L (Kurzaufenthaltsbewilligung)</option>
+                                                <option value="Ausweis F (Vorläufig aufgenommene Ausländerinnen, Ausländer)">Ausweis F (Vorläufig aufgenommene Ausländerinnen, Ausländer)</option>
+                                                <option value="Ausweis N (Asylsuchende)">Ausweis N (Asylsuchende)</option>
+                                                <option value="Ausweis S (Schutzbedürftige)">Ausweis S (Schutzbedürftige)</option>
                                             </select>
                                         </div>
                                     </div>

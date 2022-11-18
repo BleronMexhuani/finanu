@@ -55,7 +55,7 @@ function TwelvthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="eightthStepInput" onChange={(e) => { props.setTwelvthStepInputs(e.target.value) }} defaultValue={props.twelvthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="eightthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setTwelvthStepInputs(e.target.value) }} defaultValue={props.twelvthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>
@@ -79,7 +79,7 @@ function TwelvthStep(props) {
                     <div className="col">
                       <div className="row g-0 stepsFormInputs rightBorderDiv">
                         <div className="col">
-                          <input name="eightthStepInput" onChange={(e) => { props.setTwelvthStepInputs(e.target.value) }} defaultValue={props.twelvthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
+                          <input name="eightthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}}  onChange={(e) => { props.setTwelvthStepInputs(e.target.value) }} defaultValue={props.twelvthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
                         </div>
                         <div className="col-auto my-auto">
                           <div className='px-2'>

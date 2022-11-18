@@ -87,18 +87,35 @@ function HausratBlueForm() {
     return (
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto bodyCounterPadding'>
-                {/* <div className="col-12 col-md-6 col-lg-6 col-xl-6 mx-auto bodyCounterPadding">
-                    <div className='hausratHouseDiv mt-5 mt-md-0 ps-0 ps-md-4' >
-                        <HausratHouse className="img-fluid" />
+                <div className="row gx-4 justify-content-between bodyCounterPadding">
+                    <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
+                        <div className='pb-4'>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Lorem Ipsum</span>
+                        </div>
                     </div>
-                </div> */}
+                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+                        <div className="">
+                            <div className='fw-500 fs-5 normalTextToWhite'>
+                                <span>
+                                    Sie träumen von einem Eigenheim?
+                                    Laut der NZZ verschenken Schweizer bei der Hypothek viel Geld. Vielfach beschränken sie sich auf wenige Angebote oder wählen direkt die Hausbank.
+
+                                    Bei der Wahl sollten nicht nur niedrige Zinsen eine Rolle spielen, sondern auch die Konditionen für eine Amortisation, eventuelle Vorfälligkeitsentschädigungen und sogenannte Knebelverträge.
+
+                                    Wir verhandeln für Sie hart, aber fair mit den zwei bis drei besten Instituten, um bessere Konditionen zu erhalten.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
                     <div className="col-12 col-md-5 col-lg-5 col-xl-4">
-                        <div className="hausratWhiteDiv hausratBlueDiv mx-auto mb-4 mb-md-0 text-start">
+                        <div className="hausratWhiteDiv mx-auto mb-4 mb-md-0 text-start">
                             <div className='p-4 p-lg-5'>
                                 <div className='pb-4'>
                                     <div className='pb-2'>
-                                        <span className='normalTextToWhite'>Gesamtkaufpreis</span>
+                                        <span className='normalTextToWhite fw-600'>Gesamtkaufpreis</span>
                                     </div>
                                     <div>
                                         <NumberFormat placeholder={'12,000'}
@@ -116,7 +133,7 @@ function HausratBlueForm() {
                                 </div>
                                 <div className='pb-4'>
                                     <div className='pb-2'>
-                                        <span className='normalTextToWhite'>Jährliches Einkommen</span>
+                                        <span className='normalTextToWhite fw-600'>Jährliches Einkommen</span>
                                     </div>
                                     <div>
                                         <NumberFormat placeholder={'12,000'}
@@ -134,7 +151,7 @@ function HausratBlueForm() {
                                 </div>
                                 <div className='pb-4'>
                                     <div className='pb-2'>
-                                        <span className='normalTextToWhite'>Eigenkapital</span>
+                                        <span className='normalTextToWhite fw-600'>Eigenkapital</span>
                                     </div>
                                     <div>
                                         <NumberFormat placeholder={'12,000'}
@@ -155,10 +172,10 @@ function HausratBlueForm() {
                                     <div className='pb-2'>
                                         <div className="row g-0">
                                             <div className="col">
-                                                <span className='normalTextToWhite'>Angenommener Zinssatz</span>
+                                                <span className='normalTextToWhite fw-600'>Angenommener Zinssatz</span>
                                             </div>
                                             <div className="col-auto">
-                                                <span>{interes}%</span>
+                                                <span className='fw-600'>{interes}%</span>
                                             </div>
                                         </div>
                                     </div>

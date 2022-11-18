@@ -57,7 +57,7 @@ function FifthStep(props) {
                                     <div className="col">
                                         <div className="row g-0 stepsFormInputs rightBorderDiv">
                                             <div className="col">
-                                                <input name="fifthStepInput" onChange={(e) => { props.setFifthStepInputs(e.target.value) }} defaultValue={props.fifthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                <input name="fifthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setFifthStepInputs(e.target.value) }} defaultValue={props.fifthStepInputs[0]} type="number" my={"month"} className='w-100 borderRightInput' />
                                             </div>
                                             <div className="col-auto my-auto">
                                                 <div className='px-2'>
@@ -81,7 +81,7 @@ function FifthStep(props) {
                                     <div className="col">
                                         <div className="row g-0 stepsFormInputs rightBorderDiv">
                                             <div className="col">
-                                                <input name="fifthStepInput" onChange={(e) => { props.setFifthStepInputs(e.target.value) }} defaultValue={props.fifthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
+                                                <input name="fifthStepInput" onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setFifthStepInputs(e.target.value) }} defaultValue={props.fifthStepInputs[1]} type="number" my={"month"} className='w-100 borderRightInput' />
                                             </div>
                                             <div className="col-auto my-auto">
                                                 <div className='px-2'>

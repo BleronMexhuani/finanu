@@ -45,11 +45,14 @@ a {
 
 .hausratBlueDiv span {
     font-weight: 600;
+    color: #fff;
 }
 
 .hausratWhiteDiv {
     background-color: white;
     box-shadow: 0px 4px 18px rgba(170, 170, 170, 0.25);
+    border-radius: 16px;
+
 }
 
 

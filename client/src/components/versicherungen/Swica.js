@@ -371,20 +371,7 @@ function Swica() {
 
                 </div>
             </div>
-            {/* <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
-                <div className='col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto'>
-                    <div className="pb-4">
-                        <span className='normalTextToWhite fw-800 firstBlueTitle'>SWICA benefits for corporate customers
-                        </span>
-                    </div>
-                    <div className='pb-3'>
-                        <span className='fw-500 normalTextToWhite'>
-                            Whether Comparis, K-Tipp, bonus.ch or AmPuls - SWICA receives the best marks among the major Swiss health insurance companies in terms of customer satisfaction.
-                            Put your trust in SWICA and benefit from the exclusive advantages.
-                        </span>
-                    </div>
-                </div>
-            </div> */}
+            
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-start'>
                 <Accordion defaultActiveKey="0" className='borderTopAcc'>
                     <Accordion.Item eventKey="0" className='swicaAccItem'>

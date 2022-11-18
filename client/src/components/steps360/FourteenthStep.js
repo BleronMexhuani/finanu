@@ -46,7 +46,7 @@ function FourteenthStep() {
               <span className='fw-600'>Geburtsdatum</span>
             </div>
             <div className="">
-              <input className='krankenInputStyle' type="date" name="" placeholder='PLZ' id="" />
+              <input className='form-control dateStyleIOS' type="date" name="" placeholder='PLZ' id="" />
             </div>
           </div>
           <div className='col-12 col-md-6'>

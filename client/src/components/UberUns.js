@@ -8,7 +8,7 @@ function UberUns() {
     return (
         <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
             <div className='pb-5'>
-                <span className='fw-800 firstBlueTitle'>Über uns</span>
+                <span className='fw-800 firstBlueTitle fs-1'>Über uns</span>
             </div>
             <div className='bodyCounterPadding'>
                 <Idea style={{ maxWidth: '700px' }} />
@@ -16,8 +16,8 @@ function UberUns() {
             <div className="row gx-4 justify-content-between bodyCounterPadding">
                 <div className="col-12 col-md-5 col-xl-4 text-start">
 
-                    <div className=''>
-                        <span className='fw-700 firstBlueTitle fs-1'>UNSERE AUFGABE</span>
+                    <div className='pb-4'>
+                        <span className='fw-700 firstBlueTitle fs-1'>Unsere Aufgabe</span>
                     </div>
 
                 </div>
@@ -78,14 +78,14 @@ function UberUns() {
                     </div>
                 </div>
             </div>
-            <div className='bodyCounterPadding hideOnMob'>
+            <div className=''>
 
                 <div className="row gx-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-md-5 col-xl-4 text-start">
 
 
-                        <div className='' style={{ wordBreak: 'break-all' }}>
-                            <span className='fw-700 firstBlueTitle fs-1'>UNTERNEHMENSPHILOSOPHIE</span>
+                        <div className='pb-4' style={{ wordBreak: 'break-all' }}>
+                            <span className='fw-700 firstBlueTitle fs-1'>Unternehmensphilosophie</span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
@@ -98,7 +98,7 @@ function UberUns() {
                 </div>
             </div>
 
-            <div className='px-0 px-md-4 px-lg-5 hideOnMob'>
+            <div className='px-0 px-md-4 px-lg-5'>
                 <div className="row g-0">
                     <div className="col-6 col-md-4 ">
 

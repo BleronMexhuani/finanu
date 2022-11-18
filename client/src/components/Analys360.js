@@ -70,10 +70,14 @@ function Analys360() {
 
     const stepsDiv = useRef()
 
-    // useEffect(() => {
-    //     var elem = stepsDiv
-    //         window.scrollTo(0, elem.offsetTop - 100);
-    // }, [step])
+    useEffect(() => {
+        var elem = stepsDiv
+        window.scrollTo(
+            {
+                top: elem.current.offsetTop - 100,
+                behavior: "smooth"
+            });
+    }, [step])
 
     return (
         <div>
@@ -81,7 +85,7 @@ function Analys360() {
                 <div>
                     <div className="pb-5">
                         <div className='pb-3'>
-                            <span className='fw-800 firstBlueTitle'>360° Budgetanalyse</span>
+                            <span className='fw-800 firstBlueTitle fs-1'>360° Budgetanalyse</span>
                         </div>
                         <div>
                             <span className='normalTextToWhite finanuSubTitle fw-500 fs-5'>
