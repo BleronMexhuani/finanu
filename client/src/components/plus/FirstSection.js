@@ -137,19 +137,21 @@ function FirstSection() {
                         <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto">
                             <div className="px-0 px-md-4 px-lg-5 pb-5">
 
-                                <div className='pb-3'>
-                                    <span className='fs-1 fw-700 secondaryColor'>Why on earth did we start an insurance company?</span>
+                                <div className='pb-4'>
+                                    <span className='fs-3 fw-700 secondaryColor'>Why on earth did we start an insurance company?</span>
                                 </div>
                                 <div className='pb-3'>
-                                    <span className='fw-600 fs-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla</span>
+                                    <span className='fw-400 fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
                                 </div>
                                 <div>
                                     <a href="" className='plusLink'>Click link Finanu</a>
 
                                 </div>
                             </div>
-                            <div className="">
-                                <Vid1 className="img-fluid" />
+                            <div className="videobackground pe-2 pt-3">
+                                <div className='m'>
+                                    <Vid1 className="img-fluid pt-2" style={{ borderRadius: '20px', marginLeft: '-25px' }}  />
+                                </div>
                             </div>
                         </div>
                     </div>
