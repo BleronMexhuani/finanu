@@ -181,7 +181,28 @@ function KrankenkasseSteps() {
         setModel(targetModells);
         setIsLoadActive('flex');
         const result = await axios.get(`https://node.kutiza.com/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
+        const response = result.data;
 
+        var results = [];
+        var searchField = "name";
+        var searchVal = ["SWICA", "Vivao Sympany"];
+
+        for (var i = 0; i < response.length; i++) {
+            for (let j = 0; j < searchVal.length; j++) {
+                if (response[i][searchField] == searchVal[j]) {
+                    let res = response[i];
+                    response.splice(response.indexOf(response[i]),1)
+                    response.unshift(res);
+                   
+              
+                    searchVal.pop(searchVal[j]);
+              
+                }
+                
+            }
+        }
+        
+        console.log(response);
 
         setKrankenkasse(result.data);
         setIsLoadActive('none');
