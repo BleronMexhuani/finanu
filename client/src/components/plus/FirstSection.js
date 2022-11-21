@@ -50,9 +50,9 @@ function FirstSection() {
             <div className="container-xl px-4 px-xl-0 text-start">
                 <div className="row gy-5 justify-content-between">
                     {(screenWidth > 575.98) && (
-                        <div className="col-12 col-lg-5">
+                        <div className="col-12 col-lg-6">
                             <div className='pb-5'>
-                                <span className='plusTitle fw-700 triaryColor'>Lorem to the ipsum ipsum </span>
+                                <span className='plusTitle fw-700 triaryColor'>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
                             </div>
                             <div className='pb-5'>
                                 <span className='fs-5 fw-400 secondaryColor'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</span>
