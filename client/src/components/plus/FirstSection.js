@@ -22,25 +22,26 @@ function FirstSection() {
     }, [])
     return (
         <>
-            <div className="blueBg">
+            <div className="blueBg  px-4 px-xl-0  ">
                 {(screenWidth > 991.98) && (
-                    <BlueBg />
+                    <BlueBg   />
                 )}
                 {(screenWidth < 575.98) && (
-                    <div className="pt-5 pe-4 mb-5">
+                    
+                    <div className="blueBg pt-5 pe-4 mb-5 ">
                         <div className="row g-0">
                             <div className="col">
                                 <MobIlu />
 
                             </div>
-                            <div className="col-auto my-auto">
-                                <div>
-                                    <span className='fw-500 fs-5 secondaryColor'>Das Leben lieben</span>
+                            <div className="ps-4 py-2 col-auto my-auto">
+                                <div className="text-start">
+                                    <span className='fw-700 fs-3 secondaryColor text-start ' style={{color: 'white'}}>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
                                 </div>
                             </div>
                         </div>
                         <div className="text-start p-4">
-                            <span className='fw-700 fs-3 secondaryColor'>UNSERE Erfahre Sie hier  über PRO Life...</span>
+                            <span className='fw-400 fs-4 secondaryColor ' style={{color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
                         </div>
                     </div>
                 )}
@@ -108,7 +109,7 @@ function FirstSection() {
                     )}
 
                     <div className="col-12 col-lg-6 col-xl-auto order-2 order-md-1">
-                        <div className="plusForm p-5">
+                        <div className="plusForm py-5 px-4 p-md-5">
                             <div className='pb-4'>
                                 <span className='fs-3 fw-700 plusFormTitle' style={{color: 'white'}}>Lohnt sich eine Mitgliedschaft fur dich?</span>
                             </div>
@@ -149,7 +150,7 @@ function FirstSection() {
                             </div>
                             <div className="videobackground pe-2 pt-3">
                                 <div className=''>
-                                    <Vid1 className="img-fluid pt-2" style={{ borderRadius: '20px', marginLeft: '-25px', marginBottom: '-25px' }}  />
+                                    <Vid1 className="img-fluid pt-2 videoinsecondsection" style={{ borderRadius: '20px'  }}  />
                                 </div>
                             </div>
                         </div>

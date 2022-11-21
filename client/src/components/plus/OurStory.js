@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as Signature } from '../../assets/images/plus/signature.svg'
+import Accordion from 'react-bootstrap/Accordion';
 function OurStory(props) {
 
     return (
@@ -41,7 +42,7 @@ function OurStory(props) {
                                         <span className='fw-600 secondaryColor'>CO-CEO</span>
                                     </div>
                                 </div>
-                            <div className="col-6 col-sm-1 order-1 order-md-1"> </div>
+                                <div className="col-auto col-sm-1 order-1 order-md-1 mx-0 px-0"> </div>
 
                                 <div className="col-6 col-sm-4 order-2 order-md-2">
                                     <div className='pb-5'>
@@ -62,7 +63,7 @@ function OurStory(props) {
                     <div className="col-12 col-md-6 order-1 order-md-2">
 
                         <div className='pb-4'>
-                            <span className='secondaryColor fw-700 fs-1'>We learn from the past, but build for the future.</span>
+                            <span className='secondaryColor fw-500 fw-md-700 fs-md-1 fs-5'>We learn from the past, but build for the future.</span>
                         </div>
                         <div className='secondaryColor fw-500 fs-5'>
                             <div className='pb-3'>
@@ -83,7 +84,44 @@ function OurStory(props) {
 
                         {(props.screenWidth < 575.98) && (
                             <div className="pt-4">
-                                faq
+                                <Accordion defaultActiveKey="0" className='py-3' >
+                                    <Accordion.Item eventKey="0" className='pt-3 accordionstyle' >
+                                        <Accordion.Header className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat.  
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="1" className='pt-3 accordionstyle'>
+                                        <Accordion.Header  className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat. 
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="2" className='pt-3 accordionstyle'>
+                                        <Accordion.Header  className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat.  
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="3 " className='pt-3 accordionstyle'>
+                                        <Accordion.Header  className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat. 
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
                             </div>
                         )}
                     </div>
