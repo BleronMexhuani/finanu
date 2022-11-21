@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import FirstSection from './plus/FirstSection'
 import '../assets/css/plus.css'
 import PlusTabs from './plus/PlusTabs'
+import PlusTabsMobile from './plus/PlusTabsMobile'
+
 import PlusReviews from './plus/PlusReviews'
 import OurStory from './plus/OurStory'
 import JoinUs from './plus/JoinUs'
@@ -28,12 +30,18 @@ function Plus() {
         <>
             <div className="pb-5 mb-4">
                 <FirstSection />
-
             </div>
 
-            <div className="pb-5 mb-4">
-                <PlusTabs />
-            </div>
+
+            {(screenWidth < 575.98) && (
+                <PlusTabsMobile />
+
+            )}
+            {(screenWidth > 575.98) && (
+                <div className="pb-5 mb-4">
+                    <PlusTabs />
+                </div>
+            )}
 
             {(screenWidth < 575.98) && (
                 <JoinUs />
@@ -62,7 +70,7 @@ function Plus() {
             )}
             <div className='pb-5 mb-4'>
                 <Otherquestions />
-                 
+
             </div>
 
         </>

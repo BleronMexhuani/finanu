@@ -49,6 +49,7 @@ function CoverYouNeed() {
                         <div className="plusCoverDiv px-4 py-5">
                             <div className="pb-3">
 
+                            <img src={car} />
 
 
 
