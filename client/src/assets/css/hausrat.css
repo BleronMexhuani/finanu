@@ -57,17 +57,16 @@ a {
 
 
 .hausratFormInputs_2 {
-    background: #FFFFFF;
+    background: #FFFFFF !important;
     border: 1px solid #D5D5D5 !important;
-    border-radius: 11px;
-    border: none;
+    border-radius: 11px !important;
     outline: none !important;
-    padding: 0.6rem;
+    padding: 0.6rem !important;
     width: 100%;
 
 }
 .hausratFormInputs_2::placeholder {
-    color: rgba(112, 112, 112, 0.54);
+    font-weight: 500 !important;
 }
 .hausratFormInputs {
     width: 100%;
@@ -341,13 +340,11 @@ a {
     border: 1px solid #434343 !important;
 }
 
-.darkTheme .checkmarkRes2:hover {
-    border: 4px solid #434343;
-}
+
 
 .darkTheme .checkmarkRes2 {
     background-color: transparent;
-    border: 4px solid #434343;
+    border: 3px solid #434343;
 }
 
 .darkTheme .hausratWhiteBg {
@@ -368,6 +365,7 @@ a {
 }
 .darkTheme .hausratFormInputs_2 {
     background-color: transparent !important;
+    color: #fff !important;
 }
 .darkTheme .useFullLinks {
     background-color: #333436;

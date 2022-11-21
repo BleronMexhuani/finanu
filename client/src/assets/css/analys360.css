@@ -183,6 +183,10 @@
     .stepsSvgRow .col-auto.my-auto svg {
         width: 10px !important;
     }
+
+    .steps360 .krankenInputStyle::placeholder {
+        font-size: 14px;
+    }
 }
 
 .darkTheme .stepsBlueDiv {
@@ -203,6 +207,7 @@
 .darkTheme .krankenInputStyle::placeholder {
     color: #fff !important;
 }
+
 .darkTheme .stepsBlueDiv select {
     background-color: #282424 !important;
     border: none !important;
@@ -222,9 +227,11 @@
     background-color: #282424 !important;
     border-right: 1px solid transparent !important;
 }
+
 .darkTheme .rightBorderDiv span {
     color: #fff !important;
 }
+
 .darkTheme .rightBorderDiv .col {
     border-right: 1px solid #ffffff50;
 }
@@ -232,9 +239,11 @@
 .darkTheme .passiveBackground {
     background-color: #333436;
 }
-.darkTheme .passiveSvg rect { 
+
+.darkTheme .passiveSvg rect {
     fill: transparent;
 }
+
 .darkTheme .stepsNextBtn {
     background-color: #282424;
 }

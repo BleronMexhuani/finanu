@@ -23,7 +23,7 @@ function Option1Kranken(props) {
     }
     return (
         <div>
-            <div className='wrapDiv container-xl px-4'>
+            <div className='wrapDiv container-xl px-4 px-xl-0'>
                 <div className="row g-4 justify-content-between">
                     <div className="col-12 col-lg-7 text-start">
                         <div className='pb-5 mb-3'>

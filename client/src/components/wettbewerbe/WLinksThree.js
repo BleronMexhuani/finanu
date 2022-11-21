@@ -193,7 +193,7 @@ function WLinksThree(props) {
       <div className=" wrapDiv  container-xl px-4 px-xl-0 mt-5 py-5">
         <div className="mt-5 py-5 text-start normalTextToWhite " >
             <span className="titledesc" >
-            Wie kann bei gewinne-einfach.ch teilgenommen werden?
+            Wie kann bei finanu.ch teilgenommen werden?
             </span>
             <div className="mt-3">
         <span className="subtitledesc" >
@@ -202,7 +202,7 @@ function WLinksThree(props) {
         </div>
         <div className="mt-4">
         <span className="titledesc" >
-        Wer darf bei gewinne-einfach.ch teilnehmen?
+        Wer darf bei finanu.ch teilnehmen?
             </span>
             </div>
             <div className="mt-3">

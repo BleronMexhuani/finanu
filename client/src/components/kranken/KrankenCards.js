@@ -33,7 +33,7 @@ function KrankenCards(props) {
                             In einem ersten Schritt können Sie bei der Grundversicherung sparen, indem Sie eine höhere Franchise und ein anderes Versicherungsmodell als das Grundmodell wählen. Allein dadurch können Sie Prämienersparnisse von bis zu 50% erreichen.
                         </span>
                     </div>
-                    <div className='px-4 px-lg-5 bodyCounterPadding zuzatImages'>
+                    <div className='px-4 px-lg-5 bodyCounterPadding grundImages'>
                         <div className="row g-3 justify-content-center">
                             <div className="col-12 col-sm-6 col-md-4 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>

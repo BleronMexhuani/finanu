@@ -10,7 +10,7 @@ function KrankenBlueBg() {
                 <div className='blueBgKranken'>
                     {/* Background Photo per telefon edhe tablet mvyn  */}
                     <div className=' blueBgCenterText'>
-                        <div className="wrapDiv container-xl px-4 pt-5 mt-5 normalTextToWhite">
+                        <div className="wrapDiv container-xl px-4 px-xl-0 pt-5 mt-5 normalTextToWhite">
                             <div className='ngtMrg'>
                                 <div className="wrapDiv container-xl px-0">
                                     <div className='row gx-0 gx-md-4 gy-0 text-start justify-content-between'>

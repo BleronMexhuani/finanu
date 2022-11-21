@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import { ReactComponent as HausratHouse } from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
-import { ReactComponent as Ilu } from '../../assets/images/hausratSliderPhotos/hausratIlu.svg'
+import Ilu from '../../assets/images/hausratSliderPhotos/HOUSE.png'
 function HausratBlueForm() {
 
     const [interes, setInteres] = useState(1)
@@ -124,7 +124,7 @@ function HausratBlueForm() {
                                                 setApartamentPrice(value)
 
                                             }}
-                                            className='hausratFormInputs_2'
+                                            className='hausratFormInputs_2 form-control'
                                             displayType={'input'}
                                             thousandSeparator={true}
 
@@ -141,7 +141,7 @@ function HausratBlueForm() {
                                                 const { value } = values;
                                                 setYearlyIncome(value)
                                             }}
-                                            className='hausratFormInputs_2'
+                                            className='hausratFormInputs_2 form-control'
                                             displayType={'input'}
                                             thousandSeparator={true}
 
@@ -161,7 +161,7 @@ function HausratBlueForm() {
                                                 setCapital(value)
                                             }}
 
-                                            className='hausratFormInputs_2'
+                                            className='hausratFormInputs_2 form-control'
                                             displayType={'input'}
                                             thousandSeparator={true}
 
@@ -311,8 +311,7 @@ function HausratBlueForm() {
 
                         )}
                         {(screenWidth > 767.98 && !submitTable) && (
-
-                            <Ilu className='img-fluid' />
+                                <img src={Ilu} alt="" className='img-fluid'/>
                         )}
 
                     </div>
