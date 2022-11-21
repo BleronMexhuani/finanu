@@ -19,26 +19,42 @@ function PlusTabs() {
                     <span className='fw-700 fs-1 secondaryColor'>The highest level of cover</span>
                 </div>
                 <div className='pb-3'>
-                    <div className="row g-4 justify-content-center">
+                    <div className="row g-4 justify-content-around mb-5">
                         <div className="col-auto" >
                             <div className={`plusSliderButton ${(active === 0) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(0, undefined, false); setactive(0) }}>
-                                <span className='fw-600 fs-5 secondaryColor'>Car damage</span>
+                                <span className='fw-600 fs-5 secondaryColor'>Car Damage</span>
                             </div>
                         </div>
                         <div className="col-auto" >
                             <div className={`plusSliderButton ${(active === 1) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(1, undefined, false); setactive(1) }}>
-                                <span className='fw-600 fs-5 secondaryColor'>Car damage</span>
+                                <span className='fw-600 fs-5 secondaryColor'>Fire and Theft</span>
                             </div>
                         </div>
 
                         <div className="col-auto" >
                             <div className={`plusSliderButton ${(active === 2) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(2, undefined, false); setactive(2) }}>
-                                <span className='fw-600 fs-5 secondaryColor'>Car damage</span>
+                                <span className='fw-600 fs-5 secondaryColor'>EU Cover for 90 Days</span>
                             </div>
                         </div>
                         <div className="col-auto" >
                             <div className={`plusSliderButton ${(active === 3) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(3, undefined, false); setactive(3) }}>
-                                <span className='fw-600 fs-5 secondaryColor'>Car damage</span>
+                                <span className='fw-600 fs-5 secondaryColor'>Injury</span>
+                            </div>
+                        </div>
+                        <div className="col-auto" >
+                            <div className={`plusSliderButton ${(active === 4) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(4, undefined, false); setactive(4) }}>
+                                <span className='fw-600 fs-5 secondaryColor'>Courtesy car</span>
+                            </div>
+                        </div>
+
+                        <div className="col-auto" >
+                            <div className={`plusSliderButton ${(active === 5) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(5, undefined, false); setactive(5) }}>
+                                <span className='fw-600 fs-5 secondaryColor'>Property Damage</span>
+                            </div>
+                        </div>
+                        <div className="col-auto" >
+                            <div className={`plusSliderButton ${(active === 6) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(6, undefined, false); setactive(6) }}>
+                                <span className='fw-600 fs-5 secondaryColor'>Windscreen Damage</span>
                             </div>
                         </div>
 
@@ -59,7 +75,7 @@ function PlusTabs() {
                     }}
                     modules={[EffectFade, Autoplay]}
                     className="mySwiper"
-                    onSlideChange={(swiper) => { setactive((swiper.activeIndex - 1 > 3) ? 0 : swiper.activeIndex - 1) }}
+                    onSlideChange={(swiper) => { setactive((swiper.activeIndex - 1 > 6) ? 0 : swiper.activeIndex - 1) }}
                    
                 >
 

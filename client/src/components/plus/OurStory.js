@@ -15,11 +15,11 @@ function OurStory(props) {
                         <span className='fw-600 secondaryColor'>AS TOLD BY OUR FOUNDERS</span>
                     </div>
                 </div>
-                <div className="row gx-0 gx-md-5 gx-lg-0 gy-5 gy-md-0 justify-content-between">
+                <div className="row gx-0 gx-md-5 gx-lg-0 gy-5 gy-md-0 justify-content-evenly">
                     <div className="col-12 col-md-6 col-lg-5 order-2 order-md-1">
-                        <div className="d-none d-md-block">
+                        <div className="d-none d-md-block col offset-lg-2">
                             <div className='pb-4'>
-                                <span className='plusTitle fw-700 secondaryColor'>
+                                <span className='plusTitle fs-2 fw-700 secondaryColor'>
                                     Our story
                                 </span>
                             </div>
@@ -28,11 +28,8 @@ function OurStory(props) {
                             </div>
                         </div>
                         <div>
-                            <div className="row gx-5 justify-content-between text-center">
-                                <div className="col-0 col-md-1 order-3 order-lg-1">
-
-                                </div>
-                                <div className="col-6 col-sm-4 order-1 order-md-1">
+                            <div className="row gx-5  text-start">
+                                <div className="col-6 col-sm-4 offset-sm-2 order-1 order-md-1">
                                     <div className='pb-5'>
                                         <Signature className="img-fluid" />
 
@@ -44,6 +41,8 @@ function OurStory(props) {
                                         <span className='fw-600 secondaryColor'>CO-CEO</span>
                                     </div>
                                 </div>
+                            <div className="col-6 col-sm-1 order-1 order-md-1"> </div>
+
                                 <div className="col-6 col-sm-4 order-2 order-md-2">
                                     <div className='pb-5'>
                                         <Signature className="img-fluid" />
