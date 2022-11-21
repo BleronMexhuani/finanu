@@ -72,11 +72,14 @@ function Analys360() {
 
     useEffect(() => {
         var elem = stepsDiv
-        window.scrollTo(
-            {
-                top: elem.current.offsetTop - 100,
-                behavior: "smooth"
-            });
+        if (step !== 0) {
+            window.scrollTo(
+                {
+                    top: elem.current.offsetTop - 100,
+                    behavior: "smooth"
+                })
+        }
+
     }, [step])
 
     return (

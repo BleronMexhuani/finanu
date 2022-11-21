@@ -16,6 +16,8 @@ import stars from "../../assets/images/stars.svg"
 
 import { Link } from "react-router-dom";
 import HeroImg from '../../assets/images/heroIlu.png'
+import HeroImgDark from '../../assets/images/heroIluDark.png'
+
 function HomeFirstSection(props) {
 
     return (
@@ -35,7 +37,11 @@ function HomeFirstSection(props) {
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 mt-5 mt-md-0">
-                                <img src={HeroImg} alt="" className='img-fluid' />
+                                {!props.darkMode
+                                    ? <img src={HeroImg} alt="" className='img-fluid' />
+                                    : <img src={HeroImgDark} alt="" className='img-fluid' />
+                                }
+
                             </div>
                         </div>
                     </div>
@@ -176,7 +182,7 @@ function HomeFirstSection(props) {
                     </div>
                 </div>
             </div>
-            
+
         </>
     )
 }

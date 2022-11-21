@@ -22,7 +22,7 @@ function Otherquestions() {
                                         <div className='col fw-700 text-center'>Lorem Ipsum lorem lorem</div>
                                         <div className='col text-end'>
                                             <div className='pe-3'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
                                             </div>
                                         </div>
                                     </div>
@@ -31,7 +31,7 @@ function Otherquestions() {
                                             <div className='col text-end'>
                                                 <div className='pe-3'>
                                                     <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                                     </svg>
 
                                                 </div>
@@ -46,7 +46,7 @@ function Otherquestions() {
                             <div className='col text-end'>
                                 <div className='pe-3'>
                                     <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ function Otherquestions() {
                             <div className='col text-end'>
                                 <div className='pe-3'>
                                     <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
 
                                 </div>
@@ -67,7 +67,7 @@ function Otherquestions() {
                             <div className='col text-end '>
                                 <div className='pe-3'>
                                     <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.47864 1.85059L7.47864 7.85059L13.4786 1.85059" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </div>
 

@@ -5,14 +5,14 @@ import LastSectionRechtss from './rechtsschutz/LastSectionRechtss'
 import Privatenrechtsschutz from './rechtsschutz/Privatenrechtsschutz'
 import RechtsschutzSteps from './rechtsschutz/RechtsschutzSteps'
 
-function Rechtsschutz() {
+function Rechtsschutz(props) {
   return (
     <div>
       <div>
         <RechtsschutzSteps />
       </div>
       <div>
-        <Privatenrechtsschutz />
+        <Privatenrechtsschutz darkMode={props.darkMode} />
       </div>
       <div className='bodyCounterPadding'>
         <LastSectionRechtss />

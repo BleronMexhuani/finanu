@@ -274,6 +274,7 @@ a {
     .mobilelogo {
         display: none;
     }
+    
 }
 
 #buttonofnavbar {
@@ -317,6 +318,8 @@ a {
 
 }
 
+
+
 @media (max-width: 1900px) {
     .mobilelogohidden {
         display: none
@@ -329,11 +332,12 @@ a {
 }
 
 @media (max-width: 1099.98px) {
-    
+
     .navlinksondesktop {
 
         display: none;
     }
+
     .nav-container {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -396,12 +400,17 @@ a {
     .navTabs .navTabsRow {
         background-color: white;
     }
+
     .buttonofmenutabs {
         display: none;
     }
+
     .navLinks {
         padding-right: 0px !important;
         font-size: 1.5rem;
+    }
+    .hideNavBtn {
+        display: none !important;
     }
 }
 
@@ -411,7 +420,7 @@ a {
         padding-right: 1.5rem;
     }
 
-    
+
 
     #navbarnav {
         display: none;
@@ -447,7 +456,7 @@ a {
         text-align: left;
     }
 
-    
+
 
     .challengeUsBtn {
         font-size: 1.5rem;
@@ -564,7 +573,7 @@ a {
 }
 
 @media (max-width: 575.98px) {
-   
+
     .buttonofmenutabs {
         position: absolute;
         display: flex;
@@ -731,4 +740,8 @@ a {
 
 .darkTheme .navbarDropdowns {
     background-color: #282424;
+}
+
+.darkTheme #buttonofnavbar:hover {
+    background-color: transparent;
 }

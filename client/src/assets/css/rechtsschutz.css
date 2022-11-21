@@ -15,10 +15,7 @@
     cursor: pointer;
 }
 
-.containerRes:hover input~.checkmarkRes {
-    border: 4px solid #ccc;
-    transition: all 0.2s ease-in-out;
-}
+
 
 .containerRes input:checked~.checkmarkRes {
     border: 4px solid #2196F3;
@@ -48,10 +45,7 @@
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
 }
 
-.containerRes2:hover input~.checkmarkRes2 {
-    border: 3px solid #ccc;
-    transition: all 0.2s ease-in-out;
-}
+
 
 .containerRes2 input:checked~.checkmarkRes2 {
     border: 3px solid #2196F3;
