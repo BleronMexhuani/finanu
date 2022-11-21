@@ -125,7 +125,8 @@
     position: absolute;
     width: calc(100% - 50px);
     left: 25px;
-    top: -28px;
+    top: -32px;
+    border: 4px solid #34ACE3;;
 }
 
 .rechtssBtn {
@@ -315,16 +316,25 @@ ol, ul {
 }
 
 .darkTheme .blueBgRechtssPriv {
-    background-color: #333436;
+    background-color: #282424;
 }
 
 .darkTheme .blueBgRecht {
     background-color: #282424;
     box-shadow: rgb(0 0 0 / 30%) 0 0 10px !important;
-
+    border: 4px solid #50B8E7;
 }
 
 .darkTheme .whiteBgRecht {
     background-color: #282424;
     color: #fff;
+}
+.darkTheme .step3InputRechtss {
+    background-color: #282424 !important;
+    color: #fff;
+}
+
+.darkTheme .step3InputRechtss::placeholder {
+    color: #AAABAB !important;
+    font-weight: 500 !important;
 }

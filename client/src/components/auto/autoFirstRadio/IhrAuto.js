@@ -100,7 +100,7 @@ function IhrAuto(props) {
                             <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
-                                        <span className='fw-500'>Ab wann wollen Sie Ihr Auto versichern?</span>
+                                        <span className='fw-500 normalTextToWhite'>Ab wann wollen Sie Ihr Auto versichern?</span>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ function IhrAuto(props) {
                             <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
-                                        <span className='fw-500'>In welchem Jahr haben Sie Ihr Auto gekauft?</span>
+                                        <span className='fw-500 normalTextToWhite'>In welchem Jahr haben Sie Ihr Auto gekauft?</span>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@ function IhrAuto(props) {
                             <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
-                                        <span className='fw-500'>Wann war die erste Inverkehrsetzung?</span>
+                                        <span className='fw-500 normalTextToWhite'>Wann war die erste Inverkehrsetzung?</span>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@ function IhrAuto(props) {
                             <div className="col-12 col-sm-6 col-lg-auto my-auto">
                                 <div className="autoCheckbox textStartToEnd">
                                     <div className='pb-2 pb-sm-0'>
-                                        <span className='fw-500'>In welchem Kanton ist Ihr Auto eingelöst?</span>
+                                        <span className='fw-500 normalTextToWhite'>In welchem Kanton ist Ihr Auto eingelöst?</span>
                                     </div>
                                 </div>
                             </div>

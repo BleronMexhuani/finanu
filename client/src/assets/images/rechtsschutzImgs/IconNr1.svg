@@ -2,8 +2,8 @@
     <style type="text/css">
         .st0{fill:#BEE8FF;}
         .st1{fill:#1A1A1A;}
-        .st2{fill:none;stroke:#1A1A1A;stroke-width:2;stroke-miterlimit:10;}
-        .st3{fill:none;stroke:#1A1A1A;stroke-width:4;stroke-miterlimit:10;}
+        .st2{fill:none;stroke:#1A1A1A;strokeWidth:2;stroke-miterlimit:10;}
+        .st3{fill:none;stroke:#1A1A1A;strokeWidth:4;stroke-miterlimit:10;}
         .st4{fill:#FFFFFF;}
         .st5{fill:#1C1C1B;}
         .st6{fill:#2B2A2A;}

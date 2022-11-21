@@ -1,9 +1,10 @@
 import React from 'react'
 import PensionBank from '../../assets/images/pensionBank.svg'
 import Versicherung from '../../assets/images/pensionVersicherung.svg'
+import PensionBankDark from '../../assets/images/pensionBankDark.svg'
 
 
-function PensionLastBlue() {
+function PensionLastBlue(props) {
     return (
         <div>
             <div className="container-xl px-4 px-xl-0 pb-5">
@@ -46,7 +47,10 @@ function PensionLastBlue() {
                                 <div className="col-6 col-md-4">
                                     <div className="pensionBankBorderBottom h-auto">
                                         <div>
-                                            <img width={90} height={90} src={PensionBank} alt="" />
+                                            {props.darkMode
+                                                ? <img width={90} height={90} src={PensionBankDark} alt="" />
+                                                : <img width={90} height={90} src={PensionBank} alt="" />
+                                            }
                                         </div>
                                         <div className='py-4'>
                                             <span className='fw-700' style={{ color: "#fff" }}>
