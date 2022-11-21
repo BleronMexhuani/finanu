@@ -79,7 +79,7 @@ function App() {
               <Route exact path="/versicherungen/groupe-mutuel" element={<GroupeMutuel />}/>
               <Route exact path="/versicherungen/allianz" element={<Allianz />}/>
               <Route exact path="/versicherungen/krankenkasse" element={<Krankenkasse darkMode={darkMode} />}/>
-              <Route exact path="/versicherungen/rechtsschutz" element={<Rechtsschutz />}/>
+              <Route exact path="/versicherungen/rechtsschutz" element={<Rechtsschutz darkMode={darkMode} />}/>
               <Route exact path="/versicherungen/auto-motorrad" element={<Auto />}/>
 
               {/* Finanzen */}

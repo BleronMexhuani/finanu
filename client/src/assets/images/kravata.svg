@@ -2,13 +2,13 @@
     <style type="text/css">
         .st0{fill:#FFFFFF;}
         .st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
-        .st2{fill:#FFFFFF;stroke:#000000;strokeWidth:0.25;stroke-miterlimit:10;}
-        .st3{stroke:#000000;strokeWidth:0.25;stroke-miterlimit:10;}
-        .st4{fill:#BEE8FF;stroke:#000000;strokeWidth:0.25;stroke-miterlimit:10;}
+        .st2{fill:#FFFFFF;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+        .st3{stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+        .st4{fill:#BEE8FF;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
         .st5{fill:#BEE8FF;}
         .st6{opacity:0.1294;}
-        .st7{fill:#BEE8FF;stroke:#000000;strokeWidth:2;stroke-miterlimit:10;}
-        .st8{fill:#BEE8FF;stroke:#000000;strokeWidth:0.5;stroke-miterlimit:10;}
+        .st7{fill:#BEE8FF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+        .st8{fill:#BEE8FF;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
     </style>
     <g>
         <g>

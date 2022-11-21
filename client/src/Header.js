@@ -157,7 +157,7 @@ function Header(props) {
                             <div className={`navTabs ${toggleMenu && 'navTabsOpen'}`}>
                                 <NavLink style={({ isActive }) => ({
                                     color: isActive ? '#50B8E7' : (props.darkMode ? '#fff' : '#000'),
-                                })} to='/plus' className='buttonofmenutabs'>
+                                })} to='/plus' className='buttonofmenutabs hideNavBtn'>
                                     <Button onClick={() => { setToggleMenu(false) }} id="buttonofnavbar" className="px-5" variant="outline-danger">Finanu Plus </Button>
                                 </NavLink>
 

@@ -113,3 +113,38 @@
         margin: -25px 0px -200px 0px;
     }
   }
+
+  .darkTheme .formcontact{
+    background-color: #282424;
+  }
+
+  .darkTheme .formbg{
+    background-color: #333436;
+  }
+
+
+  .darkTheme .darkselect{
+    background-color: #282424 !important;
+    border: 1px solid #11A3E6 !important;
+    color: #fff;
+  }
+
+  .darkTheme .form-select:focus {
+    background-color: #282424 !important;
+  }
+
+  .darkTheme .darktitle{
+    color: white;
+  }
+
+  .darkTheme .formtitle{
+    color: #50B8E7 !important;
+  }
+
+  .darkTheme .titledesc{
+    color: #50B8E7 !important;
+  }
+ 
+.darkTheme ::-webkit-calendar-picker-indicator {
+    filter: invert(1);  
+}

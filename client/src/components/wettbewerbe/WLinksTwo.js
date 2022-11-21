@@ -30,7 +30,7 @@ function WLinksTwo(props) {
             <div className="col-12 col-lg-6 " style={{zIndex: '999'}}>
               <div className="mx-auto formcontact">
                 <div className="mt-3">
-                  <h2 className="titleform ms-3">
+                  <h2 className="titleform ms-3 darktitle">
                   2-tägigen Europaparkausflug mit der Familie!
                   </h2>
                   <p className="subtitleform ms-3">
@@ -42,7 +42,7 @@ function WLinksTwo(props) {
                       defaultValue={props.setHouseholdValue}
                       name="household "
                       id=""
-                      className="form-select stepsFormInputs formwett"
+                      className="form-select stepsFormInputs formwett darkselect"
                     >
                       <option value="1">Frrau</option>
                       <option value="2">Herr</option>
@@ -51,19 +51,19 @@ function WLinksTwo(props) {
                       type="text"
                       name="name"
                       placeholder="Vorname"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="text"
                       name="name"
                       placeholder="Nachname"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="date"
                       id="birthday"
                       name="birthday"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="number"
@@ -72,34 +72,34 @@ function WLinksTwo(props) {
                       placeholder="Anzahl Personen im Haushalt"
                       min="1"
                       max="9"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="email"
                       id="email"
                       name="email"
                       placeholder="Email"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="phone"
                       id="phone"
                       name="phone"
                       placeholder="Handynumber"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="text"
                       name="name"
                       placeholder="Strasse"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <select
                       onChange={checkChild}
                       defaultValue={props.setHouseholdValue}
                       name="household "
                       id=""
-                      className="form-select stepsFormInputs formwett mt-2"
+                      className="form-select stepsFormInputs formwett mt-2 darkselect"
                     >
                       <option value="1">---</option>
                       <option value="2">---</option>
@@ -115,7 +115,7 @@ function WLinksTwo(props) {
                       onChange={checkChild}
                       defaultValue={props.setHouseholdValue}
                       id=""
-                      className="form-select stepsFormInputs formwett mt-2"
+                      className="form-select stepsFormInputs formwett mt-2 darkselect"
                     >
                       <option value="1">---</option>
                       <option value="Tiefe Kosten">Tiefe Kosten</option>
@@ -131,9 +131,9 @@ function WLinksTwo(props) {
                       placeholder="Franchise"
                       min="0"
                       max="10000"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
-                    {/* <label className="mt-4">
+                    <label className="mt-4 titlecheck darktitle">
                       <input type="checkbox" name="checkbox" value="value" />
                       <span className="ms-1 titlecheck">
                         {" "}
@@ -141,7 +141,7 @@ function WLinksTwo(props) {
                         Datenschutzbedingungen gelesen und bin damit <br />{" "}
                         einverstanden.*{" "}
                       </span>
-                    </label> */}
+                    </label>
                   </form>
                   <button className="firstSectionBlueBtn1 mt-2">
                     Jetzt konstenlos teilnehmen
@@ -173,7 +173,7 @@ function WLinksTwo(props) {
       <div className=" wrapDiv  container-xl px-4 px-xl-0 mt-5 py-5">
         <div className="mt-5 py-5 text-start normalTextToWhite " >
             <span className="titledesc" >
-            Wie kann bei gewinne-einfach.ch teilgenommen werden?
+            Wie kann bei finanu.ch teilgenommen werden?
             </span>
             <div className="mt-3">
         <span className="subtitledesc" >
@@ -182,7 +182,7 @@ function WLinksTwo(props) {
         </div>
         <div className="mt-4">
         <span className="titledesc" >
-        Wer darf bei gewinne-einfach.ch teilnehmen?
+        Wer darf bei finanu.ch teilnehmen?
             </span>
             </div>
             <div className="mt-3">

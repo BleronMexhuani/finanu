@@ -16,7 +16,6 @@ function CoverYouNeed() {
                         <div className="plusCoverDiv px-4 py-5">
                             <div className="pb-3">
                                 <img src={car} />
-
                             </div>
                             <div className='pb-3'>
                                 <span className='fs-5 fw-700 secondaryColor'>Lorem Ipsum</span>
@@ -29,11 +28,7 @@ function CoverYouNeed() {
                     <div className="col-12 col-sm-6 col-lg-3 col-xl-3">
                         <div className="plusCoverDiv px-4 py-5">
                             <div className="pb-3">
-
                                 <img src={car} />
-
-
-
                             </div>
                             <div className='pb-3'>
                                 <span className='fs-5 fw-700 secondaryColor'>Lorem Ipsum</span>
@@ -48,11 +43,7 @@ function CoverYouNeed() {
                     <div className="col-12 col-sm-6 col-lg-3 col-xl-3">
                         <div className="plusCoverDiv px-4 py-5">
                             <div className="pb-3">
-
                             <img src={car} />
-
-
-
                             </div>
                             <div className='pb-3'>
                                 <span className='fs-5 fw-700 secondaryColor'>Lorem Ipsum</span>
@@ -65,10 +56,7 @@ function CoverYouNeed() {
                     <div className="col-12 col-sm-6 col-lg-3 col-xl-3">
                         <div className="plusCoverDiv px-4 py-5">
                             <div className="pb-3">
-
                                 <img src={car} />
-
-
                             </div>
                             <div className='pb-3'>
                                 <span className='fs-5 fw-700 secondaryColor'>Lorem Ipsum</span>

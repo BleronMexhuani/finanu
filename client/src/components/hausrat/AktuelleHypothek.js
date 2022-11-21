@@ -37,7 +37,7 @@ function AktuelleHypothek() {
                     <div className="row g-0 justify-content-center bodyCounterPadding">
                         <div className="col-12 col-md-auto my-auto">
                             <div className='crookedText py-5'>
-                                <div>
+                                <div className='ps-0 ps-md-3'>
                                     <span className='blackTextBig'>Flex/Saron ab *</span>
                                 </div>
                                 <div>

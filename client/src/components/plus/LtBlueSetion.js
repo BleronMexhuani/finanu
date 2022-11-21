@@ -40,8 +40,8 @@ function LtBlueSetion() {
                     <div className='pt-5'>
                         <div className="topBottomBordersDiv py-4">
 
-                            <select class="form-select selectofangebote fs-5 fw-700" aria-label="Default select example">
-                                <option selected>Lorem Ipsum lorem lorem</option>
+                            <select className="form-select selectofangebote fs-5 fw-700" aria-label="Default select example">
+                                <option value="0">Lorem Ipsum lorem lorem</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>

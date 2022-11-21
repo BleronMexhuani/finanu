@@ -21,6 +21,7 @@ function Otherquestions() {
     }, [])
 
     return (
+
         <>
 
             <div className='container-xl px-5 px-xl-0 '>
@@ -31,6 +32,7 @@ function Otherquestions() {
                                 Other questions people ask a lot
                             </p>
                         </div>
+
                         <div className='collapsofthelastcomponent mb-5 mb-md-auto'>
                             <Accordion defaultActiveKey="0">
                                 <Accordion.Item eventKey="4" className="accordionstyle agilestyleofaccordion">
@@ -94,6 +96,7 @@ function Otherquestions() {
                         <div className='col-12 col-md-5 my-auto'>
                             <img style={{ maxWidth: '572px', width: '100%' }} src={imageoflastcomponent} />
                         </div>
+
                     )}
 
 
@@ -109,6 +112,7 @@ function Otherquestions() {
                         <div>
                             <p className='fs-3 fw-700 secondaryColor'>Uninsured driver promsie</p>
                             <p className='secondaryColor fw-400 fs-4 x-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
 
                         </div>
                     </div>
