@@ -9,6 +9,7 @@ import JoinUs from './plus/JoinUs'
 import CoverYouNeed from './plus/CoverYouNeed'
 import LtBlueSetion from './plus/LtBlueSetion'
 import Vorar from './plus/Vorar'
+import Otherquestions from './plus/Otherquestions'
 function Plus() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
@@ -54,11 +55,15 @@ function Plus() {
                     <div className="pb-5 mb-4">
                         <LtBlueSetion />
                     </div>
-                    <div>
+                    <div className='pb-5 mb-4'>
                         <Vorar />
                     </div>
                 </>
             )}
+            <div className='pb-5 mb-4'>
+                <Otherquestions />
+                 
+            </div>
 
         </>
     )
