@@ -28,7 +28,7 @@ function WLinksThree(props) {
             <div className="col-12 col-lg-6 " style={{zIndex: '999'}}>
               <div className="mx-auto formcontact">
                 <div className="mt-3">
-                  <h2 className="titleform ms-3">
+                  <h2 className="titleform ms-3 darktitle">
                   Auszeit bei einem Wellness <br /> Wochenende in den Bergen!
                   </h2>
                   <p className="subtitleform ms-3">
@@ -40,7 +40,7 @@ function WLinksThree(props) {
                       defaultValue={props.setHouseholdValue}
                       name="household "
                       id=""
-                      className="form-select stepsFormInputs formwett"
+                      className="form-select stepsFormInputs formwett darkselect"
                     >
                       <option value="1">Frrau</option>
                       <option value="2">Herr</option>
@@ -49,19 +49,19 @@ function WLinksThree(props) {
                       type="text"
                       name="name"
                       placeholder="Vorname"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="text"
                       name="name"
                       placeholder="Nachname"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="date"
                       id="birthday"
                       name="birthday"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="number"
@@ -70,34 +70,34 @@ function WLinksThree(props) {
                       placeholder="Anzahl Personen im Haushalt"
                       min="1"
                       max="9"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="email"
                       id="email"
                       name="email"
                       placeholder="Email"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="phone"
                       id="phone"
                       name="phone"
                       placeholder="Handynumber"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <input
                       type="text"
                       name="name"
                       placeholder="Strasse"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <select
                       onChange={checkChild}
                       defaultValue={props.setHouseholdValue}
                       name="household "
                       id=""
-                      className="form-select stepsFormInputs formwett mt-2"
+                      className="form-select stepsFormInputs formwett mt-2 darkselect"
                     >
                       <option value="1">---</option>
                       <option value="2">---</option>
@@ -112,7 +112,7 @@ function WLinksThree(props) {
                       onChange={checkChild}
                       defaultValue={props.setHouseholdValue}
                       id=""
-                      className="form-select stepsFormInputs formwett mt-2"
+                      className="form-select stepsFormInputs formwett mt-2 darkselect"
                     >
                       <option value="1">CSS</option>
                       <option value="2">---</option>
@@ -130,13 +130,13 @@ function WLinksThree(props) {
                       placeholder="Franchise"
                       min="0"
                       max="10000"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <select
                       onChange={checkChild}
                       defaultValue={props.setHouseholdValue}
                       id=""
-                      className="form-select stepsFormInputs formwett mt-2"
+                      className="form-select stepsFormInputs formwett mt-2 darkselect"
                     >
                       <option value="1">---</option>
                       <option value="2">1</option>
@@ -149,7 +149,7 @@ function WLinksThree(props) {
                       onChange={checkChild}
                       defaultValue={props.setHouseholdValue}
                       id=""
-                      className="form-select stepsFormInputs formwett mt-2"
+                      className="form-select stepsFormInputs formwett mt-2 darkselect"
                     >
                       <option value="1">---</option>
                       <option value="Tiefe Kosten">Tiefe Kosten</option>
@@ -160,7 +160,7 @@ function WLinksThree(props) {
                     </select>
                     <label className="mt-4">
                       <input type="checkbox" name="checkbox" value="value" />
-                      <span className="ms-1 titlecheck">
+                      <span className="ms-1 titlecheck darktitle">
                         {" "}
                         Ich habe die Teilnahme-, Nutzungs- und <br />{" "}
                         Datenschutzbedingungen gelesen und bin damit <br />{" "}
