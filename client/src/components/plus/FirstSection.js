@@ -62,7 +62,7 @@ function FirstSection() {
                             </div>
                             <div>
                                 <div className="row gx-5 gy-4">
-                                    <div className="col-auto">
+                                    <div className="col-5 pe-0">
                                         <div className="row gx-2 gy-0">
                                             <div className="col-auto">
                                                 <Users />
@@ -72,7 +72,7 @@ function FirstSection() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-auto">
+                                    <div className="col-5">
                                         <div className="row gx-2 gy-0">
                                             <div className="col-auto">
                                                 <Users />
@@ -82,7 +82,7 @@ function FirstSection() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-auto">
+                                    <div className="col-5">
                                         <div className="row gx-2 gy-0">
                                             <div className="col-auto">
                                                 <Users />
@@ -92,7 +92,7 @@ function FirstSection() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-auto">
+                                    <div className="col-5">
                                         <div className="row gx-2 gy-0">
                                             <div className="col-auto">
                                                 <Users />
@@ -116,11 +116,11 @@ function FirstSection() {
                                 <span className='fs-5 text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </div>
                             <div className='pb-3'>
-                                <input className='form-control plusInput p-3' type="text" placeholder='Vorname*' />
+                                <input className='form-control plusInput p-3' type="text" placeholder='Vorname*' style={{background: 'white'}} />
                             </div>
                             <div className='pb-3' style={{ position: 'relative' }}>
                                 <div>
-                                    <select name="" id="" className='form-select plusInput plusSelectArrow p-3'>
+                                    <select name="" id="" className='form-select plusInput plusSelectArrow p-3' style={{color: 'black !important'}}>
                                         <option value="">Vorname*</option>
                                     </select>
                                 </div>
