@@ -175,7 +175,7 @@ function HausratBlueForm() {
                                                 <span className='normalTextToWhite fw-600'>Angenommener Zinssatz</span>
                                             </div>
                                             <div className="col-auto">
-                                                <span className='fw-600'>{interes}%</span>
+                                                <span className='fw-600 normalTextToWhite'>{interes}%</span>
                                             </div>
                                         </div>
                                     </div>

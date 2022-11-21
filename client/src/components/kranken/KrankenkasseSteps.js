@@ -34,7 +34,7 @@ function KrankenkasseSteps() {
             telefonnummer
         }
         const res = await axios.post("https://node.kutiza.com/krankenkasse/sendMail");
-        console.log(res);
+
     }
 
     //Krankenkasse Calculator
@@ -148,7 +148,7 @@ function KrankenkasseSteps() {
 
     }, [plz, ort, commune])
 
-    const [modellChecked, setmodellChecked] = useState(false)
+
     const handleSubmit = async (event) => {
         event.preventDefault()
         setKrankenkasse([]);
@@ -175,16 +175,10 @@ function KrankenkasseSteps() {
 
                 }
             }
-            console.log(targetModells.length)
 
         }
-        if (targetModells.length > 0) {
-            setmodellChecked(true)
-        }
-        else {
-            setmodellChecked(false)
 
-        }
+
         setFranchise(targetFranchise);
         setJahrgang(targetJahrgang);
         setAccident(targetAccident);
@@ -212,7 +206,6 @@ function KrankenkasseSteps() {
             }
         }
 
-        console.log(response);
 
         setKrankenkasse(result.data);
         setIsLoadActive('none');
@@ -303,14 +296,17 @@ function KrankenkasseSteps() {
 
 
 
+    const [error, seterror] = useState(false)
 
     const toSecondStep = () => {
 
         if (inputValue === '' || inputValue === null || insuranceNum === "" || insuranceNum === null) {
             setSecondStep(false)
+            seterror(true)
         }
         else {
             setSecondStep(true)
+            seterror(false)
         }
     }
 
@@ -369,22 +365,33 @@ function KrankenkasseSteps() {
 
     const [gender, setGender] = useState("")
     const [vornameValue, setVornameValue] = useState("")
-    const [price, setPrice] = useState()
+    const [price, setPrice] = useState('')
     const [mitOhn, setMitOhn] = useState(false)
     let i = 0
 
     const [error4, seterror4] = useState(false)
 
+    const [modellChecked, setmodellChecked] = useState(false)
+
+    const validateModelle = () => {
+        var a = document.getElementsByName("modelle");
+        for (var i = 0; i < a.length; i++) {
+            if (a[i].checked) {
+                return setmodellChecked(true);
+
+            }
+        }
+        return setmodellChecked(false);
+
+    }
     const toThirdStep2 = () => {
-        if (gender !== "" && vornameValue !== "" && price !== "" && mitOhn !== "false" && jahrgang !== [] && model.length && model !== null) {
+        if (gender !== "" && vornameValue !== "" && price !== "" && mitOhn !== "false" && jahrgang !== [] && model.length && model !== null && modellChecked) {
             setThirdStep2(true)
             seterror4(false)
-
         }
         else {
             setThirdStep2(false)
             seterror4(true)
-
         }
 
     }
@@ -521,7 +528,11 @@ function KrankenkasseSteps() {
                                 <div className="col-12 col-sm-6 col-md-4">
                                     <button type='button' className='krankenBtnStyle' onClick={toSecondStep}>Jetzt Vergleichen</button>
                                 </div>
-
+                                {error && (
+                                        <div className='fw-600 text-start' style={{ color: '#F6490E' }}>
+                                            Bitte geben Sie eine gültige Schweizer PLZ an und wählen Sie eine Krankenkasse aus.
+                                        </div>
+                                    )}
                             </div>
                         </div>
                     </div>
@@ -735,25 +746,25 @@ function KrankenkasseSteps() {
                                 <div className="row g-4">
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="Standard" className='container1 w-100'>
-                                            <input type="checkbox" value={'TAR-BASE'} id='Standard' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-BASE'} id='Standard' name='modelle' onChange={validateModelle} hidden />
                                             <span className='checkmark'>Standard</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="Hausarzt" className='container1 w-100'>
-                                            <input type="checkbox" value={'TAR-HAM'} id='Hausarzt' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-HAM'} id='Hausarzt' name='modelle' onChange={validateModelle} hidden />
                                             <span className='checkmark'>Hausarzt</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="HMO" className='container1 w-100'>
-                                            <input type="checkbox" value={'TAR-HMO'} id='HMO' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-HMO'} id='HMO' name='modelle' onChange={validateModelle} hidden />
                                             <span className='checkmark'>HMO</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <label htmlFor="Weitere" className='container1 w-100'>
-                                            <input type="checkbox" value={'TAR-DIV'} id='Weitere' name='modelle' hidden />
+                                            <input type="checkbox" value={'TAR-DIV'} id='Weitere' name='modelle' onChange={validateModelle} hidden />
                                             <span className='checkmark'>Weitere Modelle</span>
                                         </label>
                                     </div>

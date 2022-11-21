@@ -34,7 +34,7 @@ function KrankenCards(props) {
                         </span>
                     </div>
                     <div className='px-4 px-lg-5 bodyCounterPadding zuzatImages'>
-                        <div className="row g-3">
+                        <div className="row g-3 justify-content-center">
                             <div className="col-12 col-sm-6 col-md-4 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
@@ -132,7 +132,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Medikamente</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Übernahme bis zu 90% der Kosten</span>
+                                                <span className='fw-400 secondaryColor'>Übernahme bis zu 90% der Kosten</span>
                                             </div>
                                         </div>
                                     </div>
@@ -145,7 +145,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Transport</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Bis zu 100% Deckung aller Transport und Rettungskosten.</span>
+                                                <span className='fw-400 secondaryColor'>Bis zu 100% Deckung aller Transport und Rettungskosten.</span>
                                             </div>
                                         </div>
 
@@ -159,7 +159,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Alternativmedizin</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Bis zu 100% Kostenübernahme bei der Nutzung von Alternativmedizin.</span>
+                                                <span className='fw-400 secondaryColor'>Bis zu 100% Kostenübernahme bei der Nutzung von Alternativmedizin.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -173,7 +173,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Sport</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Bis zu 500.- am Sportverein</span>
+                                                <span className='fw-400 secondaryColor'>Bis zu 500.- am Sportverein</span>
                                             </div>
                                         </div>
                                     </div>
@@ -186,7 +186,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Zahnspange</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Bis zu 20‘000.- an der Zahnstellungskorrektur
+                                                <span className='fw-400 secondaryColor'>Bis zu 20‘000.- an der Zahnstellungskorrektur
                                                 </span>
                                             </div>
                                         </div>
@@ -202,7 +202,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Fitness</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Bis zu 1‘100.- am Fitnessabo!
+                                                <span className='fw-400 secondaryColor'>Bis zu 1‘100.- am Fitnessabo!
                                                 </span>
                                             </div>
                                         </div>
@@ -218,7 +218,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Ausland</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Bis zu 100% Deckung aller Behandlungen im Ausland.
+                                                <span className='fw-400 secondaryColor'>Bis zu 100% Deckung aller Behandlungen im Ausland.
                                                 </span>
                                             </div>
                                         </div>
@@ -232,7 +232,7 @@ function KrankenCards(props) {
                                                 <span className='fw-600 finanuSubTitle'>Brille</span>
                                             </div>
                                             <div>
-                                                <span style={{ color: '#5a5a5a' }} className='fw-400'>Bis zu 800.- an der Brille!
+                                                <span className='fw-400 secondaryColor'>Bis zu 800.- an der Brille!
                                                 </span>
                                             </div>
                                         </div>

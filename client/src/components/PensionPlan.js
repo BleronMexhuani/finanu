@@ -14,13 +14,13 @@ function PensionPlan(props) {
             </div>
             <div className='pensionPlanBlueBg'>
                 <div className='bodyCounterPadding'>
-                    <PensionChart />
+                    <PensionChart darkMode={props.darkMode} />
                 </div>
                 <div className='bodyCounterPadding'>
                     <PensionCards darkMode={props.darkMode} />
                 </div>
                 <div>
-                    <PensionLastBlue />
+                    <PensionLastBlue darkMode={props.darkMode} />
                 </div>
             </div>
         </div>

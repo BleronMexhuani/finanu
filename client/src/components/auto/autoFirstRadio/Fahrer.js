@@ -14,7 +14,7 @@ function Fahrer(props) {
                         <div className="col-12 col-sm-6 col-lg-auto my-auto">
                             <div className="autoCheckbox textStartToEnd ">
                                 <div className='pb-2 pb-sm-0'>
-                                    <span className='fw-500'>Was ist Ihr Geschlecht?</span>
+                                    <span className='fw-500 normalTextToWhite'>Was ist Ihr Geschlecht?</span>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ function Fahrer(props) {
                         <div className="col-12 col-sm-6 col-lg-auto my-auto">
                             <div className="autoCheckbox textStartToEnd">
                                 <div className='pb-2 pb-sm-0'>
-                                    <span className='fw-500'>Wann sind Sie geboren?</span>
+                                    <span className='fw-500 normalTextToWhite'>Wann sind Sie geboren?</span>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ function Fahrer(props) {
                         <div className="col-12 col-sm-6 col-lg-auto my-auto">
                             <div className="autoCheckbox textStartToEnd">
                                 <div className='pb-2 pb-sm-0'>
-                                    <span className='fw-500'>Wann wurde Ihr Führerausweis ausgestellt?</span>
+                                    <span className='fw-500 normalTextToWhite'>Wann wurde Ihr Führerausweis ausgestellt?</span>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ function Fahrer(props) {
                         <div className="col-12 col-sm-6 col-lg-auto my-auto">
                             <div className="autoCheckbox textStartToEnd">
                                 <div className='pb-2 pb-sm-0'>
-                                    <span className='fw-500'>Was ist Ihre Nationalität?</span>
+                                    <span className='fw-500 normalTextToWhite'>Was ist Ihre Nationalität?</span>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ function Fahrer(props) {
                         <div className="col-12 col-sm-6 col-lg-auto my-auto">
                             <div className="autoCheckbox textStartToEnd">
                                 <div className='pb-2 pb-sm-0'>
-                                    <span className='fw-500'>In welchem Ort wohnen Sie?</span>
+                                    <span className='fw-500 normalTextToWhite'>In welchem Ort wohnen Sie?</span>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ function Fahrer(props) {
                         <div className="col-12 col-sm-6 col-lg-auto my-auto">
                             <div className="autoCheckbox textStartToEnd ">
                                 <div className='pb-2 pb-sm-0'>
-                                    <span className='fw-500'>Fahren Sie das Auto am häufigsten?</span>
+                                    <span className='fw-500 normalTextToWhite'>Fahren Sie das Auto am häufigsten?</span>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +138,7 @@ function Fahrer(props) {
                         <div className="col-12 col-sm-6 col-lg-auto my-auto">
                             <div className="autoCheckbox textStartToEnd ">
                                 <div className='pb-2 pb-sm-0'>
-                                    <span className='fw-500'>Fahren Sie mehr als 7 000 Kilometer pro Jahr?</span>
+                                    <span className='fw-500 normalTextToWhite'>Fahren Sie mehr als 7 000 Kilometer pro Jahr?</span>
                                 </div>
                             </div>
                         </div>

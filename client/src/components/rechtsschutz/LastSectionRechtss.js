@@ -9,7 +9,7 @@ function LastSectionRechtss() {
                     <div className="row gx-4 justify-content-between">
                         <div className="col-12 col-md-5 col-xl-4 text-start">
                             <div className='pb-4'>
-                                <span className='fw-700 fs-1 '>Privatrechtsschutz
+                                <span className='fw-700 fs-1 normalTextToWhite'>Privatrechtsschutz
                                 </span>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ function LastSectionRechtss() {
                     <div className="row gx-4 justify-content-between">
                         <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                             <div className='pb-4'>
-                                <span className='fw-700 fs-1' style={{ wordBreak: 'break-all' }}>Verkehrsrechtsschutz</span>
+                                <span className='fw-700 fs-1 normalTextToWhite' style={{ wordBreak: 'break-all' }}>Verkehrsrechtsschutz</span>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
@@ -50,7 +50,7 @@ function LastSectionRechtss() {
                             <div className='p-4 whiteCardKranken h-100 text-center'>
                                 <div className='pb-4'>
                                     <svg width="90" height="90" viewBox="0 0 113 113" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_518_10073)">
+                                        <g clipPath="url(#clip0_518_10073)">
                                             <path d="M15.5949 94.8536V18.1464C15.5949 12.2134 20.405 7.40332 26.338 7.40332H61.3032C67.2362 7.40332 72.0462 12.2134 72.0462 18.1464V94.8536C72.0462 100.787 67.2362 105.597 61.3032 105.597H26.338C20.405 105.597 15.5949 100.787 15.5949 94.8536V94.8536Z" fill="#BEE8FF" />
                                             <path d="M26.319 8.06122C20.7684 8.06122 16.2519 12.5768 16.2519 18.1283V94.8725C16.2519 100.424 20.7684 104.94 26.319 104.94H61.3223C66.873 104.94 71.3894 100.424 71.3894 94.8725V18.1283C71.3894 12.5768 66.873 8.06122 61.3223 8.06122H26.319V8.06122ZM61.3223 106.253H26.319C20.0434 106.253 14.9382 101.148 14.9382 94.8725V18.1283C14.9382 11.8527 20.0434 6.74658 26.319 6.74658H61.3223C67.598 6.74658 72.7032 11.8527 72.7032 18.1283V94.8725C72.7032 101.148 67.598 106.253 61.3223 106.253Z" fill="black" />
                                             <path d="M15.5949 91.8935H72.0464V17.8467H15.5949V91.8935Z" fill="white" />
@@ -147,9 +147,9 @@ function LastSectionRechtss() {
                             <div className='p-4 whiteCardKranken h-100 text-center'>
                                 <div className='pb-4'>
                                     <svg width="96" height="90" viewBox="0 0 96 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M68.7507 15.0353C73.8596 14.3176 79.7938 24.7278 68.7507 28.6769C60.7226 31.5479 61.4524 14.3174 68.7507 15.0353Z" fill="#BEE8FF" stroke="black" stroke-width="0.5" stroke-linecap="round" />
-                                        <path d="M8 66.1772V86M13.8462 80.8608V86M25.5385 80.8608V86M37.2308 80.8608V86M48.9231 80.8608V86M60.6154 80.8608V86M72.3077 80.8608V86M84 80.8608V86M54.7692 28V39.0127M59.1538 31.6709V39.0127M64.2692 33.8734V39.0127" stroke="black" stroke-width="0.5" stroke-linecap="round" />
-                                        <path d="M4.67188 28.3837V34.2931H40.6562V28.3837M40.6562 28.3837V38.7251H48M40.6562 28.3837H48M48 28.3837C48.4896 18.781 54.0219 -0.128958 72.2344 1.05291C90.4469 2.23479 92.5521 26.6602 91.3281 38.7251H48M48 28.3837V38.7251M1 65.3172H95V86H1V65.3172Z" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                        <path d="M68.7507 15.0353C73.8596 14.3176 79.7938 24.7278 68.7507 28.6769C60.7226 31.5479 61.4524 14.3174 68.7507 15.0353Z" fill="#BEE8FF" stroke="black" strokeWidth="0.5" strokeLinecap="round" />
+                                        <path d="M8 66.1772V86M13.8462 80.8608V86M25.5385 80.8608V86M37.2308 80.8608V86M48.9231 80.8608V86M60.6154 80.8608V86M72.3077 80.8608V86M84 80.8608V86M54.7692 28V39.0127M59.1538 31.6709V39.0127M64.2692 33.8734V39.0127" stroke="black" strokeWidth="0.5" strokeLinecap="round" />
+                                        <path d="M4.67188 28.3837V34.2931H40.6562V28.3837M40.6562 28.3837V38.7251H48M40.6562 28.3837H48M48 28.3837C48.4896 18.781 54.0219 -0.128958 72.2344 1.05291C90.4469 2.23479 92.5521 26.6602 91.3281 38.7251H48M48 28.3837V38.7251M1 65.3172H95V86H1V65.3172Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
                                     </svg>
 
 

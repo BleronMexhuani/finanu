@@ -318,13 +318,13 @@ a {
 
 .darkTheme .hausratModalContent input {
     border: 1px solid #434343 !important;
-    background-color: transparent;
+    background-color: transparent !important;
     color: #fff;
 }
 
 .darkTheme .hausratModalContent select {
     border: 1px solid #434343 !important;
-    background-color: transparent;
+    background-color: transparent !important;
     color: #fff;
 }
 
@@ -358,4 +358,17 @@ a {
 
 .darkTheme .blackTextBig {
     color: #fff;
+}
+.darkTheme .hausratSwiper .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+.darkTheme .hausratWhiteDiv {
+    background-color: #333436;
+    box-shadow: none;
+}
+.darkTheme .hausratFormInputs_2 {
+    background-color: transparent !important;
+}
+.darkTheme .useFullLinks {
+    background-color: #333436;
 }

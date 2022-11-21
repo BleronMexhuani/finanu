@@ -5,7 +5,7 @@ function UploadFileStep(props) {
         <div>
 
             <div className='pb-4'>
-                <span className='fw-500'>Bestehende Offerte Fotografieren und als PDF oder als Bilder Hochladen! Wir senden Ihnen im Anschluss mehrere <br></br> Gegenofferten,  bei gleicher Leistung.</span>
+                <span className='fw-500 normalTextToWhite'>Bestehende Offerte Fotografieren und als PDF oder als Bilder Hochladen! Wir senden Ihnen im Anschluss mehrere <br></br> Gegenofferten,  bei gleicher Leistung.</span>
             </div>
             <div className="pb-5">
                 <label htmlFor="autoFile">
@@ -16,7 +16,7 @@ function UploadFileStep(props) {
                             <img width={20} src="https://www.finanu.ch/wp-content/uploads/2022/01/uploadIcon-01.png" alt="" />
                         </div>
                         <div className="col-auto">
-                            <span className='fw-500'>Upload File</span>
+                            <span className='fw-500 normalTextToWhite'>Upload File</span>
                         </div>
                     </div>
                 </label>

@@ -2,7 +2,7 @@
     <style type="text/css">
         .st0{fill:#FFFFFF;}
         .st1{fill:#BEE8FF;}
-        .st2{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+        .st2{fill:none;stroke:#000000;strokeWidth:3;stroke-miterlimit:10;}
         .st3{fill:#BEE8FF;}
     </style>
     <path class="st3" d="M59.59,59.08c-4.61-0.66-19.2-26.12-26.28-38.96c2.78-0.05,5.62,0.27,8.44,1.01  c8.9,2.3,15.97,11.61,17.81,21.98C60.55,48.63,60.5,53.93,59.59,59.08z" />

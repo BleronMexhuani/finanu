@@ -40,7 +40,7 @@ function PensionCards(props) {
                     <div className="row gx-4 justify-content-between pt-5">
                         <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                             <div className='pb-4'>
-                                <span className='fw-700 fs-1 '>Lorem Ipsum</span>
+                                <span className='fw-700 fs-1 normalTextToWhite'>Lorem Ipsum</span>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">

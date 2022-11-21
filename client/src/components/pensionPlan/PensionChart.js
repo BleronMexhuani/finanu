@@ -145,7 +145,7 @@ function PensionChart() {
                 fontFamily: 'Montserrat',
                 fontWeight: 500,
                 formatter: function (seriesName, opts) {
-                    return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + seriesName + ' <br><span class="alterNameeeee"><b> ' + (opts.w.globals.series[opts.seriesIndex][opts.w.globals.series[opts.seriesIndex].length - 1]).toLocaleString('it-CH', {
+                    return '<div class="normalTextToWhite" style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + seriesName + ' <br><span class="alterNameeeee"><b> ' + (opts.w.globals.series[opts.seriesIndex][opts.w.globals.series[opts.seriesIndex].length - 1]).toLocaleString('it-CH', {
                         style: 'currency',
                         currency: 'CHF',
                         minimumFractionDigits: 0,
@@ -159,7 +159,7 @@ function PensionChart() {
                     }
                     var seriesIndex = opts.seriesIndex;
                     document.getElementsByClassName('apexcharts-tooltip').innerHTML = '<div class="arrow_box" id="tooltiparrowbox"><span class="alterNameeeee" style="text-align:center;">Mit der gewählten 3. Säule <br> können Sie mit bis zu <br><b> ' + (opts.w.globals.series[0][opts.w.globals.series[0].length - 1]).toLocaleString('it-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0, }) + '</b> <br> in Rente gehen!</span></div>';
-                    return '<div style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + opts.w.config.series[seriesIndex].name + ' <br> <b>' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex].toLocaleString('it-CH', {
+                    return '<div class="normalTextToWhite" style="text-align: center; background: transparent !important;">&nbsp;&nbsp;' + opts.w.config.series[seriesIndex].name + ' <br> <b>' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex].toLocaleString('it-CH', {
                         style: 'currency',
                         currency: 'CHF',
                         minimumFractionDigits: 0,
@@ -194,7 +194,7 @@ function PensionChart() {
                     vertical: 0
                 },
                 onItemClick: {
-                    toggleDataSeries: true
+                    toggleDataSeries: false 
                 },
                 onItemHover: {
                     highlightDataSeries: true
@@ -210,7 +210,7 @@ function PensionChart() {
                 show: true,
                 tooltip: {
                     formatter: function (labels, opts) {
-                        return 'in ' + (labels - 1) + ' Jahren'
+                        return '<div class="normalTextToWhite fw-500"> in ' + (labels - 1) + ' Jahren </div>'
                     }
                 }
             },
@@ -245,7 +245,7 @@ function PensionChart() {
         <div>
             <div className='container-xl px-4 px-xl-0'>
                 <div className='pb-4'>
-                    <span className='fw-700 fs-3'>Berechne jetzt deine 3. Säule</span>
+                    <span className='fw-700 fs-3 normalTextToWhite'>Berechne jetzt deine 3. Säule</span>
                 </div>
                 <div className='pensionChartDiv p-4'>
                     <div className=''>
@@ -373,7 +373,7 @@ function PensionChart() {
                             </div>
                             <div className="col-12 col-md-7 col-lg-8 my-auto position-relative">
                                 <div className="positionAbsoluteToolTip">
-                                    <div className='pensionChartDiv p-4'>
+                                    <div className='pensionChartDiv p-4 inChartDiv'>
                                         <span className='fw-500'>
                                             Mit der gewählten 3. Säule <br></br> können Sie mit bis zu <br></br><b><NumberFormat value={highRisk[highRisk.length - 1]} displayType={'text'} thousandSeparator={true} /> CHF&nbsp;</b> <br></br> in Rente gehen!
                                         </span>
