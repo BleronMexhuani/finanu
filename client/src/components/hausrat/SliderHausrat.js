@@ -16,7 +16,7 @@ import Basler from '../../assets/images/hausratSliderPhotos/basel.png'
 function SliderHausrat() {
     return (
         <>
-            <div className='mt-5 pt-5'>
+            {/* <div className='mt-5 pt-5'>
                 <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
                     <div className="col-12 col-sm-11 col-md-9 col-lg-8 col-xl-6 mx-auto">
                         <div className=''>
@@ -102,7 +102,7 @@ function SliderHausrat() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

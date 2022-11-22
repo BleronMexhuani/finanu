@@ -33,7 +33,7 @@ function Wettbewerbe() {
                 <Link to='/wettbewerbe/1' className="text-decoration-none">
                   <div className="card " >
 
-                    <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2022 </label>
+                    <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2023</label>
 
                     <img src={bern} alt="" className="img-fluid img" />
                     <div className="card-body text-md-start">
@@ -53,7 +53,7 @@ function Wettbewerbe() {
 
               <div className="col-12 col-md-6 mx-auto mt-4 mt-md-0 py-3 py-md-0 boxcard boxcardtwo ">
                 <Link to='/wettbewerbe/2' className="card text-decoration-none" >
-                  <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2022 </label>
+                  <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2023 </label>
 
                   {/* <div className="col-12 col-md-6 mx-auto mt-4 mt-md-0 py-3 py-md-0 boxcard  "> */}
                   <div className="card" >
@@ -75,7 +75,7 @@ function Wettbewerbe() {
               </div>
               <div className="col-12 col-md-6 mx-auto boxcard mt-3 py-4 ">
                 <Link to='/wettbewerbe/3' className="card text-decoration-none" >
-                  <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2022 </label>
+                  <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2023 </label>
                   <div className="card" >
 
                     <img src={old} alt="" className="img-fluid img" />
@@ -94,7 +94,7 @@ function Wettbewerbe() {
               </div>
               <div className="col-12 col-md-6 mx-auto boxcard mt-3 py-4 ">
                 <Link to='/wettbewerbe/3' className="card text-decoration-none" >
-                  <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2022 </label>
+                  <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2023 </label>
                   <div className="card" >
 
                     <img src={old} alt="" className="img-fluid img" />

@@ -126,10 +126,9 @@ function Analys360() {
                         <div className="row gx-0 justify-content-center stepsSvgRow">
                             <div className="col-auto">
                                 <div className={`${step === 0 ? 'activeBackground' : 'passiveBackground'} `} onClick={() => { changeStepSvg(0) }}>
-                                    <svg className={`${step === 0 ? 'activeSvg' : 'passiveSvg'} `} viewBox="0 0 33 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="33" height="37" fill="transparent" />
-                                        <path d="M29.3333 33.5V30.3333C29.3333 28.6536 28.6661 27.0427 27.4783 25.855C26.2906 24.6673 24.6797 24 23 24H10.3333C8.65363 24 7.04272 24.6673 5.85499 25.855C4.66726 27.0427 4 28.6536 4 30.3333V33.5" stroke="#D0D0D0" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M16.6693 17.6667C20.1671 17.6667 23.0026 14.8311 23.0026 11.3333C23.0026 7.83553 20.1671 5 16.6693 5C13.1715 5 10.3359 7.83553 10.3359 11.3333C10.3359 14.8311 13.1715 17.6667 16.6693 17.6667Z" stroke="#D0D0D0" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <svg  className={`${step === 0 ? 'activeSvg' : 'passiveSvg'} `} width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3333 32.5V29.3333C32.3333 27.6536 31.6661 26.0427 30.4783 24.855C29.2906 23.6673 27.6797 23 26 23H13.3333C11.6536 23 10.0427 23.6673 8.85499 24.855C7.66726 26.0427 7 27.6536 7 29.3333V32.5" stroke="#D0D0D0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.6693 16.6667C23.1671 16.6667 26.0026 13.8311 26.0026 10.3333C26.0026 6.83553 23.1671 4 19.6693 4C16.1715 4 13.3359 6.83553 13.3359 10.3333C13.3359 13.8311 16.1715 16.6667 19.6693 16.6667Z" stroke="#D0D0D0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
                             </div>
