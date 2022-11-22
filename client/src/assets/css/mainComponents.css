@@ -46,6 +46,11 @@
     color: #212529 !important;
     font-weight: 500;
 }
+.finanuSubTitleW{
+    font-size: 22px !important;
+   
+    font-weight: 500;
+}
 
 .whiteTextOverwrite {
     color: #fff !important;

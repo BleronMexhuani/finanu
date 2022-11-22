@@ -34,7 +34,7 @@ function RechtsschutzSteps() {
         const data = {
             gender, vorname, email, geburstdatum, telefonnumer, plz, ort, strasse, reschtutz, res2
         }
-        const res = await axios.post("https://node.kutiza.com/rechtschutz/sendEmail", data);
+        const res = await axios.post("http://localhost:5000/rechtschutz/sendEmail", data);
         console.log(res);
     }
     return (

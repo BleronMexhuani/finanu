@@ -63,14 +63,14 @@ var krankenkasse = {
     ,
     compareInputs: compareInputs = async (req, res) => {
 
-        // let versicherer = req.params.versicherer;
+        let versicherer = req.params.versicherer;
         let kanton = req.params.kanton;
         let region = req.params.region;
         let jahrgang = req.params.jahrgang;
         let accident = req.params.accident;
         let tariftyp = req.params.tariftyp;
         let franchise = req.params.franchise;
-        // let model = req.params.model;
+        let model = req.params.model;
         var multipleChildren = false;
 
         try {
@@ -84,6 +84,7 @@ var krankenkasse = {
 
             const currentYear = todayDate.getFullYear();
             const data = [];
+            const dataSelectedKrankenkasse = [];
 
             for (let i = 0; i < split_jahrgang.length; i++) {
                 altersklasse = currentYear - split_jahrgang[i];
@@ -109,14 +110,19 @@ var krankenkasse = {
                     altersungrupe = '';
                 }
 
-                let rows = await query("SELECT Pramie,Tarifbezeichnung,name,Versicherer,id_ FROM pramien LEFT JOIN insurance ON Versicherer = number WHERE  Kanton = ? AND region = ? AND Altersklasse = ? AND Unfalleinschluss = ? AND Tariftyp IN (?) AND Franchise = ? AND Altersuntergruppe = ? ORDER BY Pramie",
+                let rows = await query("SELECT Pramie,Tarifbezeichnung,name,Versicherer,id_ FROM pramien LEFT JOIN insurance ON Versicherer = number WHERE  Kanton = ? AND region = ? AND Altersklasse = ? AND Unfalleinschluss = ? AND Tariftyp IN (?) AND Franchise = ? AND Altersuntergruppe = ?  ORDER BY Pramie",
                     [kanton, 'PR-REG CH' + region, altersklasse, unfalleinschluss[i], tariftyp.split(","), 'FRA-' + Franchise_price[i], altersungrupe]);
 
+                let excactKrankenkasse = await query("SELECT Pramie,Tarifbezeichnung,name,Versicherer,id_ FROM pramien LEFT JOIN insurance ON Versicherer = number WHERE  Kanton = ? AND region = ? AND Altersklasse = ? AND Unfalleinschluss = ?  AND Franchise = ? AND Altersuntergruppe = ? AND Versicherer = ? AND Tarifbezeichnung = ? ORDER BY Pramie",
+                    [kanton, 'PR-REG CH' + region, altersklasse, unfalleinschluss[i], 'FRA-' + Franchise_price[i], altersungrupe, versicherer, model]);
+
                 Array.prototype.push.apply(data, rows);
+                Array.prototype.push.apply(dataSelectedKrankenkasse, excactKrankenkasse);
 
             }
             const Versicherer = [];
             const final_data = [];
+            const final_data_selected_krankenkasse = [];
 
             data.forEach(element => {
                 if (!Versicherer.includes(element.Versicherer + element.name + element.Tarifbezeichnung)) {
@@ -138,7 +144,30 @@ var krankenkasse = {
 
                 }
             });
-            res.status(200).json(final_data);
+
+            const VersichererKranken = [];
+            dataSelectedKrankenkasse.forEach(element => {
+                if (!VersichererKranken.includes(element.Versicherer + element.name + element.Tarifbezeichnung)) {
+                    VersichererKranken.push(element.Versicherer + element.name + element.Tarifbezeichnung);
+
+                    const sumofPramie = dataSelectedKrankenkasse
+                        .filter(({
+                            Versicherer, name, Tarifbezeichnung
+                        }) => Versicherer == element.Versicherer && name == element.name && Tarifbezeichnung == element.Tarifbezeichnung)
+                        .reduce((sum, record) => sum + parseFloat(record.Pramie), 0);
+
+                    final_data_selected_krankenkasse.push({
+                        id: element.id_,
+                        tarif: element.Tarifbezeichnung,
+                        Versicherer: element.Versicherer,
+                        name: element.name,
+                        price: sumofPramie
+                    });
+
+                }
+            });
+
+            res.status(200).json({final_data,final_data_selected_krankenkasse});
         } catch (error) {
             res.status(404).json({ message: error.message })
         }
@@ -170,7 +199,7 @@ var krankenkasse = {
         });
 
         console.log("Message sent: %s", info.messageId);
-    
+
     }
 }
 
