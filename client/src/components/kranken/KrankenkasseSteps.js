@@ -958,7 +958,7 @@ function KrankenkasseSteps() {
                                                         <span className='fw-500'>Fitness</span>
                                                     </div>
                                                     <div>
-                                                        <img height={90} src={Fitness} alt="" />
+                                                        <img height={90} width={110} src={Fitness} alt="" />
                                                     </div>
                                                 </div>
                                             </label>

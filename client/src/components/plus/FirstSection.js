@@ -48,7 +48,7 @@ function FirstSection() {
 
             </div>
 
-            <div className="container-xl px-4 px-xl-0 text-start">
+            <div className="container-xl px-4 px-xl-0  text-start">
                 <div className="row gy-5 justify-content-between">
                     {(screenWidth > 575.98) && (
                         <div className="col-12 col-lg-6">
@@ -134,7 +134,9 @@ function FirstSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 order-1 order-md-2 pt-4 text-center">
+                    </div>
+                    <div className='row gy-5 pt-5 pt-md-5 mt-mb-5 justify-content-between'>
+                    <div className="col-12 order-1 order-md-2 pt-5 text-center">
                         <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto">
                             <div className="px-0 px-md-4 px-lg-5 pb-5">
 
