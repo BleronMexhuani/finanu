@@ -90,19 +90,14 @@ function HausratBlueForm() {
                 <div className="row gx-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Lorem Ipsum</span>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Lorem Ipsums</span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                         <div className="">
                             <div className='fw-500 fs-5 normalTextToWhite'>
                                 <span>
-                                    Sie träumen von einem Eigenheim?
-                                    Laut der NZZ verschenken Schweizer bei der Hypothek viel Geld. Vielfach beschränken sie sich auf wenige Angebote oder wählen direkt die Hausbank.
-
-                                    Bei der Wahl sollten nicht nur niedrige Zinsen eine Rolle spielen, sondern auch die Konditionen für eine Amortisation, eventuelle Vorfälligkeitsentschädigungen und sogenannte Knebelverträge.
-
-                                    Wir verhandeln für Sie hart, aber fair mit den zwei bis drei besten Instituten, um bessere Konditionen zu erhalten.
+                                Der Erwerb eines Eigenheims ist ein langer und oft einzigartiger Prozess im Leben. Doch mit der richtigen Finanzierung ist die erste Hürde zum Wohneigentum bereits genommen. Erfahren Sie, wo Sie beim Kauf einer Immobilie Geld sparen können und was Sie vermeiden sollten. Nutzen Sie das Wissen unserer Spezialisten zu Ihrem Vorteil, wenn es um die Erfüllung von Immobilienträumen geht.
                                 </span>
                             </div>
                         </div>

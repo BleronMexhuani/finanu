@@ -41,7 +41,13 @@ function HomeFourthSection() {
                                         <span className='finanuSubTitle whiteTextOverwrite fw-700'>Erklärung und unterschiede Alternativ- und Schulmedizin und wie sie sich ergänzen</span>
                                     </div>
                                     <div>
-                                        <span className='fw-500'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                        <span className='fw-500'>
+                                            Lange Zeit wurden alternative und schulmedizinische Verfahren getrennt betrachtet. Im
+                                            ganzheitlichen Ansatz der Komplementärmedizin ist die Gegnerschaft aufgehoben. Schon
+                                            Hippokrates wusste: „Wer heilt, hat recht.“ Neben den Unterschieden zwischen
+                                            alternativen und konservativen Heilmethoden, gibt es viele Gemeinsamkeiten, die
+                                            Ärzteschaft und Therapeuten zum Wohle der Patienten erkannt haben und ergänzend
+                                            nutzen.</span>
                                     </div>
                                 </div>
                             </div>

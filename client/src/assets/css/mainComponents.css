@@ -245,12 +245,15 @@
     }
 
     body {
-        padding-top: 7rem;
+        padding-top: 4rem;
     }
 
     .bodyCounterPadding {
         padding-bottom: 6rem;
 
+    }
+    .videoplaceholder {
+        height: 800px;
     }
 
     .paddingTopDiv {

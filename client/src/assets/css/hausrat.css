@@ -65,9 +65,11 @@ a {
     width: 100%;
 
 }
+
 .hausratFormInputs_2::placeholder {
     font-weight: 500 !important;
 }
+
 .hausratFormInputs {
     width: 100%;
     background: #FFFFFF;
@@ -226,19 +228,44 @@ a {
 .checkmarkModalImgDiv img {
     width: 22px !important;
 }
+
 .festhypothekImgs svg {
     max-width: 270px;
 }
+
 .useFullLinks {
     background-color: #50B8E7;
     color: #fff;
     border-radius: 12px;
     height: 100%;
 }
+
 .linkSpan {
     font-size: 14px;
     color: #fff;
 }
+
+/* Drin Changes */
+.updatedhypoteklargebox {
+    max-width: 272px;
+    height: 231px  ;
+}
+.boxoutline {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(146, 146, 146, 0.25);
+    border-radius: 35px;
+
+}
+.updatedhypotekboxes {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(146, 146, 146, 0.25);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    max-height: 195px ;
+}
+
+
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
@@ -249,6 +276,7 @@ a {
         max-height: 90vh;
 
     }
+
     .hausratModalScroll {
         max-height: 80vh;
 
@@ -283,16 +311,18 @@ a {
         font-size: 80px;
 
     }
+
     .hausratModalContent {
 
         max-height: 80vh;
 
     }
+
     .hausratModalScroll {
         max-height: 70vh;
 
     }
-   
+
 }
 
 .darkTheme .hausratFormInputs {
@@ -356,17 +386,21 @@ a {
 .darkTheme .blackTextBig {
     color: #fff;
 }
+
 .darkTheme .hausratSwiper .swiper-pagination-bullet-active {
     background-color: #fff;
 }
+
 .darkTheme .hausratWhiteDiv {
     background-color: #333436;
     box-shadow: none;
 }
+
 .darkTheme .hausratFormInputs_2 {
     background-color: transparent !important;
     color: #fff !important;
 }
+
 .darkTheme .useFullLinks {
     background-color: #333436;
 }

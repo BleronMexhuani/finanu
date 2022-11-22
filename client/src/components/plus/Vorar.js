@@ -8,7 +8,7 @@ function Vorar() {
             </div>
             <div>
                 <div className="row g-4">
-                    <div className="col-4">
+                    <div className="col-lg-4 col-6">
                         <Ilu className="img-fluid" />
                     </div>
                     <div className="col fs-5 fw-600 my-auto secondaryColor">
@@ -33,7 +33,7 @@ function Vorar() {
                             </span>
                         </div>
                     </div>
-                    <div className="col-3 my-auto">
+                    <div className="col-lg-3 col-12 my-auto pt-3 pt-sm-0" style={{textAlign: '-webkit-center'}}>
                         <div className='cardofthelastcomponent d-flex'>
                             <div className='px-4 '>
                                 <p className='text-center fw-400 pt-2'>ProLife Weiterempfehlen</p>
