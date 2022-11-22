@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Idea } from '../assets/images/uberUns/idea.svg'
+import { ReactComponent as Idea } from '../assets/images/uberUns/UberUns.svg'
 import Muscle from '../assets/images/uberUns/muscle.svg'
 import Block from '../assets/images/uberUns/blocks.svg'
 import '../assets/css/uberUns.css'

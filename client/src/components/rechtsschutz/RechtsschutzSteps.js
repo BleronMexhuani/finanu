@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
-import Einzel from '../../assets/images/rechtsschutzImgs/einzel.svg'
-import Familie from '../../assets/images/rechtsschutzImgs/familie.svg'
+import Einzel from '../../assets/images/newimages/njeri.svg'
+import Familie from '../../assets/images/newimages/njerz.svg'
 import Building from '../../assets/images/rechtsschutzImgs/building.svg'
 import Privat from '../../assets/images/rechtsschutzImgs/privat.svg'
-import Step2First from '../../assets/images/rechtsschutzImgs/step2First.svg'
+import Step2First from '../../assets/images/newimages/chshigjet.svg'
 import Step2Second from '../../assets/images/rechtsschutzImgs/step2Second.svg'
-import Step2Third from '../../assets/images/rechtsschutzImgs/step2Third.svg'
+import Step2Third from '../../assets/images/newimages/doranjeri.svg'
 import Step3Male from '../../assets/images/rechtsschutzImgs/Male-01.svg'
 import Step3Female from '../../assets/images/rechtsschutzImgs/Female-01.svg'
 import Step3Comp from '../../assets/images/rechtsschutzImgs/Building-01.svg'
@@ -34,7 +34,7 @@ function RechtsschutzSteps() {
         const data = {
             gender, vorname, email, geburstdatum, telefonnumer, plz, ort, strasse, reschtutz, res2
         }
-        const res = await axios.post("http://localhost:5000/rechtschutz/sendEmail", data);
+        const res = await axios.post("https://node.kutiza.com/rechtschutz/sendEmail", data);
         console.log(res);
     }
     return (
