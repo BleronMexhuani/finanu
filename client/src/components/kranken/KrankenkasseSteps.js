@@ -33,7 +33,7 @@ function KrankenkasseSteps() {
             email,
             telefonnummer
         }
-        const res = await axios.post("https://node.kutiza.com/krankenkasse/sendMail");
+        const res = await axios.post("http://localhost:5000/krankenkasse/sendMail");
 
     }
 
@@ -52,6 +52,7 @@ function KrankenkasseSteps() {
     const [accident, setAccident] = useState([]);
     const [tarifbezeichnung, setTarifbezeichnung] = useState(null);
     const [krankenkasse, setKrankenkasse] = useState([]);
+    const [selectedkrankenkasse, setSelectedKrankenkasse] = useState([]);
     const [regions, setRegions] = useState([]);
     const [isFocused, setIsFocused] = useState(false)
     const [inputValue, setInputValue] = useState("")
@@ -71,7 +72,7 @@ function KrankenkasseSteps() {
         //Get all the regions
         const getRegions = async () => {
             await axios.get(
-                'https://node.kutiza.com/krankenkasse/regions'
+                'http://localhost:5000/krankenkasse/regions'
             )
                 .then(function (result) {
                     setRegions(result.data);
@@ -130,7 +131,7 @@ function KrankenkasseSteps() {
         const getInsurances = async () => {
             if (plz !== null && ort !== null && commune !== null) {
                 await axios.get(
-                    `https://node.kutiza.com/krankenkasse/insurances/${plz}/${ort}/${commune}`
+                    `http://localhost:5000/krankenkasse/insurances/${plz}/${ort}/${commune}`
                 )
                     .then(function (result) {
                         setInsurances(result.data);
@@ -152,6 +153,7 @@ function KrankenkasseSteps() {
     const handleSubmit = async (event) => {
         event.preventDefault()
         setKrankenkasse([]);
+        setSelectedKrankenkasse([]);
         const targetJahrgang = [];
         const targetAccident = [];
         const targetFranchise = [];
@@ -184,30 +186,34 @@ function KrankenkasseSteps() {
         setAccident(targetAccident);
         setModel(targetModells);
         setIsLoadActive('flex');
-        const result = await axios.get(`https://node.kutiza.com/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
+        const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
         const response = result.data;
+        const responseCompared = response.final_data;
+        const responseSelectedKranken = response.final_data_selected_krankenkasse;
+
 
         var results = [];
         var searchField = "name";
         var searchVal = ["SWICA", "Vivao Sympany", "Mutuel Assurance (Groupe Mutuel)"];
+     
+        for (var i = 0; i < responseCompared.length; i++) {
 
-        for (var i = 0; i < response.length; i++) {
             for (let j = 0; j < searchVal.length; j++) {
-                if (response[i][searchField] == searchVal[j]) {
-                    let res = response[i];
-                    response.splice(response.indexOf(response[i]), 1)
-                    response.unshift(res);
+                if (responseCompared[i][searchField] == searchVal[j]) {
 
-
-                    searchVal.slice(searchVal[j], 1)
+                    let res = responseCompared[i];
+                    responseCompared.splice(responseCompared.indexOf(responseCompared[i]), 1)
+                    responseCompared.unshift(res);
+                    searchVal.splice(searchField.indexOf(searchField[j]), 1);
 
                 }
-
             }
         }
+        
 
 
-        setKrankenkasse(result.data);
+        setKrankenkasse(responseCompared);
+        setSelectedKrankenkasse(responseSelectedKranken);
         setIsLoadActive('none');
 
     }
@@ -263,7 +269,7 @@ function KrankenkasseSteps() {
 
     useEffect(() => {
         const getActualModels = async () => {
-            const result = await axios.get(`https://node.kutiza.com/krankenkasse/actualmodel/${insuranceNum}`)
+            const result = await axios.get(`http://localhost:5000/krankenkasse/actualmodel/${insuranceNum}`)
             setActualModels(result.data);
         }
         if (insuranceNum != null) {
@@ -330,9 +336,7 @@ function KrankenkasseSteps() {
             if (familySituation === "einzel") {
                 setThirdStep(true)
                 seterror2(false)
-
             }
-
             else if (familySituation === "paar" || familySituation === "familie") {
                 seterror2(false)
                 if (familySituation2 !== "") {
@@ -341,12 +345,10 @@ function KrankenkasseSteps() {
                 }
                 else {
                     seterror3(true)
-
                 }
             }
             else {
                 seterror2(true)
-
             }
         }
         else {
@@ -529,10 +531,10 @@ function KrankenkasseSteps() {
                                     <button type='button' className='krankenBtnStyle' onClick={toSecondStep}>Jetzt Vergleichen</button>
                                 </div>
                                 {error && (
-                                        <div className='fw-600 text-start' style={{ color: '#F6490E' }}>
-                                            Bitte geben Sie eine gültige Schweizer PLZ an und wählen Sie eine Krankenkasse aus.
-                                        </div>
-                                    )}
+                                    <div className='fw-600 text-start' style={{ color: '#F6490E' }}>
+                                        Bitte geben Sie eine gültige Schweizer PLZ an und wählen Sie eine Krankenkasse aus.
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -729,8 +731,8 @@ function KrankenkasseSteps() {
                             </div>
                         </div>
                         <div className='col-12 col-sm-8 col-md-4 col-lg-3 mx-auto pt-4 pb-5'>
-                            <select name="" id="" onChange={(e) => setmodels(e)} className='krankenInputStyle form-select krankenInputStepStyle p-3'>
-                                <option value="-1">Modell</option>
+                            <select name="" id="" required onChange={(e) => setmodels(e)} className='krankenInputStyle form-select krankenInputStepStyle p-3'>
+                                <option value="">Modell</option>
                                 {actualmodels.map(element => {
                                     return (
                                         <option key={element.id} data-tariftyp={element.Tariftyp} value={element.Tarifbezeichnung} >{element.Tarifbezeichnung}</option>
@@ -831,7 +833,7 @@ function KrankenkasseSteps() {
 
                                                         </div>
                                                         <div className="col mt-auto lh-1">
-                                                            <span className='fw-600 lh-1'>Hohe Prämien</span>
+                                                            <span className='fw-600 lh-1'>Hohe Leistungen</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -858,7 +860,7 @@ function KrankenkasseSteps() {
                                                     <span className='fw-600 fs-5'>CHF <span className='fw-bold fs-3'>{element.price}</span>/ Mt.</span>
                                                 </div>
                                                 <div>
-                                                    <span className='fw-600'>sparen Sie CHF<span className='finanuSubTitle fw-bold' style={{ color: "#208fdf" }}>{((element.price) * 12).toFixed(2)}</span> / Jahr</span>
+                                                    <span className='fw-600'>sparen Sie CHF<span className='finanuSubTitleW fw-bold' style={{ color: (element.price - selectedkrankenkasse[0].price) > 0 ? "#21be5c" : "#d3252a" }}>{(((element.price - selectedkrankenkasse[0].price)) * 12).toFixed(2)}</span> / Jahr</span>
                                                 </div>
                                                 <div className='pt-4'>
                                                     <button className='nextBtnKranken nextBtnKranken2' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
@@ -958,7 +960,7 @@ function KrankenkasseSteps() {
                                                         <span className='fw-500'>Fitness</span>
                                                     </div>
                                                     <div>
-                                                        <img height={90} src={Fitness} alt="" />
+                                                        <img height={90} width={110} src={Fitness} alt="" />
                                                     </div>
                                                 </div>
                                             </label>

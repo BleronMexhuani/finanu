@@ -11,7 +11,8 @@ function Versicherungen() {
           </span>
         </div>
         <div>
-          <span className='finanuSubTitle'>Hier finden Sie eine Übersicht<br></br>
+          <span className='finanuSubTitle'>
+          Auf der folgenden Seite stellen wir Ihnen die verschiedenen Versicherungsgesellschaften und ihre Modelle, Vor- und Nachteile sowie die wichtigsten Links vor.  Derzeit gibt es noch keine Seiten für alle Gesellschaften. Weitere Gesellschaften werden regelmäßig hinzugefügt. Wenn Sie Fragen zu einer bestimmten Gesellschaft haben, welche noch nicht aufgeführt ist, zögern Sie bitte nicht, uns zu kontaktieren! 
             unserer Versicherer.</span>
         </div>
       </div>

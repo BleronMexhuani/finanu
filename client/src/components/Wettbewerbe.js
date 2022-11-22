@@ -15,11 +15,12 @@ function Wettbewerbe() {
           <div className="col-12 col-md-5">
             <div className="pb-3">
               <h2 className=" text-md-start firstBlueTitle fs-1" >
-                Aktuelle Gewinnspiele und Wettbewerbe von
+              Alle aktuellen Gewinnspiele von Finanu.ch
               </h2>
             </div>
             <div className="text-start">
-                <span className="fs-5 fw-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                <span className="fs-5 fw-600">
+                Lassen Sie sich die Gelegenheit nicht entgehen, an ausgewählten und beliebten Verlosungen teilzunehmen. Auch Sie können mit etwas Glück zu den unzähligen Gewinnern der tollen Wettbewerbe gehören. Probieren geht über Studieren!</span>
             </div>
             <div className="mt-5 mb-5">
               <Logo className="img-fluid" />
@@ -33,7 +34,9 @@ function Wettbewerbe() {
                 <Link to='/wettbewerbe/1' className="text-decoration-none">
                   <div className="card " >
 
-                    <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2023</label>
+
+                    <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2023 </label>
+
 
                     <img src={bern} alt="" className="img-fluid img" />
                     <div className="card-body text-md-start">

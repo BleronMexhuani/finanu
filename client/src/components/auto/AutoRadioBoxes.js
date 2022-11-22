@@ -3,12 +3,12 @@ import { useState } from 'react'
 import FirstRadioChecked from './FirstRadioChecked'
 import SecondRadioChecked from './SecondRadioChecked'
 import MainImg from '../../assets/images/auto/mainImg.png'
-import {ReactComponent as Checkbox1} from '../../assets/images/auto/checkbox1.svg'
-import {ReactComponent as Checkbox2} from '../../assets/images/auto/checkbox2.svg'
+import { ReactComponent as Checkbox1 } from '../../assets/images/auto/checkbox1.svg'
+import { ReactComponent as Checkbox2 } from '../../assets/images/auto/checkbox2.svg'
 
 function AutoRadioBoxes() {
     const [autoCheck, setAutoCheck] = useState(0)
-    
+
     return (
         <div>
             <div className="wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding">
@@ -16,7 +16,7 @@ function AutoRadioBoxes() {
                     <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                         <div className='pb-5 text-start'>
                             <span className='fw-700 fs-3 normalTextToBlue'>
-                                Lorem Ipsum Dolor
+                                Auto
                             </span>
                         </div>
                         <div className='pb-5 pb-md-0 pe-0 pe-lg-5'>
@@ -27,7 +27,9 @@ function AutoRadioBoxes() {
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                         <div className='fw-500 fs-5 normalTextToWhite'>
-                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                            <span>
+                                In der Schweiz ist der Abschluss einer Autoversicherung obligatorisch. Bei der Auswahl einer Autoversicherung steht neben dem zu versichernden Fahrzeug immer auch Ihr persönliches Sicherheitsbedürfnis im Vordergrund.
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -46,8 +48,8 @@ function AutoRadioBoxes() {
                                         <div className="checkmark checkmarkColorAuto">
                                             <div>
                                                 <div className=' text-center'>
-                                                    
-                                                    <Checkbox1 height="90" width="100"  />
+
+                                                    <Checkbox1 height="90" width="100" />
                                                 </div>
 
 
@@ -63,7 +65,7 @@ function AutoRadioBoxes() {
                                         <input onChange={() => { setAutoCheck(2) }} id='autoSecondRadio' type="radio" name='autoRadio' hidden />
                                         <div className="checkmark checkmarkColorAuto">
                                             <div className='text-center'>
-                                            <Checkbox2 height="90"  />
+                                                <Checkbox2 height="90" />
 
 
                                             </div>
@@ -124,20 +126,53 @@ function AutoRadioBoxes() {
                     }
                 </div>
 
-                <div className="row gx-4 justify-content-between">
-                    <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
+                <div className="row gx-4 px-5  py-3 justify-content-between">
+                    <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Lorem Ipsum</span>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Auto  </span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                         <div className="">
                             <div className='fw-500 fs-5 normalTextToWhite'>
-                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                                <span>
+                                    Autohaftpflicht (Pflicht): Die Haftpflichtversicherung kommt für Schäden auf, die Sie (oder jemand anderes, der Ihr Auto fährt) mit Ihrem Fahrzeug an anderen Personen oder Sachen verursachen.
+                                </span>
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div className="row gx-4 py-3 px-5 justify-content-between">
+                    <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
+                        <div className='pb-4'>
+                            <span className='fw-700 firstBlueTitle fs-1 '> Lorem Auto  </span>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+                        <div className="">
+                            <div className='fw-500 fs-5 normalTextToWhite'>
+                                <span>
+                                    Teilkaskoversicherung (Freiwillig): Die Teilkaskoversicherung versichert zusätzlich Schäden an Ihrem Fahrzeug, die durch Unwetter, Tiere und unbekannte Personen verursacht werden. Dazu gehören Diebstahl, Glasbruch, Marderschäden, Wildunfälle und böswillige Beschädigung durch Dritte.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row gx-4 py-3 px-5 justify-content-between">
+                    <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
+                        <div className='pb-4'>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Auto Lorem </span>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+                        <div className="">
+                            <div className='fw-500 fs-5 normalTextToWhite'>
+                                <span>
+                                Vollkaskoversicherung (Freiwillig ausser bei Leasing): Zusätzlich zur Teilkaskoversicherung deckt die Vollkaskoversicherung Schäden, die Sie selbst am Auto verursachen (Kollision).
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

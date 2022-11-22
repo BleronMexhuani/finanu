@@ -1,11 +1,11 @@
 import React from 'react'
 import imageoflastcomponent from '../../assets/images/plus/imageoflastcomponent.png'
 import imageoflastcomponentmobile from '../../assets/images/plus/mobilephoto13.png'
-import useCollapse from 'react-collapsed'
+// import useCollapse from 'react-collapsed'
 import Accordion from 'react-bootstrap/Accordion';
 import { useState, useEffect } from 'react'
 function Otherquestions() {
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+    // const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -33,11 +33,11 @@ function Otherquestions() {
                             </p>
                         </div>
 
-                        <div className='collapsofthelastcomponent mb-5 mb-md-auto'>
-                            <Accordion defaultActiveKey="0">
+                        <div className='collapsofthelastcomponent mb-5 mb-md-auto '>
+                            <Accordion defaultActiveKey="0 text-dark">
                                 <Accordion.Item eventKey="4" className="accordionstyle agilestyleofaccordion">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #1</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion">
+                                    <Accordion.Body className="contentoflastaccordion text-dark">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -49,7 +49,7 @@ function Otherquestions() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="5" className="accordionstyle agilestyleofaccordion">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #2</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion">
+                                    <Accordion.Body className="contentoflastaccordion text-dark">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -61,7 +61,7 @@ function Otherquestions() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="6" className="accordionstyle agilestyleofaccordion">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #1</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion">
+                                    <Accordion.Body className="contentoflastaccordion text-dark">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -73,7 +73,7 @@ function Otherquestions() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="7" className="accordionstyle agilestyleofaccordion">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #2</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion">
+                                    <Accordion.Body className="contentoflastaccordion text-dark">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut

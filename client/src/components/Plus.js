@@ -28,7 +28,7 @@ function Plus() {
     }, [])
     return (
         <>
-            <div className="pb-5 mb-4">
+            <div className="pb-5 mb-5">
                 <FirstSection />
             </div>
 
@@ -38,7 +38,7 @@ function Plus() {
 
             )}
             {(screenWidth > 575.98) && (
-                <div className="pb-5 mb-4">
+                <div className="py-md-5 pb-5 mb-5">
                     <PlusTabs />
                 </div>
             )}
@@ -47,28 +47,28 @@ function Plus() {
                 <JoinUs />
             )}
 
-            <div className='pb-5 mb-4'>
+            <div className='py-md-5 pb-5 mb-5'>
                 <PlusReviews screenWidth={screenWidth} />
             </div>
 
-            <div className='pb-5 mb-4'>
+            <div className='pb-5 mb-5'>
                 <OurStory screenWidth={screenWidth} />
             </div>
 
             {(screenWidth > 575.98) && (
                 <>
-                    <div className="pb-5 mb-4">
+                    <div className="py-md-5 pb-5 mb-5">
                         <CoverYouNeed />
                     </div>
-                    <div className="pb-5 mb-4">
+                    <div className="py-md-5 pb-5 mb-5">
                         <LtBlueSetion />
                     </div>
-                    <div className='pb-5 mb-4'>
+                    <div className='py-md-5 pb-5 mb-5'>
                         <Vorar />
                     </div>
                 </>
             )}
-            <div className='pb-5 mb-4'>
+            <div className='py-md-5 pb-5 mb-5'>
                 <Otherquestions />
 
             </div>
