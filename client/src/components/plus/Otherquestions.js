@@ -1,11 +1,11 @@
 import React from 'react'
 import imageoflastcomponent from '../../assets/images/plus/imageoflastcomponent.png'
 import imageoflastcomponentmobile from '../../assets/images/plus/mobilephoto13.png'
-import useCollapse from 'react-collapsed'
+// import useCollapse from 'react-collapsed'
 import Accordion from 'react-bootstrap/Accordion';
 import { useState, useEffect } from 'react'
 function Otherquestions() {
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+    // const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
     useEffect(() => {
