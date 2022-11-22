@@ -1,10 +1,10 @@
 import React from 'react'
 import IconNr2 from '../../assets/images/rechtsschutzImgs/IconNr2.svg'
 import IconNr3 from '../../assets/images/rechtsschutzImgs/IconNr3.svg'
-import IconNr4 from '../../assets/images/rechtsschutzImgs/IconNr4.svg'
-import IconNr5 from '../../assets/images/rechtsschutzImgs/IconNr5.svg'
+import IconNr4 from '../../assets/images/newimages/kontrata.svg'
+import IconNr5 from '../../assets/images/newimages/rotate.svg'
 import IconNr6 from '../../assets/images/rechtsschutzImgs/IconNr6.svg'
-import IconNr7 from '../../assets/images/rechtsschutzImgs/IconNr7.svg'
+import IconNr7 from '../../assets/images/newimages/parja.svg'
 import IconNr8 from '../../assets/images/rechtsschutzImgs/IconNr8.svg'
 
 import IconNr1Dark from '../../assets/images/rechtsschutzImgs/IconNr1Dark.svg'

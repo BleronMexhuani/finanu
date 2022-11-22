@@ -129,46 +129,48 @@ function AutoRadioBoxes() {
                 <div className="row gx-4 px-5  py-3 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Auto  </span>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Autohaftpflicht (Pflicht)  </span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                         <div className="">
                             <div className='fw-500 fs-5 normalTextToWhite'>
                                 <span>
-                                    Autohaftpflicht (Pflicht): Die Haftpflichtversicherung kommt für Schäden auf, die Sie (oder jemand anderes, der Ihr Auto fährt) mit Ihrem Fahrzeug an anderen Personen oder Sachen verursachen.
+                                    Die Haftpflichtversicherung kommt für Schäden auf, die Sie (oder jemand anderes, der Ihr Auto fährt) mit Ihrem Fahrzeug an anderen Personen oder Sachen verursachen.
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <br></br>
                 <div className="row gx-4 py-3 px-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '> Lorem Auto  </span>
+                            <span className='fw-700 firstBlueTitle fs-1 '> Teilkaskoversicherung (Freiwillig) </span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                         <div className="">
                             <div className='fw-500 fs-5 normalTextToWhite'>
                                 <span>
-                                    Teilkaskoversicherung (Freiwillig): Die Teilkaskoversicherung versichert zusätzlich Schäden an Ihrem Fahrzeug, die durch Unwetter, Tiere und unbekannte Personen verursacht werden. Dazu gehören Diebstahl, Glasbruch, Marderschäden, Wildunfälle und böswillige Beschädigung durch Dritte.
+                                     Die Teilkaskoversicherung versichert zusätzlich Schäden an Ihrem Fahrzeug, die durch Unwetter, Tiere und unbekannte Personen verursacht werden. Dazu gehören Diebstahl, Glasbruch, Marderschäden, Wildunfälle und böswillige Beschädigung durch Dritte.
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <br></br>
                 <div className="row gx-4 py-3 px-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Auto Lorem </span>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Vollkaskoversicherung (Freiwillig ausser bei Leasing)</span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
                         <div className="">
                             <div className='fw-500 fs-5 normalTextToWhite'>
                                 <span>
-                                Vollkaskoversicherung (Freiwillig ausser bei Leasing): Zusätzlich zur Teilkaskoversicherung deckt die Vollkaskoversicherung Schäden, die Sie selbst am Auto verursachen (Kollision).
+                                 Zusätzlich zur Teilkaskoversicherung deckt die Vollkaskoversicherung Schäden, die Sie selbst am Auto verursachen (Kollision).
                                 </span>
                             </div>
                         </div>

@@ -52,7 +52,7 @@ function GutZuWissen() {
                             </div>
                         </div>
                     </div>
-                    <div className=''>
+                    {/* <div className=''>
                         <div className="row g-3 g-sm-4">
                             <div className="col-auto">
                                 <img src={WhiteBgArrow} alt="" />
@@ -65,7 +65,7 @@ function GutZuWissen() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
