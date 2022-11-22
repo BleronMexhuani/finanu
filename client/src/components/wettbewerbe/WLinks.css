@@ -45,7 +45,7 @@
 }
 
 .titlecheck{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .titledesc{
@@ -112,6 +112,10 @@
         
         margin: -25px 0px -200px 0px;
     }
+
+    .titlecheck {
+      font-size: 12px;
+  }
   }
 
   .darkTheme .formcontact{

@@ -162,8 +162,8 @@ function WLinksThree(props) {
                       <input type="checkbox" name="checkbox" value="value" />
                       <span className="ms-1 titlecheck darktitle">
                         {" "}
-                        Ich habe die Teilnahme-, Nutzungs- und <br />{" "}
-                        Datenschutzbedingungen gelesen und bin damit <br />{" "}
+                        Ich habe die Teilnahme-, Nutzungs- und 
+                        Datenschutzbedingungen  gelesen und bin damit 
                         einverstanden.*{" "}
                       </span>
                     </label>

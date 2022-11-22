@@ -164,13 +164,13 @@ function WLinks(props) {
                       <input type="checkbox" name="checkbox" value="value" />
                       <span className="ms-1 titlecheck darktitle">
                         {" "}
-                        Ich habe die Teilnahme-, Nutzungs- und <br />{" "}
-                        Datenschutzbedingungen gelesen und bin damit <br />{" "}
+                        Ich habe die Teilnahme-, Nutzungs- und 
+                        Datenschutzbedingungen  gelesen und bin damit 
                         einverstanden.*{" "}
                       </span>
                     </label>
                   </form>
-                  <button className="firstSectionBlueBtn1 mt-2">
+                  <button className="firstSectionBlueBtn1 mt-3">
                     Jetzt konstenlos teilnehmen
                   </button>
                 </div>

@@ -133,12 +133,12 @@ function WLinksTwo(props) {
                       max="10000"
                       className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
-                    <label className="mt-4 titlecheck darktitle">
+                   <label className="mt-4">
                       <input type="checkbox" name="checkbox" value="value" />
-                      <span className="ms-1 titlecheck">
+                      <span className="ms-1 titlecheck darktitle">
                         {" "}
-                        Ich habe die Teilnahme-, Nutzungs- und <br />{" "}
-                        Datenschutzbedingungen gelesen und bin damit <br />{" "}
+                        Ich habe die Teilnahme-, Nutzungs- und 
+                        Datenschutzbedingungen  gelesen und bin damit 
                         einverstanden.*{" "}
                       </span>
                     </label>

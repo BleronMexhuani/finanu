@@ -7,7 +7,7 @@ import GutZuWissen from './kranken/GutZuWissen'
 import KrankenCards from './kranken/KrankenCards'
 import Option2Kranken from './kranken/Option2Kranken'
 import Option1Kranken from './kranken/Option1Kranken'
-import First from '../assets/images/krankenkasseFirstIlu.png'
+import First from '../assets/images/krankenkasseFirssIlut.png'
 
 function Krankenkasse(props) {
   return (

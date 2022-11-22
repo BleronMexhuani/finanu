@@ -34,7 +34,9 @@ function Wettbewerbe() {
                 <Link to='/wettbewerbe/1' className="text-decoration-none">
                   <div className="card " >
 
+
                     <label className="premium-span-premium" id="premiumcc2">Teilnahmeschluss ist am 31.07.2023 </label>
+
 
                     <img src={bern} alt="" className="img-fluid img" />
                     <div className="card-body text-md-start">
