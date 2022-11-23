@@ -80,7 +80,7 @@ function RechtsschutzSteps() {
                                             <div className="row g-4 g-md-5">
                                                 <div className="col-6 col-xl-3">
                                                     <label htmlFor="Einzelpersonen" className='containerRes w-100 h-100'>
-                                                        <input type="radio" id='Einzelpersonen' onChange={e => setReschutz('einzelpersonen')} name='who' hidden />
+                                                        <input type="radio" id='Einzelpersonen' checked={(reschtutz === 'einzelpersonen') ? true : false} onChange={e => setReschutz('einzelpersonen')} name='who' hidden />
                                                         <div className='checkmarkRes px-1 mb-2'><img src={Einzel} className="img-fluid" alt="" /></div>
                                                         <span className='underCheckmarkSpan'>Einzelpersonen</span>
                                                     </label>
@@ -152,7 +152,7 @@ function RechtsschutzSteps() {
                                             <div className="row g-4 g-md-5 justify-content-evenly">
                                                 <div className="col-6 col-md-4 col-lg-3">
                                                     <label htmlFor="Kosten" className='containerRes w-100 h-100'>
-                                                        <input type="radio" onChange={e => setRes2('Kosten')} id='Kosten' name='who1' hidden />
+                                                        <input type="radio" checked={(res2 === 'tiefe kosten') ? true : false} onChange={e => setRes2('tiefe kosten')} id='Kosten' name='who1' hidden />
                                                         <div className='checkmarkRes px-1 mb-2'><img src={Step2First} className="img-fluid" alt="" /></div>
                                                         <span className='underCheckmarkSpan'>Tiefe Kosten</span>
                                                     </label>
@@ -268,7 +268,7 @@ function RechtsschutzSteps() {
                                                         </div> */}
                                                             <div className="">
 
-                                                                <input className='step3InputRechtss form-control' type={'date'} name="" placeholder='Geburtsdatum' id="" />
+                                                                <input className='step3InputRechtss form-control' type={'date'} onChange={e => setGeburstadum(e.target.value)} name="" placeholder='Geburtsdatum' id="" />
 
                                                             </div>
                                                         </div>

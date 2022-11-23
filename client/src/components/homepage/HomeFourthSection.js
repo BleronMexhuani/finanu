@@ -12,9 +12,9 @@ function HomeFourthSection() {
                     <span className='finanuSubTitle' style={{ fontWeight: 500 }}>Unser Team stellt monatlich diverse Themen in Form von Blogartikeln vor. Blogartikel können z.B. die Erläuterung von <br></br> verschiedenen Therapieformen, Versicherungen oder auch  Gesundheitliche Themen sein.</span>
                 </div>
             </div>
-            <div className='wrapDiv container-xl px-4 px-xl-0 col-12 col-lg-9 col-xl-7 col-xxl-6'>
+            <div className='wrapDiv container-xl px-4 px-xl-0 col-12 col-sm-10 col-md-12 col-xl-9 col-xxl-7'>
                 <div className="row g-4 g-sm-4">
-                    <div className="col-12 col-sm-6">
+                    <div className="col-12 col-md-6">
                         <div className="row g-0">
                             <div className="col-12 fourthSectionImgDiv p-4" style={{ zIndex: 5 }}>
                             <svg width="252" height="284" viewBox="0 0 252 284" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,7 +209,7 @@ function HomeFourthSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 d-flex flex-column">
+                    <div className="col-12 col-md-6 d-flex flex-column">
                         <div className=" fourthSectionImgDiv p-4" style={{ zIndex: 5 }}>
                         <svg width="188" height="284" viewBox="0 0 188 257" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.75 228.51V27.7595C0.75 12.848 12.848 0.75 27.7595 0.75H119.557C134.468 0.75 146.566 12.848 146.566 27.7595V228.51C146.566 243.421 134.468 255.519 119.557 255.519H27.7595C12.848 255.519 0.75 243.421 0.75 228.51Z" fill="#BEE8FF" stroke="black" stroke-width="1.5"/>

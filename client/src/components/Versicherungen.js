@@ -4,7 +4,7 @@ import '../assets/css/versicherungen.css'
 function Versicherungen() {
   return (
     <div>
-      <div className='cloudsBackground wrapDiv1'>
+      <div className='container-xl px-4 px-xl-0 pb-5 wrapDiv1'>
         <div className='pb-3'>
           <span className='firstBlueTitle'>
             VERSICHERUNGEN

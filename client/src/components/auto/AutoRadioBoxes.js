@@ -14,13 +14,7 @@ function AutoRadioBoxes() {
             <div className="wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding">
                 <div className="row justify-content-between gx-4 bodyCounterPadding">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
-                        <div className='pb-5 text-start'>
-                            <span className='fw-700 fs-3 normalTextToBlue'>
-                                Auto
-                            </span>
-                        </div>
                         <div className='pb-5 pb-md-0 pe-0 pe-lg-5'>
-
                             <img src={MainImg} className="img-fluid" alt="" />
                         </div>
 
@@ -126,7 +120,7 @@ function AutoRadioBoxes() {
                     }
                 </div>
 
-                <div className="row gx-4 px-5  py-3 justify-content-between">
+                <div className="row gx-4 pb-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
                             <span className='fw-700 firstBlueTitle fs-1 '>Autohaftpflicht (Pflicht)  </span>
@@ -142,8 +136,8 @@ function AutoRadioBoxes() {
                         </div>
                     </div>
                 </div>
-                <br></br>
-                <div className="row gx-4 py-3 px-5 justify-content-between">
+                
+                <div className="row gx-4 pb-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
                             <span className='fw-700 firstBlueTitle fs-1 '> Teilkaskoversicherung (Freiwillig) </span>
@@ -159,10 +153,10 @@ function AutoRadioBoxes() {
                         </div>
                     </div>
                 </div>
-                <br></br>
-                <div className="row gx-4 py-3 px-5 justify-content-between">
+                
+                <div className="row gx-4 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
-                        <div className='pb-4'>
+                        <div className='pb-4 pb-md-0'>
                             <span className='fw-700 firstBlueTitle fs-1 '>Vollkaskoversicherung (Freiwillig ausser bei Leasing)</span>
                         </div>
                     </div>
