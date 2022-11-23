@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
-import { ReactComponent as HausratHouse } from '../../assets/images/hausratHouse.svg'
+// import { ReactComponent as HausratHouse } from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
 import Ilu from '../../assets/images/hausratSliderPhotos/HOUSE.png'
@@ -90,7 +90,7 @@ function HausratBlueForm() {
                 <div className="row gx-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Lorem Ipsums</span>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Alles rund ums Eigenheim</span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">

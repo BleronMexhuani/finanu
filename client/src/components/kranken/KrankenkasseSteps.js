@@ -7,9 +7,9 @@ import XBtn from "../../assets/images/xButton.svg"
 import Stars from '../../assets/images/krankenkasseStars.svg'
 import LoadingGif from '../../assets/images/Loading_2.gif';
 import Medicine2 from '../../assets/images/medicine2.svg'
-import Transport from '../../assets/images/transport.svg'
+// import Transport from '../../assets/images/transport.svg'
 import Alternative from '../../assets/images/alternativeMedicine.svg'
-import Sport from '../../assets/images/sport.svg'
+// import Sport from '../../assets/images/sport.svg'
 import Tooth from '../../assets/images/tooth.svg'
 import Fitness from '../../assets/images/fitness.svg'
 import Abroad from '../../assets/images/abroad.svg'
@@ -195,11 +195,11 @@ function KrankenkasseSteps() {
         var results = [];
         var searchField = "name";
         var searchVal = ["SWICA", "Vivao Sympany", "Mutuel Assurance (Groupe Mutuel)"];
-     
+
         for (var i = 0; i < responseCompared.length; i++) {
 
             for (let j = 0; j < searchVal.length; j++) {
-                if (responseCompared[i][searchField] == searchVal[j]) {
+                if (responseCompared[i][searchField] === searchVal[j]) {
 
                     let res = responseCompared[i];
                     responseCompared.splice(responseCompared.indexOf(responseCompared[i]), 1)
@@ -209,7 +209,7 @@ function KrankenkasseSteps() {
                 }
             }
         }
-        
+
 
 
         setKrankenkasse(responseCompared);
@@ -370,7 +370,7 @@ function KrankenkasseSteps() {
     const [price, setPrice] = useState('')
     const [mitOhn, setMitOhn] = useState(false)
     let i = 0
-
+    let j = 0
     const [error4, seterror4] = useState(false)
 
     const [modellChecked, setmodellChecked] = useState(false)
@@ -465,8 +465,6 @@ function KrankenkasseSteps() {
         setEndKrankenMap(endKrankenMap + 3)
         handleSubmitFormModal();
     }
-
-
 
     return (
         <>
@@ -791,23 +789,25 @@ function KrankenkasseSteps() {
                     <div ref={third2StepKranken} className='wrapDiv container-xl px-0 px-sm-4 px-xl-5 pt-5'>
                         <div className="row g-4 justify-content-center pt-5">
                             {
-
                                 krankenkasse.slice(0, endKrankenMap).map((element) => {
                                     i++;
+                                    j++;
                                     return (
 
                                         <div key={i} className="col-12 col-sm-6 col-lg-auto" id={'Kranken' + i}>
                                             <div className="krankenOfferStyle p-4 position-relative mx-auto h-100">
-                                                <div className="cornerOffer">
-                                                    <svg width="122" height="109" viewBox="0 0 122 109" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 0H43.9595L83.8143 35.6718L122 68V109L60.2591 55.5L0 0Z" fill="#50B8E7" />
-                                                        <path d="M45.059 27.6713L44.108 28.7685L39.6377 24.8935L45.2184 18.4556L49.6071 22.2599L48.656 23.3571L45.5187 20.6374L44.1746 22.188L46.8857 24.5382L46.0054 25.5537L43.2942 23.2035L41.8401 24.881L45.059 27.6713ZM50.3335 34.1652L53.9964 29.9398L49.6186 31.6556L48.9204 31.0504L49.9976 26.4734L46.3348 30.6988L45.0835 29.6141L50.6642 23.1763L52.0062 24.3396L50.7348 29.6534L55.8326 27.6566L57.1655 28.812L51.5848 35.2499L50.3335 34.1652ZM52.9289 36.415L58.5096 29.9771L61.2389 32.3431C61.5351 32.5998 61.7548 32.8961 61.8978 33.2318C62.0408 33.5676 62.1139 33.9168 62.1171 34.2795C62.1264 34.6475 62.0723 35.003 61.955 35.3459C61.8377 35.6889 61.6637 35.9934 61.4332 36.2594C61.1188 36.6221 60.7355 36.8933 60.2832 37.073C59.831 37.2527 59.3677 37.3169 58.8933 37.2657C58.419 37.2144 57.9793 37.0133 57.5743 36.6622L56.051 35.3417L54.1802 37.4997L52.9289 36.415ZM57.002 34.2445L58.4528 35.5021C58.6039 35.6331 58.7766 35.7087 58.9709 35.7289C59.1652 35.7491 59.3667 35.712 59.5755 35.6177C59.7895 35.5174 59.9856 35.3645 60.1637 35.1589C60.3576 34.9353 60.4804 34.7082 60.532 34.4776C60.5896 34.2524 60.586 34.0428 60.5212 33.8489C60.4623 33.6603 60.3574 33.5005 60.2062 33.3695L58.8099 32.159L57.002 34.2445ZM58.5784 41.3123L64.1591 34.8744L68.4842 38.6237L67.5331 39.7208L64.4593 37.0562L63.0209 38.7156L65.5779 40.9321L64.6976 41.9477L62.1405 39.7311L59.8297 42.397L58.5784 41.3123ZM66.3958 48.1682C65.9243 47.7595 65.5737 47.2968 65.344 46.7801C65.1204 46.2686 65.0031 45.7382 64.9923 45.1888C64.9928 44.6387 65.0851 44.1047 65.2694 43.5868C65.4589 43.0629 65.7318 42.5954 66.0881 42.1843C66.4601 41.7552 66.8924 41.4152 67.385 41.1646C67.8888 40.9132 68.4107 40.7569 68.9508 40.6956C69.5022 40.6336 70.0442 40.68 70.577 40.8349C71.1211 40.9889 71.6229 41.265 72.0823 41.6633C72.5477 42.0668 72.8897 42.5273 73.108 43.0448C73.3325 43.5675 73.4445 44.104 73.444 44.6541C73.4435 45.2043 73.3512 45.7383 73.1669 46.2562C72.9827 46.774 72.7124 47.2385 72.3561 47.6496C71.9893 48.0727 71.557 48.4126 71.0592 48.6693C70.5667 48.9199 70.0447 49.0763 69.4934 49.1383C68.9533 49.1995 68.4138 49.15 67.875 48.99C67.3422 48.8352 66.8491 48.5612 66.3958 48.1682ZM67.3575 43.2848C67.1165 43.5628 66.9256 43.8685 66.7849 44.2018C66.6442 44.5351 66.5634 44.8726 66.5424 45.2144C66.5327 45.5554 66.5903 45.8859 66.7152 46.2059C66.8514 46.5251 67.0676 46.8131 67.3638 47.0699C67.666 47.3319 67.9874 47.5046 68.328 47.5881C68.6738 47.6655 69.0143 47.6696 69.3497 47.6003C69.6902 47.5249 70.0099 47.3944 70.3085 47.2086C70.6185 47.0221 70.8861 46.7988 71.1114 46.5389C71.3525 46.2608 71.5377 45.9555 71.6671 45.623C71.8078 45.2897 71.883 44.9526 71.8927 44.6116C71.9137 44.2699 71.8561 43.9394 71.7199 43.6202C71.595 43.3001 71.3875 43.0144 71.0973 42.7628C70.789 42.4956 70.462 42.3233 70.1162 42.2458C69.7817 42.1676 69.4468 42.1631 69.1114 42.2324C68.7761 42.3017 68.4561 42.4266 68.1514 42.6072C67.8527 42.7929 67.5881 43.0188 67.3575 43.2848ZM81.5353 49.9371L75.9546 56.3749L74.7123 55.2981L77.094 52.5507L74.1743 50.0197L71.7926 52.7671L70.5413 51.6824L76.122 45.2446L77.3733 46.3293L75.1175 48.9316L78.0372 51.4626L80.293 48.8602L81.5353 49.9371ZM77.2976 57.5392L82.8783 51.1013L84.1296 52.186L79.5 57.5267L82.7824 60.3721L81.8313 61.4692L77.2976 57.5392ZM88.0142 64.9073L87.0631 66.0044L82.5928 62.1294L88.1736 55.6915L92.5622 59.4958L91.6111 60.593L88.4738 57.8734L87.1297 59.4239L89.8408 61.7741L88.9605 62.7896L86.2494 60.4394L84.7952 62.1169L88.0142 64.9073ZM92.8741 63.8L89.2899 67.9348L88.0386 66.8501L93.6193 60.4122L94.6167 61.2768L94.2659 68.405L97.9366 64.1706L99.1879 65.2553L93.6151 71.6841L92.5723 70.7801L92.8741 63.8Z" fill="white" />
-                                                    </svg>
-
-                                                </div>
+                                                {(j <= 3) && (
+                                                    <div className="cornerOffer">
+                                                        <svg width="122" height="109" viewBox="0 0 122 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0H43.9595L83.8143 35.6718L122 68V109L60.2591 55.5L0 0Z" fill="#50B8E7" />
+                                                            <path d="M45.059 27.6713L44.108 28.7685L39.6377 24.8935L45.2184 18.4556L49.6071 22.2599L48.656 23.3571L45.5187 20.6374L44.1746 22.188L46.8857 24.5382L46.0054 25.5537L43.2942 23.2035L41.8401 24.881L45.059 27.6713ZM50.3335 34.1652L53.9964 29.9398L49.6186 31.6556L48.9204 31.0504L49.9976 26.4734L46.3348 30.6988L45.0835 29.6141L50.6642 23.1763L52.0062 24.3396L50.7348 29.6534L55.8326 27.6566L57.1655 28.812L51.5848 35.2499L50.3335 34.1652ZM52.9289 36.415L58.5096 29.9771L61.2389 32.3431C61.5351 32.5998 61.7548 32.8961 61.8978 33.2318C62.0408 33.5676 62.1139 33.9168 62.1171 34.2795C62.1264 34.6475 62.0723 35.003 61.955 35.3459C61.8377 35.6889 61.6637 35.9934 61.4332 36.2594C61.1188 36.6221 60.7355 36.8933 60.2832 37.073C59.831 37.2527 59.3677 37.3169 58.8933 37.2657C58.419 37.2144 57.9793 37.0133 57.5743 36.6622L56.051 35.3417L54.1802 37.4997L52.9289 36.415ZM57.002 34.2445L58.4528 35.5021C58.6039 35.6331 58.7766 35.7087 58.9709 35.7289C59.1652 35.7491 59.3667 35.712 59.5755 35.6177C59.7895 35.5174 59.9856 35.3645 60.1637 35.1589C60.3576 34.9353 60.4804 34.7082 60.532 34.4776C60.5896 34.2524 60.586 34.0428 60.5212 33.8489C60.4623 33.6603 60.3574 33.5005 60.2062 33.3695L58.8099 32.159L57.002 34.2445ZM58.5784 41.3123L64.1591 34.8744L68.4842 38.6237L67.5331 39.7208L64.4593 37.0562L63.0209 38.7156L65.5779 40.9321L64.6976 41.9477L62.1405 39.7311L59.8297 42.397L58.5784 41.3123ZM66.3958 48.1682C65.9243 47.7595 65.5737 47.2968 65.344 46.7801C65.1204 46.2686 65.0031 45.7382 64.9923 45.1888C64.9928 44.6387 65.0851 44.1047 65.2694 43.5868C65.4589 43.0629 65.7318 42.5954 66.0881 42.1843C66.4601 41.7552 66.8924 41.4152 67.385 41.1646C67.8888 40.9132 68.4107 40.7569 68.9508 40.6956C69.5022 40.6336 70.0442 40.68 70.577 40.8349C71.1211 40.9889 71.6229 41.265 72.0823 41.6633C72.5477 42.0668 72.8897 42.5273 73.108 43.0448C73.3325 43.5675 73.4445 44.104 73.444 44.6541C73.4435 45.2043 73.3512 45.7383 73.1669 46.2562C72.9827 46.774 72.7124 47.2385 72.3561 47.6496C71.9893 48.0727 71.557 48.4126 71.0592 48.6693C70.5667 48.9199 70.0447 49.0763 69.4934 49.1383C68.9533 49.1995 68.4138 49.15 67.875 48.99C67.3422 48.8352 66.8491 48.5612 66.3958 48.1682ZM67.3575 43.2848C67.1165 43.5628 66.9256 43.8685 66.7849 44.2018C66.6442 44.5351 66.5634 44.8726 66.5424 45.2144C66.5327 45.5554 66.5903 45.8859 66.7152 46.2059C66.8514 46.5251 67.0676 46.8131 67.3638 47.0699C67.666 47.3319 67.9874 47.5046 68.328 47.5881C68.6738 47.6655 69.0143 47.6696 69.3497 47.6003C69.6902 47.5249 70.0099 47.3944 70.3085 47.2086C70.6185 47.0221 70.8861 46.7988 71.1114 46.5389C71.3525 46.2608 71.5377 45.9555 71.6671 45.623C71.8078 45.2897 71.883 44.9526 71.8927 44.6116C71.9137 44.2699 71.8561 43.9394 71.7199 43.6202C71.595 43.3001 71.3875 43.0144 71.0973 42.7628C70.789 42.4956 70.462 42.3233 70.1162 42.2458C69.7817 42.1676 69.4468 42.1631 69.1114 42.2324C68.7761 42.3017 68.4561 42.4266 68.1514 42.6072C67.8527 42.7929 67.5881 43.0188 67.3575 43.2848ZM81.5353 49.9371L75.9546 56.3749L74.7123 55.2981L77.094 52.5507L74.1743 50.0197L71.7926 52.7671L70.5413 51.6824L76.122 45.2446L77.3733 46.3293L75.1175 48.9316L78.0372 51.4626L80.293 48.8602L81.5353 49.9371ZM77.2976 57.5392L82.8783 51.1013L84.1296 52.186L79.5 57.5267L82.7824 60.3721L81.8313 61.4692L77.2976 57.5392ZM88.0142 64.9073L87.0631 66.0044L82.5928 62.1294L88.1736 55.6915L92.5622 59.4958L91.6111 60.593L88.4738 57.8734L87.1297 59.4239L89.8408 61.7741L88.9605 62.7896L86.2494 60.4394L84.7952 62.1169L88.0142 64.9073ZM92.8741 63.8L89.2899 67.9348L88.0386 66.8501L93.6193 60.4122L94.6167 61.2768L94.2659 68.405L97.9366 64.1706L99.1879 65.2553L93.6151 71.6841L92.5723 70.7801L92.8741 63.8Z" fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                )}
                                                 <div className='pb-3 text-start'>
                                                     <span className='finanuSubTitle fw-bold'>{element.name}</span>
                                                 </div>
+
                                                 <div className="text-start pb-5">
                                                     <div className="row gx-3">
                                                         <div className="col-auto">
@@ -820,38 +820,43 @@ function KrankenkasseSteps() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className='pb-3 text-start'>
-                                                    <div className="row gx-3">
-                                                        <div className="col-auto my-auto">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                                                                <path d="M23.4208 14.9431C23.2769 14.7993 23.1045 14.7295 22.901 14.7295H14.7266V27H22.1319C22.9789 27 23.6227 26.2732 23.6227 25.4261V15.4744C23.6227 15.271 23.5646 15.087 23.4208 14.9431Z" fill="black" />
-                                                                <path d="M12.2711 14.7295H4.16481C3.74117 14.7295 3.375 15.051 3.375 15.4745V25.4261C3.375 26.2731 4.0869 27 4.93387 27H12.2711V14.7295Z" fill="black" />
-                                                                <path d="M12.271 6.75391H4.94522C4.09681 6.75391 3.375 7.44167 3.375 8.28987V11.8644C3.375 12.7127 4.09692 13.4005 4.94522 13.4005H12.2711V6.75391H12.271Z" fill="black" />
-                                                                <path d="M22.1206 6.75391H14.7266V13.4005H22.1206C22.969 13.4005 23.6227 12.7127 23.6227 11.8644V8.28987C23.6227 7.44157 22.969 6.75391 22.1206 6.75391Z" fill="black" />
-                                                                <path d="M17.6153 0.634387C17.0715 0.213507 16.5286 0 16.0017 0C14.9484 0 14.1214 0.781531 13.5369 2.32425C12.9524 0.781531 12.1256 0 11.0723 0C10.5454 0 10.0024 0.213507 9.45872 0.634387C8.4239 1.43545 8.31398 2.26944 8.40386 2.82805C8.74079 4.9212 12.526 6.35849 13.2814 6.62548C13.3646 6.65493 13.451 6.66935 13.5368 6.66935H13.5369H13.537C13.6228 6.66935 13.7092 6.65493 13.7925 6.62548C14.5478 6.3586 18.3331 4.9211 18.67 2.82805C18.7599 2.26944 18.65 1.43555 17.6153 0.634387ZM11.8069 4.27894C10.1614 3.37358 9.94515 2.75279 9.91805 2.58418C9.88349 2.36842 10.0447 2.12045 10.3975 1.84733C10.6625 1.64221 10.8957 1.53382 11.0723 1.53382C11.4004 1.53382 11.9003 2.05716 12.3191 3.52604C12.4315 3.91993 12.5188 4.31708 12.5855 4.67354C12.3391 4.5581 12.0735 4.42558 11.8069 4.27894ZM17.1557 2.58407C17.0492 3.24842 15.7496 4.08405 14.4828 4.6808C14.7833 3.10864 15.3647 1.53382 16.0017 1.53382C16.1783 1.53382 16.4115 1.64221 16.6764 1.84733C17.029 2.12035 17.1904 2.36821 17.1557 2.58407Z" fill="black" />
-                                                            </svg>
+                                                {(j <= 3) && (
+                                                    <>
+                                                        <div className='pb-3 text-start'>
+                                                            <div className="row gx-3">
+                                                                <div className="col-auto my-auto">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                                        <path d="M23.4208 14.9431C23.2769 14.7993 23.1045 14.7295 22.901 14.7295H14.7266V27H22.1319C22.9789 27 23.6227 26.2732 23.6227 25.4261V15.4744C23.6227 15.271 23.5646 15.087 23.4208 14.9431Z" fill="black" />
+                                                                        <path d="M12.2711 14.7295H4.16481C3.74117 14.7295 3.375 15.051 3.375 15.4745V25.4261C3.375 26.2731 4.0869 27 4.93387 27H12.2711V14.7295Z" fill="black" />
+                                                                        <path d="M12.271 6.75391H4.94522C4.09681 6.75391 3.375 7.44167 3.375 8.28987V11.8644C3.375 12.7127 4.09692 13.4005 4.94522 13.4005H12.2711V6.75391H12.271Z" fill="black" />
+                                                                        <path d="M22.1206 6.75391H14.7266V13.4005H22.1206C22.969 13.4005 23.6227 12.7127 23.6227 11.8644V8.28987C23.6227 7.44157 22.969 6.75391 22.1206 6.75391Z" fill="black" />
+                                                                        <path d="M17.6153 0.634387C17.0715 0.213507 16.5286 0 16.0017 0C14.9484 0 14.1214 0.781531 13.5369 2.32425C12.9524 0.781531 12.1256 0 11.0723 0C10.5454 0 10.0024 0.213507 9.45872 0.634387C8.4239 1.43545 8.31398 2.26944 8.40386 2.82805C8.74079 4.9212 12.526 6.35849 13.2814 6.62548C13.3646 6.65493 13.451 6.66935 13.5368 6.66935H13.5369H13.537C13.6228 6.66935 13.7092 6.65493 13.7925 6.62548C14.5478 6.3586 18.3331 4.9211 18.67 2.82805C18.7599 2.26944 18.65 1.43555 17.6153 0.634387ZM11.8069 4.27894C10.1614 3.37358 9.94515 2.75279 9.91805 2.58418C9.88349 2.36842 10.0447 2.12045 10.3975 1.84733C10.6625 1.64221 10.8957 1.53382 11.0723 1.53382C11.4004 1.53382 11.9003 2.05716 12.3191 3.52604C12.4315 3.91993 12.5188 4.31708 12.5855 4.67354C12.3391 4.5581 12.0735 4.42558 11.8069 4.27894ZM17.1557 2.58407C17.0492 3.24842 15.7496 4.08405 14.4828 4.6808C14.7833 3.10864 15.3647 1.53382 16.0017 1.53382C16.1783 1.53382 16.4115 1.64221 16.6764 1.84733C17.029 2.12035 17.1904 2.36821 17.1557 2.58407Z" fill="black" />
+                                                                    </svg>
 
-                                                        </div>
-                                                        <div className="col mt-auto lh-1">
-                                                            <span className='fw-600 lh-1'>Hohe Leistungen</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="pb-5 mb-5 text-start">
-                                                    <div className="row gx-3">
-                                                        <div className="col-auto my-auto">
-                                                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M13.4998 0C6.05684 0 0 6.05566 0 13.4995C0 20.9433 6.05645 27 13.4998 27C20.9443 27 26.9995 20.9438 26.9995 13.4995C26.9995 6.05566 20.9447 0 13.4998 0ZM19.3424 10.7336L12.2721 17.8039C12.0598 18.016 11.7801 18.123 11.5029 18.123C11.2236 18.123 10.9465 18.016 10.7335 17.8039L7.65852 14.729C7.23339 14.3034 7.23339 13.6152 7.65852 13.1901C8.08357 12.7651 8.77184 12.7651 9.19697 13.1901L11.5029 15.4969L17.8049 9.19453C18.2291 8.76995 18.9173 8.76995 19.3424 9.19453C19.7676 9.62029 19.7676 10.3086 19.3424 10.7336Z" fill="#50B8E7" />
-                                                            </svg>
-
-                                                        </div>
-                                                        <div className="col my-auto">
-                                                            <div>
-                                                                <span className='fw-600' style={{ color: "#50B8E7" }}>Sehr gute Leistungen</span>
+                                                                </div>
+                                                                <div className="col mt-auto lh-1">
+                                                                    <span className='fw-600 lh-1'>Hohe Leistungen</span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                        <div className="pb-5 mb-5 text-start">
+                                                            <div className="row gx-3">
+                                                                <div className="col-auto my-auto">
+                                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M13.4998 0C6.05684 0 0 6.05566 0 13.4995C0 20.9433 6.05645 27 13.4998 27C20.9443 27 26.9995 20.9438 26.9995 13.4995C26.9995 6.05566 20.9447 0 13.4998 0ZM19.3424 10.7336L12.2721 17.8039C12.0598 18.016 11.7801 18.123 11.5029 18.123C11.2236 18.123 10.9465 18.016 10.7335 17.8039L7.65852 14.729C7.23339 14.3034 7.23339 13.6152 7.65852 13.1901C8.08357 12.7651 8.77184 12.7651 9.19697 13.1901L11.5029 15.4969L17.8049 9.19453C18.2291 8.76995 18.9173 8.76995 19.3424 9.19453C19.7676 9.62029 19.7676 10.3086 19.3424 10.7336Z" fill="#50B8E7" />
+                                                                    </svg>
+
+                                                                </div>
+                                                                <div className="col my-auto">
+                                                                    <div>
+                                                                        <span className='fw-600' style={{ color: "#50B8E7" }}>Sehr gute Leistungen</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </>
+                                                )}
+
                                                 <div className='pb-3'>
                                                     <span className='fw-600'>{element.tarif}</span>
                                                 </div>
@@ -1148,9 +1153,199 @@ function KrankenkasseSteps() {
                                         </div>
                                         <div>
                                             <select required name="" onChange={e => setNationalitat(e.target.value)} id="" className='krankenInputStyle form-select krankenInputStepStyle p-2'>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-
+                                                <option value="0">---</option>
+                                                <option value="afghan">Afghan</option>
+                                                <option value="albanian">Albanian</option>
+                                                <option value="algerian">Algerian</option>
+                                                <option value="american">American</option>
+                                                <option value="andorran">Andorran</option>
+                                                <option value="angolan">Angolan</option>
+                                                <option value="antiguans">Antiguans</option>
+                                                <option value="argentinean">Argentinean</option>
+                                                <option value="armenian">Armenian</option>
+                                                <option value="australian">Australian</option>
+                                                <option value="austrian">Austrian</option>
+                                                <option value="azerbaijani">Azerbaijani</option>
+                                                <option value="bahamian">Bahamian</option>
+                                                <option value="bahraini">Bahraini</option>
+                                                <option value="bangladeshi">Bangladeshi</option>
+                                                <option value="barbadian">Barbadian</option>
+                                                <option value="barbudans">Barbudans</option>
+                                                <option value="batswana">Batswana</option>
+                                                <option value="belarusian">Belarusian</option>
+                                                <option value="belgian">Belgian</option>
+                                                <option value="belizean">Belizean</option>
+                                                <option value="beninese">Beninese</option>
+                                                <option value="bhutanese">Bhutanese</option>
+                                                <option value="bolivian">Bolivian</option>
+                                                <option value="bosnian">Bosnian</option>
+                                                <option value="brazilian">Brazilian</option>
+                                                <option value="british">British</option>
+                                                <option value="bruneian">Bruneian</option>
+                                                <option value="bulgarian">Bulgarian</option>
+                                                <option value="burkinabe">Burkinabe</option>
+                                                <option value="burmese">Burmese</option>
+                                                <option value="burundian">Burundian</option>
+                                                <option value="cambodian">Cambodian</option>
+                                                <option value="cameroonian">Cameroonian</option>
+                                                <option value="canadian">Canadian</option>
+                                                <option value="cape verdean">Cape Verdean</option>
+                                                <option value="central african">Central African</option>
+                                                <option value="chadian">Chadian</option>
+                                                <option value="chilean">Chilean</option>
+                                                <option value="chinese">Chinese</option>
+                                                <option value="colombian">Colombian</option>
+                                                <option value="comoran">Comoran</option>
+                                                <option value="congolese">Congolese</option>
+                                                <option value="costa rican">Costa Rican</option>
+                                                <option value="croatian">Croatian</option>
+                                                <option value="cuban">Cuban</option>
+                                                <option value="cypriot">Cypriot</option>
+                                                <option value="czech">Czech</option>
+                                                <option value="danish">Danish</option>
+                                                <option value="djibouti">Djibouti</option>
+                                                <option value="dominican">Dominican</option>
+                                                <option value="dutch">Dutch</option>
+                                                <option value="east timorese">East Timorese</option>
+                                                <option value="ecuadorean">Ecuadorean</option>
+                                                <option value="egyptian">Egyptian</option>
+                                                <option value="emirian">Emirian</option>
+                                                <option value="equatorial guinean">Equatorial Guinean</option>
+                                                <option value="eritrean">Eritrean</option>
+                                                <option value="estonian">Estonian</option>
+                                                <option value="ethiopian">Ethiopian</option>
+                                                <option value="fijian">Fijian</option>
+                                                <option value="filipino">Filipino</option>
+                                                <option value="finnish">Finnish</option>
+                                                <option value="french">French</option>
+                                                <option value="gabonese">Gabonese</option>
+                                                <option value="gambian">Gambian</option>
+                                                <option value="georgian">Georgian</option>
+                                                <option value="german">German</option>
+                                                <option value="ghanaian">Ghanaian</option>
+                                                <option value="greek">Greek</option>
+                                                <option value="grenadian">Grenadian</option>
+                                                <option value="guatemalan">Guatemalan</option>
+                                                <option value="guinea-bissauan">Guinea-Bissauan</option>
+                                                <option value="guinean">Guinean</option>
+                                                <option value="guyanese">Guyanese</option>
+                                                <option value="haitian">Haitian</option>
+                                                <option value="herzegovinian">Herzegovinian</option>
+                                                <option value="honduran">Honduran</option>
+                                                <option value="hungarian">Hungarian</option>
+                                                <option value="icelander">Icelander</option>
+                                                <option value="indian">Indian</option>
+                                                <option value="indonesian">Indonesian</option>
+                                                <option value="iranian">Iranian</option>
+                                                <option value="iraqi">Iraqi</option>
+                                                <option value="irish">Irish</option>
+                                                <option value="israeli">Israeli</option>
+                                                <option value="italian">Italian</option>
+                                                <option value="ivorian">Ivorian</option>
+                                                <option value="jamaican">Jamaican</option>
+                                                <option value="japanese">Japanese</option>
+                                                <option value="jordanian">Jordanian</option>
+                                                <option value="kazakhstani">Kazakhstani</option>
+                                                <option value="kenyan">Kenyan</option>
+                                                <option value="kittian and nevisian">Kittian and Nevisian</option>
+                                                <option value="kuwaiti">Kuwaiti</option>
+                                                <option value="kyrgyz">Kyrgyz</option>
+                                                <option value="laotian">Laotian</option>
+                                                <option value="latvian">Latvian</option>
+                                                <option value="lebanese">Lebanese</option>
+                                                <option value="liberian">Liberian</option>
+                                                <option value="libyan">Libyan</option>
+                                                <option value="liechtensteiner">Liechtensteiner</option>
+                                                <option value="lithuanian">Lithuanian</option>
+                                                <option value="luxembourger">Luxembourger</option>
+                                                <option value="macedonian">Macedonian</option>
+                                                <option value="malagasy">Malagasy</option>
+                                                <option value="malawian">Malawian</option>
+                                                <option value="malaysian">Malaysian</option>
+                                                <option value="maldivan">Maldivan</option>
+                                                <option value="malian">Malian</option>
+                                                <option value="maltese">Maltese</option>
+                                                <option value="marshallese">Marshallese</option>
+                                                <option value="mauritanian">Mauritanian</option>
+                                                <option value="mauritian">Mauritian</option>
+                                                <option value="mexican">Mexican</option>
+                                                <option value="micronesian">Micronesian</option>
+                                                <option value="moldovan">Moldovan</option>
+                                                <option value="monacan">Monacan</option>
+                                                <option value="mongolian">Mongolian</option>
+                                                <option value="moroccan">Moroccan</option>
+                                                <option value="mosotho">Mosotho</option>
+                                                <option value="motswana">Motswana</option>
+                                                <option value="mozambican">Mozambican</option>
+                                                <option value="namibian">Namibian</option>
+                                                <option value="nauruan">Nauruan</option>
+                                                <option value="nepalese">Nepalese</option>
+                                                <option value="new zealander">New Zealander</option>
+                                                <option value="ni-vanuatu">Ni-Vanuatu</option>
+                                                <option value="nicaraguan">Nicaraguan</option>
+                                                <option value="nigerien">Nigerien</option>
+                                                <option value="north korean">North Korean</option>
+                                                <option value="northern irish">Northern Irish</option>
+                                                <option value="norwegian">Norwegian</option>
+                                                <option value="omani">Omani</option>
+                                                <option value="pakistani">Pakistani</option>
+                                                <option value="palauan">Palauan</option>
+                                                <option value="panamanian">Panamanian</option>
+                                                <option value="papua new guinean">Papua New Guinean</option>
+                                                <option value="paraguayan">Paraguayan</option>
+                                                <option value="peruvian">Peruvian</option>
+                                                <option value="polish">Polish</option>
+                                                <option value="portuguese">Portuguese</option>
+                                                <option value="qatari">Qatari</option>
+                                                <option value="romanian">Romanian</option>
+                                                <option value="russian">Russian</option>
+                                                <option value="rwandan">Rwandan</option>
+                                                <option value="saint lucian">Saint Lucian</option>
+                                                <option value="salvadoran">Salvadoran</option>
+                                                <option value="samoan">Samoan</option>
+                                                <option value="san marinese">San Marinese</option>
+                                                <option value="sao tomean">Sao Tomean</option>
+                                                <option value="saudi">Saudi</option>
+                                                <option value="scottish">Scottish</option>
+                                                <option value="senegalese">Senegalese</option>
+                                                <option value="serbian">Serbian</option>
+                                                <option value="seychellois">Seychellois</option>
+                                                <option value="sierra leonean">Sierra Leonean</option>
+                                                <option value="singaporean">Singaporean</option>
+                                                <option value="slovakian">Slovakian</option>
+                                                <option value="slovenian">Slovenian</option>
+                                                <option value="solomon islander">Solomon Islander</option>
+                                                <option value="somali">Somali</option>
+                                                <option value="south african">South African</option>
+                                                <option value="south korean">South Korean</option>
+                                                <option value="spanish">Spanish</option>
+                                                <option value="sri lankan">Sri Lankan</option>
+                                                <option value="sudanese">Sudanese</option>
+                                                <option value="surinamer">Surinamer</option>
+                                                <option value="swazi">Swazi</option>
+                                                <option value="swedish">Swedish</option>
+                                                <option value="swiss">Swiss</option>
+                                                <option value="syrian">Syrian</option>
+                                                <option value="taiwanese">Taiwanese</option>
+                                                <option value="tajik">Tajik</option>
+                                                <option value="tanzanian">Tanzanian</option>
+                                                <option value="thai">Thai</option>
+                                                <option value="togolese">Togolese</option>
+                                                <option value="tongan">Tongan</option>
+                                                <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                                                <option value="tunisian">Tunisian</option>
+                                                <option value="turkish">Turkish</option>
+                                                <option value="tuvaluan">Tuvaluan</option>
+                                                <option value="ugandan">Ugandan</option>
+                                                <option value="ukrainian">Ukrainian</option>
+                                                <option value="uruguayan">Uruguayan</option>
+                                                <option value="uzbekistani">Uzbekistani</option>
+                                                <option value="venezuelan">Venezuelan</option>
+                                                <option value="vietnamese">Vietnamese</option>
+                                                <option value="welsh">Welsh</option>
+                                                <option value="yemenite">Yemenite</option>
+                                                <option value="zambian">Zambian</option>
+                                                <option value="zimbabwean">Zimbabwean</option>
                                             </select>
                                         </div>
                                     </div>

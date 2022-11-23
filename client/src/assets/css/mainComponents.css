@@ -173,7 +173,10 @@
     border: 1px solid #50B8E7;
     border-radius: 12px 12px 0px 0px;
 }
-
+.autoSelectDropdown {
+    left: calc(50% - 210px);
+    top: 4.5rem !important;
+}
 @media (max-width: 1399.98px) {
     .wrapDiv {
         margin: 0px 6rem;
@@ -227,6 +230,9 @@
         width: 100% !important;
     }
 
+    .autoSelectDropdown {
+        left: 0;
+    }
 }
 
 @media (max-width: 767.98px) {
