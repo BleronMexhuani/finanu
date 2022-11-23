@@ -37,7 +37,7 @@ function Otherquestions() {
                             <Accordion defaultActiveKey="0 text-dark accordionmainstyle ">
                                 <Accordion.Item eventKey="4" className="accordionstyle agilestyleofaccordion border border-0">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #1</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion text-dark">
+                                    <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -49,7 +49,7 @@ function Otherquestions() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="5" className="accordionstyle agilestyleofaccordion border border-0">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #2</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion text-dark">
+                                    <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -61,7 +61,7 @@ function Otherquestions() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="6" className="accordionstyle agilestyleofaccordion border border-0">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #3</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion text-dark">
+                                    <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -73,7 +73,7 @@ function Otherquestions() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="7" className="accordionstyle agilestyleofaccordion border border-0">
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #4</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion text-dark">
+                                    <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut

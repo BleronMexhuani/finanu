@@ -70,7 +70,7 @@ function PlusTabs() {
                     }}
                     loop={true}
                     autoplay={{
-                        delay: 5000,
+                        delay: 2200,
                         disableOnInteraction: false,
                     }}
                     modules={[EffectFade, Autoplay]}
@@ -104,7 +104,7 @@ function PlusTabs() {
                             <div className="row gx-5 gy-5 justify-content-center">
                                 <div className="col-12 col-sm-6 col-lg-7 my-sm-auto order-2 order-sm-1">
                                     <div className='pb-3'>
-                                        <span className='fs-1 fw-700 secondaryColor'>Car Damage2</span>
+                                        <span className='fs-1 fw-700 secondaryColor'>Car Damage 2</span>
                                     </div>
                                     <div>
                                         <span className='fs-5 fw-600 secondaryColor'>Laden Sie ire bestehende Offerte hoch oder starten Sie eine neue Anfrage. laden Sie ire bestehende Offerte hoch oder starten </span>
@@ -123,7 +123,7 @@ function PlusTabs() {
                             <div className="row gx-5 gy-5 justify-content-center">
                                 <div className="col-12 col-sm-6 col-lg-7 my-sm-auto order-2 order-sm-1">
                                     <div className='pb-3'>
-                                        <span className='fs-1 fw-700 secondaryColor'>Car Damage3</span>
+                                        <span className='fs-1 fw-700 secondaryColor'>Car Damage 3</span>
                                     </div>
                                     <div>
                                         <span className='fs-5 fw-600 secondaryColor'>Laden Sie ire bestehende Offerte hoch oder starten Sie eine neue Anfrage. laden Sie ire bestehende Offerte hoch oder starten </span>
@@ -143,6 +143,44 @@ function PlusTabs() {
                                 <div className="col-12 col-sm-6 col-lg-7 my-sm-auto order-2 order-sm-1">
                                     <div className='pb-3'>
                                         <span className='fs-1 fw-700 secondaryColor'>Car Damage4</span>
+                                    </div>
+                                    <div>
+                                        <span className='fs-5 fw-600 secondaryColor'>Laden Sie ire bestehende Offerte hoch oder starten Sie eine neue Anfrage. laden Sie ire bestehende Offerte hoch oder starten </span>
+                                    </div>
+                                </div>
+                                <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
+                                    <Car className="img-fluid" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="plusSliderBackground text-start">
+
+                            <div className="row gx-5 gy-5 justify-content-center">
+                                <div className="col-12 col-sm-6 col-lg-7 my-sm-auto order-2 order-sm-1">
+                                    <div className='pb-3'>
+                                        <span className='fs-1 fw-700 secondaryColor'>Car Damage 5</span>
+                                    </div>
+                                    <div>
+                                        <span className='fs-5 fw-600 secondaryColor'>Laden Sie ire bestehende Offerte hoch oder starten Sie eine neue Anfrage. laden Sie ire bestehende Offerte hoch oder starten </span>
+                                    </div>
+                                </div>
+                                <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
+                                    <Car className="img-fluid" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="plusSliderBackground text-start">
+
+                            <div className="row gx-5 gy-5 justify-content-center">
+                                <div className="col-12 col-sm-6 col-lg-7 my-sm-auto order-2 order-sm-1">
+                                    <div className='pb-3'>
+                                        <span className='fs-1 fw-700 secondaryColor'>Car Damage 6</span>
                                     </div>
                                     <div>
                                         <span className='fs-5 fw-600 secondaryColor'>Laden Sie ire bestehende Offerte hoch oder starten Sie eine neue Anfrage. laden Sie ire bestehende Offerte hoch oder starten </span>
