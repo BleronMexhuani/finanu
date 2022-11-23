@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
-import Einzel from '../../assets/images/newimages/njeri.svg'
-import Familie from '../../assets/images/newimages/njerz.svg'
-import Building from '../../assets/images/rechtsschutzImgs/building.svg'
-import Privat from '../../assets/images/rechtsschutzImgs/privat.svg'
-import Step2First from '../../assets/images/newimages/chshigjet.svg'
-import Step2Second from '../../assets/images/rechtsschutzImgs/step2Second.svg'
-import Step2Third from '../../assets/images/newimages/doranjeri.svg'
+import Einzel from '../../assets/images/newimages/drinnn-01.svg'
+import Familie from '../../assets/images/newimages/drinnn-02.svg'
+import Building from '../../assets/images/newimages/drinnn-03.svg'
+import Privat from '../../assets/images/newimages/drinnn-04.svg'
+import Step2First from '../../assets/images/newimages/3tjerat-07.svg'
+import Step2Second from '../../assets/images/newimages/3tjerat-05.svg'
+import Step2Third from '../../assets/images/newimages/3tjerat-06.svg'
 import Step3Male from '../../assets/images/rechtsschutzImgs/Male-01.svg'
 import Step3Female from '../../assets/images/rechtsschutzImgs/Female-01.svg'
 import Step3Comp from '../../assets/images/rechtsschutzImgs/Building-01.svg'
@@ -81,7 +81,7 @@ function RechtsschutzSteps() {
                                                 <div className="col-6 col-xl-3">
                                                     <label htmlFor="Einzelpersonen" className='containerRes w-100 h-100'>
                                                         <input type="radio" id='Einzelpersonen' checked={(reschtutz === 'einzelpersonen') ? true : false} onChange={e => setReschutz('einzelpersonen')} name='who' hidden />
-                                                        <div className='checkmarkRes px-1 mb-2'><img src={Einzel} className="img-fluid" alt="" /></div>
+                                                        <div className='checkmarkRes px-1 mb-2'><img src={Einzel} className="img-fluid" height="" width="" alt="" /></div>
                                                         <span className='underCheckmarkSpan'>Einzelpersonen</span>
                                                     </label>
                                                 </div>

@@ -129,10 +129,10 @@
 
 
 .sliderBtnEffect {
-    -webkit-transition: ease-out 5s;
-    -moz-transition: ease-out 5s;
-    transition: ease-out 5s;
-    box-shadow: inset 150px 0 0 0 #50B8E7;
+    -webkit-transition: ease-out 3s;
+    -moz-transition: ease-out 3s;
+    transition: ease-out 3s;
+    box-shadow: inset 250px 0 0 0 #50B8E7;
     border-radius: 8px;
     cursor: unset;
 
@@ -190,6 +190,10 @@
     border-top-left-radius: calc(10px - 1px) !important;
     border-top-right-radius: calc(10px - 1px) !important;
 }
+.accordion-button::after {
+    background-image: url('../images/plus/accordionimg.svg') !important;
+    
+}
 
 
 .ltBlueSection {
@@ -202,7 +206,21 @@
     border-bottom: 2px solid #FFFFFF;
 
 } */
+@media (min-width: 2399.98px) {
+    .videobackground {
+        background: #50B8E7;
+        border-radius: 14px;
+        max-width: 900px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
 
+    .videoinsecondsection {
+
+        margin-left: -25px;
+        margin-bottom: -25px
+    }
+}
 
 @media (max-width: 2399.98px) {
     .videobackground {
@@ -300,6 +318,10 @@
 
     } 
 
+    .accordion-button:first-child  {
+        border-top-left-radius: 15px !important;
+        border-top-right-radius: 15px !important;
+    }
 
     .mobiletabssubtitle {
         font-weight: 400;
@@ -313,7 +335,8 @@
     }
 
     .contentoflastaccordion {
-        color: black !important
+        color: black !important;    
+        background-color: #50B8E7 !important;
     }
     .buttonofthelastcomponent button {
         padding-top: 10px !important;
@@ -367,4 +390,20 @@
         font-size: 14px;
 
     }
+}
+
+.buttonofthelastcomponent button:not(.collapsed) {
+    background: #50B8E7;
+    color: white;
+}
+
+
+.accordion-item:first-child  .accordion-button{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    
+}
+.accordion-item:last-child  .accordion-button{
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
 }
