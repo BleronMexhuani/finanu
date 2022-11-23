@@ -21,11 +21,11 @@ export default function App() {
                 spaceBetween={20}
                 freeMode={true}
                 modules={[FreeMode]}
-                className="mySwiper py-5"
+                className="mySwiper py-5 px-4"
             >
-                <SwiperSlide className="mx-5">
+                <SwiperSlide className="">
                     <div>
-                        <div className="styleofplustabsmobile">
+                        <div className="styleofplustabsmobile p-4">
                             <div>
                                 <Mobilecar />
                             </div>
@@ -49,7 +49,7 @@ export default function App() {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="mx-5">
+                <SwiperSlide className="">
                     <div>
                         <div className="styleofplustabsmobile">
                             <div>

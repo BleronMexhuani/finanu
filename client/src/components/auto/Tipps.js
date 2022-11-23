@@ -3,7 +3,7 @@ import WhiteBgArrow from '../../assets/images/whiteBgArrow.svg'
 
 function Tipps() {
     return (
-        <div className='paddingTopDiv px-4 mt-5 pb-3'>
+        <div className='paddingTopDiv px-4 mt-5 bodyCounterPadding'>
             <div className='krankenFirstStep wrapDiv container-xl p-3 p-sm-5 ' style={{ position: 'relative' }}>
                 <div className="whiteBgKranken">
                     <span className='firstBlueTitle fw-bold fs-1'>Fazit und Tipps</span>

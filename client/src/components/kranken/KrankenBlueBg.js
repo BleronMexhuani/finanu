@@ -7,8 +7,7 @@ function KrankenBlueBg() {
     return (
         <>
             <div className='blueBgKrankenOverflow'>
-                <div className='blueBgKranken'>
-                    {/* Background Photo per telefon edhe tablet mvyn  */}
+                <div className='blueBgKranken pb-0'>
                     <div className=' blueBgCenterText'>
                         <div className="wrapDiv container-xl px-4 px-xl-0 pt-5 mt-5 normalTextToWhite">
                             <div className='ngtMrg'>
@@ -46,7 +45,7 @@ function KrankenBlueBg() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='pt-5'>
+                            <div className='pb-5 mb-4'>
                                 <div className="row gx-0 gx-sm-3 gx-lg-5 gy-0 justify-content-center">
                                     <div className="col-4 col-lg-auto">
                                         <img className='img-fluid' src={KrankenPramien1} alt="" />

@@ -123,7 +123,7 @@ function AutoRadioBoxes() {
                 <div className="row gx-4 pb-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Autohaftpflicht (Pflicht)  </span>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Autohaftpflicht <br></br> (Pflicht)  </span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
@@ -140,7 +140,7 @@ function AutoRadioBoxes() {
                 <div className="row gx-4 pb-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '> Teilkaskoversicherung (Freiwillig) </span>
+                            <span className='fw-700 firstBlueTitle fs-1 '> Teilkaskoversicherung <br></br> (Freiwillig) </span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
@@ -157,7 +157,7 @@ function AutoRadioBoxes() {
                 <div className="row gx-4 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
                         <div className='pb-4 pb-md-0'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Vollkaskoversicherung (Freiwillig ausser bei Leasing)</span>
+                            <span className='fw-700 firstBlueTitle fs-1 '>Vollkaskoversicherung <br></br> (Freiwillig ausser bei Leasing)</span>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">

@@ -24,6 +24,7 @@
     border: none;
     color: #fff;
     padding: 15px 0px;
+    max-width: 400px;
 }
 
 .plusForm {
@@ -365,6 +366,6 @@
 
     .plusBtn {
         font-size: 14px;
-
+        max-width: 150px;
     }
 }

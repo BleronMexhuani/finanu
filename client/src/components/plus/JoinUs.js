@@ -21,7 +21,7 @@ function JoinUs() {
                 </div>
                 <div className="col-12 col-md-auto my-auto">
                     <div className=''>
-                        <button className='plusBtn fw-700 w-100 px-5' style={{ maxWidth: '400px' }}>Get A Quote</button>
+                        <button className='plusBtn fw-700 w-100 px-0 px-sm-4 px-md-5'>Get A Quote</button>
                     </div>
                 </div>
             </div>

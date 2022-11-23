@@ -27,11 +27,13 @@
     "react-uuid": "^1.0.2",
     "redux": "^4.2.0",
     "rsuite": "^5.16.3",
+    "source-map-explorer": "^2.5.3",
     "swiper": "^8.2.4",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -110,10 +110,10 @@ function FirstSection() {
 
                     <div className="col-12 col-lg-6 col-xl-auto order-3 order-md-2">
                         <div className="plusForm py-5 px-4 p-md-5">
-                            <div className='pb-4'>
+                            <div className='pb-4 text-center text-md-start'>
                                 <span className='fs-3 fw-700 plusFormTitle' style={{color: 'white'}}>Lohnt sich eine Mitgliedschaft fur dich?</span>
                             </div>
-                            <div className="pb-4">
+                            <div className="pb-4 text-center text-md-start">
                                 <span className='fs-5 text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </div>
                             <div className='pb-3'>

@@ -7,7 +7,7 @@ import PensionBankDark from '../../assets/images/pensionBankDark.svg'
 function PensionLastBlue(props) {
     return (
         <div>
-            <div className="container-xl px-4 px-xl-0 pb-5">
+            <div className="container-xl px-4 px-xl-0 bodyCounterPadding">
                 <div className="px-0 px-lg-5">
                     <div className="blueBgDivPension px-3 px-md-5 pt-4 pt-md-5 pb-4 mx-0 mx-lg-5">
                         <div className="whiteBgInBluePension py-3 px-2">

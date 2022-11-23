@@ -47,15 +47,17 @@ a {
     outline: none !important;
     padding: 0.75rem;
 }
+
 .dateStyleIOS {
     width: 100% !important;
     border-radius: 12px !important;
-    background-color: #fff !important; 
+    background-color: #fff !important;
     border: none !important;
     box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
     outline: none !important;
     padding: 0.75rem !important;
 }
+
 .krankenInputStyle::placeholder {
     font-weight: 500;
     color: #000;
@@ -93,7 +95,7 @@ a {
     overflow: hidden !important;
     background-size: cover;
     background-position-x: -200px;
-    margin-top: -200px;
+    margin-top: -285px;
 }
 
 .blueBgKranken1 {
@@ -153,9 +155,11 @@ a {
 .whiteCardKranken img {
     height: 95px;
 }
+
 .privatenImgSize img {
     height: 150px;
 }
+
 .changeJustifyTablet {
     justify-content: space-between;
 }
@@ -164,9 +168,11 @@ a {
     height: 95px;
     max-width: 120px;
 }
+
 .grundImages img {
     width: 100%;
 }
+
 .krankenSelectDropdown {
     position: absolute;
     top: 3.5rem;
@@ -382,7 +388,7 @@ a {
 
 @media (min-width: 1700px) {
     .blueBgKranken {
-        margin-top: -70px;
+        margin-top: -280px;
         background-position-x: -190px;
 
     }
@@ -391,6 +397,10 @@ a {
 @media (max-width: 1399.98px) {
     .krankenSubtitle {
         font-size: 16px;
+    }
+
+    .blueBgKranken {
+        margin-top: -310px;
     }
 }
 
@@ -404,12 +414,14 @@ a {
 @media (max-width: 991.98px) {
     .blueBgKranken {
         height: auto;
-        margin-top: 50px;
+        margin-top: 40px;
         padding-bottom: 3rem;
     }
+
     .krankenFirstIluDiv {
         padding: 0px 100px;
     }
+
     .blueBgKranken1 {
         height: auto;
     }
@@ -421,6 +433,10 @@ a {
     .negavtiveMt {
         margin-top: 3rem;
     }
+
+    .emptyOption {
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -428,9 +444,11 @@ a {
         height: auto;
         margin-top: 0px;
     }
+
     .krankenFirstIluDiv {
         padding: 0px 50px;
     }
+
     .blueBgKranken1 {
         margin-top: 0px;
     }
@@ -443,6 +461,7 @@ a {
         width: 150px;
 
     }
+
     .greyBorderDiv {
         height: 100%;
     }
@@ -454,9 +473,7 @@ a {
     .krankenSubtitle {
         font-size: 16px;
     }
-    .emptyOption {
-        font-size: 14px;
-    }
+
 }
 
 @media (max-width: 575.98px) {
@@ -464,9 +481,11 @@ a {
         width: 240px;
         left: calc(50% - 120px);
     }
+
     .krankenFirstIluDiv {
         padding: 0px 0px;
     }
+
     .mehrLadenModalContent {
         width: auto;
         border-radius: 23px;
@@ -498,6 +517,7 @@ a {
     .nextBtnKranken {
         width: 100%;
     }
+
     .emptyOption {
         font-size: 12px !important;
     }

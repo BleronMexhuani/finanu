@@ -16,8 +16,8 @@ function PensionCards(props) {
             <div className='container-xl px-4 px-xl-0'>
                 <div className='bodyCounterPadding'>
                     <div className='row gx-4 gy-4 gy-md-0 text-start justify-content-between'>
-                        <div className="col-12 col-md-5 pb-4 pb-md-0">
-                            <div className=''>
+                        <div className="col-12 col-md-5 ">
+                            <div className='pb-4 pb-md-0'>
                                 <span className='firstBlueTitle fw-700 fs-1' style={{ color: '#50B8E7' }}>Wieso Vorsorgen?</span>
                             </div>
                         </div>
@@ -37,7 +37,7 @@ function PensionCards(props) {
 
                         </div>
                     </div>
-                    <div className="row gx-4 justify-content-between pt-5">
+                    <div className="row gx-4 justify-content-between pt-5 mt-4">
                         <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                             <div className='pb-4'>
                                 <span className='fw-700 fs-1 normalTextToWhite'>So Individuell wie Sie!</span>

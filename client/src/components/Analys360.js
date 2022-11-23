@@ -84,7 +84,7 @@ function Analys360() {
 
     return (
         <div>
-            <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
+            <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto bodyCounterPadding'>
                 <div>
                     <div className="pb-5">
                         <div className='pb-3'>

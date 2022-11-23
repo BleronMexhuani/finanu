@@ -48,7 +48,7 @@ function HomeFirstSection(props) {
                 </div>
                 <div className="wrapDiv container-xl px-4 px-xl-0">
                     <div className="marginGutter pt-5">
-                        <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 pb-5">
+                        <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 bodyCounterPadding">
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5 h-100">
                                     <Link to='/finanzen/pensionsplanung-und-ruhestand'>
@@ -161,7 +161,7 @@ function HomeFirstSection(props) {
                     </div>
                     <div className="row g-0 justify-content-center">
                         <div className="col-12 col-md-8 pb-5">
-                            <div className='pt-5'>
+                            <div className=''>
                                 <img src={logo} width={250} alt="" />
                             </div>
                             <div className='pt-4'>
