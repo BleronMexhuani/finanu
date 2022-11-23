@@ -178,9 +178,19 @@
 
 .buttonofthelastcomponent {
     color: #FFFFFF;
-    border: solid 0.3px #FFFFFF;
+    border: solid 0px #FFFFFF;
     background-color: transparent;
+    
 }
+.buttonofthelastcomponent button {
+    background: #50B8E7;
+    color: white;
+}
+.accordionmainstyle .accordion-item:first-of-type  {
+    border-top-left-radius: calc(10px - 1px) !important;
+    border-top-right-radius: calc(10px - 1px) !important;
+}
+
 
 .ltBlueSection {
     background: #E7F5FC;
@@ -267,6 +277,7 @@
 
     .accordionstyle {
         border: none !important;
+        background: #50B8E7;
     }
 
 
@@ -279,10 +290,15 @@
     .agilestyleofaccordion button {
         background-color: #50B8E7;
         color: white;
+        border: none !important
     }
     .bgcoloroflastcomponent {
         background-color: #E7F5FC;
     }
+    .agilestyleofaccordion .accordion-item {
+        border: none !important
+
+    } 
 
 
     .mobiletabssubtitle {
