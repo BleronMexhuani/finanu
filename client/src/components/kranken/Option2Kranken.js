@@ -28,7 +28,7 @@ function Option2Kranken(props) {
     return (
         <div className=''>
             <div className='wrapDiv container-xl px-4 px-xl-0'>
-                <div className="row g-4 justify-content-between">
+                <div className="row g-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-lg-7 text-start">
                         <div className='pb-5 mb-3'>
                             <div className='pb-3'>
@@ -85,8 +85,8 @@ function Option2Kranken(props) {
                     </div>
                 </div>
 
-                <div className='pt-5 mt-5 normalTextToWhite'>
-                    <div className="row g-5 justify-content-center">
+                <div className='normalTextToWhite'>
+                    <div className="row gx-5 gy-md-0 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className='pb-4'>
                                 <svg width="87" height="83" viewBox="0 0 87 82" fill="none" xmlns="http://www.w3.org/2000/svg">

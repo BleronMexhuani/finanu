@@ -4,7 +4,7 @@ import React from 'react'
 function HomeFourthSection() {
     return (
         <>
-            <div className='px-4 px-md-5 mx-0 mx-md-4'>
+            <div className='px-4 px-md-5 container-xl'>
                 <div className='pb-3'>
                     <span className='fw-bold firstBlueTitle'>Blogartikel</span>
                 </div>

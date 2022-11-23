@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 // import { ReactComponent as HausratHouse } from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
-import Ilu from '../../assets/images/hausratSliderPhotos/HOUSE.png'
+import { ReactComponent as Ilu } from '../../assets/images/hausratSliderPhotos/house.svg'
 function HausratBlueForm() {
 
     const [interes, setInteres] = useState(1)
@@ -97,7 +97,7 @@ function HausratBlueForm() {
                         <div className="">
                             <div className='fw-500 fs-5 normalTextToWhite'>
                                 <span>
-                                Der Erwerb eines Eigenheims ist ein langer und oft einzigartiger Prozess im Leben. Doch mit der richtigen Finanzierung ist die erste Hürde zum Wohneigentum bereits genommen. Erfahren Sie, wo Sie beim Kauf einer Immobilie Geld sparen können und was Sie vermeiden sollten. Nutzen Sie das Wissen unserer Spezialisten zu Ihrem Vorteil, wenn es um die Erfüllung von Immobilienträumen geht.
+                                    Der Erwerb eines Eigenheims ist ein langer und oft einzigartiger Prozess im Leben. Doch mit der richtigen Finanzierung ist die erste Hürde zum Wohneigentum bereits genommen. Erfahren Sie, wo Sie beim Kauf einer Immobilie Geld sparen können und was Sie vermeiden sollten. Nutzen Sie das Wissen unserer Spezialisten zu Ihrem Vorteil, wenn es um die Erfüllung von Immobilienträumen geht.
                                 </span>
                             </div>
                         </div>
@@ -306,7 +306,7 @@ function HausratBlueForm() {
 
                         )}
                         {(screenWidth > 767.98 && !submitTable) && (
-                                <img src={Ilu} alt="" className='img-fluid'/>
+                            <Ilu className='img-fluid' />
                         )}
 
                     </div>

@@ -24,7 +24,7 @@ function Option1Kranken(props) {
     return (
         <div>
             <div className='wrapDiv container-xl px-4 px-xl-0'>
-                <div className="row g-4 justify-content-between">
+                <div className="row g-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-lg-7 text-start">
                         <div className='pb-5 mb-3'>
                             <div className='pb-3'>
@@ -211,8 +211,8 @@ function Option1Kranken(props) {
                     </div>
                 </div>
 
-                <div className='pt-5 mt-5 normalTextToWhite'>
-                    <div className="row g-5 justify-content-center">
+                <div className='normalTextToWhite'>
+                    <div className="row g-5 gy-5 gy-lg-0 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='pb-4'>
                                 <svg width="87" height="83" viewBox="0 0 87 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -298,7 +298,7 @@ function Option1Kranken(props) {
                             </div>
                             <div>
                                 <div className='pb-2'>
-                                    <span className='firstBlueTitle fs-5 fw-700'>Offerte anfordern</span>
+                                    <span className='firstBlueTitle fs-5 fw-700'>Optionales Abschlussgespräch</span>
                                 </div>
                                 <div>
                                     <span className='fw-500'>Beim optionalen Abschlussgespräch können Sie noch allfällige Fragen stellen.

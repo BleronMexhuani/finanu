@@ -46,9 +46,10 @@
     color: #212529 !important;
     font-weight: 500;
 }
-.finanuSubTitleW{
+
+.finanuSubTitleW {
     font-size: 22px !important;
-   
+
     font-weight: 500;
 }
 
@@ -173,10 +174,14 @@
     border: 1px solid #50B8E7;
     border-radius: 12px 12px 0px 0px;
 }
+
 .autoSelectDropdown {
     left: calc(50% - 210px);
     top: 4.5rem !important;
 }
+
+
+
 @media (max-width: 1399.98px) {
     .wrapDiv {
         margin: 0px 6rem;
@@ -186,9 +191,94 @@
         padding: 0px 6rem;
     }
 
-    /* .cloudsBackground {
-        height: 300px;
-    } */
+    span.fs-1 {
+        font-size: 30px !important;
+    }
+
+    div.fs-1 {
+        font-size: 30px !important;
+    }
+
+    span.fs-2 {
+        font-size: 28px !important;
+    }
+
+    div.fs-2 {
+        font-size: 28px !important;
+    }
+
+    span.fs-3 {
+        font-size: 26px !important;
+    }
+
+    div.fs-3 {
+        font-size: 26px !important;
+    }
+
+    span.fs-4 {
+        font-size: 24px !important;
+    }
+
+    div.fs-4 {
+        font-size: 24px !important;
+    }
+
+    span.fs-5 {
+        font-size: 18px !important;
+    }
+
+    div.fs-5 {
+        font-size: 18px !important;
+    }
+    .firstBlueTitle {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 575.98px) and (max-width: 1500.98px) {
+
+    span.fs-1 {
+        font-size: 30px !important;
+    }
+
+    div.fs-1 {
+        font-size: 30px !important;
+    }
+
+    span.fs-2 {
+        font-size: 28px !important;
+    }
+
+    div.fs-2 {
+        font-size: 28px !important;
+    }
+
+    span.fs-3 {
+        font-size: 26px !important;
+    }
+
+    div.fs-3 {
+        font-size: 26px !important;
+    }
+
+    span.fs-4 {
+        font-size: 24px !important;
+    }
+
+    div.fs-4 {
+        font-size: 24px !important;
+    }
+
+    span.fs-5 {
+        font-size: 18px !important;
+    }
+
+    div.fs-5 {
+        font-size: 18px !important;
+    }
+    .firstBlueTitle {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -205,8 +295,9 @@
     }
 
     .firstBlueTitle {
-        font-size: 40px;
+        font-size: 35px;
     }
+
 }
 
 @media (max-width: 991.98px) {
@@ -233,6 +324,7 @@
     .autoSelectDropdown {
         left: 0;
     }
+
 }
 
 @media (max-width: 767.98px) {
@@ -258,9 +350,8 @@
         padding-bottom: 6rem;
 
     }
-    .videoplaceholder {
-        height: 800px;
-    }
+
+    
 
     .paddingTopDiv {
         padding-top: 8rem;
@@ -313,6 +404,7 @@
     div.fs-1 {
         font-size: 25px !important;
     }
+
     span.fs-2 {
         font-size: 23px !important;
     }
@@ -320,6 +412,7 @@
     div.fs-2 {
         font-size: 23px !important;
     }
+
     span.fs-3 {
         font-size: 22px !important;
     }
@@ -327,6 +420,7 @@
     div.fs-3 {
         font-size: 22px !important;
     }
+
     span.fs-4 {
         font-size: 20px !important;
     }
@@ -334,6 +428,7 @@
     div.fs-4 {
         font-size: 20px !important;
     }
+
     span.fs-5 {
         font-size: 18px !important;
     }

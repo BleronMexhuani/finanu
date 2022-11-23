@@ -21,10 +21,10 @@ function BlueBackgroundSection() {
                 <div className='pb-5 mb-4 container-xl px-4 px-xl-0'>
                     <span className='firstBlueTitle fw-700 fs-1'>Die besten Angebote im Vergleich</span>
                 </div>
-                <div className='container-xl px-4 px-xl-0'>
+                <div className='container-xl px-4 px-xl-0 pb-4'>
                     <div className="row g-5 justify-content-center">
                         <div className="col-12 col-sm-6 col-lg-4">
-                            <div className='p-4 whiteBgRecht mb-5'>
+                            <div className='p-4 whiteBgRecht'>
                                 <div className='blueBgRecht py-1'>
                                     <span className='fw-700 fs-2'>Basler</span>
                                 </div>
@@ -187,7 +187,7 @@ function BlueBackgroundSection() {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-lg-4">
-                            <div className='p-4 whiteBgRecht mb-5'>
+                            <div className='p-4 whiteBgRecht'>
                                 <div className='blueBgRecht py-1'>
                                     <span className='fw-700 fs-2'>Zürich</span>
                                 </div>
@@ -350,7 +350,7 @@ function BlueBackgroundSection() {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-lg-4">
-                            <div className='p-4 whiteBgRecht mb-5'>
+                            <div className='p-4 whiteBgRecht'>
                                 <div className='blueBgRecht py-1'>
                                     <span className='fw-700 fs-2'>Dextra</span>
                                 </div>

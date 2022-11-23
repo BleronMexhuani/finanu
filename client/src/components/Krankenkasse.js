@@ -7,15 +7,15 @@ import GutZuWissen from './kranken/GutZuWissen'
 import KrankenCards from './kranken/KrankenCards'
 import Option2Kranken from './kranken/Option2Kranken'
 import Option1Kranken from './kranken/Option1Kranken'
-import First from '../assets/images/krankenkasseFirssIlut.png'
+import {ReactComponent as First} from '../assets/images/krankenkasseFirstIlu.svg'
 
 function Krankenkasse(props) {
   return (
     <>
       <div className='mx-4 mx-xl-0'>
         <div className="container-xl px-0">
-          <div className='krankenFirstIluDiv'>
-              <img src={First} className="img-fluid" alt="" />
+          <div className='krankenFirstIluDiv pt-4 pt-md-0'>
+              <First className="img-fluid"/>
           </div>
         </div>
         <KrankenSteps />

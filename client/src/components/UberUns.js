@@ -96,7 +96,7 @@ function UberUns() {
                 </div>
             </div>
 
-            <div className='px-0 px-md-4 px-lg-5'>
+            <div className='px-0 px-md-4 px-lg-5 bodyCounterPadding'>
                 <div className="row g-0">
                     <div className="col-6 col-md-4 ">
 

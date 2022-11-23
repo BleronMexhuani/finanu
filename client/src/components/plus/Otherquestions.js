@@ -24,7 +24,7 @@ function Otherquestions() {
 
         <>
 
-            <div className='container-xl px-5 px-xl-0 '>
+            <div className='container-xl px-4 px-md-5 px-xl-0 '>
                 <div className='row justify-content-evenly' >
                     <div className='col-12 col-md-5 my-auto'>
                         <div className='text-start'>
@@ -106,14 +106,15 @@ function Otherquestions() {
 
             {(screenWidth < 575.98) && (
                 <div className='bgcoloroflastcomponent'>
-                    <div className='container p-5'>
-
-                        <img style={{}} src={imageoflastcomponentmobile} />
+                    <div className='px-4 py-5'>
+                        <div className='pb-4'>
+                            <img className='img-fluid w-100' src={imageoflastcomponentmobile} />
+                        </div>
+                        <div className='pb-2'>
+                            <span className='fs-3 fw-700 secondaryColor'>Uninsured driver promsie</span>
+                        </div>
                         <div>
-                            <p className='fs-3 fw-700 secondaryColor'>Uninsured driver promsie</p>
-                            <p className='secondaryColor fw-400 fs-4 x-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-
-
+                            <span className='secondaryColor fw-400'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
                         </div>
                     </div>
                 </div>

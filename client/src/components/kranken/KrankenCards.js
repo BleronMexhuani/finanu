@@ -33,7 +33,7 @@ function KrankenCards(props) {
                             In einem ersten Schritt können Sie bei der Grundversicherung sparen, indem Sie eine höhere Franchise und ein anderes Versicherungsmodell als das Grundmodell wählen. Allein dadurch können Sie Prämienersparnisse von bis zu 50% erreichen.
                         </span>
                     </div>
-                    <div className='px-4 px-lg-5 bodyCounterPadding grundImages'>
+                    <div className='px-4 px-lg-5 bodyCounterPadding grundImages '>
                         <div className="row g-3 justify-content-center">
                             <div className="col-12 col-sm-6 col-md-4 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
@@ -41,10 +41,10 @@ function KrankenCards(props) {
                                         <img src={BeatingHeart} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle'>Grundmodell (0%)</span>
+                                        <span className='fw-600 finanuSubTitle'>Grundmodell <br></br> (0%)</span>
                                     </div>
                                     <div>
-                                        <span className='fw-500'>Freie Arztwahl.</span>
+                                        <span className='fw-400 secondaryColor'>Freie Arztwahl.</span>
                                     </div>
                                 </div>
                             </div>
@@ -54,10 +54,10 @@ function KrankenCards(props) {
                                         <img src={Doctor} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Hausarzt (Max. 12%)</span>
+                                        <span className='fw-600 finanuSubTitle '>Hausarzt <br></br> (Max. 12%)</span>
                                     </div>
                                     <div>
-                                        <span className='fw-500'>Der Hausarzt überweist den
+                                        <span className='fw-400 secondaryColor'>Der Hausarzt überweist den
                                             Patienten wenn nötig an
                                             einen Spezialisten.</span>
                                     </div>
@@ -69,10 +69,10 @@ function KrankenCards(props) {
                                         <img src={Hands} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Versorgungznetz (HMO)</span>
+                                        <span className='fw-600 finanuSubTitle '>Versorgungznetz <br></br> (HMO)</span>
                                     </div>
                                     <div>
-                                        <span className='fw-500'>(Allgemeinärzte oder
+                                        <span className='fw-400 secondaryColor'>(Allgemeinärzte oder
                                             Spezialisten).</span>
                                     </div>
                                 </div>
@@ -83,10 +83,10 @@ function KrankenCards(props) {
                                         <img src={Medicine} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Apothekenmodell (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle '>Apothekenmodell <br></br> (TELMED)</span>
                                     </div>
                                     <div>
-                                        <span className='fw-500'>Erste Anlaufstelle bei allen Fragen
+                                        <span className='fw-400 secondaryColor'>Erste Anlaufstelle bei allen Fragen
                                             rund um Ihre Gesundheit ist die
                                             Partnerapotheke oder telefonische
                                             Gesundheitsberatung.</span>
@@ -99,10 +99,10 @@ function KrankenCards(props) {
                                         <img src={PhoneDoc} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Telemedizin (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle '>Telemedizin <br></br> (TELMED)</span>
                                     </div>
                                     <div>
-                                        <span className='fw-500'>Der Versicherte muss eine
+                                        <span className='fw-400 secondaryColor'>Der Versicherte muss eine
                                             medizinische Beratungsstelle
                                             anrufen, bevor er den Arzt
                                             aufsucht.</span>

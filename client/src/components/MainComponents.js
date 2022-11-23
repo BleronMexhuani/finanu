@@ -16,7 +16,7 @@ function MainComponents(props) {
       <div className='wrapDiv bodyCounterPadding container-xl px-4 px-xl-0'>
         <KrankenSteps />
       </div>
-      <div className='pb-5'>
+      <div className='bodyCounterPadding'>
         <HomeFourthSection />
       </div>
     </>

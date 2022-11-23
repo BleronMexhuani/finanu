@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Wettbewerbe() {
   return (
     <div>
-      <div className="wrapDiv pb-5 container-xl px-4 px-xl-0">
+      <div className="wrapDiv bodyCounterPadding container-xl px-4 px-xl-0">
         <div className="row">
 
           <div className="col-12 col-md-5">
