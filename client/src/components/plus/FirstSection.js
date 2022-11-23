@@ -51,7 +51,7 @@ function FirstSection() {
             <div className="container-xl px-4 px-xl-0  text-start">
                 <div className="row gy-5 justify-content-between">
                     {(screenWidth > 575.98) && (
-                        <div className="col-12 col-lg-6">
+                        <div className="col-12 col-lg-6 order-1 order-md-1">
                             <div className='pb-5'>
                                 <span className='plusTitle fw-700 triaryColor'>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
                             </div>
@@ -108,7 +108,7 @@ function FirstSection() {
                         </div>
                     )}
 
-                    <div className="col-12 col-lg-6 col-xl-auto order-2 order-md-1">
+                    <div className="col-12 col-lg-6 col-xl-auto order-3 order-md-2">
                         <div className="plusForm py-5 px-4 p-md-5">
                             <div className='pb-4'>
                                 <span className='fs-3 fw-700 plusFormTitle' style={{color: 'white'}}>Lohnt sich eine Mitgliedschaft fur dich?</span>
@@ -134,10 +134,8 @@ function FirstSection() {
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <div className='row gy-5 pt-5 pt-md-5 mt-mb-5 justify-content-between'>
-                    <div className="col-12 order-1 order-md-2 pt-5 text-center">
-                        <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto">
+                    <div className="col-12 mt-auto mt-md-5 pt-5 text-center order-2 order-md-3">
+                        <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto mt-auto mt-md-5 pt-auto pt-md-5">
                             <div className="px-0 px-md-4 px-lg-5 pb-5">
 
                                 <div className='pb-4'>
@@ -156,10 +154,11 @@ function FirstSection() {
                                 </div>
                             </div>
                         </div>
-                    </div>
 
                 </div>
             </div>
+            </div>
+
         </>
     )
 }
