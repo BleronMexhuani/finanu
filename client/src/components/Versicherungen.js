@@ -1,9 +1,13 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 import '../assets/css/versicherungen.css'
+import { ReactComponent as Groupe } from '../assets/images/versicherungen/mutuelLogo.svg'
+import { ReactComponent as Swica } from '../assets/images/versicherungen/swicaLogo.svg'
+import Sympany  from '../assets/images/versicherungen/logoSympany.png'
+
 function Versicherungen() {
   return (
-    <div>
+    <div className='bodyCounterPadding'>
       <div className='container-xl px-4 px-xl-0 pb-5 wrapDiv1'>
         <div className='pb-3'>
           <span className='firstBlueTitle'>
@@ -12,37 +16,34 @@ function Versicherungen() {
         </div>
         <div>
           <span className='finanuSubTitle'>
-          Auf der folgenden Seite stellen wir Ihnen die verschiedenen Versicherungsgesellschaften und ihre Modelle, Vor- und Nachteile sowie die wichtigsten Links vor.  Derzeit gibt es noch keine Seiten für alle Gesellschaften. Weitere Gesellschaften werden regelmäßig hinzugefügt. Wenn Sie Fragen zu einer bestimmten Gesellschaft haben, welche noch nicht aufgeführt ist, zögern Sie bitte nicht, uns zu kontaktieren! 
+            Auf der folgenden Seite stellen wir Ihnen die verschiedenen Versicherungsgesellschaften und ihre Modelle, Vor- und Nachteile sowie die wichtigsten Links vor.  Derzeit gibt es noch keine Seiten für alle Gesellschaften. Weitere Gesellschaften werden regelmäßig hinzugefügt. Wenn Sie Fragen zu einer bestimmten Gesellschaft haben, welche noch nicht aufgeführt ist, zögern Sie bitte nicht, uns zu kontaktieren!
             unserer Versicherer.</span>
         </div>
       </div>
-      <div className='wrapDiv1 container-xl px-4 px-xl-0'>
-        <div className='pb-4 text-start'>
+      <div className='wrapDiv1 container-xl px-4 px-xl-0 '>
+        <div className="row g-4 justify-content-center">
+          <div className="col-12 col-sm-6 col-xl-4">
+            <NavLink to='/versicherungen/sympany' className='text-decoration-none'>
 
-          <NavLink to='/versicherungen/sympany' className='text-decoration-none'>
-            <div className='versicherungenLinks'>
-              <span className='finanuSubTitle whiteTextOverwrite'>Sympany</span>
-            </div>
-          </NavLink>
-
-        </div>
-        <div className='pb-4 text-start'>
-
-          <NavLink to='/versicherungen/swica' className='text-decoration-none'>
-            <div className='versicherungenLinks'>
-              <span className='finanuSubTitle whiteTextOverwrite'>Swica</span>
-            </div>
-          </NavLink>
-
-        </div>
-        <div className='pb-4 text-start'>
-
-          <NavLink to='/versicherungen/groupe-mutuel' className='text-decoration-none'>
-            <div className='versicherungenLinks'>
-              <span className='finanuSubTitle whiteTextOverwrite'>Groupe Mutuel</span>
-            </div>
-          </NavLink>
-
+              <div className='versicherungenLinks'>
+                <img src={Sympany} alt="" />
+              </div>
+            </NavLink>
+          </div>
+          <div className="col-12 col-sm-6 col-xl-4">
+            <NavLink to='/versicherungen/swica' className='text-decoration-none'>
+              <div className='versicherungenLinks'>
+                <Swica />
+              </div>
+            </NavLink>
+          </div>
+          <div className="col-12 col-sm-6 col-xl-4">
+            <NavLink to='/versicherungen/groupe-mutuel' className='text-decoration-none'>
+              <div className='versicherungenLinks'>
+                <Groupe className='img-fluid' />
+              </div>
+            </NavLink>
+          </div>
         </div>
       </div>
 

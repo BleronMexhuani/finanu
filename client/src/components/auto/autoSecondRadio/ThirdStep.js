@@ -2,7 +2,7 @@ import React from 'react'
 
 function ThirdStep(props) {
     return (
-        <div>
+        <div className='autoThirdStep'>
             <div className="pb-3">
                 <span className='finanuSubTitle  fs-5'>
                     Personalien

@@ -23,7 +23,7 @@ function HomeFirstSection(props) {
     return (
         <>
             <div className="blueBackgroundDiv">
-                <div className='cloudsBackground'>
+                <div className='cloudsBackground bodyCounterPadding'>
                     <div className='container-xl px-4 px-xl-0'>
                         <div className="row gx-4 gy-0 justify-content-center">
                             <div className="col-12 col-md-6 text-start my-auto">
