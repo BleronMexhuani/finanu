@@ -112,7 +112,7 @@ function HomeFirstSection(props) {
                                             {props.darkMode
 
                                                 ? <img src={KrankHomeDark} alt="" />
-                                                : <img src={KrankHome} alt="" />
+                                                : <img src={KrankHome} height="130" alt="" />
                                             }
                                         </div>
                                         <div>
