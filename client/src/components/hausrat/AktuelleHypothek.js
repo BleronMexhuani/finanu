@@ -10,6 +10,16 @@ import { ReactComponent as Homegate } from '../../assets/images/hausratSliderPho
 import { ReactComponent as Immo } from '../../assets/images/hausratSliderPhotos/immoscout24.svg'
 import { ReactComponent as Svit } from '../../assets/images/hausratSliderPhotos/svit.svg'
 
+import { ReactComponent as Ent1 } from '../../assets/images/hausratSliderPhotos/Ent1.svg'
+import { ReactComponent as Ent2 } from '../../assets/images/hausratSliderPhotos/Ent2.svg'
+import { ReactComponent as Ent3 } from '../../assets/images/hausratSliderPhotos/Ent3.svg'
+import { ReactComponent as Ent4 } from '../../assets/images/hausratSliderPhotos/Ent4.svg'
+
+import { ReactComponent as Rech1 } from '../../assets/images/hausratSliderPhotos/Rech1.svg'
+import { ReactComponent as Rech2 } from '../../assets/images/hausratSliderPhotos/Rech2.svg'
+
+
+
 function AktuelleHypothek() {
     const ScrollToForm = () => {
         window.scrollTo({
@@ -120,7 +130,7 @@ function AktuelleHypothek() {
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.maklerkammer.ch/" className='text-decoration-none' target="_blank">
-                                        <div className='p-3 useFullLinks text-center'>
+                                            <div className='p-3 useFullLinks text-center'>
                                                 <Svit />
                                             </div>
                                         </a>
@@ -138,61 +148,29 @@ function AktuelleHypothek() {
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/baupreise/baupreisindex.html" className='text-decoration-none' target="_blank">
 
-                                            <div className='p-3 useFullLinks text-start'>
-                                                <div className="row g-0">
-
-                                                    <div className="col">
-                                                        <div className=''>
-                                                            <span className='fw-600 descriptionFS'>Entwicklung vom Baukostenindex </span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                                            <div className='p-3 useFullLinks text-center'>
+                                                <Ent1 />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/mieten/index.html" className='text-decoration-none' target="_blank">
-                                            <div className='p-3 useFullLinks text-start'>
-                                                <div className="row g-0">
-
-                                                    <div className="col">
-                                                        <div className=''>
-                                                            <span className='fw-600 descriptionFS'>Entwicklung vom Mietpreisindex</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                                            <div className='p-3 useFullLinks text-center'>
+                                                <Ent2 />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html" className='text-decoration-none' target="_blank">
-                                            <div className='p-3 useFullLinks text-start'>
-                                                <div className="row g-0">
-
-                                                    <div className="col">
-                                                        <div className=''>
-                                                            <span className='fw-600 descriptionFS'>Entwicklung der Immobilienpreise</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                                            <div className='p-3 useFullLinks text-center'>
+                                                <Ent3 />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.ubs.com/ch/de/private/mortgages/real-estate.html" className='text-decoration-none' target="_blank">
-                                            <div className='p-3 useFullLinks text-start'>
-                                                <div className="row g-0">
-
-                                                    <div className="col">
-                                                        <div className=''>
-                                                            <span className='fw-600 descriptionFS'>Real Estate Bubble Index</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                                            <div className='p-3 useFullLinks text-center'>
+                                                <Ent4 />
                                             </div>
                                         </a>
                                     </div>
@@ -209,30 +187,15 @@ function AktuelleHypothek() {
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.ch.ch/de/steuern-und-finanzen/steuerarten/immobiliensteuer/" className='text-decoration-none' target="_blank">
 
-                                            <div className='p-3 useFullLinks text-start'>
-                                                <div className="row g-0">
-
-                                                    <div className="col">
-                                                        <div className=''>
-                                                            <span className='fw-600 descriptionFS'>Steuern beim Kauf und Verkauf</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                                            <div className='p-3 useFullLinks text-center'>
+                                                <Rech1 />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html" className='text-decoration-none' target="_blank">
-                                            <div className='p-3 useFullLinks text-start'>
-                                                <div className="row g-0">
-                                                    <div className="col">
-                                                        <div className=''>
-                                                            <span className='fw-600 descriptionFS'>Bezug der beruflichen Vorsorge</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                                        <div className='p-3 useFullLinks text-center'>
+                                                <Rech2 />
                                             </div>
                                         </a>
                                     </div>

@@ -9,7 +9,7 @@ function PensionLastBlue(props) {
         <div>
             <div className="container-xl px-4 px-xl-0 bodyCounterPadding">
                 <div className="px-0 px-lg-5">
-                    <div className="blueBgDivPension px-3 px-md-5 pt-4 pt-md-5 pb-4 mx-0 mx-lg-5">
+                    <div className="blueBgDivPension px-3 px-md-5 pt-4 pt-md-5 pb-4 pensionBlueDivWidth">
                         <div className="whiteBgInBluePension py-3 px-2">
                             <div className='text-center'>
                                 <span className='finanuSubTitle fw-bold' style={{ color: '#50B8E7' }}>Unterschiede in der Vorsorge 3A

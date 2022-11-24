@@ -240,7 +240,8 @@ a {
     height: 100%;
 }
 .useFullLinks svg {
-    height: 50px;
+    height: 65px;
+    width: 100%;
 }
 .linkSpan {
     font-size: 14px;
