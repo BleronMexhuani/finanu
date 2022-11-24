@@ -72,7 +72,7 @@ function FourthStep(props) {
                                             <div className="col">
                                                 <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                     <div className="col">
-                                                        <input name="fourthStepInput" type="number" my={"month"} onChange={(e) => { props.setFourthStepInputs(e.target.value) }} defaultValue={props.fourthStepInputs[0]} className='w-100 borderRightInput' />
+                                                        <input name="fourthStepInput" type="number" my={"month"} onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setFourthStepInputs(e.target.value) }} defaultValue={props.fourthStepInputs[0]} className='w-100 borderRightInput' />
                                                     </div>
                                                     <div className="col-auto my-auto">
                                                         <div className='px-2'>
@@ -96,7 +96,7 @@ function FourthStep(props) {
                                             <div className="col">
                                                 <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                     <div className="col">
-                                                        <input name="fourthStepInput" type="number" my={"month"} onChange={(e) => { props.setFourthStepInputs(e.target.value) }} defaultValue={props.fourthStepInputs[1]} className='w-100 borderRightInput' />
+                                                        <input name="fourthStepInput" type="number" my={"month"} onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setFourthStepInputs(e.target.value) }} defaultValue={props.fourthStepInputs[1]} className='w-100 borderRightInput' />
                                                     </div>
                                                     <div className="col-auto my-auto">
                                                         <div className='px-2'>
@@ -123,7 +123,7 @@ function FourthStep(props) {
                                         <div className="col">
                                             <div className="row g-0 stepsFormInputs rightBorderDiv">
                                                 <div className="col">
-                                                    <input name="fourthStepInput" type="number" my={"month"} onChange={(e) => { props.setFourthStepInputs(e.target.value) }} defaultValue={props.fourthStepInputs[0]} className='w-100 borderRightInput' />
+                                                    <input name="fourthStepInput" type="number" my={"month"} onFocus={(e) => { if(e.target.value === '0') {e.target.value = ''}}} onChange={(e) => { props.setFourthStepInputs(e.target.value) }} defaultValue={props.fourthStepInputs[0]} className='w-100 borderRightInput' />
                                                 </div>
                                                 <div className="col-auto my-auto">
                                                     <div className='px-2'>

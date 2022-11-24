@@ -8,7 +8,6 @@ function HomeSlider() {
     return (
         <div className="wrapDiv container-xl px-4 px-xl-0">
             <Swiper
-                // slidesPerView={3}
                 spaceBetween={40}
                 freeMode={false}
                 centeredSlides={true}
