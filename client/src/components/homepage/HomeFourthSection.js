@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 
 function HomeFourthSection() {
     return (
@@ -14,7 +14,10 @@ function HomeFourthSection() {
             </div>
             <div className='wrapDiv container-xl px-4 px-xl-0 col-12 col-sm-10 col-md-12 col-xl-9 col-xxl-7'>
                 <div className="row g-4 g-sm-4">
+                    
                     <div className="col-12 col-md-6">
+                <Link to="/blog/erklarungundunterschiedealternativ" className='' style={{textDecoration: 'none'}}>
+                 
                         <div className="row g-0">
                             <div className="col-12 fourthSectionImgDiv p-4" style={{ zIndex: 5 }}>
                             <svg width="252" height="284" viewBox="0 0 252 284" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,6 +211,7 @@ function HomeFourthSection() {
                                 </div>
                             </div>
                         </div>
+                </Link>
                     </div>
                     <div className="col-12 col-md-6 d-flex flex-column">
                         <div className=" fourthSectionImgDiv p-4" style={{ zIndex: 5 }}>
