@@ -90,12 +90,13 @@ a {
 
 .blueBgKranken {
     background: url('../../assets/images/krankenBlueBg.svg') no-repeat;
-    height: 1500px;
+    height: 1455px;
     width: 100%;
     overflow: hidden !important;
     background-size: cover;
     background-position-x: -200px;
-    margin-top: -285px;
+    background-position-y: -200px;
+
 }
 
 .blueBgKranken1 {
@@ -369,9 +370,7 @@ a {
     width: 150px;
 }
 
-.negavtiveMt {
-    margin-top: -220px;
-}
+
 
 .p-4.whiteCardKranken.h-100.text-center img {
     width: 100px;
@@ -388,7 +387,6 @@ a {
 
 @media (min-width: 1700px) {
     .blueBgKranken {
-        margin-top: -280px;
         background-position-x: -190px;
 
     }
@@ -399,9 +397,6 @@ a {
         font-size: 16px;
     }
 
-    .blueBgKranken {
-        margin-top: -310px;
-    }
 }
 
 @media (max-width: 1199.98px) {
@@ -430,9 +425,7 @@ a {
         width: 100%;
     }
 
-    .negavtiveMt {
-        margin-top: 3rem;
-    }
+    
 
     .emptyOption {
         font-size: 14px !important;
@@ -654,13 +647,11 @@ a {
     width: 100%;
     overflow: hidden !important;
     background-size: cover;
-    background-position-x: -200px;
     margin-top: -200px;
 }
 
 @media (min-width: 1700px) {
     .darkTheme .blueBgKranken {
-        margin-top: -70px;
         background-position-x: -190px;
     }
 }
@@ -668,7 +659,7 @@ a {
 @media (max-width: 991.98px) {
     .darkTheme .blueBgKranken {
         height: 1000px;
-        margin-top: -140px;
+
 
     }
 

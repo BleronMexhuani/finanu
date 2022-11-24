@@ -234,12 +234,14 @@ a {
 }
 
 .useFullLinks {
-    background-color: #50B8E7;
-    color: #fff;
+    box-shadow: 0px 4px 15px rgba(146, 146, 146, 0.25);
+    color: #000;
     border-radius: 12px;
     height: 100%;
 }
-
+.useFullLinks svg {
+    height: 50px;
+}
 .linkSpan {
     font-size: 14px;
     color: #fff;
@@ -403,4 +405,6 @@ a {
 
 .darkTheme .useFullLinks {
     background-color: #333436;
+    color: #fff;
+    box-shadow: unset;
 }

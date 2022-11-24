@@ -7,34 +7,37 @@ import GutZuWissen from './kranken/GutZuWissen'
 import KrankenCards from './kranken/KrankenCards'
 import Option2Kranken from './kranken/Option2Kranken'
 import Option1Kranken from './kranken/Option1Kranken'
-import {ReactComponent as First} from '../assets/images/krankenkasseFirstIlu.svg'
+import { ReactComponent as First } from '../assets/images/krankenkasseFirstIlu.svg'
 
 function Krankenkasse(props) {
   return (
     <>
-      <div className='mx-4 mx-xl-0'>
-        <div className="container-xl px-0">
-          <div className='krankenFirstIluDiv pt-4 pt-md-0'>
-              <First className="img-fluid"/>
-          </div>
+      <div className="container-xl px-4 px-xl-0">
+        <div className='krankenFirstIluDiv pt-4 pt-md-0 '>
+          <First className="img-fluid" />
         </div>
-        <KrankenSteps />
-      </div>
-      <div>
-        <KrankenBlueBg />
-      </div>
-      <div>
-        <GutZuWissen />
-      </div>
-      <div>
-      </div>
-      <div className=''>
-        <KrankenCards />
       </div>
       <div className='bodyCounterPadding'>
-        <Option1Kranken darkMode={props.darkMode} />
-
+        <KrankenSteps />
       </div>
+
+      <>
+        <>
+          <KrankenBlueBg />
+        </>
+        <>
+          <GutZuWissen />
+        </>
+      </>
+
+      <div>
+        <KrankenCards />
+      </div>
+
+      <div className='bodyCounterPadding'>
+        <Option1Kranken darkMode={props.darkMode} />
+      </div>
+
       <div className='bodyCounterPadding'>
         <Option2Kranken darkMode={props.darkMode} />
       </div>

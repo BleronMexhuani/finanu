@@ -22,7 +22,7 @@ function BlueBackgroundSection() {
                     <span className='firstBlueTitle fw-700 fs-1'>Die besten Angebote im Vergleich</span>
                 </div>
                 <div className='container-xl px-4 px-xl-0 pb-4'>
-                    <div className="row g-5 justify-content-center">
+                    <div className="row g-4 gy-5 justify-content-center">
                         <div className="col-12 col-sm-6 col-lg-4">
                             <div className='p-4 whiteBgRecht'>
                                 <div className='blueBgRecht py-1'>

@@ -125,7 +125,7 @@ function Privatenrechtsschutz(props) {
                         Folgende Leistungen werden abgedeckt:
                     </span>
                 </div>
-                <div className="row g-3 bodyCounterPadding">
+                <div className="row g-3 bodyCounterPadding justify-content-center">
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
                             <div className='pb-4'>  

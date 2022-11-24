@@ -15,13 +15,13 @@ function PensionCards(props) {
         <>
             <div className='container-xl px-4 px-xl-0'>
                 <div className='bodyCounterPadding'>
-                    <div className='row gx-4 gy-4 gy-md-0 text-start justify-content-between'>
-                        <div className="col-12 col-md-5 ">
+                    <div className='row gx-4 text-start justify-content-between'>
+                        <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                             <div className='pb-4 pb-md-0'>
                                 <span className='firstBlueTitle fw-700 fs-1' style={{ color: '#50B8E7' }}>Wieso Vorsorgen?</span>
                             </div>
                         </div>
-                        <div className="col col-md-7 my-auto">
+                        <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
 
                             <div className='fw-500 fs-5 normalTextToWhite' >
                                 <span>
@@ -40,7 +40,7 @@ function PensionCards(props) {
                     <div className="row gx-4 justify-content-between pt-5 mt-4">
                         <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
                             <div className='pb-4'>
-                                <span className='fw-700 fs-1 normalTextToWhite'>So Individuell wie Sie!</span>
+                                <span className='fw-700 fs-1 firstBlueTitle'>So Individuell wie Sie!</span>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
@@ -61,10 +61,10 @@ function PensionCards(props) {
                     </div>
                 </div>
                 <div className='pb-5'>
-                    <span className='finanuSubTitle fw-bold' style={{ color: '#11A3E6' }}>BEZUGSMÖGLICHKEITEN</span>
+                    <span className='fw-700 fs-1 firstBlueTitle'>Bezugsmöglichkeiten</span>
                 </div>
                 <div className='pb-5'>
-                    <div className="row g-4">
+                    <div className="row g-4 justify-content-center">
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
                                 <div className='pb-4'>

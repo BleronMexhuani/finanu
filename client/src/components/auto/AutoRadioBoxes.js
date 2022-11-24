@@ -27,7 +27,7 @@ function AutoRadioBoxes() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 col-lg-7 col-xl-6 mx-auto text-start">
+                <div className="col-12 col-md-10 col-lg-7 col-xl-6 mx-auto text-start">
                     <div className="hausratBlueDiv p-4">
                         <div className="pb-5 text-center">
                             <span className='firstBlueTitle fs-4 fw-700'>
