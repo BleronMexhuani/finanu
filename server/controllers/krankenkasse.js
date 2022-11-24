@@ -21,15 +21,15 @@ var krankenkasse = {
             let plz = req.params.plz;
             let ort = req.params.ort;
             let commune = req.params.commune;
-            connection.query("SELECT kanton,region FROM regions WHERE plz = ? AND ort = ? AND commune = ?  ", [plz, ort, commune], (err, response) => {
+            await query("SELECT kanton,region FROM regions WHERE plz = ? AND ort = ? AND commune = ?  ", [plz, ort, commune], async (err, response) => {
                 let kanton = response[0]['kanton'];
                 let region = response[0]['region'];
-                connection.query("SELECT Versicherer FROM pramien WHERE Kanton = ? AND Region = ? GROUP BY Versicherer ", [kanton, 'PR-REG CH' + region], (err, response) => {
+                await query("SELECT Versicherer FROM pramien WHERE Kanton = ? AND Region = ? GROUP BY Versicherer ", [kanton, 'PR-REG CH' + region], async (err, response) => {
                     var data = [];
                     response.forEach(element => {
                         data.push(element['Versicherer'])
                     });
-                    connection.query("SELECT * FROM insurance WHERE number IN(?)", [data], (err, response) => {
+                    await query("SELECT * FROM insurance WHERE number IN(?)", [data], (err, response) => {
                         res.status(200).json(response);
                     })
                 })
@@ -42,7 +42,7 @@ var krankenkasse = {
     getRegions: getRegions = async (req, res) => {
         try {
 
-            connection.query("SELECT * FROM regions", (request, response) => {
+            await query("SELECT * FROM regions", (request, response) => {
                 res.status(200).json(response)
             })
         } catch (error) {
@@ -52,8 +52,10 @@ var krankenkasse = {
     ,
     getActualModel: getActualModel = async (req, res) => {
         let id = req.params.id;
+        let kanton = req.params.kanton;
+        let region = req.params.region;
         try {
-            connection.query("SELECT id, Tarifbezeichnung,Tariftyp FROM pramien WHERE Versicherer = ? GROUP BY Tarifbezeichnung", [id], (request, response) => {
+            await query("SELECT id, Tarifbezeichnung,Tariftyp FROM pramien WHERE Versicherer = ? AND Kanton = ? AND Region = ? GROUP BY Tarifbezeichnung", [id,kanton,'PR-REG CH' + region], (request, response) => {
                 res.status(200).json(response);
             })
         } catch (error) {
