@@ -45,7 +45,7 @@ function KrankenBlueBg() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='pb-5 mb-4'>
+                            {/* <div className='pb-5 mb-4'>
                                 <div className="row gx-0 gx-sm-3 gx-lg-5 gy-0 justify-content-center">
                                     <div className="col-4 col-lg-auto">
                                         <img className='img-fluid' src={KrankenPramien1} alt="" />
@@ -57,7 +57,7 @@ function KrankenBlueBg() {
                                         <img className='img-fluid' src={KrankenPramien3} alt="" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -43,7 +43,7 @@ a {
 }
 
 .navBg {
-    background: #fff;
+    background: #fff !important;
 }
 
 .nav-container {
@@ -176,7 +176,12 @@ a {
     cursor: pointer;
     z-index: 9999;
 }
-
+.finplusbg {
+    background: transparent;
+}
+.scrolleffonfinplus {
+    background: white;
+}
 @media (max-width: 1399.98px) {
     .nav-container {
         padding-left: 6rem;

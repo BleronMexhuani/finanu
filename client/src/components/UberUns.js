@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Idea } from '../assets/images/uberUns/UberUns.svg'
+import { ReactComponent as Idea } from '../assets/images/uberUns/mainphoto.svg'
 import Muscle from '../assets/images/uberUns/muscle.svg'
 import Block from '../assets/images/uberUns/blocks.svg'
 import '../assets/css/uberUns.css'
@@ -11,7 +11,7 @@ function UberUns() {
                 <span className='fw-800 firstBlueTitle fs-1'>Über uns</span>
             </div>
             <div className='bodyCounterPadding'>
-                <Idea style={{ maxWidth: '700px' }} />
+                <Idea style={{ maxWidth: 'max-content' }} />
             </div>
             <div className="row gx-4 justify-content-between bodyCounterPadding">
                 <div className="col-12 col-md-5 col-xl-4 text-start">
