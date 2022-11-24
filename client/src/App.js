@@ -27,6 +27,7 @@ import WettPhoto2 from "./assets/images/europapark.jpg";
 import WLinksThree from "./components/wettbewerbe/WLinksThree";
 import WettPhoto3 from "./assets/images/oldcity.jpg";
 import Plus from "./components/Plus";
+import Blog1 from "./components/homepage/blogs/Blog1.js"
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
             <Routes>
               {/* Home */}
               <Route exact path="/" element={<MainComponents darkMode={darkMode} />}/>
+              <Route exact path="/blog/erklarungundunterschiedealternativ" element={<Blog1 />} />
 
               {/* Wettbewerbe */}
               <Route exact path="/wettbewerbe" element={<Wettbewerbe />} />
