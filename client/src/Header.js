@@ -1,11 +1,13 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import "./assets/css/header.css"
 import logo from './assets/images/logo.svg';
 import { useEffect, useState } from 'react';
 
+
 function Header(props) {
+    const { pathname } = useLocation();
     const [toggleMenu, setToggleMenu] = useState(false)
 
     const toggleNav = () => {
@@ -34,9 +36,12 @@ function Header(props) {
     const [show, setShow] = useState(true)
 
     const controlNavbar = () => {
-        if (window.scrollY >= 0) {
-            setShow(true)
-        } else {
+        if (window.scrollY >= 40) {
+            if(pathname === '/plus'){
+                setShow(true)
+            } 
+        } 
+        else {
             setShow(false)
         }
     }
@@ -50,11 +55,12 @@ function Header(props) {
         }
 
     }, [])
+
     return (
         <>
             <div className='nav fixed-top justify-content-center'>
 
-                <div className={`nav-container px-0 ${show && 'navBg'}`}>
+                <div className={`nav-container px-0 ${show && 'navBg'} ${pathname === '/plus' ? 'finplusbg' : 'navBg'  }`}>
                     <div className="container-xl row g-0 px-4 px-xl-0">
                         <div className='navLogo col-6 col-md text-start'>
                             <div className="row g-0">

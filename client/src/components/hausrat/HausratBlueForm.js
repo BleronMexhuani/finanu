@@ -114,7 +114,7 @@ function HausratBlueForm() {
                                         <span className='normalTextToWhite fw-600'>Gesamtkaufpreis</span>
                                     </div>
                                     <div>
-                                        <NumberFormat placeholder={'12,000'}
+                                        <NumberFormat placeholder={'500,000'}
                                             onValueChange={(values) => {
                                                 const { value } = values;
                                                 setApartamentPrice(value)
@@ -132,7 +132,7 @@ function HausratBlueForm() {
                                         <span className='normalTextToWhite fw-600'>Jährliches Einkommen</span>
                                     </div>
                                     <div>
-                                        <NumberFormat placeholder={'12,000'}
+                                        <NumberFormat placeholder={'60,000'}
                                             onValueChange={(values) => {
                                                 const { value } = values;
                                                 setYearlyIncome(value)
@@ -150,7 +150,7 @@ function HausratBlueForm() {
                                         <span className='normalTextToWhite fw-600'>Eigenkapital</span>
                                     </div>
                                     <div>
-                                        <NumberFormat placeholder={'12,000'}
+                                        <NumberFormat placeholder={'100,000'}
 
                                             onValueChange={(values) => {
                                                 const { value } = values;

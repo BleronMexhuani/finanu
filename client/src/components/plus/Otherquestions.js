@@ -35,7 +35,7 @@ function Otherquestions() {
 
                         <div className='collapsofthelastcomponent mb-5 mb-md-auto '>
                             <Accordion defaultActiveKey="0 text-dark accordionmainstyle ">
-                                <Accordion.Item eventKey="4" className="accordionstyle agilestyleofaccordion border border-0">
+                                <Accordion.Item eventKey="4" className="accordionstyle agilestyleofaccordion border border-0" style={{borderRadius: '15px 15px  0px 0px  '}}>
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #1</Accordion.Header>
                                     <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -47,7 +47,7 @@ function Otherquestions() {
                                         culpa qui officia deserunt mollit anim id est laborum.
                                     </Accordion.Body>
                                 </Accordion.Item>
-                                <Accordion.Item eventKey="5" className="accordionstyle agilestyleofaccordion border border-0">
+                                <Accordion.Item eventKey="5" className="accordionstyle agilestyleofaccordion border border-0" >
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #2</Accordion.Header>
                                     <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -71,9 +71,9 @@ function Otherquestions() {
                                         culpa qui officia deserunt mollit anim id est laborum.
                                     </Accordion.Body>
                                 </Accordion.Item>
-                                <Accordion.Item eventKey="7" className="accordionstyle agilestyleofaccordion border border-0">
-                                    <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #4</Accordion.Header>
-                                    <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
+                                <Accordion.Item eventKey="7" className="accordionstyle agilestyleofaccordion border border-0" style={{backgroundColor: '#50B8E7', borderRadius: '0px 0px 15px 15px'}}>
+                                    <Accordion.Header className="py-0 buttonofthelastcomponent" style={{backgroundColor: '#50B8E7', borderRadius: '0px 0px 15px  15px '}}>Accordion Item #4</Accordion.Header>
+                                    <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7', borderRadius: '0px 0px 15px  15px '}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -87,7 +87,7 @@ function Otherquestions() {
                         </div>
                         {(screenWidth > 575.98) && (
                             <div className='text-start my-3'>
-                                <button className='lastcomponentbutton w-50 py-2'>Get a qoute</button>
+                                <button className='lastcomponentbutton w-50 py-2 border-0'>Get a qoute</button>
                             </div>
                         )}
                     </div>

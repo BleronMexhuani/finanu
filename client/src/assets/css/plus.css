@@ -312,7 +312,8 @@
         background-color: #E7F5FC;
     }
     .agilestyleofaccordion .accordion-item {
-        border: none !important
+        border: none !important;
+        background-color: #50B8E7;
 
     } 
 
@@ -404,4 +405,10 @@
 .accordion-item:last-child  .accordion-button{
     border-bottom-left-radius: 15px !important;
     border-bottom-right-radius: 15px !important;
+    background-color: #50B8E7 !important;
+}
+
+
+.accordion-item:last-child:not(.collapsed) {
+    border-radius: 0px;
 }

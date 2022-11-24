@@ -35,14 +35,15 @@ function BlueBackgroundSection() {
                                     <div className='pb-4 mb-3'>
                                         <span className='fw-700 fs-2'>159.00</span>
                                     </div>
+                                    <div className='pb-3'>
+                                        <span>/ Jahr</span>
+                                    </div>
                                     <div className='pb-5'>
                                         <span>
                                         *Preise basieren auf Recherchen welche ende 2022 durchgeführt wurden. Möglicherweise haben sich die Preise zum Zeitpunkt Ihres Seitenbesuches bereits weider geändert.
                                         </span>
                                     </div>
-                                    <div className='pb-3'>
-                                        <span>/ Jahr</span>
-                                    </div>
+                              
                                     <div className='pb-4'>
                                         <span className='fw-700'>Rechtsgebiete</span>
                                     </div>
@@ -198,14 +199,15 @@ function BlueBackgroundSection() {
                                     <div className='pb-4 mb-3'>
                                         <span className='fw-700 fs-2'>196.35</span>
                                     </div>
+                                    <div className='pb-3'>
+                                        <span>/ Jahr</span>
+                                    </div>
                                     <div className='pb-5'>
                                         <span>
                                         *Preise basieren auf Recherchen welche ende 2022 durchgeführt wurden. Möglicherweise haben sich die Preise zum Zeitpunkt Ihres Seitenbesuches bereits weider geändert.
                                         </span>
                                     </div>
-                                    <div className='pb-3'>
-                                        <span>/ Jahr</span>
-                                    </div>
+                                
                                     <div className='pb-4'>
                                         <span className='fw-700'>Rechtsgebiete</span>
                                     </div>
@@ -361,14 +363,15 @@ function BlueBackgroundSection() {
                                     <div className='pb-4 mb-3'>
                                         <span className='fw-700 fs-2'>21.50</span>
                                     </div>
+                                    <div className='pb-3'>
+                                        <span>/ Monat</span>
+                                    </div>
                                     <div className='pb-5'>
                                         <span>
                                         *Preise basieren auf Recherchen welche ende 2022 durchgeführt wurden. Möglicherweise haben sich die Preise zum Zeitpunkt Ihres Seitenbesuches bereits weider geändert.
                                         </span>
                                     </div>
-                                    <div className='pb-3'>
-                                        <span>/ Monat</span>
-                                    </div>
+                               
                                     <div className='pb-4'>
                                         <span className='fw-700'>Rechtsgebiete</span>
                                     </div>

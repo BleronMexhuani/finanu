@@ -275,7 +275,7 @@ function Option1Kranken(props) {
                             </div>
                             <div>
                                 <div className='pb-2'>
-                                    <span className='firstBlueTitle fs-5 fw-700'>Offerte anfordern</span>
+                                    <span className='firstBlueTitle fs-5 fw-700'>Optionales Abschlussgespräch   </span>
                                 </div>
                                 <div>
                                     <span className='fw-500'>Bestellen Sie auf finanu die Offerten der verschiedenen Gesellschaften.

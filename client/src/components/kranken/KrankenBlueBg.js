@@ -42,7 +42,7 @@ function KrankenBlueBg() {
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>

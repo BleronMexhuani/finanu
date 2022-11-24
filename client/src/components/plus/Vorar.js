@@ -48,7 +48,7 @@ function Vorar() {
                     </div>
                 </div>
                 <div className='text-center my-3'>
-                        <button className='lastcomponentbutton w-50 py-2 ' style={{borderRadius: '10px'}}>Get a qoute</button>
+                        <button className='lastcomponentbutton w-50 py-2 border-0 ' style={{borderRadius: '10px'}}>Get a qoute</button>
                     </div>
             </div>
         </div>
