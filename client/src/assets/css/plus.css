@@ -60,17 +60,14 @@
     border-radius: 11px !important;
     width: 100%;
     background-color: white !important;
-    color: rgba(112, 112, 112, 0.54) !important;
     font-size: 18px !important;
 }
 
 .plusInput::placeholder {
-    color: rgba(255, 255, 255, 0.54) !important;
     font-weight: 500 !important;
 }
 
 .plusInput {
-    color: rgba(255, 255, 255, 0.54) !important;
     font-weight: 500 !important;
 }
 

@@ -2,14 +2,8 @@
 
     /* height: 350px; */
     width: 100%;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 80s;
-    animation-delay: -30s;
-    animation-name: moveCloudsRight;
     background-repeat: repeat-x;
     background-size: contain;
-    padding-bottom: 5rem !important;
 }
 
 @keyframes moveCloudsRight {
@@ -281,6 +275,7 @@
     }
 }
 
+
 @media (max-width: 1199.98px) {
     .wrapDiv {
         margin: 0px 2.5rem;
@@ -320,18 +315,62 @@
     .autoCheckbox {
         width: 100% !important;
     }
-
+    .autoThirdStep .autoCheckbox {
+        width: 250px !important;
+    }
     .autoSelectDropdown {
         left: 0;
     }
 
+    
+    span.fs-1 {
+        font-size: 25px !important;
+    }
+
+    div.fs-1 {
+        font-size: 25px !important;
+    }
+
+    span.fs-2 {
+        font-size: 24px !important;
+    }
+
+    div.fs-2 {
+        font-size: 24px !important;
+    }
+
+    span.fs-3 {
+        font-size: 23px !important;
+    }
+
+    div.fs-3 {
+        font-size: 23px !important;
+    }
+
+    span.fs-4 {
+        font-size: 21px !important;
+    }
+
+    div.fs-4 {
+        font-size: 21px !important;
+    }
+
+    span.fs-5 {
+        font-size: 18px !important;
+    }
+
+    div.fs-5 {
+        font-size: 18px !important;
+    }
+    .firstBlueTitle {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 767.98px) {
     .cloudsBackground {
         background-size: cover;
         height: auto;
-        padding-bottom: 3rem !important;
     }
 
     .wrapDiv {
@@ -343,7 +382,7 @@
     }
 
     body {
-        padding-top: 4rem;
+        padding-top: 6rem;
     }
 
     .bodyCounterPadding {
@@ -375,7 +414,9 @@
     .autoCheckbox {
         width: 100% !important;
     }
-
+    .autoThirdStep .autoCheckbox {
+        width: 100% !important;
+    }
     .autoImage {
         width: 100%;
     }

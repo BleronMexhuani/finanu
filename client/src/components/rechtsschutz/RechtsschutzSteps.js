@@ -68,16 +68,16 @@ function RechtsschutzSteps() {
                                 <img className='arrowDivRech' style={{ maxWidth: 150 }} src={Arrow} alt="" />
                             </div>
                         </div>
-                        <div className="col-12 col-md-7">
+                        <div className="col-12 col-md-9 col-lg-7">
                             <div className="">
                                 <div className="hausratBlueDiv mx-auto p-4">
                                     <form action="" className='mb-0'>
                                         <div className={`${(step === 0) ? 'd-block' : 'd-none'}`}>
-                                            <div className='pb-5' style={{ wordBreak: 'break-all' }}>
+                                            <div className='pb-5' >
                                                 <span className='fw-700 fs-4'>Für wen suchen Sie eine<br></br>
                                                     Rechtsschutzversicherung?</span>
                                             </div>
-                                            <div className="row g-4 g-md-5">
+                                            <div className="row g-4">
                                                 <div className="col-6 col-xl-3">
                                                     <label htmlFor="Einzelpersonen" className='containerRes w-100 h-100'>
                                                         <input type="radio" id='Einzelpersonen' checked={(reschtutz === 'einzelpersonen') ? true : false} onChange={e => setReschutz('einzelpersonen')} name='who' hidden />
@@ -145,11 +145,11 @@ function RechtsschutzSteps() {
                                             </div>
                                         </div>
                                         <div className={`${(step === 1) ? 'd-block' : 'd-none'}`}>
-                                            <div className='pb-5' style={{ wordBreak: 'break-all' }}>
+                                            <div className='pb-5'>
                                                 <span className='fw-700 fs-4'>Für wen suchen Sie eine<br></br>
                                                     Rechtsschutzversicherung?</span>
                                             </div>
-                                            <div className="row g-4 g-md-5 justify-content-evenly">
+                                            <div className="row g-4 justify-content-evenly">
                                                 <div className="col-6 col-md-4 col-lg-3">
                                                     <label htmlFor="Kosten" className='containerRes w-100 h-100'>
                                                         <input type="radio" checked={(res2 === 'tiefe kosten') ? true : false} onChange={e => setRes2('tiefe kosten')} id='Kosten' name='who1' hidden />
@@ -348,7 +348,7 @@ function RechtsschutzSteps() {
                                     <div className="col-12 col-md-6 col-lg-5 pb-4 pb-md-0">
 
                                         <div className=''>
-                                            <span style={{wordBreak: 'break-all'}} className='fw-700 firstBlueTitle fs-1'>
+                                            <span className='fw-700 firstBlueTitle fs-1'>
                                                 Wozu überhaupt eine <br></br> Rechtsschutzversicherung?
                                             </span>
                                         </div>

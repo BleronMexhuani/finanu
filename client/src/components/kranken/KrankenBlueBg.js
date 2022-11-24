@@ -1,16 +1,13 @@
 import React from 'react'
-import KrankenPramien1 from "../../assets/images/krankenPramien1.svg"
-import KrankenPramien2 from "../../assets/images/krankenPramien2.svg"
-import KrankenPramien3 from "../../assets/images/krankenPramien3.svg"
 
 function KrankenBlueBg() {
     return (
         <>
-            <div className='blueBgKrankenOverflow'>
-                <div className='blueBgKranken pb-0'>
-                    <div className=' blueBgCenterText'>
-                        <div className="wrapDiv container-xl px-4 px-xl-0 pt-5 mt-5 normalTextToWhite">
-                            <div className='ngtMrg'>
+            <div className='bodyCounterPadding'>
+                <div className='pb-5'>
+                    <div className=''>
+                        <div className="wrapDiv container-xl px-4 px-xl-0 normalTextToWhite">
+                            <div className=''>
                                 <div className="wrapDiv container-xl px-0">
                                     <div className='row gx-0 gx-md-4 gy-0 text-start justify-content-between'>
                                         <div className="col-12 col-md-6 col-lg-5 pb-4 pb-md-0">
@@ -22,7 +19,7 @@ function KrankenBlueBg() {
                                             </div>
                                         </div>
                                         <div className="col col-md-6 col-lg-7 my-auto">
-                                            <div className='fw-500 pb-5 fs-5'>
+                                            <div className='fw-500 fs-5'>
                                                 <div className='pb-4'>
                                                     <span>Das Angebot an Krankenkassen ist in der Schweiz vielfältig. Auf der Webseite von Finanu können Sie die aktuellen Krankenkassenprämien
                                                         kostenlos vergleichen und erfahren so, wie hoch ihr jährliches Sparpotential bei einem Wechsel sein könnte.</span>
@@ -45,19 +42,7 @@ function KrankenBlueBg() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='pb-5 mb-4'>
-                                <div className="row gx-0 gx-sm-3 gx-lg-5 gy-0 justify-content-center">
-                                    <div className="col-4 col-lg-auto">
-                                        <img className='img-fluid' src={KrankenPramien1} alt="" />
-                                    </div>
-                                    <div className="col-4 col-lg-auto">
-                                        <img className='img-fluid' src={KrankenPramien2} alt="" />
-                                    </div>
-                                    <div className="col-4 col-lg-auto">
-                                        <img className='img-fluid' src={KrankenPramien3} alt="" />
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
