@@ -26,7 +26,7 @@ function KrankenCards(props) {
             <div className='blueBgKranken1'>
                 <div className="blueBgCenterTex">
                     <div className='pb-2'>
-                        <span className='fs-1 bigTitleKranken'>GRUNDVERSICHERUNG</span>
+                        <span className='fs-1 bigTitleKranken'>Grundversicherung</span>
                     </div>
                     <div className='pb-5 container-xl px-4 px-xl-0'>
                         <span className='fw-500 fs-5 normalTextToWhite'>
@@ -115,7 +115,7 @@ function KrankenCards(props) {
                         <div className='wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding'>
                             <div className='pb-2'>
                                 <span className='fs-1 bigTitleKranken'>
-                                    ZUSATZVERSICHERUNG
+                                    Zusatzversicherung
                                 </span>
                             </div>
                             <div className='pb-5 mb-4'>
@@ -252,7 +252,7 @@ function KrankenCards(props) {
                     <div className="pb-5">
                         <span className='fw-500 fs-5 normalTextToWhite'>Nachdem Sie sich nun bewusst sind welches Modell in der Grundversicherung Sie wählen und welche zusätzlichen <br></br>Leistungen zu Ihrem Lebensstil passen, müssen Sie sich entscheiden welche Leistungen Sie bei einem Spitalbesuch wünschen.</span>
                     </div>
-                    <div className="row gy-4 gy-lg-0 gx-0 gx-sm-4 justify-content-center">
+                    <div className="row gy-4 gy-lg-0 gx-0 gx-sm-3 justify-content-center">
                         <div className="col-12 col-sm-6 col-lg-4">
                             <div onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => { setIsHover(false) }} className={` ${isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5 pt-0`}>
                                 <div className={`mb-5 ${isHover ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>

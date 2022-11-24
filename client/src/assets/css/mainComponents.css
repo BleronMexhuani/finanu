@@ -173,7 +173,48 @@
     left: calc(50% - 210px);
     top: 4.5rem !important;
 }
+span.fs-1 {
+    font-size: 33px !important;
+}
 
+div.fs-1 {
+    font-size: 33px !important;
+}
+
+span.fs-2 {
+    font-size: 28px !important;
+}
+
+div.fs-2 {
+    font-size: 28px !important;
+}
+
+span.fs-3 {
+    font-size: 26px !important;
+}
+
+div.fs-3 {
+    font-size: 26px !important;
+}
+
+span.fs-4 {
+    font-size: 24px !important;
+}
+
+div.fs-4 {
+    font-size: 24px !important;
+}
+
+span.fs-5 {
+    font-size: 20px !important;
+}
+
+div.fs-5 {
+    font-size: 20px !important;
+}
+.firstBlueTitle {
+    font-size: 33px;
+}
 
 
 @media (max-width: 1399.98px) {
@@ -225,7 +266,7 @@
         font-size: 18px !important;
     }
     .firstBlueTitle {
-        font-size: 35px;
+        font-size: 33px;
     }
 }
 

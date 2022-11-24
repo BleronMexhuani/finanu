@@ -65,9 +65,7 @@
 }
 
 @media (max-width: 769px) {
-    .boxcard {
-        width: 85% !important;
-    }
+    
 
     .img {
         height: auto;
