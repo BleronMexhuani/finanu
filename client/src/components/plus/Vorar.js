@@ -39,7 +39,7 @@ function Vorar() {
                                 <p className='text-center fw-400 pt-2'>ProLife Weiterempfehlen</p>
                                 <p className='text-center fw-700 pt-2'>und für jede erfolgreiche Verfmittlung CHF 50.00 erhalten.</p>
                                 <div className='text-center pt-1'>
-                                    <button className='buttonofthelastcomponent py-1 px-3'>
+                                    <button className='buttonmeineempfehlung py-1 px-3'>
                                         Meine Empfehlung
                                     </button>
                                 </div>

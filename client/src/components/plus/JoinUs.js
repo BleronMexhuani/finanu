@@ -15,9 +15,6 @@ function JoinUs() {
                             We’ve lorem a ipsum already, and we’re loreming ipsum fast. Became Finanuist and help shape the next part of our story.
                         </span>
                     </div>
-                    <div className='pb-4'>
-                        <a href="" className='plusLink'>Click link Finanu</a>
-                    </div>
                 </div>
                 <div className="col-12 col-md-auto my-auto">
                     <div className=''>

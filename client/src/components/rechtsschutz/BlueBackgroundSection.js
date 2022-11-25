@@ -32,7 +32,7 @@ function BlueBackgroundSection() {
                                     <div>
                                         <span>ab CHF</span>
                                     </div>
-                                    <div className='pb-4 mb-3'>
+                                    <div className='pb-3'>
                                         <span className='fw-700 fs-2'>159.00</span>
                                     </div>
                                     <div className='pb-3'>
@@ -196,7 +196,7 @@ function BlueBackgroundSection() {
                                     <div>
                                         <span>ab CHF</span>
                                     </div>
-                                    <div className='pb-4 mb-3'>
+                                    <div className='pb-3'>
                                         <span className='fw-700 fs-2'>196.35</span>
                                     </div>
                                     <div className='pb-3'>
@@ -360,7 +360,7 @@ function BlueBackgroundSection() {
                                     <div>
                                         <span>ab CHF</span>
                                     </div>
-                                    <div className='pb-4 mb-3'>
+                                    <div className='pb-3'>
                                         <span className='fw-700 fs-2'>21.50</span>
                                     </div>
                                     <div className='pb-3'>

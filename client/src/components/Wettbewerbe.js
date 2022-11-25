@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/wettbewerbe.css";
-import { ReactComponent as Logo } from "../assets/images/wettbewerbelogo.svg";
+import { ReactComponent as Logo } from "../assets/images/bileta.svg";
 import bern from "../assets/images/berncity.jpg";
 import europa from "../assets/images/europapark.jpg";
 import old from "../assets/images/oldcity.jpg";
@@ -25,7 +25,7 @@ function Wettbewerbe() {
 
           </div>
           <div className="col-12 col-md-6">
-            <div className="mt-5 mb-5">
+            <div className="">
               <Logo className="img-fluid" />
             </div>
 

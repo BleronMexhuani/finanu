@@ -72,6 +72,9 @@ function Plus() {
                 <Otherquestions />
 
             </div>
+            {(screenWidth > 575.98) && (
+                <JoinUs />
+            )}
 
         </>
     )

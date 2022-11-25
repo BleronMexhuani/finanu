@@ -12,9 +12,12 @@ import Fitness from '../../assets/images/fitness.svg'
 import Abroad from '../../assets/images/abroad.svg'
 import Glasses from '../../assets/images/glasses.svg'
 import PhoneDoc from '../../assets/images/phoneDoc.svg'
-import Economy from '../../assets/images/economy.svg'
-import Handshake from '../../assets/images/handshake.svg'
-import Kravata from '../../assets/images/kravata.svg'
+// import Economy from '../../assets/images/economy.svg'
+// import Handshake from '../../assets/images/handshake.svg'
+// import Kravata from '../../assets/images/kravata.svg'
+import Economy from '../../assets/images/Dhomat-01.svg'
+import Handshake from '../../assets/images/Dhomat-02.svg'
+import Kravata from '../../assets/images/Dhomat-03.svg'
 
 function KrankenCards(props) {
 
