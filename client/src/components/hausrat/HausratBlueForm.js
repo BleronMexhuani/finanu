@@ -88,7 +88,7 @@ function HausratBlueForm() {
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto bodyCounterPadding'>
                 <div className="row gx-4 gy-5 gy-lg-0 justify-content-between bodyCounterPadding">
-                    <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
+                    <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start my-auto">
                         <div className='pb-4'>
                             <span className='fw-700 firstBlueTitle fs-1 '>Alles rund ums Eigenheim</span>
                         </div>

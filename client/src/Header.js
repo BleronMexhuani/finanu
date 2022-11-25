@@ -33,7 +33,7 @@ function Header(props) {
         }
     }, [])
 
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
 
     const controlNavbar = () => {
         if (window.scrollY >= 40) {

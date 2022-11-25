@@ -61,6 +61,7 @@
     width: 100%;
     background-color: white !important;
     font-size: 18px !important;
+    color: #5a5a5a !important;
 }
 
 .plusInput::placeholder {
@@ -79,19 +80,14 @@
 
 .formIluDiv {
     position: absolute;
-    bottom: 29px;
-    left: 91px;
+    bottom: -12px;
+    left: 1.5rem;
     width: 100%;
     max-width: 339.31px;
     width: 339.31px;
 }
 
-.plusFormBtnDiv {
-    position: absolute;
-    right: 0rem;
-    top: 275px;
 
-}
 
 .finanuWhiteBtn {
     background: #FFFFFF;
@@ -176,13 +172,17 @@
 
 .buttonofthelastcomponent {
     color: #FFFFFF;
-    border: solid 0px #FFFFFF;
     background-color: transparent;
     
 }
 .buttonofthelastcomponent button {
     background: #50B8E7;
     color: white;
+}
+.buttonmeineempfehlung {
+    border: 0.5px solid white !important;
+    background-color: transparent;
+    color: #FFFFFF;
 }
 .accordionmainstyle .accordion-item:first-of-type  {
     border-top-left-radius: calc(10px - 1px) !important;
@@ -234,11 +234,24 @@
         margin-left: -25px;
         margin-bottom: -25px
     }
+    .plusFormBtnDiv {
+        position: absolute;
+        right: 0rem;
+        top: 275px;
+    
+    }
 }
 
 @media (max-width: 1399.98px) {}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    .plusFormBtnDiv {
+        position: absolute;
+        right: 0rem;
+        top: 255px;
+    
+    }
+}
 
 @media (max-width: 991.98px) {
     .plusForm {
@@ -317,11 +330,6 @@
 
     } 
 
-    .accordion-button:first-child  {
-        border-top-left-radius: 15px !important;
-        border-top-right-radius: 15px !important;
-    }
-
     .mobiletabssubtitle {
         font-weight: 400;
         font-size: 18px;
@@ -344,9 +352,9 @@
 
     .formIluDiv {
         max-width: 300px;
-        left: 18px;
+        left: -10px;
         position: absolute;
-        bottom: 59px;
+        bottom: 26px;
         width: 100%;
         max-width: 339.31px;
         width: 339.31px;
@@ -405,7 +413,6 @@
 .accordion-item:last-child  .accordion-button{
     border-bottom-left-radius: 15px !important;
     border-bottom-right-radius: 15px !important;
-    background-color: #50B8E7 !important;
 }
 
 

@@ -5,7 +5,7 @@ import IconNr4 from '../../assets/images/rechtsschutzImgs/Konflikti.svg'
 import IconNr5 from '../../assets/images/rechtsschutzImgs/final-01.svg'
 import IconNr6 from '../../assets/images/rechtsschutzImgs/IconNr6.svg'
 import IconNr7 from '../../assets/images/newimages/parja.svg'
-import IconNr8 from '../../assets/images/rechtsschutzImgs/IconNr8.svg'
+import IconNr8 from '../../assets/images/rechtsschutzImgs/Law.svg'
 
 import IconNr1Dark from '../../assets/images/rechtsschutzImgs/IconNr1Dark.svg'
 import IconNr3Dark from '../../assets/images/rechtsschutzImgs/IconNr3Dark.svg'

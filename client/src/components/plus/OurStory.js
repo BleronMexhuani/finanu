@@ -16,9 +16,9 @@ function OurStory(props) {
                         <span className='fw-600 secondaryColor'>AS TOLD BY OUR FOUNDERS</span>
                     </div>
                 </div>
-                <div className="row gx-0 gx-md-5 gx-lg-0 gy-5 gy-md-0 justify-content-evenly">
+                <div className="row gx-0 gx-md-5 gx-lg-0 gy-5 gy-md-0 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 order-2 order-md-1">
-                        <div className="d-none d-md-block col offset-lg-2">
+                        <div className="d-none d-md-block col offset-lg-">
                             <div className='pb-4'>
                                 <span className='plusTitle fs-2 fw-700 secondaryColor'>
                                     Our story
@@ -30,7 +30,7 @@ function OurStory(props) {
                         </div>
                         <div>
                             <div className="row gx-5  text-start">
-                                <div className="col-6 col-sm-4 offset-sm-2 order-1 order-md-1">
+                                <div className="col-6 col-sm-4  order-1 order-md-1">
                                     <div className='pb-5'>
                                         <Signature className="img-fluid" />
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { ReactComponent as BlueBg } from '../../assets/images/plus/blueBg.svg'
 import { ReactComponent as MobIlu } from '../../assets/images/plus/mobileIlu.svg'
 import { ReactComponent as Users } from '../../assets/images/plus/users.svg'
-import { ReactComponent as FormIlu } from '../../assets/images/plus/formIlu.svg'
+import { ReactComponent as FormIlu } from '../../assets/images/plus/qika.svg'
 import { ReactComponent as Vid1 } from '../../assets/images/plus/vid1.svg'
 
 import { useState, useEffect } from 'react'
@@ -108,7 +108,7 @@ function FirstSection() {
                         </div>
                     )}
 
-                    <div className="col-12 col-lg-6 col-xl-auto order-3 order-md-2">
+                    <div className="col-12 col-lg-6 order-3 order-md-2">
                         <div className="plusForm py-5 px-4 p-md-5">
                             <div className='pb-4 text-center text-md-start'>
                                 <span className='fs-3 fw-700 plusFormTitle' style={{color: 'white'}}>Lohnt sich eine Mitgliedschaft fur dich?</span>
@@ -121,11 +121,11 @@ function FirstSection() {
                             </div>
                             <div className='pb-3' style={{ position: 'relative' }}>
                                 <div>
-                                    <select name="" id="" className='form-select plusInput plusSelectArrow p-3' style={{color: 'black !important'}}>
-                                        <option value="">Vorname*</option>
+                                    <select name="" id="" className='form-select plusInput plusSelectArrow p-3' style={{color: '#5a5a5a !important'}}>
+                                        <option value="">Ich bin</option>
                                     </select>
                                 </div>
-                                <div className='plusFormBtnDiv'>
+                                <div className='plusFormBtnDiv mb-3 mb-xxl-0'>
                                     <button className='px-4 px-sm-5 py-3 finanuWhiteBtn'>Los Gehts</button>
                                 </div>
                             </div>
