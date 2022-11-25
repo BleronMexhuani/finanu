@@ -6,7 +6,7 @@ import NumberFormat from 'react-number-format';
 function PensionChart() {
     const [monthly, setMonthly] = useState(500);
     const [age, setAge] = useState(40);
-    const [amount, setAmount] = useState(5000);
+    const [amount, setAmount] = useState(10000);
     const [risk, setRisk] = useState(2);
     const [lowRisk, setLowRisk] = useState([]);
     const [mediumRisk, setMediumRisk] = useState([]);
@@ -103,7 +103,7 @@ function PensionChart() {
             },
 
             grid: {
-                show: true,
+                show: false,
                 borderColor: '#90A4AE',
                 strokeDashArray: 0,
                 position: 'back',
@@ -119,11 +119,11 @@ function PensionChart() {
                 },
                 row: {
                     colors: undefined,
-                    opacity: 0.5
+                    opacity: 0
                 },
                 column: {
                     colors: undefined,
-                    opacity: 0.5
+                    opacity: 0
                 },
                 padding: {
                     top: 0,
@@ -207,7 +207,7 @@ function PensionChart() {
                 type: 'category',
                 categories: labels,
                 overwriteCategories: [],
-                show: true,
+                show: false,
                 tooltip: {
                     formatter: function (labels, opts) {
                         return '<div class="normalTextToWhite fw-500"> in ' + (labels - 1) + ' Jahren </div>'

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 function SelectCar(props) {
-    
+
     const [isFocused, setIsFocused] = useState(false)
     const [inputValue, setInputValue] = useState("")
 
@@ -26,7 +26,7 @@ function SelectCar(props) {
         <div>
             <div>
                 <div className="pb-4">
-                    <span className='finanuSubTitle'>
+                    <span className='fs-4 fw-700'>
                         Neueinlösung eines Fahrzeuges
                     </span>
                 </div>
@@ -44,7 +44,7 @@ function SelectCar(props) {
                                     </div>
 
                                 </div>
-                            )} 
+                            )}
                         </div>
 
                         <div className="pb-4">
@@ -55,10 +55,12 @@ function SelectCar(props) {
                         </div>
                     </div>
                 </div>
+                <div className='text-center'>
+                    <button className='autoBtnStyle' onClick={() => { props.setstep(props.step + 1) }}>
+                        Weiter
+                    </button>
+                </div>
 
-                <button className='nextBtnKranken' onClick={() => { props.setstep(props.step + 1) }}>
-                    Weiter
-                </button>
             </div>
         </div>
 

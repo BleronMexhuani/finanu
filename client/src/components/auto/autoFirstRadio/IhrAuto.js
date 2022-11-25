@@ -6,7 +6,7 @@ function IhrAuto(props) {
     return (
         <div>
             <div className="pb-4">
-                <span className='finanuSubTitle fs-4'>
+                <span className='fw-700 fs-4'>
                     Neueinlösung eines Fahrzeuges
                 </span>
             </div>
@@ -18,19 +18,19 @@ function IhrAuto(props) {
                     <div className="col-12 col-sm-6 col-md-4">
                         <label htmlFor="ya" className="container1 checkboxWidth">
                             <input onChange={() => setleasing(true)} id='ya' type="radio" name='leasing' hidden />
-                            <span className="checkmark">Ja</span>
+                            <span className="checkmark checkmarkColorAuto ">Ja</span>
                         </label>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4">
                         <label htmlFor="batterie" className="container1 checkboxWidth">
                             <input onChange={() => setleasing(true)} id='batterie' type="radio" name='leasing' hidden />
-                            <span className="checkmark">Ja, nur Batterie für Antrieb</span>
+                            <span className="checkmark checkmarkColorAuto ">Ja, nur Batterie für Antrieb</span>
                         </label>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4">
                         <label htmlFor="nein" className="container1 checkboxWidth">
                             <input onChange={() => setleasing(false)} id='nein' type="radio" name='leasing' hidden />
-                            <span className="checkmark">Nein</span>
+                            <span className="checkmark checkmarkColorAuto ">Nein</span>
                         </label>
                     </div>
                 </div>
@@ -48,15 +48,15 @@ function IhrAuto(props) {
                 </div>
                 <div className="py-5">
                     <div className="pb-4">
-                        <span className='finanuSubTitle'>
+                        <span className='fs-4 fw-700'>
                             Wählen Sie Ihre Leistungen
                         </span>
                     </div>
                     <div className="row g-4 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4">
                             <label htmlFor="teilkasko" className="container1 checkboxWidth">
-                                <input onChange={() => setleasing(true)} id='teilkasko' type="radio" name='services' hidden />
-                                <div className="checkmark">
+                                <input id='teilkasko' type="radio" name='services' hidden />
+                                <div className="checkmark checkmarkColorAuto ">
                                     <div className='py-4'>
                                         <span className='fw-700'>Teilkasko</span>
                                     </div>
@@ -68,8 +68,8 @@ function IhrAuto(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4">
                             <label htmlFor="Vollkasko" className="container1 checkboxWidth">
-                                <input onChange={() => setleasing(true)} id='Vollkasko' type="radio" name='services' hidden />
-                                <div className="checkmark">
+                                <input id='Vollkasko' type="radio" name='services' hidden />
+                                <div className="checkmark checkmarkColorAuto ">
                                     <div className='py-4'>
                                         <span className='fw-700'>Vollkasko</span>
                                     </div>
@@ -81,8 +81,8 @@ function IhrAuto(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4">
                             <label htmlFor="Haftpflicht" className="container1 checkboxWidth">
-                                <input onChange={() => setleasing(true)} id='Haftpflicht' type="radio" name='services' hidden />
-                                <div className="checkmark">
+                                <input id='Haftpflicht' type="radio" name='services' hidden />
+                                <div className="checkmark checkmarkColorAuto ">
                                     <div className='py-4'>
                                         <span className='fw-700'>Nur Haftpflicht</span>
                                     </div>
@@ -167,14 +167,14 @@ function IhrAuto(props) {
             <div className="row gx-4 gy-0 justify-content-center">
                 <div className="col-6 col-sm-auto">
                     <div>
-                        <button className='nextBtnKranken' onClick={() => { props.setstep(props.step - 1) }}>
+                        <button className='autoBtnStyle' onClick={() => { props.setstep(props.step - 1) }}>
                             Zurück
                         </button>
                     </div>
                 </div>
                 <div className="col-6 col-sm-auto">
                     <div>
-                        <button className='nextBtnKranken' onClick={() => { props.setstep(props.step + 1) }}>
+                        <button className='autoBtnStyle' onClick={() => { props.setstep(props.step + 1) }}>
                             Weiter
                         </button>
                     </div>

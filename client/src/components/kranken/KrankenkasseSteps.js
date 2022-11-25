@@ -471,7 +471,7 @@ function KrankenkasseSteps() {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <div className='container-xl px-0'>
+                <div className='container-xl px-4 px-xl-0'>
                     <div className='krankenFirstStep wrapDiv px-4 mx-auto py-5'>
                         <div>
                             <span className='krankenTitle fs-2'>KRANKENKASSEN VERGLEICHEN 2023</span>

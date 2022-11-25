@@ -4,12 +4,12 @@ function ThirdStep(props) {
     return (
         <div className='autoThirdStep'>
             <div className="pb-3">
-                <span className='finanuSubTitle  fs-5'>
+                <span className='fw-700  fs-5'>
                     Personalien
                 </span>
             </div>
             <div className='pb-4'>
-                <span className='firstBlueTitle fw-600 fs-1'>Versicherungsnehmer</span>
+                <span className='firstBlueTitle fw-700 fs-4'>Versicherungsnehmer</span>
             </div>
             <div className='pb-4'>
                 <div className="row g-4 justify-content-center">
@@ -54,14 +54,14 @@ function ThirdStep(props) {
             <div className="row gx-4 gy-0 justify-content-center">
                     <div className="col-6 col-sm-auto">
                         <div>
-                            <button className='nextBtnKranken' onClick={() => { props.setstep(props.step - 1) }}>
+                            <button className='autoBtnStyle' onClick={() => { props.setstep(props.step - 1) }}>
                                 Zurück
                             </button>
                         </div>
                     </div>
                     <div className="col-6 col-sm-auto">
                         <div>
-                            <button className='nextBtnKranken' onClick={() => { props.setstep(props.step + 1) }}>
+                            <button className='autoBtnStyle' onClick={() => { props.setstep(props.step + 1) }}>
                             Berechnung
                             </button>
                         </div>

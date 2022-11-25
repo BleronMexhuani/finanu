@@ -5,7 +5,7 @@ function Fahrer(props) {
         <div>
             <div>
                 <div className="pb-4">
-                    <span className='finanuSubTitle'>
+                    <span className='fw-700 fs-4'>
                         Fahrer/-in
                     </span>
                 </div>
@@ -24,13 +24,13 @@ function Fahrer(props) {
                                     <div className="col-12 col-sm-6 pe-0 pe-sm-2">
                                         <label htmlFor="male" className="container1 w-100">
                                             <input id='male' type="radio" name='gender' hidden />
-                                            <span className="checkmark">Männlich</span>
+                                            <span className="checkmark checkmarkColorAuto ">Männlich</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 ps-0 ps-sm-2">
                                         <label htmlFor="female" className="container1 w-100">
                                             <input id='female' type="radio" name='gender' hidden />
-                                            <span className="checkmark">Weiblich</span>
+                                            <span className="checkmark checkmarkColorAuto ">Weiblich</span>
                                         </label>
                                     </div>
                                 </div>
@@ -311,13 +311,13 @@ function Fahrer(props) {
                                     <div className="col-12 col-sm-6 pe-0 pe-sm-2">
                                         <label htmlFor="JaDrive" className="container1 w-100">
                                             <input id='JaDrive' type="radio" name='driveCar' hidden />
-                                            <span className="checkmark">Ja</span>
+                                            <span className="checkmark checkmarkColorAuto ">Ja</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 ps-0 ps-sm-2">
                                         <label htmlFor="NeinDrive" className="container1 w-100">
                                             <input id='NeinDrive' type="radio" name='driveCar' hidden />
-                                            <span className="checkmark">Nein</span>
+                                            <span className="checkmark checkmarkColorAuto ">Nein</span>
                                         </label>
                                     </div>
                                 </div>
@@ -340,13 +340,13 @@ function Fahrer(props) {
                                     <div className="col-12 col-sm-6 pe-0 pe-sm-2">
                                         <label htmlFor="Ja7000" className="container1 w-100">
                                             <input id='Ja7000' type="radio" name='moreThan7000' hidden />
-                                            <span className="checkmark">Ja</span>
+                                            <span className="checkmark checkmarkColorAuto ">Ja</span>
                                         </label>
                                     </div>
                                     <div className="col-12 col-sm-6 ps-0 ps-sm-2">
                                         <label htmlFor="Nein7000" className="container1 w-100">
                                             <input id='Nein7000' type="radio" name='moreThan7000' hidden />
-                                            <span className="checkmark">Nein</span>
+                                            <span className="checkmark checkmarkColorAuto ">Nein</span>
                                         </label>
                                     </div>
                                 </div>
@@ -359,14 +359,14 @@ function Fahrer(props) {
             <div className="row gx-4 gy-0 justify-content-center pt-5">
                 <div className="col-6 col-sm-auto">
                     <div>
-                        <button className='nextBtnKranken' onClick={() => { props.setstep(props.step - 1) }}>
+                        <button className='autoBtnStyle' onClick={() => { props.setstep(props.step - 1) }}>
                             Zurück
                         </button>
                     </div>
                 </div>
                 <div className="col-6 col-sm-auto">
                     <div>
-                        <button className='nextBtnKranken' onClick={() => { props.setstep(props.step + 1) }}>
+                        <button className='autoBtnStyle' onClick={() => { props.setstep(props.step + 1) }}>
                             Weiter
                         </button>
                     </div>

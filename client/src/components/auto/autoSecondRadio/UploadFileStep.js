@@ -22,7 +22,7 @@ function UploadFileStep(props) {
                 </label>
             </div>
             <div>
-                <button className='nextBtnKranken' onClick={() => { props.setstep(props.step + 1) }}>
+                <button className='autoBtnStyle' onClick={() => { props.setstep(props.step + 1) }}>
                     Weiter
                 </button>
             </div>

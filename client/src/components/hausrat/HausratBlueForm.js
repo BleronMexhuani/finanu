@@ -105,207 +105,210 @@ function HausratBlueForm() {
                     </div>
 
                 </div>
-                <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
-                    <div className="col-12 col-md-5 col-lg-5 col-xl-4">
-                        <div className="hausratWhiteDiv mx-auto mb-4 mb-md-0 text-start">
-                            <div className='p-4 p-lg-5'>
-                                <div className='pb-4'>
-                                    <div className='pb-2'>
-                                        <span className='normalTextToWhite fw-600'>Gesamtkaufpreis</span>
+                <div className='hausratShadowDiv px-3 py-4 py-sm-5 px-sm-5'>
+
+                    <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
+                        <div className="col-12 col-md-5 col-lg-5 col-xl-5 my-md-auto">
+                            <div className=" mx-auto mb-4 mb-md-0 text-start">
+                                <div className=''>
+                                    <div className='pb-4'>
+                                        <div className='pb-2'>
+                                            <span className='normalTextToWhite fw-600'>Gesamtkaufpreis</span>
+                                        </div>
+                                        <div>
+                                            <NumberFormat placeholder={'500,000'}
+                                                onValueChange={(values) => {
+                                                    const { value } = values;
+                                                    setApartamentPrice(value)
+
+                                                }}
+                                                className='hausratFormInputs_2 form-control'
+                                                displayType={'input'}
+                                                thousandSeparator={true}
+
+                                            />
+                                        </div>
                                     </div>
+                                    <div className='pb-4'>
+                                        <div className='pb-2'>
+                                            <span className='normalTextToWhite fw-600'>Jährliches Einkommen</span>
+                                        </div>
+                                        <div>
+                                            <NumberFormat placeholder={'60,000'}
+                                                onValueChange={(values) => {
+                                                    const { value } = values;
+                                                    setYearlyIncome(value)
+                                                }}
+                                                className='hausratFormInputs_2 form-control'
+                                                displayType={'input'}
+                                                thousandSeparator={true}
+
+                                            />
+
+                                        </div>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <div className='pb-2'>
+                                            <span className='normalTextToWhite fw-600'>Eigenkapital</span>
+                                        </div>
+                                        <div>
+                                            <NumberFormat placeholder={'100,000'}
+
+                                                onValueChange={(values) => {
+                                                    const { value } = values;
+                                                    setCapital(value)
+                                                }}
+
+                                                className='hausratFormInputs_2 form-control'
+                                                displayType={'input'}
+                                                thousandSeparator={true}
+
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <div className='pb-2'>
+                                            <div className="row g-0">
+                                                <div className="col">
+                                                    <span className='normalTextToWhite fw-600'>Angenommener Zinssatz</span>
+                                                </div>
+                                                <div className="col-auto">
+                                                    <span className='fw-600 normalTextToWhite'>{interes}%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="range" min={0.4} step={0.05} max={2} onChange={(e) => setInteres(e.target.value)} defaultValue={1} className='hausratRangeInput form-range' />
+                                        </div>
+                                    </div>
+                                    {error && (
+                                        <div className='pb-4 fw-600' style={{ color: '#F6490E' }}>
+                                            Bitte füllen Sie alle Eingaben aus, um fortzufahren
+                                        </div>
+                                    )}
                                     <div>
-                                        <NumberFormat placeholder={'500,000'}
-                                            onValueChange={(values) => {
-                                                const { value } = values;
-                                                setApartamentPrice(value)
-
-                                            }}
-                                            className='hausratFormInputs_2 form-control'
-                                            displayType={'input'}
-                                            thousandSeparator={true}
-
-                                        />
+                                        <button type="button" className='hausratBtn py-2 w-100' onClick={submitForm} >Berechnung</button>
                                     </div>
                                 </div>
-                                <div className='pb-4'>
-                                    <div className='pb-2'>
-                                        <span className='normalTextToWhite fw-600'>Jährliches Einkommen</span>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-7 col-lg-7 col-xl-7 my-md-auto">
+                            <div ref={HausratBlue} className="">
+                                <div className="blueBorderDiv p-3 p-sm-4 text-start">
+                                    <div className='pb-4'>
+                                        <span className="fw-700 fs-3">Kosten im Detail</span>
                                     </div>
-                                    <div>
-                                        <NumberFormat placeholder={'60,000'}
-                                            onValueChange={(values) => {
-                                                const { value } = values;
-                                                setYearlyIncome(value)
-                                            }}
-                                            className='hausratFormInputs_2 form-control'
-                                            displayType={'input'}
-                                            thousandSeparator={true}
-
-                                        />
-
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className='pb-2'>
-                                        <span className='normalTextToWhite fw-600'>Eigenkapital</span>
-                                    </div>
-                                    <div>
-                                        <NumberFormat placeholder={'100,000'}
-
-                                            onValueChange={(values) => {
-                                                const { value } = values;
-                                                setCapital(value)
-                                            }}
-
-                                            className='hausratFormInputs_2 form-control'
-                                            displayType={'input'}
-                                            thousandSeparator={true}
-
-                                        />
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className='pb-2'>
+                                    <div className='pb-4'>
                                         <div className="row g-0">
                                             <div className="col">
-                                                <span className='normalTextToWhite fw-600'>Angenommener Zinssatz</span>
+                                                <div>
+                                                    <span className='fw-500'>Zinsen</span>
+                                                </div>
                                             </div>
                                             <div className="col-auto">
-                                                <span className='fw-600 normalTextToWhite'>{interes}%</span>
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={zinsen} displayType={'text'} thousandSeparator={true} /></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <input type="range" min={0.4} step={0.05} max={2} onChange={(e) => setInteres(e.target.value)} defaultValue={1} className='hausratRangeInput form-range' />
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Amortisation</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={amortisation} displayType={'text'} thousandSeparator={true} /> </span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                {error && (
-                                    <div className='pb-4 fw-600' style={{ color: '#F6490E' }}>
-                                        Bitte füllen Sie alle Eingaben aus, um fortzufahren
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-700'>Monatliche Zahlung</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-700'>CHF <NumberFormat value={montaliche} displayType={'text'} thousandSeparator={true} /> </span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                )}
-                                <div>
-                                    <button type="button" className='hausratBtn py-2 w-100' onClick={submitForm} >Berechnung</button>
+                                    <div className='pb-5'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div className='me-1 me-sm-3 me-md-5'>
+                                                    <span className='fw-500'>Nebenkosten (Kann von Liegenschaft zu Liegenschaft stark variieren, deshalb Rechnen Banken mit ca. 1% des Liegenschaftpreises pro Jahr)</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={nebenconsten} displayType={'text'} thousandSeparator={true} /> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <span className="fw-700 fs-3">Berechnung im Detail</span>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Hypothek</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className='fw-500'>CHF <NumberFormat value={hypothek} displayType={'text'} thousandSeparator={true} /></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='pb-4'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Eigenmittel</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className={`fw-500 ${(eigenmittei >= 20) ? 'greenText' : 'redText'}`}>{eigenmittei} %</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='pb-5'>
+                                        <div className="row g-0">
+                                            <div className="col">
+                                                <div>
+                                                    <span className='fw-500'>Tragbarkeit</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-auto">
+                                                <div>
+                                                    <span className={`fw-500 ${(targbarkeit > 33) ? 'redText' : 'greenText'}`}>{targbarkeit} %</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='text-end'>
+                                        <button type='button' onClick={() => { setopenModal(true) }} className='hausratBtn py-2'> Jetzt anfragen</button>
+                                    </div>
                                 </div>
                             </div>
+
+
+
+
                         </div>
-                    </div>
-                    <div className="col-12 col-md-7 col-lg-7 col-xl-8 my-md-auto">
-                        <div ref={HausratBlue} className="">
-                            <div className="blueBorderDiv p-4 text-start">
-                                <div className='pb-4'>
-                                    <span className="fw-700 fs-3">Kosten im Detail</span>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Zinsen</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={zinsen} displayType={'text'} thousandSeparator={true} /></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Amortisation</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={amortisation} displayType={'text'} thousandSeparator={true} /> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-700'>Monatliche Zahlung</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-700'>CHF <NumberFormat value={montaliche} displayType={'text'} thousandSeparator={true} /> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-5'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div className='me-1 me-sm-3 me-md-5'>
-                                                <span className='fw-500'>Nebenkosten (Kann von Liegenschaft zu Liegenschaft stark variieren, deshalb Rechnen Banken mit ca. 1% des Liegenschaftpreises pro Jahr)</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={nebenconsten} displayType={'text'} thousandSeparator={true} /> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <span className="fw-700 fs-3">Berechnung im Detail</span>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Hypothek</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className='fw-500'>CHF <NumberFormat value={hypothek} displayType={'text'} thousandSeparator={true} /></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-4'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Eigenmittel</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className={`fw-500 ${(eigenmittei >= 20) ? 'greenText' : 'redText'}`}>{eigenmittei} %</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='pb-5'>
-                                    <div className="row g-0">
-                                        <div className="col">
-                                            <div>
-                                                <span className='fw-500'>Tragbarkeit</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <div>
-                                                <span className={`fw-500 ${(targbarkeit > 33) ? 'redText' : 'greenText'}`}>{targbarkeit} %</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='text-end'>
-                                    <button type='button' onClick={() => { setopenModal(true) }} className='hausratBtn py-2'> Jetzt anfragen</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
                     </div>
                 </div>
 

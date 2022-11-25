@@ -510,7 +510,10 @@ a {
     .nextBtnKranken {
         width: 100%;
     }
+    .autoBtnStyle {
+        width: 100%;
 
+    }
     .emptyOption {
         font-size: 12px !important;
     }
