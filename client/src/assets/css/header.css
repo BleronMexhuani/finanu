@@ -736,7 +736,7 @@ a {
 }
 
 .darkTheme .navBg {
-    background-color: #282424;
+    background-color: #282424 !important;
 }
 
 .darkTheme .navLinks {
