@@ -1,15 +1,15 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
-import Valiant from '../../assets/images/hausratSliderPhotos/valiant.png'
-import Swica from '../../assets/images/hausratSliderPhotos/swica.png'
-import Groupe from '../../assets/images/hausratSliderPhotos/groupe.png'
-import Helvetia from '../../assets/images/hausratSliderPhotos/helvetia.png'
-import Helsana from '../../assets/images/hausratSliderPhotos/helsana.png'
-import Sanitas from '../../assets/images/hausratSliderPhotos/sanitas.png'
-import Credit from '../../assets/images/hausratSliderPhotos/credit.png'
-import Axa from '../../assets/images/hausratSliderPhotos/axa.png'
-import Basler from '../../assets/images/hausratSliderPhotos/basel.png'
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Pagination } from "swiper";
+// import Valiant from '../../assets/images/hausratSliderPhotos/valiant.png'
+// import Swica from '../../assets/images/hausratSliderPhotos/swica.png'
+// import Groupe from '../../assets/images/hausratSliderPhotos/groupe.png'
+// import Helvetia from '../../assets/images/hausratSliderPhotos/helvetia.png'
+// import Helsana from '../../assets/images/hausratSliderPhotos/helsana.png'
+// import Sanitas from '../../assets/images/hausratSliderPhotos/sanitas.png'
+// import Credit from '../../assets/images/hausratSliderPhotos/credit.png'
+// import Axa from '../../assets/images/hausratSliderPhotos/axa.png'
+// import Basler from '../../assets/images/hausratSliderPhotos/basel.png'
 
 
 

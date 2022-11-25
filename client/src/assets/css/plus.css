@@ -33,7 +33,7 @@
     width: 100%;
     max-width: 630px;
     position: relative;
-    height: 600px;
+    height: 630px;
 }
 
 .collapsofthelastcomponent {
@@ -236,8 +236,8 @@
     }
     .plusFormBtnDiv {
         position: absolute;
-        right: 0rem;
-        top: 275px;
+        right: 1.5rem;
+        bottom: 1.5rem;
     
     }
 }
@@ -245,12 +245,7 @@
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {
-    .plusFormBtnDiv {
-        position: absolute;
-        right: 0rem;
-        top: 255px;
     
-    }
 }
 
 @media (max-width: 991.98px) {
@@ -354,7 +349,7 @@
         max-width: 300px;
         left: -10px;
         position: absolute;
-        bottom: 26px;
+        bottom: -15px;
         width: 100%;
         max-width: 339.31px;
         width: 339.31px;

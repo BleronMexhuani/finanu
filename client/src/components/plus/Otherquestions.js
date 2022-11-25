@@ -94,7 +94,7 @@ function Otherquestions() {
 
                     {(screenWidth > 575.98) && (
                         <div className='col-12 col-md-5 my-auto'>
-                            <img style={{ maxWidth: '572px', width: '100%' }} src={imageoflastcomponent} />
+                            <img alt='' style={{ maxWidth: '572px', width: '100%' }} src={imageoflastcomponent} />
                         </div>
 
                     )}
@@ -108,7 +108,7 @@ function Otherquestions() {
                 <div className='bgcoloroflastcomponent'>
                     <div className='px-4 py-5'>
                         <div className='pb-4'>
-                            <img className='img-fluid w-100' src={imageoflastcomponentmobile} />
+                            <img alt='' className='img-fluid w-100' src={imageoflastcomponentmobile} />
                         </div>
                         <div className='pb-2'>
                             <span className='fs-3 fw-700 secondaryColor'>Uninsured driver promsie</span>

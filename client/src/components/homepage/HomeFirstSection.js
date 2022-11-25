@@ -15,8 +15,7 @@ import logo from "../../assets/images/logo.svg"
 import stars from "../../assets/images/stars.svg"
 
 import { Link } from "react-router-dom";
-import HeroImg from '../../assets/images/heroimg.png'
-import HeroImgDark from '../../assets/images/heroIluDark.png'
+import { ReactComponent as HeroImg } from '../../assets/images/heroImg.svg'
 
 function HomeFirstSection(props) {
 
@@ -26,7 +25,7 @@ function HomeFirstSection(props) {
                 <div className='cloudsBackground bodyCounterPadding'>
                     <div className='container-xl px-4 px-xl-0'>
                         <div className="row gx-4 gy-0 justify-content-center">
-                            <div className="col-12 col-md-6 text-start my-auto">
+                            <div className="col-12 col-md-6 col-xl-5 text-start my-auto">
                                 <div className='pb-3'>
                                     <span className='firstBlueTitle'>Informieren, Vergleichen & Abschliessen</span>
                                 </div>
@@ -36,12 +35,8 @@ function HomeFirstSection(props) {
                                     </span>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 mt-5 mt-md-0">
-                                {!props.darkMode
-                                    ? <img src={HeroImg} alt="" className='img-fluid' />
-                                    : <img src={HeroImgDark} alt="" className='img-fluid' />
-                                }
-
+                            <div className="col-12 col-md-6 col-xl-7 mt-5 mt-md-0">
+                                <HeroImg className='img-fluid' />
                             </div>
                         </div>
                     </div>
