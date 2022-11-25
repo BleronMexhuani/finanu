@@ -17,7 +17,7 @@ function Krankenkasse(props) {
           <First className="img-fluid" />
         </div>
       </div>
-      <div className='bodyCounterPadding'>
+      <div className='bodyCounterPadding container-xl px-4 px-xl-0'>
         <KrankenSteps />
       </div>
 

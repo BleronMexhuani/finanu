@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { ReactComponent as Car } from '../../assets/images/auto/sliderCar.svg'

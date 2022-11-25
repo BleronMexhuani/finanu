@@ -84,16 +84,16 @@ function AktuelleHypothek() {
                         <div className="col-12 col-md-6">
                             <div className="row  gx-0 gy-5 justify-content-center festhypothekImgs">
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img1} className='img-fluid' />
+                                    <img src={img1} className='img-fluid' alt='' />
                                 </div>
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img2} className='img-fluid' />
+                                    <img src={img2} className='img-fluid' alt='' />
                                 </div>
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img3} className='img-fluid' />
+                                    <img src={img3} className='img-fluid' alt='' />
                                 </div>
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img4} className='img-fluid' />
+                                    <img src={img4} className='img-fluid' alt='' />
                                 </div>
 
 
@@ -130,28 +130,28 @@ function AktuelleHypothek() {
                             <div>
                                 <div className="row g-3 text-start justify-content-start">
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.newhome.ch" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.newhome.ch" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <NewHome />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.immoscout24.ch" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.immoscout24.ch" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Immo />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.homegate.ch" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.homegate.ch" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Homegate />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.maklerkammer.ch/" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.maklerkammer.ch/" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Svit />
                                             </div>
@@ -168,7 +168,7 @@ function AktuelleHypothek() {
                             <div>
                                 <div className="row g-3 text-start justify-content-start">
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/baupreise/baupreisindex.html" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/baupreise/baupreisindex.html" className='text-decoration-none' target="_blank">
 
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Ent1 />
@@ -176,21 +176,21 @@ function AktuelleHypothek() {
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/mieten/index.html" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/mieten/index.html" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Ent2 />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Ent3 />
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.ubs.com/ch/de/private/mortgages/real-estate.html" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.ubs.com/ch/de/private/mortgages/real-estate.html" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Ent4 />
                                             </div>
@@ -207,7 +207,7 @@ function AktuelleHypothek() {
                             <div>
                                 <div className="row g-3 text-start justify-content-start">
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.ch.ch/de/steuern-und-finanzen/steuerarten/immobiliensteuer/" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.ch.ch/de/steuern-und-finanzen/steuerarten/immobiliensteuer/" className='text-decoration-none' target="_blank">
 
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Rech1 />
@@ -215,7 +215,7 @@ function AktuelleHypothek() {
                                         </a>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
-                                        <a href="https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html" className='text-decoration-none' target="_blank">
+                                        <a rel="noreferrer" href="https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html" className='text-decoration-none' target="_blank">
                                             <div className='p-3 useFullLinks text-center'>
                                                 <Rech2 />
                                             </div>

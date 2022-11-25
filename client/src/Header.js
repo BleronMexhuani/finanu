@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 
 
 function Header(props) {
-    const { pathname } = useLocation();
     const [toggleMenu, setToggleMenu] = useState(false)
 
     const toggleNav = () => {
@@ -34,6 +33,8 @@ function Header(props) {
     }, [])
 
     const [show, setShow] = useState(false)
+    const { pathname } = useLocation();
+
 
     const controlNavbar = () => {
         if (window.scrollY >= 40) {
@@ -45,6 +46,8 @@ function Header(props) {
             setShow(false)
         }
     }
+  
+
     const [isShown, setIsShown] = useState(false);
     const [isShown1, setIsShown1] = useState(false);
 
@@ -54,7 +57,7 @@ function Header(props) {
             window.removeEventListener('scroll', controlNavbar)
         }
 
-    }, [])
+    }, [pathname])
 
     return (
         <>
