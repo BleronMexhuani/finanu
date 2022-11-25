@@ -1,10 +1,11 @@
 import React from 'react'
-import BeatingHeart from '../../assets/images/beatingHeart.svg'
-import LargeTile from '../../assets/images/hausratimg.svg'
+import { useState, useEffect } from 'react'
+
 import img1 from '../../assets/images/3.svg'
 import img2 from '../../assets/images/5.svg'
 import img3 from '../../assets/images/10.svg'
 import img4 from '../../assets/images/15.svg'
+
 import { ReactComponent as NewHome } from '../../assets/images/hausratSliderPhotos/newHome.svg'
 import { ReactComponent as Homegate } from '../../assets/images/hausratSliderPhotos/homegate.svg'
 import { ReactComponent as Immo } from '../../assets/images/hausratSliderPhotos/immoscout24.svg'
@@ -21,12 +22,25 @@ import { ReactComponent as Rech2 } from '../../assets/images/hausratSliderPhotos
 
 
 function AktuelleHypothek() {
+
     const ScrollToForm = () => {
         window.scrollTo({
-            top: 0
+            top: 600
         });
     }
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
+    useEffect(() => {
+        const changeWidth = () => {
+            setScreenWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', changeWidth)
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+    }, [])
     return (
         <div>
             <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
@@ -38,15 +52,23 @@ function AktuelleHypothek() {
                             <div className='pb-3 text-start'>
                                 <span className='fw-700 finanuSubTitle fs-3'>Aktuelle Hypothekarzinsen​</span>
                             </div>
-                            <div className='text-start pb-4 pb-md-0'>
-                                <button onClick={ScrollToForm} className='hausratBtn py-2'>Zum Hypothekenvergleich</button>
-                            </div>
+                            {(screenWidth > 767.98) && (
+                                <div className='text-start pb-4 pb-md-0'>
+                                    <button onClick={ScrollToForm} className='hausratBtn py-2'>Zum Hypothekenvergleich</button>
+                                </div>
+                            )}
+
                         </div>
                         <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start my-auto">
                             <span className='fw-500 fs-5 normalTextToWhite'>
                                 Mit Finanu erhalten Sie attraktive Zinsen für die Finanzierung Ihren Immobilie und entscheiden unabhängig, welche Hypothekenform zu Ihren Bedurfnissen passt.
                             </span>
                         </div>
+                        {(screenWidth < 767.98) && (
+                            <div className='text-start pt-4'>
+                                <button onClick={ScrollToForm} className='hausratBtn py-2'>Zum Hypothekenvergleich</button>
+                            </div>
+                        )}
                     </div>
                     <div className="row g-0 justify-content-center bodyCounterPadding">
                         <div className="col-12 col-md-auto my-auto">
@@ -194,7 +216,7 @@ function AktuelleHypothek() {
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-4">
                                         <a href="https://www.bsv.admin.ch/bsv/de/home/sozialversicherungen/bv/grundlagen-und-gesetze/grundlagen/wohneigentumsfoerderung.html" className='text-decoration-none' target="_blank">
-                                        <div className='p-3 useFullLinks text-center'>
+                                            <div className='p-3 useFullLinks text-center'>
                                                 <Rech2 />
                                             </div>
                                         </a>

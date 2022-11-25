@@ -41,7 +41,7 @@ function KrankenCards(props) {
                                         <img src={BeatingHeart} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle'>Grundmodell <br></br> (0%)</span>
+                                        <span className='fw-600 finanuSubTitle'>Grundmodell <br className='d-none d-sm-block'></br> (0%)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Freie Arztwahl.</span>
@@ -54,7 +54,7 @@ function KrankenCards(props) {
                                         <img src={Doctor} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Hausarzt <br></br> (Max. 12%)</span>
+                                        <span className='fw-600 finanuSubTitle '>Hausarzt <br className='d-none d-sm-block'></br> (Max. 12%)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Der Hausarzt überweist den
@@ -69,7 +69,7 @@ function KrankenCards(props) {
                                         <img src={Hands} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Versorgungznetz <br></br> (HMO)</span>
+                                        <span className='fw-600 finanuSubTitle '>Versorgungznetz <br className='d-none d-sm-block'></br> (HMO)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>(Allgemeinärzte oder
@@ -83,7 +83,7 @@ function KrankenCards(props) {
                                         <img src={Medicine} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Apothekenmodell <br></br> (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle '>Apothekenmodell <br className='d-none d-sm-block'></br> (TELMED)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Erste Anlaufstelle bei allen Fragen
@@ -99,7 +99,7 @@ function KrankenCards(props) {
                                         <img src={PhoneDoc} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Telemedizin <br></br> (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle '>Telemedizin <br className='d-none d-sm-block'></br> (TELMED)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Der Versicherte muss eine

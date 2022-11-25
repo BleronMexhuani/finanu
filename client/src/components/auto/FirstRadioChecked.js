@@ -14,7 +14,7 @@ function FirstRadioChecked() {
         var elem = scrollDiv
         window.scrollTo(
             {
-                top: elem.current.offsetTop - 100,
+                top: elem.current.offsetTop + 400,
                 behavior: "smooth"
             });
     }, [step])
