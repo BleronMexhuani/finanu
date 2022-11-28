@@ -8,7 +8,7 @@ function PensionPlan(props) {
     return (
         <div>
             <div className='container-xl px-4 px-xl-0'>
-                <div className='pb-4'>
+                <div className='pb-3'>
                     <span className="firstBlueTitle fw-bold fs-1" style={{ color: '#50B8E7'}}>Lieber sorglos steuern sparen, statt vorsorgelos steuern zahlen</span>
                 </div>
             </div>

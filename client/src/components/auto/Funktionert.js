@@ -5,7 +5,7 @@ function Funktionert() {
         <div className=''>
             <div className="wrapDiv container-xl px-4 px-xl-0">
                 <div className="pb-4 text-center">
-                    <span className='fw-700 finanuSubTitle fs-3'>
+                    <span className='fw-700 finanuSubTitle fs-4'>
                         So einfach funktioniert’s
                     </span>
                 </div>
@@ -13,7 +13,7 @@ function Funktionert() {
                     <div className="row g-4">
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
-                                <div className="pb-3">
+                                <div className="pb-4">
                                     <svg height="85" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_579_11365)">
                                             <path d="M36.8693 42.5984C39.753 45.4352 42.6365 48.2721 45.5203 51.1089C47.0432 52.6071 48.5698 54.1086 50.2293 55.4083C51.1247 56.1095 52.1206 56.7723 53.2096 56.7727C54.2986 56.7732 55.4554 55.8551 55.4474 54.6246C55.4407 53.6642 54.7781 52.8929 54.157 52.2377C49.5658 47.3952 44.7668 42.804 39.7835 38.485C38.8696 39.8233 37.9563 41.1619 36.8693 42.5984V42.5984Z" fill="white" />
@@ -69,7 +69,7 @@ function Funktionert() {
                         </div>
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
-                                <div className="pb-3">
+                                <div className="pb-4">
                                     <svg height="85" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_579_11844)">
                                             <path d="M12.3131 61.2258H47.3075V49.991H12.3131V61.2258Z" fill="white" />
@@ -134,7 +134,7 @@ function Funktionert() {
                         </div>
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
-                                <div className="pb-3">
+                                <div className="pb-4">
                                     <svg height="85" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_579_11290)">
                                             <path d="M35.4211 61.8905H52.4424V49.5886H35.4211V61.8905Z" fill="#ACD4F7" />
@@ -229,7 +229,7 @@ function Funktionert() {
                         </div>
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
-                                <div className="pb-3">
+                                <div className="pb-4">
                                     <svg height="85" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_579_11804)">
                                             <path d="M7.25 35.8747H12.4898V14.266H7.25V35.8747Z" fill="white" />

@@ -44,7 +44,7 @@ function ThirdStep(props) {
             <form onSubmit={handleThirdStep}>
                 <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-4 px-sm-5 pb-5 pt-4 mx-auto">
                     <div className='pb-4'>
-                        <span className='finanuSubTitle fw-800 text-light'>Einnahmen</span>
+                        <span className='fs-5 fw-800 text-light'>Einnahmen</span>
                     </div>
                     <div className='text-start'>
                         <div className='pb-2'>

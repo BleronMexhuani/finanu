@@ -116,7 +116,7 @@
     border-radius: 0px 0px 12px 12px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .customSelectStyle::placeholder {

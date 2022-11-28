@@ -88,7 +88,7 @@ function Analys360() {
                 <div>
                     <div className="pb-5">
                         <div className='pb-3'>
-                            <span className='fw-800 firstBlueTitle fs-1'>360° Budgetanalyse</span>
+                            <span className='fw-700 firstBlueTitle fs-1'>360° Budgetanalyse</span>
                         </div>
                         <div>
                             <span className='normalTextToWhite finanuSubTitle fw-500 fs-5'>
@@ -127,8 +127,8 @@ function Analys360() {
                             <div className="col-auto">
                                 <div className={`${step === 0 ? 'activeBackground' : 'passiveBackground'} `} onClick={() => { changeStepSvg(0) }}>
                                     <svg  className={`${step === 0 ? 'activeSvg' : 'passiveSvg'} `} width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M32.3333 32.5V29.3333C32.3333 27.6536 31.6661 26.0427 30.4783 24.855C29.2906 23.6673 27.6797 23 26 23H13.3333C11.6536 23 10.0427 23.6673 8.85499 24.855C7.66726 26.0427 7 27.6536 7 29.3333V32.5" stroke="#D0D0D0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M19.6693 16.6667C23.1671 16.6667 26.0026 13.8311 26.0026 10.3333C26.0026 6.83553 23.1671 4 19.6693 4C16.1715 4 13.3359 6.83553 13.3359 10.3333C13.3359 13.8311 16.1715 16.6667 19.6693 16.6667Z" stroke="#D0D0D0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M32.3333 32.5V29.3333C32.3333 27.6536 31.6661 26.0427 30.4783 24.855C29.2906 23.6673 27.6797 23 26 23H13.3333C11.6536 23 10.0427 23.6673 8.85499 24.855C7.66726 26.0427 7 27.6536 7 29.3333V32.5" stroke="#D0D0D0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M19.6693 16.6667C23.1671 16.6667 26.0026 13.8311 26.0026 10.3333C26.0026 6.83553 23.1671 4 19.6693 4C16.1715 4 13.3359 6.83553 13.3359 10.3333C13.3359 13.8311 16.1715 16.6667 19.6693 16.6667Z" stroke="#D0D0D0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                 </div>
                             </div>

@@ -7,7 +7,7 @@ function PensionChart() {
     const [monthly, setMonthly] = useState(500);
     const [age, setAge] = useState(40);
     const [amount, setAmount] = useState(10000);
-    const [risk, setRisk] = useState(2);
+    const [risk, setRisk] = useState('2');
     const [lowRisk, setLowRisk] = useState([]);
     const [mediumRisk, setMediumRisk] = useState([]);
     const [highRisk, setHighRisk] = useState([]);
@@ -21,12 +21,12 @@ function PensionChart() {
         const midi = [];
         const highi = [];
         let highP, mediumP, lowP;
-        if (risk == 3) {
+        if (risk === '3') {
             highP = 11;
             mediumP = 7.5;
             lowP = 4.5;
         }
-        else if (risk == 2) {
+        else if (risk === '2') {
             highP = 8.5;
             mediumP = 4.8;
             lowP = 1.2;
@@ -245,7 +245,7 @@ function PensionChart() {
         <div>
             <div className='container-xl px-4 px-xl-0'>
                 <div className='pb-4'>
-                    <span className='fw-700 fs-3 normalTextToWhite'>Berechne jetzt deine 3. Säule</span>
+                    <span className='fw-600 fs-3 normalTextToWhite'>Berechne jetzt deine 3. Säule</span>
                 </div>
                 <div className='pensionChartDiv p-4'>
                     <div className=''>
