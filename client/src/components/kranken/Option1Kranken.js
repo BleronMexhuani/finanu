@@ -42,12 +42,12 @@ function Option1Kranken(props) {
             <div className='wrapDiv container-xl px-4 px-xl-0'>
                 <div className="row g-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-lg-7 text-start">
-                        <div className='pb-5 mb-0 mb-md-3'>
-                            <div className='pb-3'>
-                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}>VARIANTE 1: ALLES DIGITAL</span>
+                        <div className='pb-4 mb-1'>
+                            <div className='pb-2'>
+                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}> Variante 1: Alles Digital</span>
                             </div>
                             <div className='pb-3'>
-                                <span className='firstBlueTitle fw-600 normalTextToWhite'>VERGLEICHEN & ABSCHLIESSEN - ALLES DIGITAL</span>
+                                <span className='firstBlueTitle fw-600 normalTextToWhite'>Vergleichen & Abschliessen - Alles Digital</span>
                             </div>
                             <div>
                                 <span className='fw-500 normalTextToWhite descriptionFS'>Mit Finanu können Sie sich zu allen Themen aus den Bereichen Versicherung und Finanzen informieren, verschiedene Anbieter vergleichen, Offerten einholen und diese Digital per Livechat oder Zoom abschliessen. Beliebte Themen:</span>
@@ -373,7 +373,7 @@ function Option1Kranken(props) {
                 <div className='normalTextToWhite'>
                     <div className="row g-5 gy-5 gy-lg-0 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <svg width="87" height="83" viewBox="0 0 87 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M54.5573 57.3806L69.0245 71.5506C71.6909 74.1735 74.4421 76.8856 77.3799 79.1866C78.8997 80.3711 80.5385 81.4682 82.2537 81.4699H82.2621C83.1029 81.4699 83.9944 81.0829 84.6397 80.4349C85.2087 79.8551 85.5312 79.1215 85.5228 78.3698C85.5144 76.934 84.4785 75.7224 83.417 74.6049C75.4439 66.198 68.1912 59.0888 59.5472 51.563C58.1888 53.5472 56.1622 55.2272 54.5573 57.3806ZM82.2621 82.9464H82.2537C80.0884 82.9457 78.1949 81.6975 76.4713 80.3491C73.4655 77.9978 70.6805 75.2561 67.9886 72.6034L52.8938 57.8835C52.6305 57.6238 53.3383 57.1819 53.559 56.8856C55.5034 54.3196 57.6178 52.5732 59.2143 50.2322C60.799 51.0513 59.3347 49.9255 59.547 49.8993C59.7506 49.8703 59.7184 49.4287 59.8796 49.567C68.7785 57.2785 76.2929 64.9436 84.4867 73.5886C85.6926 74.8614 86.9832 76.3864 87.0001 78.3605C87.0088 79.5084 86.5416 80.6148 85.684 81.4758C84.7669 82.3971 83.4848 82.9464 82.2621 82.9464Z" fill="black" />
                                     <path d="M9.21301 32.9054C9.21301 45.9689 19.8352 56.5962 32.9031 56.5962C45.9623 56.5962 56.5932 45.9689 56.5932 32.9054C56.5932 19.8409 45.9623 9.21365 32.9031 9.21365C19.8352 9.21365 9.21301 19.8409 9.21301 32.9054ZM32.9031 58.0746C19.0203 58.0746 7.73537 46.784 7.73537 32.9054C7.73537 19.0267 19.0202 7.73537 32.9031 7.73537C46.7775 7.73537 58.0705 19.0267 58.0705 32.9054C58.0705 46.7839 46.7775 58.0746 32.9031 58.0746ZM32.9031 1.47737C15.5728 1.47737 1.47764 15.5758 1.47764 32.9054C1.47764 50.2348 15.5728 64.3325 32.9031 64.3325C50.2333 64.3325 64.3285 50.2348 64.3285 32.9054C64.3285 15.5758 50.2334 1.47737 32.9031 1.47737ZM32.9031 65.8099C14.7575 65.8099 0 51.049 0 32.9054C0 14.7616 14.7575 0 32.9031 0C51.0483 0 65.8059 14.7616 65.8059 32.9054C65.8059 51.049 51.0484 65.8099 32.9031 65.8099Z" fill="black" />
@@ -409,7 +409,7 @@ function Option1Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <svg height="83" viewBox="0 0 82 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M33.3685 58.3104C28.2525 60.9846 19.8564 63.8564 16.1255 64.6631C20.0581 63.7554 26.7133 58.3104 44.2588 51.6554C61.8044 45.0004 71.4846 48.6301 69.0646 48.0251C66.6445 47.4201 40.0237 54.8317 33.3685 58.3104Z" fill="#D9D9D9" />
                                     <path d="M29.3991 61.7896C26.797 62.9309 22.9547 64.5765 19.4163 66.0134M29.3991 61.7896C29.6948 61.6709 29.9974 61.5501 30.3067 61.4272M29.3991 61.7896C28.6731 62.0795 22.1551 46.1619 18.9869 38.1668M78.4056 49.0842C73.2091 46.382 50.9777 53.6032 36.0543 59.2089M58.1375 2.19531C56.5241 7.64048 49.4252 20.7089 33.9368 29.4211C28.2169 32.6386 23.201 35.5975 18.9869 38.1668M66.9553 18.8333C70.0662 18.2283 76.7116 18.5913 78.4056 24.8835C80.0997 31.1757 76.9353 34.6575 75.1413 35.612M19.4163 66.0134C15.1391 67.7503 12.7611 68.8683 10.6436 68.4448C9.13104 68.1423 3.86401 65.8088 1.56812 58.1595C-0.247788 52.1093 2.67732 48.4792 4.89572 47.2692C6.93087 45.8064 11.7898 42.5548 18.9869 38.1668M19.4163 66.0134C24.4582 71.2606 33.9368 82.3602 35.1468 84.1753C36.5305 86.2509 43.012 99.6032 49.6672 95.0656C56.3224 90.528 51.4823 83.8728 44.2221 78.4276C40.743 75.8183 37.235 71.6173 34.5043 67.8398M30.3067 61.4272C32.0367 60.74 33.9745 59.9901 36.0543 59.2089M30.3067 61.4272C31.1963 62.9718 32.6761 65.3109 34.5043 67.8398M36.0543 59.2089C37.2394 61.38 38.5884 66.1457 34.5043 67.8398M5.80344 53.0168C9.33271 51.1009 16.5728 47.2692 17.2988 47.2692M8.52602 58.1595C11.7528 56.2436 18.5693 52.4723 20.0214 52.7143M10.6436 62.6971C14.7779 61.5879 23.0465 59.1275 23.0465 58.1595M58.1375 40.0089C60.0534 42.5927 63.8247 48.025 63.5827 49.0842M55.7174 44.2441C56.9275 45.6558 58.7793 48.1767 58.7425 49.0842M52.6923 47.2692C53.0957 48.2775 53.9391 49.3867 54.8099 49.6892M49.0622 49.0842C49.6672 49.8909 50.6115 51.5043 50.5748 52.1093" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
@@ -429,12 +429,12 @@ function Option1Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <img src={Offerte} height="83px" alt="" />
                             </div>
                             <div>
                                 <div className='pb-2'>
-                                    <span className='firstBlueTitle fs-5 fw-700'>Optionales Abschlussgespräch   </span>
+                                    <span className='firstBlueTitle fs-5 fw-700'>Offerte anfordern</span>
                                 </div>
                                 <div>
                                     <span className='fw-500'>Bestellen Sie auf finanu die Offerten der verschiedenen Gesellschaften.
@@ -444,7 +444,7 @@ function Option1Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg" >
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                   
                                 <img src={Mesazhi} />
 {/* here */}
@@ -460,7 +460,7 @@ function Option1Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <img src={Abschlie} height="83px" alt="" />
                             </div>
                             <div>
