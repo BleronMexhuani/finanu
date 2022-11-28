@@ -74,7 +74,7 @@ function PlusTabs() {
                         disableOnInteraction: false,
                     }}
                     modules={[EffectFade, Autoplay]}
-                    className="mySwiper"
+                    className="mySwiper mb-4 mb-md-2 mb-lg-0"
                     onSlideChange={(swiper) => { setactive((swiper.activeIndex - 1 > 6) ? 0 : swiper.activeIndex - 1) }}
                    
                 >

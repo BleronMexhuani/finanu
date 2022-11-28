@@ -12,7 +12,7 @@ import CoverYouNeed from './plus/CoverYouNeed'
 import LtBlueSetion from './plus/LtBlueSetion'
 import Vorar from './plus/Vorar'
 import Otherquestions from './plus/Otherquestions'
-function Plus() {
+function Plus(props) {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -64,7 +64,7 @@ function Plus() {
                         <LtBlueSetion />
                     </div>
                     <div className='py-md-5 pb-5 mb-5'>
-                        <Vorar />
+                        <Vorar darkMode={props.darkMode} />
                     </div>
                 </>
             )}

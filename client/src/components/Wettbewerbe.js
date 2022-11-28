@@ -1,12 +1,13 @@
 import React from "react";
 import "../assets/css/wettbewerbe.css";
-import { ReactComponent as Logo } from "../assets/images/bileta.svg";
+import { ReactComponent as LogoDark } from "../assets/images/Wettbewerbe-Light.svg";
+import { ReactComponent as Logo } from "../assets/images/Wettbewerbe-Dark.svg";
 import bern from "../assets/images/berncity.jpg";
 import europa from "../assets/images/europapark.jpg";
 import old from "../assets/images/oldcity.jpg";
 import { Link } from "react-router-dom";
 
-function Wettbewerbe() {
+function Wettbewerbe(props) {
   return (
     <div>
       <div className="wrapDiv bodyCounterPadding container-xl px-4 px-xl-0">
@@ -19,14 +20,20 @@ function Wettbewerbe() {
               </h2>
             </div>
             <div className="text-start">
-              <span className="fs-5 fw-600">
+              <span className="fs-5 fw-600 subtitleofwettbewerbe">
                 Lassen Sie sich die Gelegenheit nicht entgehen, an ausgewählten und beliebten Verlosungen teilzunehmen. Auch Sie können mit etwas Glück zu den unzähligen Gewinnern der tollen Wettbewerbe gehören. Probieren geht über Studieren!</span>
             </div>
 
           </div>
           <div className="col-12 col-md-6">
             <div className="">
-              <Logo className="img-fluid" />
+
+              {props.darkMode
+
+                ? < Logo className="img-fluid" style={{maxWidth: '596px', maxHeight: '480px'}} />
+                : < LogoDark className="img-fluid" style={{maxWidth: '596px', maxHeight: '480px'}} />
+              }
+
             </div>
 
           </div>

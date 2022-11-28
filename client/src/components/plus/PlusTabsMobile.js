@@ -38,7 +38,7 @@ export default function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div>
-                        <div className="styleofplustabsmobile">
+                        <div className="styleofplustabsmobile p-4">
                             <div>
                                 <Mobilecar />
                             </div>
@@ -51,7 +51,7 @@ export default function App() {
                 </SwiperSlide>
                 <SwiperSlide className="">
                     <div>
-                        <div className="styleofplustabsmobile">
+                        <div className="styleofplustabsmobile p-4">
                             <div>
                                 <Mobilecar />
                             </div>
@@ -64,7 +64,7 @@ export default function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div>
-                        <div className="styleofplustabsmobile">
+                        <div className="styleofplustabsmobile p-4">
                             <div>
                                 <Mobilecar />
                             </div>

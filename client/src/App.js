@@ -67,7 +67,7 @@ function App() {
               <Route exact path="/blog/erklarungundunterschiedealternativ" element={<Blog1 />} />
 
               {/* Wettbewerbe */}
-              <Route exact path="/wettbewerbe" element={<Wettbewerbe />} />
+              <Route exact path="/wettbewerbe" element={<Wettbewerbe  darkMode={darkMode} />} />
               <Route exact path="/wettbewerbe/1"  element={<WLinks Photo={WettPhoto1} data="31.07.2022" />} />
               <Route exact  path="/wettbewerbe/2"  element={<WLinksTwo Photo={WettPhoto2} />} />
               <Route exact path="/wettbewerbe/3" element={<WLinksThree Photo={WettPhoto3} />} />
@@ -88,11 +88,11 @@ function App() {
               <Route exact path="/finanzen/pensionsplanung-und-ruhestand" element={<PensionPlan darkMode={darkMode} />} />
               <Route exact path="/finanzen/haus-hypothek" element={<Hausrat />}/>
               <Route exact path="/finanzen/360" element={<Analys360 />} />
-              <Route exact path="/uber-uns" element={<UberUns />} />
-              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/uber-uns" element={<UberUns darkMode={darkMode}  />} />
+              <Route exact path="/login" element={<Login />} darkMode={darkMode}/>
 
               {/* Plus */}
-              <Route exact path="/plus" element={<Plus />} />
+              <Route exact path="/plus" element={<Plus darkMode={darkMode}  />} />
 
             </Routes>
             <Footer />

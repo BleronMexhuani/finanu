@@ -15,7 +15,8 @@ import logo from "../../assets/images/logo.svg"
 import stars from "../../assets/images/stars.svg"
 
 import { Link } from "react-router-dom";
-import { ReactComponent as HeroImg } from '../../assets/images/heroImg.svg'
+import { ReactComponent as HeroImg } from '../../assets/images/Home.svg'
+
 import TrustBox from './TrustBox'
 
 function HomeFirstSection(props) {
