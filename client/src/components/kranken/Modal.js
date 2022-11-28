@@ -1,6 +1,11 @@
 import React from 'react'
 import XBtn from "../../assets/images/xButton.svg"
-
+import { ReactComponent as Name } from '../../assets/images/modalIcons/name.svg'
+import { ReactComponent as ModalEmailIcon } from '../../assets/images/modalIcons/emailIcon.svg'
+import { ReactComponent as Phone } from '../../assets/images/modalIcons/phone.svg'
+import { ReactComponent as Post } from '../../assets/images/modalIcons/post.svg'
+import { ReactComponent as Location } from '../../assets/images/modalIcons/location.svg'
+import { ReactComponent as Street } from '../../assets/images/modalIcons/street.svg'
 
 function Modal(props) {
     return (
@@ -18,16 +23,30 @@ function Modal(props) {
                                 <div className='pb-2'>
                                     <span className='fw-500'>Vorname und Nachname</span>
                                 </div>
-                                <div>
-                                    <input className='step3InputRechtss hausratModalInputs form-control' type="text" name="" placeholder='Vorname und Nachname' id="" />
+                                <div className='step3InputRechtss hausratModalInputs '>
+                                    <div className="row gx-2">
+                                        <div className="col-auto">
+                                            <Name height="22" />
+                                        </div>
+                                        <div className="col">
+                                            <input className='form-control step3InputRechtss p-0 shadow-none' type="text" name="" placeholder='Vorname und Nachname' id="" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='pb-4'>
                                 <div className='pb-2'>
                                     <span className='fw-500'>E-mail</span>
                                 </div>
-                                <div>
-                                    <input className='step3InputRechtss hausratModalInputs form-control' type="text" name="" placeholder='E-mail' id="" />
+                                <div className='step3InputRechtss hausratModalInputs '>
+                                    <div className="row gx-2">
+                                        <div className="col-auto">
+                                            <ModalEmailIcon height="22" />
+                                        </div>
+                                        <div className="col">
+                                            <input className='form-control step3InputRechtss p-0 shadow-none' type="email" name="" placeholder='E-mail' id="" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='pb-4'>
@@ -36,8 +55,17 @@ function Modal(props) {
                                         <div className='pb-2'>
                                             <span className='fw-500'>Telefonnummer</span>
                                         </div>
-                                        <div className="">
-                                            <input className='step3InputRechtss hausratModalInputs form-control' type="tel" name="" placeholder='Telefonnummer' id="" />
+
+                                        <div className='step3InputRechtss hausratModalInputs '>
+                                            <div className="row gx-2">
+                                                <div className="col-auto">
+                                                    <Phone height="22" />
+                                                </div>
+                                                <div className="col">
+                                                    <input className='form-control step3InputRechtss p-0 shadow-none' type="tel" name="" placeholder='Telefonnummer' id="" />
+
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -49,15 +77,32 @@ function Modal(props) {
                                             <span className='fw-500'>Postleitzahl</span>
                                         </div>
                                         <div className="">
-                                            <input className='step3InputRechtss hausratModalInputs form-control' type="text" name="" placeholder='PLZ' id="" />
+                                        </div>
+                                        <div className='step3InputRechtss hausratModalInputs '>
+                                            <div className="row gx-2">
+                                                <div className="col-auto">
+                                                    <Post height="22" />
+                                                </div>
+                                                <div className="col">
+                                                    <input className='form-control step3InputRechtss p-0 shadow-none' type="text" name="" placeholder='PLZ' id="" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='col-12 col-md-6'>
                                         <div className='pb-2'>
                                             <span className='fw-500'>Ort</span>
                                         </div>
-                                        <div className="">
-                                            <input className='step3InputRechtss hausratModalInputs form-control' type="text" name="" placeholder='Ort' id="" />
+                                        
+                                        <div className='step3InputRechtss hausratModalInputs '>
+                                            <div className="row gx-2">
+                                                <div className="col-auto">
+                                                    <Location height="22" />
+                                                </div>
+                                                <div className="col">
+                                                    <input className='form-control step3InputRechtss p-0 shadow-none' type="text" name="" placeholder='Ort' id="" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -66,8 +111,16 @@ function Modal(props) {
                                 <div className='pb-2'>
                                     <span className='fw-500'>Strasse</span>
                                 </div>
-                                <div>
-                                    <input className='step3InputRechtss hausratModalInputs form-control' type="text" name="" placeholder='Strasse' id="" />
+                                
+                                <div className='step3InputRechtss hausratModalInputs '>
+                                    <div className="row gx-2">
+                                        <div className="col-auto">
+                                            <Street height="22" />
+                                        </div>
+                                        <div className="col">
+                                            <input className='form-control step3InputRechtss p-0 shadow-none' type="text" name="" placeholder='Strasse' id="" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="pb-4">
@@ -75,7 +128,7 @@ function Modal(props) {
                                     <span className='firstBlueTitle fs-5'>Was interessiert dich?</span>
                                 </div>
                                 <div>
-                                    <select name="" id="" className='step3InputRechtss hausratModalInputs form-control'>
+                                    <select name="" id="" className='step3InputRechtss hausratModalInputs form-select'>
                                         <option value="Vorsage &amp; Pensionierung">Vorsage &amp; Pensionierung</option>
                                         <option value="Wohnen, Eigenheim &amp; Hypotheken">Wohnen, Eigenheim &amp; Hypotheken</option>
                                         <option value="Auto &amp; Motorrad">Auto &amp; Motorrad</option><option value="Krankheit &amp; Unfall">Krankheit &amp; Unfall</option>

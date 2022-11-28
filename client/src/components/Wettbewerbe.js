@@ -14,10 +14,10 @@ function Wettbewerbe(props) {
         <div className="row justify-content-center bodyCounterPadding">
 
           <div className="col-12 col-md-6 my-md-auto">
-            <div className="pb-3">
-              <h2 className=" text-md-start firstBlueTitle fs-1" >
+            <div className="pb-3 text-center text-md-start">
+              <span className="firstBlueTitle fs-1" >
                 Alle aktuellen Gewinnspiele von Finanu.ch
-              </h2>
+              </span>
             </div>
             <div className="text-start">
               <span className="fs-5 fw-600 subtitleofwettbewerbe">

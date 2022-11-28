@@ -49,8 +49,8 @@ function LastSectionRechtss() {
                     <div className="row g-3 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
-                                <div className='pb-4'>
-                                    <img src={Arbeit} />
+                                <div className='pb-3'>
+                                    <img src={Arbeit} style={{height: '90px'}} alt='' />
 
                                 </div>
                                 <div >
@@ -60,8 +60,8 @@ function LastSectionRechtss() {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
-                                <div className='pb-4'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                                <div className='pb-3'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="90" viewBox="0 0 90 80" fill="none">
                                         <path d="M34.8801 38.4925V35.9397C38.5562 37.7777 47.8144 36.195 51.984 35.1738V38.4925H34.8801Z" fill="#D9D9D9" />
                                         <path d="M56.8344 38.7478V35.9986C60.0166 37.978 68.0312 36.2735 71.6407 35.1738V38.7478H56.8344Z" fill="#D9D9D9" />
                                         <path d="M32.8379 61.7233L31.0509 58.9152C37.5252 60.8946 57.4047 58.9937 64.7482 57.894L62.9612 61.7233H32.8379Z" fill="#D9D9D9" />
@@ -80,7 +80,7 @@ function LastSectionRechtss() {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
-                                <div className='pb-4'>
+                                <div className='pb-3'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 91" fill="none">
                                         <rect x="16.0582" y="38.8635" width="55.9953" height="2.66644" fill="#D9D9D9" />
                                         <path d="M34.7234 52.4629H53.3885L53.216 58.3291L52.8552 70.5947H44.0559H35.2567L34.8959 58.3291L34.7234 52.4629Z" fill="#bee8ff" />
@@ -95,7 +95,7 @@ function LastSectionRechtss() {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
-                                <div className='pb-4'>
+                                <div className='pb-3'>
                                     <Alltag width='120' height='90' />
                                 </div>
                                 <div >
@@ -105,7 +105,7 @@ function LastSectionRechtss() {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
-                                <div className='pb-4'>
+                                <div className='pb-3'>
                                     <svg width="96" height="90" viewBox="0 0 96 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M68.7507 15.0353C73.8596 14.3176 79.7938 24.7278 68.7507 28.6769C60.7226 31.5479 61.4524 14.3174 68.7507 15.0353Z" fill="#BEE8FF" stroke="black" strokeWidth="0.5" strokeLinecap="round" />
                                         <path d="M8 66.1772V86M13.8462 80.8608V86M25.5385 80.8608V86M37.2308 80.8608V86M48.9231 80.8608V86M60.6154 80.8608V86M72.3077 80.8608V86M84 80.8608V86M54.7692 28V39.0127M59.1538 31.6709V39.0127M64.2692 33.8734V39.0127" stroke="black" strokeWidth="0.5" strokeLinecap="round" />

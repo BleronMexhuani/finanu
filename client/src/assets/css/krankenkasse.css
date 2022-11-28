@@ -157,6 +157,9 @@ a {
     height: 95px;
 }
 
+.privatenImgSize {
+    height: 100%;
+}
 .privatenImgSize img {
     height: 150px;
 }
@@ -300,10 +303,9 @@ a {
     background: #50B8E7;
     border-radius: 18px;
     color: #fff;
-    font-size: 15px;
     border: 1px solid #50B8E7;
     transform: scale(1.03);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .blueBgDiv path {

@@ -13,7 +13,7 @@ function Krankenkasse(props) {
   return (
     <>
       <div className="container-xl px-4 px-xl-0">
-        <div className='krankenFirstIluDiv pt-4 pt-md-0 '>
+        <div className='krankenFirstIluDiv'>
           <First className="img-fluid" />
         </div>
       </div>

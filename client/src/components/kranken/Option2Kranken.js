@@ -7,6 +7,7 @@ import LastIlustration from '../../assets/images/krankenIlustration.svg'
 import LastIlustrationDark from '../../assets/images/krankenIlustrationDark.svg'
 import Modal from './Modal'
 import Abschlie from '../../assets/images/abschliessen.svg'
+import {ReactComponent as MsgHand} from '../../assets/images/option2Hand.svg'
 function Option2Kranken(props) {
 
     const [openModal, setopenModal] = useState(false)
@@ -111,13 +112,7 @@ function Option2Kranken(props) {
                     <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className='pb-3'>
-                                <svg width="87" height="83" viewBox="0 0 87 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M51.0002 64.5002C42.0003 64.5002 26.7002 69.5002 27.5002 63.5002C27.3575 62.2163 28.5581 59.5405 33.9234 57.7928C35.9191 57.1427 37.9038 56.4158 39.6744 55.2888C44.8831 51.9733 51.3394 48.1528 56.0003 49.0002C61.182 49.9423 76.1276 49.5531 84.1118 46.9961C84.7856 46.7803 85.4994 47.2681 85.4909 47.9755C85.4146 54.3527 84.8871 63.3716 84.5651 68.072C84.5293 68.5954 84.0938 69.0003 83.5691 69.0003H81.2179C79.1004 69.0003 77.0197 69.4833 75.1017 70.3804C67.2846 74.0369 56.0659 78.7859 48.4803 80.6354C43.173 81.9294 37.9815 79.205 33.1568 76.6429C20.3272 69.8298 -2.46728 56.9515 1.50037 51C2.30045 47.4 17.0004 59 27.6231 62.5M3.00037 50.0003C2.3337 47.6669 2.50037 43.7003 8.50037 46.5003C16.0004 50.0003 24.2234 60.0646 30.2236 59.5M9.50037 46.5003C9.50037 44.8335 11.1004 42.2 17.5004 47C25.5004 53 36.5004 55.6791 38.5004 56.0397" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
-                                    <path d="M81.5 55C81.5 58 81.4 64.2 81 65M77.5 61.5C77.5 62.8333 77.4 65.6 77 66" stroke="black" strokeWidth="1.4" strokeLinecap="round" />
-                                    <path d="M35.8516 43L37.5312 32.5614C32.5338 31.8737 31.1301 26.2164 31.053 23.4737C31.013 21.345 30.957 15.5403 31.053 9.35088C31.149 3.1614 36.5314 1.20468 39.2107 1H69.0822C73.079 1 75.2533 3.40581 76.2802 5.62636C76.6835 6.49848 76.9098 7.34201 77 8V23.9649C77 24.0132 76.9996 24.0613 76.9989 24.1091C76.8673 32.4562 64.8816 32.5614 56.5336 32.5614H44.4892L41.49 36.186L35.8516 43Z" stroke="black" strokeWidth="1.5" strokeLinejoin="round" />
-                                    <rect x="36.5" y="11.5" width="33" height="3" fill="#BEE8FF" stroke="black" />
-                                    <rect x="36.5" y="19.5" width="21" height="3" fill="#BEE8FF" stroke="black" />
-                                </svg>
+                                <MsgHand height="83" />
                             </div>
                             <div>
                                 <div className='pb-2'>

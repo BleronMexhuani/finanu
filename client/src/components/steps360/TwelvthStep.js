@@ -42,7 +42,7 @@ function TwelvthStep(props) {
       <form className='m-0' onSubmit={handleEightthStep}>
         <div className="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4 stepsBlueDiv px-4 px-sm-5 pb-5 pt-4 mx-auto">
           <div className='pb-4'>
-            <span className='finanuSubTitle fw-800 text-light'>Steuern</span>
+            <span className='fs-5 fw-800 text-light'>Steuern</span>
           </div>
           <div className='text-start'>
             <div className="row gx-4 gy-0">

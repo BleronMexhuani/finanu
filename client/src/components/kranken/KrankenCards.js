@@ -28,7 +28,7 @@ function KrankenCards(props) {
         <div className='blueBgKrankenOverflow pt-0 pt-lg-5 pt-xl-0'>
             <div className='blueBgKranken1'>
                 <div className="blueBgCenterTex">
-                    <div className='pb-2'>
+                    <div className='pb-3 pb-md-2'>
                         <span className='fs-1 bigTitleKranken'>Grundversicherung</span>
                     </div>
                     <div className='pb-5 container-xl px-4 px-xl-0'>
@@ -44,7 +44,7 @@ function KrankenCards(props) {
                                         <img src={BeatingHeart} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle'>Grundmodell <br className='d-none d-sm-block'></br> (0%)</span>
+                                        <span className='fw-600 finanuSubTitle fs-5'>Grundmodell <br className='d-none d-sm-block'></br> (0%)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Freie Arztwahl.</span>
@@ -57,7 +57,7 @@ function KrankenCards(props) {
                                         <img src={Doctor} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Hausarzt <br className='d-none d-sm-block'></br> (Max. 12%)</span>
+                                        <span className='fw-600 finanuSubTitle fs-5'>Hausarzt <br className='d-none d-sm-block'></br> (Max. 12%)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Der Hausarzt überweist den
@@ -72,7 +72,7 @@ function KrankenCards(props) {
                                         <img src={Hands} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Versorgungznetz <br className='d-none d-sm-block'></br> (HMO)</span>
+                                        <span className='fw-600 finanuSubTitle fs-5'>Versorgungznetz <br className='d-none d-sm-block'></br> (HMO)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>(Allgemeinärzte oder
@@ -86,7 +86,7 @@ function KrankenCards(props) {
                                         <img src={Medicine} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Apothekenmodell <br className='d-none d-sm-block'></br> (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle fs-5'>Apothekenmodell <br className='d-none d-sm-block'></br> (TELMED)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Erste Anlaufstelle bei allen Fragen
@@ -102,7 +102,7 @@ function KrankenCards(props) {
                                         <img src={PhoneDoc} alt="" />
                                     </div>
                                     <div className='pb-2'>
-                                        <span className='fw-600 finanuSubTitle '>Telemedizin <br className='d-none d-sm-block'></br> (TELMED)</span>
+                                        <span className='fw-600 finanuSubTitle fs-5'>Telemedizin <br className='d-none d-sm-block'></br> (TELMED)</span>
                                     </div>
                                     <div>
                                         <span className='fw-400 secondaryColor'>Der Versicherte muss eine
@@ -116,12 +116,12 @@ function KrankenCards(props) {
                     </div>
                     <div className='w-100'>
                         <div className='wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding'>
-                            <div className='pb-2'>
+                            <div className='pb-3 pb-md-2'>
                                 <span className='fs-1 bigTitleKranken'>
                                     Zusatzversicherung
                                 </span>
                             </div>
-                            <div className='pb-5 mb-4'>
+                            <div className='pb-5'>
                                 <span className='fw-500 fs-5 normalTextToWhite'>Nachdem Sie das Modell der Grundversicherung gewählt haben, ist es an der Zeit sich gedanken zu machen, welche Zusatzleistungen Sie in Anspruch nehmen möchten.</span>
                             </div>
                             <div className='w-100'>
@@ -145,7 +145,7 @@ function KrankenCards(props) {
                                                 <img src={Transport} alt="" />
                                             </div>
                                             <div className='pb-2'>
-                                                <span className='fw-600 finanuSubTitle'>Transport</span>
+                                                <span className='fw-600 finanuSubTitle fs-5'>Transport</span>
                                             </div>
                                             <div>
                                                 <span className='fw-400 secondaryColor'>Bis zu 100% Deckung aller Transport und Rettungskosten.</span>
@@ -159,7 +159,7 @@ function KrankenCards(props) {
                                                 <img src={Alternative} alt="" />
                                             </div>
                                             <div className='pb-2'>
-                                                <span className='fw-600 finanuSubTitle'>Alternativmedizin</span>
+                                                <span className='fw-600 finanuSubTitle fs-5'>Alternativmedizin</span>
                                             </div>
                                             <div>
                                                 <span className='fw-400 secondaryColor'>Bis zu 100% Kostenübernahme bei der Nutzung von Alternativmedizin.</span>
@@ -173,7 +173,7 @@ function KrankenCards(props) {
 
                                             </div>
                                             <div className='pb-2'>
-                                                <span className='fw-600 finanuSubTitle'>Sport</span>
+                                                <span className='fw-600 finanuSubTitle fs-5'>Sport</span>
                                             </div>
                                             <div>
                                                 <span className='fw-400 secondaryColor'>Bis zu 500.- am Sportverein</span>
@@ -186,7 +186,7 @@ function KrankenCards(props) {
                                                 <img src={Braces} alt="" />
                                             </div>
                                             <div className='pb-2'>
-                                                <span className='fw-600 finanuSubTitle'>Zahnspange</span>
+                                                <span className='fw-600 finanuSubTitle fs-5'>Zahnspange</span>
                                             </div>
                                             <div>
                                                 <span className='fw-400 secondaryColor'>Bis zu 20‘000.- an der Zahnstellungskorrektur
@@ -202,7 +202,7 @@ function KrankenCards(props) {
 
                                             </div>
                                             <div className='pb-2'>
-                                                <span className='fw-600 finanuSubTitle'>Fitness</span>
+                                                <span className='fw-600 finanuSubTitle fs-5'>Fitness</span>
                                             </div>
                                             <div>
                                                 <span className='fw-400 secondaryColor'>Bis zu 1‘100.- am Fitnessabo!
@@ -218,7 +218,7 @@ function KrankenCards(props) {
 
                                             </div>
                                             <div className='pb-2'>
-                                                <span className='fw-600 finanuSubTitle'>Ausland</span>
+                                                <span className='fw-600 finanuSubTitle fs-5'>Ausland</span>
                                             </div>
                                             <div>
                                                 <span className='fw-400 secondaryColor'>Bis zu 100% Deckung aller Behandlungen im Ausland.
@@ -232,7 +232,7 @@ function KrankenCards(props) {
                                                 <img src={Glasses} alt="" />
                                             </div>
                                             <div className='pb-2'>
-                                                <span className='fw-600 finanuSubTitle'>Brille</span>
+                                                <span className='fw-600 finanuSubTitle fs-5'>Brille</span>
                                             </div>
                                             <div>
                                                 <span className='fw-400 secondaryColor'>Bis zu 800.- an der Brille!
@@ -249,7 +249,7 @@ function KrankenCards(props) {
             </div>
             <div>
                 <div className="wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding">
-                    <div className="pb-2">
+                    <div className="pb-3 pb-md-2">
                         <span className='fs-1 bigTitleKranken'>Wahl der Spitalversicherungen</span>
                     </div>
                     <div className="pb-5">

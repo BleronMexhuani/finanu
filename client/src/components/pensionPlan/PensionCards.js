@@ -37,9 +37,9 @@ function PensionCards(props) {
 
                         </div>
                     </div>
-                    <div className="row gx-4 justify-content-between pt-5 mt-4">
+                    <div className="row gx-4 justify-content-between pt-5">
                         <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
-                            <div className='pb-4'>
+                            <div className='pb-4 pb-md-0'>
                                 <span className='fw-700 fs-1 firstBlueTitle'>So Individuell wie Sie!</span>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ function PensionCards(props) {
                     <div className="row g-4 justify-content-center">
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
-                                <div className='pb-4'>
+                                <div >
                                     {props.darkMode
                                         ? <img src={HouseDark} alt="" />
                                         : <img src={House} alt="" />
@@ -80,7 +80,7 @@ function PensionCards(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
-                                <div className='pb-4'>
+                                <div >
                                     {props.darkMode
                                         ? <img src={ShakingHandsDark} alt="" />
                                         : <img src={ShakingHands} alt="" />
@@ -93,7 +93,7 @@ function PensionCards(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
-                                <div className='pb-4'>
+                                <div >
                                     {props.darkMode
                                         ? <img src={EmigrationDark} alt="" />
                                         : <img src={Emigration} alt="" />
@@ -106,7 +106,7 @@ function PensionCards(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
-                                <div className='pb-4'>
+                                <div >
                                     {props.darkMode
                                         ? <img src={VaccineDark} alt="" />
                                         : <img src={Vaccine} alt="" />
@@ -119,7 +119,7 @@ function PensionCards(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-lg">
                             <div className="pensionWhiteCards p-4 h-100">
-                                <div className='pb-4'>
+                                <div >
                                     {props.darkMode
                                         ? <img src={OldLadyDark} alt="" />
                                         : <img src={OldLady} alt="" />

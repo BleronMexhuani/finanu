@@ -19,7 +19,7 @@ function AutoRadioBoxes() {
                         </div>
 
                     </div>
-                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start my-md-auto">
                         <div className='fw-500 fs-5 normalTextToWhite'>
                             <span>
                                 In der Schweiz ist der Abschluss einer Autoversicherung obligatorisch. Bei der Auswahl einer Autoversicherung steht neben dem zu versichernden Fahrzeug immer auch Ihr persönliches Sicherheitsbedürfnis im Vordergrund.
@@ -88,7 +88,7 @@ function AutoRadioBoxes() {
                 </div>
                 <div className="row gx-4 pb-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
-                        <div className='pb-4'>
+                        <div className='pb-4 pb-md-0'>
                             <span className='fw-700 firstBlueTitle fs-1 '>Autohaftpflicht <br></br> (Pflicht)  </span>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ function AutoRadioBoxes() {
 
                 <div className="row gx-4 pb-5 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start">
-                        <div className='pb-4'>
+                        <div className='pb-4 pb-md-0'>
                             <span className='fw-700 firstBlueTitle fs-1 '> Teilkaskoversicherung <br></br> (Freiwillig) </span>
                         </div>
                     </div>

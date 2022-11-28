@@ -12,7 +12,7 @@ function PensionLastBlue(props) {
                     <div className="blueBgDivPension px-3 px-md-5 pt-4 pt-md-5 pb-4 pensionBlueDivWidth">
                         <div className="whiteBgInBluePension py-3 px-2">
                             <div className='text-center'>
-                                <span className='finanuSubTitle fw-bold' style={{ color: '#50B8E7' }}>Unterschiede in der Vorsorge 3A
+                                <span className='finanuSubTitle fw-bold fs-5' style={{ color: '#50B8E7' }}>Unterschiede in der Vorsorge 3A
                                     Bank oder Versicherung</span>
                             </div>
                         </div>

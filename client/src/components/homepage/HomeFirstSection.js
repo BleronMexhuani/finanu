@@ -12,7 +12,7 @@ import RechtsschutzDark from '../../assets/images/rechtsschutzDark.svg'
 import Finanzen from '../../assets/images/finanzenHome.svg'
 import FinanzenDark from '../../assets/images/finanzenDark.svg'
 import logo from "../../assets/images/logo.svg"
-import stars from "../../assets/images/stars.svg"
+// import stars from "../../assets/images/stars.svg"
 
 import { Link } from "react-router-dom";
 import { ReactComponent as HeroImg } from '../../assets/images/Home.svg'

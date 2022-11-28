@@ -47,7 +47,7 @@ function BlueBackgroundSection() {
                                         <span>/ Jahr</span>
                                     </div>
                                     <div className='pb-4'>
-                                        <span>
+                                        <span style={{fontSize: '14px'}}>
                                             *Preise basieren auf Recherchen welche ende 2022 durchgeführt wurden. Möglicherweise haben sich die Preise zum Zeitpunkt Ihres Seitenbesuches bereits weider geändert.
                                         </span>
                                     </div>
@@ -206,7 +206,7 @@ function BlueBackgroundSection() {
                                         <span>/ Jahr</span>
                                     </div>
                                     <div className='pb-4'>
-                                        <span>
+                                        <span style={{fontSize: '14px'}}>
                                             *Preise basieren auf Recherchen welche ende 2022 durchgeführt wurden. Möglicherweise haben sich die Preise zum Zeitpunkt Ihres Seitenbesuches bereits weider geändert.
                                         </span>
                                     </div>
@@ -365,7 +365,7 @@ function BlueBackgroundSection() {
                                         <span>/ Jahr</span>
                                     </div>
                                     <div className='pb-4'>
-                                        <span>
+                                        <span style={{fontSize: '14px'}}>
                                             *Preise basieren auf Recherchen welche ende 2022 durchgeführt wurden. Möglicherweise haben sich die Preise zum Zeitpunkt Ihres Seitenbesuches bereits weider geändert.
                                         </span>
                                     </div>

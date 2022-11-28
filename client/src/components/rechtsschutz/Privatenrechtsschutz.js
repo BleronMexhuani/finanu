@@ -121,14 +121,14 @@ function Privatenrechtsschutz(props) {
                     </div>
                 </div> */}
                 <div className='pb-5'>
-                    <span className='fw-700 fs-3'>
+                    <span className='fw-700 fs-1'>
                         Folgende Leistungen werden abgedeckt:
                     </span>
                 </div>
                 <div className="row g-3 bodyCounterPadding justify-content-center">
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>  
+                        <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>  
                                      <img src={IconNr1Dark} alt="" />
                             </div>
                             <div >
@@ -137,8 +137,8 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>
+                        <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>
                                 <img src={IconNr2} alt="" />
 
                             </div>
@@ -148,8 +148,8 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>
+                        <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>
                                 {!props.darkMode
                                     ? <img src={IconNr3} alt="" />
                                     : <img src={IconNr3Dark} alt="" />
@@ -161,8 +161,8 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>
+                        <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>
                                 {!props.darkMode
                                     ? <img src={IconNr4} alt="" />
                                     : <img src={IconNr4Dark} alt="" />
@@ -174,8 +174,8 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>
+                        <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>
                                 {!props.darkMode
                                     ? <img src={IconNr5} alt="" />
                                     : <img src={IconNr5Dark} alt="" />
@@ -188,8 +188,8 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>
+                        <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>
                                 {!props.darkMode
                                     ? <img src={IconNr6} alt="" />
                                     : <img src={IconNr6Dark} alt="" />
@@ -202,8 +202,8 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>
+                        <div className='px-3 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>
                                 {!props.darkMode
                                     ? <img src={IconNr7} alt="" />
                                     : <img src={IconNr7Dark} alt="" />
@@ -216,8 +216,8 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className='p-4 whiteCardKranken h-100 privatenImgSize'>
-                            <div className='pb-4'>
+                        <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
+                            <div className=''>
                                 {!props.darkMode
                                     ? <img src={IconNr8} alt="" />
                                     : <img src={IconNr8Dark} alt="" />
