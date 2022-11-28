@@ -7,8 +7,8 @@ import Emigration from '../../assets/images/emigration.svg'
 import EmigrationDark from '../../assets/images/emigrationDark.svg'
 import Vaccine from '../../assets/images/vaccine.svg'
 import VaccineDark from '../../assets/images/vaccineDark.svg'
-import OldLady from '../../assets/images/oldLady.svg'
-import OldLadyDark from '../../assets/images/oldLadyDark.svg'
+import OldLady from '../../assets/images/Plaka-01.svg'
+import OldLadyDark from '../../assets/images/Plaka-02.svg'
 
 function PensionCards(props) {
     return (

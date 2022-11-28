@@ -6,7 +6,7 @@ import { ReactComponent as FormIlu } from '../../assets/images/plus/qika.svg'
 import { ReactComponent as Vid1 } from '../../assets/images/plus/vid1.svg'
 
 import { useState, useEffect } from 'react'
-function FirstSection() {
+function FirstSection(props) {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -48,10 +48,10 @@ function FirstSection() {
 
             </div>
 
-            <div className="container-xl px-4 px-xl-0  text-start">
-                <div className="row gy-5 justify-content-between">
+            <div className="container-xl px-4 px-xl-0  text-start ">
+                <div className="row gy-5 justify-content-between ">
                     {(screenWidth > 575.98) && (
-                        <div className="col-12 col-lg-6 order-1 order-md-1">
+                        <div className="col-12 col-lg-6 order-1  order-md-1 mb-5">
                             <div className='pb-5'>
                                 <span className='plusTitle fw-700 triaryColor'>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
                             </div>
@@ -109,11 +109,11 @@ function FirstSection() {
                     )}
 
                     <div className="col-12 col-lg-6 order-3 order-md-2">
-                        <div className="plusForm py-5 px-4 p-md-5">
-                            <div className='pb-4 text-center text-md-start'>
+                        <div className="plusForm py-5 px-4 p-md-5 ">
+                            <div className='pb-3 text-center text-md-start'>
                                 <span className='fs-3 fw-700 plusFormTitle' style={{color: 'white'}}>Lohnt sich eine Mitgliedschaft fur dich?</span>
                             </div>
-                            <div className="pb-4 text-center text-md-start">
+                            <div className="pb-3 text-center text-md-start">
                                 <span className='fs-5 text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </div>
                             <div className='pb-3'>
@@ -139,7 +139,7 @@ function FirstSection() {
                         <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto mt-auto mt-md-5 pt-auto pt-md-5">
                             <div className="px-0 px-md-4 px-lg-5 pb-5">
 
-                                <div className='pb-4'>
+                                <div className='pb-3'>
                                     <span className='fs-3 fw-700 secondaryColor'>Why on earth did we start an insurance company?</span>
                                 </div>
                                 <div className='pb-3'>

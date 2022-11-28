@@ -1,12 +1,18 @@
 import React from 'react'
-import { ReactComponent as Idea } from '../assets/images/uberUns/mainphoto.svg'
-import { ReactComponent as IdeaMobile } from '../assets/images/uberUns/uberUnsMobile.svg'
+import { ReactComponent as Idea } from '../assets/images/UberUns.svg'
+import { ReactComponent as IdeaMobile } from '../assets/images/UberUns-Mobile.svg'
+import { ReactComponent as IdeaDark } from '../assets/images/UberUns-Dark.svg'
+import { ReactComponent as IdeaMobileDark } from '../assets/images/UberUns-Dark-Mobile.svg'
+
 import Muscle from '../assets/images/uberUns/muscle.svg'
 import '../assets/css/uberUns.css'
+import ToggleDarkMode from "../components/ToggleDarkMode";
+
 import SliderHausrat from './hausrat/SliderHausrat'
 import { useState, useEffect } from 'react'
 
-function UberUns() {
+function UberUns(props) {
+
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -25,12 +31,29 @@ function UberUns() {
             <div className='pb-5'>
                 <span className='fw-800 firstBlueTitle fs-1'>Über uns</span>
             </div>
+
             <div className='bodyCounterPadding'>
+
                 {(screenWidth > 575.98) && (
-                    <Idea style={{ maxWidth: 'max-content' }} />
+
+                    <>
+                        {props.darkMode
+
+                            ? <IdeaDark style={{ maxWidth: 'max-content' }} />
+                            : <Idea style={{ maxWidth: 'max-content' }} />
+
+                        }
+                    </>
                 )}
                 {(screenWidth < 575.98) && (
-                <IdeaMobile style={{ maxWidth: 'max-content' }} />
+                    <>
+                        {props.darkMode
+
+                            ? <IdeaMobileDark style={{ maxWidth: 'max-content' }} />
+                            : <IdeaMobile style={{ maxWidth: 'max-content' }} />
+                        }
+                    </>
+
                 )}
 
             </div>

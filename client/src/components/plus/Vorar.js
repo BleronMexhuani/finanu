@@ -1,6 +1,10 @@
 import React from 'react'
-import { ReactComponent as Ilu } from '../../assets/images/plus/vorarIlu.svg'
-function Vorar() {
+// import { ReactComponent as Ilu } from '../../assets/images/plus/vorarIlu.svg'
+
+import { ReactComponent as Ilu } from '../../assets/images/plus/Qifti-01.svg'
+import { ReactComponent as IluDark } from '../../assets/images/plus/Qifti-02.svg'
+
+function Vorar(props) {
     return (
         <div className='container-xl px-4 px-xl-0 text-start'>
             <div className='pb-5 text-center'>
@@ -9,7 +13,11 @@ function Vorar() {
             <div>
                 <div className="row g-4">
                     <div className="col-lg-4 col-6">
-                        <Ilu className="img-fluid" />
+                            {props.darkMode
+
+                                ? <IluDark className="img-fluid" />
+                                : <Ilu className="img-fluid" />
+                            }
                     </div>
                     <div className="col fs-5 fw-600 my-auto secondaryColor">
                         <div className="pb-3">
@@ -33,7 +41,7 @@ function Vorar() {
                             </span>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-12 my-auto" style={{textAlign: '-webkit-center'}}>
+                    <div className="col-lg-3 col-12 my-auto" style={{ textAlign: '-webkit-center' }}>
                         <div className='cardofthelastcomponent d-flex'>
                             <div className='px-4 '>
                                 <p className='text-center fw-400 pt-2'>ProLife Weiterempfehlen</p>
@@ -48,8 +56,8 @@ function Vorar() {
                     </div>
                 </div>
                 <div className='text-center my-3'>
-                        <button className='lastcomponentbutton w-50 py-2 border-0 ' style={{borderRadius: '10px'}}>Get a qoute</button>
-                    </div>
+                    <button className='lastcomponentbutton w-50 py-2 border-0 ' style={{ borderRadius: '10px' }}>Get a qoute</button>
+                </div>
             </div>
         </div>
     )

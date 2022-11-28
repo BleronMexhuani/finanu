@@ -107,7 +107,7 @@ function Otherquestions() {
             {(screenWidth < 575.98) && (
                 <div className='bgcoloroflastcomponent'>
                     <div className='px-4 py-5'>
-                        <div className='pb-4'>
+                        <div className='pb-3'>
                             <img alt='' className='img-fluid w-100' src={imageoflastcomponentmobile} />
                         </div>
                         <div className='pb-2'>

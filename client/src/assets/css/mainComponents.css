@@ -565,3 +565,8 @@ div.fs-5 {
     background: url('../../assets/images/bluebackgroundDark.svg') no-repeat;
     background-size: cover;
 }
+
+.darkTheme .subtitleofwettbewerbe {
+    color: #fff;
+
+}

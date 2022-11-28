@@ -12,7 +12,7 @@ function PlusReviews(props) {
                     <div>
                         <span className='fw-700 fs-1 secondaryColor'>Look at that! 4.5 stars on TrustPilot</span>
                     </div>
-                    <div className='pb-4'>
+                    <div className='pb-3'>
                         <span className='secondaryColor fw-500 fs-4'>with 10.000+ reviews so far</span>
                     </div>
                 </div>

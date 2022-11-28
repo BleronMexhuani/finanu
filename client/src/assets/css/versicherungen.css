@@ -404,3 +404,9 @@ h3 {
         width: 200px;
     }
 }
+
+.DarkMode .sympanyAccItem {
+    background-color: #333436;
+    color: #fff;
+
+}

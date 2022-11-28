@@ -173,24 +173,28 @@
 .buttonofthelastcomponent {
     color: #FFFFFF;
     background-color: transparent;
-    
+
 }
+
 .buttonofthelastcomponent button {
     background: #50B8E7;
     color: white;
 }
+
 .buttonmeineempfehlung {
     border: 0.5px solid white !important;
     background-color: transparent;
     color: #FFFFFF;
 }
-.accordionmainstyle .accordion-item:first-of-type  {
+
+.accordionmainstyle .accordion-item:first-of-type {
     border-top-left-radius: calc(10px - 1px) !important;
     border-top-right-radius: calc(10px - 1px) !important;
 }
+
 .accordion-button::after {
     background-image: url('../images/plus/accordionimg.svg') !important;
-    
+
 }
 
 
@@ -234,19 +238,18 @@
         margin-left: -25px;
         margin-bottom: -25px
     }
+
     .plusFormBtnDiv {
         position: absolute;
         right: 1.5rem;
         bottom: 1.5rem;
-    
+
     }
 }
 
 @media (max-width: 1399.98px) {}
 
-@media (max-width: 1199.98px) {
-    
-}
+@media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {
     .plusForm {
@@ -296,7 +299,7 @@
     .faqstyle {
         background: #E7F5FC !important;
         border-radius: 10px;
-        color: #50B8E7 !important; 
+        color: #50B8E7 !important;
     }
 
     .accordionstyle {
@@ -308,22 +311,25 @@
     .faqstyle button {
         background: #E7F5FC !important;
         border-radius: 10px !important;
-        color: #50B8E7 !important; 
+        color: #50B8E7 !important;
 
     }
+
     .agilestyleofaccordion button {
         background-color: #50B8E7;
         color: white;
         border: none !important
     }
+
     .bgcoloroflastcomponent {
         background-color: #E7F5FC;
     }
+
     .agilestyleofaccordion .accordion-item {
         border: none !important;
         background-color: #50B8E7;
 
-    } 
+    }
 
     .mobiletabssubtitle {
         font-weight: 400;
@@ -337,9 +343,10 @@
     }
 
     .contentoflastaccordion {
-        color: black !important;    
+        color: black !important;
         background-color: #50B8E7 !important;
     }
+
     .buttonofthelastcomponent button {
         padding-top: 10px !important;
         padding-bottom: 10px !important;
@@ -368,7 +375,6 @@
         border-radius: 25px;
     }
 
-   
     .blueBg {
         position: relative;
         background-color: #50B8E7;
@@ -400,12 +406,13 @@
 }
 
 
-.accordion-item:first-child  .accordion-button{
+.accordion-item:first-child .accordion-button {
     border-top-left-radius: 15px !important;
     border-top-right-radius: 15px !important;
-    
+
 }
-.accordion-item:last-child  .accordion-button{
+
+.accordion-item:last-child .accordion-button {
     border-bottom-left-radius: 15px !important;
     border-bottom-right-radius: 15px !important;
 }
@@ -413,4 +420,57 @@
 
 .accordion-item:last-child:not(.collapsed) {
     border-radius: 0px;
+}
+
+
+.darkTheme .plusForm {
+    background-color: #333436;
+}
+
+.darkTheme .plusReviewsDiv {
+    background-color: #333436;
+    color: white;
+    box-shadow: none;
+}
+
+.darkTheme .plusCoverDiv {
+    background-color: #333436;
+
+}
+
+.darkTheme .ltBlueSection {
+    background-color: #333436;
+
+}
+
+.darkTheme .accordionstyle {
+    background-color: #333436;
+    color: white;
+}
+
+.darkTheme .accordionstyle .faqstyle {
+    background-color: #333436 !important;
+    color: white;
+}
+
+.darkTheme .faqstyle button {
+    background-color: #333436 !important;
+    color: white;
+
+}
+
+
+.darkTheme .mobiletabssubtitle {
+    color: white;
+
+}
+
+.darkTheme .mobiletabstitle {
+    color: white;
+
+}
+
+.darkTheme .bgcoloroflastcomponent {
+    background-color: #333436 !important;
+    color: white;
 }

@@ -12,14 +12,14 @@ function OurStory(props) {
                             Our story
                         </span>
                     </div>
-                    <div className='pb-4'>
+                    <div className='pb-3'>
                         <span className='fw-600 secondaryColor'>AS TOLD BY OUR FOUNDERS</span>
                     </div>
                 </div>
                 <div className="row gx-0 gx-md-5 gx-lg-0 gy-5 gy-md-0 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 order-2 order-md-1">
                         <div className="d-none d-md-block col offset-lg-">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <span className='plusTitle fs-2 fw-700 secondaryColor'>
                                     Our story
                                 </span>
@@ -62,7 +62,7 @@ function OurStory(props) {
 
                     <div className="col-12 col-md-6 order-1 order-md-2">
 
-                        <div className='pb-4'>
+                        <div className='pb-3'>
                             <span className='secondaryColor fw-500 fw-md-700 fs-md-1 fs-5'>We learn from the past, but build for the future.</span>
                         </div>
                         <div className='secondaryColor fw-500 fs-5'>
