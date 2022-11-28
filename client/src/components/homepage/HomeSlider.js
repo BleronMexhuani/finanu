@@ -4,7 +4,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FreeMode, Autoplay } from "swiper";
 
+
 function HomeSlider() {
+    
+    
     return (
         <div className="wrapDiv container-xl px-4 px-xl-0">
             <Swiper
@@ -33,7 +36,9 @@ function HomeSlider() {
                     },
                 }}
             >
+                
                 <SwiperSlide>
+                
                     <div className='whiteTestimonials p-4 text-start'>
                         <div className='pb-3 text-end'>
                             <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">

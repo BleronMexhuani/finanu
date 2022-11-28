@@ -16,6 +16,7 @@ import stars from "../../assets/images/stars.svg"
 
 import { Link } from "react-router-dom";
 import { ReactComponent as HeroImg } from '../../assets/images/heroImg.svg'
+import TrustBox from './TrustBox'
 
 function HomeFirstSection(props) {
 
@@ -42,7 +43,7 @@ function HomeFirstSection(props) {
                     </div>
                 </div>
                 <div className="wrapDiv container-xl px-4 px-xl-0">
-                    <div className="marginGutter pt-5">
+                    <div className="marginGutter">
                         <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 bodyCounterPadding">
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5 h-100">
@@ -155,7 +156,7 @@ function HomeFirstSection(props) {
                         </div>
                     </div>
                     <div className="row g-0 justify-content-center">
-                        <div className="col-12 col-md-8 pb-5">
+                        <div className="col-12 col-md-8">
                             <div className=''>
                                 <img src={logo} width={250} alt="" />
                             </div>
@@ -171,7 +172,7 @@ function HomeFirstSection(props) {
                                     zurechtzufinden und zu verstehen wofür Sie überhaupt zahlen.</span>
                             </div>
                             <div className='py-5'>
-                                <img className='img-fluid' src={stars} alt="" />
+                                <TrustBox />
                             </div>
                         </div>
                     </div>

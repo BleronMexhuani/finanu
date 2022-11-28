@@ -43,12 +43,12 @@ function Option2Kranken(props) {
             <div className='wrapDiv container-xl px-4 px-xl-0'>
                 <div className="row g-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-lg-7 text-start">
-                        <div className='pb-4 pb-md-5 mb-0 mb-md-3'>
-                            <div className='pb-3'>
-                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}>VARIANTE 2: PERSÖNLICHE BERATUNG</span>
+                        <div className='pb-4 mb-1'>
+                            <div className='pb-2'>
+                                <span className='fs-3 fw-bold' style={{ color: "#50B8E7" }}>Variante 2: Persönliche Beratung</span>
                             </div>
                             <div className='pb-3'>
-                                <span className='firstBlueTitle fw-600 normalTextToWhite'>PERSÖNLICHE BERATUNG MIT EINEM KUNDENBERATER</span>
+                                <span className='firstBlueTitle fw-600 normalTextToWhite'>Persönliche Beratung Mit Einem Kundenberater</span>
                             </div>
                             <div>
                                 <span className='fw-500 normalTextToWhite descriptionFS'>Haben Sie keine Zeit oder Lust sich ins Thema einzulesen oder wissen bereits was Ihnen alles wichtig ist? Besprechen Sie ihre Wünsche doch mit einem unserer Kundenberater. Dieser hilft Ihnen, eine auf ihre Bedürfnisse zugeschnittene Lösung zu finden und steht Ihenne von der Offerten Anfrage bis zum Abschluss zur Seite. Jetzt mit den folgenden Möglichkeiten Anfragen:</span>
@@ -110,7 +110,7 @@ function Option2Kranken(props) {
                 <div className='normalTextToWhite'>
                     <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <svg width="87" height="83" viewBox="0 0 87 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M51.0002 64.5002C42.0003 64.5002 26.7002 69.5002 27.5002 63.5002C27.3575 62.2163 28.5581 59.5405 33.9234 57.7928C35.9191 57.1427 37.9038 56.4158 39.6744 55.2888C44.8831 51.9733 51.3394 48.1528 56.0003 49.0002C61.182 49.9423 76.1276 49.5531 84.1118 46.9961C84.7856 46.7803 85.4994 47.2681 85.4909 47.9755C85.4146 54.3527 84.8871 63.3716 84.5651 68.072C84.5293 68.5954 84.0938 69.0003 83.5691 69.0003H81.2179C79.1004 69.0003 77.0197 69.4833 75.1017 70.3804C67.2846 74.0369 56.0659 78.7859 48.4803 80.6354C43.173 81.9294 37.9815 79.205 33.1568 76.6429C20.3272 69.8298 -2.46728 56.9515 1.50037 51C2.30045 47.4 17.0004 59 27.6231 62.5M3.00037 50.0003C2.3337 47.6669 2.50037 43.7003 8.50037 46.5003C16.0004 50.0003 24.2234 60.0646 30.2236 59.5M9.50037 46.5003C9.50037 44.8335 11.1004 42.2 17.5004 47C25.5004 53 36.5004 55.6791 38.5004 56.0397" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
                                     <path d="M81.5 55C81.5 58 81.4 64.2 81 65M77.5 61.5C77.5 62.8333 77.4 65.6 77 66" stroke="black" strokeWidth="1.4" strokeLinecap="round" />
@@ -130,7 +130,7 @@ function Option2Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-md-4">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <svg width="66" height="83" viewBox="0 0 66 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.415321 79.1033L65.584 79.1033V7.55923L0.415321 7.55923V79.1033Z" fill="white" />
                                     <path d="M65.5846 79.76H0.41536C0.305192 79.76 0.199524 79.6906 0.121624 79.567C0.0437231 79.4435 0 79.276 0 79.1012V7.55909C0 7.38439 0.0437231 7.21685 0.121624 7.09332C0.199524 6.96979 0.305192 6.90039 0.41536 6.90039H65.5846C65.6948 6.90039 65.8005 6.96979 65.8784 7.09332C65.9563 7.21685 66 7.38439 66 7.55909V79.1031C65.9997 79.2775 65.9558 79.4446 65.8779 79.5677C65.8001 79.6908 65.6946 79.76 65.5846 79.76ZM0.830141 78.4426H65.1704V8.21592H0.830141V78.4426Z" fill="black" />
@@ -188,11 +188,8 @@ function Option2Kranken(props) {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-md-4">
-                            <div className='pb-4'>
+                            <div className='pb-3'>
                                 <img src={Abschlie} height="83px" alt="" />
-
-
-
                             </div>
                             <div>
                                 <div className='pb-2'>
