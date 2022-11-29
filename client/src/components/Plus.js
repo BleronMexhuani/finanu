@@ -29,7 +29,7 @@ function Plus(props) {
     return (
         <>
             <div className="pb-5 mb-5">
-                <FirstSection />
+                <FirstSection darkMode={props.darkMode} />
             </div>
 
 
@@ -52,13 +52,13 @@ function Plus(props) {
             </div>
 
             <div className='pb-5 mb-5'>
-                <OurStory screenWidth={screenWidth} />
+                <OurStory screenWidth={screenWidth} darkMode={props.darkMode} />
             </div>
 
             {(screenWidth > 575.98) && (
                 <>
                     <div className="py-md-5 pb-5 mb-5">
-                        <CoverYouNeed />
+                        <CoverYouNeed  darkMode={props.darkMode} />
                     </div>
                     <div className="py-md-5 pb-5 mb-5">
                         <LtBlueSetion />
