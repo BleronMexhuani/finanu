@@ -1,5 +1,7 @@
 import React from 'react'
 import { ReactComponent as Signature } from '../../assets/images/plus/signature.svg'
+import { ReactComponent as SignatureDark } from '../../assets/images/plus/signaturedark.svg'
+
 import Accordion from 'react-bootstrap/Accordion';
 function OurStory(props) {
 
@@ -32,8 +34,10 @@ function OurStory(props) {
                             <div className="row gx-5  text-start">
                                 <div className="col-6 col-sm-4  order-1 order-md-1">
                                     <div className='pb-5'>
-                                        <Signature className="img-fluid" />
-
+                                        {props.darkMode
+                                            ? <SignatureDark className="img-fluid" />
+                                            : <Signature className="img-fluid" />
+                                        }
                                     </div>
                                     <div className='pb-3'>
                                         <span className='fw-600 secondaryColor fs-5'>Gresatis Bytyqitiosm</span>
@@ -46,7 +50,10 @@ function OurStory(props) {
 
                                 <div className="col-6 col-sm-4 order-2 order-md-2">
                                     <div className='pb-5'>
-                                        <Signature className="img-fluid" />
+                                        {props.darkMode
+                                            ? <SignatureDark className="img-fluid" />
+                                            : <Signature className="img-fluid" />
+                                        }
 
                                     </div>
                                     <div className='pb-3'>
@@ -91,34 +98,34 @@ function OurStory(props) {
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat.  
+                                            aliquip ex ea commodo consequat.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="1" className='pt-3 accordionstyle'>
-                                        <Accordion.Header  className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
+                                        <Accordion.Header className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
                                         <Accordion.Body>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. 
+                                            aliquip ex ea commodo consequat.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="2" className='pt-3 accordionstyle'>
-                                        <Accordion.Header  className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
+                                        <Accordion.Header className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
                                         <Accordion.Body>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat.  
+                                            aliquip ex ea commodo consequat.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3 " className='pt-3 accordionstyle'>
-                                        <Accordion.Header  className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
+                                        <Accordion.Header className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
                                         <Accordion.Body>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. 
+                                            aliquip ex ea commodo consequat.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </Accordion>

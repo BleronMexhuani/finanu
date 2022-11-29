@@ -8,7 +8,7 @@ import Offerte from '../../assets/images/offerteAnfordern.svg'
 import Abschlie from '../../assets/images/abschliessen.svg'
 import Mesazhi from '../../assets/images/Mesazhiiii-02.svg'
 import {ReactComponent as Suchen} from '../../assets/images/option1Suchen.svg'
-import {ReactComponent as MegaPhone} from '../../assets/images/option1Mega.svg'
+import {ReactComponent as MegaPhone} from '../../assets/images/Vergleichen.svg'
 
 function Option1Kranken(props) {
     const [openModal, setopenModal] = useState(false)
