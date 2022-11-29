@@ -3,14 +3,7 @@ import "../../components/wettbewerbe/WLinks.css";
 import Photo from '../../assets/images/europapark.jpg'
 
 function WLinksTwo(props) {
-    const checkChild = (e) => {
-        if (e.target.value === "3" || e.target.value === "4") {
-          props.setChild(true);
-        } else {
-          props.setChild(false);
-        }
-        props.changeHousehold(e.target.value);
-      };
+    
   return (
     <div>
          <div className="">
@@ -38,8 +31,7 @@ function WLinksTwo(props) {
                   </p>
                   <form action="">
                     <select
-                      onChange={checkChild}
-                      defaultValue={props.setHouseholdValue}
+                      
                       name="household "
                       id=""
                       className="form-select stepsFormInputs formwett darkselect"
@@ -63,7 +55,7 @@ function WLinksTwo(props) {
                       type="date"
                       id="birthday"
                       name="birthday"
-                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
+                      className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect form-control"
                     />
                     <input
                       type="number"
@@ -95,8 +87,7 @@ function WLinksTwo(props) {
                       className="hausratFormInputs stepsFormInputs formwett mt-2 darkselect"
                     />
                     <select
-                      onChange={checkChild}
-                      defaultValue={props.setHouseholdValue}
+                      
                       name="household "
                       id=""
                       className="form-select stepsFormInputs formwett mt-2 darkselect"
@@ -112,8 +103,7 @@ function WLinksTwo(props) {
                     </select>
                   
                     <select
-                      onChange={checkChild}
-                      defaultValue={props.setHouseholdValue}
+                      
                       id=""
                       className="form-select stepsFormInputs formwett mt-2 darkselect"
                     >
@@ -172,7 +162,7 @@ function WLinksTwo(props) {
       </div>
       <div className=" wrapDiv  container-xl px-4 px-xl-0 mt-5 py-5">
         <div className="mt-5 py-5 text-start normalTextToWhite " >
-            <span className="titledesc" >
+            <span className="fs-3 fw-600" >
             Wie kann bei finanu.ch teilgenommen werden?
             </span>
             <div className="mt-3">
@@ -181,7 +171,7 @@ function WLinksTwo(props) {
         </span>
         </div>
         <div className="mt-4">
-        <span className="titledesc" >
+        <span className="fs-3 fw-600" >
         Wer darf bei finanu.ch teilnehmen?
             </span>
             </div>
@@ -192,7 +182,7 @@ function WLinksTwo(props) {
         </span>
         </div>
         <div className="mt-4">
-        <span className="titledesc"  >
+        <span className="fs-3 fw-600"  >
         Hinweis:
             </span>
             </div>
@@ -203,7 +193,7 @@ function WLinksTwo(props) {
         
         </div>
         <div className="mt-4">
-        <span className="titledesc" >
+        <span className="fs-3 fw-600" >
         Teilnahmeschluss:
             </span>
             

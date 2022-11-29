@@ -51,7 +51,7 @@ function Wettbewerbe(props) {
                         Städtetrip in die UNESCO-Weltkulturerbestätte Bern für 2
                         Personen{" "}
                       </span>
-                      <p className="pt-2 subtitlebox normalTextToWhite" style={{ fontSize: "small" }}>
+                      <p className="pt-2 subtitlebox normalTextToWhite mb-0" >
                         {" "}
                         Trage deine Angaben ein und nimm am Wettbewerb teil. Wir
                         wünschen bereits jetzt viel Glück!
@@ -74,7 +74,7 @@ function Wettbewerbe(props) {
                       <span className="titlebox normalTextToWhite" style={{ fontWeight: "bold" }}>
                         2-tägigen Europaparkausflug mit der Familie!{" "}
                       </span>
-                      <p className="pt-2 subtitlebox normalTextToWhite" style={{ fontSize: "small" }}>
+                      <p className="pt-2 subtitlebox normalTextToWhite mb-0" >
                         {" "}
                         Trage deine Angaben ein und nimm am Wettbewerb teil. Wir
                         wünschen bereits jetzt viel Glück!
@@ -96,7 +96,7 @@ function Wettbewerbe(props) {
                       <span className="titlebox normalTextToWhite" style={{ fontWeight: "bold" }}>
                         Auszeit bei einem Wellness Wochenende in den Bergen!
                       </span>
-                      <p className="pt-2 subtitlebox normalTextToWhite" style={{ fontSize: "small" }}>
+                      <p className="pt-2 subtitlebox normalTextToWhite mb-0" >
                         {" "}
                         Trage deine Angaben ein und nimm am Wettbewerb teil. Wir
                         wünschen bereits jetzt viel Glück!
@@ -117,7 +117,7 @@ function Wettbewerbe(props) {
                       <span className="titlebox normalTextToWhite" style={{ fontWeight: "bold" }}>
                         Auszeit bei einem Wellness Wochenende in den Bergen!
                       </span>
-                      <p className="pt-2 subtitlebox normalTextToWhite" style={{ fontSize: "small" }}>
+                      <p className="pt-2 subtitlebox normalTextToWhite mb-0" >
                         {" "}
                         Trage deine Angaben ein und nimm am Wettbewerb teil. Wir
                         wünschen bereits jetzt viel Glück!

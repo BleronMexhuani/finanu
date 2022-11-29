@@ -11,11 +11,11 @@ function Versicherungen() {
       <div className='container-xl px-4 px-xl-0 pb-5 wrapDiv1'>
         <div className='pb-3'>
           <span className='firstBlueTitle'>
-            VERSICHERUNGEN
+            Versicherungen
           </span>
         </div>
         <div>
-          <span className='finanuSubTitle'>
+          <span className='finanuSubTitle fs-5'>
             Auf der folgenden Seite stellen wir Ihnen die verschiedenen Versicherungsgesellschaften und ihre Modelle, Vor- und Nachteile sowie die wichtigsten Links vor.  Derzeit gibt es noch keine Seiten für alle Gesellschaften. Weitere Gesellschaften werden regelmäßig hinzugefügt. Wenn Sie Fragen zu einer bestimmten Gesellschaft haben, welche noch nicht aufgeführt ist, zögern Sie bitte nicht, uns zu kontaktieren!
             unserer Versicherer.</span>
         </div>

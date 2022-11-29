@@ -18,7 +18,9 @@ function Funktionert() {
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
+
                                     <img src={svg1} alt='' />
+
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Digital anfragen</span>
@@ -31,7 +33,9 @@ function Funktionert() {
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
+
                                     <img src={svg2} alt='' />
+
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Angebote durch finanu einholen lassen</span>
@@ -45,7 +49,9 @@ function Funktionert() {
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
+
                                     <img src={svg3} alt='' />
+
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Angebote vergleichen</span>
@@ -59,7 +65,9 @@ function Funktionert() {
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
+
                                     <img src={svg4} alt='' />
+
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Entscheiden und Abschliessen</span>
