@@ -47,9 +47,9 @@ function KrankenkasseSteps() {
     const [commune, setCommune] = useState(null);
     const [jahrgang, setJahrgang] = useState([]);
     const [actualmodels, setActualModels] = useState([]);
-    const [franchise, setFranchise] = useState([]);
+    // const [franchise, setFranchise] = useState([]);
     const [model, setModel] = useState([]);
-    const [accident, setAccident] = useState([]);
+    // const [accident, setAccident] = useState([]);
     const [tarifbezeichnung, setTarifbezeichnung] = useState(null);
     const [krankenkasse, setKrankenkasse] = useState([]);
     const [selectedkrankenkasse, setSelectedKrankenkasse] = useState([]);
@@ -181,9 +181,9 @@ function KrankenkasseSteps() {
         }
 
 
-        setFranchise(targetFranchise);
+        // setFranchise(targetFranchise);
         setJahrgang(targetJahrgang);
-        setAccident(targetAccident);
+        // setAccident(targetAccident);
         setModel(targetModells);
         setIsLoadActive('flex');
         const result = await axios.get(`https://node.kutiza.com/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
@@ -192,7 +192,6 @@ function KrankenkasseSteps() {
         const responseSelectedKranken = response.final_data_selected_krankenkasse;
 
 
-        var results = [];
         var searchField = "name";
         var searchVal = ["SWICA", "Vivao Sympany", "Mutuel Assurance (Groupe Mutuel)"];
 
@@ -268,7 +267,7 @@ function KrankenkasseSteps() {
     }
 
     useEffect(() => {
-        
+
 
         const getActualModels = async () => {
             const result = await axios.get(`https://node.kutiza.com/krankenkasse/actualmodel/${insuranceNum}/${kanton}/${region}`)
@@ -280,7 +279,7 @@ function KrankenkasseSteps() {
         else {
             setActualModels([]);
         }
-    }, [insuranceNum])
+    }, [insuranceNum,kanton,region])
 
     const setmodels = async (e) => {
         setModel(e.target.options[e.target.selectedIndex].getAttribute('data-tariftyp'));
@@ -872,7 +871,7 @@ function KrankenkasseSteps() {
                                                         <span className='fw-600 fs-5'>CHF <span className='fw-bold fs-3'>{element.price}</span>/ Mt.</span>
                                                     </div>
                                                     <div>
-                                                        <span className='fw-600'>{(element.price - selectedkrankenkasse[0].price)<0 ?  'sparen' : "mehrkosten"} Sie CHF<span className='finanuSubTitleW fw-bold' style={{ color: (element.price - selectedkrankenkasse[0].price) > 0 ? "#d3252a" : "#21be5c" }}>{(((element.price - selectedkrankenkasse[0].price)< 0 ? (element.price - selectedkrankenkasse[0].price)*(-1) : (element.price - selectedkrankenkasse[0].price)) * 12).toFixed(2)}</span> / Jahr</span>
+                                                        <span className='fw-600'>{(element.price - selectedkrankenkasse[0].price) < 0 ? 'sparen' : "mehrkosten"} Sie CHF<span className='finanuSubTitleW fw-bold' style={{ color: (element.price - selectedkrankenkasse[0].price) > 0 ? "#d3252a" : "#21be5c" }}>{(((element.price - selectedkrankenkasse[0].price) < 0 ? (element.price - selectedkrankenkasse[0].price) * (-1) : (element.price - selectedkrankenkasse[0].price)) * 12).toFixed(2)}</span> / Jahr</span>
                                                     </div>
                                                     <div className='pt-4'>
                                                         <button className='nextBtnKranken nextBtnKranken2' type='button' onClick={() => { setFourthStep(true); setEndKrankenMap(3) }}> ANGEBOTE ANZEIGEN </button>
@@ -886,10 +885,13 @@ function KrankenkasseSteps() {
                             }
 
                         </div>
-                        <div className='pt-5' style={{ display: krankenkasse.length ? 'block' : 'none' }}>
-                            <button className='nextBtnKranken' type='button' onClick={openMehrLadenModal} > Mehr laden </button>
-                        </div>
-
+                        {
+                            (krankenkasse.length >= endKrankenMap) && (
+                                <div className='pt-5' style={{ display: krankenkasse.length ? 'block' : 'none' }}>
+                                    <button className='nextBtnKranken' type='button' onClick={openMehrLadenModal} > Mehr laden </button>
+                                </div>
+                            )
+                        }
                     </div>
                 )}
                 {fourthStep && (

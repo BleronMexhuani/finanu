@@ -32,7 +32,7 @@ function HomeFirstSection(props) {
                                     <span className='firstBlueTitle'>Informieren, Vergleichen & Abschliessen</span>
                                 </div>
                                 <div>
-                                    <span className='finanuSubTitle' style={{ fontWeight: 500 }} >
+                                    <span className='finanuSubTitle fs-5' style={{ fontWeight: 500 }} >
                                         Oder wünschen Sie lieber eine kostenlose Gesamtberatung von einem unserer Kundenberatern?
                                     </span>
                                 </div>
