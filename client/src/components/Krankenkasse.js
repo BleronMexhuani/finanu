@@ -7,7 +7,7 @@ import GutZuWissen from './kranken/GutZuWissen'
 import KrankenCards from './kranken/KrankenCards'
 import Option2Kranken from './kranken/Option2Kranken'
 import Option1Kranken from './kranken/Option1Kranken'
-import { ReactComponent as First } from '../assets/images/krakenkaseillus01.svg'
+import { ReactComponent as First } from '../assets/images/kraken/drinushe.svg'
 
 function Krankenkasse(props) {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactComponent as Idea } from '../assets/images/UberUns.svg'
-import { ReactComponent as IdeaMobile } from '../assets/images/UberUns-Mobile.svg'
+import { ReactComponent as IdeaMobile } from '../assets/images/Mbl.svg'
 import { ReactComponent as IdeaDark } from '../assets/images/UberUns-Dark.svg'
 import { ReactComponent as IdeaMobileDark } from '../assets/images/UberUns-Dark-Mobile.svg'
 

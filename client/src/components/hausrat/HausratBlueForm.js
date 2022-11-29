@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 // import { ReactComponent as HausratHouse } from '../../assets/images/hausratHouse.svg'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
-import { ReactComponent as Ilu } from '../../assets/images/hausratSliderPhotos/hausratIlu.svg'
+import { ReactComponent as Ilu } from '../../assets/images/kraken/houuusushi.svg'
 function HausratBlueForm() {
 
     const [interes, setInteres] = useState(1)
