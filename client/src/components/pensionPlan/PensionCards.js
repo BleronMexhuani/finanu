@@ -1,14 +1,14 @@
 import React from 'react'
-import House from '../../assets/images/pensionHouse.svg'
-import HouseDark from '../../assets/images/pensionHouseDark.svg'
-import ShakingHands from '../../assets/images/shakingHands.svg'
-import ShakingHandsDark from '../../assets/images/shakingHandsDark.svg'
-import Emigration from '../../assets/images/emigration.svg'
-import EmigrationDark from '../../assets/images/emigrationDark.svg'
-import Vaccine from '../../assets/images/vaccine.svg'
-import VaccineDark from '../../assets/images/vaccineDark.svg'
-import OldLady from '../../assets/images/Plaka-01.svg'
-import OldLadyDark from '../../assets/images/Plaka-02.svg'
+import House from '../../assets/images/pension/Home.svg'
+import HouseDark from '../../assets/images/pension/HomeDarkmode.svg'
+import ShakingHands from '../../assets/images/pension/Handshake.svg'
+import ShakingHandsDark from '../../assets/images/pension/HandshakeDarkmode.svg'
+import Emigration from '../../assets/images/pension/Passport.svg'
+import EmigrationDark from '../../assets/images/pension/PassportDarkmode.svg'
+import Vaccine from '../../assets/images/pension/Wheel.svg'
+import VaccineDark from '../../assets/images/pension/WheelDarkmode.svg'
+import OldLady from '../../assets/images/pension/Old.svg'
+import OldLadyDark from '../../assets/images/pension/OldDarkmode.svg'
 
 function PensionCards(props) {
     return (
@@ -70,7 +70,7 @@ function PensionCards(props) {
                                 <div >
                                     {props.darkMode
                                         ? <img src={HouseDark} alt="" />
-                                        : <img src={House} alt="" />
+                                        : <img  src={House} alt="" />
                                     }
                                 </div>
                                 <div>
