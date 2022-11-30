@@ -22,11 +22,11 @@ function Login() {
                     <span className='firstBlueTitle'>Log In</span>
                 </div>
                 <div className="form-outline mb-4 mt-4">
-                    <input placeholder='Email' type="email" onChange={(e) => setEmail(e.target.value)} id="form2Example1" className="krankenInputStyle krankenInputStepStyle p-2" />
+                    <input placeholder='Email' type="email" onChange={(e) => setEmail(e.target.value)} id="form2Example1" className="krankenInputStyle krankenInputStepStyle p-2 p-2" />
                 </div>
                 <div className="form-outline mb-4">
                     
-                    <input placeholder='Password' type="password" onChange={(e) => setPassword(e.target.value)} id="form2Example2" className="krankenInputStyle krankenInputStepStyle p-2" />
+                    <input placeholder='Password' type="password" onChange={(e) => setPassword(e.target.value)} id="form2Example2" className="krankenInputStyle krankenInputStepStyle p-2 p-2" />
                 </div>
                 <button type="button" className="krankenBtnStyle mb-3" style={{ backgroundColor: "#34ACE3" }} onClick={handleSubmit}>Sign in</button>
                 {/* <div className="text-center">

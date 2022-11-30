@@ -34,7 +34,10 @@ function KrankenkasseSteps() {
             telefonnummer
         }
         const res = await axios.post("https://node.kutiza.com/krankenkasse/sendMail");
+        if (res.length > 2) {
+            console.log(res, data)
 
+        }
     }
 
     //Krankenkasse Calculator
@@ -279,7 +282,7 @@ function KrankenkasseSteps() {
         else {
             setActualModels([]);
         }
-    }, [insuranceNum,kanton,region])
+    }, [insuranceNum, kanton, region])
 
     const setmodels = async (e) => {
         setModel(e.target.options[e.target.selectedIndex].getAttribute('data-tariftyp'));
@@ -674,7 +677,7 @@ function KrankenkasseSteps() {
                                         </label>
                                     </div>
                                     <div className="col-12 col-md-6">
-                                        <input type="text" name="" id="" onChange={(e) => setVornameValue(e.target.value)} placeholder='Vorname & Nachname' className='krankenInputStyle krankenInputStepStyle p-3' />
+                                        <input type="text" name="" id="" onChange={(e) => setVornameValue(e.target.value)} placeholder='Vorname & Nachname' className='krankenInputStyle krankenInputStepStyle p-2 p-3' />
                                     </div>
                                     <div className="col-12 col-md-6">
                                         <input type="number" name='Jahrgang'
@@ -683,7 +686,7 @@ function KrankenkasseSteps() {
                                             min={1900}
                                             onChange={validateJahrgang}
                                             placeholder='Jahrgang'
-                                            className='krankenInputStyle krankenInputStepStyle p-3' />
+                                            className='krankenInputStyle krankenInputStepStyle p-2 p-3' />
                                     </div>
                                     <div className="col-12 col-md-6">
                                         <select onChange={(e) => { setPrice(e.target.value) }} disabled={checkJahr ? false : "disabled"} name="franchise" id="" className='krankenInputStyle form-select krankenInputStepStyle p-3'>
@@ -1074,10 +1077,10 @@ function KrankenkasseSteps() {
                                             <div className="krankenStepsBox">
                                                 <div className="row g-4 justify-content-center">
                                                     <div className="col-12 col-sm-6">
-                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3' placeholder='Vorname' name="" id="" />
+                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3' placeholder='Vorname' name="" id="" />
                                                     </div>
                                                     <div className="col-12 col-sm-6">
-                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3' placeholder='Nachname' name="" id="" />
+                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3' placeholder='Nachname' name="" id="" />
                                                     </div>
                                                     <div className="col-12 col-sm-6">
                                                         <select name="" className='krankenInputStyle form-select krankenInputStepStyle p-3' id="">
@@ -1291,14 +1294,14 @@ function KrankenkasseSteps() {
                                                         </select>
                                                     </div>
                                                     <div className="col-12 col-sm-6">
-                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3' placeholder='Adresse' name="" id="" />
+                                                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3' placeholder='Adresse' name="" id="" />
                                                     </div>
                                                     <div className="col-12 col-sm-6">
-                                                        <input type="email" className='krankenInputStyle krankenInputStepStyle p-3' placeholder='E-Mail-Addresse' name="" id="" />
+                                                        <input type="email" className='krankenInputStyle krankenInputStepStyle p-2 p-3' placeholder='E-Mail-Addresse' name="" id="" />
                                                     </div>
                                                     <div className="col-12 col-sm-6">
                                                         <div className="pb-5">
-                                                            <input type="tel" className='krankenInputStyle krankenInputStepStyle p-3' placeholder='Telefonnummer' name="" id="" />
+                                                            <input type="tel" className='krankenInputStyle krankenInputStepStyle p-2 p-3' placeholder='Telefonnummer' name="" id="" />
                                                         </div>
                                                         <div className="pb-3 text-start">
                                                             <label htmlFor="step5Checkbox">
@@ -1347,7 +1350,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Vorname</span>
                                         </div>
                                         <div>
-                                            <input required type="text" onChange={e => setVorname(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="text" onChange={e => setVorname(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2 p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -1355,7 +1358,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Nachname</span>
                                         </div>
                                         <div>
-                                            <input required type="text" onChange={e => setNachname(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="text" onChange={e => setNachname(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2 p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -1583,7 +1586,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Adresse</span>
                                         </div>
                                         <div>
-                                            <input required type="text" onChange={e => setAdresse(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="text" onChange={e => setAdresse(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2 p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -1591,7 +1594,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>E-Mail-Adresse</span>
                                         </div>
                                         <div>
-                                            <input required type="email" onChange={e => setEmail(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="email" onChange={e => setEmail(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2 p-2" />
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6">
@@ -1599,7 +1602,7 @@ function KrankenkasseSteps() {
                                             <span style={{ color: "#464646" }} className='fw-500'>Telefonnummer</span>
                                         </div>
                                         <div>
-                                            <input required type="tel" onChange={e => setTelefonnummer(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2" />
+                                            <input required type="tel" onChange={e => setTelefonnummer(e.target.value)} className="krankenInputStyle krankenInputStepStyle p-2 p-2" />
                                         </div>
                                     </div>
                                     <div className='text-center'>

@@ -41,7 +41,7 @@ function IhrAuto(props) {
                                 <span className='fw-500'>Wer ist der Leasinggeber?</span>
                             </div>
                             <div>
-                                <input style={{ maxWidth: '420px' }} type="text" className='krankenInputStyle krankenInputStepStyle p-3' />
+                                <input style={{ maxWidth: '420px' }} type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3' />
                             </div>
                         </div>
                     }

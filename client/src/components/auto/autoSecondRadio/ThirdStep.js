@@ -14,40 +14,40 @@ function ThirdStep(props) {
             <div className='pb-4'>
                 <div className="row g-4 justify-content-center">
                     <div className="col-12 col-sm-auto">
-                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Vorname *' />
+                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Vorname *' />
                     </div>
                     <div className="col-12 col-sm-auto">
-                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Nachname *' />
-                    </div>
-                </div>
-            </div>
-            <div className="pb-4">
-                <div className="row g-4 justify-content-center">
-                    <div className="col-12 col-sm-auto">
-                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Strasse & Nr. *' />
-                    </div>
-                    <div className="col-12 col-sm-auto">
-                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='PLZ / Ort *' />
+                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Nachname *' />
                     </div>
                 </div>
             </div>
             <div className="pb-4">
                 <div className="row g-4 justify-content-center">
                     <div className="col-12 col-sm-auto">
-                        <input type="tel" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Telefonnummer *' />
+                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Strasse & Nr. *' />
                     </div>
                     <div className="col-12 col-sm-auto">
-                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='E-Mail-Adresse *' />
+                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='PLZ / Ort *' />
+                    </div>
+                </div>
+            </div>
+            <div className="pb-4">
+                <div className="row g-4 justify-content-center">
+                    <div className="col-12 col-sm-auto">
+                        <input type="tel" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Telefonnummer *' />
+                    </div>
+                    <div className="col-12 col-sm-auto">
+                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='E-Mail-Adresse *' />
                     </div>
                 </div>
             </div>
             <div className="pb-5">
                 <div className="row g-4 justify-content-center">
                     <div className="col-12 col-sm-auto">
-                        <input type="date" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox form-control' placeholder='Geburtsdatum *' />
+                        <input type="date" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox form-control' placeholder='Geburtsdatum *' />
                     </div>
                     <div className="col-12 col-sm-auto">
-                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Nationalität *' />
+                        <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Nationalität *' />
                     </div>
                 </div>
             </div>

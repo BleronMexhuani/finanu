@@ -89,9 +89,7 @@
     text-decoration: none;
 }
 
-.marginGutter {
-    margin: 0px -1.5rem;
-}
+
 
 .whiteTestimonials {
     background-color: #fafafa;
@@ -452,9 +450,7 @@ div.fs-5 {
 }
 
 @media (max-width: 575.98px) {
-    .marginGutter {
-        margin: 0px;
-    }
+    
 
     .fourthSectionImg {
         width: 100%;

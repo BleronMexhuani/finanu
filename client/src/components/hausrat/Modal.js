@@ -15,7 +15,7 @@ function Modal(props) {
         <div>
             <div className="hausratModal">
                 <div className="hausratModalContent p-4 p-md-5">
-                    <div className="hausratModalScroll p-2 my-3">
+                    <div className="hausratModalScroll px-2">
                         <div className='modalXBtn'>
                             <span style={{ cursor: "pointer" }} onClick={() => { props.setopenModal(false) }}>
                                 <img src={XBtn} alt="" />
@@ -79,7 +79,7 @@ function Modal(props) {
                                 <div className='pb-2'>
                                     <span className='fw-500'>Vorname und Nachname</span>
                                 </div>
-                                <div className='step3InputRechtss hausratModalInputs '>
+                                <div className='krankenInputStyle krankenInputStepStyle p-2 '>
                                     <div className="row gx-2">
                                         <div className="col-auto">
                                             <Name height="22" />
@@ -96,7 +96,7 @@ function Modal(props) {
                                         <div className='pb-2'>
                                             <span className='fw-500'>Postleitzahl</span>
                                         </div>
-                                        <div className='step3InputRechtss hausratModalInputs '>
+                                        <div className='krankenInputStyle krankenInputStepStyle p-2 '>
                                             <div className="row gx-2">
                                                 <div className="col-auto">
                                                     <Post height="22" />
@@ -111,7 +111,7 @@ function Modal(props) {
                                         <div className='pb-2'>
                                             <span className='fw-500'>Ort</span>
                                         </div>
-                                        <div className='step3InputRechtss hausratModalInputs '>
+                                        <div className='krankenInputStyle krankenInputStepStyle p-2 '>
                                             <div className="row gx-2">
                                                 <div className="col-auto">
                                                     <Location height="22" />
@@ -128,7 +128,7 @@ function Modal(props) {
                                 <div className='pb-2'>
                                     <span className='fw-500'>Strasse</span>
                                 </div>
-                                <div className='step3InputRechtss hausratModalInputs '>
+                                <div className='krankenInputStyle krankenInputStepStyle p-2 '>
                                     <div className="row gx-2">
                                         <div className="col-auto">
                                             <Street height="22" />
@@ -146,14 +146,14 @@ function Modal(props) {
                                             <span className='fw-500'>Geburtsdatum</span>
                                         </div>
                                         <div className="">
-                                            <input className='step3InputRechtss hausratModalInputs form-control' type="date" name="" placeholder='PLZ' id="" />
+                                            <input className='krankenInputStyle krankenInputStepStyle p-2 form-control' type="date" name="" placeholder='PLZ' id="" />
                                         </div>
                                     </div>
                                     <div className='col-12 col-md-6'>
                                         <div className='pb-2'>
                                             <span className='fw-500'>Telefonnummer</span>
                                         </div>
-                                        <div className='step3InputRechtss hausratModalInputs '>
+                                        <div className='krankenInputStyle krankenInputStepStyle p-2 '>
                                             <div className="row gx-2">
                                                 <div className="col-auto">
                                                     <Phone height="22" />
@@ -172,7 +172,7 @@ function Modal(props) {
                                 <div className='pb-2'>
                                     <span className='fw-500'>E-mail</span>
                                 </div>
-                                <div className='step3InputRechtss hausratModalInputs '>
+                                <div className='krankenInputStyle krankenInputStepStyle p-2 '>
                                     <div className="row gx-2">
                                         <div className="col-auto">
                                             <ModalEmailIcon height="22" />

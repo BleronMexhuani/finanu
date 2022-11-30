@@ -3,13 +3,13 @@ import { ReactComponent as Idea } from '../assets/images/UberUns.svg'
 import { ReactComponent as IdeaMobile } from '../assets/images/Mbl.svg'
 import { ReactComponent as IdeaDark } from '../assets/images/UberUns-Dark.svg'
 import { ReactComponent as IdeaMobileDark } from '../assets/images/UberUns-Dark-Mobile.svg'
+import TrustBox from './homepage/TrustBox'
 
 import Muscle from '../assets/images/uberUns/muscle.svg'
 import '../assets/css/uberUns.css'
-import ToggleDarkMode from "../components/ToggleDarkMode";
 
-import SliderHausrat from './hausrat/SliderHausrat'
 import { useState, useEffect } from 'react'
+import HomeSlider from './homepage/HomeSlider'
 
 function UberUns(props) {
 
@@ -28,60 +28,63 @@ function UberUns(props) {
     }, [])
     return (
         <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
-            <div className='pb-5'>
-                <span className='fw-700 firstBlueTitle fs-1'>Über uns</span>
-            </div>
+
 
             <div className='bodyCounterPadding'>
-
-                {(screenWidth > 575.98) && (
-
-                    <>
-                        {props.darkMode
-
-                            ? <IdeaDark style={{ maxWidth: 'max-content' }} />
-                            : <Idea style={{ maxWidth: 'max-content' }} />
-
-                        }
-                    </>
-                )}
-                {(screenWidth < 575.98) && (
-                    <>
-                        {props.darkMode
-
-                            ? <IdeaMobileDark style={{ maxWidth: 'max-content' }} />
-                            : <IdeaMobile style={{ maxWidth: 'max-content' }} />
-                        }
-                    </>
-
-                )}
-
-            </div>
-            <div className="row gx-4 justify-content-between bodyCounterPadding">
-                <div className="col-12 col-md-5 col-xl-4 text-start">
-
-                    <div className='pb-4'>
-                        <span className='fw-700 firstBlueTitle fs-1'>Unsere Aufgabe</span>
+                <div className="row gx-4 gy-0 justify-content-center">
+                    <div className="col-12 col-md-6 col-xl-5 text-start my-auto">
+                        <div className='pb-3'>
+                            <span className='fw-700 firstBlueTitle fs-1'>Über uns</span>
+                        </div>
+                        <div>
+                            <span className='finanuSubTitle fs-5'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. </span>
+                        </div>
                     </div>
+                    <div className="col-12 col-md-6 col-xl-7 mt-5 mt-md-0">
+                        {(screenWidth > 575.98) && (
 
-                </div>
-                <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
-                    <div className=''>
-                        <span className='fw-500 fs-5 normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern. Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.</span>
+                            <>
+                                {props.darkMode
+
+                                    ? <IdeaDark style={{ maxWidth: 'max-content' }} />
+                                    : <Idea style={{ maxWidth: 'max-content' }} />
+
+                                }
+                            </>
+                        )}
+                        {(screenWidth < 575.98) && (
+                            <>
+                                {props.darkMode
+
+                                    ? <IdeaMobileDark style={{ maxWidth: 'max-content' }} />
+                                    : <IdeaMobile style={{ maxWidth: 'max-content' }} />
+                                }
+                            </>
+
+                        )}
                     </div>
                 </div>
+
+
             </div>
 
 
-            <div className="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 mx-auto bodyCounterPadding">
-                <div className="row g-4 justify-content-center">
+
+            <div className="bodyCounterPadding">
+                <div className="pb-5">
+                    <span className='firstBlueTitle fw-700 fs-1'>Our Lorem Ipsum</span>
+                </div>
+                <div className="row g-5 justify-content-center">
                     <div className="col-12 col-sm-6 col-md-4">
                         <div className="whiteBgUber px-5 py-5 h-100">
                             <div>
                                 <img src={Muscle} alt="" />
                             </div>
-                            <div className='pt-4'>
+                            <div className='py-4'>
                                 <span className='fw-500 fs-5'>Unabhängig</span>
+                            </div>
+                            <div>
+                                <span className='secondaryColor'>Der Hausarzt überweist den Patienten wenn nötig an einen Spezialisten.</span>
                             </div>
                         </div>
                     </div>
@@ -98,8 +101,11 @@ function UberUns(props) {
                                 </svg>
 
                             </div>
-                            <div className='pt-4'>
+                            <div className='py-4'>
                                 <span className='fw-500 fs-5'>Transparent</span>
+                            </div>
+                            <div>
+                                <span className='secondaryColor'>Der Hausarzt überweist den Patienten wenn nötig an einen Spezialisten.</span>
                             </div>
                         </div>
                     </div>
@@ -113,15 +119,31 @@ function UberUns(props) {
                                 </svg>
 
                             </div>
-                            <div className='pt-4'>
+                            <div className='py-4'>
                                 <span className='fw-500 fs-5'>Nachhaltig</span>
+                            </div>
+                            <div>
+                                <span className='secondaryColor'>Der Hausarzt überweist den Patienten wenn nötig an einen Spezialisten.</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className=''>
+                <div className="row gx-4 justify-content-between bodyCounterPadding">
+                    <div className="col-12 col-md-5 col-xl-4 text-start">
 
+                        <div className='pb-4'>
+                            <span className='fw-700 firstBlueTitle fs-1'>Unsere Aufgabe</span>
+                        </div>
+
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+                        <div className=''>
+                            <span className='fw-500 fs-5 normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern. Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.</span>
+                        </div>
+                    </div>
+                </div>
                 <div className="row gx-4 justify-content-between bodyCounterPadding">
                     <div className="col-12 col-md-5 col-xl-4 text-start">
 
@@ -131,9 +153,15 @@ function UberUns(props) {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
-                        <div className=''>
+                        <div className='pb-3'>
                             <span className='fw-500 fs-5 normalTextToWhite'>
-                                Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit. Unsere Bewertungen erfolgen unabhängig von Dritten, unsere Beratung berücksichtigt Chancen und Risiken. Wir engagieren uns für unsere Kunden voll Leidenschaft und beraten kompetent und zuverlässig.
+                                Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit.
+
+                            </span>
+                        </div>
+                        <div>
+                            <span className='fw-500 fs-5 normalTextToWhite'>
+                                Unsere Bewertungen erfolgen unabhängig von Dritten, unsere Beratung berücksichtigt Chancen und Risiken. Wir engagieren uns für unsere Kunden voll Leidenschaft und beraten kompetent und zuverlässig.
                             </span>
                         </div>
                     </div>
@@ -274,8 +302,19 @@ function UberUns(props) {
                     </div>
                 </div>
             </div>
-            <div>
-                <SliderHausrat />
+            <div className='bodyCounterPadding'>
+                <div className="row g-0 justify-content-center">
+                    <div className="col-12 col-md-8">
+                        
+                        <div className=''>
+                            <span className='fs-4 firstBlueTitle' style={{ fontWeight: 700 }}>TRANSPARENT, SCHNELL, DIGITAL​</span>
+                        </div>
+                        <div className='py-5'>
+                            <TrustBox />
+                        </div>
+                    </div>
+                </div>
+                <HomeSlider />
             </div>
         </div>
     )

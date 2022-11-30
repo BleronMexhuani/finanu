@@ -348,13 +348,13 @@ a {
 
 }
 
-.darkTheme .hausratModalContent input {
+/* .darkTheme .hausratModalContent input {
     border: 1px solid #434343 !important;
     background-color: transparent !important;
     color: #fff;
-}
+} */
 
-.darkTheme .hausratModalContent select {
+/* .darkTheme .hausratModalContent select {
     border: 1px solid #434343 !important;
     background-color: transparent !important;
     color: #fff;
@@ -362,16 +362,16 @@ a {
 
 .darkTheme .hausratModalContent select option {
     color: #000;
-}
+} */
 
 .darkTheme .hausratModalContent input:disabled {
     background-color: #282424 !important;
     color: #ccc;
 }
 
-.darkTheme .hausratModalContent select {
+/* .darkTheme .hausratModalContent select {
     border: 1px solid #434343 !important;
-}
+} */
 
 
 
@@ -409,3 +409,6 @@ a {
     color: #fff;
     box-shadow: unset;
 }
+.darkTheme .krankenInputStyle.krankenInputStepStyle.p-2 input {
+    border: none !important;
+} 

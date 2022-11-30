@@ -46,14 +46,14 @@ function NewPerson(props) {
                             </label>
                         </div>
                         <div className="col-12 col-md-6">
-                            <input type="text" name={"personName" + props.id} id="" placeholder='Vorname & Nachname' className='krankenInputStyle krankenInputStepStyle p-3' />
+                            <input type="text" name={"personName" + props.id} id="" placeholder='Vorname & Nachname' className='krankenInputStyle krankenInputStepStyle p-2 p-3' />
                         </div>
                         <div className="col-12 col-md-6">
                             <input type="text" name={"Jahrgang"}
                                 placeholder='Jahrgang'
                                 min={1900}
                                 onChange={validateJahrgang}
-                                className='krankenInputStyle krankenInputStepStyle p-3' />
+                                className='krankenInputStyle krankenInputStepStyle p-2 p-3' />
                         </div>
                         <div className="col-12 col-md-6">
                             <select disabled={checkJahr ? false : "disabled"} name={"franchise" } id="" className='krankenInputStyle form-select krankenInputStepStyle p-3'>

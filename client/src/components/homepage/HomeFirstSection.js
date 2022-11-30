@@ -17,7 +17,7 @@ import logo from "../../assets/images/logo.svg"
 import { Link } from "react-router-dom";
 import { ReactComponent as HeroImg } from '../../assets/images/Homush.svg'
 
-import TrustBox from './TrustBox'
+import TrustBox from './TrustBox.js'
 
 function HomeFirstSection(props) {
 
@@ -44,8 +44,8 @@ function HomeFirstSection(props) {
                     </div>
                 </div>
                 <div className="wrapDiv container-xl px-4 px-xl-0">
-                    <div className="marginGutter">
-                        <div className="row gx-0 gx-sm-5 gy-4 gy-sm-5 px-0 mx-0 bodyCounterPadding">
+                    <div className="">
+                        <div className="row g-4 g-sm-5 bodyCounterPadding">
                             <div className="col-12 col-sm-6 col-lg-4">
                                 <div className="blueBgdiv p-5 h-100">
                                     <Link to='/finanzen/pensionsplanung-und-ruhestand'>
