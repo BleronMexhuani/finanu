@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import Einzel from '../../assets/images/newimages/drinnn-01.svg'
-import Familie from '../../assets/images/newimages/drinnn-02.svg'
-import Building from '../../assets/images/newimages/drinnn-03.svg'
-import Privat from '../../assets/images/newimages/drinnn-04.svg'
+import { ReactComponent as Einzel } from '../../assets/images/newimages/drinnn-01.svg'
+import { ReactComponent as Familie } from '../../assets/images/newimages/drinnn-02.svg'
+import { ReactComponent as Building } from '../../assets/images/newimages/drinnn-03.svg'
+import { ReactComponent as Privat } from '../../assets/images/newimages/drinnn-04.svg'
 import Step2First from '../../assets/images/newimages/3tjerat-07.svg'
 import Step2Second from '../../assets/images/newimages/3tjerat-05.svg'
 import Step2Third from '../../assets/images/newimages/3tjerat-06.svg'
@@ -30,12 +30,24 @@ function RechtsschutzSteps() {
     const [reschtutz, setReschutz] = useState('einzelpersonen');
     const [res2, setRes2] = useState('tiefe kosten');
 
-    const handleSubmit = async () => {
+    const [submitError, setSubmitError] = useState('')
+    const [errorMessage, seterrorMessage] = useState('')
+    const handleSubmit = (e) => {
+
         const data = {
             gender, vorname, email, geburstdatum, telefonnumer, plz, ort, strasse, reschtutz, res2
         }
-        const res = await axios.post("https://node.kutiza.com/rechtschutz/sendEmail", data);
-        console.log(res);
+        if (gender && vorname && email && geburstdatum && telefonnumer && plz && ort && strasse && reschtutz && res2) {
+            const res = axios.post("https://node.kutiza.com/rechtschutz/sendEmail", data);
+            console.log(res);
+            seterrorMessage('Thank you for submitting')
+            setSubmitError('#fff')
+        }
+        else {
+            setSubmitError('#F6490E')
+            seterrorMessage('Alle Felder sind erforderlich')
+
+        }
     }
     return (
         <>
@@ -81,28 +93,28 @@ function RechtsschutzSteps() {
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Einzelpersonen" className='containerRes w-100 h-100'>
                                                     <input type="radio" id='Einzelpersonen' checked={(reschtutz === 'einzelpersonen') ? true : false} onChange={e => setReschutz('einzelpersonen')} name='who' hidden />
-                                                    <div className='checkmarkRes px-1 mb-2'><img src={Einzel} className="img-fluid" height="" width="" alt="" /></div>
+                                                    <div className='checkmarkRes px-1 mb-2'> <Einzel className="w-100" height="70px" /></div>
                                                     <span className='underCheckmarkSpan'>Einzelpersonen</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Familien" className='containerRes w-100'>
                                                     <input type="radio" id='Familien' onChange={e => setReschutz('Familien')} name='who' hidden />
-                                                    <div className='checkmarkRes px-1 mb-2'><img src={Familie} className="img-fluid" alt="" /></div>
+                                                    <div className='checkmarkRes px-1 mb-2'> <Familie className="w-100" height="70px" /></div>
                                                     <span className='underCheckmarkSpan'>Familien</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Unternehmer" className='containerRes w-100 h-100'>
                                                     <input type="radio" id='Unternehmer' onChange={e => setReschutz('Unternehmer')} name='who' hidden />
-                                                    <div className='checkmarkRes px-1 mb-2'><img src={Building} className="img-fluid" alt="" /></div>
+                                                    <div className='checkmarkRes px-1 mb-2'><Building className="w-100" height="70px" /></div>
                                                     <span className='underCheckmarkSpan'>Unternehmer</span>
                                                 </label>
                                             </div>
                                             <div className="col-6 col-xl-3">
                                                 <label htmlFor="Privat" className='containerRes w-100 h-100'>
                                                     <input type="radio" id='Privat' onChange={e => setReschutz('Privat')} name='who' hidden />
-                                                    <div className='checkmarkRes px-1 mb-2'><img src={Privat} className="img-fluid" alt="" /></div>
+                                                    <div className='checkmarkRes px-1 mb-2'> <Privat className="w-100" height="70px" /></div>
                                                     <span className='underCheckmarkSpan'>Privat + Unternehmer</span>
                                                 </label>
                                             </div>
@@ -266,6 +278,12 @@ function RechtsschutzSteps() {
                                                 <button type='button' onClick={handleSubmit} className='autoBtnStyle step3RechtssBtn'>Vergleich anfordern</button>
                                             </div>
                                         </div>
+                                        {(submitError !== '') && (
+                                            <div className="pt-4" >
+                                                <span style={{ color: submitError }}>{errorMessage}</span>
+                                            </div>
+                                        )}
+
                                     </div>
                                 </form>
                             </div>

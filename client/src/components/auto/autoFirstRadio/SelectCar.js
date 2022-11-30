@@ -19,7 +19,7 @@ function SelectCar(props) {
         document.getElementById('inputChange').value = e.target.getAttribute('value')
         setInputValue(e.target.getAttribute('value'))
         setIsFocused(false)
-
+        
     }
 
     return (
@@ -33,25 +33,23 @@ function SelectCar(props) {
                 <div className="pb-5">
                     <div className="text-center">
                         <div style={{ position: 'relative' }}>
-
                             <div className="pb-4">
-                                <input type="text" autoComplete='off' className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Marke' id="inputChange" onChange={(e) => setInputValue(e.target.value)} onFocus={showSelectDropdown} onBlur={hideSelectDropdown} />
+                                <input type="text" autoComplete='off' defaultValue={inputValue} className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Marke' id="inputChange" onChange={(e) => setInputValue(e.target.value)} onFocus={showSelectDropdown} onBlur={hideSelectDropdown} />
                             </div>
                             {(isFocused) && (
                                 <div className='krankenSelectDropdown autoCheckbox autoSelectDropdown'>
-                                    <div className='selectOptionStyle' onClick={handleInput} value='test' >
+                                    <div className='selectOptionStyle' onClick={handleInput} value='asd' >
                                         asd
                                     </div>
-
                                 </div>
                             )}
                         </div>
 
                         <div className="pb-4">
-                            <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Modell' />
+                            <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Modell' />
                         </div>
                         <div className="">
-                            <input type="text" className='krankenInputStyle krankenInputStepStyle p-3 autoCheckbox' placeholder='Modelljahr' />
+                            <input type="text" className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' placeholder='Modelljahr' />
                         </div>
                     </div>
                 </div>

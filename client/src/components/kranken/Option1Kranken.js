@@ -22,7 +22,6 @@ function Option1Kranken(props) {
             document.body.style.overflowY = "auto"
         }
 
-        console.log(openModal);
     }
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
