@@ -13,9 +13,9 @@ import Photo1 from '../../assets/images/versicherungen/swicaPic1.png'
 import Photo2 from '../../assets/images/versicherungen/swicaPic2.png'
 import Photo3 from '../../assets/images/versicherungen/swicaPic3.png'
 
+import '../../assets/css/versicherungen.css'
 
-
-function GroupeMutuel() {
+function GroupeMutuel(props) {
     return (
         <div>
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding'>
@@ -56,7 +56,7 @@ function GroupeMutuel() {
                         </div>
                     </div>
                     <div>
-                        <div className="row g-4 justify-content-center" style={{ background: "#183C4A", border: "1px solid #F6EFE7", borderRadius: "18px" }}>
+                        <div className="row g-4 justify-content-center" style={{ background: "#183C4A", border: "none", borderRadius: "18px" }}>
                             <div className="col-12 col-sm-6 col-md-3">
                                 <NavLink to='/versicherungen/krankenkasse' className='text-decoration-none text-dark'>
                                     <div className=' p-4 p-lg-5'>
@@ -98,10 +98,6 @@ function GroupeMutuel() {
                                             <path d="M16.5 31C25.0604 31 32 24.2843 32 16C32 7.71573 25.0604 1 16.5 1C7.93959 1 1 7.71573 1 16C1 24.2843 7.93959 31 16.5 31Z" fill="#E5AB3B" stroke="#E5AB3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                             <path d="M5 15C5 11.1715 7.2 3.84271 16 5.15534" stroke="#F4F4F4" strokeLinecap="round" />
                                         </svg>
-
-
-
-
                                     </div>
                                     <div>
                                         <span className='fw-800 servicesofgroupe'>Adresse ändern</span>
@@ -140,6 +136,7 @@ function GroupeMutuel() {
                                     <span>
                                         <p className='testofcards text-start pt-4 mb-0'>Für die obligatorische Grundversicherung stehen bei der Groupe Mutuel verschiedene Modelle zur Auswahl. Dabei sinkt die Prämie, je mehr sich der Kunde auf die Experten der Krankenkasse verlässt. Konkret gehören folgende Tarife zum Angebot:
                                         </p>
+                                        <br></br>
                                         <ul className='listofcards text-start mb-0'>
                                             <li>Standard: Der Kunde hat freie Hand bezüglich der Arztwahl. </li>
                                             <li>Hausarzt: Bei jedem Arztbesuch muss zuvor der Hausarzt konsultiert werden.</li>
@@ -159,9 +156,11 @@ function GroupeMutuel() {
                                 <div>
                                     <span>
                                         <p className='testofcards text-start pt-4 mb-0'>
-                                        Neben den Grundversicherungen bietet die Groupe Mutuel ein umfangreiches Angebot an Zusatzversicherungen, um individuelle Bedürfnisse bestmöglich abzudecken. Konkret können Ergänzungen in den Bereichen:
+                                            Neben den Grundversicherungen bietet die Groupe Mutuel ein umfangreiches Angebot an Zusatzversicherungen, um individuelle Bedürfnisse bestmöglich abzudecken. Konkret können Ergänzungen in den Bereichen:
 
                                         </p>
+                                        <br></br>
+
                                         <ul className='listofcards text-start mb-0'>
                                             <li className=''>ambulante Behandlungen</li>
                                             <li className=''>Spitalaufenthalte </li>
@@ -185,10 +184,10 @@ function GroupeMutuel() {
                                 <div>
                                     <span>
                                         <p className='testofcards text-start pt-4 mb-0'>
-                                        Die Groupe Mutuel bietet all ihren Versicherten mit dem Vorteilsprogramm "LeClub" zahlreiche Vergünstigungen und Rabatte in den Bereichen Gesundheit und Wellness, Sport, Familie und Freizeit, Tourismus sowie Diverses an. Auch exklusive Gewinnspiele gehören zu den Aktionen des Programms. 
+                                            Die Groupe Mutuel bietet all ihren Versicherten mit dem Vorteilsprogramm "LeClub" zahlreiche Vergünstigungen und Rabatte in den Bereichen Gesundheit und Wellness, Sport, Familie und Freizeit, Tourismus sowie Diverses an. Auch exklusive Gewinnspiele gehören zu den Aktionen des Programms.
                                             <br></br>
                                             <br></br>
-                                            Ausserdem können vor allem Familien von interessanten Angeboten profitieren. So sinkt ab dem dritten Kind der Betrag der Versicherungsprämie, während der Schwangerschaft kann ein umfangreiches Zusatzpaket abgeschlossen werden und die Verwaltung der Versicherungen aller Familienmitglieder soll durch das digitale Kundenportal so einfach wie möglich gehalten werden. 
+                                            Ausserdem können vor allem Familien von interessanten Angeboten profitieren. So sinkt ab dem dritten Kind der Betrag der Versicherungsprämie, während der Schwangerschaft kann ein umfangreiches Zusatzpaket abgeschlossen werden und die Verwaltung der Versicherungen aller Familienmitglieder soll durch das digitale Kundenportal so einfach wie möglich gehalten werden.
                                             <br></br>
                                             <br></br>
                                             Sie interessieren sich für eine Versicherung bei der Groupe Mutuel? Dann lassen Sie uns jetzt Ihr unverbindliches Angebot berechnen!
@@ -223,7 +222,7 @@ function GroupeMutuel() {
                     </div>
                 </div>
             </div>
-            
+
             <div className='wrapDiv container-xl px-4 px-lg-5 bodyCounterPadding text-center'>
                 <div className="row g-0 justify-content-center">
                     <div className="col-auto">

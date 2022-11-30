@@ -160,6 +160,11 @@ a {
 .privatenImgSize {
     height: 100%;
 }
+
+.darkTheme .titleoffolgende {
+    color: white;
+}
+
 .privatenImgSize img {
     height: 150px;
 }
@@ -427,7 +432,7 @@ a {
         width: 100%;
     }
 
-    
+
 
     .emptyOption {
         font-size: 14px !important;
@@ -512,10 +517,12 @@ a {
     .nextBtnKranken {
         width: 100%;
     }
+
     .autoBtnStyle {
         width: 100%;
 
     }
+
     .emptyOption {
         font-size: 12px !important;
     }
