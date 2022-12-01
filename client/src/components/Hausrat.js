@@ -4,14 +4,14 @@ import AktuelleHypothek from './hausrat/AktuelleHypothek'
 import HausratCards from './hausrat/HausratCards'
 import '../assets/css/hausrat.css'
 import SliderHausrat from './hausrat/SliderHausrat'
-function Hausrat() {
+function Hausrat(props) {
   return (
     <>
         <div>
             <HausratBlueForm />
         </div>
         <div>
-            <AktuelleHypothek />
+            <AktuelleHypothek darkMode={props.darkMode} />
         </div>
         <div>
             <HausratCards />

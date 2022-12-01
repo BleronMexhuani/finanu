@@ -28,14 +28,14 @@ function Otherquestions() {
                 <div className='row justify-content-evenly' >
                     <div className='col-12 col-md-5 my-auto'>
                         <div className='text-start'>
-                            <p className='secondaryColor fs-3 fw-700'>
+                            <p className='secondaryColor pb-3 pb-sm-1 pb-md-0 fs-3 fw-700'>
                                 Other questions people ask a lot
                             </p>
                         </div>
 
                         <div className='collapsofthelastcomponent mb-5 mb-md-auto '>
                             <Accordion defaultActiveKey="0 text-dark accordionmainstyle ">
-                                <Accordion.Item eventKey="4" className="accordionstyle agilestyleofaccordion border border-0" style={{borderRadius: '15px 15px  0px 0px  '}}>
+                                <Accordion.Item bg={'red'} eventKey="4" className="accordionstyle agilestyleofaccordion border border-0" style={{borderRadius: '15px 15px  0px 0px', backgroundColor: 'red !important'}}>
                                     <Accordion.Header className="py-0 buttonofthelastcomponent">Accordion Item #1</Accordion.Header>
                                     <Accordion.Body className="contentoflastaccordion text-light" style={{backgroundColor: '#50B8E7'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

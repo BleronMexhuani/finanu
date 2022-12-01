@@ -134,7 +134,7 @@
 
 .plusReviewsDiv {
     background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(162, 162, 162, 0.27);
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
     border-radius: 25px;
 }
 
@@ -247,7 +247,12 @@
     }
 }
 
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+    .plusTitle {
+        font-size: 45px;
+    }
+
+}
 
 @media (max-width: 1199.98px) {}
 
@@ -269,6 +274,13 @@
     .videobackground {
         margin-right: 10px;
         margin-left: 10px;
+    }
+    .signaturephoto {
+        width: 140px;
+        text-align: center;
+    }
+    .signaturediv {
+        text-align: center;
     }
 
     .videoinsecondsection {
@@ -304,7 +316,6 @@
 
     .accordionstyle {
         border: none !important;
-        background: #50B8E7;
     }
 
 

@@ -41,7 +41,7 @@ function Vorar(props) {
                             </span>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-12 my-auto" style={{ textAlign: '-webkit-center' }}>
+                    <div className="col-lg-3 col-12 my-auto pt-4 pt-lg-0" style={{ textAlign: '-webkit-center' }}>
                         <div className='cardofthelastcomponent d-flex'>
                             <div className='px-4 '>
                                 <p className='text-center fw-400 pt-2'>ProLife Weiterempfehlen</p>
