@@ -15,14 +15,17 @@ import bellLightMode from '../../assets/images/kraken/opsions/bellLightMode.svg'
 
 import Modal from './Modal'
 import Offerte from '../../assets/images/offerteAnfordern.svg'
+import OfferteDark from '../../assets/images/offerteAnfordernDark.svg'
+
 import Abschlie from '../../assets/images/abschliessen.svg'
+import AbschlieDark from '../../assets/images/abschliessenDark.svg'
+
 import Mesazhi from '../../assets/images/Mesazhiiii-02.svg'
 
+import MesazhiDark from '../../assets/images/Mesazhiiii-02Dark.svg'
+//import { ReactComponent as MegaPhone } from '../../assets/images/Vergleichen.svg'
 import { ReactComponent as Suchen } from '../../assets/images/option1Suchen.svg'
 import { ReactComponent as SuchenDark } from '../../assets/images/kraken/searchDarkModee.svg'
-
-
-// import { ReactComponent as MegaPhone } from '../../assets/images/kraken/Vergleichen.svg'
 
 function Option1Kranken(props) {
     const [openModal, setopenModal] = useState(false)
@@ -420,6 +423,7 @@ function Option1Kranken(props) {
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='pb-3'>
 
+
                                 {props.darkMode
                                     ? < img src={bellDarkMode} alt="" />
                                     : < img src={bellLightMode} alt="" />
@@ -438,7 +442,10 @@ function Option1Kranken(props) {
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg">
                             <div className='pb-3'>
-                                <img src={Offerte} height="83px" alt="" />
+                                {props.darkMode
+                                    ? <img src={OfferteDark} height="83px" alt="" />
+                                    : <img src={Offerte} height="83px" alt="" />
+                                }
                             </div>
                             <div>
                                 <div className='pb-2'>
@@ -453,9 +460,11 @@ function Option1Kranken(props) {
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg" >
                             <div className='pb-3'>
+                            {props.darkMode
+                                    ? <img src={MesazhiDark} height="83px" alt="" />
+                                    : <img src={Mesazhi} height="83px" alt="" />
+                                }
 
-                                <img src={Mesazhi} alt='' />
-                                {/* here */}
                             </div>
                             <div>
                                 <div className='pb-2'>
@@ -469,7 +478,10 @@ function Option1Kranken(props) {
                         </div>
                         <div className="col-12 col-sm col-md-4 col-lg">
                             <div className='pb-3'>
-                                <img src={Abschlie} height="83px" alt="" />
+                            {props.darkMode
+                                    ? <img src={AbschlieDark} height="83px" alt="" />
+                                    : <img src={Abschlie} height="83px" alt="" />
+                                }
                             </div>
                             <div>
                                 <div className='pb-2'>

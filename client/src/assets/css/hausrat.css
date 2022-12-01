@@ -412,3 +412,6 @@ a {
 .darkTheme .krankenInputStyle.krankenInputStepStyle.p-2 input {
     border: none !important;
 } 
+.darkTheme .modalXBtn svg path { 
+    stroke: white;
+}

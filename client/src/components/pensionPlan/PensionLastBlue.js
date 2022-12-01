@@ -1,6 +1,8 @@
 import React from 'react'
 import PensionBank from '../../assets/images/pensionBank.svg'
 import Versicherung from '../../assets/images/pensionVersicherung.svg'
+import VersicherungDark from '../../assets/images/pensionVersicherungDark.svg'
+
 import PensionBankDark from '../../assets/images/pensionBankDark.svg'
 
 
@@ -13,7 +15,7 @@ function PensionLastBlue(props) {
                         <div className="whiteBgInBluePension py-3 px-2">
                             <div className='text-center'>
                                 <span className='finanuSubTitle fw-bold fs-5' style={{ color: '#50B8E7' }}>Unterschiede in der Vorsorge 3A
-                                    Bank oder Versicherung</span>
+                                    Bank oder VersicherungDark</span>
                             </div>
                         </div>
                         <div className='pt-5'>
@@ -89,7 +91,10 @@ function PensionLastBlue(props) {
                                 <div className="col-6 col-md-4">
                                     <div className="pensionBankBorderBottom h-auto">
                                         <div>
-                                            <img width={90} height={90} src={Versicherung} alt="" />
+                                        {props.darkMode
+                                                ? <img width={90} height={90} src={VersicherungDark} alt="" />
+                                                : <img width={90} height={90} src={Versicherung} alt="" />
+                                            }
                                         </div>
                                         <div className='py-4'>
                                             <span className='fw-700' style={{ color: "#fff" }}>

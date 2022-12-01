@@ -661,6 +661,9 @@ a {
     background-size: cover;
     margin-top: -200px;
 }
+.darkTheme .krankenInputStepStyle.krankenInputStyle.p-2 svg path {
+    fill: #fff;
+}
 
 @media (min-width: 1700px) {
     .darkTheme .blueBgKranken {

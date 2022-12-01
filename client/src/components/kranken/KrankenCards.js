@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
 import BeatingHeart from '../../assets/images/beatingHeart.svg'
+import BeatingHeartDark from '../../assets/images/kraken/beatingHeartDark.svg'
+
 import Doctor from '../../assets/images/doctor.svg'
+import DoctorDark from '../../assets/images/doctorDark.svg'
+
 import Hands from '../../assets/images/handsCross.svg'
+import HandsDark from '../../assets/images/handsCrossDark.svg'
+
 import Medicine from '../../assets/images/medicine.svg'
 
+import MedicineDark from '../../assets/images/medicineDark.svg'
 
 import Medicine2 from '../../assets/images/medicine2.svg'
 import Transport from '../../assets/images/transport.svg'
@@ -13,6 +20,7 @@ import Braces from '../../assets/images/braces.svg'
 import Fitness from '../../assets/images/fitness.svg'
 import Abroad from '../../assets/images/abroad.svg'
 import Glasses from '../../assets/images/glasses.svg'
+
 
 
 import Medicine2Dark from '../../assets/images/HapaDarkmode.svg'
@@ -28,7 +36,10 @@ import GlassesDark from '../../assets/images/glassesDarkmode.svg'
 
 
 
+
 import PhoneDoc from '../../assets/images/phoneDoc.svg'
+import PhoneDocDark from '../../assets/images/phoneDocDark.svg'
+
 // import Economy from '../../assets/images/economy.svg'
 // import Handshake from '../../assets/images/handshake.svg'
 // import Kravata from '../../assets/images/kravata.svg'
@@ -62,7 +73,12 @@ function KrankenCards(props) {
                             <div className="col-12 col-sm-6 col-md-4 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
-                                        <img src={BeatingHeart} alt="" />
+                                        {props.darkMode
+
+                                            ? <img src={BeatingHeartDark} alt="" />
+                                            : <img src={BeatingHeart} alt="" />
+                                        }
+
                                     </div>
                                     <div className='pb-2'>
                                         <span className='fw-600 finanuSubTitle fs-5'>Grundmodell <br className='d-none d-sm-block'></br> (0%)</span>
@@ -75,7 +91,10 @@ function KrankenCards(props) {
                             <div className="col-12 col-sm-6 col-md-4 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
-                                        <img src={Doctor} alt="" />
+                                        {props.darkMode
+                                            ? <img src={DoctorDark} alt="" />
+                                            : <img src={Doctor} alt="" />
+                                        }
                                     </div>
                                     <div className='pb-2'>
                                         <span className='fw-600 finanuSubTitle fs-5'>Hausarzt <br className='d-none d-sm-block'></br> (Max. 12%)</span>
@@ -90,7 +109,10 @@ function KrankenCards(props) {
                             <div className="col-12 col-sm-6 col-md-4 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
-                                        <img src={Hands} alt="" />
+                                        {props.darkMode
+                                            ? <img src={HandsDark} alt="" />
+                                            : <img src={Hands} alt="" />
+                                        }
                                     </div>
                                     <div className='pb-2'>
                                         <span className='fw-600 finanuSubTitle fs-5'>Versorgungznetz <br className='d-none d-sm-block'></br> (HMO)</span>
@@ -104,7 +126,10 @@ function KrankenCards(props) {
                             <div className="col-12 col-sm-6 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
-                                        <img src={Medicine} alt="" />
+                                        {props.darkMode
+                                            ? <img src={MedicineDark} alt="" />
+                                            : <img src={Medicine} alt="" />
+                                        }
                                     </div>
                                     <div className='pb-2'>
                                         <span className='fw-600 finanuSubTitle fs-5'>Apothekenmodell <br className='d-none d-sm-block'></br> (TELMED)</span>
@@ -120,7 +145,10 @@ function KrankenCards(props) {
                             <div className="col-12 col-sm-6 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
-                                        <img src={PhoneDoc} alt="" />
+                                    {props.darkMode
+                                            ? <img src={PhoneDocDark} alt="" />
+                                            : <img src={PhoneDoc} alt="" />
+                                        }
                                     </div>
                                     <div className='pb-2'>
                                         <span className='fw-600 finanuSubTitle fs-5'>Telemedizin <br className='d-none d-sm-block'></br> (TELMED)</span>
