@@ -23,7 +23,7 @@ function FirstSection(props) {
     }, [])
     return (
         <>
-            <div className="blueBg  px-4 px-xl-0  ">
+            <div className="blueBg px-4 px-xl-0  ">
                 {(screenWidth > 991.98) && (
                     <BlueBg />
                 )}
@@ -124,7 +124,7 @@ function FirstSection(props) {
 
                     <div className="col-12 col-lg-6 order-3 order-md-2">
                         <div className="plusForm py-5 px-4 p-md-5 ">
-                            <div className='pb-3 text-center text-md-start'>
+                            <div className='pb-2 text-center text-md-start'>
                                 <span className='fs-3 fw-700 plusFormTitle' style={{ color: 'white' }}>Lohnt sich eine Mitgliedschaft fur dich?</span>
                             </div>
                             <div className="pb-3 text-center text-md-start">
@@ -149,14 +149,14 @@ function FirstSection(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 mt-auto mt-md-5 pt-5 text-center order-2 order-md-3">
-                        <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto mt-auto mt-md-5 pt-auto pt-md-5">
-                            <div className="px-0 px-md-4 px-lg-5 pb-5">
+                    <div className="col-12 py-5 py-md-0  mt-auto text-center order-2 order-md-3">
+                        <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto mt-auto mt-md-1 pt-auto pt-md-3">
+                            <div className="px-0 px-md-4 px-lg-5 py-5">
 
-                                <div className='pb-3'>
+                                <div className='pb-4'>
                                     <span className='fs-3 fw-700 secondaryColor'>Why on earth did we start an insurance company?</span>
                                 </div>
-                                <div className='pb-3'>
+                                <div className=''>
                                     <span className='secondaryColor fw-400 fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
                                 </div>
                                 {/* <div>

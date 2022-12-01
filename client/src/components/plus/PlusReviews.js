@@ -9,7 +9,7 @@ function PlusReviews(props) {
         <div className="container-xl px-0">
             {(props.screenWidth > 575.98) && (
                 <div>
-                    <div>
+                    <div className='pb-3'>
                         <span className='fw-700 fs-1 secondaryColor'>Look at that! 4.5 stars on TrustPilot</span>
                     </div>
                     <div className='pb-3'>
@@ -26,7 +26,7 @@ function PlusReviews(props) {
                     disableOnInteraction: false,
                 }}
                 loop={false}
-                className="mySwiper py-4 px-4 px-xl-3"
+                className="mySwiper py-2 px-2"
                 modules={[Autoplay]}
                 breakpoints={{
                     640: {

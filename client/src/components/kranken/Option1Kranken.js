@@ -1,8 +1,18 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import TerminImg from '../../assets/images/terminImg.svg'
-import Phone from '../../assets/images/telephoneImg.svg'
-import Formular from '../../assets/images/formular.svg'
+
+
+import TerminImg from '../../assets/images/kraken/opsions/01.svg'
+import Phone from '../../assets/images/kraken/opsions/02.svg'
+import Formular from '../../assets/images/kraken/opsions/03.svg'
+
+import TerminImgDark from '../../assets/images/kraken/opsions/04Dark.svg'
+import PhoneDark from '../../assets/images/kraken/opsions/05Dark.svg'
+import FormularDark from '../../assets/images/kraken/opsions/Dark-06.svg'
+
+import bellDarkMode from '../../assets/images/kraken/opsions/bellDarkMode.svg'
+import bellLightMode from '../../assets/images/kraken/opsions/bellLightMode.svg'
+
 import Modal from './Modal'
 import Offerte from '../../assets/images/offerteAnfordern.svg'
 import OfferteDark from '../../assets/images/offerteAnfordernDark.svg'
@@ -11,10 +21,11 @@ import Abschlie from '../../assets/images/abschliessen.svg'
 import AbschlieDark from '../../assets/images/abschliessenDark.svg'
 
 import Mesazhi from '../../assets/images/Mesazhiiii-02.svg'
-import MesazhiDark from '../../assets/images/Mesazhiiii-02Dark.svg'
 
+import MesazhiDark from '../../assets/images/Mesazhiiii-02Dark.svg'
+//import { ReactComponent as MegaPhone } from '../../assets/images/Vergleichen.svg'
 import { ReactComponent as Suchen } from '../../assets/images/option1Suchen.svg'
-import { ReactComponent as MegaPhone } from '../../assets/images/Vergleichen.svg'
+import { ReactComponent as SuchenDark } from '../../assets/images/kraken/searchDarkModee.svg'
 
 function Option1Kranken(props) {
     const [openModal, setopenModal] = useState(false)
@@ -203,7 +214,11 @@ function Option1Kranken(props) {
                             <div className="col-12 col-sm-6 col-md-4">
                                 <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={toggleModal}>
                                     <div className=''>
-                                        <img src={TerminImg} alt="" />
+
+                                        {props.darkMode
+                                            ? <img src={TerminImgDark} alt="" />
+                                            : <img src={TerminImg} alt="" />
+                                        }
                                     </div>
                                     <div className='pt-3'>
                                         <span className='fw-500' style={{ color: 'white' }}>Termin buchen</span>
@@ -213,7 +228,11 @@ function Option1Kranken(props) {
                             <div className="col-12 col-sm-6 col-md-4">
                                 <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={toggleModal}>
                                     <div>
-                                        <img src={Phone} alt="" />
+
+                                        {props.darkMode
+                                            ? <img src={PhoneDark} alt="" />
+                                            : <img src={Phone} alt="" />
+                                        }
                                     </div>
                                     <div className='pt-3'>
                                         <span className='fw-500' style={{ color: 'white' }}>Ruckrüf anfordern</span>
@@ -223,7 +242,11 @@ function Option1Kranken(props) {
                             <div className="col-12 col-sm-6 col-md-4">
                                 <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={toggleModal}>
                                     <div>
-                                        <img src={Formular} alt="" />
+
+                                        {props.darkMode
+                                            ? < img src={FormularDark} alt="" />
+                                            : < img src={Formular} alt="" />
+                                        }
                                     </div>
                                     <div className='pt-3'>
                                         <span className='fw-500' style={{ color: 'white' }}>Kontaktformular</span>
@@ -381,7 +404,12 @@ function Option1Kranken(props) {
                     <div className="row g-5 gy-5 gy-lg-0 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='pb-3'>
-                                <Suchen height='83' />
+                                <>
+                                    {props.darkMode
+                                        ? <SuchenDark height='83' />
+                                        : <Suchen height='83' />
+                                    }
+                                </>
                             </div>
                             <div>
                                 <div className='pb-2'>
@@ -394,8 +422,12 @@ function Option1Kranken(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='pb-3'>
-                                <MegaPhone height='83' />
 
+
+                                {props.darkMode
+                                    ? < img src={bellDarkMode} alt="" />
+                                    : < img src={bellLightMode} alt="" />
+                                }
 
                             </div>
                             <div>

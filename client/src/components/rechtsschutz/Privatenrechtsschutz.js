@@ -2,7 +2,7 @@ import React from 'react'
 import IconNr1 from '../../assets/images/rechtsschutzImgs/IconNr1Dark.svg'
 import IconNr2 from '../../assets/images/newimages/libri.svg'
 import IconNr3 from '../../assets/images/newimages/payment2-07.svg'
-import IconNr4 from '../../assets/images/rechtsschutzImgs/Konflikti.svg'
+import IconNr4 from '../../assets/images/rechtsschutzImgs/KonfliktiLightmode.svg'
 import IconNr5 from '../../assets/images/rechtsschutzImgs/final-01.svg'
 import IconNr6 from '../../assets/images/rechtsschutzImgs/IconNr6.svg'
 import IconNr7 from '../../assets/images/newimages/parja.svg'
@@ -10,9 +10,11 @@ import IconNr8 from '../../assets/images/rechtsschutzImgs/Law.svg'
 
 import IconNr1Dark from '../../assets/images/rechtsschutzImgs/darkmode-05.svg'
 import IconNr2Dark from '../../assets/images/rechtsschutzImgs/darkmode-09.svg'
+
 import IconNr3Dark from '../../assets/images/rechtsschutzImgs/IconNr3Dark.svg'
 import IconNr4Dark from '../../assets/images/rechtsschutzImgs/IconNr4Dark.svg'
 import IconNr5Dark from '../../assets/images/rechtsschutzImgs/IconNr5Dark.svg'
+
 import IconNr6Dark from '../../assets/images/rechtsschutzImgs/darkmode-06.svg'
 import IconNr7Dark from '../../assets/images/rechtsschutzImgs/darkmode-08.svg'
 import IconNr8Dark from '../../assets/images/rechtsschutzImgs/IconNr8Dark.svg'
@@ -69,9 +71,11 @@ function Privatenrechtsschutz(props) {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
                             <div className=''>
-                            {!props.darkMode
-                                    ? <img src={IconNr4} alt="" />
-                                    : <img src={IconNr4Dark} alt="" />
+
+
+                                {props.darkMode
+                                    ? <img src={IconNr4Dark} alt="" />
+                                    : <img src={IconNr4} alt="" />
                                 }
                             </div>
                             <div >

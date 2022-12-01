@@ -86,7 +86,7 @@ function App() {
 
               {/* Finanzen */}
               <Route exact path="/finanzen/pensionsplanung-und-ruhestand" element={<PensionPlan darkMode={darkMode} />} />
-              <Route exact path="/finanzen/haus-hypothek" element={<Hausrat />}/>
+              <Route exact path="/finanzen/haus-hypothek" element={<Hausrat darkMode={darkMode} />}/>
               <Route exact path="/finanzen/360" element={<Analys360 />} />
               <Route exact path="/uber-uns" element={<UberUns darkMode={darkMode}  />} />
               <Route exact path="/login" element={<Login />} darkMode={darkMode}/>

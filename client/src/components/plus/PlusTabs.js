@@ -15,10 +15,10 @@ function PlusTabs() {
     return (
         <>
             <div className="container-xl px-4 px-xl-0">
-                <div className='pb-5'>
+                <div className='pb-4'>
                     <span className='fw-700 fs-1 secondaryColor'>The highest level of cover</span>
                 </div>
-                <div className='pb-3'>
+                <div className='pb-0'>
                     <div className="row g-4 justify-content-around mb-5">
                         <div className="col-auto" >
                             <div className={`plusSliderButton ${(active === 0) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(0, undefined, false); setactive(0) }}>

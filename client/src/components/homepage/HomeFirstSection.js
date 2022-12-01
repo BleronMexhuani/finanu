@@ -1,16 +1,22 @@
 import React from 'react'
 import VorsorgeHome from '../../assets/images/vorsorgeHome.svg'
-import VorsorgeHomeDark from '../../assets/images/vorsorgeHomeDark.svg'
+import VorsorgeHomeDark from '../../assets/images/NjeriDarkmode.svg'
+
 import houseSvg from '../../assets/images/houseSvg.svg'
-import houseDark from '../../assets/images/houseSvgDark.svg'
+import houseDark from '../../assets/images/ShpiaDarkmode.svg'
+
 import AutoHome from '../../assets/images/autoHome.svg'
-import AutoHomeDark from '../../assets/images/autoHomeDark.svg'
+import AutoHomeDark from '../../assets/images/KeriDarkmode.svg'
+
 import KrankHome from '../../assets/images/krankHome.svg'
-import KrankHomeDark from '../../assets/images/krankHomeDark.svg'
+import KrankHomeDark from '../../assets/images/BedDarkmode.svg'
+
 import Rechtsschutz from '../../assets/images/rechtsschutz.svg'
-import RechtsschutzDark from '../../assets/images/rechtsschutzDark.svg'
+import RechtsschutzDark from '../../assets/images/LawDarkmode.svg'
+
 import Finanzen from '../../assets/images/finanzenHome.svg'
-import FinanzenDark from '../../assets/images/finanzenDark.svg'
+import FinanzenDark from '../../assets/images/DoraDarkmode.svg'
+
 import logo from "../../assets/images/logo.svg"
 // import stars from "../../assets/images/stars.svg"
 
