@@ -10,12 +10,12 @@ import IconNr8 from '../../assets/images/rechtsschutzImgs/Law.svg'
 
 import IconNr1Dark from '../../assets/images/rechtsschutzImgs/darkmode-05.svg'
 import IconNr2Dark from '../../assets/images/rechtsschutzImgs/darkmode-09.svg'
-// import IconNr3Dark from '../../assets/images/rechtsschutzImgs/IconNr3Dark.svg'
-// import IconNr4Dark from '../../assets/images/rechtsschutzImgs/IconNr4Dark.svg'
-// import IconNr5Dark from '../../assets/images/rechtsschutzImgs/IconNr5Dark.svg'
+import IconNr3Dark from '../../assets/images/rechtsschutzImgs/IconNr3Dark.svg'
+import IconNr4Dark from '../../assets/images/rechtsschutzImgs/IconNr4Dark.svg'
+import IconNr5Dark from '../../assets/images/rechtsschutzImgs/IconNr5Dark.svg'
 import IconNr6Dark from '../../assets/images/rechtsschutzImgs/darkmode-06.svg'
 import IconNr7Dark from '../../assets/images/rechtsschutzImgs/darkmode-08.svg'
-// import IconNr8Dark from '../../assets/images/rechtsschutzImgs/IconNr8Dark.svg'
+import IconNr8Dark from '../../assets/images/rechtsschutzImgs/IconNr8Dark.svg'
 
 function Privatenrechtsschutz(props) {
     return (
@@ -56,7 +56,10 @@ function Privatenrechtsschutz(props) {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
                             <div className=''>
-                                <img src={IconNr3} alt="" />
+                            {!props.darkMode
+                                    ? <img src={IconNr3} alt="" />
+                                    : <img src={IconNr3Dark} alt="" />
+                                }
                             </div>
                             <div >
                                 <span className='fw-500'>Bezahlung der Gerichtskosten</span>
@@ -66,7 +69,10 @@ function Privatenrechtsschutz(props) {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
                             <div className=''>
-                                <img src={IconNr4} alt="" />
+                            {!props.darkMode
+                                    ? <img src={IconNr4} alt="" />
+                                    : <img src={IconNr4Dark} alt="" />
+                                }
                             </div>
                             <div >
                                 <span className='fw-500'>Mediationskosten</span>
@@ -76,8 +82,10 @@ function Privatenrechtsschutz(props) {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
                             <div className=''>
-                                <img src={IconNr5} alt="" />
-
+                                {!props.darkMode
+                                    ? <img src={IconNr5} alt="" />
+                                    : <img src={IconNr5Dark} alt="" />
+                                }
                             </div>
                             <div >
                                 <span className='fw-500'>Übersetzungskosten</span>
@@ -115,7 +123,10 @@ function Privatenrechtsschutz(props) {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div className='px-4 whiteCardKranken privatenImgSize pt-0 pb-4'>
                             <div className=''>
-                                <img src={IconNr8} alt="" />
+                            {!props.darkMode
+                                    ? <img src={IconNr8} alt="" />
+                                    : <img src={IconNr8Dark} alt="" />
+                                }
                             </div>
                             <div >
                                 <span className='fw-500'>Freie Anwaltswahl</span>

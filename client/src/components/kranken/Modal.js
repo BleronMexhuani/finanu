@@ -1,5 +1,5 @@
 import React from 'react'
-import XBtn from "../../assets/images/xButton.svg"
+import {ReactComponent as XBtn } from "../../assets/images/xButton.svg"
 import { ReactComponent as Name } from '../../assets/images/modalIcons/name.svg'
 import { ReactComponent as ModalEmailIcon } from '../../assets/images/modalIcons/emailIcon.svg'
 import { ReactComponent as Phone } from '../../assets/images/modalIcons/phone.svg'
@@ -15,7 +15,7 @@ function Modal(props) {
                     <div className="hausratModalScroll px-2">
                         <div className='modalXBtn'>
                             <span style={{ cursor: "pointer" }} onClick={props.toggleModal}>
-                                <img src={XBtn} alt="" />
+                                <XBtn />
                             </span>
                         </div>
                         <div className='text-start'>

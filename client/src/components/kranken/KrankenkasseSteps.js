@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import NewPerson from './NewPerson';
 import { v4 as uuidv4 } from 'uuid'
-import XBtn from "../../assets/images/xButton.svg"
+import {ReactComponent as XBtn } from "../../assets/images/xButton.svg"
 import Stars from '../../assets/images/krankenkasseStars.svg'
 import LoadingGif from '../../assets/images/Loading_2.gif';
 import Medicine2 from '../../assets/images/medicine2.svg'
@@ -1335,7 +1335,7 @@ function KrankenkasseSteps() {
                     <div className="mehrLadenModalContent p-4 mx-4">
                         <div className='text-end'>
                             <span style={{ cursor: "pointer" }} onClick={() => { setMehrLadenModal(false) }}>
-                                <img src={XBtn} alt="" />
+                                <XBtn />
                             </span>
 
                         </div>

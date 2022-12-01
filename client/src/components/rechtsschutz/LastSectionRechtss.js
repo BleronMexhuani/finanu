@@ -1,7 +1,11 @@
 import React from 'react'
 import { ReactComponent as Alltag } from '../../assets/images/rechtsschutzImgs/alltag.svg'
-import Arbeit from '../../assets/images/rechtsschutzImgs/Arbeit.svg'
-function LastSectionRechtss() {
+import { ReactComponent as AlltagDark } from '../../assets/images/rechtsschutzImgs/alltagDark.svg'
+
+import { ReactComponent as Arbeit } from '../../assets/images/rechtsschutzImgs/Arbeit.svg'
+import { ReactComponent as ArbeitDark } from '../../assets/images/rechtsschutzImgs/ArbeitDark.svg'
+
+function LastSectionRechtss(props) {
     return (
         <>
 
@@ -50,8 +54,11 @@ function LastSectionRechtss() {
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
                                 <div className='pb-3'>
-                                    <img src={Arbeit} style={{height: '90px'}} alt='' />
 
+                                    {!props.darkMode
+                                        ? <Arbeit height='90' width='90' />
+                                        : <ArbeitDark height='90' width='90' />
+                                    }
                                 </div>
                                 <div >
                                     <span className='fw-500'>Arbeit</span>
@@ -81,12 +88,22 @@ function LastSectionRechtss() {
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
                                 <div className='pb-3'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 91" fill="none">
-                                        <rect x="16.0582" y="38.8635" width="55.9953" height="2.66644" fill="#D9D9D9" />
-                                        <path d="M34.7234 52.4629H53.3885L53.216 58.3291L52.8552 70.5947H44.0559H35.2567L34.8959 58.3291L34.7234 52.4629Z" fill="#bee8ff" />
-                                        <path d="M34.8959 58.3291L34.7234 52.4629H53.3885L53.216 58.3291M34.8959 58.3291L35.2567 70.5947H44.0559M34.8959 58.3291H44.0559M53.216 58.3291L52.8552 70.5947H44.0559M53.216 58.3291H44.0559M44.0559 58.3291V70.5947" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
-                                        <path d="M16.0582 38.5968L17.2862 85.2596M72.0535 38.5968L70.8255 85.2596M17.2862 85.2596L17.3914 89.2593H70.7203L70.8255 85.2596M17.2862 85.2596H70.8255M19.5246 40.9966V50.3292M21.9244 40.4634V44.9963M44.5199 1.7466L78.9228 36.8974C79.5424 37.5304 79.0939 38.5968 78.2081 38.5968H10.8982C10.0231 38.5968 9.57007 37.5523 10.1681 36.9134L43.0752 1.76265C43.4644 1.34695 44.1216 1.33965 44.5199 1.7466Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
-                                    </svg>
+                                    {!props.darkMode
+                                        ? <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 91" fill="none">
+                                            <rect x="16.0582" y="38.8635" width="55.9953" height="2.66644" fill="#D9D9D9" />
+                                            <path d="M34.7234 52.4629H53.3885L53.216 58.3291L52.8552 70.5947H44.0559H35.2567L34.8959 58.3291L34.7234 52.4629Z" fill="#bee8ff" />
+                                            <path d="M34.8959 58.3291L34.7234 52.4629H53.3885L53.216 58.3291M34.8959 58.3291L35.2567 70.5947H44.0559M34.8959 58.3291H44.0559M53.216 58.3291L52.8552 70.5947H44.0559M53.216 58.3291H44.0559M44.0559 58.3291V70.5947" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+                                            <path d="M16.0582 38.5968L17.2862 85.2596M72.0535 38.5968L70.8255 85.2596M17.2862 85.2596L17.3914 89.2593H70.7203L70.8255 85.2596M17.2862 85.2596H70.8255M19.5246 40.9966V50.3292M21.9244 40.4634V44.9963M44.5199 1.7466L78.9228 36.8974C79.5424 37.5304 79.0939 38.5968 78.2081 38.5968H10.8982C10.0231 38.5968 9.57007 37.5523 10.1681 36.9134L43.0752 1.76265C43.4644 1.34695 44.1216 1.33965 44.5199 1.7466Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+                                        </svg>
+
+                                        : <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 91 113" fill="none">
+                                            <rect x="9.38965" y="48.6191" width="70.423" height="3.35347" fill="#D9D9D9" />
+                                            <path d="M32.8643 65.7222H56.3386L56.1216 73.0998L55.6679 88.5258H44.6014H33.535L33.0812 73.0998L32.8643 65.7222Z" fill="#84CDEE" />
+                                            <path d="M33.0812 73.0998L32.8643 65.7222H56.3386L56.1216 73.0998M33.0812 73.0998L33.535 88.5258H44.6014M33.0812 73.0998H44.6014M56.1216 73.0998L55.6679 88.5258H44.6014M56.1216 73.0998H44.6014M44.6014 73.0998V88.5258" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                            <path d="M9.38973 48.284L10.9341 106.97M79.8127 48.284L78.2683 106.97M10.9341 106.97L11.0665 112H78.136L78.2683 106.97M10.9341 106.97H78.2683M13.7492 51.3021V63.0393M16.7674 50.6314V56.3323M44.9966 1.74661L88.8805 46.5845C89.5 47.2175 89.0516 48.284 88.1658 48.284H2.30599C1.43089 48.284 0.977907 47.2394 1.57597 46.6006L43.5519 1.76265C43.9411 1.34695 44.5983 1.33966 44.9966 1.74661Z" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                        </svg>
+                                    }
+
                                 </div>
                                 <div >
                                     <span className='fw-500'>Wohnen</span>
@@ -96,7 +113,10 @@ function LastSectionRechtss() {
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
                                 <div className='pb-3'>
-                                    <Alltag width='120' height='90' />
+                                    {!props.darkMode
+                                        ? <Alltag width='120' height='90' />
+                                        : <AlltagDark width='120' height='90' />
+                                    }
                                 </div>
                                 <div >
                                     <span className='fw-500'>Alltag</span>

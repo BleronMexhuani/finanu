@@ -15,7 +15,7 @@ function Rechtsschutz(props) {
         <Privatenrechtsschutz darkMode={props.darkMode} />
       </div>
       <div className='bodyCounterPadding'>
-        <LastSectionRechtss />
+        <LastSectionRechtss darkMode={props.darkMode} />
       </div>
 
       <div className='bodyCounterPadding'>

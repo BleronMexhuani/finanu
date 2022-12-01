@@ -564,3 +564,6 @@ div.fs-5 {
     color: #fff;
 
 }
+.darkTheme .tp-widget-empty-horizontal span {
+    color: #fff !important;
+}

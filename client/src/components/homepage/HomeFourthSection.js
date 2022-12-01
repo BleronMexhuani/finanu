@@ -10,7 +10,7 @@ function HomeFourthSection() {
                     <span className='fw-bold firstBlueTitle'>Blogartikel</span>
                 </div>
                 <div className='pb-4'>
-                    <span className='fw-500 fs-5' style={{ fontWeight: 500 }}>Unser Team stellt monatlich diverse Themen in Form von Blogartikeln vor. Blogartikel können z.B. die Erläuterung von <br></br> verschiedenen Therapieformen, Versicherungen oder auch  Gesundheitliche Themen sein.</span>
+                    <span className='fw-500 fs-5 finanuSubTitle' style={{ fontWeight: 500 }}>Unser Team stellt monatlich diverse Themen in Form von Blogartikeln vor. Blogartikel können z.B. die Erläuterung von <br></br> verschiedenen Therapieformen, Versicherungen oder auch  Gesundheitliche Themen sein.</span>
                 </div>
             </div>
             <div className='wrapDiv container-xl px-4 px-xl-0 col-12 col-sm-10 col-md-12 col-xl-9 col-xxl-7'>

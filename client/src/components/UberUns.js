@@ -1,15 +1,17 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+import '../assets/css/uberUns.css'
+
 import { ReactComponent as Idea } from '../assets/images/UberUns.svg'
 import { ReactComponent as IdeaMobile } from '../assets/images/Mbl.svg'
 import { ReactComponent as IdeaDark } from '../assets/images/UberUns-Dark.svg'
 import { ReactComponent as IdeaMobileDark } from '../assets/images/UberUns-Dark-Mobile.svg'
-import TrustBox from './homepage/TrustBox'
 
-import Muscle from '../assets/images/uberUns/muscle.svg'
-import '../assets/css/uberUns.css'
+// import Muscle from '../assets/images/uberUns/muscle.svg'
+import { ReactComponent as Talk } from '../assets/images/uberUns/uberUnsTalk.svg'
+import { ReactComponent as Sig } from '../assets/images/uberUns/signature.svg'
 
-import { useState, useEffect } from 'react'
-import HomeSlider from './homepage/HomeSlider'
+
 
 function UberUns(props) {
 
@@ -27,50 +29,40 @@ function UberUns(props) {
         }
     }, [])
     return (
-        <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
+        <>
+            <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
+                <div className='bodyCounterPadding'>
+                    <div className="row g-0 justify-content-center">
 
+                        <div className="col-12">
+                            {(screenWidth > 575.98) && (
 
-            <div className='bodyCounterPadding'>
-                <div className="row gx-4 gy-0 justify-content-center">
-                    <div className="col-12 col-md-6 col-xl-5 text-start my-auto">
-                        <div className='pb-3'>
-                            <span className='fw-700 firstBlueTitle fs-1'>Über uns</span>
-                        </div>
-                        <div>
-                            <span className='finanuSubTitle fs-5'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. </span>
+                                <>
+                                    {props.darkMode
+
+                                        ? <IdeaDark style={{ maxWidth: 'max-content' }} />
+                                        : <Idea style={{ maxWidth: 'max-content' }} />
+
+                                    }
+                                </>
+                            )}
+                            {(screenWidth < 575.98) && (
+                                <>
+                                    {props.darkMode
+
+                                        ? <IdeaMobileDark style={{ maxWidth: 'max-content' }} />
+                                        : <IdeaMobile style={{ maxWidth: 'max-content' }} />
+                                    }
+                                </>
+
+                            )}
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-7 mt-5 mt-md-0">
-                        {(screenWidth > 575.98) && (
 
-                            <>
-                                {props.darkMode
 
-                                    ? <IdeaDark style={{ maxWidth: 'max-content' }} />
-                                    : <Idea style={{ maxWidth: 'max-content' }} />
-
-                                }
-                            </>
-                        )}
-                        {(screenWidth < 575.98) && (
-                            <>
-                                {props.darkMode
-
-                                    ? <IdeaMobileDark style={{ maxWidth: 'max-content' }} />
-                                    : <IdeaMobile style={{ maxWidth: 'max-content' }} />
-                                }
-                            </>
-
-                        )}
-                    </div>
                 </div>
 
-
-            </div>
-
-
-
-            <div className="bodyCounterPadding">
+                {/* <div className="bodyCounterPadding">
                 <div className="pb-5">
                     <span className='firstBlueTitle fw-700 fs-1'>Our Lorem Ipsum</span>
                 </div>
@@ -128,31 +120,62 @@ function UberUns(props) {
                         </div>
                     </div>
                 </div>
+            </div> */}
             </div>
-            <div className=''>
-                <div className="row gx-4 justify-content-between bodyCounterPadding">
-                    <div className="col-12 col-md-5 col-xl-4 text-start">
 
-                        <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1'>Unsere Aufgabe</span>
+            <div className='container-xl px-4 px-xl-0'>
+                <div className='pb-3'>
+                    <span className='fw-700 firstBlueTitle fs-1'>Unsere Aufgabe</span>
+                </div>
+                <div className="row g-0 justify-content-between bodyCounterPadding">
+
+                    <div className="col-12 text-start">
+                        <div className='pb-3'>
+                            <span className='fw-500 fs-5 normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern.
+                            </span>
                         </div>
-
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
-                        <div className=''>
-                            <span className='fw-500 fs-5 normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern. Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.</span>
+                        <div>
+                            <span className='fw-500 fs-5 normalTextToWhite'>
+                                Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div className="row gx-4 justify-content-between bodyCounterPadding">
-                    <div className="col-12 col-md-5 col-xl-4 text-start">
+            </div>
+            <div className="bodyCounterPadding">
+                <div className="uberUnsBg">
+                    <div className="container-xl px-4 px-xl-0">
 
+                        <div className="row gx-4 justify-content-between ">
+                            <div className="col-12 col-md-5 col-xl-4 text-start my-md-auto">
+                                <div className='pb-4' >
+                                    <span className='fw-700 firstBlueTitle fs-1'>Why we have done it?</span>
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start my-md-auto">
 
-                        <div className='pb-4' style={{ wordBreak: 'break-all' }}>
-                            <span className='fw-700 firstBlueTitle fs-1'>Unternehmensphilosophie</span>
+                                <div className=''>
+                                    <span className='fw-500 fs-5 normalTextToWhite'>
+                                        As an independent comparison platform, Finanu helps you to find your way in the confusing landscape of insurance companies and financial service providers and to understand what you are actually paying for.
+
+                                    </span>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+
+                </div>
+            </div>
+            <div className="container-xl px-4 px-xl-0">
+                <div className="row gx-4 gy-5 gy-md-0 justify-content-between bodyCounterPadding">
+                    <div className="col-12 col-md-5 col-xl-4 text-start my-md-auto">
+                        <Talk />
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start my-md-auto">
+                        <div className='pb-3' style={{ wordBreak: 'break-all' }}>
+                            <span className='fw-700 firstBlueTitle fs-1'>Unternehmensphilosophie</span>
+                        </div>
                         <div className='pb-3'>
                             <span className='fw-500 fs-5 normalTextToWhite'>
                                 Unsere Unternehmensphilosophie basiert auf den Grundsätzen: Unabhängigkeit, Objektivität, Kompetenz, Leidenschaft und Vertraulichkeit. Als unabhängiger Finanzdienstleister beraten wir unsere Kunden individuell. Wir bieten Ihnen nachhaltige Konzepte, ob als Privatperson oder KMU. Wir sorgen für Ihre finanzielle Absicherung unter dem Aspekt der grösst möglichen Freiheit.
@@ -166,157 +189,208 @@ function UberUns(props) {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className='px-0 px-md-4 px-lg-5 bodyCounterPadding'>
-                <div className="row g-0">
-                    <div className="col-6 col-md-4 ">
-
+                <div className="pb-5">
+                    <div className='pb-3'>
+                        <span className='fw-700 firstBlueTitle fs-1' style={{ wordBreak: 'break-all' }}>Unternehmensphilosopie</span>
                     </div>
-                    <div className="col col-md-4">
-                        <div className="uberBlueBg ps-1 py-3 ps-md-0">
-                            <span className='fw-600'>Finanu</span>
-                        </div>
-                    </div>
-                    <div className="col col-md-4">
-                        <div className="uberBlueBg2 pe-1 py-3 pe-md-0">
-                            <span className='fw-600'>Klassische</span>
+                    <div className="row g-0 justify-content-between">
+
+                        <div className="col-12 text-center">
+                            <div className=''>
+                                <span className='fw-500 fs-5 normalTextToWhite'>Our corporate philosophy is based on the principles: independence, objectivity, competence, passion and confidentiality. As an independent financial service provider, we advise our customers individually.
+                                </span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div className="lightBlueBgUber">
-                    <div className="row g-0">
-                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber ">
-                            <div className=''>
-                                <span className='fw-600'>Gesamtberatung</span>
-                            </div>
-                        </div>
-                        <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
-                            <div>
-                                <span className='fw-600'>Ordnungssystem</span>
-                            </div>
-                        </div>
-                        <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
-                            <div>
-                                <span className='fw-600'>Budget App</span>
-                            </div>
-                        </div>
-                        <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
-                            <div>
-                                <span className='fw-600'>Jährliche Optimierung</span>
-                            </div>
-                        </div>
-                        <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
-                            <div>
-                                <span className='fw-600'>Unabhangig</span>
-                            </div>
-                        </div>
-                        <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
-                            <div>
-                                <span className='fw-600'>Exklusivvertreter</span>
-                            </div>
-                        </div>
-                        <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
 
-                        </div>
-                        <div className="col col-md-4 greyBorderBottomUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                        <div className="col-6 col-md-4 text-start greyBorderRightUber">
-                            <div>
-                                <span className='fw-600'>Flexibilitat</span>
-                            </div>
-                        </div>
-                        <div className="col col-md-4 greyBorderRightUber">
-                            <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                <div className='px-0 px-md-4 px-lg-5 bodyCounterPadding'>
+                    <div className="row g-0">
+                        <div className="col-6 col-md-4 ">
+
                         </div>
                         <div className="col col-md-4">
-                            <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <div className="uberBlueBg ps-1 py-3 ps-md-0">
+                                <span className='fw-600'>Finanu</span>
+                            </div>
+                        </div>
+                        <div className="col col-md-4">
+                            <div className="uberBlueBg2 pe-1 py-3 pe-md-0">
+                                <span className='fw-600'>Klassische</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="lightBlueBgUber">
+                        <div className="row g-0">
+                            <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber ">
+                                <div className=''>
+                                    <span className='fw-600'>Gesamtberatung</span>
+                                </div>
+                            </div>
+                            <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
+                                <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col col-md-4 greyBorderBottomUber">
+                                <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                                <div>
+                                    <span className='fw-600'>Ordnungssystem</span>
+                                </div>
+                            </div>
+                            <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
+                                <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col col-md-4 greyBorderBottomUber">
+                                <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                                <div>
+                                    <span className='fw-600'>Budget App</span>
+                                </div>
+                            </div>
+                            <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
+                                <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col col-md-4 greyBorderBottomUber">
+                                <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                                <div>
+                                    <span className='fw-600'>Jährliche Optimierung</span>
+                                </div>
+                            </div>
+                            <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
+                                <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col col-md-4 greyBorderBottomUber">
+                                <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                                <div>
+                                    <span className='fw-600'>Unabhangig</span>
+                                </div>
+                            </div>
+                            <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
+                                <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col col-md-4 greyBorderBottomUber">
+                                <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col-6 col-md-4 text-start greyBorderRightUber greyBorderBottomUber">
+                                <div>
+                                    <span className='fw-600'>Exklusivvertreter</span>
+                                </div>
+                            </div>
+                            <div className="col col-md-4 greyBorderRightUber greyBorderBottomUber">
+                                <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div className="col col-md-4 greyBorderBottomUber">
+                                <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col-6 col-md-4 text-start greyBorderRightUber">
+                                <div>
+                                    <span className='fw-600'>Flexibilitat</span>
+                                </div>
+                            </div>
+                            <div className="col col-md-4 greyBorderRightUber">
+                                <svg viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 2L11.375 25L2 14.5455" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="col col-md-4">
+                                <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 2L2 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M2 2L27 27" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row gx-4 gy-5 gy-md-0 justify-content-between bodyCounterPadding">
+                    <div className="col-12 col-md-5 text-start my-md-auto">
+                        <div className='pb-3'>
+                            <span className='fw-700 firstBlueTitle fs-1'>Our promise</span>
+                        </div>
+                        <div className='pb-3'>
+                            <span className='fw-500 fs-5 normalTextToWhite'>
+                                We learn from the past, but build for the future.
+                            </span>
+                        </div>
+                        <div className='pb-3'>
+                            <span className='normalTextToWhite'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie
+
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                We take care of your financial security under the aspect of the greatest possible freedom. Our assessments are independent of third parties, our advice takes opportunities and risks into account.
+                            </span>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-5 col-xl-5 col-xxl-4 text-start my-md-auto">
+                        <div className="row g-0 justify-content-between">
+                            <div className="col-6 col-md-auto">
+                                <div className='pb-3 text-center'>
+                                    <Sig className="uberSignature" />
+                                </div>
+                                <div className='text-center pb-3'>
+                                    <span className='fw-500 fs-5 normalTextToWhite'>Gresatis <br></br> Bytyqitiosm</span>
+                                </div>
+                                <div className='text-center '>
+                                    <span className='normalTextToWhite fw-500'>CO-CEO</span>
+                                </div>
+                            </div>
+                            <div className="col-6 col-md-auto">
+                                <div className='pb-3 text-center'>
+                                    <Sig className="uberSignature" />
+                                </div>
+                                <div className='text-center pb-3'>
+                                    <span className='fw-500 fs-5 normalTextToWhite'>Gresatis <br></br> Bytyqitiosm</span>
+                                </div>
+                                <div className='text-center '>
+                                    <span className='normalTextToWhite fw-500'>CO-CEO</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='bodyCounterPadding'>
-                <div className="row g-0 justify-content-center">
-                    <div className="col-12 col-md-8">
-                        
-                        <div className=''>
-                            <span className='fs-4 firstBlueTitle' style={{ fontWeight: 700 }}>TRANSPARENT, SCHNELL, DIGITAL​</span>
-                        </div>
-                        <div className='py-5'>
-                            <TrustBox />
-                        </div>
-                    </div>
-                </div>
-                <HomeSlider />
-            </div>
-        </div>
+        </>
+
     )
 }
 

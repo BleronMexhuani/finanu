@@ -7,7 +7,11 @@ import LastIlustration from '../../assets/images/krankenIlustration.svg'
 import LastIlustrationDark from '../../assets/images/krankenIlustrationDark.svg'
 import Modal from './Modal'
 import Abschlie from '../../assets/images/abschliessen.svg'
+import AbschlieDark from '../../assets/images/abschliessenDark.svg'
+
 import {ReactComponent as MsgHand} from '../../assets/images/option2Hand.svg'
+import {ReactComponent as MsgHandDark} from '../../assets/images/option2HandDark.svg'
+
 function Option2Kranken(props) {
 
     const [openModal, setopenModal] = useState(false)
@@ -112,7 +116,10 @@ function Option2Kranken(props) {
                     <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className='pb-3'>
-                                <MsgHand height="83" />
+                            {props.darkMode
+                                        ? <MsgHandDark height="83" />
+                                        : <MsgHand height="83" />
+                                    }
                             </div>
                             <div>
                                 <div className='pb-2'>
@@ -184,7 +191,10 @@ function Option2Kranken(props) {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className='pb-3'>
-                                <img src={Abschlie} height="83px" alt="" />
+                                {props.darkMode
+                                    ? <img src={AbschlieDark} height="83px" alt="" />
+                                    : <img src={Abschlie} height="83px" alt="" />
+                                }
                             </div>
                             <div>
                                 <div className='pb-2'>

@@ -26,62 +26,117 @@
     border: 1px solid rgba(175, 212, 247, 0.22);
     border-radius: 4px;
 }
+
 .greyBorderBottomUber {
     border-bottom: 1px solid #DEDEDE;
-    
+
 }
+
 .greyBorderRightUber {
     border-right: 1px solid #DEDEDE;
 }
+
 .lightBlueBgUber .row .col-6.text-start {
     padding-left: 1rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;  
+    padding-bottom: 1rem;
 }
+
 .lightBlueBgUber .row .col {
     padding-top: 1rem;
-    padding-bottom: 1rem; 
+    padding-bottom: 1rem;
 }
+
 .lightBlueBgUber .row svg {
     width: 26px;
     height: 20px;
 }
+
 .lightBlueBgUber .row .col.col-md-4 {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
+.uberUnsBg {
+    background: url('../images/uberUns/uberUnsBg.svg') no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1800.98px) {
+    .uberUnsBg {
+        height: 600px;
+
+    }
+}
+
+@media (min-width: 2200.98px) {
+    .uberUnsBg {
+        height: 700px;
+
+    }
+}
+
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {
-    
+    .uberSignature {
+        max-width: 165px;
+        height: 90px;
+    }
 }
 
-@media (max-width: 767.98px) {
-    
-}
+@media (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {
     .uberBlueBg {
         font-size: 14px;
     }
+
     .uberBlueBg2 {
         font-size: 14px;
     }
+
+    .uberSignature {
+        max-width: 100px;
+    }
+
+    .lightBlueBgUber span {
+        font-size: 14px;
+    }
+
+    .uberUnsBg {
+        background-position-x: -850px;
+    }
 }
+
 .darkTheme .whiteBgUber {
     background-color: #333436;
     color: #fff;
     box-shadow: none;
 }
+
 .darkTheme .lightBlueBgUber {
     background-color: #333436;
     border: 1px solid #333436;
     color: #ffffff99;
 }
+
 .darkTheme .lightBlueBgUber .row svg path {
     stroke: #ffffff99 !important;
+}
+.darkTheme .uberUnsBg {
+    background: url('../images/uberUns/uberUnsBgDark.svg') no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
