@@ -28,52 +28,59 @@ function Plus(props) {
     }, [])
     return (
         <>
-            <div className="pb-5 mb-5">
+            <div className="bodyCounterPadding">
                 <FirstSection darkMode={props.darkMode} />
             </div>
 
 
             {(screenWidth < 575.98) && (
-                <PlusTabsMobile />
-
+                <div className="bodyCounterPadding">
+                    <PlusTabsMobile />
+                </div>
             )}
             {(screenWidth > 575.98) && (
-                <div className="py-md-5 pb-5 mb-5">
+                <div className="bodyCounterPadding">
                     <PlusTabs />
                 </div>
             )}
 
             {(screenWidth < 575.98) && (
-                <JoinUs />
+                <div className="bodyCounterPadding">
+                    <JoinUs />
+                </div>
             )}
 
-            <div className='py-md-5 pb-5 mb-5'>
+            <div className='bodyCounterPadding'>
                 <PlusReviews screenWidth={screenWidth} />
             </div>
 
-            <div className='pb-5 mb-5'>
+            <div className='bodyCounterPadding'>
                 <OurStory screenWidth={screenWidth} darkMode={props.darkMode} />
             </div>
 
             {(screenWidth > 575.98) && (
                 <>
-                    <div className="py-md-5 pb-5 mb-5">
-                        <CoverYouNeed  darkMode={props.darkMode} />
+                    <div className="bodyCounterPadding">
+                        <CoverYouNeed darkMode={props.darkMode} />
                     </div>
-                    <div className="py-md-5 pb-5 mb-5">
+                    <div className="bodyCounterPadding">
                         <LtBlueSetion />
                     </div>
-                    <div className='py-md-5 pb-5 mb-5'>
+                    <div className='bodyCounterPadding'>
                         <Vorar darkMode={props.darkMode} />
                     </div>
                 </>
             )}
-            <div className='py-md-5 pb-5 mb-5'>
+            <div className='bodyCounterPadding'>
                 <Otherquestions />
 
             </div>
+
             {(screenWidth > 575.98) && (
-                <JoinUs />
+                <div className='bodyCounterPadding'>
+
+                    <JoinUs />
+                </div>
             )}
 
         </>

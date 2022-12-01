@@ -3,6 +3,8 @@ import BeatingHeart from '../../assets/images/beatingHeart.svg'
 import Doctor from '../../assets/images/doctor.svg'
 import Hands from '../../assets/images/handsCross.svg'
 import Medicine from '../../assets/images/medicine.svg'
+
+
 import Medicine2 from '../../assets/images/medicine2.svg'
 import Transport from '../../assets/images/transport.svg'
 import Alternative from '../../assets/images/alternativeMedicine.svg'
@@ -11,6 +13,21 @@ import Braces from '../../assets/images/braces.svg'
 import Fitness from '../../assets/images/fitness.svg'
 import Abroad from '../../assets/images/abroad.svg'
 import Glasses from '../../assets/images/glasses.svg'
+
+
+import Medicine2Dark from '../../assets/images/HapaDarkmode.svg'
+import TransportDark from '../../assets/images/kerDarkMode.svg'
+import AlternativeDark from '../../assets/images/plantDarkMode.svg'
+import SportDark from '../../assets/images/BallDarkmode.svg'
+import BracesDark from '../../assets/images/toothDarkmode.svg'
+import FitnessDark from '../../assets/images/gymDarkmode.svg'
+import AbroadDark from '../../assets/images/globDarkmode.svg'
+import GlassesDark from '../../assets/images/glassesDarkmode.svg'
+
+
+
+
+
 import PhoneDoc from '../../assets/images/phoneDoc.svg'
 // import Economy from '../../assets/images/economy.svg'
 // import Handshake from '../../assets/images/handshake.svg'
@@ -18,6 +35,10 @@ import PhoneDoc from '../../assets/images/phoneDoc.svg'
 import Economy from '../../assets/images/Dhomat-01.svg'
 import Handshake from '../../assets/images/Dhomat-02.svg'
 import Kravata from '../../assets/images/Dhomat-03.svg'
+
+import EconomyDark from '../../assets/images/Dhomat-01-Dark.svg'
+import HandshakeDark from '../../assets/images/Dhomat-02-Dark.svg'
+import KravataDark from '../../assets/images/Dhomat-03-Dark.svg'
 
 function KrankenCards(props) {
 
@@ -129,7 +150,10 @@ function KrankenCards(props) {
                                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Medicine2} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={Medicine2Dark} alt="" />
+                                                    : <img src={Medicine2} alt="" />
+                                                }
                                             </div>
                                             <div className='pb-2'>
                                                 <span className='fw-600 finanuSubTitle'>Medikamente</span>
@@ -142,7 +166,10 @@ function KrankenCards(props) {
                                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Transport} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={TransportDark} alt="" />
+                                                    : <img src={Transport} alt="" />
+                                                }
                                             </div>
                                             <div className='pb-2'>
                                                 <span className='fw-600 finanuSubTitle fs-5'>Transport</span>
@@ -156,7 +183,10 @@ function KrankenCards(props) {
                                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Alternative} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={AlternativeDark} alt="" />
+                                                    : <img src={Alternative} alt="" />
+                                                }
                                             </div>
                                             <div className='pb-2'>
                                                 <span className='fw-600 finanuSubTitle fs-5'>Alternativmedizin</span>
@@ -169,7 +199,10 @@ function KrankenCards(props) {
                                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Sport} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={SportDark} alt="" />
+                                                    : <img src={Sport} alt="" />
+                                                }
 
                                             </div>
                                             <div className='pb-2'>
@@ -183,7 +216,10 @@ function KrankenCards(props) {
                                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Braces} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={BracesDark} alt="" />
+                                                    : <img src={Braces} alt="" />
+                                                }
                                             </div>
                                             <div className='pb-2'>
                                                 <span className='fw-600 finanuSubTitle fs-5'>Zahnspange</span>
@@ -198,7 +234,10 @@ function KrankenCards(props) {
 
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Fitness} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={FitnessDark} alt="" />
+                                                    : <img src={Fitness} alt="" />
+                                                }
 
                                             </div>
                                             <div className='pb-2'>
@@ -214,7 +253,10 @@ function KrankenCards(props) {
 
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Abroad} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={AbroadDark} alt="" />
+                                                    : <img src={Abroad} alt="" />
+                                                }
 
                                             </div>
                                             <div className='pb-2'>
@@ -229,7 +271,10 @@ function KrankenCards(props) {
                                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                                         <div className='p-4 whiteCardKranken h-100'>
                                             <div className='pb-4'>
-                                                <img src={Glasses} alt="" />
+                                                {props.darkMode
+                                                    ? <img src={GlassesDark} alt="" />
+                                                    : <img src={Glasses} alt="" />
+                                                }
                                             </div>
                                             <div className='pb-2'>
                                                 <span className='fw-600 finanuSubTitle fs-5'>Brille</span>
@@ -260,7 +305,11 @@ function KrankenCards(props) {
                             <div onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => { setIsHover(false) }} className={` ${isHover ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5 pt-0`}>
                                 <div className={`mb-5 ${isHover ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
-                                        <img src={Economy} height={200} width={'100%'} alt="" />
+
+                                        {props.darkMode
+                                            ? <img src={EconomyDark} height={200} width={'100%'} alt="" />
+                                            : <img src={Economy} height={200} width={'100%'} alt="" />
+                                        }
                                         <div className='pt-4'>
                                             <span className='cardTitle fs-5 fw-600'>ALLGEMEIN</span>
                                         </div>
@@ -314,7 +363,10 @@ function KrankenCards(props) {
                             <div className={` ${isHover1 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5  pt-0`}>
                                 <div className={`mb-5 ${isHover1 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
-                                        <img src={Handshake} height={200} width={'100%'} alt="" />
+                                        {props.darkMode
+                                            ? <img src={HandshakeDark} height={200} width={'100%'} alt="" />
+                                            : <img src={Handshake} height={200} width={'100%'} alt="" />
+                                        }
                                         <div className='pt-4'>
                                             <span className='cardTitle fs-5 fw-600'>HALBPRIVATE</span>
                                         </div>
@@ -387,7 +439,10 @@ function KrankenCards(props) {
                             <div className={` ${isHover2 ? ' blueBgDiv' : 'greyBorderDiv'} h-100 p-5  pt-0`}>
                                 <div className={`mb-5 ${isHover2 ? ' whiteBorderBottom' : 'blueBorderBottom'}`}>
                                     <div className="pb-2">
-                                        <img src={Kravata} height={200} width={'100%'} alt="" />
+                                        {props.darkMode
+                                            ? < img src={KravataDark} height={200} width={'100%'} alt="" />
+                                            : < img src={Kravata} height={200} width={'100%'} alt="" />
+                                        }
                                         <div className='pt-4'>
                                             <span className='cardTitle fs-5 fw-600'>PRIVATE</span>
                                         </div>

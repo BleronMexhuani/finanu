@@ -2,13 +2,13 @@ import React from 'react'
 
 function JoinUs() {
     return (
-        <div className='container-xl px-4 px-xl-0 text-start pb-5 mb-5'>
+        <div className='container-xl  px-4 px-xl-0 text-start'>
             <div className="row gx-5 justify-content-center">
                 <div className="col-12 col-md col-xl-7">
                     <div className='pb-3'>
                         <span className='fs-1 secondaryColor fw-700'>
                             Join us!
-                        </span>
+                        </span> 
                     </div>
                     <div className='pb-3'>
                         <span className='fw-600 fs-5 secondaryColor'>

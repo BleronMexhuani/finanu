@@ -9,8 +9,8 @@ function OurStory(props) {
         <div className='container-xl px-4 px-xl-0'>
             <div className='text-start'>
                 <div className="d-block d-md-none">
-                    <div>
-                        <span className='plusTitle fw-700 secondaryColor'>
+                    <div className='pb-3'>
+                        <span className='plusTitle  fw-700 secondaryColor'>
                             Our story
                         </span>
                     </div>
@@ -21,7 +21,7 @@ function OurStory(props) {
                 <div className="row gx-0 gx-md-5 gx-lg-0 gy-5 gy-md-0 justify-content-between">
                     <div className="col-12 col-md-6 col-lg-5 order-2 order-md-1">
                         <div className="d-none d-md-block col offset-lg-">
-                            <div className='pb-3'>
+                            <div className='pb-2'>
                                 <span className='plusTitle fs-2 fw-700 secondaryColor'>
                                     Our story
                                 </span>
@@ -33,10 +33,10 @@ function OurStory(props) {
                         <div>
                             <div className="row gx-5  text-start">
                                 <div className="col-6 col-sm-4  order-1 order-md-1">
-                                    <div className='pb-5'>
+                                    <div className='pb-5 signaturediv'>
                                         {props.darkMode
-                                            ? <SignatureDark className="img-fluid" />
-                                            : <Signature className="img-fluid" />
+                                            ? <SignatureDark className="img-fluid signaturephoto" />
+                                            : <Signature className="img-fluid signaturephoto" />
                                         }
                                     </div>
                                     <div className='pb-3'>
@@ -49,10 +49,10 @@ function OurStory(props) {
                                 <div className="col-auto col-sm-1 order-1 order-md-1 mx-0 px-0"> </div>
 
                                 <div className="col-6 col-sm-4 order-2 order-md-2">
-                                    <div className='pb-5'>
+                                    <div className='pb-5 signaturediv'>
                                         {props.darkMode
-                                            ? <SignatureDark className="img-fluid" />
-                                            : <Signature className="img-fluid" />
+                                            ? <SignatureDark className="img-fluid signaturephoto mx-auto" />
+                                            : <Signature className="img-fluid signaturephoto mx-auto" />
                                         }
 
                                     </div>
@@ -91,7 +91,7 @@ function OurStory(props) {
 
                         {(props.screenWidth < 575.98) && (
                             <div className="pt-4">
-                                <Accordion defaultActiveKey="0" className='py-3' >
+                                <Accordion  className='py-3' >
                                     <Accordion.Item eventKey="0" className='pt-3 accordionstyle' >
                                         <Accordion.Header className='faqstyle'>Lorem Ipsum lorem lorem</Accordion.Header>
                                         <Accordion.Body>

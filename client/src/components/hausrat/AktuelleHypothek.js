@@ -6,6 +6,13 @@ import img2 from '../../assets/images/5.svg'
 import img3 from '../../assets/images/10.svg'
 import img4 from '../../assets/images/15.svg'
 
+import img1dark from '../../assets/images/3dark.svg'
+import img2dark from '../../assets/images/5dark.svg'
+import img3dark from '../../assets/images/10dark.svg'
+import img4dark from '../../assets/images/15dark.svg'
+
+
+
 import { ReactComponent as NewHome } from '../../assets/images/hausratSliderPhotos/newHome.svg'
 import { ReactComponent as Homegate } from '../../assets/images/hausratSliderPhotos/homegate.svg'
 import { ReactComponent as Immo } from '../../assets/images/hausratSliderPhotos/immoscout24.svg'
@@ -21,7 +28,7 @@ import { ReactComponent as Rech2 } from '../../assets/images/hausratSliderPhotos
 
 
 
-function AktuelleHypothek() {
+function AktuelleHypothek(props) {
 
     const ScrollToForm = () => {
         window.scrollTo({
@@ -84,16 +91,28 @@ function AktuelleHypothek() {
                         <div className="col-12 col-md-6">
                             <div className="row  gx-0 gy-5 justify-content-center festhypothekImgs">
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img1} className='img-fluid' alt='' />
+                                    {props.darkMode
+                                        ? <img src={img1dark} className='img-fluid' alt='' />
+                                        : <img src={img1} className='img-fluid' alt='' />
+                                    }
                                 </div>
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img2} className='img-fluid' alt='' />
+                                    {props.darkMode
+                                        ? <img src={img2dark} className='img-fluid' alt='' />
+                                        : <img src={img2} className='img-fluid' alt='' />
+                                    }
                                 </div>
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img3} className='img-fluid' alt='' />
+                                    {props.darkMode
+                                        ? <img src={img3dark} className='img-fluid' alt='' />
+                                        : <img src={img3} className='img-fluid' alt='' />
+                                    }
                                 </div>
                                 <div className="col-6 col-sm-6 col-lg-5">
-                                    <img src={img4} className='img-fluid' alt='' />
+                                    {props.darkMode
+                                        ? <img src={img4dark} className='img-fluid' alt='' />
+                                        : <img src={img4} className='img-fluid' alt='' />
+                                    }
                                 </div>
 
 
