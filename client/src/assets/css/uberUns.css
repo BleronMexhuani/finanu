@@ -140,3 +140,20 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (min-width: 1800.98px) {
+    
+    .darkTheme .uberUnsBg {
+        height: 600px;
+
+    }
+}
+
+@media (min-width: 2200.98px) {
+    
+    .darkTheme .uberUnsBg {
+        height: 700px;
+
+    }
+}
+

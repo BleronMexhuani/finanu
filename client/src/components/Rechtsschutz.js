@@ -9,7 +9,9 @@ function Rechtsschutz(props) {
   return (
     <div>
       <div>
-        <RechtsschutzSteps darkMode={props.darkMode} />
+
+        <RechtsschutzSteps  darkMode={props.darkMode} />
+
       </div>
       <div>
         <Privatenrechtsschutz darkMode={props.darkMode} />

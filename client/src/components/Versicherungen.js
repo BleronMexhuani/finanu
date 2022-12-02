@@ -5,7 +5,7 @@ import { ReactComponent as Groupe } from '../assets/images/versicherungen/mutuel
 import { ReactComponent as Swica } from '../assets/images/versicherungen/swicaLogo.svg'
 import Sympany  from '../assets/images/versicherungen/logoSympany.png'
 
-function Versicherungen() {
+function Versicherungen(props) {
   return (
     <div className='bodyCounterPadding'>
       <div className='container-xl px-4 px-xl-0 pb-5 wrapDiv1'>
