@@ -40,7 +40,7 @@ function Plus(props) {
             )}
             {(screenWidth > 575.98) && (
                 <div className="bodyCounterPadding">
-                    <PlusTabs />
+                    <PlusTabs darkMode={props.darkMode} />
                 </div>
             )}
 

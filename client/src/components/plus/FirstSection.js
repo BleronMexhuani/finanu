@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as BlueBg } from '../../assets/images/plus/blueBg.svg'
+import { ReactComponent as BlueBgDark } from '../../assets/images/plus/blueBgDark.svg'
 import { ReactComponent as MobIlu } from '../../assets/images/plus/mobileIlu.svg'
 import { ReactComponent as Users } from '../../assets/images/plus/users.svg'
 import { ReactComponent as UsersDark } from '../../assets/images/plus/userWhite.svg'
@@ -25,7 +26,13 @@ function FirstSection(props) {
         <>
             <div className="blueBg px-4 px-xl-0  ">
                 {(screenWidth > 991.98) && (
-                    <BlueBg />
+                    <>
+                        {props.darkMode
+                            ? <BlueBgDark />
+                            : <BlueBg />
+                        }
+                    </>
+
                 )}
                 {(screenWidth < 575.98) && (
 
@@ -145,7 +152,9 @@ function FirstSection(props) {
                                 <FormIlu />
                             </div>
                             <div className='plusFormBtnDiv'>
+                                
                                 <button className='px-4 px-sm-5 py-3 finanuWhiteBtn'>Los Gehts</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -169,11 +178,9 @@ function FirstSection(props) {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
