@@ -68,6 +68,10 @@
     align-items: center;
 }
 
+.uberSignature {
+    height: 110px;
+    width: 180px;
+}
 @media (min-width: 1800.98px) {
     .uberUnsBg {
         height: 600px;
