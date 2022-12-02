@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import '../assets/css/uberUns.css'
 
 import { ReactComponent as Idea } from '../assets/images/UberUns.svg'
-import { ReactComponent as IdeaMobile } from '../assets/images/Mbl.svg'
+import { ReactComponent as IdeaMobile } from '../assets/images/UberUns-Mobile.svg'
 import { ReactComponent as IdeaDark } from '../assets/images/UberUns-Dark.svg'
 import { ReactComponent as IdeaMobileDark } from '../assets/images/UberUns-Dark-Mobile.svg'
 
@@ -356,7 +356,7 @@ function UberUns(props) {
                             </span>
                         </div>
                         <div>
-                            <span>
+                            <span className='normalTextToWhite'>
                                 We take care of your financial security under the aspect of the greatest possible freedom. Our assessments are independent of third parties, our advice takes opportunities and risks into account.
                             </span>
                         </div>

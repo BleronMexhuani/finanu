@@ -40,11 +40,18 @@ function LtBlueSetion() {
                     <div className='pt-5'>
                         <div className="topBottomBordersDiv py-4">
 
-                            <select className="form-select selectofangebote fs-5 fw-700" aria-label="Default select example">
-                                <option value="0">Lorem Ipsum lorem lorem</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            {/* <select className="form-select selectofangebote  fs-5 fw-700 " aria-label="Default select example">
+                                <option value="0" className='fs-6'>Lorem Ipsum lorem lorem</option>
+                                <option value="1" className='fs-6'>One</option>
+                                <option value="2" className='fs-6'>Two</option>
+                                <option value="3" className='fs-6'>Three</option>
+                            </select> */}
+
+                            <select className="krankenSelectStyle selectofltblue form-select">
+                                <option value="0" className='fs-6 textstyleofselect'>Lorem Ipsum lorem lorem</option>
+                                <option value="1" className='fs-6 textstyleofselect'>One</option>
+                                <option value="2" className='fs-6 textstyleofselect'>Two</option>
+                                <option value="3" className='fs-6 textstyleofselect'>Three</option>
                             </select>
                         </div>
                     </div>

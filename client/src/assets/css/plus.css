@@ -96,6 +96,11 @@
     color: #50B8E7;
     border: none;
 }
+.darkTheme .finanuWhiteBtn {
+    background: #50B8E7;
+    color: #FFFFFF;
+
+}
 
 .darkTheme .secondaryColor {
     color: #fff;
@@ -159,7 +164,14 @@
     color: #5A5A5A !important;
 
 }
-
+.darkTheme .textstyleofselect {
+color: white
+}
+.darkTheme .selectofltblue {
+    background-color: transparent !important;
+    border: 1px solid #11A3E6 !important;
+    color: #fff;
+}
 .cardofthelastcomponent {
     max-width: 339px;
     height: 330px;

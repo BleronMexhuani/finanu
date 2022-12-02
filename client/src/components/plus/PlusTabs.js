@@ -5,8 +5,9 @@ import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { ReactComponent as Car } from '../../assets/images/auto/sliderCar.svg'
+import { ReactComponent as CarDark } from '../../assets/images/plus/carDark.svg'
 
-function PlusTabs() {
+function PlusTabs(props) {
     const [swiperInstance, setSwiperInstance] = useState(0)
     const [active, setactive] = useState(0)
 
@@ -21,39 +22,39 @@ function PlusTabs() {
                 <div className='pb-0'>
                     <div className="row g-4 justify-content-around mb-5">
                         <div className="col-auto" >
-                            <div className={`plusSliderButton ${(active === 0) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(0, undefined, false); setactive(0) }}>
+                            <div className={`plusSliderButton px-2 ${(active === 0) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(0, undefined, false); setactive(0) }}>
                                 <span className='fw-600 fs-5 secondaryColor'>Car Damage</span>
                             </div>
                         </div>
                         <div className="col-auto" >
-                            <div className={`plusSliderButton ${(active === 1) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(1, undefined, false); setactive(1) }}>
+                            <div className={`plusSliderButton px-2 ${(active === 1) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(1, undefined, false); setactive(1) }}>
                                 <span className='fw-600 fs-5 secondaryColor'>Fire and Theft</span>
                             </div>
                         </div>
 
                         <div className="col-auto" >
-                            <div className={`plusSliderButton ${(active === 2) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(2, undefined, false); setactive(2) }}>
+                            <div className={`plusSliderButton px-2 ${(active === 2) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(2, undefined, false); setactive(2) }}>
                                 <span className='fw-600 fs-5 secondaryColor'>EU Cover for 90 Days</span>
                             </div>
                         </div>
                         <div className="col-auto" >
-                            <div className={`plusSliderButton ${(active === 3) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(3, undefined, false); setactive(3) }}>
+                            <div className={`plusSliderButton px-2 ${(active === 3) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(3, undefined, false); setactive(3) }}>
                                 <span className='fw-600 fs-5 secondaryColor'>Injury</span>
                             </div>
                         </div>
                         <div className="col-auto" >
-                            <div className={`plusSliderButton ${(active === 4) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(4, undefined, false); setactive(4) }}>
+                            <div className={`plusSliderButton px-2 ${(active === 4) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(4, undefined, false); setactive(4) }}>
                                 <span className='fw-600 fs-5 secondaryColor'>Courtesy car</span>
                             </div>
                         </div>
 
                         <div className="col-auto" >
-                            <div className={`plusSliderButton ${(active === 5) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(5, undefined, false); setactive(5) }}>
+                            <div className={`plusSliderButton px-2 ${(active === 5) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(5, undefined, false); setactive(5) }}>
                                 <span className='fw-600 fs-5 secondaryColor'>Property Damage</span>
                             </div>
                         </div>
                         <div className="col-auto" >
-                            <div className={`plusSliderButton ${(active === 6) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(6, undefined, false); setactive(6) }}>
+                            <div className={`plusSliderButton px-2 ${(active === 6) ? 'sliderBtnEffect' : ''}`} onClick={() => { swiperInstance.slideToLoop(6, undefined, false); setactive(6) }}>
                                 <span className='fw-600 fs-5 secondaryColor'>Windscreen Damage</span>
                             </div>
                         </div>
@@ -76,7 +77,7 @@ function PlusTabs() {
                     modules={[EffectFade, Autoplay]}
                     className="mySwiper mb-4 mb-md-2 mb-lg-0"
                     onSlideChange={(swiper) => { setactive((swiper.activeIndex - 1 > 6) ? 0 : swiper.activeIndex - 1) }}
-                   
+
                 >
 
                     <SwiperSlide>
@@ -92,7 +93,10 @@ function PlusTabs() {
                                     </div>
                                 </div>
                                 <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
-                                    <Car className="img-fluid" />
+                                    {props.darkMode
+                                        ? <CarDark className="img-fluid" />
+                                        : <Car className="img-fluid" />
+                                    }
                                 </div>
                             </div>
 
@@ -111,7 +115,10 @@ function PlusTabs() {
                                     </div>
                                 </div>
                                 <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
-                                    <Car className="img-fluid" />
+                                    {props.darkMode
+                                        ? <CarDark className="img-fluid" />
+                                        : <Car className="img-fluid" />
+                                    }
                                 </div>
                             </div>
 
@@ -130,7 +137,10 @@ function PlusTabs() {
                                     </div>
                                 </div>
                                 <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
-                                    <Car className="img-fluid" />
+                                    {props.darkMode
+                                        ? <CarDark className="img-fluid" />
+                                        : <Car className="img-fluid" />
+                                    }
                                 </div>
                             </div>
 
@@ -149,7 +159,10 @@ function PlusTabs() {
                                     </div>
                                 </div>
                                 <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
-                                    <Car className="img-fluid" />
+                                    {props.darkMode
+                                        ? <CarDark className="img-fluid" />
+                                        : <Car className="img-fluid" />
+                                    }
                                 </div>
                             </div>
 
@@ -168,7 +181,10 @@ function PlusTabs() {
                                     </div>
                                 </div>
                                 <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
-                                    <Car className="img-fluid" />
+                                    {props.darkMode
+                                        ? <CarDark className="img-fluid" />
+                                        : <Car className="img-fluid" />
+                                    }
                                 </div>
                             </div>
 
@@ -187,7 +203,10 @@ function PlusTabs() {
                                     </div>
                                 </div>
                                 <div className="col-8 col-sm order-1 order-sm-2 my-sm-auto">
-                                    <Car className="img-fluid" />
+                                    {props.darkMode
+                                        ? <CarDark className="img-fluid" />
+                                        : <Car className="img-fluid" />
+                                    }
                                 </div>
                             </div>
 
