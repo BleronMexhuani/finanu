@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import VorsorgeHome from '../../assets/images/vorsorgeHome.svg'
 import VorsorgeHomeDark from '../../assets/images/NjeriDarkmode.svg'
 
@@ -23,7 +23,7 @@ import logo from "../../assets/images/logo.svg"
 import { Link } from "react-router-dom";
 import { ReactComponent as HeroImg } from '../../assets/images/Homush.svg'
 
-import TrustBox from './TrustBox.js'
+const TrustBox = lazy(() => import('./TrustBox.js'))
 
 function HomeFirstSection(props) {
 

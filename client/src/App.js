@@ -71,8 +71,6 @@ function App() {
               <Route exact path="/wettbewerbe/1"  element={<WLinks Photo={WettPhoto1} data="31.07.2022" />} />
               <Route exact  path="/wettbewerbe/2"  element={<WLinksTwo Photo={WettPhoto2} />} />
               <Route exact path="/wettbewerbe/3" element={<WLinksThree Photo={WettPhoto3} />} />
-              {/* <Route exact path="/wettbewerbe/2" element={<WLinks Photo={} />} /> */}
-              {/* <Route exact path="/wettbewerbe/3" element={<WLinks Photo={} />} /> */}
 
               {/* versicherungen */}
               <Route exact path="/versicherungen" element={<Versicherungen />}/>

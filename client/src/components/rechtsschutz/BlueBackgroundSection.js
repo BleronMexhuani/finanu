@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Modal from './Modal'
-function BlueBackgroundSection() {
+function BlueBackgroundSection(props) {
     const [openModal, setopenModal] = useState(false)
 
     const toggleModal = () => {
@@ -557,7 +557,7 @@ function BlueBackgroundSection() {
                 </div>
             </div>
             {openModal && (
-                <Modal setopenModal={toggleModal} />
+                <Modal darkMode={props.darkMode} setopenModal={toggleModal} />
             )}
         </div>
     )

@@ -1,7 +1,10 @@
 import React from 'react'
-import {ReactComponent as XBtn } from "../../assets/images/xButton.svg"
+import { ReactComponent as XBtn } from "../../assets/images/xButton.svg"
 import Male from '../../assets/images/rechtsschutzImgs/Male-01.svg'
 import Female from '../../assets/images/rechtsschutzImgs/Female-01.svg'
+
+import MaleDark from '../../assets/images/rechtsschutzImgs/Male-01Dark.svg'
+import FemaleDark from '../../assets/images/rechtsschutzImgs/Female-01Dark.svg'
 import { ReactComponent as Name } from '../../assets/images/modalIcons/name.svg'
 import { ReactComponent as ModalEmailIcon } from '../../assets/images/modalIcons/emailIcon.svg'
 import { ReactComponent as Phone } from '../../assets/images/modalIcons/phone.svg'
@@ -64,13 +67,25 @@ function Modal(props) {
                                     <div className="col-6 text-center">
                                         <label htmlFor="female" className='containerRes2 w-100 h-100'>
                                             <input type="radio" id='female' name='who3' hidden />
-                                            <div className='checkmarkRes2 checkmarkModalImgDiv'><img src={Female} className="img-fluid" alt="" /></div>
+                                            <div className='checkmarkRes2 checkmarkModalImgDiv'>
+                                                {props.darkMode
+
+                                                    ? <img src={FemaleDark} className="img-fluid" alt="" />
+                                                    : <img src={Female} className="img-fluid" alt="" />
+                                                }
+                                            </div>
                                         </label>
                                     </div>
                                     <div className="col-6 text-center">
                                         <label htmlFor="male" className='containerRes2 w-100 h-100'>
                                             <input type="radio" id='male' name='who3' hidden />
-                                            <div className='checkmarkRes2 checkmarkModalImgDiv'><img src={Male} className="img-fluid" alt="" /></div>
+                                            <div className='checkmarkRes2 checkmarkModalImgDiv'>
+                                                {props.darkMode
+
+                                                    ? <img src={MaleDark} className="img-fluid" alt="" />
+                                                    : <img src={Male} className="img-fluid" alt="" />
+                                                }
+                                            </div>
                                         </label>
                                     </div>
                                 </div>

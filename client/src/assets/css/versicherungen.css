@@ -383,7 +383,7 @@
         height: 100%;
     }
 
-    .positionAbsoluteVid {}
+    
 
     @media (max-width: 1399.98px) {}
 
@@ -430,4 +430,8 @@
         background-color: #333436;
         color: #fff;
 
+    }
+    .darkTheme .versicherungenLinks {
+        background-color: #333436;
+        box-shadow: unset;
     }

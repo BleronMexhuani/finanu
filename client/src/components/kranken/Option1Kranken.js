@@ -425,8 +425,8 @@ function Option1Kranken(props) {
 
 
                                 {props.darkMode
-                                    ? < img src={bellDarkMode} alt="" />
-                                    : < img src={bellLightMode} alt="" />
+                                    ? < img src={bellDarkMode} height="83px" alt="" />
+                                    : < img src={bellLightMode} height="83px" alt="" />
                                 }
 
                             </div>

@@ -8,7 +8,7 @@ function Hausrat(props) {
   return (
     <>
         <div>
-            <HausratBlueForm />
+            <HausratBlueForm darkMode={props.darkMode} />
         </div>
         <div>
             <AktuelleHypothek darkMode={props.darkMode} />

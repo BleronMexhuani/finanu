@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Modal from './Modal';
 import NumberFormat from 'react-number-format';
 import { ReactComponent as Ilu } from '../../assets/images/kraken/houuusushi.svg'
-function HausratBlueForm() {
+function HausratBlueForm(props) {
 
     const [interes, setInteres] = useState(1)
     const [aparatament_price, setApartamentPrice] = useState(0);
@@ -301,7 +301,7 @@ function HausratBlueForm() {
                 </div>
 
                 {openModal && (
-                    <Modal openModal={openModal} setopenModal={setopenModal} aparatament_price={aparatament_price} yearly_income={yearly_income} capital={capital} />
+                    <Modal darkMode={props.darkMode} openModal={openModal} setopenModal={setopenModal} aparatament_price={aparatament_price} yearly_income={yearly_income} capital={capital} />
                 )}
             </div>
         </>
