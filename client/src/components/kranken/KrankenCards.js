@@ -9,7 +9,6 @@ import Hands from '../../assets/images/handsCross.svg'
 import HandsDark from '../../assets/images/handsCrossDark.svg'
 
 import Medicine from '../../assets/images/medicine.svg'
-
 import MedicineDark from '../../assets/images/medicineDark.svg'
 
 import Medicine2 from '../../assets/images/medicine2.svg'

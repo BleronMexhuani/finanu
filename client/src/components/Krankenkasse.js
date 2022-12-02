@@ -8,7 +8,7 @@ import KrankenCards from './kranken/KrankenCards'
 import Option2Kranken from './kranken/Option2Kranken'
 import Option1Kranken from './kranken/Option1Kranken'
 import { ReactComponent as First } from '../assets/images/kraken/drinushe.svg'
-import { ReactComponent as FirstDark } from '../assets/images/kraken/LifecycleDarkmode.svg'
+// import { ReactComponent as FirstDark } from '../assets/images/kraken/LifecycleDarkmode.svg'
 
 function Krankenkasse(props) {
   return (
@@ -16,15 +16,14 @@ function Krankenkasse(props) {
       <div className="container-xl px-4 px-xl-0">
         <div className='krankenFirstIluDiv'>
           <>
-            {props.darkMode
-              ? <FirstDark className="img-fluid" />
-              : <First className="img-fluid" />
-            }
+            
+               <First className="img-fluid" />
+            
           </>
         </div>
       </div>
       <div className='bodyCounterPadding container-xl px-4 px-xl-0'>
-        <KrankenSteps />
+        <KrankenSteps darkMode={props.darkMode} />
       </div>
 
       <>

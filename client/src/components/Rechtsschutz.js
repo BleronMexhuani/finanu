@@ -9,7 +9,7 @@ function Rechtsschutz(props) {
   return (
     <div>
       <div>
-        <RechtsschutzSteps />
+        <RechtsschutzSteps darkMode={props.darkMode} />
       </div>
       <div>
         <Privatenrechtsschutz darkMode={props.darkMode} />
@@ -19,7 +19,7 @@ function Rechtsschutz(props) {
       </div>
 
       <div className='bodyCounterPadding'>
-        <BlueBackgroundSection />
+        <BlueBackgroundSection darkMode={props.darkMode} />
       </div>
 
       <div>

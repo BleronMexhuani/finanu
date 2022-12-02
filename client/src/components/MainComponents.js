@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import HomeFirstSection from './homepage/HomeFirstSection'
-import HomeFourthSection from './homepage/HomeFourthSection'
-import KrankenSteps from './kranken/KrankenkasseSteps'
-
 import '../assets/css/mainComponents.css'
-import HomeSlider from './homepage/HomeSlider'
+
+const HomeSlider = lazy(() => import('./homepage/HomeSlider'))
+const KrankenSteps = lazy(() => import('./kranken/KrankenkasseSteps'))
+const HomeFourthSection = lazy(() => import('./homepage/HomeFourthSection'))
+
 function MainComponents(props) {
+
   return (
     <>
       <div className='bodyCounterPadding'>

@@ -661,8 +661,13 @@ a {
     background-size: cover;
     margin-top: -200px;
 }
+
 .darkTheme .krankenInputStepStyle.krankenInputStyle.p-2 svg path {
     fill: #fff;
+}
+
+.darkTheme .krankenGiftSvg path {
+    fill: white;
 }
 
 @media (min-width: 1700px) {
