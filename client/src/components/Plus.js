@@ -28,7 +28,7 @@ function Plus(props) {
     }, [])
     return (
         <>
-            <div className="bodyCounterPadding">
+            <div className="">
                 <FirstSection darkMode={props.darkMode} />
             </div>
 
