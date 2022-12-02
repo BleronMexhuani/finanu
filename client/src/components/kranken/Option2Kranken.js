@@ -17,6 +17,7 @@ import FormularDark from '../../assets/images/kraken/opsions/Dark-06.svg'
 // import Formular from '../../assets/images/formular.svg'
 import LastIlustration from '../../assets/images/krankenIlustration.svg'
 import LastIlustrationDark from '../../assets/images/krankenIlustrationDark.svg'
+
 import Modal from './Modal'
 import Abschlie from '../../assets/images/abschliessen.svg'
 

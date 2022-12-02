@@ -63,34 +63,34 @@ function App() {
             <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
             <Routes>
               {/* Home */}
-              <Route exact path="/" element={<MainComponents darkMode={darkMode} />}/>
+              <Route exact path="/" element={<MainComponents darkMode={darkMode} />} />
               <Route exact path="/blog/erklarungundunterschiedealternativ" element={<Blog1 />} />
 
               {/* Wettbewerbe */}
-              <Route exact path="/wettbewerbe" element={<Wettbewerbe  darkMode={darkMode} />} />
-              <Route exact path="/wettbewerbe/1"  element={<WLinks Photo={WettPhoto1} data="31.07.2022" />} />
-              <Route exact  path="/wettbewerbe/2"  element={<WLinksTwo Photo={WettPhoto2} />} />
+              <Route exact path="/wettbewerbe" element={<Wettbewerbe darkMode={darkMode} />} />
+              <Route exact path="/wettbewerbe/1" element={<WLinks Photo={WettPhoto1} data="31.07.2022" />} />
+              <Route exact path="/wettbewerbe/2" element={<WLinksTwo Photo={WettPhoto2} />} />
               <Route exact path="/wettbewerbe/3" element={<WLinksThree Photo={WettPhoto3} />} />
 
               {/* versicherungen */}
-              <Route exact path="/versicherungen" element={<Versicherungen />}/>
-              <Route exact path="/versicherungen/sympany" element={<Sympany />}/>
+              <Route exact path="/versicherungen" element={<Versicherungen />} />
+              <Route exact path="/versicherungen/sympany" element={<Sympany />} />
               <Route exact path="/versicherungen/swica" element={<Swica />} />
-              <Route exact path="/versicherungen/groupe-mutuel" element={<GroupeMutuel darkMode={darkMode} />}/>
-              <Route exact path="/versicherungen/allianz" element={<Allianz  />}/>
-              <Route exact path="/versicherungen/krankenkasse" element={<Krankenkasse darkMode={darkMode} />}/>
-              <Route exact path="/versicherungen/rechtsschutz" element={<Rechtsschutz darkMode={darkMode} />}/>
-              <Route exact path="/versicherungen/auto-motorrad" element={<Auto />}/>
+              <Route exact path="/versicherungen/groupe-mutuel" element={<GroupeMutuel darkMode={darkMode} />} />
+              <Route exact path="/versicherungen/allianz" element={<Allianz />} />
+              <Route exact path="/versicherungen/krankenkasse" element={<Krankenkasse darkMode={darkMode} />} />
+              <Route exact path="/versicherungen/rechtsschutz" element={<Rechtsschutz darkMode={darkMode} />} />
+              <Route exact path="/versicherungen/auto-motorrad" element={<Auto darkMode={darkMode} />} />
 
               {/* Finanzen */}
               <Route exact path="/finanzen/pensionsplanung-und-ruhestand" element={<PensionPlan darkMode={darkMode} />} />
-              <Route exact path="/finanzen/haus-hypothek" element={<Hausrat darkMode={darkMode} />}/>
+              <Route exact path="/finanzen/haus-hypothek" element={<Hausrat darkMode={darkMode} />} />
               <Route exact path="/finanzen/360" element={<Analys360 />} />
-              <Route exact path="/uber-uns" element={<UberUns darkMode={darkMode}  />} />
-              <Route exact path="/login" element={<Login />} darkMode={darkMode}/>
+              <Route exact path="/uber-uns" element={<UberUns darkMode={darkMode} />} />
+              <Route exact path="/login" element={<Login />} darkMode={darkMode} />
 
               {/* Plus */}
-              <Route exact path="/plus" element={<Plus darkMode={darkMode}  />} />
+              <Route exact path="/plus" element={<Plus darkMode={darkMode} />} />
 
             </Routes>
             <Footer />

@@ -32,10 +32,6 @@ import AbroadDark from '../../assets/images/globDarkmode.svg'
 import GlassesDark from '../../assets/images/glassesDarkmode.svg'
 
 
-
-
-
-
 import PhoneDoc from '../../assets/images/phoneDoc.svg'
 import PhoneDocDark from '../../assets/images/phoneDocDark.svg'
 
@@ -46,9 +42,9 @@ import Economy from '../../assets/images/Dhomat-01.svg'
 import Handshake from '../../assets/images/Dhomat-02.svg'
 import Kravata from '../../assets/images/Dhomat-03.svg'
 
-import EconomyDark from '../../assets/images/Dhomat-01-Dark.svg'
-import HandshakeDark from '../../assets/images/Dhomat-02-Dark.svg'
-import KravataDark from '../../assets/images/Dhomat-03-Dark.svg'
+import EconomyDark from '../../assets/images/DhomatDark1.svg'
+import HandshakeDark from '../../assets/images/DhomatDark2.svg'
+import KravataDark from '../../assets/images/DhomatDark3.svg'
 
 function KrankenCards(props) {
 
@@ -144,7 +140,7 @@ function KrankenCards(props) {
                             <div className="col-12 col-sm-6 col-xl">
                                 <div className='p-4 whiteCardKranken h-100'>
                                     <div className='pb-4'>
-                                    {props.darkMode
+                                        {props.darkMode
                                             ? <img src={PhoneDocDark} alt="" />
                                             : <img src={PhoneDoc} alt="" />
                                         }

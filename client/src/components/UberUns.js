@@ -9,7 +9,9 @@ import { ReactComponent as IdeaMobileDark } from '../assets/images/UberUns-Dark-
 
 // import Muscle from '../assets/images/uberUns/muscle.svg'
 import { ReactComponent as Talk } from '../assets/images/uberUns/uberUnsTalk.svg'
-import { ReactComponent as Sig } from '../assets/images/uberUns/signature.svg'
+import { ReactComponent as Sig } from '../assets/images/plus/signature.svg'
+import { ReactComponent as SignatureDark } from '../assets/images/plus/signaturedark.svg'
+
 
 
 
@@ -365,7 +367,12 @@ function UberUns(props) {
                         <div className="row g-0 justify-content-between">
                             <div className="col-6 col-md-auto">
                                 <div className='pb-3 text-center'>
-                                    <Sig className="uberSignature" />
+                                    {!props.darkMode
+
+                                        ? < Sig className="uberSignature" />
+                                        : < SignatureDark className="uberSignature" />
+                                    }
+
                                 </div>
                                 <div className='text-center pb-3'>
                                     <span className='fw-500 fs-5 normalTextToWhite'>Gresatis <br></br> Bytyqitiosm</span>
@@ -376,7 +383,12 @@ function UberUns(props) {
                             </div>
                             <div className="col-6 col-md-auto">
                                 <div className='pb-3 text-center'>
-                                    <Sig className="uberSignature" />
+                                    {!props.darkMode
+
+                                        ? < Sig className="uberSignature" />
+                                        : < SignatureDark className="uberSignature" />
+                                    }
+
                                 </div>
                                 <div className='text-center pb-3'>
                                     <span className='fw-500 fs-5 normalTextToWhite'>Gresatis <br></br> Bytyqitiosm</span>

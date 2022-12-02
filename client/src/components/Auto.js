@@ -5,13 +5,12 @@ import Funktionert from './auto/Funktionert'
 import Tipps from './auto/Tipps'
 import SliderHausrat from './hausrat/SliderHausrat'
 
-function Auto() {
+function Auto(props) {
   return (
     <div>
       <AutoRadioBoxes />
-      <Funktionert />
+      <Funktionert  darkMode={props.darkMode} />
       <Tipps />
-
       <SliderHausrat />
     </div>
   )

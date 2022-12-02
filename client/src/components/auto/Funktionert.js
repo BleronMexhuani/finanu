@@ -1,10 +1,15 @@
 import React from 'react'
-import svg1 from '../../assets/images/versicherungen/1.svg'
-import svg2 from '../../assets/images/versicherungen/2.svg'
-import svg3 from '../../assets/images/versicherungen/3.svg'
-import svg4 from '../../assets/images/versicherungen/4.svg'
+import svg1 from '../../assets/images/versicherungen/1light.svg'
+import svg2 from '../../assets/images/versicherungen/2light.svg'
+import svg3 from '../../assets/images/versicherungen/3light.svg'
+import svg4 from '../../assets/images/versicherungen/4light.svg'
 
-function Funktionert() {
+import svg1dark from '../../assets/images/versicherungen/1dark.svg'
+import svg2dark from '../../assets/images/versicherungen/2dark.svg'
+import svg3dark from '../../assets/images/versicherungen/3dark.svg'
+import svg4dark from '../../assets/images/versicherungen/4dark.svg'
+
+function Funktionert(props) {
     return (
         <div className=''>
             <div className="wrapDiv container-xl px-4 px-xl-0">
@@ -18,9 +23,10 @@ function Funktionert() {
                         <div className="col-12 col-sm-6 col-xl-3">
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
-
-                                    <img src={svg1} alt='' />
-
+                                    {!props.darkMode
+                                        ? <img src={svg1} alt='' />
+                                        : <img src={svg1dark} alt='' />
+                                    }
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Digital anfragen</span>
@@ -34,8 +40,10 @@ function Funktionert() {
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
 
-                                    <img src={svg2} alt='' />
-
+                                    {!props.darkMode
+                                        ? <img src={svg2} alt='' />
+                                        : <img src={svg2dark} alt='' />
+                                    }
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Angebote durch finanu einholen lassen</span>
@@ -50,8 +58,10 @@ function Funktionert() {
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
 
-                                    <img src={svg3} alt='' />
-
+                                    {!props.darkMode
+                                        ? <img src={svg3} alt='' />
+                                        : <img src={svg3dark} alt='' />
+                                    }
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Angebote vergleichen</span>
@@ -66,8 +76,10 @@ function Funktionert() {
                             <div className="p-4 whiteCardKranken h-100 text-center">
                                 <div className="pb-4">
 
-                                    <img src={svg4} alt='' />
-
+                                    {!props.darkMode
+                                        ? <img src={svg4} alt='' />
+                                        : <img src={svg4dark} alt='' />
+                                    }
                                 </div>
                                 <div className='pb-2'>
                                     <span className='finanuSubTitle fw-600 fs-5'>Entscheiden und Abschliessen</span>
