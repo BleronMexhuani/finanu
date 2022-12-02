@@ -24,42 +24,44 @@ function FirstSection(props) {
     }, [])
     return (
         <>
-            <div className="blueBg px-4 px-xl-0  ">
-                {(screenWidth > 991.98) && (
-                    <>
-                        {props.darkMode
-                            ? <BlueBgDark />
-                            : <BlueBg />
-                        }
-                    </>
+            <div className="bodyCounterPadding pb-sm-0">
+                <div className="blueBg px-4 px-xl-0  ">
+                    {(screenWidth > 991.98) && (
+                        <>
+                            {props.darkMode
+                                ? <BlueBgDark />
+                                : <BlueBg />
+                            }
+                        </>
 
-                )}
-                {(screenWidth < 575.98) && (
+                    )}
+                    {(screenWidth < 575.98) && (
 
-                    <div className="blueBg pt-5 pe-4 mb-5 ">
-                        <div className="row g-0">
-                            <div className="col">
-                                <MobIlu />
 
-                            </div>
-                            <div className="ps-4 py-2 col-auto my-auto">
-                                <div className="text-start">
-                                    <span className='fw-700 fs-3 secondaryColor text-start ' style={{ color: 'white' }}>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
+                        <div className="blueBg pt-5 pe-4">
+                            <div className="row g-0">
+                                <div className="col">
+                                    <MobIlu />
+
+                                </div>
+                                <div className="ps-4 py-2 col-auto my-auto">
+                                    <div className="text-start">
+                                        <span className='fw-700 fs-3 secondaryColor text-start ' style={{ color: 'white' }}>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
+                                    </div>
                                 </div>
                             </div>
+                            <div className="text-start p-4">
+                                <span className='fw-400 fs-4 secondaryColor ' style={{ color: 'white' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
+                            </div>
                         </div>
-                        <div className="text-start p-4">
-                            <span className='fw-400 fs-4 secondaryColor ' style={{ color: 'white' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
-                        </div>
-                    </div>
-                )}
+                    )}
 
+                </div>
             </div>
-
             <div className="container-xl px-4 px-xl-0  text-start ">
-                <div className="row gy-5 justify-content-between ">
+                <div className="row gx-5 justify-content-between ">
                     {(screenWidth > 575.98) && (
-                        <div className="col-12 col-lg-6 order-1  order-md-1 mb-5">
+                        <div className="col-12 col-lg-6 order-1 order-md-1 bodyCounterPadding">
                             <div className='pb-5'>
                                 <span className='plusTitle fw-700 triaryColor'>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
                             </div>
@@ -129,8 +131,8 @@ function FirstSection(props) {
                         </div>
                     )}
 
-                    <div className="col-12 col-lg-6 order-3 order-md-2">
-                        <div className="plusForm py-5 px-4 p-md-5 ">
+                    <div className="col-12 col-lg-6 order-3 order-md-2 bodyCounterPadding">
+                        <div className="plusForm py-5 px-4 p-md-5 ms-auto">
                             <div className='pb-2 text-center text-md-start'>
                                 <span className='fs-3 fw-700 plusFormTitle' style={{ color: 'white' }}>Lohnt sich eine Mitgliedschaft fur dich?</span>
                             </div>
@@ -152,16 +154,15 @@ function FirstSection(props) {
                                 <FormIlu />
                             </div>
                             <div className='plusFormBtnDiv'>
-                                
+
                                 <button className='px-4 px-sm-5 py-3 finanuWhiteBtn'>Los Gehts</button>
-                                
+
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 py-5 py-md-0  mt-auto text-center order-2 order-md-3">
-                        <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto mt-auto mt-md-1 pt-auto pt-md-3">
-                            <div className="px-0 px-md-4 px-lg-5 py-5">
-
+                    <div className="col-12 bodyCounterPadding mt-auto text-center order-2 order-md-3">
+                        <div style={{ width: '100%', maxWidth: '850px' }} className="mx-auto">
+                            <div className="px-0 px-md-4 px-lg-5 pb-5">
                                 <div className='pb-4'>
                                     <span className='fs-3 fw-700 secondaryColor'>Why on earth did we start an insurance company?</span>
                                 </div>

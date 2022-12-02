@@ -12,7 +12,7 @@ function Modal(props) {
         <>
             <div className="hausratModal">
                 <div className="hausratModalContent p-4 p-md-5 mx-4">
-                    <div className="hausratModalScroll px-2">
+                    <div className="hausratModalScroll px-2 mt-5">
                         <div className='modalXBtn'>
                             <span style={{ cursor: "pointer" }} onClick={props.toggleModal}>
                                 <XBtn />

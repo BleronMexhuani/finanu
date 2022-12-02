@@ -31,7 +31,7 @@ function UberUns(props) {
     return (
         <>
             <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
-                <div className='bodyCounterPadding'>
+                <div className='pb-5'>
                     <div className="row g-0 justify-content-center">
 
                         <div className="col-12">
@@ -42,14 +42,12 @@ function UberUns(props) {
 
                                         ? <IdeaDark style={{ maxWidth: 'max-content' }} />
                                         : <Idea style={{ maxWidth: 'max-content' }} />
-
                                     }
                                 </>
                             )}
                             {(screenWidth < 575.98) && (
                                 <>
                                     {props.darkMode
-
                                         ? <IdeaMobileDark style={{ maxWidth: 'max-content' }} />
                                         : <IdeaMobile style={{ maxWidth: 'max-content' }} />
                                     }
@@ -123,13 +121,15 @@ function UberUns(props) {
             </div> */}
             </div>
 
-            <div className='container-xl px-4 px-xl-0'>
-                <div className='pb-3'>
-                    <span className='fw-700 firstBlueTitle fs-1'>Unsere Aufgabe</span>
-                </div>
-                <div className="row g-0 justify-content-between bodyCounterPadding">
+            <div className='container-xl px-4 px-xl-0 bodyCounterPadding'>
+                <div className="row gx-4 justify-content-between ">
+                    <div className="col-12 col-md-5 col-xl-4 text-start">
+                        <div className='pb-4' >
+                            <span className='fw-700 firstBlueTitle fs-1'>Unsere Aufgabe</span>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
 
-                    <div className="col-12 text-start">
                         <div className='pb-3'>
                             <span className='fw-500 fs-5 normalTextToWhite'>Finanu hilft Ihnen als unabhängige Vergleichsplattform dabei sich in der unübersichtlichen Landschaft der Versicherungen und Finanzdienstleister zurechtzufinden. Mit wenigen Klicks können Sie verschiedene Angebote vergleichen und unverbindliche Offerten anfordern.
                             </span>
@@ -139,6 +139,7 @@ function UberUns(props) {
                                 Des Weiteren haben Sie die Option weitere Fragen via Chatbot, Live Chat oder bei einer persönlichen Beratung zu klären. Finanu unterstützt und begleitet Sie kostenlos bis zum Abschluss.
                             </span>
                         </div>
+
                     </div>
                 </div>
             </div>
