@@ -179,7 +179,7 @@ function HomeFirstSection(props) {
                                     zurechtzufinden und zu verstehen wofür Sie überhaupt zahlen.</span>
                             </div>
                             <div className='py-5'>
-                                <TrustBox />
+                                <TrustBox darkMode={props.darkMode} />
                             </div>
                         </div>
                     </div>
