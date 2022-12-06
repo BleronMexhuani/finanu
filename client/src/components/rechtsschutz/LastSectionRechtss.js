@@ -1,25 +1,36 @@
 import React from 'react'
-import { ReactComponent as Alltag } from '../../assets/images/rechtsschutzImgs/alltag.svg'
-import { ReactComponent as AlltagDark } from '../../assets/images/rechtsschutzImgs/alltagDark.svg'
+// import { ReactComponent as Alltag } from '../../assets/images/rechtsschutzImgs/alltag.svg'
+// import { ReactComponent as AlltagDark } from '../../assets/images/rechtsschutzImgs/alltagDark.svg'
 
-import { ReactComponent as Arbeit } from '../../assets/images/rechtsschutzImgs/Arbeit.svg'
-import { ReactComponent as ArbeitDark } from '../../assets/images/rechtsschutzImgs/ArbeitDark.svg'
+// import { ReactComponent as Arbeit } from '../../assets/images/rechtsschutzImgs/Arbeit.svg'
+// import { ReactComponent as ArbeitDark } from '../../assets/images/rechtsschutzImgs/ArbeitDark.svg'
+
+import { ReactComponent as Privaten } from '../../assets/images/rechtsschutzImgs/Privaten.svg'
+import { ReactComponent as PrivatenDark } from '../../assets/images/rechtsschutzImgs/PrivatenDark.svg'
+
+import { ReactComponent as Verkehr } from '../../assets/images/rechtsschutzImgs/Verkehr.svg'
+import { ReactComponent as VerkehrDark } from '../../assets/images/rechtsschutzImgs/VerkehrDark.svg'
 
 function LastSectionRechtss(props) {
     return (
         <>
 
             <div className="wrapDiv container-xl px-4 px-xl-0 mx-auto">
-                <div className="text-start bodyCounterPadding">
-                    <div className="row gx-4 justify-content-between">
-                        <div className="col-12 col-md-5 col-xl-4 text-start">
-                            <div className='pb-4'>
-                                <span className='fw-700 fs-1 normalTextToWhite'>Privatrechtsschutz
+                <div className="text-start">
+                    <div className="row gx-4 gy-4 gy-md-0 justify-content-between bodyCounterPadding">
+                        <div className="col-12 col-md-5 col-xl-4 text-center my-md-auto order-2 order-md-1">
+                            {!props.darkMode
+                                ? <Privaten />
+                                : <PrivatenDark />
+                            }
+
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start order-1 order-md-2">
+                            <div className='pb-3'>
+                                <span className='fw-700 fs-1 firstBlueTitle'>Privatrechtsschutz
                                 </span>
                             </div>
-                        </div>
-                        <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
-                            <div className="pb-5">
+                            <div className="">
                                 <div className='fw-500 fs-5 normalTextToWhite'>
                                     <span>Eine <span style={{ wordBreak: 'break-all' }}>Privatrechtschutzversicherung</span> hilft Ihnen bei einem Rechtsstreit bei privatrechtlichen
                                         Streitigkeiten, unterstützt Sie bei rechtlichen Fragen und übernimmt die anfallenden Kosten für einen
@@ -30,14 +41,18 @@ function LastSectionRechtss(props) {
                         </div>
 
                     </div>
-                    <div className="row gx-4 justify-content-between">
-                        <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-start">
-                            <div className='pb-4'>
-                                <span className='fw-700 fs-1 normalTextToWhite' style={{ wordBreak: 'break-all' }}>Verkehrsrechtsschutz</span>
-                            </div>
+                    <div className="row gx-4 gy-4 gy-md-0 justify-content-between">
+                        <div className="col-12 col-md-6 col-lg-5 col-xl-4 text-center order-2 order-md-1">
+                            {!props.darkMode
+                                ? <Verkehr />
+                                : <VerkehrDark />
+                            }
                         </div>
-                        <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start">
+                        <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start order-1 order-md-2">
                             <div className="">
+                                <div className='pb-3'>
+                                    <span className='fw-700 fs-1 firstBlueTitle' style={{ wordBreak: 'break-all' }}>Verkehrsrechtsschutz</span>
+                                </div>
                                 <div className='fw-500 fs-5 normalTextToWhite'>
                                     <span>Die <span style={{ wordBreak: 'break-all' }}>Verkehrsrechtsschutzversicherung</span> unterstützt Sie bei Rechtsfällen und Streitigkeiten im Strassenverkehr. Weiter bietet der Verkehrsrechtsschutz
                                         rechtliche Hilfe durch Juristen und Anwälte bei Rechtsstreitigkeiten, die
@@ -49,7 +64,7 @@ function LastSectionRechtss(props) {
                     </div>
 
                 </div>
-                <div className="">
+                {/* <div className="">
                     <div className="row g-3 justify-content-center">
                         <div className="col-12 col-sm-6 col-md-4 col-lg">
                             <div className='p-4 whiteCardKranken h-100 text-center'>
@@ -159,7 +174,7 @@ function LastSectionRechtss(props) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div >
         </>
     )

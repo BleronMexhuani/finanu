@@ -20,13 +20,13 @@ function SelectCar(props) {
     const [modell, setModell] = useState([]);
     const [modellfilter, setModellFilter] = useState([]);
     const [modelljahr, setModelljahr] = useState([]);
-    const [modelljahrfilter, setModelljahrfilter] = useState([]);
+    // const [modelljahrfilter, setModelljahrfilter] = useState([]);
 
     const [actualMarke, setActualMarke] = useState("");
 
     useEffect(() => {
         async function callMarkeFunction() {
-            let res = await axios.get("http://localhost:5000/automotorrad/getMarke");
+            let res = await axios.get("https://node.kutiza.com/automotorrad/getMarke");
             setMarke(res.data);
 
         }
@@ -62,19 +62,18 @@ function SelectCar(props) {
         }, 100);
     }
     const setModellAxios = async (marke) => {
-        let res = await axios.get(`http://localhost:5000/automotorrad/getModell/${marke}`);
+        let res = await axios.get(`https://node.kutiza.com/automotorrad/getModell/${marke}`);
         setModell(res.data);
+        console.log(res.data)
     }
+
     const callModellJahrAxios = async (MarkeTyp) => {
-
-
-        let res = await axios.get(`http://localhost:5000/automotorrad/getModellJahr/${actualMarke}/${MarkeTyp}`);
+        let res = await axios.get(`https://node.kutiza.com/automotorrad/getModellJahr/${actualMarke}/${MarkeTyp}`);
         setModelljahr(res.data);
     }
 
     const handleInput = (e) => {
         setActualMarke(e.target.getAttribute('value'));
-
         document.getElementById('inputChange').value = e.target.getAttribute('value')
         setInputValue(e.target.getAttribute('value'))
         setIsFocused(false)
@@ -143,11 +142,12 @@ function SelectCar(props) {
                 // setIsEmpty1(false)
             }
         }
+
         searchModellJahr();
         searchMarke()
         searchModell();
 
-    }, [inputValue, marke, inputModellValue])
+    }, [inputValue, marke, inputModellValue,modell,modelljahr])
 
     return (
         <div>
@@ -200,7 +200,7 @@ function SelectCar(props) {
                             )}
 
                         </div>
-                        <div className="pb-4" style={{ position: 'relative' }}>
+                        <div className="" style={{ position: 'relative' }}>
                             <select name="" className='form-control krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox mx-auto' placeholder='Modelljahr' id='inputChangeModellJahr' onChange={(e) => setinputModellJahrValue(e.target.value)} onFocus={showSelectDropdown2} onBlur={hideSelectDropdown2}>
                                 {/* <input type="text" autoComplete='off' className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox'  id='inputChangeModellJahr' onChange={(e) => setinputModellJahrValue(e.target.value)} onFocus={showSelectDropdown2} onBlur={hideSelectDropdown2} /> */}
 

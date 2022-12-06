@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React, { lazy, Suspense } from 'react'
 import HomeFirstSection from './homepage/HomeFirstSection'
 import '../assets/css/mainComponents.css'
 
@@ -12,14 +12,22 @@ function MainComponents(props) {
     <>
       <div className='bodyCounterPadding'>
         <HomeFirstSection darkMode={props.darkMode} />
-        <HomeSlider />
+        <Suspense fallback={<div>Loading...</div>}>
+          <HomeSlider />
+        </Suspense>
+
       </div>
 
       <div className='wrapDiv bodyCounterPadding container-xl px-4 px-xl-0'>
-        <KrankenSteps />
+
+        <Suspense fallback={<div>Loading...</div>}>
+          <KrankenSteps />
+        </Suspense>
       </div>
       <div className='bodyCounterPadding'>
-        <HomeFourthSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <HomeFourthSection />
+        </Suspense>
       </div>
     </>
   )

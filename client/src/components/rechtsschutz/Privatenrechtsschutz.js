@@ -138,11 +138,6 @@ function Privatenrechtsschutz(props) {
                         </div>
                     </div>
                 </div>
-                <div className="">
-                    <div className='pb-5 text-start text-md-center'>
-                        <span className='fw-700 firstBlueTitle fs-1'>Was gibt es für <br></br>Rechtsschutzversicherungen</span>
-                    </div>
-                </div>
             </div>
         </div>
     )

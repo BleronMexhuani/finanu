@@ -1,5 +1,6 @@
 import React from 'react';
-const TrustBox = () => {
+
+const TrustBox = (props) => {
     // Create a reference to the <div> element which will represent the TrustBox
     const ref = React.useRef();
     React.useEffect(() => {
@@ -9,12 +10,15 @@ const TrustBox = () => {
         if (window.Trustpilot) {
             window.Trustpilot.loadFromElement(ref.current, true);
         }
-    }, []);
+    }, [props.darkMode]);
+    
+
+
     return (
         <div
             ref={ref} // We need a reference to this element to load the TrustBox in the effect.
             className="trustpilot-widget" // Renamed this to className.
-            data-locale='de-DE' data-template-id='5419b6a8b0d04a076446a9ad' data-businessunit-id='637d090c707523ba3847609c' data-style-height='24px' data-style-width='100%' data-theme='light' data-min-review-count='0' data-style-alignment='center'
+            data-locale='de-DE' data-template-id='5419b6a8b0d04a076446a9ad' data-businessunit-id='637d090c707523ba3847609c' data-style-height='24px' data-style-width='100%' data-theme={props.darkMode ? 'dark' : 'light'} data-min-review-count='0' data-style-alignment='center'
         >
             <a rel="noreferrer" href="https://de.trustpilot.com/review/finanu.ch" target="_blank"> Trustpilot
             </a>
