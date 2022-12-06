@@ -284,7 +284,13 @@ ol, ul {
 }
 .greyCheckMarkBorder {
     border-color: #d0d0d050;
-    box-shadow: none;
+    box-shadow: none !important;
+}
+.containerRes2 input:checked~.greyCheckMarkBorder {
+    border-color: #50B8E7 !important;
+}
+.containerRes input:checked~.greyCheckMarkBorder {
+    border-color: #50B8E7 !important;
 }
 .submitErrorInputStyle {
     border-color: #E76250 !important;
