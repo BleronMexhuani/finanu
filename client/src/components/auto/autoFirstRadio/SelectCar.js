@@ -26,7 +26,7 @@ function SelectCar(props) {
 
     useEffect(() => {
         async function callMarkeFunction() {
-            let res = await axios.get("http://localhost:5000/automotorrad/getMarke");
+            let res = await axios.get("https://node.kutiza.com/automotorrad/getMarke");
             setMarke(res.data);
 
         }
@@ -62,13 +62,13 @@ function SelectCar(props) {
         }, 100);
     }
     const setModellAxios = async (marke) => {
-        let res = await axios.get(`http://localhost:5000/automotorrad/getModell/${marke}`);
+        let res = await axios.get(`https://node.kutiza.com/automotorrad/getModell/${marke}`);
         setModell(res.data);
     }
     const callModellJahrAxios = async (MarkeTyp) => {
 
 
-        let res = await axios.get(`http://localhost:5000/automotorrad/getModellJahr/${actualMarke}/${MarkeTyp}`);
+        let res = await axios.get(`https://node.kutiza.com/automotorrad/getModellJahr/${actualMarke}/${MarkeTyp}`);
         setModelljahr(res.data);
     }
 
