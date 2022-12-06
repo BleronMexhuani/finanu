@@ -1,14 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
+import TerminImg from '../../assets/images/kraken/opsions/01.svg'
+import Phone from '../../assets/images/kraken/opsions/02.svg'
+import Formular from '../../assets/images/kraken/opsions/03.svg'
 
-import TerminImg from '../../assets/images/kraken/opsions/CalendarLight.svg'
-import Phone from '../../assets/images/kraken/opsions/PhoneLight.svg'
-import Formular from '../../assets/images/kraken/opsions/PaperLight.svg'
-
-import TerminImgDark from '../../assets/images/kraken/opsions/CalendarDark.svg'
-import PhoneDark from '../../assets/images/kraken/opsions/PhoneDark.svg'
-import FormularDark from '../../assets/images/kraken/opsions/PaperDark.svg'
+import TerminImgDark from '../../assets/images/kraken/opsions/04Dark.svg'
+import PhoneDark from '../../assets/images/kraken/opsions/05Dark.svg'
+import FormularDark from '../../assets/images/kraken/opsions/Dark-06.svg'
 
 import bellDarkMode from '../../assets/images/kraken/opsions/bellDarkMode.svg'
 import bellLightMode from '../../assets/images/kraken/opsions/bellLightMode.svg'

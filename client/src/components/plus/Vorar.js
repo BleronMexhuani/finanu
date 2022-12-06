@@ -11,7 +11,7 @@ function Vorar(props) {
                 <span className='fs-2 fw-700 triaryColor '>Vorarussetzungen  -  Vergunstigung  -  Mitgliederbeirtrag</span>
             </div>
             <div>
-                <div className="row g-4">
+                <div className="row g-4 paddingoftherowofvorar">
                     <div className="col-lg-4 col-6">
                             {props.darkMode
 
@@ -56,7 +56,7 @@ function Vorar(props) {
                     </div>
                 </div>
                 <div className='text-center my-3'>
-                    <button className='lastcomponentbutton w-50 py-2 border-0 ' style={{ borderRadius: '10px' }}>Get a qoute</button>
+                    <button className='lastcomponentbutton py-2 border-0 ' style={{ borderRadius: '10px' }}>Get a qoute</button>
                 </div>
             </div>
         </div>

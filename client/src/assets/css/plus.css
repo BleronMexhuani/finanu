@@ -4,6 +4,9 @@
     width: 100%;
     z-index: -1;
 }
+.paddingoftherowofvorar {
+    padding-bottom: 3.5rem;
+}
 
 .plusTitle {
     font-size: 65px;
@@ -37,17 +40,23 @@
 }
 
 .collapsofthelastcomponent {
-    background: #50B8E7;
     color: white;
-    border-radius: 10px;
-
 }
 
 .lastcomponentbutton {
     color: #FFFFFF;
     border: solid 0.3px #FFFFFF;
     background-color: #50B8E7;
-    border-radius: 15px;
+    border-radius: 15px !important;
+    width: 450px !important;
+}
+
+.lastcomponentbutton2 {
+    color: #FFFFFF;
+    border: solid 0.3px #FFFFFF;
+    background-color: #50B8E7;
+    border-radius: 15px !important;
+    width: 350px !important;
 }
 
 .plusFormTitle {
