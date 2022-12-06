@@ -113,8 +113,8 @@ function Option2Kranken(props) {
                                 <div style={{ cursor: 'pointer' }} className="krankenFirstStep h-100 px-4 py-5 text-center" onClick={toggleModal}>
                                     <div>
                                         {props.darkMode
-                                            ? < img src={FormularDark} alt="" />
-                                            : < img src={Formular} alt="" />
+                                            ? < img src={FormularDark} width="105px" height="115px" alt="" />
+                                            : < img src={Formular} width="105px" height="115px" alt="" />
                                         }
                                     </div>
                                     <div className='pt-3'>

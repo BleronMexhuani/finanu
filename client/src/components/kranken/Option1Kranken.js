@@ -243,11 +243,11 @@ function Option1Kranken(props) {
                                     <div>
 
                                         {props.darkMode
-                                            ? < img src={FormularDark} alt="" />
-                                            : < img src={Formular} alt="" />
+                                            ? < img src={FormularDark} height="115px" alt="" />
+                                            : < img src={Formular} height="115px" alt="" />
                                         }
                                     </div>
-                                    <div className='pt-4'>
+                                    <div className='pt-3'>
                                         <span className='fw-500' style={{ color: 'white' }}>Kontaktformular</span>
                                     </div>
                                 </div>
