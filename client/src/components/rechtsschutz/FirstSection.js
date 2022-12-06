@@ -1,5 +1,5 @@
 import React from 'react'
-import LawLight from '../../assets/images/versicherungen/JawLight.svg'
+import { ReactComponent as LawLight } from '../../assets/images/versicherungen/JawLight.svg'
 
 function FirstSection(props) {
     return (
@@ -27,11 +27,11 @@ function FirstSection(props) {
 
                         <div className="">
                             <div>
-                                 <img src={LawLight} className="img-fluid" alt="" />
-                                    
+                                <LawLight className="img-fluid" />
+
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
