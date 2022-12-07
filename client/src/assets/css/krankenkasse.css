@@ -387,9 +387,13 @@ a {
     max-width: 1100px !important;
 }
 
-.krankenFirstIluDiv {
-    padding: 0px 150px;
-    margin-bottom: -20px;
+.krankenPramienBg {
+    background: url('../images/kraken/pramienBg.svg') no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 1700px) {
@@ -420,9 +424,7 @@ a {
         padding-bottom: 3rem;
     }
 
-    .krankenFirstIluDiv {
-        padding: 0px 100px;
-    }
+    
 
     .blueBgKranken1 {
         height: auto;
@@ -445,9 +447,7 @@ a {
         margin-top: 0px;
     }
 
-    .krankenFirstIluDiv {
-        padding: 0px 50px;
-    }
+    
 
     .blueBgKranken1 {
         margin-top: 0px;
@@ -482,9 +482,7 @@ a {
         left: calc(50% - 120px);
     }
 
-    .krankenFirstIluDiv {
-        padding: 0px 0px;
-    }
+   
 
     .mehrLadenModalContent {
         width: auto;
@@ -699,7 +697,5 @@ a {
         margin-top: 0px;
     }
 
-    .krankenFirstIluDiv {
-        margin-bottom: -10px;
-    }
+    
 }

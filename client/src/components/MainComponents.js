@@ -12,6 +12,7 @@ function MainComponents(props) {
     <>
       <div className='bodyCounterPadding'>
         <HomeFirstSection darkMode={props.darkMode} />
+        
         <Suspense fallback={<div>Loading...</div>}>
           <HomeSlider />
         </Suspense>
@@ -21,7 +22,7 @@ function MainComponents(props) {
       <div className='wrapDiv bodyCounterPadding container-xl px-4 px-xl-0'>
 
         <Suspense fallback={<div>Loading...</div>}>
-          <KrankenSteps />
+          <KrankenSteps darkMode={props.darkMode} />
         </Suspense>
       </div>
       <div className='bodyCounterPadding'>

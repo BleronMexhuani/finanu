@@ -4,8 +4,8 @@ function KrankenBlueBg() {
     return (
         <>
             <div className='bodyCounterPadding'>
-                <div className='pb-5'>
-                    <div className=''>
+                <div className=''>
+                    <div className=' krankenPramienBg'>
                         <div className="wrapDiv container-xl px-4 px-xl-0 normalTextToWhite">
                             <div className=''>
                                 <div className="wrapDiv container-xl px-0">
