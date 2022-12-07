@@ -39,7 +39,7 @@ function KrankenkasseSteps(props) {
             email,
             telefonnummer
         }
-        const res = await axios.post("https://node.kutiza.com/krankenkasse/sendMail");
+        const res = await axios.post("http://localhost:5000/krankenkasse/sendMail");
         if (res.length > 2) {
             console.log(res, data)
 
@@ -81,7 +81,7 @@ function KrankenkasseSteps(props) {
         //Get all the regions
         const getRegions = async () => {
             await axios.get(
-                'https://node.kutiza.com/krankenkasse/regions'
+                'http://localhost:5000/krankenkasse/regions'
             )
                 .then(function (result) {
                     setRegions(result.data);
@@ -140,7 +140,7 @@ function KrankenkasseSteps(props) {
         const getInsurances = async () => {
             if (plz !== null && ort !== null && commune !== null) {
                 await axios.get(
-                    `https://node.kutiza.com/krankenkasse/insurances/${plz}/${ort}/${commune}`
+                    `http://localhost:5000/krankenkasse/insurances/${plz}/${ort}/${commune}`
                 )
                     .then(function (result) {
                         setInsurances(result.data);
@@ -195,7 +195,7 @@ function KrankenkasseSteps(props) {
         // setAccident(targetAccident);
         setModel(targetModells);
         setIsLoadActive('flex');
-        const result = await axios.get(`https://node.kutiza.com/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
+        const result = await axios.get(`http://localhost:5000/krankenkasse/compareInputs/${insuranceNum}/${kanton}/${region}/${targetJahrgang}/${targetAccident}/${targetModells}/${targetFranchise}/${tarifbezeichnung}`);
         const response = result.data;
         const responseCompared = response.final_data;
         const responseSelectedKranken = response.final_data_selected_krankenkasse;
@@ -279,7 +279,7 @@ function KrankenkasseSteps(props) {
 
 
         const getActualModels = async () => {
-            const result = await axios.get(`https://node.kutiza.com/krankenkasse/actualmodel/${insuranceNum}/${kanton}/${region}`)
+            const result = await axios.get(`http://localhost:5000/krankenkasse/actualmodel/${insuranceNum}/${kanton}/${region}`)
             setActualModels(result.data);
         }
         if (insuranceNum != null) {
