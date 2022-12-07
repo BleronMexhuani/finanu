@@ -8,14 +8,14 @@ function IhrAuto(props) {
     const step1 = useRef()
     const step2 = useRef()
 
-    useEffect(() => {
-        var elem = (step === 1) ? step1 : step2
-        window.scrollTo(
-            {
-                top: elem.current.offsetTop + 400,
-                behavior: "smooth"
-            });
-    }, [step])
+    // useEffect(() => {
+    //     var elem = (step === 1) ? step1 : step2
+    //     window.scrollTo(
+    //         {
+    //             top: elem.current.offsetTop + 400,
+    //             behavior: "smooth"
+    //         });
+    // }, [step])
 
     return (
         <div>

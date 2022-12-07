@@ -64,7 +64,7 @@ function SelectCar(props) {
     const setModellAxios = async (marke) => {
         let res = await axios.get(`https://node.kutiza.com/automotorrad/getModell/${marke}`);
         setModell(res.data);
-        console.log(res.data)
+     
     }
 
     const callModellJahrAxios = async (MarkeTyp) => {

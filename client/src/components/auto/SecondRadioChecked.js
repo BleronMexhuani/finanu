@@ -7,22 +7,23 @@ import ThirdStep from './autoSecondRadio/ThirdStep'
 function SecondRadioChecked() {
     const [step, setstep] = useState(0)
 
-    const scrollDiv = useRef();
-    useEffect(() => {
+    const scrollDiv1 = useRef();
+    // useEffect(() => {
 
-        var elem = scrollDiv
-        window.scrollTo(
-            {
-                top: elem.current.offsetTop - 100,
-                behavior: "smooth"
-            });
+    //     var elem = scrollDiv1
+    //     window.scrollTo(
+    //         {
+    //             top: elem.current.offset,
+    //             behavior: "smooth"
+    //         });
+    //         console.log(offset.top);
             
-    }, [step])
+    // }, [step])
     return (
         <div className='pt-5 mt-5'>
             <form action="" className='mb-0'>
                 <div className="wrapDiv container-xl px-0">
-                    <div className="" ref={scrollDiv}>
+                    <div className="" ref={scrollDiv1}>
                         {
                             {
                                 0: <UploadFileStep step={step} setstep={setstep} />,

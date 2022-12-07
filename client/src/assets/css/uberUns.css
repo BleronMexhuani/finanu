@@ -77,6 +77,10 @@
         height: 600px;
 
     }
+    .krankenPramienBg { 
+        
+        height: 800px;
+    }
 }
 
 @media (min-width: 2200.98px) {
@@ -84,20 +88,38 @@
         height: 700px;
 
     }
+    .krankenPramienBg { 
+        
+        height: 900px;
+    }
 }
 
 @media (max-width: 1399.98px) {}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    .krankenPramienBg { 
+        background-position-x: -600px;
+        height: 900px;
+    }
+}
 
 @media (max-width: 991.98px) {
     .uberSignature {
         max-width: 165px;
         height: 90px;
     }
+    .krankenPramienBg { 
+        background-position-x: -900px;
+        height: 1000px;
+    }
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .krankenPramienBg { 
+        background-position-x: -1400px;
+        height: 1000px;
+    }
+}
 
 @media (max-width: 575.98px) {
     .uberBlueBg {
@@ -118,6 +140,10 @@
 
     .uberUnsBg {
         background-position-x: -850px;
+    }
+    .krankenPramienBg {
+        background-position-x: -1800px;
+        height: 1200px;
     }
 }
 

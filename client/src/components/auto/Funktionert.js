@@ -9,10 +9,12 @@ import svg2dark from '../../assets/images/versicherungen/2dark.svg'
 import svg3dark from '../../assets/images/versicherungen/3dark.svg'
 import svg4dark from '../../assets/images/versicherungen/4dark.svg'
 
+
 function Funktionert(props) {
+
     return (
         <div className=''>
-            <div className="wrapDiv container-xl px-4 px-xl-0">
+            <div className="wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding">
                 <div className="pb-4 text-center">
                     <span className='fw-700 finanuSubTitle fs-4'>
                         So einfach funktioniert’s
