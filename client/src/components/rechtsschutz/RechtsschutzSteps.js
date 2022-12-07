@@ -59,7 +59,7 @@ function RechtsschutzSteps(props) {
             gender, vorname, email, geburstdatum, telefonnumer, plz, ort, strasse, reschtutz, res2
         }
         if (gender && vorname && email && geburstdatum && telefonnumer && plz && ort && strasse && reschtutz && res2) {
-            const res = axios.post("https://node.kutiza.com/rechtschutz/sendEmail", data);
+            const res = axios.post("http://localhost:5000/rechtschutz/sendEmail", data);
             console.log(res);
             seterrorMessage('Thank you for submitting!')
             setSubmitError((props.darkMode) ? "#fff" : "#000")
