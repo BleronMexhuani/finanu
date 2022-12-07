@@ -27,7 +27,7 @@ var automotorrad = {
 
         let marke = req.params.actualMarke;
 
-        await query("SELECT CONCAT(SPLIT_STR(MarkeTyp,' ',2),' ',SPLIT_STR(MarkeTyp,' ',3),' ',SPLIT_STR(MarkeTyp,' ',4)) as MarkeTyp FROM `automotorrad` WHERE Marke = ? GROUP BY CONCAT(SPLIT_STR(MarkeTyp,' ',2),' ',SPLIT_STR(MarkeTyp,' ',3),' ',SPLIT_STR(MarkeTyp,' ',4))", [marke], async (err, response) => {
+        await query("SELECT MarkeTyp FROM `automotorrad` WHERE Marke = ? GROUP BY MarkeTyp", [marke], async (err, response) => {
             res.status(200).json(response);
         });
     },
@@ -37,7 +37,7 @@ var automotorrad = {
         let modell = req.params.modell;
       
 
-        await query("SELECT Erstellung FROM automotorrad WHERE Marke = ? AND MarkeTyp = ? GROUP BY Erstellung", [marke,marke+ " " +modell], (err, response) => {
+        await query("SELECT Erstellung FROM automotorrad WHERE Marke = ? AND MarkeTyp = ? GROUP BY Erstellung", [marke,modell], (err, response) => {
             res.status(200).json(response);
         })
     },
