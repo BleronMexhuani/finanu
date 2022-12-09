@@ -44,7 +44,7 @@ function KrankenCards(props) {
     
     return (
         <div className='blueBgKrankenOverflow pt-0 pt-lg-5 pt-xl-0'>
-            <div className='blueBgKranken1'>
+            <div className=''>
                 <div className="blueBgCenterTex">
                     <div className='pb-3 pb-md-2'>
                         <span className='fs-1 bigTitleKranken'>Grundversicherung</span>

@@ -1,15 +1,15 @@
 import React from 'react'
-import { ReactComponent as First } from '../../assets/images/krakenmainimg.svg'
-import { ReactComponent as FirstDark } from '../../assets/images/krankenmainimgDark.svg'
+import {ReactComponent as First} from '../../assets/images/pension/First.svg'
+import {ReactComponent as FirstDark} from '../../assets/images/pension/FirstDark.svg'
 
-function FirstSectionKranken(props) {
-    return (
-        <>
+function FirstSectionPension(props) {
+  return (
+    <>
             <div className="container-xl px-4 px-xl-0 bodyCounterPadding">
                 <div className="row justify-content-between gy-5 gy-md-0 gx-5">
                     <div className="col-12 col-md-6 col-lg-6 my-md-auto">
                         <div className='pb-3 text-start'>
-                            <span className='fw-700 fs-1 firstBlueTitle'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                            <span className='fw-700 fs-1 firstBlueTitle'>Lieber sorglos steuern sparen, statt vorsorgelos steuern zahlen</span>
                         </div>
                         <div className='text-start pb-4'>
                             <span className='normalTextToWhite'>
@@ -27,11 +27,11 @@ function FirstSectionKranken(props) {
 
                         <div className="">
                             <div>
-                                {props.darkMode
-
-                                    ? <FirstDark className="img-fluid" />
-                                    : <First className="img-fluid" />
-                                }
+                            {props.darkMode
+                                        ? <FirstDark className="img-fluid" />
+                                        : <First className="img-fluid" />
+                                    }
+                                
                             </div>
                         </div>
 
@@ -39,7 +39,7 @@ function FirstSectionKranken(props) {
                 </div>
             </div>
         </>
-    )
+  )
 }
 
-export default FirstSectionKranken
+export default FirstSectionPension

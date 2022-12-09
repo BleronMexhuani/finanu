@@ -21,7 +21,33 @@ import IconNr8Dark from '../../assets/images/rechtsschutzImgs/IconNr8Dark.svg'
 
 function Privatenrechtsschutz(props) {
     return (
-        <div>
+        <>
+            <div className="bodyCounterPadding">
+                <div className="uberUnsBg">
+                    <div className="container-xl px-4 px-xl-0">
+
+                        <div className="row gx-4 justify-content-between ">
+                            <div className="col-12 col-md-5 col-xl-4 text-start my-md-auto">
+                                <div className='pb-4' >
+                                    <span className='fw-700 firstBlueTitle fs-1'>Wozu überhaupt eine
+                                        Rechtsschutzversicherung?
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-6 col-lg-7 col-xl-7 text-start my-md-auto">
+
+                                <div className=''>
+                                    <span className='fw-500 fs-5 normalTextToWhite'>
+                                        Nicht immer läuft alles so wie es soll und manchmal benötigt man auch jurstische Unterstützung oder Beratung. Deshalb sollten Sie zur optimalen Absicherung auch an eine Rechtsschutz denken um bei jeglicher Art von Streitigkeiten möglichst gut abgesichert zu sein!
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto'>
                 <div className='pb-5'>
                     <span className='fw-700 fs-1 titleoffolgende'>
@@ -139,7 +165,8 @@ function Privatenrechtsschutz(props) {
                     </div>
                 </div>
             </div>
-        </div>
+            
+        </>
     )
 }
 

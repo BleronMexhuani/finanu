@@ -14,7 +14,7 @@ function Funktionert(props) {
 
     return (
         <div className=''>
-            <div className="wrapDiv container-xl px-4 px-xl-0 bodyCounterPadding">
+            <div className="wrapDiv container-xl px-4 px-xl-0">
                 <div className="pb-4 text-center">
                     <span className='fw-700 finanuSubTitle fs-4'>
                         So einfach funktioniert’s

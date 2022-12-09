@@ -8,7 +8,7 @@ function AutoStep() {
     const [autoCheck, setAutoCheck] = useState(0)
 
     return (
-        <div className='container-xl px-4 px-xl-0'>
+        <div className='container-xl px-4 px-xl-0 bodyCounterPadding'>
             <div className="col-12 col-xl-11 col-xxl-10 mx-auto hausratBlueDiv p-4 p-md-5 ">
                 <div className="">
                     <div className="pb-5 text-center">

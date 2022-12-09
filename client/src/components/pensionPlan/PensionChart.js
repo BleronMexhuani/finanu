@@ -242,7 +242,7 @@ function PensionChart() {
         ],
     };
     return (
-        <div>
+        <>
             <div className='container-xl px-4 px-xl-0'>
                 <div className='pb-4'>
                     <span className='fw-600 fs-3 normalTextToWhite'>Berechne jetzt deine 3. Säule</span>
@@ -392,7 +392,7 @@ function PensionChart() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

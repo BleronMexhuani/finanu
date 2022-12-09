@@ -8,17 +8,16 @@ function SecondRadioChecked() {
     const [step, setstep] = useState(0)
 
     const scrollDiv1 = useRef();
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     var elem = scrollDiv1
-    //     window.scrollTo(
-    //         {
-    //             top: elem.current.offset,
-    //             behavior: "smooth"
-    //         });
-    //         console.log(offset.top);
+        var elem = scrollDiv1
+        window.scrollTo(
+            {
+                top: elem.current.offsetTop + 400,
+                behavior: "smooth"
+            });
             
-    // }, [step])
+    }, [step])
     return (
         <div className='pt-5 mt-5'>
             <form action="" className='mb-0'>

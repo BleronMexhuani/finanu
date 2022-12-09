@@ -75,26 +75,7 @@ function HausratBlueForm(props) {
     return (
         <>
             <div className='wrapDiv container-xl px-4 px-xl-0 mx-auto bodyCounterPadding'>
-                <div className="row gx-4 gy-5 gy-lg-0 justify-content-between bodyCounterPadding">
-                    <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-start my-md-auto">
-                        <div className='pb-4'>
-                            <span className='fw-700 firstBlueTitle fs-1 '>Alles rund ums Eigenheim</span>
-                        </div>
-                        <div className='fw-500 fs-5 normalTextToWhite'>
-                            <span>
-                                Der Erwerb eines Eigenheims ist ein langer und oft einzigartiger Prozess im Leben. Doch mit der richtigen Finanzierung ist die erste Hürde zum Wohneigentum bereits genommen. Erfahren Sie, wo Sie beim Kauf einer Immobilie Geld sparen können und was Sie vermeiden sollten. Nutzen Sie das Wissen unserer Spezialisten zu Ihrem Vorteil, wenn es um die Erfüllung von Immobilienträumen geht.
-                            </span>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-7 col-xl-7 my-md-auto">
-                        <div className="">
-                            <Ilu className='img-fluid' />
-                        </div>
-                    </div>
-
-                </div>
                 <div className='hausratShadowDiv px-3 py-4 py-sm-5 px-sm-5'>
-
                     <div className="row gx-5 gy-5 gy-md-0 justify-content-center">
                         <div className="col-12 col-md-5 col-lg-5 col-xl-5 my-md-auto">
                             <div className=" mx-auto mb-4 mb-md-0 text-start">
