@@ -72,13 +72,15 @@
     height: 110px;
     width: 180px;
 }
+
 @media (min-width: 1800.98px) {
     .uberUnsBg {
         height: 600px;
 
     }
-    .krankenPramienBg { 
-        
+
+    .krankenPramienBg {
+
         height: 800px;
     }
 }
@@ -88,8 +90,9 @@
         height: 700px;
 
     }
-    .krankenPramienBg { 
-        
+
+    .krankenPramienBg {
+
         height: 900px;
     }
 }
@@ -97,7 +100,12 @@
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {
-    .krankenPramienBg { 
+    .krankenPramienBg {
+        background-position-x: -600px;
+        height: 900px;
+    }
+
+    .darkTheme .krankenPramienBg {
         background-position-x: -600px;
         height: 900px;
     }
@@ -108,14 +116,25 @@
         max-width: 165px;
         height: 90px;
     }
-    .krankenPramienBg { 
+
+    .krankenPramienBg {
+        background-position-x: -900px;
+        height: 1000px;
+    }
+
+    .darkTheme .krankenPramienBg {
         background-position-x: -900px;
         height: 1000px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .krankenPramienBg { 
+    .krankenPramienBg {
+        background-position-x: -1400px;
+        height: 1000px;
+    }
+
+    .darkTheme .krankenPramienBg {
         background-position-x: -1400px;
         height: 1000px;
     }
@@ -141,7 +160,13 @@
     .uberUnsBg {
         background-position-x: -850px;
     }
+
     .krankenPramienBg {
+        background-position-x: -1800px;
+        height: 1200px;
+    }
+
+    .darkTheme .krankenPramienBg {
         background-position-x: -1800px;
         height: 1200px;
     }
@@ -162,6 +187,7 @@
 .darkTheme .lightBlueBgUber .row svg path {
     stroke: #ffffff99 !important;
 }
+
 .darkTheme .uberUnsBg {
     background: url('../images/uberUns/uberUnsBgDark.svg') no-repeat;
     background-size: cover;
@@ -172,18 +198,27 @@
 }
 
 @media (min-width: 1800.98px) {
-    
+
     .darkTheme .uberUnsBg {
         height: 600px;
 
     }
+
+    .darkTheme .krankenPramienBg {
+
+        height: 800px;
+    }
 }
 
 @media (min-width: 2200.98px) {
-    
+
     .darkTheme .uberUnsBg {
         height: 700px;
 
     }
-}
 
+    .darkTheme .krankenPramienBg {
+
+        height: 900px;
+    }
+}

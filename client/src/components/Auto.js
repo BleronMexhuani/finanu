@@ -20,12 +20,13 @@ function Auto(props) {
   }
   return (
     <>
-      <FirstSectionAuto toSteps={toSteps} />
-      <AutoRadioBoxes />
-      <Funktionert  darkMode={props.darkMode} />
+      <FirstSectionAuto toSteps={toSteps} darkMode={props.darkMode} />
       <div ref={stepsRef}>
         <AutoStep />
       </div>
+      <AutoRadioBoxes />
+      <Funktionert  darkMode={props.darkMode} />
+      
       <Tipps />
       <SliderHausrat />
     </>

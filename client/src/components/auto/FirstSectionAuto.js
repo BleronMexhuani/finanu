@@ -1,5 +1,6 @@
 import React from 'react'
-import MainImg from '../../assets/images/auto/mainImg.png'
+import { ReactComponent as MainImg } from '../../assets/images/auto/mainImg.svg'
+import { ReactComponent as MainImgDark } from '../../assets/images/auto/mainImgDark.svg'
 
 function FirstSectionAuto(props) {
     return (
@@ -25,7 +26,11 @@ function FirstSectionAuto(props) {
 
                         <div className="">
                             <div>
-                                <img src={MainImg} className="img-fluid" />
+                                {props.darkMode
+
+                                    ? <MainImgDark className="img-fluid" />
+                                    : <MainImg className="img-fluid" />
+                                }
                             </div>
                         </div>
 

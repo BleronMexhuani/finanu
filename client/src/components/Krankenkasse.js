@@ -25,8 +25,11 @@ function Krankenkasse(props) {
   return (
     <>
       <>
-        <FirstSectionKranken toSteps={toSteps} />
+        <FirstSectionKranken toSteps={toSteps} darkMode={props.darkMode} />
       </>
+      <div ref={stepsRef} className='bodyCounterPadding container-xl px-4 px-xl-0'>
+        <KrankenSteps darkMode={props.darkMode} />
+      </div>
       <>
         <KrankenBlueBg />
       </>
@@ -35,9 +38,7 @@ function Krankenkasse(props) {
         <KrankenCards darkMode={props.darkMode} />
       </>
 
-      <div ref={stepsRef} className='bodyCounterPadding container-xl px-4 px-xl-0'>
-        <KrankenSteps darkMode={props.darkMode} />
-      </div>
+      
       <>
         <Spitalversicherungen darkMode={props.darkMode} />
       </>

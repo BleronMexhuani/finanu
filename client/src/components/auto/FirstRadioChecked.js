@@ -9,16 +9,15 @@ function FirstRadioChecked() {
     const [step, setstep] = useState(0)
     const scrollDiv = useRef();
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     var elem = scrollDiv
-    //     window.scrollTo(
-    //         {
-    //             top: elem.current.scrollTop,
-    //             behavior: "smooth"
-    //         });
-    //         console.log(elem.current.scrollTop);
-    // }, [step])
+        var elem = scrollDiv
+        window.scrollTo(
+            {
+                top: elem.current.offsetTop + 400,
+                behavior: "smooth"
+            });
+    }, [step])
     return (
         <div className='pt-5 mt-5'>
             <form action="" className='mb-0'>

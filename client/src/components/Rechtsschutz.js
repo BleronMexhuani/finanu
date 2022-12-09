@@ -23,6 +23,10 @@ function Rechtsschutz(props) {
       <>
         <FirstSection toSteps={toSteps} darkMode={props.darkMode} />
       </>
+      
+      <div ref={stepsRef}>
+        <RechtsschutzSteps  darkMode={props.darkMode} />
+      </div>
 
       <>
         <Privatenrechtsschutz darkMode={props.darkMode} />
@@ -32,9 +36,7 @@ function Rechtsschutz(props) {
         <LastSectionRechtss darkMode={props.darkMode} />
       </div>
 
-      <div ref={stepsRef}>
-        <RechtsschutzSteps  darkMode={props.darkMode} />
-      </div>
+      
 
       <div className='bodyCounterPadding'>
         <BlueBackgroundSection darkMode={props.darkMode} />

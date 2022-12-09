@@ -1,29 +1,41 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import PensionChart from './pensionPlan/PensionChart'
 import '../assets/css/pension.css'
 import '../assets/css/mainComponents.css'
 import PensionCards from './pensionPlan/PensionCards'
 import PensionLastBlue from './pensionPlan/PensionLastBlue'
+import FirstSectionPension from './pensionPlan/FirstSectionPension'
 function PensionPlan(props) {
+    const stepsRef = useRef()
+
+    const toSteps = () => {
+        var elem = stepsRef
+        window.scrollTo(
+            {
+                top: elem.current.offsetTop - 100,
+                behavior: "smooth"
+            })
+    }
     return (
-        <div>
-            <div className='container-xl px-4 px-xl-0'>
-                <div className='pb-3'>
-                    <span className="firstBlueTitle fw-bold fs-1" style={{ color: '#50B8E7'}}>Lieber sorglos steuern sparen, statt vorsorgelos steuern zahlen</span>
-                </div>
-            </div>
+        <>
+            <>
+                <FirstSectionPension darkMode={props.darkMode} toSteps={toSteps} />
+            </>
             <div className='pensionPlanBlueBg'>
-                <div className='bodyCounterPadding'>
+
+                <div ref={stepsRef} className='bodyCounterPadding'>
                     <PensionChart darkMode={props.darkMode} />
                 </div>
                 <div className='bodyCounterPadding'>
                     <PensionCards darkMode={props.darkMode} />
                 </div>
-                <div>
+
+                <>
                     <PensionLastBlue darkMode={props.darkMode} />
-                </div>
+                </>
             </div>
-        </div>
+        </>
+
     )
 }
 

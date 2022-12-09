@@ -205,16 +205,22 @@ a {
     padding: 0%;
 }
 
-.krankenStepsCircle {
-    border: 2px solid #11A3E6;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    color: #11A3E6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
+
+
+.circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 5s ease-out forwards;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke: #27B0Ed
+  }
 }
 
 .container1 input {
@@ -232,7 +238,7 @@ a {
 
 
 .container1 input:checked~.checkmark {
-    border: 1px solid #2196F3;
+    border: 1px solid #50B8E7;
     transition: all 0.2s ease-in-out;
 }
 
@@ -396,6 +402,18 @@ a {
     align-items: center;
 }
 
+.checkmarkBoxShadow {
+    border: 1px solid #fff;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px;
+    border-radius: 9px;
+}
+
+.krankenBoxShadowInput {
+    border: 1px solid #fff !important;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 10px !important;
+
+}
+
 @media (min-width: 1700px) {
     .blueBgKranken {
         background-position-x: -190px;
@@ -424,7 +442,7 @@ a {
         padding-bottom: 3rem;
     }
 
-    
+
 
     .blueBgKranken1 {
         height: auto;
@@ -447,7 +465,7 @@ a {
         margin-top: 0px;
     }
 
-    
+
 
     .blueBgKranken1 {
         margin-top: 0px;
@@ -482,7 +500,7 @@ a {
         left: calc(50% - 120px);
     }
 
-   
+
 
     .mehrLadenModalContent {
         width: auto;
@@ -668,6 +686,15 @@ a {
     fill: white;
 }
 
+.darkTheme .krankenPramienBg {
+    background: url('../images/kraken/pramienBgDark.svg') no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 1700px) {
     .darkTheme .blueBgKranken {
         background-position-x: -190px;
@@ -697,5 +724,5 @@ a {
         margin-top: 0px;
     }
 
-    
+
 }

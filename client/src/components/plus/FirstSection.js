@@ -38,19 +38,19 @@ function FirstSection(props) {
                     {(screenWidth < 575.98) && (
 
 
-                        <div className="blueBg pt-5 pe-4">
-                            <div className="row g-0">
+                        <div className="blueBg pt-4">
+                            <div className="row gy-4">
                                 <div className="col">
                                     <MobIlu />
 
                                 </div>
-                                <div className="ps-4 py-2 col-auto my-auto">
+                                <div className="col-auto my-md-auto">
                                     <div className="text-start">
                                         <span className='fw-700 fs-3 secondaryColor text-start ' style={{ color: 'white' }}>UNSERE Erfahre Sie hier mehr über PRO Life...AUFGABE</span>
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-start p-4">
+                            <div className="text-start py-4">
                                 <span className='fw-400 fs-4 secondaryColor ' style={{ color: 'white' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, </span>
                             </div>
                         </div>

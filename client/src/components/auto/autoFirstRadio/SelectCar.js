@@ -24,9 +24,10 @@ function SelectCar(props) {
 
     const [actualMarke, setActualMarke] = useState("");
 
+
     useEffect(() => {
         async function callMarkeFunction() {
-            let res = await axios.get("http://localhost:5000/automotorrad/getMarke");
+            let res = await axios.get("https://node.kutiza.com/automotorrad/getMarke");
             setMarke(res.data);
 
         }
@@ -43,6 +44,7 @@ function SelectCar(props) {
             setIsFocused(false)
         }, 100);
     }
+
     const showSelectDropdown1 = () => {
         setIsFocused1(true)
     }
@@ -52,6 +54,7 @@ function SelectCar(props) {
             setIsFocused1(false)
         }, 100);
     }
+
     const showSelectDropdown2 = () => {
         setIsFocused2(true)
     }
@@ -61,16 +64,17 @@ function SelectCar(props) {
             setIsFocused2(false)
         }, 100);
     }
+
     const setModellAxios = async (marke) => {
-       
-        let res = await axios.get(`http://localhost:5000/automotorrad/getModell/${marke}`);
+
+        let res = await axios.get(`https://node.kutiza.com/automotorrad/getModell/${marke}`);
         setModell(res.data);
 
     }
 
     const callModellJahrAxios = async (MarkeTyp) => {
 
-        let res = await axios.get(`http://localhost:5000/automotorrad/getModellJahr/${actualMarke}/${MarkeTyp}`);
+        let res = await axios.get(`https://node.kutiza.com/automotorrad/getModellJahr/${actualMarke}/${MarkeTyp}`);
         setModelljahr(res.data);
     }
 
@@ -81,7 +85,6 @@ function SelectCar(props) {
         setIsFocused(false)
         setModellAxios(e.target.getAttribute('value'));
     }
-
 
     const handleInputModell = (e) => {
         document.getElementById('inputChangeModell').value = e.target.getAttribute('value')
@@ -116,7 +119,7 @@ function SelectCar(props) {
             let modells;
 
             modells = modell.filter((element) => (
-                ((element.MarkeTyp.substr(inputValue.length+1, inputModellValue.length ))).toLowerCase() === (inputModellValue).toLowerCase())
+                ((element.MarkeTyp.substr(inputValue.length + 1, inputModellValue.length))).toLowerCase() === (inputModellValue).toLowerCase())
             );
 
             if (inputModellValue === '' || inputModellValue === null) {
@@ -149,7 +152,7 @@ function SelectCar(props) {
         searchMarke()
         searchModell();
 
-    }, [inputValue, marke, inputModellValue,modell,modelljahr])
+    }, [inputValue, marke, inputModellValue, modell, modelljahr])
 
     return (
         <div>
@@ -184,27 +187,24 @@ function SelectCar(props) {
 
                         <div className="pb-4" style={{ position: 'relative' }}>
                             <input type="text" autoComplete='off' className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox' id='inputChangeModell' onChange={(e) => setinputModellValue(e.target.value)} placeholder='Modell' onFocus={showSelectDropdown1} onBlur={hideSelectDropdown1} />
+
                             {(isFocused1 && !isEmpty1) && (
 
                                 <div className='krankenSelectDropdown autoCheckbox autoSelectDropdown'>
 
                                     {modellfilter.map(element => {
-
                                         return (
-                                            <option className='selectOptionStyle' key={uuidv4()} onClick={handleInputModell} value={element.MarkeTyp} >
-                                                {(element.MarkeTyp).substr(inputValue.length+1,element.markeTyp)}
-                                            </option>
+                                            <div className='selectOptionStyle' key={uuidv4()} onClick={handleInputModell} value={element.MarkeTyp} >
+                                                {(element.MarkeTyp).substr(inputValue.length + 1, element.markeTyp)}
+                                            </div>
                                         )
                                     })}
-
-
                                 </div>
-                            )}
 
+                            )}
                         </div>
                         <div className="" style={{ position: 'relative' }}>
                             <select name="" className='form-control krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox mx-auto' placeholder='Modelljahr' id='inputChangeModellJahr' onChange={(e) => setinputModellJahrValue(e.target.value)} onFocus={showSelectDropdown2} onBlur={hideSelectDropdown2}>
-                                {/* <input type="text" autoComplete='off' className='krankenInputStyle krankenInputStepStyle p-2 p-3 autoCheckbox'  id='inputChangeModellJahr' onChange={(e) => setinputModellJahrValue(e.target.value)} onFocus={showSelectDropdown2} onBlur={hideSelectDropdown2} /> */}
 
                                 {(isFocused2 && !isEmpty2) && (
                                     <>
